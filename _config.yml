@@ -1,11 +1,11 @@
 
 # The name of your website.
-name: Designabile
+name: Francesco Improta
 
 description:
 
   # Description of your site. This will show up in google.
-  meta: Designabile is a blog about design, front-end and making things on the web.
+  meta: Personal website of Francesco Improta, designer in Rome, Italy. Blog about design, front-end and making things on the web.
 
   # Description of your site. This will show up on the front page.
   subtitle: Blog about design, front-end and making things on the web. Edited by Francesco Improta.
@@ -20,7 +20,7 @@ author:
   # want it.
   info:
 
-url: http://designabile.com
+url: http://francescoimprota.com
 baseurl: ""
 
 # language attribute in <html> element.
@@ -46,7 +46,7 @@ social-icons-open-newtab: true
 footer-text: Designed with <a href="#" class="link-alt">Figma</a>. Powered by <a class="link-alt" href="#">Jekyll</a> &amp; <a class="link-alt" href="#">Netlify</a>. Font <a class="link-alt" href="https://rsms.me/inter/">Inter</a> by <a class="link-alt" href="https://twitter.com/rsms">@rsms</a>
 
 # Preferably 64px in height. Leave empty = disable.
-logo-image: # /img/logo.png
+logo-image: /img/logo.svg
 
 # Toolbar color for Chrome on Android.
 theme-color-attr: "#00f0ff"
