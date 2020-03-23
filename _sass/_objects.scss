@@ -1,0 +1,52 @@
+// Blocks
+
+.box {
+  padding-bottom: 10vw;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 5vw;
+  }
+
+  & + & {
+    padding-top: 10vw;
+    @media screen and (min-width: 768px) {
+      padding-top: 5vw;
+    }
+  }
+  
+}
+
+.cover {
+  margin: 10vw 0;
+  @media screen and (min-width: 768px) {
+    margin: 5vw 0;
+  }
+}
+
+// Typography
+
+.lead {
+  font-size: $type-medium;
+  @media screen and (min-width: 768px) {
+    font-size: $type-large;
+  }
+}
+
+.caption {
+  color: $text-02;
+  font-size: $type-small;
+}
+
+.link-alt {
+  color: rgba($color-white, 75%);
+}
+
+// Icons
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}

@@ -1,0 +1,30 @@
+.unspace {
+  margin: 0;
+}
+
+.list-none {
+  padding: 0;
+  list-style-type: none;
+}
+
+.divider {
+  border-bottom: 1px solid rgba($color-white, .15);
+}
+
+.full-width {
+  width: 100%;
+  height: 50vw;
+  position: relative;
+  object-fit: cover;
+  
+  @media screen and (min-width: 768px) {
+    left: 50%;
+    margin-left: -45vw;
+    margin-right: -45vw;
+    max-width: 100vw;
+    position: relative;
+    right: 50%;
+    width: 90vw;
+    height: auto;
+  }
+}

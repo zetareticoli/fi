@@ -1,0 +1,38 @@
+// Logo
+
+.logo {
+  margin-bottom: 1rem;
+}
+
+// Navigation
+
+.nav {
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (min-width: 768px) {
+      justify-content: space-around;
+    }
+  }
+
+  &__item {
+    color: rgba($color-white, .75); 
+    @media screen and (min-width: 768px) {
+      text-align: right;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+    
+    &:hover,
+    &.active {
+      color: $color-white;
+      border-bottom: 1px solid $color-accent;
+    }
+  }
+}
