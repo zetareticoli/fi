@@ -68,7 +68,7 @@ text-color: 0, 0, 0 # Original: 0, 0, 0
 background-color: 255, 255, 255 # Original: 255, 255, 255
 
 display-author-post-page: true
-display-author-front-page: true
+display-author-front-page: false
 
 # http://alanwsmith.com/jekyll-liquid-date-formatting-examples
 date_format: "%b %-d, %Y"
@@ -92,31 +92,6 @@ navigation:
   url: /work/
 - text: Workshop
   url: /workshop/
-
-################
-# SOCIAL ICONS #
-################
-
-# Use a complete url here, including http:// and such. Requiring just usernames
-# has been considered, but this is way more customizable.
-twitter:
-youtube:
-instagram:
-tumblr:
-facebook:
-google-plus:
-reddit:
-soundcloud:
-medium:
-linkedin:
-github:
-behance:
-codepen:
-dribbble:
-trello:
-stack-overflow:
-bitcoin:
-paypal:
 
 
 #####################

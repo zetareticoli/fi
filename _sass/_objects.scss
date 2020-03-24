@@ -22,9 +22,18 @@
   }
 }
 
+.story {
+  margin-bottom: 1.5rem;
+  & + & {
+    padding-top: 1.5rem;
+    border-top: 1px solid $ui-border;
+  }
+}
+
 // Typography
 
 .lead {
+  margin-bottom: 1.5rem;
   font-size: $type-medium;
   @media screen and (min-width: 768px) {
     font-size: $type-large;
@@ -38,6 +47,14 @@
 
 .link-alt {
   color: rgba($color-white, 75%);
+}
+
+.link-inverse {
+  color: $color-white;
+  transition: color .2s ease;
+  &:hover {
+    color: $color-accent;
+  }
 }
 
 // Icons

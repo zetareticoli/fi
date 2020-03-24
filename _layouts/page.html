@@ -2,9 +2,8 @@
 layout: default
 ---
 
-<article>
-	{% if page.lead %}
-		<p>{{ page.lead }}</p>
-	{% endif %}
-	{{ content }}
-</article>
+{% if page.lead %}
+	<p class="lead">{{ page.lead }}</p>
+{% endif %}
+
+{{ content }}
