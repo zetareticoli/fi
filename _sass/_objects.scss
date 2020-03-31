@@ -71,3 +71,21 @@
 .mb-base {
   margin-bottom: 1.5rem;
 }
+
+.footer {
+  display: flex;
+  flex-flow: column;
+
+  @media screen and (min-width: 768px) {
+    flex-flow: row;
+    justify-content: space-between;
+  }
+}
+
+.colophon {
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
+}

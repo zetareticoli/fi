@@ -4,13 +4,11 @@ layout: post
 title: Code Snippets
 ---
 
-Whenever you need to post a code snippet, use the liquid tags `hilight` and `endhilight`.
+Whenever you need to post a code snippet, use the liquid tags `highlight` and `endhighlight`.
 
-<!--more-->
+Like this:
 
-like this:
-
-{% highlight css %}
+{% highlight scss %}
 nav a:hover {
   color: rgba(0,0,0,.72);
 }
