@@ -36,3 +36,14 @@
     }
   }
 }
+
+.story__title {
+  font-size: $type-large;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid $ui-border;
+  padding: 2rem 0;
+}

@@ -28,19 +28,15 @@ layout: default
 </article>
 
 {% if site.display-next-prev-post and page.previous.url or site.display-next-prev-post and page.next.url %}
-<div class="pagination clearfix">
-  <div class="left">
-    {% if page.next.url %}
-      <a href="{{ page.next.url | prepend: site.baseurl }}">‹ {{ site.var_next_post }}</a>
-    {% else %}
-      <span class="disabled">‹ {{ site.var_next_post }}</span>
+<div class="pagination">
+  <div>
+    {% if page.previous.url %}
+      <a href="{{ page.previous.url | prepend: site.baseurl }}">‹ {{ site.var_previous_post }}</a>
     {% endif %}
   </div>
-  <div class="right">
-    {% if page.previous.url %}
-      <a href="{{ page.previous.url | prepend: site.baseurl }}">{{ site.var_previous_post }} ›</a>
-    {% else %}
-      <span class="disabled">{{ site.var_previous_post }} ›</span>
+  <div>
+    {% if page.next.url %}
+      <a href="{{ page.next.url | prepend: site.baseurl }}">{{ site.var_next_post }} ›</a>
     {% endif %}
   </div>
 </div>
