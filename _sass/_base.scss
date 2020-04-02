@@ -99,11 +99,13 @@ h3, h4, h5, h6 {
 
 h5 {
   font-size: $type-small;
+  color: $text-02;
   text-transform: uppercase;
 }
 
 p + h2,
-p + h3 {
+p + h3,
+p + h5 {
   margin-top: 3rem;
 }
 

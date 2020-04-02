@@ -41,6 +41,14 @@
   }
 }
 
+.story {
+  margin-bottom: 1.5rem;
+  & + & {
+    padding-top: 1.5rem;
+    border-top: 1px solid $ui-border;
+  }
+}
+
 .story__title {
   font-size: $type-large;
 }
@@ -50,4 +58,40 @@
   justify-content: space-between;
   border-top: 1px solid $ui-border;
   padding: 2rem 0;
+}
+
+// Card
+
+.card {
+  position: relative;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 1rem;
+  border-radius: 2px;
+  width: 100%;
+  height: 128px;
+  cursor: pointer;
+  color: $text-01;
+  transition: all .2s ease;
+
+  &:hover {
+    text-decoration: none;
+    transform: translateY(-2px);
+  }
+
+  &--orange {
+    background-color: #F1894E;
+  }
+
+  &--purple {
+    background-color: #9F4EF1;
+  }
+
+  &--teal {
+    background-color: #37C194;
+  }
+
+  &--blue {
+    background-color: #4E5EF1;
+  }
 }

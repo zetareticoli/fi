@@ -81,7 +81,7 @@ typings/
 # Build / generate output
 .nuxt
 dist
-_site/
+site
 
 # Gatsby files
 .cache/

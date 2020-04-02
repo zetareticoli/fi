@@ -22,22 +22,18 @@
   }
 }
 
-.story {
-  margin-bottom: 1.5rem;
-  & + & {
-    padding-top: 1.5rem;
-    border-top: 1px solid $ui-border;
-  }
-}
-
 // Typography
 
 .lead {
   margin-bottom: 1.5rem;
   font-size: $type-medium;
   @media screen and (min-width: 768px) {
-    font-size: $type-large;
+    font-size: 1.5rem;
   }
+}
+
+.featured {
+  font-size: $type-medium;
 }
 
 .caption {
@@ -66,20 +62,6 @@
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
-}
-
-.mb-base {
-  margin-bottom: 1.5rem;
-}
-
-.footer {
-  display: flex;
-  flex-flow: column;
-
-  @media screen and (min-width: 768px) {
-    flex-flow: row;
-    justify-content: space-between;
-  }
 }
 
 .colophon {

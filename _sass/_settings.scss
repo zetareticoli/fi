@@ -1,3 +1,4 @@
+$base-font-size: 16px;
 $color-dark: #111a23;
 $color-darker: #080D11;
 $color-white: rgb(255,255,255);
@@ -6,10 +7,11 @@ $ui-background: $color-dark;
 $ui-border: rgba($color-white, 15%);
 $text-01: $color-white;
 $text-02: rgba($color-white, 40%);
+$text-03: $color-dark;
 $type-xlarge: 2.25rem;
 $type-large: 1.75rem;
 $type-medium: 1.25rem;
-$type-base: 16px;
+$type-base: 1rem;
 $type-small: .75rem;
 
 $spacing-large: 10vw;
