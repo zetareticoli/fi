@@ -7,6 +7,12 @@
   list-style-type: none;
 }
 
+.list-card {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .divider {
   border-bottom: 1px solid rgba($color-white, .15);
 }
@@ -27,4 +33,20 @@
     width: 90vw;
     height: auto;
   }
+}
+
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+.space {
+  margin-bottom: 3rem;
 }

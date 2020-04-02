@@ -5,8 +5,7 @@ lead: <strong>Thoughts about design, front-end</strong> and other interesting th
 ---
 
 
-
-{% for post in paginator.posts %}
+{% for post in site.posts %}
 
 {% assign minutes = post.content | number_of_words | divided_by: 180 %}
 {% if minutes == 0 %}
@@ -15,8 +14,9 @@ lead: <strong>Thoughts about design, front-end</strong> and other interesting th
   {% assign read-time = minutes | append: "&nbsp;" | append: site.var_min_read %}
 {% endif %}
 
-  <article>
-    <span class="meta">
+  <article class="story">
+  	<a class="link-inverse" href="{{ post.url | prepend: site.baseurl }}"><h1 class="story__title">{{ post.title }}</h1></a>
+    <span class="caption">
       {% if site.display-author-front-page %}
         {% if post.author.name %}
           {{ post.author.name }} •
@@ -26,15 +26,16 @@ lead: <strong>Thoughts about design, front-end</strong> and other interesting th
           {% endif %}
         {% endif %}
       {% endif %}
-      {{ post.date | date: site.date_format }} • {{ read-time }}</span>
-  	<a href="{{ post.url | prepend: site.baseurl }}"><h1>{{ post.title }}</h1></a>
-      <p>
+      {{ post.date | date: site.date_format }} • {{ read-time }}
+    </span>
+
+      <!-- <p>
       {% if post.summary %}
         {{ post.summary }}&nbsp;<a class="read-more" href="{{ post.url | prepend: site.baseurl }}">{{ site.var_read }}  →</a>
       {% else %}
         {{ post.excerpt | remove: '<p>' | remove: '</p>' }}&nbsp;<a class="read-more" href="{{ post.url | prepend: site.baseurl }}">{{ site.var_read }}  →</a>
       {% endif %}
-      </p>
+      </p> -->
 
   </article>
 {% endfor %}

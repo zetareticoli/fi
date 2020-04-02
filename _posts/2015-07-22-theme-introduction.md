@@ -1,6 +1,8 @@
 ---
+layout: post
+
 title: Theme introduction
-cover-image: hipster.jpg
+# cover-image: hipster.jpg
 ---
 
 This post is a showcase of what Holo Alfa looks like, and a reference guide for how you can use it to make your blog shine.

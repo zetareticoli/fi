@@ -25,10 +25,15 @@
 // Typography
 
 .lead {
+  margin-bottom: 1.5rem;
   font-size: $type-medium;
   @media screen and (min-width: 768px) {
-    font-size: $type-large;
+    font-size: 1.5rem;
   }
+}
+
+.featured {
+  font-size: $type-medium;
 }
 
 .caption {
@@ -40,6 +45,14 @@
   color: rgba($color-white, 75%);
 }
 
+.link-inverse {
+  color: $color-white;
+  transition: color .2s ease;
+  &:hover {
+    color: $color-accent;
+  }
+}
+
 // Icons
 
 .icon {
@@ -49,4 +62,12 @@
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
+}
+
+.colophon {
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
 }

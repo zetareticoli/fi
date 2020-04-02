@@ -10,9 +10,11 @@ layout: default
 {% endif %}
 
 <article>
-  <span class="meta">{{ page.date | date: site.date_format }} • {{ read-time }}</span>
 	<h1>{{ page.title }}</h1>
-		{{ content }}
+  <p class="caption">{{ page.date | date: site.date_format }} • {{ read-time }}</p>
+
+  {{ content }}
+
   {% if site.display-author-post-page %}
     {% if page.author.name %}
       <small><em>{{ site.var_guest_post_by }}: {{ page.author.name }} {{ page.author.info }}</em></small>
@@ -22,22 +24,19 @@ layout: default
       {% endif %}
     {% endif %}
   {% endif %}
+
 </article>
 
 {% if site.display-next-prev-post and page.previous.url or site.display-next-prev-post and page.next.url %}
-<div class="pagination clearfix">
-  <div class="left">
-    {% if page.next.url %}
-      <a href="{{ page.next.url | prepend: site.baseurl }}">‹ {{ site.var_next_post }}</a>
-    {% else %}
-      <span class="disabled">‹ {{ site.var_next_post }}</span>
+<div class="pagination">
+  <div>
+    {% if page.previous.url %}
+      <a href="{{ page.previous.url | prepend: site.baseurl }}">‹ {{ site.var_previous_post }}</a>
     {% endif %}
   </div>
-  <div class="right">
-    {% if page.previous.url %}
-      <a href="{{ page.previous.url | prepend: site.baseurl }}">{{ site.var_previous_post }} ›</a>
-    {% else %}
-      <span class="disabled">{{ site.var_previous_post }} ›</span>
+  <div>
+    {% if page.next.url %}
+      <a href="{{ page.next.url | prepend: site.baseurl }}">{{ site.var_next_post }} ›</a>
     {% endif %}
   </div>
 </div>

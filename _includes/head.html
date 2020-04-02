@@ -44,6 +44,8 @@
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
 <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css">
+
 <!--[if gte IE 9]>
   <style type="text/css">
     .gradient {
@@ -52,18 +54,3 @@
   </style>
 <![endif]-->
 
-{% if page.home != true or site.show-subtitle == false and site.display-social-icons == false %}
-<style>
-header {
-  margin-bottom: 40px;
-}
-@media all and (min-width: 500px) {
-  header {
-    margin-bottom: 100px;
-  }
-}
-header::after {
-  display: none;
-}
-</style>
-{% endif %}
