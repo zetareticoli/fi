@@ -216,11 +216,12 @@ hr {
 
 header {
   display: flex;
-  margin: $spacing-small 0;
+  margin: $spacing-large 0;
   display: flex;
   flex-flow: column;
 
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 768px) {
+    margin: $spacing-small 0;
     flex-flow: row;
     justify-content: space-between;
     align-items: center;
