@@ -48,11 +48,12 @@ a:hover {
 ul,
 ol {
   margin: 2rem auto;
-  padding-left: 2rem;
+  padding-left: 0;
 }
 
 ul {
-  list-style: disc;
+  list-style-type: square;
+  list-style-position: inside;
 }
 
 ol {
@@ -207,11 +208,11 @@ small a {
 }
 
 hr {
-  border:none;
-  background-color: rgba($color-accent, .4);
+  border: none;
+  background-color: $ui-border;
   margin: 3.75rem auto;
   width: 30%;
-  height: 2px;
+  height: 1px;
 }
 
 header {
@@ -229,6 +230,6 @@ header {
 }
 
 footer {
-  padding: 5vw;
+  padding: $spacing-small;
   background: $color-darker;
 }

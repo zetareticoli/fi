@@ -2,6 +2,14 @@
   margin: 0;
 }
 
+.mr-xsmall {
+  margin-right: $spacing-xsmall;
+}
+
+.ml-xsmall {
+  margin-left: $spacing-xsmall;
+}
+
 .list-none {
   padding: 0;
   list-style-type: none;
