@@ -83,6 +83,12 @@ paginate: 3
 # Display links for the previous and next post on post pages.
 display-next-prev-post: true
 
+
+
+##############
+# CONTENT #
+##############
+
 navigation:
 - text: About
   url: /about/
@@ -93,6 +99,25 @@ navigation:
 - text: Workshop
   url: /workshop/
 
+
+projects:
+- title: Typesmith
+  desc: A responsive typography library
+  url: https://www.github.com/zetareticoli/typesmith
+  color: orange
+- title: Superilles
+  desc: Grid system with CSS Grid
+  url: https://www.github.com/zetareticoli/superilles
+  color: teal
+- title: Sass MQ
+  desc: A simple media query library for Sass
+  url: https://www.github.com/zetareticoli/mq
+  color: purple
+- title: UIKit Starter kit
+  desc: UI Design Kit template for Sketch
+  url: https://www.github.com/zetareticoli/uikit-starter
+  color: blue
+  
 
 #####################
 # CUSTOMIZABLE TEXT #

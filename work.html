@@ -47,22 +47,12 @@ lead: <strong>I like to design experiences on the web</strong>. From user resear
 
 <h2>Open source projects</h2> 
 <div class="list-card space">
-  <a class="card card--orange">
-    <h4>Typesmith</h4>
-    <small>A responsive typography library</small>
-  </a>
-  <a class="card card--teal">
-    <h4>Superilles</h4>
-    <small>Grid system with CSS Grid</small>
-  </a>
-  <a class="card card--purple">
-    <h4>Sass MQ</h4>
-    <small>A simple media query library for Sass</small>
-  </a>
-  <a class="card card--blue">
-    <h4>UIKit Starter kit</h4>
-    <small>Create a design kit in Sketch</small>
-  </a>
+  {% for project in site.projects %}
+    <a class="card card--{{project.color}}" href="{{project.url}}" rel="external">
+      <h4>{{project.title}}</h4>
+      <small>{{project.desc}}</small>
+    </a>
+  {% endfor %}
 </div>
 
 <h2>Experiments</h2>
@@ -71,6 +61,7 @@ lead: <strong>I like to design experiences on the web</strong>. From user resear
   Here you can find some HTML & CSS solutions
 </p>
 <ul class="list-none">
-  <li><a href="">CSS Grid Layout</a></li>
-  <li><a href="">Typography Sass map</a></li>
+  <li><a href="https://codepen.io/zetareticoli/pen/MROMZE" rel="external">Dark mode switch</a></li>
+  <li><a href="https://codepen.io/zetareticoli/pen/GaXXQa" rel="external">CSS Grid Layout</a></li>
+  <li><a href="https://codepen.io/zetareticoli/pen/RwNLPEN" rel="external">Typography Sass map</a></li>
 </ul>
