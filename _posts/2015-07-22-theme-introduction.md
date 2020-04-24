@@ -1,116 +1,77 @@
 ---
 layout: post
 
-title: Theme introduction
+title: Seejay redesign 
 # cover-image: hipster.jpg
 ---
 
-This post is a showcase of what Holo Alfa looks like, and a reference guide for how you can use it to make your blog shine.
+In recent months I have had the opportunity and the pleasure of working for Seejay, an Italian startup founded in 2013 developing a web app dedicated to the User Generated Content market. Their app allows people to collect, organize and publish images, videos, audio, texts from social networks to build storytelling in real time around any theme or topic.
 
-<!--more-->
+I enthusiastically accepted this project for 3 reasons:
+1. there is a real product - with its own characteristics, aimed at a specific market and user;
+2. the experience of use poses clear design challenges;
+3. the collaboration is based on an agile contract (hurray!);
 
-You can write posts using the familiar [Markdown](http://daringfireball.net/projects/markdown/) syntax, plus some extra's from [GFM](https://help.github.com/articles/github-flavored-markdown/). All HTML output generated when using these syntaxes is styled with care and precision. Generous whitespace is used to give your content some breathing room.
 
-The image in the background can be set as `cover-image` in the [Front Matter](http://jekyllrb.com/docs/frontmatter/) of a post or page. The "fade to white" will be created automatically. Cover images are stored in `/img/covers/`.
+## Team
+In addition to myself, in the role of Designer, the working group saw the participation of the whole Seejay team:
 
-## Look, a H2 heading! ##
+- Carlo Brunelleschi, CEO e Co-Founder di Seejay
+- Fabrizio Ferreri, COO e Co-Founder
+- Andrea Ortis, CTO
+- Fabrizio Di Bella, Web designer
 
-Add hierarchy to your content by using headings. It's recommended that you only use headings of `H2` and `H3`. This is because `H1` headings are used by the post title.
+We worked mainly remotely: me in Rome, the Seejay team in the headquarters hosted at the TIM #WCAP Accelerator in Catania.
 
-### H3 Heading ###
+## Kickoff meeting: exercises, expectations and planning
 
-Are smaller than `H2` headings.
+The project starts on a very hot sicilian day in late September during which the kickoff meeting is held. I interviewed the team to learn more about the product and understand what they would have liked to make. The day continued with design exercises such as the [Design Studio Metholodgy](http://www.uie.com/articles/design_studio_methodology/) and the [KJ technique](http://www.uie.com/articles/kj_technique/). It was an important moment both to get to know each other and to align the whole team on future project activities.
 
-### H4 Heading ###
+### Set expectations
+Entering the so-called [Post PSD Era](http://danielmall.com/articles/the-post-psd-era/) is a problem of expectations. The typical workflow in web design involves sending the customer a "preview" to be approved. This preview consists of a mockup of one or more pages and contains everything: typography, spacing, grid, contents (real and / or lorem ipsum). The problem with documents of this type is to keep the focus on the really important elements, while the customer focuses on the smallest details.
 
-Too many heading sizes will make the content hierarchy less clear, so you are limited to three sizes: `H2`, `H3` and `H1`. `H1` being occupied by the title.
+The first real change is to speak with the customer honestly and clearly. What better occasion than the kickoff meeting?
+It doesn't matter how big the team is. We are people and as such each one different from the other. Since we work together, everyone must share the same vocabulary, speak the same language.
 
-* The quick brown fox jumps over the lazy dog.
-* Pa's wijze lynx bezag vroom het fikse aquaduct.
-* Portez ce whisky au vieux juge blond qui fume.
+A part of the day was therefore dedicated to the theme of the design process and the value delivered to the customer. By showing them some examples of previous projects and international case studies, everyone knew what to expect in the coming weeks.
 
-Lists work as expected.
+## Sketching
 
-1. Blowzy night-frumps vex'd Jack Q. (A perfect [pangram](https://en.wikipedia.org/wiki/Pangram))
-2. Alve bazige froulju wachtsje op dyn komst.
-3. Flygande bäckasiner söka hwila på mjuka tuvor.
+### Site-wide patterns and modules
+A first phase of the work was dedicated to the exploration of site-wide patterns. The numerous insights produced during the kickoff meeting through the Design Studio Methodology proved to be invaluable for designing the structure of the user interface.
 
-## Quotes, images and code blocks
+### HTML Wireframes
+I used these sketches to create the corresponding HTML wireframes, setting atoms, molecules and organisms following the methodology indicated by Brad Frost in Atomic Design.
 
-Use Markdown's `>` to create a quote.
+We therefore tested all the wireframes directly in the browser of mobile, tablet and desktop devices.
 
->It'll be nipper heaps trent from punchy oldies. Trent from punchy no dramas when flat out like a tucker-bag. He hasn't got a piker flamin frog in a sock.
-><small>— [Bogan Ipsum](http://boganipsum.com/)</small>
+## A prototype for any scenario
+We subsequently increased the loyalty of our deliverables by building several interactive prototypes, each of which focused on a usage scenario:
+1. First visit e Signup
+2. First login
+3. Creating a story
+4. Publishing a story
 
-Large enough images will be wider than the page.
 
-![Forest]({{ site.baseurl }}/img/forest.jpg) <small>Source: [imgur.com](http://imgur.com/KTfsVZL)</small>
+## Visual Direction
+Defining the new visual language for Seejay was a fundamental step in the project. The use of element collages instead of full-comp mockups allowed us to explore different creative directions and then choose the one that is suitable for both the website and the application interface.
 
-**Pro tip:** Use `<small></small>` tags on the same line as an image to create a source.
+The advantage of using element collages derives from the fact that no time is invested in the creation of each single page. The focus is instead concentrated on a set of very specific elements (for example site-wide patterns).
+This approach streamlines the visual design process, promotes communication and collaboration during feedback, reduces production times.
 
-Next up is a code block with syntax highlighting, generated by Pygments.
+### Full-comps
+We also produced some complete mockups about the most critical pages / sections, such as the story creation process and the public story page. Again through InVision we made the mockups interactive. This allowed us to validate once again the choices made.
 
-{% highlight css %}
-nav a:hover {
-  color: rgba(0,0,0,.72);
-}
-nav a.current {
-  color: rgba(0, 0, 0, .72)
-}
-.subtitle {
-  margin: 30px 0;
-}
+## Atomic Design & Pattern Library
+The last part of my work for Seejay saw me busy on the front end. I created a Pattern Library to collect all the interface components, specifying HTML and CSS markup for each.
 
-@media all and (min-width: 370px) {
-  .website-title {
-    font-size: 32px;
-  }
-  body {
-    font-size: 24px;
-  }
-  a {
-    background-position: 0 18px;
-  }
-}
-{% endhighlight %}
+The Atomic Design methodology was also used for the development of the front end. The organisms, molecules and atoms of the interface defined during the sketching phase have evolved into the final version defined with visual design.
 
-Here's one without syntax highlighting, generated by GFM:
+The library immediately became a point of reference for developers during all the implementation work with the backend.
 
-```
-// this code block is generated by Github Flavoured Markdown
-el.each(function() {
-  if(s.remotePath != null && s.remoteTarget != null) {
-    $.get(s.remotePath, function(data) {  
-      setTime($('<div>').html(data).find(s.remoteTarget).text());
-    });
-  } else {
-    setTime(el.text());
-  }
-});
-```
 
-## Video's ##
+## Iterative approach
+We have adopted an incremental iterative approach, organizing the work in weekly iterations, providing for each one a moment dedicated to sharing and reviewing the work. This practice has allowed us to constantly share the project by sharing the direction, receiving feedback and finding specific project solutions together.
 
-If you embed a video from YouTube, Vimeo or another popular video website [FitVids.js](http://fitvidsjs.com/) takes care of it being responsive.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BRRolKTlF6Q" frameborder="0" allowfullscreen></iframe>
-
-It's time for a break.
-
----
-
-In Markdown you can create a horizontal rule with `---`.
-
-## Tables ##
-
-Tables are a part of [GFM](https://help.github.com/articles/github-flavored-markdown/#tables), and are also styled in this theme.
-
-| Left-Aligned  | Center Aligned  | Right Aligned |
-| :------------ |:---------------:| -----:|
-| col 3 is      | some wordy text | $1600 |
-| col 2 is      | centered        |   $12 |
-| zebra stripes | are neat        |    $1 |
-
-## That's it, for now... ##
-
-You can get Holo Alfa at the [Github repository](https://github.com/steinvc/holo-alfa). Maybe add/suggest new features. Or report bugs.
+In practice, we set Friday for the delivery of the single iteration, and the following Monday for discussion and approval.
+We completed the project in 12 iterations of work against the 8 estimated at the beginning. Estimates don't work. The agile contract allowed us to manage the change by balancing the risks for both parties.
