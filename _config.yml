@@ -145,7 +145,7 @@ var_your_message: Your message
 
 # You don't have to change these.
 
-exclude: [vendor]
+exclude: ['vendor', 'node_modules']
 highlighter: rouge
 kramdown:
   input: GFM
