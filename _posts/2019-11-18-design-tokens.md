@@ -20,11 +20,11 @@ In my experience I can say that the two phases go on together. The creative proc
 It will not be a surprise if I tell you that it is essential to start defining the color tokens. The amount of tokens we need is closely related to the complexity of the interface we are designing.
 
 ### 1. Set a colors palette
-![color tokens](/img/color-tokens.jpg "Color tokens")
+![color tokens](/img/posts/color-tokens.jpg "Color tokens")
 
 The first thing to do, rather obvious, will be to define a colors palette. This in fact tells us how many colors I want to use in design. But what he doesn't tell us is how to use these colors.
 
 ### 2. Interactive tokens
 These are the tokebs dedicated to interactive states of the elements of an interface, such as hover, active, focus and disabled. Even in their case the same rules that we saw before apply, that is, we can use the same color as many times as we need.
 
-![interactive tokens](/img/interactive-tokens.jpg "Interactive tokens")
+![interactive tokens](/img/posts/interactive-tokens.jpg "Interactive tokens")
