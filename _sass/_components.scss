@@ -35,6 +35,11 @@
     
     &:hover,
     &.active {
+      border-bottom: 1px solid rgba($color-white, .75);
+    }
+
+    &.active {
+      font-weight: 700;
       color: $color-white;
       border-bottom: 1px solid $color-accent;
     }
@@ -50,14 +55,12 @@
 }
 
 .story__title {
-  font-size: $type-large;
+  font-size: $type-medium;
 }
 
 .pagination {
   display: flex;
   justify-content: space-between;
-  border-top: 1px solid $ui-border;
-  padding: 2rem 0;
 }
 
 // Card
