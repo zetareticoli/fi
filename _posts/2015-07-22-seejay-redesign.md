@@ -25,7 +25,7 @@ We worked mainly from remote: me in Rome and Seejay team in their headquarters h
 
 ## Kickoff meeting: exercises, expectations and planning
 
-![color tokens](/img/posts/color-tokens.jpg "Color tokens")
+![seejay kickoff](/img/posts/seejay-redesign/kickoff.jpg "Kick off meeting with Seejay team")
 
 The project starts on a very hot sicilian day in late September during which the kickoff meeting is held. I interviewed the team to learn more about the product and understand what they would have liked to make. The day continued with design exercises such as the [Design Studio Metholodgy](http://www.uie.com/articles/design_studio_methodology/) and the [KJ technique](http://www.uie.com/articles/kj_technique/). It was an important moment both to get to know each other and to align the whole team on future project activities.
 
@@ -39,10 +39,15 @@ A part of the day was therefore dedicated to the theme of the design process and
 
 ## Sketching
 
+![sketching](/img/posts/seejay-redesign/sketching.jpg "Sketching")
+
 ### Site-wide patterns and modules
 First phase was dedicated to the exploration of site-wide patterns. The numerous insights produced during the kickoff meeting through the Design Studio Methodology proved to be invaluable for designing the structure of the user interface.
 
 ### HTML Wireframes
+
+![app wireframes](/img/posts/seejay-redesign/wireframes.jpg "Seejay app wireframes")
+
 I used these sketches to create the corresponding HTML wireframes, setting atoms, molecules and organisms following the [Atomic Design](https://bradfrost.com/blog/post/atomic-web-design/) methodology.
 
 We therefore tested all the wireframes directly in the browser with any device.
@@ -64,6 +69,9 @@ The advantage of using element collages derives from that no time is invested in
 We also produced some complete mockups about the most critical pages / sections, such as the story creation process and the public story page. Again through InVision we made the mockups interactive. This allowed us to validate once again the choices made.
 
 ## Atomic Design & Pattern Library
+
+![pattern library](/img/posts/seejay-redesign/pattern-library.jpg "Seejay pattern library")
+
 The last part of my work for Seejay saw me busy on the front end. I created a Pattern Library to collect all the interface components, specifying HTML and CSS markup for each.
 
 The Atomic Design methodology was also used for front-end development. The organisms, molecules and atoms of the interface defined during the sketching phase have evolved into the final version defined with visual design.
