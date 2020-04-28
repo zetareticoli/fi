@@ -1,0 +1,23 @@
+{
+  "name": "fi",
+  "version": "1.0.0",
+  "description": "Francesco Improta personal website and blog",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zetareticoli/fi.git"
+  },
+  "author": "Francesco Improta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zetareticoli/fi/issues"
+  },
+  "homepage": "https://github.com/zetareticoli/fi#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0"
+  }
+}

@@ -15,7 +15,7 @@ lead: <strong>Thoughts about design, front-end</strong> and other interesting th
 {% endif %}
 
   <article class="story">
-  	<a class="link-inverse" href="{{ post.url | prepend: site.baseurl }}"><h1 class="story__title">{{ post.title }}</h1></a>
+  	<a href="{{ post.url | prepend: site.baseurl }}"><h1 class="story__title">{{ post.title }}</h1></a>
     <span class="caption">
       {% if site.display-author-front-page %}
         {% if post.author.name %}

@@ -83,8 +83,6 @@ paginate: 3
 # Display links for the previous and next post on post pages.
 display-next-prev-post: true
 
-
-
 ##############
 # CONTENT #
 ##############
@@ -118,6 +116,11 @@ projects:
   url: https://www.github.com/zetareticoli/uikit-starter
   color: blue
   
+#####################
+# SOCIAL #
+#####################
+
+twitter_username: zetareticoli
 
 #####################
 # CUSTOMIZABLE TEXT #
@@ -145,7 +148,7 @@ var_your_message: Your message
 
 # You don't have to change these.
 
-exclude: [vendor]
+exclude: ['vendor', 'node_modules']
 highlighter: rouge
 kramdown:
   input: GFM
