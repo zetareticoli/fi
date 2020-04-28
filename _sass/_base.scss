@@ -6,15 +6,15 @@ body {
   background-color: $ui-background;
   background-repeat: no-repeat;
   background-size: 100%;
-  font-size: $type-base;
-  font-family: $font;
-  font-weight: 400;
-  -webkit-font-smoothing: antialiased;
   color: $text-01;
+  font-family: $font;
+  font-size: $type-base;
+  font-weight: 400;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
 p, form {
-  line-height: 1.5;
   margin: 0 0 1rem;
   word-wrap: break-word;
 }
@@ -32,9 +32,9 @@ i, em {
 }
 
 a {
+  position: relative;
   color: $color-accent;
   text-decoration: none;
-  position: relative;
 }
 
 a:hover {
@@ -52,8 +52,8 @@ ol {
 }
 
 ul {
-  list-style-type: square;
   list-style-position: inside;
+  list-style-type: square;
 }
 
 ol {
@@ -61,29 +61,25 @@ ol {
 }
 
 li {
-  margin: 1rem 0;
+  margin: 1.5rem 0;
   line-height: 1.5;
 }
 
-li * {
-  line-height: 1em; /* Bold font line-height fix */
-}
-
 img {
-  max-width: 100%;
   display: block;
+  max-width: 100%;
   margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 1rem;
-  font-weight: 700;
   background-image: none;
+  font-weight: 700;
+  letter-spacing: normal;
+  line-height: 1.25;
   text-decoration: none !important;
   word-wrap: break-word;
   word-spacing: normal;
-  letter-spacing: normal;
-  line-height: 1.25;
 }
 
 h1 {
@@ -99,8 +95,8 @@ h3, h4, h5, h6 {
 }
 
 h5 {
-  font-size: $type-xsmall;
   color: $text-02;
+  font-size: $type-xsmall;
   text-transform: uppercase;
 }
 
@@ -111,12 +107,12 @@ p + h5 {
 }
 
 table {
-  border-collapse: collapse;
   margin: 2rem auto;
+  border-collapse: collapse;
 }
 
 td, th {
-  padding: .8rem
+  padding: .8rem;
 }
 
 th {
@@ -143,14 +139,14 @@ blockquote {
 
 blockquote::before,
 blockquote::after {
-  font-weight: 400;
-  font-size: 5rem;
-  color: rgba($color-accent, .4);
   display: block;
+  height: 2.5rem;
+  color: rgba($color-accent, .4);
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 400;
   text-align: center;
   vertical-align: bottom;
-  height: 2.5rem;
-  font-style: normal;
 }
 
 blockquote::before {
@@ -168,25 +164,25 @@ code {
 }
 
 p code {
-  font-size: .7em;
   display: inline-block;
+  padding: 0 3px;
+  border: 1px solid rgba($text-01,.1);
   border-radius: 2px;
   background-color: rgba($text-01,.05);
-  border: 1px solid rgba($text-01,.1);
-  padding: 0 3px;
+  font-size: .7em;
 }
 
 pre {
   display: block;
-  background-color: rgba(0,0,0,.8);
-  overflow-y: hidden;
-  overflow-x: auto;
-  font-size: .75rem;
-  padding: 1rem;
-  border-radius: 4px;
-  color: #f8f8f2;
-  line-height: 1.4;
   margin: 2rem auto;
+  padding: 1rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  border-radius: 4px;
+  background-color: rgba(0,0,0,.8);
+  color: #f8f8f2;
+  font-size: .75rem;
+  line-height: 1.4;
 }
 
 pre code {
@@ -194,38 +190,38 @@ pre code {
 }
 
 small {
-  font-size: .8em;
   color: rgba($text-01,.5);
+  font-size: .8em;
 }
 
 small a {
-  color: inherit;
   background-image: -webkit-linear-gradient(rgba($text-01,.5),rgba($text-01,.5));
   background-image: -moz-linear-gradient(rgba($text-01,.5),rgba($text-01,.5));
   background-image: -o-linear-gradient(rgba($text-01,.5),rgba($text-01,.5));
   background-image: -ms-linear-gradient(rgba($text-01,.5),rgba($text-01,.5));
   background-image: linear-gradient(rgba($text-01,.5),rgba($text-01,.5));
+  color: inherit;
 }
 
 hr {
-  border: none;
-  background-color: $ui-border;
-  margin: 3.75rem auto;
   width: 30%;
   height: 1px;
+  margin: 3.75rem auto;
+  border: none;
+  background-color: $ui-border;
 }
 
 header {
   display: flex;
-  margin: $spacing-large 0;
   display: flex;
   flex-flow: column;
+  margin: $spacing-large 0;
 
   @media screen and (min-width: 768px) {
-    margin: $spacing-small 0;
     flex-flow: row;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    margin: $spacing-small 0;
   }
 }
 
