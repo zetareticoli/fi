@@ -1,22 +1,50 @@
----
----
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    {% for post in site.posts %}
-    <url>
-        <loc>{{ site.url }}{{ site.baseurl }}{{ post.url | remove: 'index.html' }}</loc>
-    </url>
-    {% endfor %}
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-    {% for page in site.pages %}
-    {% if page.layout != nil %}
-    {% if page.layout != 'redirect' %}
-    {% if page.ignore != true %}
-    <url>
-        <loc>{{ site.url }}{{ site.baseurl }}{{ page.url | remove: 'index.html' }}</loc>
-    </url>
-    {% endif %}
-    {% endif %}
-    {% endif %}
-    {% endfor %}
+<url>
+  <loc>https://francescoimprota.com/</loc>
+  <lastmod>2020-04-28T14:15:55+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://francescoimprota.com/about/</loc>
+  <lastmod>2020-04-28T14:15:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://francescoimprota.com/blog/</loc>
+  <lastmod>2020-04-28T14:15:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://francescoimprota.com/work/</loc>
+  <lastmod>2020-04-28T14:15:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://francescoimprota.com/workshop/</loc>
+  <lastmod>2020-04-28T14:15:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://francescoimprota.com/2019/11/18/design-tokens/</loc>
+  <lastmod>2020-04-28T14:15:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://francescoimprota.com/2019/02/26/wiad2019-considerations/</loc>
+  <lastmod>2020-04-28T14:15:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://francescoimprota.com/2015/07/22/seejay-redesign/</loc>
+  <lastmod>2020-04-28T14:15:55+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>
