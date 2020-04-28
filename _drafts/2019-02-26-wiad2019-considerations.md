@@ -15,7 +15,6 @@ Main problem here is how to find and use data while safeguarding people's privac
 The inclusion of gender differences is possible thanks to the sharing of a language that has remained confined to a restricted community, calling into question a "binary system".
 _Design for Transition — **Massimiliano Dibitonto**_
 
-
 ### 3. 
 Refugee people who flee the Middle East do not want to be called such. They are people who, by the same admission, move to give opportunities, not to receive them. Among them many entrepreneurs with projects developed during these difficult times.
 _The art of bankruptcy, a non-binary concept - **Ethan Bonali**_
