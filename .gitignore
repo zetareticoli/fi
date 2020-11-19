@@ -103,3 +103,9 @@ _site
 
 # TernJS port file
 .tern-port
+
+# Ignore OS generated files
+.DS_Store*
+ehthumbs.db
+Thumbs.db
+Desktop.ini
