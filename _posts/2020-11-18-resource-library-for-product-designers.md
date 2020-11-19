@@ -2,7 +2,7 @@
 layout: post
 
 title: Resources library for Product Designers
-cover-image: design-notes.png
+cover-image: design-notes.jpg
 cover-title: Design Notes resources library
 cover-alt: Home of designnotes website
 ---
