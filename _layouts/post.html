@@ -11,7 +11,12 @@ layout: default
 
 <article class="box">
 	<h1>{{ page.title }}</h1>
+  
   <p class="caption">{{ page.date | date: site.date_format }} • {{ read-time }}</p>
+
+  {% if page.cover-image %}
+    <img class="mb-xsmall" alt="{{ page.cover-alt }}" title="{{ page.cover-title }}" src="{{ site.baseurl }}/img/covers/{{ page.cover-image }}">
+	{% endif %}
 
   {{ content }}
 
