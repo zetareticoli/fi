@@ -14,13 +14,17 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+p {
+  line-height: 1.75;
+}
+
 p, form {
   margin: 0 0 1rem;
   word-wrap: break-word;
 }
 
 p * {
-  line-height: 1em; /* Bold font line-height fix */
+  line-height: 1em;
 }
 
 strong {
@@ -31,6 +35,12 @@ i, em {
   font-style: italic;
 }
 
+img + em {
+  color: $text-02;
+  font-size: $type-xsmall;
+  text-align: center;
+}
+
 a {
   position: relative;
   color: $color-accent;
@@ -38,10 +48,6 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
-}
-
-.no-cssgradients a {
   text-decoration: underline;
 }
 
@@ -74,6 +80,7 @@ img {
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 1rem;
   background-image: none;
+  color: $color-white;
   font-weight: 700;
   letter-spacing: normal;
   line-height: 1.25;
@@ -133,30 +140,18 @@ tfoot {
 }
 
 blockquote {
-  padding: 0 1.5rem;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 2rem 1.5rem;
+  background-color: $color-darker;
+  box-shadow: inset 4px 0 0 $ui-border;
+  color: $color-white;
+  font-size: $type-large;
   font-style: italic;
 }
 
-blockquote::before,
-blockquote::after {
-  display: block;
-  height: 2.5rem;
-  color: rgba($color-accent, .4);
-  font-size: 5rem;
-  font-style: normal;
-  font-weight: 400;
-  text-align: center;
-  vertical-align: bottom;
-}
-
-blockquote::before {
-  content: "“";
-  margin-top: 2rem;
-}
-
-blockquote::after {
-  content: "”";
-  margin-bottom: 2rem;
+blockquote > p {
+  margin-bottom: 0;
 }
 
 code {
