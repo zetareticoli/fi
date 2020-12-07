@@ -1,50 +1,56 @@
+---
+layout: null
+---
+
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-<url>
-  <loc>https://francescoimprota.com/</loc>
-  <lastmod>2020-04-28T14:15:55+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://francescoimprota.com/about/</loc>
-  <lastmod>2020-04-28T14:15:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://francescoimprota.com/blog/</loc>
-  <lastmod>2020-04-28T14:15:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://francescoimprota.com/work/</loc>
-  <lastmod>2020-04-28T14:15:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://francescoimprota.com/workshop/</loc>
-  <lastmod>2020-04-28T14:15:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://francescoimprota.com/2019/11/18/design-tokens/</loc>
-  <lastmod>2020-04-28T14:15:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://francescoimprota.com/2019/02/26/wiad2019-considerations/</loc>
-  <lastmod>2020-04-28T14:15:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://francescoimprota.com/2015/07/22/seejay-redesign/</loc>
-  <lastmod>2020-04-28T14:15:55+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-
+  <url>
+    <loc>https://francescoimprota.com/</loc>
+    <lastmod>2020-04-28T14:15:55+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://francescoimprota.com/about/</loc>
+    <lastmod>2020-04-28T14:15:55+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://francescoimprota.com/blog/</loc>
+    <lastmod>2020-04-28T14:15:55+00:00</lastmod>
+    <priority>0.89</priority>
+  </url>
+  <url>
+    <loc>https://francescoimprota.com/work/</loc>
+    <lastmod>2020-04-28T14:15:55+00:00</lastmod>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://francescoimprota.com/workshop/</loc>
+    <lastmod>2020-04-28T14:15:55+00:00</lastmod>
+    <priority>0.20</priority>
+  </url>
+{% for post in site.posts %}
+  {% unless post.published == false %}    
+  <url>
+    <loc>{{ site.url }}{{ post.url }}</loc>
+    <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+    {% if post.sitemap.changefreq %}
+      <changefreq>{{ post.sitemap.changefreq }}</changefreq>
+    {% else %}
+      <changefreq>monthly</changefreq>
+    {% endif %}
+    {% if post.sitemap.priority %}
+      <priority>{{ post.sitemap.priority }}</priority>
+    {% else %}
+      <priority>0.5</priority>
+    {% endif %}
+  </url>
+  {% endunless %}
+{% endfor %}
 
 </urlset>
