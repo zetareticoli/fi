@@ -12,7 +12,7 @@ We will remember you forever. Coronavirus pandemic has changed our lives and wor
 
 ### Real life
 
-My second child was born on May 27th. I would never have imagined becoming a father a second time also because the first one is almost 9 years old. It was **the greatest joy of the year**. All the difficulties I thought about disappeared from his first day of life. Seeing the two brothers growing up together today is the best thing there is.
+My second child was born on May 27th. I would never have imagined becoming a father a second time also because the first one is almost 9 years old. It was **the greatest joy of the year**. All the difficulties I thought about disappeared since his first day of life. Seeing the two brothers growing up together today is fantastic.
 
 ### Professional life
 
