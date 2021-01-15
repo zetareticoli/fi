@@ -80,3 +80,9 @@
     width: 50%;
   }
 }
+
+.rss {
+  padding: 16px;
+  border-radius: 2px;
+  background-color: lighten($ui-background, 5%);
+}

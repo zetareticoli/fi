@@ -32,7 +32,10 @@ layout: default
 
   <hr>
 
-  <div class="text-center">
+  {% include box-rss.html %}
+
+
+  <!-- <div class="text-center">
     <p>
       <em>Find this post interesting?</em>
     </p>
@@ -40,7 +43,7 @@ layout: default
     <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter">
     Share on Twitter</a>
     </p>
-  </div>
+  </div> -->
   
   <hr>
 
@@ -59,7 +62,3 @@ layout: default
     </div>
   {% endif %}
 </article>
-
-
-
-

@@ -99,3 +99,17 @@
     background-color: #4E5EF1;
   }
 }
+
+.button {
+  background-color: $color-accent;
+  color: $color-white;
+  text-align: center;
+  padding: 8px 32px;
+  border-radius: 3px;
+  font-weight: 700;
+  
+  &:hover {
+    text-decoration: none;
+    background-color: lighten($color-accent, 5%);
+  }
+}
