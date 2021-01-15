@@ -94,6 +94,9 @@ navigation:
   url: /blog/
 - text: Work
   url: /work/
+- text: Portfolio
+  url: http://zetareticoli.dribbble.com
+  external: true
 - text: Workshop
   url: /workshop/
 
