@@ -9,7 +9,7 @@ For the past 15 years, I’ve worked as a designer making brands and interfaces.
 
 Now I'm **head of design** at [Citynews](https://www.citynews.it), a major digital publisher here in Italy.
 
-Back in 2010 I fouded **Robodomain** with my friend [@weppos](https://www.simonecarletti.com), a software company focused on domains management tools. In 2013 **DNSimple** acquired and integrated the software in their product suite. It was such a exciting, difficult but beautiful experience.
+Back in 2010 I fouded **Robodomain** with my friend [@weppos](https://www.simonecarletti.com), a software company focused on domains management tools. In 2013 [DNSimple acquired](https://blog.dnsimple.com/2012/09/dnsimple-acquires-robodomain/) and integrated the software in their product suite. It was such a exciting, difficult but beautiful experience.
 
 Occasionally I write and talk about design methodologies, workflow and tools at conferences and events. I'm lecturer at **UXUniversity** having a [full-day workshop](https://www.uxuniversity.it/11/c_13/design-systems) about **Design Systems and Atomic Design**.
 
