@@ -14,8 +14,9 @@ Back in 2010 I fouded **Robodomain** with my friend [@weppos](https://www.simone
 Occasionally I write and talk about design methodologies, workflow and tools at conferences and events. I'm lecturer at **UXUniversity** having a [full-day workshop](https://www.uxuniversity.it/11/c_13/design-systems) about **Design Systems and Atomic Design**.
 
 ## Talks
-- Design is irrelevant <small>&mdash; Better Software 2011</small>
+- [CSS Custom Properties](https://slides.com/francescoimprota/css-custom-properties) <small>&mdash; CSSDay 2021</small>
 - Atomic design, a problem of expectations <small>&mdash; Better Software 2014</small>
+- Design is irrelevant <small>&mdash; Better Software 2011</small>
 
 ## Books
 - [CSS3 Solutions](https://www.amazon.com/CSS3-Solutions-Essential-Techniques-Developers/dp/1430243376) <small>&mdash; Co-Author</small>
