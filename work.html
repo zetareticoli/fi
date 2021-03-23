@@ -51,6 +51,9 @@ lead: <strong>I like to design experiences on the web</strong>. From user resear
     <a class="card card--{{project.color}}" href="{{project.url}}" rel="external">
       <h4>{{project.title}}</h4>
       <small>{{project.desc}}</small>
+      {% if downloads %}
+      <span class="mono">{{ project.downloads }} downloads</span>
+      {% endif %}
     </a>
   {% endfor %}
 </div>
