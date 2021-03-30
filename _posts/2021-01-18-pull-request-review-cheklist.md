@@ -2,7 +2,7 @@
 layout: post
 title: " My Pull Request Review Checklist"
 sitemap:
-  priority: 0.95
+  priority: 0.85
 ---
 
 Here’s my pull request reviewer checklist. I use it mainly to evaluate  HTML and CSS code. Without a code review checklist, it’s too easy to miss whether it is doing perfectly or not. 
