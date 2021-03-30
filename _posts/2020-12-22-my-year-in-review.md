@@ -2,7 +2,7 @@
 layout: post
 title: "2020, my year in review"
 sitemap:
-  priority: 0.95
+  priority: 0.7
 ---
 This is my first year-in-review post, probably because I'm writing a blog for the very first time. This is that kind of post which nobody cares about except who writes. BUT. I think it's a nice way to rethink and summarize all the things done. 
 
