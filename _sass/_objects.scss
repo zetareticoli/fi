@@ -108,7 +108,8 @@
   padding: .75rem;
   border: none;
 
-  &:focus {
+  &:focus,
+  &:active {
     background: $color-white;
   }
 }
