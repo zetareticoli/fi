@@ -39,3 +39,5 @@ List of books that contributed to my education and had an impact on my way to wo
 - Prototyping: a practioner's guide <small>&mdash; by Todd Zaki Warfled</small>
 - The design of everyday things <small>&mdash; by Donald Norman</small>
 - Design as Art <small>&mdash; by Bruno Munari</small>
+
+{% include box-subscribe.html %}
