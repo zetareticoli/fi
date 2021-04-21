@@ -1,6 +1,9 @@
 ---
 layout: page
-lead: <strong>Design Systems</strong>.Build design language for digital products
+lead: <strong>Workshops</strong>. Coming soon
 ---
 
-Coming soon..
+Subscribe to the newsletter to get updated on workshops availability 👇
+
+{% include box-subscribe.html %}
+
