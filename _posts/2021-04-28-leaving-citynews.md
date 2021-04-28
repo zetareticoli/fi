@@ -1,0 +1,35 @@
+---
+layout: post
+title: "I'm leaving Citynews"
+cover-image: leaving-citynews.jpg
+sitemap:
+  priority: 0.95
+---
+
+After almost 10 years I'm leaving Citynews.
+
+It wasn't an easy choice at all. As my friend Emanuela told me: *"Closing a chapter is hard as starting a new one"*.
+
+My relationship with Citynews started in 2012 as freelance designer. I redesigned their brands websites for the very first time. Then again in 2015 they call me back to implement a responsive design and renew the brand identity for all editorial products.
+
+In April 2016 I permanently joined the company as Head of Design.
+
+Looking back at my time there, I can't believe how much was done. Here are some highlights:
+
+* Directed the **Product Design team** working and training beautiful people that followed (and tolerated!) me over all these years
+* Created a **modern, solid workflow** together with other departments and teams, using new tools and methologies
+* Designed the **Citynews Global Design Language (GDL)**, a Design System dedicated to editorial brands
+* Launched the redesign of both **CMS** and **CRM** tools, internally used by all departments
+* Designed both **iOS** and **Android mobile apps**, (from v1.0.0 to v6.0.0)
+* Developed a **Responsive Design Strategy**, reviewing both frontend and development workflows
+* Released the **new corporate website** in 2018
+* Created a coherent, flexible and scalable **visual identity** for all Citynews brands
+* Designed and developed a **front-end framework** from scratch, using technologies such as Nunjucks, Git, Gulp, Node.js and Fractal
+
+Now that I'm almost 40, this amazing journey at Citynews ends and I'm ready to start a new chapter. In March of 2021, I was presented with an incredible opportunity. So good to my career and family that I couldn’t say no. 
+
+![](/img/posts/leaving-citynews/hcl-brands.jpg)
+
+I'm happy to share that in late May I'll join **HCL Technologies**  -  a global technology company that recently acquired selected IBM Software Products and operates in over 50 countries  -  as **Senior User Experience Designer** to help product owners, software engineers and customers to create and optimize the user experience of products.
+
+It's a huge step for my career. Can't get more excited to start 🔥 🔥 🔥
