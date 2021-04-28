@@ -2,7 +2,8 @@
 layout: post
 
 title: Seejay redesign 
-# cover-image: hipster.jpg
+sitemap:
+  priority: 0.50
 ---
 
 In recent months I have had the opportunity and the pleasure of working for Seejay, an Italian startup founded in 2013 developing a web app dedicated to the user generated content market. Their app allows people to collect, organize and publish images, videos, audio, texts from social networks to build storytelling in real time around any theme or topic.

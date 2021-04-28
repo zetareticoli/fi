@@ -1,7 +1,8 @@
 ---
 layout: post
-
 title: 9 insights from WIAD Rome 2019
+sitemap:
+  priority: 0.50
 ---
 
 February 23, 2019 was the World Information Architecture Day and the theme chosen for this year's edition was Design for Difference.
