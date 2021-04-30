@@ -30,6 +30,6 @@ Now that I'm almost 40, this amazing journey at Citynews ends and I'm ready to s
 
 ![](/img/posts/leaving-citynews/hcl-brands.jpg)
 
-I'm happy to share that in late May I'll join **HCL Technologies**  -  a global technology company that recently [acquired selected IBM Software Products](https://newsroom.ibm.com/2018-12-06-HCL-Technologies-to-Acquire-Select-IBM-Software-Products-for-1-8B) and operates in over 50 countries  -  as **Senior User Experience Designer** to help product owners, software engineers and customers to create and optimize the user experience of products.
+I'm happy to share that in late May I'll join **HCL Technologies**  -  a global technology company that recently <a href="https://newsroom.ibm.com/2018-12-06-HCL-Technologies-to-Acquire-Select-IBM-Software-Products-for-1-8B" target="_blank" rel="nofollow">acquired selected IBM Software Products and operates in over 50 countries</a>  -  as **Senior User Experience Designer** to help product owners, software engineers and customers to create and optimize the user experience of products.
 
 It’s a huge step for my career and I’m really thrilled to start 🔥🔥🔥
