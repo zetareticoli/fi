@@ -5,9 +5,9 @@ lead: I'm a designer with a love for mountains, astronomy and code.
 
 <img class="vertical" src="/img/francesco-improta.jpg" alt="Francesco Improta">
 
-For the past 15 years, I’ve worked as a designer making brands and interfaces. I have had the pleasure of collaborating for companies like Doralab, Inarea, Shinyfrog, Comtaste, Seejay (and more) following clients such **Ferrari**, **Enel**, **ING Direct**, **Noema Life**, **Dondup**.
+For the past 15 years, I’ve worked as product designer . I have had the pleasure of collaborating for companies like Citynews, Doralab, Inarea, Shinyfrog, Comtaste, Seejay (and more) following clients such **Ferrari**, **Enel**, **ING Direct**, **Noema Life**, **Dondup**.
 
-Now I'm **head of design** at [Citynews](https://www.citynews.it), a major digital publisher here in Italy.
+In 2021 I've joined [HCL Technologies](https://www.hcltech.com) as **Senior UX Designer**.
 
 Back in 2010 I fouded **Robodomain** with my friend [@weppos](https://www.simonecarletti.com), a software company focused on domains management tools. In 2013 [DNSimple acquired](https://blog.dnsimple.com/2012/09/dnsimple-acquires-robodomain/) and integrated the software in their product suite. It was such a exciting, difficult but beautiful experience.
 
