@@ -4,6 +4,7 @@ title: Blog
 lead: <strong>Thoughts about design, front-end</strong> and other interesting things
 ---
 
+{% include box-subscribe.html %}
 
 {% for post in site.posts %}
 
@@ -29,13 +30,13 @@ lead: <strong>Thoughts about design, front-end</strong> and other interesting th
       {{ post.date | date: site.date_format }} • {{ read-time }}
     </span>
 
-      <!-- <p>
-      {% if post.summary %}
-        {{ post.summary }}&nbsp;<a class="read-more" href="{{ post.url | prepend: site.baseurl }}">{{ site.var_read }}  →</a>
-      {% else %}
-        {{ post.excerpt | remove: '<p>' | remove: '</p>' }}&nbsp;<a class="read-more" href="{{ post.url | prepend: site.baseurl }}">{{ site.var_read }}  →</a>
-      {% endif %}
-      </p> -->
+    <!-- <p>
+    {% if post.summary %}
+      {{ post.summary }}&nbsp;<a class="read-more" href="{{ post.url | prepend: site.baseurl }}">{{ site.var_read }}  →</a>
+    {% else %}
+      {{ post.excerpt | remove: '<p>' | remove: '</p>' }}&nbsp;<a class="read-more" href="{{ post.url | prepend: site.baseurl }}">{{ site.var_read }}  →</a>
+    {% endif %}
+    </p> -->
 
   </article>
 {% endfor %}
@@ -43,3 +44,4 @@ lead: <strong>Thoughts about design, front-end</strong> and other interesting th
 {% if paginator.previous_page or paginator.next_page %}
   {% include pagination.html %}
 {% endif %}
+

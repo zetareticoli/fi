@@ -100,16 +100,40 @@
   }
 }
 
-.button {
-  background-color: $color-accent;
-  color: $color-white;
-  text-align: center;
-  padding: 8px 32px;
-  border-radius: 3px;
-  font-weight: 700;
-  
-  &:hover {
-    text-decoration: none;
-    background-color: lighten($color-accent, 5%);
+// Subscribe Form
+
+.subscribe {
+  &-control {
+    display: flex;
+    flex-flow: column;
+
+    @media screen and (min-width: 768px) {
+      flex-flow: row; 
+    }
   }
+  
+  .input,
+  .button {
+    width: 100%;
+  }
+
+  .input {
+    margin-bottom: .75rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    .input {
+      width: 70%;
+      margin-bottom: 0;
+      margin-right: .75rem;
+    }
+
+    .button {
+      width: 30%;
+    }
+  }
+}
+
+.post img {
+  margin: 2rem 0;
 }

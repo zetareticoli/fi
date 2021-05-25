@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Design tokens for front-end dev
+sitemap:
+  priority: 0.90
 ---
 
 Design tokens are the essential elements of an interface. Salesforce calls them the Single Source of Truth to be used for all their products. In the Atomic Design methodology they are called atoms, or the building blocks at the base of more complex elements such as molecules and organisms.

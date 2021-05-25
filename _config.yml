@@ -106,6 +106,7 @@ projects:
   desc: A responsive typography library
   url: https://www.github.com/zetareticoli/typesmith
   color: orange
+  downloads: 200
 - title: Superilles
   desc: Grid system with CSS Grid
   url: https://www.github.com/zetareticoli/superilles
@@ -114,6 +115,7 @@ projects:
   desc: A simple media query library for Sass
   url: https://www.github.com/zetareticoli/mq
   color: purple
+  downloads: 56
 - title: UIKit Starter kit
   desc: UI Design Kit template for Sketch
   url: https://www.github.com/zetareticoli/uikit-starter

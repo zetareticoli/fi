@@ -2,7 +2,7 @@
 layout: post
 title: "Dark/Light Mode Toggle: a Usability Issue"
 sitemap:
-  priority: 0.9
+  priority: 0.95
 ---
 
 Most of the solutions adopted for the toggle light / dark mode suffer a **usability problem**. The **status** of the toggle does not represent the current one of the interface, visible by the user. Too much minimalism isn't always a good solution in UI Design.

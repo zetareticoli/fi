@@ -3,7 +3,7 @@ layout: post
 title: Dark Mode with Sass and CSS variables
 description: How to implement dark mode on a website using Sass and CSS variables 
 sitemap:
-  priority: 0.75
+  priority: 0.90
 ---
 
 Implementing dark mode with Sass is hard because it is a preprocessor language. Any changes implies a new generating process and a page refresh. Therefore it is impossible to switch from light to dark - or the way around - in real time.

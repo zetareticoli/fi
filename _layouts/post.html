@@ -9,7 +9,7 @@ layout: default
   {% assign read-time = minutes | append: "&nbsp;" | append: site.var_min_read %}
 {% endif %}
 
-<article class="box">
+<article class="box post">
 	<h1>{{ page.title }}</h1>
   
   <p class="caption">{{ page.date | date: site.date_format }} • {{ read-time }}</p>
@@ -31,9 +31,8 @@ layout: default
   {% endif %}
 
   <hr>
-
-  {% include box-rss.html %}
-
+  
+  {% include box-subscribe.html %}
 
   <!-- <div class="text-center">
     <p>
@@ -44,8 +43,6 @@ layout: default
     Share on Twitter</a>
     </p>
   </div> -->
-  
-  <hr>
 
   {% if site.display-next-prev-post and page.previous.url or site.display-next-prev-post and page.next.url %}
     <div class="pagination">
