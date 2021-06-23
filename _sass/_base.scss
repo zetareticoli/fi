@@ -142,11 +142,11 @@ tfoot {
 blockquote {
   margin-right: 0;
   margin-left: 0;
-  padding: 2rem 1.5rem;
+  padding: 1.5rem 1.5rem;
   background-color: $color-darker;
-  box-shadow: inset 4px 0 0 $ui-border;
+  box-shadow: inset 4px 0 0 $color-accent;
   color: $color-white;
-  font-size: $type-large;
+  font-size: $type-medium;
   font-style: italic;
 }
 

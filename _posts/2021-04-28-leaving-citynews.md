@@ -3,7 +3,7 @@ layout: post
 title: "I'm leaving Citynews"
 cover-image: leaving-citynews.jpg
 sitemap:
-  priority: 0.95
+  priority: 0.85
 ---
 
 After almost 10 years I'm leaving Citynews.
