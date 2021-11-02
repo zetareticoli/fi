@@ -58,4 +58,13 @@ layout: default
       </div>
     </div>
   {% endif %}
+
+  {% if page.related %}
+    <ul>
+      <li>
+        <a href="#">{{page.related.item}}</a>
+      </li>
+    </ul>  
+  {% endif %}
+
 </article>

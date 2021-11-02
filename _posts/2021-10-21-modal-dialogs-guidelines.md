@@ -2,7 +2,7 @@
 layout: post
 title: "Better Modal Dialog Design In 4 Steps"
 sitemap:
-  priority: 0.9
+  priority: 0.8
 ---
  
 Modal dialog has become a very common component thanks to the spread of libraries/frameworks such as jQueryUI, Bootstrap, Foundation and so on.
