@@ -1,0 +1,45 @@
+{
+  "light": {
+    "background": {
+      "value": "{colors.White.value}",
+      "type": "color",
+      "description": "Default background"
+    },
+    "text": {
+      "value": "{colors.CoolGray900.value}",
+      "type": "color"
+    },
+    "text-weak": {
+      "value": "{colors.CoolGray500.value}",
+      "type": "color"
+    },
+    "text-light": {
+      "value": "{colors.CoolGray400.value}",
+      "type": "color"
+    },
+    "background-strong": {
+      "value": "{colors.Black.value}",
+      "type": "color"
+    },
+    "background-light": {
+      "value": "{colors.CoolGray100.value}",
+      "type": "color"
+    },
+    "border": {
+      "value": "{colors.CoolGray200.value}",
+      "type": "color"
+    },
+    "state-active": {
+      "value": "{colors.Orange700.value}",
+      "type": "color"
+    },
+    "state-hover": {
+      "value": "{colors.Orange500.value}",
+      "type": "color"
+    },
+    "text-primary": {
+      "value": "{colors.Orange600.value}",
+      "type": "color"
+    }
+  }
+}
