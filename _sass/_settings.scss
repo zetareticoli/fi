@@ -23,3 +23,110 @@ $spacing-xsmall: 2.5vw;
 
 $font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $font: 'Inter', $font-stack;
+
+// -------------------------------------------//
+// NEW DESIGN TOKENS
+
+// Do not edit directly
+// Generated on Fri, 10 Dec 2021 12:58:38 GMT
+
+$baseline: 4px;
+$space-s: 12px;
+$space-base: 16px;
+$space-m: 24px;
+$space-l: 32px;
+$space-xl: 48px;
+$space-xxl: 80px;
+$color-orange600: #ea580c;
+$color-orange700: #c2410c;
+$color-orange500: #f97316;
+$color-cool-gray900: #111827;
+$color-cool-gray800: #1f2937;
+$color-cool-gray500: #6b7280;
+$color-cool-gray400: #9ca3af;
+$color-cool-gray200: #e5e7eb;
+$color-cool-gray100: #f3f4f6;
+$color-black: #080b12;
+$color-white: #ffffff;
+$radius-smooth-corner: 8px;
+$font-sans: Inter, Helvetica, Arial, sans-serif;
+$font-weights-inter-0: 400;
+$font-weights-inter-1: 600;
+$font-weights-inter-2: 700;
+$font-01: 12px;
+$font-02: 16px;
+$font-03: 18px;
+$font-04: 20px;
+$font-05: 21px;
+$font-06: 24px;
+$font-07: 32px;
+$font-08: 44px;
+$lineheight-none: 1;
+$lineheight-auto: calc(1 + $baseline);
+$lineheight-relaxed: 1.5;
+$lineheight-double: calc($lineheight-auto * 2);
+$letter-spacing-tracking-normal: 0;
+$letter-spacing-tracking-narrow: -1;
+$letter-spacing-tracking-tight: -0.5;
+$paragraph-spacing-1: $space-s;
+$paragraph-spacing-2: $space-m;
+$paragraph-spacing-3: $space-l;
+
+/**
+ * Do not edit directly
+ * Generated on Fri, 10 Dec 2021 12:58:38 GMT
+ */
+
+:root {
+  --baseline: 4px;
+  --space-s: 12px;
+  --space-base: 16px;
+  --space-m: 24px;
+  --space-l: 32px;
+  --space-xl: 48px;
+  --space-xxl: 80px;
+  --colors-orange600: #ea580c;
+  --colors-orange700: #c2410c;
+  --colors-orange500: #f97316;
+  --colors-cool-gray900: #111827;
+  --colors-cool-gray800: #1f2937;
+  --colors-cool-gray500: #6b7280;
+  --colors-cool-gray400: #9ca3af;
+  --colors-cool-gray200: #e5e7eb;
+  --colors-cool-gray100: #f3f4f6;
+  --colors-black: #080b12;
+  --colors-white: #ffffff;
+  --radius-smooth-corner: 8px;
+  --font-sans: Inter, Helvetica, Arial, sans-serif;
+  --font-regular: 400;
+  --font-medium: 600;
+  --font-bold: 700;
+  --font-01: 12px;
+  --font-02: 16px;
+  --font-03: 18px;
+  --font-04: 20px;
+  --font-05: 21px;
+  --font-06: 24px;
+  --font-07: 32px;
+  --font-08: 44px;
+  --lineheight-none: 1;
+  --lineheight-auto: 1 + var(--baseline);
+  --lineheight-relaxed: 1.5;
+  --lineheight-double: calc(var(--lineheight-auto) * 2);
+  --letter-spacing-tracking-normal: 0;
+  --letter-spacing-tracking-narrow: -1;
+  --letter-spacing-tracking-tight: -0.5;
+  --paragraph-spacing-1: var(--spacing-space-s);
+  --paragraph-spacing-2: var(--spacing-space-m);
+  --paragraph-spacing-3: var(--spacing-space-l);
+  --text: var(--colors-cool-gray800);
+  --text-weak: var(--colors-cool-gray500);
+  --text-light: var(--colors-cool-gray400);
+  --text-primary: var(--colors-orange600);
+  --background: var(--colors-white);
+  --background-strong: var(--colors-black);
+  --background-light: var(--colors-cool-gray100);
+  --border: var(--colors-cool-gray200);
+  --state-hover: var(--colors-orange500);
+  --state-active: var(--colors-orange700);
+}
