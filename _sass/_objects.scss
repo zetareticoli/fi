@@ -33,14 +33,6 @@
 
 // Typography
 
-.lead {
-  margin-bottom: 1.5rem;
-  font-size: $type-medium;
-  @media screen and (min-width: 768px) {
-    font-size: 1.5rem;
-  }
-}
-
 .mono {
   font-family: monospace;
   font-size: .75rem;
@@ -51,10 +43,10 @@
   font-size: $type-medium;
 }
 
-.caption {
-  color: $text-02;
-  font-size: $type-xsmall;
-}
+// .caption {
+//   color: $text-02;
+//   font-size: $type-xsmall;
+// }
 
 .link-alt {
   color: rgba($color-white, 75%);
