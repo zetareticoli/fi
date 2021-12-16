@@ -1,0 +1,34 @@
+// Navigation
+
+.nav {
+  @media screen and (min-width: 768px) {
+    width: 33%;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    color: var(--text-primary); 
+    @media screen and (min-width: 768px) {
+      text-align: right;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+    
+    &:hover,
+    &.active {
+      border-bottom: 1px solid rgba($color-white, .75);
+    }
+
+    &.active {
+      font-weight: 700;
+      color: $color-white;
+      border-bottom: 1px solid $color-accent;
+    }
+  }
+}
