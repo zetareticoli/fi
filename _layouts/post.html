@@ -16,6 +16,9 @@ layout: default
 
   {% if page.cover-image %}
     <img class="mb-xsmall" alt="{{ page.cover-alt }}" title="{{ page.cover-title }}" src="{{ site.baseurl }}/img/covers/{{ page.cover-image }}">
+    {% if page.cover-caption %}
+      <p><small class="caption">{{ page.cover-caption}}</small></p>
+    {% endif %}
 	{% endif %}
 
   {{ content }}
