@@ -89,31 +89,14 @@
 
 .input {
   background: rgba($color-white, 0.04);
-  border-radius: 4px;
-  font-weight: 500;
-  font-size: $type-small;
+  border-radius: var(--radius-smooth-corner);
+  font-weight: var(--font-medium);
+  font-size: var(--font-02);
   padding: .75rem;
   border: none;
 
   &:focus,
   &:active {
     background: $color-white;
-  }
-}
-
-.button {
-  background-color: $color-accent;
-  color: $color-white;
-  text-align: center;
-  padding: .75rem 2rem;
-  border-radius: 3px;
-  border: none;
-  cursor: pointer;
-  font-size: $type-small;
-  font-weight: 700;
-  
-  &:hover {
-    text-decoration: none;
-    background-color: lighten($color-accent, 5%);
   }
 }
