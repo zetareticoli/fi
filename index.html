@@ -3,32 +3,58 @@ layout: default
 home: true
 ---
 
+<h1 class="headline-default">Hi, I'm Francesco.</h1>
+
 <p class="lead">
-  <strong>Francesco improta</strong> is a product designer working at <a href="https://www.hcltechsw.com/" target="blank">HCL Technologies</a> as Senior UX Designer.
-  Former Head of Design at <a href="http://www.citynews.it" target="blank">Citynews</a>, he co-founded and designed <a href="https://blog.dnsimple.com/2012/09/dnsimple-acquires-robodomain/" target="blank" >Robodomain</a>. 
-  Based in Rome, Italy, he’s dad of two in the real life.
+  I’m a Product Designer based in Rome, Italy. I design <a href="/work" target="_self">digital products</a>, share my experience on the <a href="/blog">blog</a>, run a <a href="https://www.designabile.com" target="_blank">newsletter</a> and build <a href="https://github.com/zetareticoli?tab=repositories" target="_blank">open-source projects</a>. 
 </p>
 
-<p>
-  My work focuses on building thoughtful, intuitive and delightful experiences for the web, 
-  with a devotion to process, transparency, and sharing what I learn.
+<p class="lead">
+  In the past I co-founded a SaaS company and run a design studio. In the real life, I’m a dad of two.
 </p>
 
 <img class="cover full-width" src="/img/cover.jpg" alt="Francesco Improta">
 
-<section class="box divider">
-  <h2><a href="/work" target="_self">Design + Code</a></h2>
-  <p class="lead u-m-0">
-    From responsive design strategy and front-end architectures to design systems, I design and code 
-    beautiful experiences on the web and beyond.
-  </p>
+<section class="box">
+  <h2 class="headline-default">Selected Projects</h2>
+  <div class="flex">
+    <article>
+      <h3>Seejay</h3>
+    </article>
+    <article>
+      <h3>Citynews</h3>
+    </article>
+  </div>
 </section>
 
 <section class="box">
-  <h2><a href="/blog" target="_self">Blog</a></h2>
-  <p class="lead u-m-0">
-    Thoughts about design, front-end and other interesting things about the web and beyond.
-  </p>
+  <h2 class="headline-default">Recent Writing</h2>
+  {% for post in site.posts limit:3 %}
+
+    {% assign minutes = post.content | number_of_words | divided_by: 180 %}
+    {% if minutes == 0 %}
+      {% assign read-time = site.var_less_than_a_minute_read %}
+    {% else %}
+      {% assign read-time = minutes | append: "&nbsp;" | append: site.var_min_read %}
+    {% endif %}
+
+    <article class="story">
+    	<h1 class="story__title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
+      <span class="caption">
+        {% if site.display-author-front-page %}
+          {% if post.author.name %}
+            {{ post.author.name }} •
+          {% else %}
+            {% if site.author.name %}
+              {{ site.author.name }} •
+            {% endif %}
+          {% endif %}
+        {% endif %}
+        {{ post.date | date: site.date_format }} • {{ read-time }}
+      </span>
+
+    </article>
+  {% endfor %}
 </section>
 
   {% include box-subscribe.html %}
