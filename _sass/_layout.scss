@@ -16,18 +16,3 @@
   max-width: var(--inner-size);
   margin: 0 auto;
 }
-
-.header {
-  display: flex;
-  flex-flow: column;
-  margin: var(--spacing-stack-m) 0 var(--spacing-stack-xl);
-
-  @media screen and (min-width: 768px) {
-    flex-flow: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: var(--spacing-stack-xxl);
-  }
-}
-
-
