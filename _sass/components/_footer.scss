@@ -1,0 +1,23 @@
+.footer {
+  width: 100%;
+  background: var(--background-strong);
+  padding: var(--spacing-inset-m);
+
+  &__inner {
+    display: flex;
+    flex-flow: column;
+  
+    @media screen and (min-width: 768px) {
+      flex-flow: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__colophon {
+  width: 100%;
+
+    @media screen and (min-width: 768px) {
+      width: 50%;
+    }
+  }
+}
