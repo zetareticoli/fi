@@ -13,3 +13,22 @@
 .u-ml-xs {
   margin-left: $spacing-xsmall;
 }
+
+.mr-s {
+  margin-right: var(--spacing-inline-s);
+}
+
+.ml-s {
+  margin-left: var(--spacing-inline-s);
+}
+
+.mb-s {
+  margin-bottom: var(--spacing-stack-s);
+}
+
+.stack {
+  margin-bottom: var(--spacing-stack-xl);
+  @media screen and (min-width: 768px) {
+    margin-bottom: var(--spacing-stack-xxl);
+  }
+}

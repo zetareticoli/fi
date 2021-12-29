@@ -9,7 +9,7 @@ layout: default
   {% assign read-time = minutes | append: "&nbsp;" | append: site.var_min_read %}
 {% endif %}
 
-<article class="box post">
+<article class="post stack">
 	<h1>{{ page.title }}</h1>
   
   <p class="caption">{{ page.date | date: site.date_format }} • {{ read-time }}</p>

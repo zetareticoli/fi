@@ -1,26 +1,5 @@
 // Blocks
 
-.box {
-  padding-bottom: 10vw;
-  @media screen and (min-width: 768px) {
-    padding-bottom: 5vw;
-  }
-
-  & + & {
-    padding-top: 10vw;
-    @media screen and (min-width: 768px) {
-      padding-top: 5vw;
-    }
-  }
-}
-
-.cover {
-  margin: 10vw 0;
-  @media screen and (min-width: 768px) {
-    margin: 5vw 0;
-  }
-}
-
 .vertical {
   @media screen and (min-width: 768px) {
     max-width: 40%;
@@ -29,7 +8,6 @@
     margin-bottom: $spacing-xsmall;
   }
 }
-
 
 // Typography
 
