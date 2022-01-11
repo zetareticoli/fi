@@ -1,0 +1,6 @@
+.spacing-sections {
+  margin-bottom: var(--spacing-stack-xl);
+  @media screen and (min-width: 768px) {
+    margin-bottom: var(--spacing-stack-xxl);
+  }
+}
