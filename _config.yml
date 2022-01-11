@@ -54,19 +54,6 @@ theme-color-attr: "#00f0ff"
 # Color of Microsoft live Tile.
 ms-tile-color: "#00f0ff"
 
-# Color used throughout the theme. Format: R, G, B.
-theme-color: 0, 240, 255 # Original: 0, 240, 255
-
-# Text color used throughout the theme. Format: R, G, B.
-text-color: 0, 0, 0 # Original: 0, 0, 0
-
-# Background color used throughout the theme. Format: R, G, B.
-# Note: if you change the background color AND you use cover images, you should
-#       also change the CSS gradient in "_includes\gradient.css" to match the
-#       background color. Edit and copy it from here:
-#       http://www.colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100
-background-color: 255, 255, 255 # Original: 255, 255, 255
-
 display-author-post-page: false
 display-author-front-page: false
 
@@ -94,33 +81,9 @@ navigation:
   url: /blog/
 - text: Work
   url: /work/
-- text: Portfolio
-  url: http://zetareticoli.dribbble.com
-  external: true
 - text: Workshop
   url: /workshop/
 
-
-projects:
-- title: Typesmith
-  desc: A responsive typography library
-  url: https://www.github.com/zetareticoli/typesmith
-  color: orange
-  downloads: 200
-- title: Superilles
-  desc: Grid system with CSS Grid
-  url: https://www.github.com/zetareticoli/superilles
-  color: teal
-- title: Sass MQ
-  desc: A simple media query library for Sass
-  url: https://www.github.com/zetareticoli/mq
-  color: purple
-  downloads: 56
-- title: UIKit Starter kit
-  desc: UI Design Kit template for Sketch
-  url: https://www.github.com/zetareticoli/uikit-starter
-  color: blue
-  
 #####################
 # SOCIAL #
 #####################
