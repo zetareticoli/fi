@@ -1,72 +1,58 @@
 ---
 layout: page
-lead: <strong>I like to design experiences on the web</strong>. From user research to visual design, to project management, to production-level frontend design work, I do this job with commitment and passion.
+headline: I design digital products for the web.
+lead: I’m a multisciplinary designer focused on building thoughtful, intuitive and delightful experiences for digital products. From SaaS software to mobile/web applications, I specialize in Design Systems, Interaction Design, Product Design and Front-end.
 ---
 
-<p>
-  Working on the web gives me the opportunity to deal with many technologies every day. 
-  It's one of the perks of it. Our work as digital designers is strongly influenced by technologies that we use.  
-</p>
+<h2 class="heading-default">Selected Projects</h2>
 
-<p>
-  Over the years I have developed a remarkable skill in the design of digital publishing products. 
-  I like working with news because I think they're the most precious resource on the web. 
-  I followed projects for major publishing groups in Italy as GEDI, Netaddiction and Citynews.
-</p>
-
-<h5>Capabilities</h5>
-
-<ul class="list-none space">
-  <li class="divider">
-    <p class="featured">
-      Product Design
-    </p>
-  </p>
-  <li class="divider">
-    <p class="featured">
-      Project Management
-    </p>
+<h5 class="caption">Past Projects</h5>
+<ul>
+{% for client in site.data.clients %}
+  <li class="flex">
+    <span>{{client.year}}</span>
+    <h3>{{client.title}}</h3>
+    <p>{{client.desc}}</p>
   </li>
-  <li class="divider">
-    <p class="featured">Design Systems</p>
-  </li>
-  <li class="divider"> 
-    <p class="featured">Front-end architecture &amp; implementation</p>
-  </li>
-  <li class="divider">
-    <p class="featured">
-      Responsive design strategy
-    </p>
-  </li>
-  <li>
-    <p class="featured">
-      Pattern libraries &amp; Style guides
-    </p>
-  </li>
+{% endfor %}
 </ul>
 
-<h2>Open source projects</h2> 
-<div class="list-card space">
-  {% for project in site.projects %}
-    <a class="card card--{{project.color}}" href="{{project.url}}" rel="external">
-      <h4>{{project.title}}</h4>
-      <small>{{project.desc}}</small>
-      {% if project.downloads %}
-      <p class="mono u-m-0">{{project.downloads}} downloads</p>
-      {% endif %}
-    </a>
-  {% endfor %}
-</div>
 
-<h2>Experiments</h2>
-<p>
-  Usually I test ideas and solutions on CodePen, sharing my knowledge and code.
-  Here you can find some HTML & CSS solutions
-</p>
+<h2>Personal Projects</h2>
+<ul>
+  {% for project in site.data.side %}
+    <li class="flex">
+      <a href="{{project.url}}">
+        <h3>{{project.title}}</h3>
+        <p>{{project.desc}}</p>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+<h2 class="headline-default">Over 15 years of experience</h2>
+<p>I’ve been lucky enough to establish relationships with amazing companies, ranging from individual clients, through up-and-coming startups, to multinational companies. For more details, head over to my LinkedIn profile.</p>
+
+<h5 class="caption">Expertise</h5>
 <ul class="list-none">
-  <li><a href="https://codepen.io/zetareticoli/pen/MROMZE" rel="external">Dark mode switch</a></li>
-  <li><a href="https://codepen.io/zetareticoli/pen/GaXXQa" rel="external">CSS Grid Layout</a></li>
-  <li><a href="https://codepen.io/zetareticoli/pen/RwNLPEN" rel="external">Typography Sass map</a></li>
+  <li>❖️ Plan and Build a Design System from scratch</li>
+  <li>❖️ Explore and Iterate ideas through advanced, interactive prototypes</li>
+  <li>❖️ Adopt a Responsive Design Strategy for digital products on the web</li>
+  <li>❖️ Document Interfaces with Styleguides, Pattern Libraries, Design Language</li>
+  <li>❖️ Define the front-end architecture and implementation</li>
+  <li>❖️ Lead multidisciplinary teams in a Lean, Agile, Scrum processes</li>
+</ul>
+
+<h2>Certifications</h2>
+<ul class="list-none">
+  {% for course in site.data.certifications %}
+    <li>
+      <img src="{{course.certificate}}" alt="{{course.title}} Certificate" title="{{course.title}} Certificate">
+      <h3>{{course.title}}</h3>
+      <small>{{course.school}}</small>
+      <small>{{course.year}}</small>
+    </li>
+  {% endfor %}
 </ul>
 
 {% include box-subscribe.html %}
