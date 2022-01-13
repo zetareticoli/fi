@@ -36,16 +36,6 @@ img + em {
   text-align: center;
 }
 
-a {
-  position: relative;
-  color: var(--text-primary);
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
 ul,
 ol {
   margin: var(--spacing-stack-l) auto;
