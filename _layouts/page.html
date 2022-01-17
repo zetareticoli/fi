@@ -1,12 +1,15 @@
 ---
 layout: default
 ---
-{% if page.headline %}
-	<h1 class="headline-default">{{ page.headline }}</h1>
-{% endif %}
 
-{% if page.lead %}
-	<p class="lead">{{ page.lead }}</p>
-{% endif %}
+<section class="spacing-sections">
+	{% if page.headline %}
+		<h1 class="headline-default">{{ page.headline }}</h1>
+	{% endif %}
+
+	{% if page.lead %}
+		<p class="lead">{{ page.lead }}</p>
+	{% endif %}
+</section>
 
 {{ content }}
