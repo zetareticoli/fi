@@ -1,8 +1,8 @@
 <nav class="nav">
-  <ul class="nav__list flex space-between u-m-0 list-none">
+  <ul class="nav__list flex space-between m-none list-none">
   {% for nav in site.navigation %}
 
-    <li class="u-m-0">
+    <li class="m-none">
       <a class="nav__item text-emphasis {% if nav.url == page.url %}active{% endif %}" href="{{ nav.url }}" {% if nav.external %}target="_blank"{% endif %}>{{ nav.text }}</a>
     </li>
   {% endfor %}

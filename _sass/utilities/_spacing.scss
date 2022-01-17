@@ -1,7 +1,3 @@
-.u-m-0 {
-  margin: 0;
-}
-
 .u-mr-xs {
   margin-right: $spacing-xsmall;
 }
@@ -15,6 +11,10 @@
 }
 
 // Margin
+
+.m-none {
+  margin: 0;
+}
 
 .mr-s {
   margin-right: var(--spacing-inline-s);
