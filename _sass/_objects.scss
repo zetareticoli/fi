@@ -6,25 +6,8 @@
   font-weight: bold;
 }
 
-.featured {
-  font-size: $type-medium;
-}
-
-// .caption {
-//   color: $text-02;
-//   font-size: $type-xsmall;
-// }
-
 .link-alt {
   color: rgba($color-white, 75%);
-}
-
-.link-inverse {
-  color: $color-white;
-  transition: color .2s ease;
-  &:hover {
-    color: $color-accent;
-  }
 }
 
 // Icons
@@ -37,8 +20,6 @@
   stroke: currentColor;
   fill: currentColor;
 }
-
-
 
 .rss {
   padding: 16px;
