@@ -1,0 +1,10 @@
+// Media
+
+.inner-media {
+  @media screen and (min-width: 768px) {
+    max-width: 40%;
+    float: right;
+    margin-left: var(--spacing-inline-m);
+    margin-bottom: var(--spacing-stack-m);
+  }
+}
