@@ -1,0 +1,19 @@
+{% assign minutes = post.content | number_of_words | divided_by: 180 %}
+
+{% if minutes == 0 %}
+  {% assign read-time = site.var_less_than_a_minute_read %}
+{% else %}
+  {% assign read-time = minutes | append: "&nbsp;" | append: site.var_min_read %}
+{% endif %}
+
+<article class="list-posts flex">
+  <span class="list-posts__date text-tiny color-text-weak uppercase mb-s">
+    {{ post.date | date: site.date_format }}
+  </span>
+	<h1 class="list-posts__title headline-secondary mb-s">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+      {{ post.title }}
+    </a>
+  </h1>
+  <span class="list-posts__read text-tiny color-text-light mb-s">{{ read-time }}</span>
+</article>
