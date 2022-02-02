@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Documenting Patterns - A designer's job "
+title: "Documenting Patterns is a Designer's Job "
 cover-image: documenting-patterns.jpg 
 sitemap:
   priority: 0.95
