@@ -5,23 +5,12 @@
 </head>
 <body class="page">
 	<div class="wrapper">
-	{% include header.html %}
-	<main>
-		<div class="inner">
-			{{ content }}
-		</div>
-	</main>
-	<!-- <script>
-		$("article").fitVids();
-		$('article p').each(function(i){
-			if (($(this).find('img').length) && (!$.trim($(this).text()).length))  {
-				$(this).addClass('img-only');
-			}
-			if ($.trim($(this).text()).length - $.trim($(this).find('small').text()).length == 0 && ($(this).find('img').length)){
-				$(this).addClass('img-only-source');
-			}
-		});
-	</script> -->
+		{% include header.html %}
+		<main>
+			<div class="{% if layout.inner %}inner-small{% else %}inner{% endif %}">
+				{{ content }}
+			</div>
+		</main>
 	</div>
 	{% include footer.html %}
 
