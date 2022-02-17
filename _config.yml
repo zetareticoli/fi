@@ -15,11 +15,8 @@ author:
 
   # Necessary for contact page
   email: francesco@designabile.com
-
-  # Optional text (html) to display after author name. Leave empty if you don't
-  # want it.
-  info:
-
+  twitter: zetareticoli
+ 
 url: http://francescoimprota.com
 baseurl: ""
 

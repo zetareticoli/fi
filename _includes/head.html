@@ -24,6 +24,20 @@
 <meta name="msapplication-TileImage" content="{{ site.baseurl }}/mstile-310x310.png">
 <!-- /icons -->
 
+<!-- twitter cards -->
+<meta name="twitter:creator" content="@{{ site.author.twitter }}">
+<meta name="twitter:title" content="{{ page.title }}">
+{% if page.summary %}
+  <meta name="twitter:description" content="{{ page.summary }}">
+{% else %}
+  <meta name="twitter:description" content="{{ site.description.subtitle }}">
+{% endif %}
+{% if page.cover-image %}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="{{ page.cover-image }}">
+{% endif %}
+<!-- /twitter cards -->
+
 <!-- og tags -->
 <meta property="og:site_name" content="{{ site.name }}">
 <meta property="og:title" content="{% if page.title %}{{ page.title }} • {{ site.name }}{% else %}{{ site.name }}{% endif %}">
