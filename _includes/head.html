@@ -46,6 +46,7 @@
   <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/img/{{ page.og-image }}">
 {% else %}
   {% if page.cover-image %}
+    <meta name="twitter:card" content="summary_large_image">
     <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/img/covers/{{ page.cover-image }}">
   {% else %}
     <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/img/og-image.jpg">
