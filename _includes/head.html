@@ -24,7 +24,7 @@
 <meta name="msapplication-TileImage" content="{{ site.baseurl }}/mstile-310x310.png">
 <!-- /icons -->
 
-<!-- twitter cards -->
+<!-- twitter cards 
 <meta name="twitter:creator" content="@{{ site.author.twitter }}">
 <meta name="twitter:title" content="{{ page.title }}">
 {% if page.summary %}
@@ -46,14 +46,18 @@
   <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/img/{{ page.og-image }}">
 {% else %}
   {% if page.cover-image %}
-    <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/img/{{ page.cover-image }}">
+    <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/img/covers/{{ page.cover-image }}">
   {% else %}
     <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/img/og-image.jpg">
   {% endif %}
 {% endif %}
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
-<meta property="og:description" content="">
+{% if page.summary %}
+  <meta name="og:description" content="{{ page.summary }}">
+  {% else %}
+  <meta name="og:description" content="{{ site.description.subtitle }}">
+{% endif %}
 <!-- /og tags -->
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
