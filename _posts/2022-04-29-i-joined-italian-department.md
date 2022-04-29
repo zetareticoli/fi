@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "I joined the Italian Digital Transformation Team"
-cover-image: it-designers-italia-logo.png
+cover-image: italian-department-digital-transformation-logo
 sitemap:
   priority: 0.95
 ---
