@@ -4,18 +4,23 @@ headline: I design digital products for the web.
 lead: I’m a multisciplinary designer focused on building thoughtful, intuitive and delightful experiences for digital products. From SaaS software to mobile/web applications, I specialize in Design Systems, Interaction Design, Product Design and Front-end.
 ---
 
-<h2 class="heading-default">Selected Projects</h2>
+<section class="spacing-sections">
+  <h2 class="heading-default">Selected Projects</h2>
 
-<h5 class="caption">Past Projects</h5>
-<ul>
-{% for client in site.data.clients %}
-  <li class="flex">
-    <span>{{client.year}}</span>
-    <h3>{{client.title}}</h3>
-    <p>{{client.desc}}</p>
-  </li>
-{% endfor %}
-</ul>
+</section>
+
+<section class="spacing-sections">
+  <h5 class="caption">Past Projects</h5>
+  <ul class="content-list m-none">
+  {% for client in site.data.clients %}
+    <li class="content-list__item flex">
+      <span class="content-list__year text-small color-text-weak mb-s">{{client.year}}</span>
+      <h3 class="content-list__title headline-tertiary mb-s">{{client.title}}</h3>
+      <p class="content-list__desc mb-s">{{client.desc}}</p>
+    </li>
+  {% endfor %}
+  </ul>
+</section>
 
 
 <h2>Personal Projects</h2>
@@ -44,7 +49,7 @@ lead: I’m a multisciplinary designer focused on building thoughtful, intuitive
 </ul>
 
 <h2 class="heading-default">Certifications</h2>
-<ul class="list-none">
+<ul class="content-list">
   {% for course in site.data.certifications %}
     <li>
       <img src="{{course.certificate}}" alt="{{course.title}} Certificate" title="{{course.title}} Certificate">

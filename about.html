@@ -25,15 +25,16 @@ lead: When not busy at work I love cycling, hiking in the Dolomites and playing 
 
 <section class="spacing-sections">
   <h2 class="headline-default">Speaking</h2>
+  <ul class="content-list m-none">
   {% for talk in site.data.talks %}
-    <ul>
-      <li class="flex">
-        <span>{{talk.year}}</span>
-        <h3>{{talk.conf}}</h3>
-        <h4><a href="{{talk.url}}" target="_blank">{{talk.title}}</a></h4>
-      </li>
-    </ul>
+    <li class="content-list__item flex">
+      <span class="content-list__year text-small color-text-weak mb-s">{{talk.year}}</span>
+      <h3 class="content-list__title headline-tertiary mb-s">{{talk.conf}}</h3>
+      <h4 class="content-list__desc headline-tertiary mb-s"><a href="{{talk.url}}" target="_blank">{{talk.title}}</a></h4>
+    </li>
   {% endfor %}
+  </ul>
+
 </section>
 
 <section class="spacing-sections">
