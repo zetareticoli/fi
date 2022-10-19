@@ -5,8 +5,12 @@ lead: I’m a multisciplinary designer focused on building thoughtful, intuitive
 ---
 
 <section class="spacing-sections">
-  <h2 class="heading-default">Selected Projects</h2>
-
+  <h2 class="headline-default">Selected Projects</h2>
+    <div class="list-card full-width">
+    {% for project in site.data.projects %}
+      {% include card.html %}
+    {% endfor %}
+    </div>
 </section>
 
 <section class="spacing-sections">
@@ -23,7 +27,7 @@ lead: I’m a multisciplinary designer focused on building thoughtful, intuitive
 </section>
 
 
-<h2>Personal Projects</h2>
+<h2 class="headline-default">Personal Projects</h2>
 <ul>
   {% for project in site.data.side %}
     <li class="flex">
