@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Predict Design System Configurations"
+title: "Predict Component Configurations in a Design System"
 cover-image: 
 sitemap:
   priority: 0.95
