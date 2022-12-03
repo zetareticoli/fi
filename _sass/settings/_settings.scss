@@ -101,7 +101,7 @@ $paragraph-spacing-3: $space-l;
   --radius-smooth-corner: 8px;
   --font-sans: Inter, Helvetica, Arial, sans-serif;
   --font-regular: 400;
-  --font-medium: 500;
+  --font-medium: 600;
   --font-bold: 700;
   --font-01: 12px;
   --font-02: 16px;
@@ -147,9 +147,9 @@ $paragraph-spacing-3: $space-l;
   --spacing-inline-l: var(--space-l);
   --grid-margin: var(--space-m);
   --grid-gutter: var(--space-m);
-  --wrapper-size: 1400px;
-  --inner-size: 892px;
-  --inner-small-size: 663px;
+  --wrapper-size: 1440px;
+  --inner-size: 920px;
+  --inner-small-size: 800px;
 }
 
 @media (prefers-color-scheme: dark) {
