@@ -5,7 +5,9 @@
 </head>
 <body class="page">
 	<div class="wrapper">
-		{% include header.html %}
+		<div class="inner">
+			{% include header.html %}
+		</div>
 		<main class="{% if layout.inner %}inner-small{% else %}inner{% endif %}">
 			{{ content }}
 		</main>
