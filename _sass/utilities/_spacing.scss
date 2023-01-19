@@ -27,3 +27,33 @@
 .mb-s {
   margin-bottom: var(--spacing-stack-s);
 }
+
+.mb-m {
+  margin-bottom: var(--spacing-stack-m);
+}
+
+.mb-l {
+  margin-bottom: var(--spacing-stack-l);
+}
+
+.mb-xl {
+  margin-bottom: var(--spacing-stack-xl);
+}
+
+// Padding
+
+.spacing-inline-m {
+  padding-left: var(--spacing-inline-m);
+  padding-right: var(--spacing-inline-m);
+}
+
+.spacing-stack-xxl {
+  padding-top: var(--spacing-stack-xl);
+  padding-bottom: var(--spacing-stack-xl);
+
+  @media screen and (min-width: 768px) {
+    padding-top: var(--spacing-stack-xxl);
+    padding-bottom: var(--spacing-stack-xxl);
+  }
+}
+
