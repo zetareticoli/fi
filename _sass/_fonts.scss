@@ -19,10 +19,9 @@
 @font-face {
   font-family: 'Inter';
   font-style:  normal;
-  font-weight: 600;
+  font-weight: 500;
   font-display: swap;
-  src: url("/css/fonts/Inter-SemiBold.woff2?v=3.12") format("woff2"),
-       url("/css/fonts/Inter-SemiBold.woff?v=3.12") format("woff");
+  src: url("/css/fonts/Inter-Medium.woff2?v=3.12") format("woff2");
 }
 
 @font-face {
@@ -30,6 +29,5 @@
   font-style:  normal;
   font-weight: 700;
   font-display: swap;
-  src: url("/css/fonts/Inter-Bold.woff2?v=3.12") format("woff2"),
-       url("/css/fonts/Inter-Bold.woff?v=3.12") format("woff");
+  src: url("/css/fonts/Inter-Bold.woff2?v=3.12") format("woff2");
 }

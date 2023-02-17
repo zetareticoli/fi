@@ -1,7 +1,7 @@
 ---
 layout: full
-headline: I design digital products for the web.
-lead: I’m a multisciplinary designer focused on building thoughtful, intuitive and delightful experiences for digital products. From SaaS software to mobile/web applications, I specialize in Design Systems, Interaction Design, Product Design and Front-end.
+headline: I design digital products.
+lead: From SaaS software to websites and mobile apps, I specialize in Design Systems and Product Design.
 ---
 
 <section class="spacing-sections inner">
@@ -14,30 +14,71 @@ lead: I’m a multisciplinary designer focused on building thoughtful, intuitive
 	{% endif %}
 </section>
 
-<section class="spacing-sections background-primary spacing-stack-xxl spacing-inline-m">
+<section class="spacing-sections spacing-sections-inset background-primary spacing-outer">
   <div class="inner">
-    <h2 class="headline-default mb-xl">Notable Experiences</h2>
-    <div class="flex list-projects">
+    <h2 class="headline-default mb-xl">Featured Experiences</h2>
+    <div class="list-projects">
     {% for project in site.data.projects %}
-      {% include card.html %}
+      {% include project-featured.html %}
     {% endfor %}
     </div>
   </div>
 </section>
 
 <section class="spacing-sections">
-  <h5 class="caption">Past Projects</h5>
-  <ul class="content-list m-none">
-  {% for client in site.data.clients %}
-    <li class="content-list__item flex">
-      <span class="content-list__year text-small color-text-weak mb-s">{{client.year}}</span>
-      <h3 class="content-list__title headline-tertiary mb-s">{{client.title}}</h3>
-      <p class="content-list__desc mb-s">{{client.desc}}</p>
-    </li>
-  {% endfor %}
-  </ul>
+  <div class="inner">
+    <h2 class="headline-default">Projects across the years</h2>
+    <ul class="content-list m-none">
+    {% for client in site.data.clients %}
+      <li class="content-list__item flex">
+        <span class="content-list__year text-small color-text-weak mb-s">{{client.year}}</span>
+        <h3 class="content-list__title headline-tertiary mb-s">{{client.title}}</h3>
+        <p class="content-list__desc mb-s">{{client.desc}}</p>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
 </section>
 
+<section class="spacing-sections spacing-sections-inset spacing-outer background-light">
+  <div class="inner">
+    <h2 class="headline-default">How I Work</h2>
+    <div class="layout-aside-right">
+      <article>
+        <p class="lead">
+          I believe in a hands-on approach and working in cross-functional teams that include stakeholders as partners in the project.
+        </p>
+        <p class="body-default">
+          zsod research is important in every project, as it helps us get to know the business and its users. Ideation takes many forms, but it's important to quickly test ideas with real users to ensure that we're on the right track.
+        </p>
+        <p>
+          I love developing, learning, teaching, and I enjoy working with colleagues who are honest, respectful, and provide straightforward feedback. I believe that the team is crucial, and it's important to know not just the skills but also the person behind them.
+        </p> 
+        <p>Design sprints and the double diamond process can be helpful, but it's essential to work with people you enjoy being around, as work can sometimes be challenging.
+        </p>
+      </article>
+      <article>
+        <h3 class="caption">Methods</h3>
+        <ul class="list-none mb-xl">
+          <li class="text-emphasis mb-s"><span class="color-text-primary">¬</span> Design sprints</li>
+          <li class="text-emphasis mb-s"><span class="color-text-primary">¬</span> Double diamond</li>
+          <li class="text-emphasis mb-s"><span class="color-text-primary">¬</span> Cross-functional teams</li>
+          <li class="text-emphasis mb-s"><span class="color-text-primary">¬</span> Agile</li>
+          <li class="text-emphasis mb-s"><span class="color-text-primary">¬</span> Iterative workflow</li>
+        </ul>
+        <h3 class="caption">Expertise</h3>
+        <ul class="list-none">
+          <li class="text-emphasis mb-s"><span class="color-text-primary">¬</span> Design Systems & Design Tokens</li>
+          <li class="text-emphasis mb-s"><span class="color-text-primary">¬</span> Build interactive prototypes</li>
+          <li class="text-emphasis mb-s"><span class="color-text-primary">¬</span> Adopt a responsive design strategy</li>
+          <li class="text-emphasis mb-s"><span class="color-text-primary">¬</span> Document interfaces with styleguides</li>
+          <li class="text-emphasis mb-s"><span class="color-text-primary">¬</span> Code a front-end architecture</li>
+          <li class="text-emphasis mb-s"><span class="color-text-primary">¬</span> Lead cross-functional teams</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
 
 <h2 class="headline-default">Personal Projects</h2>
 <ul>

@@ -3,25 +3,27 @@
 # only Main files contain this front matter, not partials.
 ---
 
-@import 'settings/settings';
-@import 'fonts';
-@import 'elements/base';
-@import 'elements/links';
-@import 'objects';
-@import 'objects/layout';
-@import 'objects/lists';
-@import 'objects/media';
-@import 'objects/post';
-@import 'objects/spacing';
-@import 'components';
-@import 'components/buttons';
-@import 'components/card';
-@import 'components/footer';
-@import 'components/header';
-@import 'components/lists';
-@import 'components/logo';
-@import 'components/nav';
-@import 'utilities';
+@import '../_sass/settings/settings';
+@import '../_sass/fonts';
+@import '../_sass/elements/base';
+@import '../_sass/elements/links';
+@import '../_sass/objects';
+@import '../_sass/objects/layout';
+@import '../_sass/objects/links';
+@import '../_sass/objects/lists';
+@import '../_sass/objects/media';
+@import '../_sass/objects/post';
+@import '../_sass/objects/spacing';
+@import '../_sass/components';
+@import '../_sass/components/buttons';
+@import '../_sass/components/card';
+@import '../_sass/components/footer';
+@import '../_sass/components/header';
+@import '../_sass/components/lists';
+@import '../_sass/components/logo';
+@import '../_sass/components/nav';
+@import '../_sass/components/projects';
+@import '../_sass/utilities';
 @import '../_sass/utilities/colors';
 @import '../_sass/utilities/flexbox';
 @import '../_sass/utilities/lists';

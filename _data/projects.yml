@@ -1,12 +1,43 @@
-- title: RoboDomain
-  slug: robodomain
-  year: 2009-2013
-  url: /img/projects/thumb.png
-- title: RoboDomain
-  slug: robodomain
-  year: 2009-2013
-  url: /img/projects/thumb.png
-- title: RoboDomain
-  slug: robodomain
-  year: 2009-2013
-  url: /img/projects/thumb.png
+- title: Italian Department for Digital Transformation (GOV It)
+  slug: dtd
+  year: current
+  description: Design digital products and public services for the italian governement. Building first GOV IT Design system.
+- title: Citynews
+  slug: citynews
+  year: 2016-2021
+  description: Director of design, launched a lot of products, created a Design system, curated the corporate brand identity.
+  link:
+    title: Read the full story
+    url: /posts/2021-04-08/leaving-citynews
+- title: HCL Software
+  slug: hcl
+  year: 2021-2022
+  description: Contributed to transition from legacy software to web SaaS solutions for BigFix endpoint management.
+- title: Seejay
+  slug: seejay
+  year: 2014
+  description: Contributed to .
+  link:
+    title: Read the full story
+    url: 
+- title: Robodomain
+  slug: seejay
+  year: 2014
+  description: Cofounded the company and built a SaaS web app for domains management
+  link:
+    title: Read the full story
+    url: 
+- title: Tvzap
+  slug: seejay
+  year: 2014
+  description: Responsive website and EPG for entertainment website
+  link:
+    title: View the project
+    url: 
+- title: Noemalife
+  slug: seejay
+  year: 2014
+  description: Mobile solutions for digital healthcare
+  link:
+    title: View the project
+    url: 

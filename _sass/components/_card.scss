@@ -1,16 +1,7 @@
 .card {
-  --card-background: #ECF1F4;
-  border-radius: 8px;
-  background: var(--card-background);
   position: relative;
-  height: 450px;
-  width: 400px;
 
   &__header {
     padding: var(--spacing-inset-m);
   }
-}
-
-.project-robodomain {
-  --card-background: url(/img/projects/cover-robodomain.jpg) center center no-repeat;
 }
