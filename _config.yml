@@ -99,20 +99,24 @@ navigation:
 
 
 projects:
+- title: CSSUI
+  desc: Pure CSS interactive components 
+  url: https://www.github.com/zetareticoli/cssui
+  color: teal
+  downloads: 1.2k
 - title: Typesmith
   desc: A responsive typography library
   url: https://www.github.com/zetareticoli/typesmith
   color: orange
-  downloads: 200
+  downloads: 369
 - title: Superilles
   desc: Grid system with CSS Grid
   url: https://www.github.com/zetareticoli/superilles
-  color: teal
+  color: purple
 - title: Sass MQ
   desc: A simple media query library for Sass
   url: https://www.github.com/zetareticoli/mq
   color: purple
-  downloads: 56
 - title: UIKit Starter kit
   desc: UI Design Kit template for Sketch
   url: https://www.github.com/zetareticoli/uikit-starter
