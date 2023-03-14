@@ -166,11 +166,12 @@ code {
 
 p code {
   display: inline-block;
-  padding: 0 3px;
+  padding: 4px;
   border: 1px solid rgba($text-01,.1);
-  border-radius: 2px;
+  border-radius: 4px;
   background-color: rgba($text-01,.05);
-  font-size: .7em;
+  font-size: .875rem;
+  color: $color-accent;
 }
 
 pre {
