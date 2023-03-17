@@ -92,7 +92,7 @@ navigation:
 - text: Work
   url: /work/
 - text: Portfolio
-  url: http://zetareticoli.dribbble.com
+  url: https://dribbble.com/zetareticoli
   external: true
 - text: Workshop
   url: /workshop/
