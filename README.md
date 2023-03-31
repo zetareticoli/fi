@@ -9,3 +9,18 @@ Welcome to my personal website and blog! This is a place where I share my though
 ## About Me
 
 My name is Francesco, and I am a Senior Product Designer. I am passionate about design, and I enjoy hiking. I created this website to share my knowledge and experiences with others and to connect with like-minded individuals.
+
+## Writing
+
+In writing section, you can find a collection of articles on various topics. Some of the topics that I cover include:
+
+- Product Design
+- UX Design
+- UI Design
+- Design Systems
+- Design Tokens
+- Personal Development
+
+and much more!
+
+I update my blog regularly, so be sure to check back often for new articles.
