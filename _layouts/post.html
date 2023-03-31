@@ -14,7 +14,7 @@ inner: small
 	<h1 class="headline-teaser">{{ page.title }}</h1>
 
   {% if page.excerpt %}
-    <p class="lead color-text-weak">{{ page.excerpt }}</p>
+    <p class="lead">{{ page.excerpt }}</p>
   {% endif %}
   
   <span class="caption">{{ page.date | date: site.date_format }} • {{ read-time }}</span>

@@ -38,6 +38,7 @@
   font-weight: var(--font-medium);
   letter-spacing: var(--tracking-tight);
   line-height: var(--lineheight-double);
+  color: var(--color-text-light);
   @media screen and (min-width: 768px) {
     font-size: var(--font-06);
   }
