@@ -29,3 +29,16 @@
     gap: var(--grid-gutter);
   }
 }
+
+.l-archive {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: auto;
+  }
+  > h2 {
+    max-width: 100px;
+  }
+}
