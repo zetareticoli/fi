@@ -7,7 +7,7 @@ a {
 
 a:hover {
   --link-color: var(--state-hover);
-  --link-decoration: none;
+  --link-decoration: underline;
 }
 
 a:active {
