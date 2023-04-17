@@ -24,6 +24,10 @@
   margin-left: var(--spacing-inline-s);
 }
 
+.mb-xs {
+  margin-bottom: var(--spacing-stack-xs);
+}
+
 .mb-s {
   margin-bottom: var(--spacing-stack-s);
 }
@@ -38,4 +42,10 @@
 
 .mb-xl {
   margin-bottom: var(--spacing-stack-xl);
+}
+
+// Padding
+
+.p-0 {
+  padding: 0;
 }

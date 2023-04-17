@@ -79,6 +79,7 @@ $paragraph-spacing-3: $space-l;
 
 :root {
   --baseline: 4px;
+  --space-xs: 8px;
   --space-s: 12px;
   --space-base: 16px;
   --space-m: 24px;
@@ -134,6 +135,7 @@ $paragraph-spacing-3: $space-l;
   --border: var(--color-gray-700);
   --state-hover: var(--color-orange-600);
   --state-active: var(--color-orange-700);
+  --spacing-stack-xs: var(--space-xs);
   --spacing-stack-s: var(--space-s);
   --spacing-stack-m: var(--space-m);
   --spacing-stack-l: var(--space-l);
