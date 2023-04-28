@@ -1,7 +1,7 @@
 ---
 layout: full
 headline: I design digital products.
-lead: From SaaS software to websites and mobile apps, I specialize in Design Systems and Product Design.
+lead: I am a designer with expertise in multiple disciplines. My focus is on creating intuitive and enjoyable experiences through digital products, with a specialization in design systems and product design.
 ---
 
 <section class="spacing-sections inner">
@@ -16,7 +16,7 @@ lead: From SaaS software to websites and mobile apps, I specialize in Design Sys
 
 <section class="spacing-sections spacing-sections-inset background-primary spacing-outer">
   <div class="inner">
-    <h2 class="headline-default mb-xl">Featured Experiences</h2>
+    <h2 class="headline-default mb-xl">Notable Work</h2>
     <div class="list-projects">
     {% for project in site.data.projects %}
       {% include project-featured.html %}
@@ -27,7 +27,7 @@ lead: From SaaS software to websites and mobile apps, I specialize in Design Sys
 
 <section class="spacing-sections">
   <div class="inner">
-    <h2 class="headline-default">Projects across the years</h2>
+    <h2 class="headline-default">Experiences across the years</h2>
     <ul class="content-list m-none">
     {% for client in site.data.clients %}
       <li class="content-list__item flex">
@@ -37,84 +37,48 @@ lead: From SaaS software to websites and mobile apps, I specialize in Design Sys
       </li>
     {% endfor %}
     </ul>
+    <a href="#">See full timeline on LinkedIn</a>
   </div>
 </section>
 
-<section class="spacing-sections spacing-sections-inset spacing-outer background-light">
+<section class="spacing-sections spacing-sections-inset spacing-outer background-emphasis">
   <div class="inner">
     <h2 class="headline-default">How I Work</h2>
+    <p class="lead color-text-light">
+      I believe in a hands-on approach and working in cross-functional teams that include stakeholders as partners in the project.
+    </p>
     <div class="layout-aside-right">
       <article>
-        <p class="lead">
-          I believe in a hands-on approach and working in cross-functional teams that include stakeholders as partners in the project.
-        </p>
-        <p class="body-default">
-          zsod research is important in every project, as it helps us get to know the business and its users. Ideation takes many forms, but it's important to quickly test ideas with real users to ensure that we're on the right track.
-        </p>
-        <p>
-          I love developing, learning, teaching, and I enjoy working with colleagues who are honest, respectful, and provide straightforward feedback. I believe that the team is crucial, and it's important to know not just the skills but also the person behind them.
-        </p> 
-        <p>Design sprints and the double diamond process can be helpful, but it's essential to work with people you enjoy being around, as work can sometimes be challenging.
-        </p>
-      </article>
-      <article>
-        <h3 class="caption">Methods</h3>
-        <ul class="list-none mb-xl">
-          <li class="text-emphasis mb-s"><span class="color-text-primary">¬</span> Design sprints</li>
-          <li class="text-emphasis mb-s"><span class="color-text-primary">¬</span> Double diamond</li>
-          <li class="text-emphasis mb-s"><span class="color-text-primary">¬</span> Cross-functional teams</li>
-          <li class="text-emphasis mb-s"><span class="color-text-primary">¬</span> Agile</li>
-          <li class="text-emphasis mb-s"><span class="color-text-primary">¬</span> Iterative workflow</li>
-        </ul>
         <h3 class="caption">Expertise</h3>
         <ul class="list-none">
-          <li class="text-emphasis mb-s"><span class="color-text-primary">¬</span> Design Systems & Design Tokens</li>
-          <li class="text-emphasis mb-s"><span class="color-text-primary">¬</span> Build interactive prototypes</li>
-          <li class="text-emphasis mb-s"><span class="color-text-primary">¬</span> Adopt a responsive design strategy</li>
-          <li class="text-emphasis mb-s"><span class="color-text-primary">¬</span> Document interfaces with styleguides</li>
-          <li class="text-emphasis mb-s"><span class="color-text-primary">¬</span> Code a front-end architecture</li>
-          <li class="text-emphasis mb-s"><span class="color-text-primary">¬</span> Lead cross-functional teams</li>
+          <li class="headline-secondary mb-s"><span class="color-text-primary">¬</span>Leading cross-functional teams</li>
+          <li class="headline-secondary mb-s"><span class="color-text-primary">¬</span>Architecting Design Systems</li>
+          <li class="headline-secondary mb-s"><span class="color-text-primary">¬</span> Building advanced prototypes</li>
+          <li class="headline-secondary mb-s"><span class="color-text-primary">¬</span> Design responsive interfaces</li>
+          <li class="headline-secondary mb-s"><span class="color-text-primary">¬</span> Write design documentation</li>
         </ul>
+        <h3 class="caption">Methods</h3>
+        <ul class="list-none mb-xl">
+          <li class="headline-secondary mb-s"><span class="color-text-primary">¬</span> Design sprints</li>
+          <li class="headline-secondary mb-s"><span class="color-text-primary">¬</span> Double diamond</li>
+          <li class="headline-secondary mb-s"><span class="color-text-primary">¬</span> Cross-functional teams</li>
+          <li class="headline-secondary mb-s"><span class="color-text-primary">¬</span> Agile</li>
+          <li class="headline-secondary mb-s"><span class="color-text-primary">¬</span> Iterative workflow</li>
+        </ul>
+        
+      </article>
+      <article>
+
+        <p class="body-default">
+          I prefer a practical approach and collaborating with cross-functional teams that include stakeholders as project partners.
+        </p>
+        <p>
+          I enjoy developing, learning, teaching, and working with colleagues who are honest, respectful, and provide direct feedback. I believe that the team is crucial, and it's important to understand not only their skills but also their personalities.
+        </p> 
+        <p>
+          Thorough research is essential in every project, as it helps us understand the business and its users. Ideation takes various forms, but it's crucial to rapidly test ideas with real users to ensure that we're headed in the right direction.
+        </p>
       </article>
     </div>
   </div>
 </section>
-
-<h2 class="headline-default">Personal Projects</h2>
-<ul>
-  {% for project in site.data.side %}
-    <li class="flex">
-      <a href="{{project.url}}">
-        <h3>{{project.title}}</h3>
-        <p>{{project.desc}}</p>
-      </a>
-    </li>
-  {% endfor %}
-</ul>
-
-<h2 class="headline-default">Over 15 years of experience</h2>
-<p>I’ve been lucky enough to establish relationships with amazing companies, ranging from individual clients, through up-and-coming startups, to multinational companies. For more details, head over to my LinkedIn profile.</p>
-
-<h5 class="caption">Expertise</h5>
-<ul class="list-none">
-  <li class="lead">¬ Plan and Build a Design System from scratch</li>
-  <li class="lead">¬ Explore and Iterate ideas through advanced, interactive prototypes</li>
-  <li class="lead">¬ Adopt a Responsive Design Strategy for digital products on the web</li>
-  <li class="lead">¬ Document Interfaces with Styleguides, Pattern Libraries, Design Language</li>
-  <li class="lead">¬ Define the front-end architecture and implementation</li>
-  <li class="lead">¬ Lead multidisciplinary teams in a Lean, Agile, Scrum processes</li>
-</ul>
-
-<h2 class="heading-default">Certifications</h2>
-<ul class="content-list">
-  {% for course in site.data.certifications %}
-    <li>
-      <img src="{{course.certificate}}" alt="{{course.title}} Certificate" title="{{course.title}} Certificate">
-      <h3>{{course.title}}</h3>
-      <small>{{course.school}}</small>
-      <small>{{course.year}}</small>
-    </li>
-  {% endfor %}
-</ul>
-
-{% include box-subscribe.html %}
