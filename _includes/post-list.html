@@ -6,14 +6,7 @@
   {% assign read-time = minutes | append: "&nbsp;" | append: site.var_min_read %}
 {% endif %}
 
-<article class="list-posts flex">
-  <span class="list-posts__date text-tiny color-text-weak uppercase mb-s">
-    {{ post.date | date: site.date_format }}
-  </span>
-	<h1 class="list-posts__title headline-secondary mb-s">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-      {{ post.title }}
-    </a>
-  </h1>
-  <span class="list-posts__read text-tiny color-text-light mb-s">{{ read-time }}</span>
-</article>
+<li class="mb-l">
+  <h3 class="headline-secondary mb-xs"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+  <span class="caption color-text-light">{{ post.date | date: "%-d %B, %Y"}}</span>
+</li>

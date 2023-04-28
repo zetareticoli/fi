@@ -7,14 +7,14 @@ lead: I confidently use writing as my outlet to express my ideas and bring my th
 <section class="spacing-sections">
   {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
   {% for year in postsByYear %}
-  <section class="l-archive mb-l">
+  <section class="l-archive mb-l divider">
     <h2>{{ year.name }}</h2>
     <ul class="list-none m-none">
       {% for post in year.items %}
-        <li class="mb-l">
-          <h3 class="headline-secondary mb-xs"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-          <span class="caption color-text-light">{{ post.date | date: "%-d %B, %Y"}}</span>
-          </li>
+      <li class="mb-l">
+        <h3 class="headline-secondary mb-xs"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <span class="caption color-text-light">{{ post.date | date: "%-d %B, %Y"}}</span>
+      </li>
       {% endfor %}
     </ul>
   </section>

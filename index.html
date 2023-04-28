@@ -6,17 +6,20 @@ home: true
 
 <section class="spacing-sections">
   <h1 class="headline-default">Hi, I'm Francesco.</h1>
-  <p class="lead color-text-weak">I’m a Product Designer based in Rome, Italy.</p>
-  <p class="lead color-text-weak">Currently, I design digital products and services for the <a href="">Italian Government Digital Transformation Team.</a></p>
-  <p class="lead color-text-weak">I share my experience on my <a href="/blog">blog</a> and <a href="https://www.designabile.com" target="_blank">newsletter</a>.</p>
-  <p class="lead color-text-weak">I have fun working at some <a href="https://github.com/zetareticoli?tab=repositories" target="_blank">open-source projects</a>.</p>
+  <p class="lead color-text-light">
+    I'm a <span class="color-text">Product Designer</span> based in Rome with over 17 years of experience  in the field. 
+  </p>
+  <p class="lead color-text-light">I design <span class="color-text">interfaces</span> and <span class="color-text">systems</span> that inspire user engagement and drive business growth, with a passion for simplifying complex ideas and creating intuitive  user experiences.
+  </p>
 </section>
 
 <section class="spacing-sections">
-  <h2 class="headline-default">Recent Writing</h2>
-  {% for post in site.posts limit:3 %}
-  {% include post-list.html %}
-  {% endfor %}
+  <h2 class="headline-default">Latest writing</h2>
+  <ul class="list-none m-none">
+    {% for post in site.posts limit:4 %}
+    {% include post-list.html %}
+    {% endfor %}
+  </ul>
 </section>
 
 <section class="spacing-sections">
