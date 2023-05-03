@@ -1,6 +1,8 @@
 .project {
   --project-spacing: var(--spacing-stack-l);
   margin-bottom: var(--project-spacing);
+  padding: var(--spacing-inset-l);
+  border-radius: var(--radius-smooth-corner);
   @media screen and (min-width: 768px) {
     --project-spacing: 0;
   }
