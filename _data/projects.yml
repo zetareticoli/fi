@@ -1,6 +1,6 @@
 - title: Italian Department for Digital Transformation (GOV It)
   slug: dtd
-  year: current
+  year: 2022 - current
   description: Design digital products and public services for the italian governement. Building first GOV IT Design system.
 - title: Citynews
   slug: citynews
@@ -16,27 +16,20 @@
 - title: Make a start-up to stands out
   slug: seejay
   year: 2009-2013
-  description: Lead the redesign of the entire web system for social storytelling
+  description: Lead the redesign of Seejay, italian start-up dedicated to social storytelling
   link:
     title: Read the full story
     url: 
 - title: Robodomain - From an idea to a company
   slug: robodomain
-  year: 2014
-  description: The company I co-founded together with @weppos. I took care of everything from financial and bureaucratic aspects to product design.
+  year: 2009-2014
+  description: The company I co-founded together with @weppos. I took care of everything from finance to product design, from customers support to marketing.
   link:
     title: Read the full story
     url: 
-- title: Tvzap
-  slug: seejay
-  year: 2014
-  description: Responsive website and EPG for entertainment website
-  link:
-    title: View the project
-    url: 
 - title: Noemalife
   slug: seejay
-  year: 2014
+  year: 2011-2012
   description: Mobile solutions for digital healthcare
   link:
     title: View the project
