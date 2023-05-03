@@ -2,6 +2,7 @@
   width: 100%;
   background: var(--background-strong);
   padding: var(--spacing-inset-m);
+  border-top: 1px solid var(--border);
 
   &__inner {
     flex-flow: column;
