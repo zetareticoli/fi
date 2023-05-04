@@ -1,8 +1,7 @@
 .footer {
   width: 100%;
-  background: var(--background-strong);
-  padding: var(--spacing-inset-m);
-  border-top: 1px solid var(--border);
+  background: var(--background-emphasis);
+  padding: var(--spacing-inset-l);
 
   &__inner {
     flex-flow: column;
@@ -13,11 +12,18 @@
     }
   }
 
-  &__colophon {
+  &__colophon--large {
   width: 100%;
 
     @media screen and (min-width: 768px) {
       width: 50%;
+    }
+  }
+  &__colophon--small {
+  width: 100%;
+
+    @media screen and (min-width: 768px) {
+      width: 25%;
     }
   }
 }
