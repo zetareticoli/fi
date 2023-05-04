@@ -16,7 +16,7 @@
 
   &__title {
     @media screen and (min-width: 768px) {
-      width: 12rem;
+      width: 16rem;
     }
   }
 
@@ -26,4 +26,9 @@
     }
   }
 
+  &__desc {
+    @media screen and (min-width: 768px) {
+      width: 32rem;
+    }
+  }
 }
