@@ -1,3 +1,11 @@
 .link-underline {
   text-decoration: underline;
 }
+
+.link-inverse {
+  color: var(--text-inverse);
+}
+
+.link-light {
+  color: var(--text-light);
+}
