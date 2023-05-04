@@ -11,6 +11,7 @@ inner: small
 {% endif %}
 
 <article class="post spacing-sections outer-margin">
+  
 	<h1 class="headline-teaser">{{ page.title }}</h1>
 
   {% if page.excerpt %}
@@ -49,7 +50,8 @@ inner: small
     <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter">
     Share on Twitter</a>
     </p>
-  </div> -->
+  </div> 
+  -->
 
   {% if site.display-next-prev-post and page.previous.url or site.display-next-prev-post and page.next.url %}
     <div class="pagination">

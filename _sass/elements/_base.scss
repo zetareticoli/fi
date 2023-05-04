@@ -40,13 +40,9 @@ img + em {
 ul,
 ol {
   font-size: var(--font-02);
-
+  padding: var(--space-base);
   margin: var(--spacing-stack-l) auto;
-  // padding-left: 5vw;
-  list-style-position: inside;
-  @media screen and (min-width: 768px) {
-    padding-left: 0;
-  }
+  list-style-position: outside;
 }
 
 ul {

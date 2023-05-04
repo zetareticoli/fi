@@ -16,7 +16,12 @@
 }
 
 .inner-small {
-  max-width: var(--inner-small-size);
+  max-width: var(--inner-size-small);
+  margin: 0 auto;
+}
+
+.inner-large {
+  max-width: var(--inner-size-large);
   margin: 0 auto;
 }
 

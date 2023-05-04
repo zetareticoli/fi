@@ -19,12 +19,14 @@ lead: I am a designer with expertise in multiple disciplines. My focus is on cre
     <h2 class="headline-default">Notable Work</h2>
     <p class="body color-text-light">Projects that represent my experience and have marked the path of my career.</p>
   </div>
-  <div class="list-projects mb-l">
-  {% for project in site.data.projects %}
-    {% include project-featured.html %}
-  {% endfor %}
+  <div class="inner-large">
+    <div class="list-projects mb-l">
+    {% for project in site.data.projects %}
+      {% include project-featured.html %}
+    {% endfor %}
+    </div>
+    <p class="text-small color-text-weak text-center">Check out my <a class="link-light link-underline" href="https://dribbble.com/zetareticoli" target="_blank">Dribbble profile</a> to see the screenshots of some projects I have worked on.</p>
   </div>
-  <p class="body-small color-text-weak inner">Check out my <a href="https://dribbble.com/zetareticoli" target="_blank">Dribbble profile</a> to see the screenshots of some projects I have worked on.</p>
 </section>
 
 <section class="spacing-sections inner outer-margin">
@@ -38,12 +40,10 @@ lead: I am a designer with expertise in multiple disciplines. My focus is on cre
     </li>
   {% endfor %}
   </ul>
-  <a href="#">See full timeline on LinkedIn</a>
+  <a href="https://www.linkedin.com/in/francescoimprota/" target="_blank">See full timeline on LinkedIn</a>
 </section>
 
-<hr>
-
-<section class="spacing-sections outer-margin">
+<section class="spacing-sections-inset spacing-outer background-light outer-margin">
   <div class="inner">
     <h2 class="headline-default">How I Work</h2>
     <p class="lead color-text-light">
