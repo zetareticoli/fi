@@ -1,4 +1,4 @@
-- title: Italian Department for Digital Transformation (GOV It)
+- title: Italian Department for Digital Transformation
   slug: dtd
   year: 2022 - current
   description: Design digital products and public services for the italian governement. Building first GOV IT Design system.
@@ -9,6 +9,10 @@
   link:
     title: Read the full story
     url: /2021/04/28/leaving-citynews/
+- title: Robodomain
+  slug: robodomain
+  year: 2009-2014
+  description: The company I co-founded together with <a class="link-inverse link-underline" href="https://github.com/weppos">@weppos</a>. I took care of everything from finance to product design, from customers support to marketing.
 - title: HCL Software
   slug: hcl
   year: 2021-2022
@@ -20,10 +24,6 @@
   link:
     title: Read the full story
     url: 
-- title: Robodomain
-  slug: robodomain
-  year: 2009-2014
-  description: The company I co-founded together with <a class="link-inverse link-underline" href="https://github.com/weppos">@weppos</a>. I took care of everything from finance to product design, from customers support to marketing.
 - title: Noemalife
   slug: seejay
   year: 2011-2012

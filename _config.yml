@@ -43,7 +43,7 @@ display-social-icons: false
 # If you want social links to open in a new tab, set this as true
 social-icons-open-newtab: true
 
-footer-text: Designed with <a href="#" class="link-alt">Figma</a>. Powered by <a class="link-alt" href="#">Jekyll</a> &amp; <a class="link-alt" href="#">Netlify</a>. Font <a class="link-alt" href="https://rsms.me/inter/">Inter</a> by <a class="link-alt" href="https://twitter.com/rsms">@rsms</a>
+footer-text: Designed with Figma. Powered by Jekyll &amp; Netlify. Font Mona Sans by <a class="link-light link-underline" href="https://github.com/mona-sans" target="_blank">Github</a>
 
 # Preferably 64px in height. Leave empty = disable.
 logo-image: /img/logo.svg
@@ -81,6 +81,8 @@ navigation:
   url: /writing/
 - text: Work
   url: /work/
+- text: Side projects
+  url: /side-projects/
 
 #####################
 # SOCIAL #

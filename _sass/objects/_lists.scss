@@ -10,7 +10,6 @@
     @media screen and (min-width: 768px) {
       --list-item-direction: row;
       --list-item-spacing: var(--spacing-stack-s);
-      align-items: center;
     }
   }
 
@@ -27,8 +26,6 @@
   }
 
   &__desc {
-    @media screen and (min-width: 768px) {
-      width: 32rem;
-    }
+    width: 100%;
   }
 }

@@ -39,9 +39,11 @@ img + em {
 
 ul,
 ol {
+  font-size: var(--font-02);
+
   margin: var(--spacing-stack-l) auto;
   // padding-left: 5vw;
-  list-style-position: outside;
+  list-style-position: inside;
   @media screen and (min-width: 768px) {
     padding-left: 0;
   }
@@ -75,23 +77,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: var(--font-07);
+  font-size: var(--font-08);
 }
 
 h2 {
-  font-size: var(--font-06);
+  font-size: var(--font-07);
 }
 
 h3 {
-  font-size: var(--font-04);
+  font-size: var(--font-06);
 }
 
 h4 {
-  font-size: var(--font-03);
+  font-size: var(--font-05);
 }
 
 h5 {
-  font-size: var(--font-02);
+  font-size: var(--font-04);
 }
 
 p + h2,

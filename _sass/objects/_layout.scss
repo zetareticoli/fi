@@ -8,8 +8,6 @@
 .wrapper {
   flex: 1;
   width: 100%;
-  max-width: var(--wrapper-size);
-  padding: 0 var(--grid-margin);
 }
 
 .inner {
@@ -20,6 +18,12 @@
 .inner-small {
   max-width: var(--inner-small-size);
   margin: 0 auto;
+}
+
+.outer-margin {
+  @media screen and (max-width: 1280px) {
+    padding: 0 var(--grid-gutter);
+  }
 }
 
 .layout-aside-right {

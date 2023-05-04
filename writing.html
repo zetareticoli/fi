@@ -8,7 +8,7 @@ lead: I confidently use writing as my outlet to express my ideas and bring my th
   {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
   {% for year in postsByYear %}
   <section class="l-archive mb-l divider">
-    <h2>{{ year.name }}</h2>
+    <h2 class="headline-secondary">{{ year.name }}</h2>
     <ul class="list-none m-none">
       {% for post in year.items %}
       <li class="mb-l">
