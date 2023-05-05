@@ -1,19 +1,19 @@
+- title: CSSUI
+  desc: A library of interactive components in pure CSS
+  url: https://www.cssui.dev
+- title: Design Tokens Manager
+  desc: A tool to manage design tokens in Notion with relational databases
+  url: https://www.cssui.dev
 - title: Typesmith
   desc: A responsive typography library
   url: https://www.github.com/zetareticoli/typesmith
-  color: orange
-  downloads: 200
 - title: Superilles
   desc: Grid system with CSS Grid
   url: https://www.github.com/zetareticoli/superilles
-  color: teal
 - title: Sass MQ
   desc: A simple media query library for Sass
   url: https://www.github.com/zetareticoli/mq
-  color: purple
-  downloads: 56
 - title: UIKit Starter kit
   desc: UI Design Kit template for Sketch
   url: https://www.github.com/zetareticoli/uikit-starter
-  color: blue
   

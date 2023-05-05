@@ -1,14 +1,16 @@
 ---
-layout: full
-headline: I design digital products.
-lead: I am a designer with expertise in multiple disciplines. My focus is on creating intuitive and enjoyable experiences through digital products, with a specialization in design systems and product design.
+layout: page
+headline: Side projects
+lead: From experimental projects to coding libraries and creative resources, my side projects serve a purpose beyond just being fun. I want to create something meaningful for people like me
 ---
 
-  {% for project in site.data.side %}
-    <li class="flex">
-      <a href="{{project.url}}">
-        <h3>{{project.title}}</h3>
-        <p>{{project.desc}}</p>
-      </a>
+<section class="inner outer-margin">
+  <ul class="list-none">
+    {% for project in site.data.side %}
+    <li class="mb-xl">
+      <h2 class="headline-default mb-xs"><a href="{{project.url}}">{{project.title}}</a></h2>
+      <p class="color-text-light">{{project.desc}}</p>
     </li>
-  {% endfor %}
+    {% endfor %}
+  </ul>
+</section>
