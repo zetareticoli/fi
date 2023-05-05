@@ -11,7 +11,7 @@ It’s *de facto* one of the most used components on the web. For this reason, h
 
 ![Newsletter Subscription Modal Dialog](/img/posts/modal-dialog/newsletter-modal.jpg)
 
-To correctly use the modal dialog it’s important to follow thesee **four simple rules**:
+To correctly use the modal dialog it’s important to follow these **four simple rules**:
 
 ## 1. Use the modal dialog only for important actions
 Important actions are those that require a greater cognitive effort from the user such as:
