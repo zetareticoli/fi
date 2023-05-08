@@ -1,12 +1,20 @@
-- title: Design is irrelevant
-  year: 2011
-  conf: Better Software
-  url: https://www.slideshare.net/zetareticoli/design-is-irrelevant
-- title: Atomic Design, a problem of expectations
-  year: 2014
-  conf: Better Software
-  url: https://www.slideshare.net/zetareticoli/atomic-design-a-problem-of-expectations
+- title: "Designing interfaces in digital public services: the case study of the website model for Italian Municipalities" 
+  year: 2023
+  conf: Advanced Design Unit - University of Bologna 
+  url: https://www.linkedin.com/posts/advanced-design-unit-unibo_design-talk-scarpellini-improtazannoni-activity-7046814672083140611-uK-H?utm_source=share&utm_medium=member_desktop
+- title: "Design system update: UI kit and design tokens" 
+  year: 2022
+  conf: Designers Italia Community Lab 
+  url: https://www.youtube.com/watch?v=1UKjfSyox-k
 - title: CSS Custom Properties, a complete guide
   year: 2021
   conf: CSSDay 
   url: https://slides.com/francescoimprota/css-custom-properties
+- title: Atomic Design, a problem of expectations
+  year: 2014
+  conf: Better Software
+  url: https://www.slideshare.net/zetareticoli/atomic-design-a-problem-of-expectations
+- title: Design is irrelevant
+  year: 2011
+  conf: Better Software
+  url: https://www.slideshare.net/zetareticoli/design-is-irrelevant
