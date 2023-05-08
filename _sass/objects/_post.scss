@@ -1,7 +1,7 @@
-.post {
+.post__body {
   & > p,
-  & > ul,
-  & > ol, {
+  & > ul, 
+  & > ol {
     @extend .body-post;
   }
 
