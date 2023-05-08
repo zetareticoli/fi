@@ -25,6 +25,9 @@ p {
 
 strong {
   font-weight: var(--font-bold);
+  p > & {
+    color: var(--text-inverse);
+  }
 }
 
 i, em {
