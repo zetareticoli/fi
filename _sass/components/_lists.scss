@@ -1,0 +1,48 @@
+// Lists
+
+.list-timed {
+  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    &__year {
+      width: 4rem;
+    }
+    &__title {
+      min-width: 11.5rem;
+    }
+  }
+}
+
+.list-posts {
+  flex-direction: column;
+  padding-top: var(--spacing-stack-m);
+  padding-bottom: var(--spacing-stack-s);
+
+  &:not(:last-child) {
+    border-bottom: 1px solid var(--border);
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    &__date {
+      width: 6rem;
+    }
+    &__title {
+      flex: 1;
+      width: 100%;
+    }
+  }
+}
+
+.list-projects {
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: minmax(auto, 50%) minmax(auto, 50%);
+    gap: var(--grid-gutter);
+  }
+}

@@ -82,8 +82,8 @@ display-next-prev-post: false
 navigation:
 - text: About
   url: /about/
-- text: Blog
-  url: /blog/
+- text: Writing
+  url: /writing/
 - text: Work
   url: /work/
 - text: Workshop

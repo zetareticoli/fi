@@ -1,0 +1,29 @@
+.footer {
+  width: 100%;
+  background: var(--background-emphasis);
+  padding: var(--spacing-inset-l);
+
+  &__inner {
+    flex-flow: column;
+  
+    @media screen and (min-width: 768px) {
+      flex-flow: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__colophon--large {
+  width: 100%;
+
+    @media screen and (min-width: 768px) {
+      width: 50%;
+    }
+  }
+  &__colophon--small {
+  width: 100%;
+
+    @media screen and (min-width: 768px) {
+      width: 25%;
+    }
+  }
+}

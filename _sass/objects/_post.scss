@@ -1,0 +1,16 @@
+.post__body {
+  & > p,
+  & > ul, 
+  & > ol {
+    @extend .body-post;
+  }
+
+  & > h2,
+  & > h3 {
+    margin-top: var(--spacing-stack-xl);
+  }
+
+  .caption {
+    @extend .color-text-weak;
+  }
+}

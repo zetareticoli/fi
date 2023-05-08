@@ -40,7 +40,7 @@ display-social-icons: false
 # If you want social links to open in a new tab, set this as true
 social-icons-open-newtab: true
 
-footer-text: Designed with <a href="#" class="link-alt">Figma</a>. Powered by <a class="link-alt" href="#">Jekyll</a> &amp; <a class="link-alt" href="#">Netlify</a>. Font <a class="link-alt" href="https://rsms.me/inter/">Inter</a> by <a class="link-alt" href="https://twitter.com/rsms">@rsms</a>
+footer-text: Designed with Figma. Powered by Jekyll &amp; Netlify. Font Mona Sans by <a class="link-light link-underline" href="https://github.com/mona-sans" target="_blank">Github</a>
 
 # Preferably 64px in height. Leave empty = disable.
 logo-image: /img/logo.svg
@@ -50,19 +50,6 @@ theme-color-attr: "#00f0ff"
 
 # Color of Microsoft live Tile.
 ms-tile-color: "#00f0ff"
-
-# Color used throughout the theme. Format: R, G, B.
-theme-color: 0, 240, 255 # Original: 0, 240, 255
-
-# Text color used throughout the theme. Format: R, G, B.
-text-color: 0, 0, 0 # Original: 0, 0, 0
-
-# Background color used throughout the theme. Format: R, G, B.
-# Note: if you change the background color AND you use cover images, you should
-#       also change the CSS gradient in "_includes\gradient.css" to match the
-#       background color. Edit and copy it from here:
-#       http://www.colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100
-background-color: 255, 255, 255 # Original: 255, 255, 255
 
 display-author-post-page: false
 display-author-front-page: false
@@ -87,41 +74,13 @@ display-next-prev-post: true
 navigation:
 - text: About
   url: /about/
-- text: Blog
-  url: /blog/
+- text: Writing
+  url: /writing/
 - text: Work
   url: /work/
-- text: Portfolio
-  url: https://dribbble.com/zetareticoli
-  external: true
-- text: Workshop
-  url: /workshop/
+- text: Side projects
+  url: /projects/
 
-
-projects:
-- title: CSSUI
-  desc: Pure CSS interactive components 
-  url: https://www.github.com/zetareticoli/cssui
-  color: teal
-  downloads: 1.2k
-- title: Typesmith
-  desc: A responsive typography library
-  url: https://www.github.com/zetareticoli/typesmith
-  color: orange
-  downloads: 369
-- title: Superilles
-  desc: Grid system with CSS Grid
-  url: https://www.github.com/zetareticoli/superilles
-  color: purple
-- title: Sass MQ
-  desc: A simple media query library for Sass
-  url: https://www.github.com/zetareticoli/mq
-  color: purple
-- title: UIKit Starter kit
-  desc: UI Design Kit template for Sketch
-  url: https://www.github.com/zetareticoli/uikit-starter
-  color: blue
-  
 #####################
 # SOCIAL #
 #####################

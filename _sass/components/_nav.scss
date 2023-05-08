@@ -1,0 +1,26 @@
+// Navigation
+
+.nav {
+  @media screen and (min-width: 768px) {
+    width: 40%;
+  }
+
+  &__item {
+    color: var(--text-primary); 
+    @media screen and (min-width: 768px) {
+      text-align: right;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &.active {
+      font-weight: 700;
+      color: var(--text);
+      @media (prefers-color-scheme: dark) {
+        color: var(--text-inverse);
+      }
+    }
+  }
+}

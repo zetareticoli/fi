@@ -1,0 +1,32 @@
+---
+layout: page
+headline: Writing
+lead: I confidently use writing as my outlet to express my ideas and bring my thoughts to life. I have been skillfully crafting pieces about design, side-projects, and personal growth for quite some time now.
+---
+
+<section class="spacing-sections outer-margin">
+  {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+  {% for year in postsByYear %}
+  <section class="l-archive mb-l divider">
+    <h2 class="headline-secondary">{{ year.name }}</h2>
+    <ul class="list-none m-none">
+      {% for post in year.items %}
+      <li class="mb-l">
+        <h3 class="headline-secondary mb-xs"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <span class="caption color-text-light">{{ post.date | date: "%-d %B, %Y"}}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  
+  {% endfor %}
+</section>
+
+<section class="outer-margin">
+  {% include box-subscribe.html %}
+</section>
+
+{% if paginator.previous_page or paginator.next_page %}
+  {% include pagination.html %}
+{% endif %}
+

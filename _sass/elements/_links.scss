@@ -1,0 +1,15 @@
+a {
+  --link-color: var(--text-primary);
+  --link-decoration: none;
+  color: var(--link-color);
+  text-decoration: var(--link-decoration);
+}
+
+a:hover {
+  --link-color: var(--state-hover);
+  --link-decoration: underline;
+}
+
+a:active {
+  --link-color: var(--state-active);
+}

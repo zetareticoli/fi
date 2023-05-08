@@ -1,71 +1,9 @@
-// Blocks
-
-.box {
-  padding-bottom: 10vw;
-  @media screen and (min-width: 768px) {
-    padding-bottom: 5vw;
-  }
-
-  & + & {
-    padding-top: 10vw;
-    @media screen and (min-width: 768px) {
-      padding-top: 5vw;
-    }
-  }
-}
-
-.cover {
-  margin: 10vw 0;
-  @media screen and (min-width: 768px) {
-    margin: 5vw 0;
-  }
-}
-
-.vertical {
-  @media screen and (min-width: 768px) {
-    max-width: 40%;
-    float: right;
-    margin-left: $spacing-xsmall;
-    margin-bottom: $spacing-xsmall;
-  }
-}
-
-
 // Typography
-
-.lead {
-  margin-bottom: 1.5rem;
-  font-size: $type-medium;
-  @media screen and (min-width: 768px) {
-    font-size: 1.5rem;
-  }
-}
 
 .mono {
   font-family: monospace;
   font-size: .75rem;
   font-weight: bold;
-}
-
-.featured {
-  font-size: $type-medium;
-}
-
-.caption {
-  color: $text-02;
-  font-size: $type-xsmall;
-}
-
-.link-alt {
-  color: rgba($color-white, 75%);
-}
-
-.link-inverse {
-  color: $color-white;
-  transition: color .2s ease;
-  &:hover {
-    color: $color-accent;
-  }
 }
 
 // Icons
@@ -77,14 +15,6 @@
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
-}
-
-.colophon {
-  width: 100%;
-
-  @media screen and (min-width: 768px) {
-    width: 50%;
-  }
 }
 
 .rss {
@@ -103,31 +33,14 @@
 
 .input {
   background: rgba($color-white, 0.04);
-  border-radius: 4px;
-  font-weight: 500;
-  font-size: $type-small;
+  border-radius: var(--radius-smooth-corner);
+  font-weight: var(--font-medium);
+  font-size: var(--font-02);
   padding: .75rem;
   border: none;
 
   &:focus,
   &:active {
     background: $color-white;
-  }
-}
-
-.button {
-  background-color: $color-accent;
-  color: $color-white;
-  text-align: center;
-  padding: .75rem 2rem;
-  border-radius: 3px;
-  border: none;
-  cursor: pointer;
-  font-size: $type-small;
-  font-weight: 700;
-  
-  &:hover {
-    text-decoration: none;
-    background-color: lighten($color-accent, 5%);
   }
 }

@@ -1,0 +1,10 @@
+<ul class="content-list">
+  {% for course in site.data.certifications %}
+    <li>
+      <img src="{{course.certificate}}" alt="{{course.title}} Certificate" title="{{course.title}} Certificate">
+      <h3>{{course.title}}</h3>
+      <small>{{course.school}}</small>
+      <small>{{course.year}}</small>
+    </li>
+  {% endfor %}
+</ul>

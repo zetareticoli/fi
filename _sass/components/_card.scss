@@ -1,0 +1,7 @@
+.card {
+  position: relative;
+
+  &__header {
+    padding: var(--spacing-inset-m);
+  }
+}
