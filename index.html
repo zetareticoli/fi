@@ -2,9 +2,9 @@
 layout: default
 home: true
 ---
-<img class="spacing-sections full-width" src="/img/site-cover.webp" alt="A working desk reflected in a picture" title="My design studio image reflected">
+<img class="spacing-sections full-width outer-margin" src="/img/site-cover.webp" alt="A working desk reflected in a picture" title="My design studio image reflected">
 
-<section class="spacing-sections">
+<section class="spacing-sections outer-margin">
   <h1 class="headline-default">Hi, I'm Francesco.</h1>
   <p class="lead color-text-light">
     I'm a <span class="color-text">Product Designer</span> based in Rome with over 17 years of experience  in the field. 
@@ -13,7 +13,7 @@ home: true
   </p>
 </section>
 
-<section class="spacing-sections">
+<section class="spacing-sections outer-margin">
   <h2 class="headline-default">Latest writing</h2>
   <ul class="list-none m-none">
     {% for post in site.posts limit:4 %}
@@ -22,6 +22,6 @@ home: true
   </ul>
 </section>
 
-<section class="spacing-sections">
+<section class="spacing-sections outer-margin">
   {% include box-subscribe.html %}
 </section>
