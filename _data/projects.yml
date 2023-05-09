@@ -7,7 +7,7 @@
   year: 2016-2021
   description: I have served as the Head of Design at Citynews for the past five years. During my tenure, I established a design team and implemented new working methodologies which resulted in the successful launch of various projects, including corporate brand identity, new products, and a Design System.
   link:
-    title: <strong>Read the full story</strong>
+    title: <span class="text-emphasis">Read the full story →</span>
     url: /2021/04/28/leaving-citynews/
 - title: Robodomain
   slug: robodomain
@@ -22,7 +22,7 @@
   year: 2014-2015
   description: I had the pleasure of working with an Italian start-up that was developing a product for social storytelling. The company had a fantastic idea, but they were struggling to make their product stand out in a crowded market. Through co-design workshops and an iterative process, we rolled out the new responsive app in a very short time.
   link:
-    title: <strong>Read the full story</strong>
+    title: <span class="text-emphasis">Read the full story →</span>
     url: /2015/07/22/seejay-redesign/
 - title: Noemalife
   slug: seejay
