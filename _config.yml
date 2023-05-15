@@ -23,6 +23,10 @@ baseurl: ""
 # language attribute in <html> element.
 lang: en
 
+collections: 
+  work:
+    output: true
+
 # FROM THIS POINT ON EVERYTHING IS OPTIONAL
 
 ##############

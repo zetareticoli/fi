@@ -2,7 +2,9 @@
 layout: full
 headline: I design digital products.
 lead: I am a designer with expertise in multiple disciplines. My focus is on creating intuitive and enjoyable experiences through digital products, with a specialization in design systems and product design.
+permalink: /work/
 ---
+
 
 <section class="spacing-sections inner outer-margin">
 	{% if page.headline %}
@@ -21,8 +23,8 @@ lead: I am a designer with expertise in multiple disciplines. My focus is on cre
   </div>
   <div class="inner-large">
     <div class="list-projects mb-l">
-    {% for project in site.data.projects %}
-      {% include project-featured.html %}
+    {% for work in site.data.works %}
+      {% include featured.html %}
     {% endfor %}
     </div>
     <p class="text-small color-text-weak text-center">Check out my <a class="link-light link-underline" href="https://dribbble.com/zetareticoli" target="_blank">Dribbble profile</a> to see the screenshots of some projects I have worked on.</p>
