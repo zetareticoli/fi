@@ -1,8 +1,8 @@
-- title: CSSUI
-  desc: A library of interactive components in pure CSS
-  url: https://www.cssui.dev
 - title: Design Tokens Manager
   desc: A tool to manage design tokens in Notion with relational databases
+  url: https://www.cssui.dev
+- title: CSSUI
+  desc: A library of interactive components in pure CSS
   url: https://www.cssui.dev
 - title: Typesmith
   desc: A responsive typography library
