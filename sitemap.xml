@@ -11,28 +11,33 @@ layout: null
 
   <url>
     <loc>https://francescoimprota.com/</loc>
-    <lastmod>2020-04-28T14:15:55+00:00</lastmod>
+    <lastmod>2023-05-10T14:00:00+00:00</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
     <loc>https://francescoimprota.com/about/</loc>
-    <lastmod>2020-04-28T14:15:55+00:00</lastmod>
+    <lastmod>2023-05-10T14:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://francescoimprota.com/blog/</loc>
-    <lastmod>2020-04-28T14:15:55+00:00</lastmod>
+    <loc>https://francescoimprota.com/writing/</loc>
+    <lastmod>2023-05-10T14:00:00+00:00</lastmod>
     <priority>0.89</priority>
   </url>
   <url>
     <loc>https://francescoimprota.com/work/</loc>
-    <lastmod>2020-04-28T14:15:55+00:00</lastmod>
+    <lastmod>2023-05-10T14:00:00+00:00</lastmod>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://francescoimprota.com/workshop/</loc>
-    <lastmod>2020-04-28T14:15:55+00:00</lastmod>
+    <lastmod>2023-05-10T14:00:00+00:00</lastmod>
     <priority>0.20</priority>
+  </url>
+  <url>
+    <loc>https://francescoimprota.com/projects/</loc>
+    <lastmod>2023-05-10T14:00:00+00:00</lastmod>
+    <priority>0.70</priority>
   </url>
 {% for post in site.posts %}
   {% unless post.published == false %}    
@@ -47,7 +52,7 @@ layout: null
     {% if post.sitemap.priority %}
       <priority>{{ post.sitemap.priority }}</priority>
     {% else %}
-      <priority>0.5</priority>
+      <priority>0.85</priority>
     {% endif %}
   </url>
   {% endunless %}
