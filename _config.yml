@@ -50,10 +50,10 @@ footer-text: Designed with Figma. Powered by Jekyll &amp; Netlify. Font Mona San
 logo-image: /img/logo.svg
 
 # Toolbar color for Chrome on Android.
-theme-color-attr: "#00f0ff"
+theme-color-attr: "#111A23"
 
 # Color of Microsoft live Tile.
-ms-tile-color: "#00f0ff"
+ms-tile-color: "#111A23"
 
 display-author-post-page: false
 display-author-front-page: false
