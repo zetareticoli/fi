@@ -3,6 +3,8 @@ a {
   --link-decoration: none;
   color: var(--link-color);
   text-decoration: var(--link-decoration);
+  text-underline-offset: 0;
+  transition: all .15s ease-in;
 }
 
 a:hover {
