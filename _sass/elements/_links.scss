@@ -8,6 +8,7 @@ a {
 a:hover {
   --link-color: var(--state-hover);
   --link-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 a:active {
