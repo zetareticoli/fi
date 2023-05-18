@@ -2,9 +2,8 @@
 
 .headline-teaser {
   font-size: var(--font-07);
-  font-weight: var(--font-bold);
-  letter-spacing: var(--tracking-narrow);
   line-height: var(--lineheight-auto);
+  font-stretch: var(--stretch-wide);
   @media screen and (min-width: 768px) {
     font-size: var(--font-08);
   }
@@ -12,22 +11,20 @@
 
 .headline-default {
   font-size: var(--font-07);
-  font-weight: var(--font-bold);
-  letter-spacing: var(--tracking-narrow);
   line-height: var(--lineheight-auto);
+  font-stretch: var(--stretch-wide);
 }
 
 .headline-secondary {
   font-size: var(--font-06);
-  font-weight: var(--font-bold);
-  letter-spacing: var(--tracking-tight);
+  font-weight: var(--font-semibold);
   line-height: var(--lineheight-auto);
+  font-stretch: var(--stretch-wide);
 }
 
 .headline-tertiary {
   font-size: var(--font-04);
-  font-weight: var(--font-bold);
-  letter-spacing: var(--tracking-tight);
+  font-weight: var(--font-semibold);
   line-height: var(--lineheight-auto);
 }
 
