@@ -53,7 +53,7 @@ permalink: /work/
     </p>
     <div class="l-pair-cols">
       <article>
-        <h3 class="caption color-text-weak">Expertise</h3>
+        <h3 class="caption color-text-weak uppercase">Expertise</h3>
         <ul class="list-none">
           <li class="headline-secondary mb-s"><span class="color-text-primary">¬</span> Leading cross-functional teams</li>
           <li class="headline-secondary mb-s"><span class="color-text-primary">¬</span> Architecting Design Systems</li>
@@ -61,7 +61,7 @@ permalink: /work/
           <li class="headline-secondary mb-s"><span class="color-text-primary">¬</span> Responsive design</li>
           <li class="headline-secondary mb-s"><span class="color-text-primary">¬</span> Writing styleguides</li>
         </ul>
-        <h3 class="caption color-text-weak">Methods</h3>
+        <h3 class="caption color-text-weak uppercase">Methods</h3>
         <ul class="list-none mb-xl">
           <li class="headline-secondary mb-s"><span class="color-text-primary">¬</span> Sprints</li>
           <li class="headline-secondary mb-s"><span class="color-text-primary">¬</span> Atomic design</li>
