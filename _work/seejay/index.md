@@ -4,6 +4,8 @@ title: Seejay redesign
 lead: A React component library to create a cohesive, unified product experience at Docker
 client: Seejay
 year: 2014-2015
+role: UX/UI Designer
+platform: web
 summary: RoboDomain was a webapp for domains tracking and management. It helps you to organize the domains you own or manage. You can track the details of the domains, all in one place, including renewal dates and WHOIS information.
 responsibilities:
   - Implementing process
