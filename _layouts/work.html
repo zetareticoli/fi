@@ -15,9 +15,6 @@ layout: default
   </header>
 
   <section class="post__body">
-    {% if page.summary %}
-    <p class="body-post">{{ page.summary }}</p>
-    {% endif %}
     <div class="post__meta">
       <div>
         {% if page.role %}
@@ -48,7 +45,6 @@ layout: default
         {% endif %}
       </div>
     </div>
-    
     {{ content }} 
   </section>
 
