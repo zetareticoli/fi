@@ -4,7 +4,7 @@ layout: default
 
 <article class="post spacing-sections outer-margin">
   
-  <header class="mb-l">
+  <section class="mb-l">
   	<h1 class="headline-teaser">{{ page.title }}</h1>
     {% if page.lead %}
     <p class="lead color-text-light">{{ page.lead }}</p>
@@ -12,25 +12,25 @@ layout: default
     {% if page.cover %}
     <img class="full-width" alt="{{ page.cover-alt }}" title="{{ page.cover-title }}" src="{{ site.baseurl }}/img/works/{{ page.cover }}">
 	  {% endif %}
-  </header>
+  </section>
 
-  <section class="post__body">
+  <section class="post_intro l-pair-cols l-full">
     <div class="post__meta">
       <div>
         {% if page.role %}
-        <h4 class="caption uppercase mb-xs">Role</h4>
+        <h4 class="caption uppercase color-text-weak mb-xs">Role</h4>
         <p class="text-emphasis">{{page.role}}</p>
         {% endif %}
       </div>
       <div>
         {% if page.year %}
-        <h4 class="caption uppercase mb-xs">Year</h4>
+        <h4 class="caption uppercase color-text-weak mb-xs">Year</h4>
         <p class="text-emphasis">{{page.year}}</p>
         {% endif %}
       </div>
       <div>
         {% if page.responsibilities %}
-        <h4 class="caption uppercase mb-xs">Responsibilities</h4>
+        <h4 class="caption uppercase color-text-weak mb-xs">Responsibilities</h4>
         <ul class="list-none p-0">
         {% for item in page.responsibilities %}
           <li class="text-emphasis">{{ item }}</li>
@@ -40,11 +40,21 @@ layout: default
       </div>
       <div>
         {% if page.platform %}
-        <h4 class="caption uppercase mb-xs">Platform</h4>
+        <h4 class="caption uppercase color-text-weak mb-xs">Platform</h4>
         <p class="text-emphasis">{{page.platform}}</p>
         {% endif %}
       </div>
     </div>
+    <div>
+      {% if page.summary %}
+      <p class="body-post">
+        {{page.summary}}
+      </p>
+      {% endif %}
+    </div>
+  </section>
+
+  <section class="post__body">
     {{ content }} 
   </section>
 

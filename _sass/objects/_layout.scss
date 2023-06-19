@@ -59,3 +59,12 @@
     max-width: 100px;
   }
 }
+
+.l-full {
+  position: relative;
+  width: 95vw;
+  left: 50%;
+  right: 50%;
+  margin-right: -47.5vw;
+  margin-left: -47.5vw;
+}

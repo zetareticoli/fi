@@ -2,6 +2,7 @@
 layout: work
 title: Seejay redesign
 lead: A React component library to create a cohesive, unified product experience at Docker
+summary: The summary of the project
 cover: project-cover.webp
 client: Seejay
 year: 2014-2015
