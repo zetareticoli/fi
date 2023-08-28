@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Semantic Terms for UI Design"
+title: "Semantic Terms for UI Design: Colors"
 cover-image: 
 sitemap:
   priority: 0.95
@@ -10,7 +10,7 @@ In the world of design and user interfaces, there's a rich vocabulary of terms t
 
 These are semantic terms that encapsulate specific design attributes, allowing for seamless communication across the design and development spectrum. 
 
-Let's delve into the meanings behind some frequently used design terms.
+Let's delve into the meanings behind some frequently used **semantic terms for colors** in UI Design.
 
 ## primary
 
