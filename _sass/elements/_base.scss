@@ -145,7 +145,7 @@ code {
   font-family: "Source Code Pro", monospace;
 }
 
-p {
+p, ul, ol {
   @extend .body-default;
 }
 
