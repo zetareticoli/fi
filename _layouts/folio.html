@@ -19,13 +19,13 @@ layout: default
       <div>
         {% if page.role %}
         <h4 class="caption uppercase color-text-weak mb-xs">Role</h4>
-        <p class="text-emphasis">{{page.role}}</p>
+        <p class="body-post text-light">{{page.role}}</p>
         {% endif %}
       </div>
       <div>
         {% if page.year %}
         <h4 class="caption uppercase color-text-weak mb-xs">Year</h4>
-        <p class="text-emphasis">{{page.year}}</p>
+        <p class="body-post text-ligh ">{{page.year}}</p>
         {% endif %}
       </div>
       <div>
@@ -33,7 +33,7 @@ layout: default
         <h4 class="caption uppercase color-text-weak mb-xs">Responsibilities</h4>
         <ul class="list-none p-0">
         {% for item in page.responsibilities %}
-          <li class="text-emphasis">{{ item }}</li>
+          <li class="body-post text-light mb-s"><span class="color-text-primary">¬</span> {{ item }}</li>
         {% endfor %}
         </ul>
         {% endif %}
@@ -58,19 +58,5 @@ layout: default
     {{ content }} 
   </section>
 
-  {% if site.display-next-prev-post and page.previous.url or site.display-next-prev-post and page.next.url %}
-    <div class="pagination">
-      <div>
-        {% if page.previous.url %}
-          <a href="{{ page.previous.url | prepend: site.baseurl }}">‹ {{ site.var_previous_post }}</a>
-        {% endif %}
-      </div>
-      <div>
-        {% if page.next.url %}
-          <a href="{{ page.next.url | prepend: site.baseurl }}">{{ site.var_next_post }} ›</a>
-        {% endif %}
-      </div>
-    </div>
-  {% endif %}
-
 </article>
+
