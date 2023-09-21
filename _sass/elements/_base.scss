@@ -193,3 +193,14 @@ hr {
   border: none;
   background-color: var(--border);
 }
+
+figure {
+  margin: var(--spacing-stack-m);
+}
+
+
+figcaption {
+  margin-top: var(--spacing-stack-s);
+  font-size: 75%;
+  line-height: var(--lineheight-relaxed);
+}
