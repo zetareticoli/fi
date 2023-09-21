@@ -10,7 +10,7 @@ layout: default
     <p class="lead color-text-light">{{ page.lead }}</p>
     {% endif %}  
     {% if page.cover %}
-    <img class="full-width" alt="{{ page.cover-alt }}" title="{{ page.cover-title }}" src="{{ site.baseurl }}/img/works/{{ page.cover }}">
+    <img class="full-width" alt="{{ page.cover-alt }}" title="{{ page.cover-alt }}" src="{{ site.baseurl }}/img/projects/{{page.client}}/{{ page.cover }}">
 	  {% endif %}
   </section>
 
@@ -19,35 +19,35 @@ layout: default
       <div>
         {% if page.role %}
         <h4 class="caption uppercase color-text-weak mb-xs">Role</h4>
-        <p class="body-post text-light">{{page.role}}</p>
+        <p class="text-emphasis">{{page.role}}</p>
         {% endif %}
       </div>
       <div>
         {% if page.year %}
         <h4 class="caption uppercase color-text-weak mb-xs">Year</h4>
-        <p class="body-post text-ligh ">{{page.year}}</p>
+        <p class="text-emphasis">{{page.year}}</p>
         {% endif %}
       </div>
       <div>
         {% if page.responsibilities %}
         <h4 class="caption uppercase color-text-weak mb-xs">Responsibilities</h4>
-        <ul class="list-none p-0">
+        <ul class="list-none p-0 m-none mb-m">
         {% for item in page.responsibilities %}
-          <li class="body-post text-light mb-s"><span class="color-text-primary">¬</span> {{ item }}</li>
+          <li class="text-emphasis mb-s"><span class="color-text-primary">¬</span> {{ item }}</li>
         {% endfor %}
         </ul>
         {% endif %}
       </div>
       <div>
         {% if page.platform %}
-        <h4 class="caption uppercase color-text-weak mb-xs">Platform</h4>
+        <h4 class="caption uppercase color-text-weak mb-xs">Platforms</h4>
         <p class="text-emphasis">{{page.platform}}</p>
         {% endif %}
       </div>
     </div>
     <div>
       {% if page.summary %}
-      <p class="body-post">
+      <p class="lead color-text-inverse">
         {{page.summary}}
       </p>
       {% endif %}
