@@ -17,7 +17,7 @@ inner: small
     {% if post.excerpt %}
     <p class="lead">{{ post.excerpt }}</p>
     {% endif %}  
-    <span class="caption color-text-weak">{{ page.date | date: site.date_format }} • {{ read-time }}</span>
+    <p class="caption color-text-weak mb-m">{{ page.date | date: site.date_format }} • {{ read-time }}</p>
     {% if page.cover-image %}
     <img class="mb-xs" alt="{{ page.cover-alt }}" title="{{ page.cover-title }}" src="{{ site.baseurl }}/img/covers/{{ page.cover-image }}">
 	  {% endif %}
