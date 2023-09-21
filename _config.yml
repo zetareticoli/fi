@@ -26,6 +26,7 @@ lang: en
 collections: 
   work:
     output: true
+    sort_by: 'order'
 
 # FROM THIS POINT ON EVERYTHING IS OPTIONAL
 
@@ -103,6 +104,8 @@ var_newer: Newer
 var_older: Older
 var_next_post: Next post
 var_previous_post: Previous post
+var_next_post: Next work
+var_previous_post: Previous work
 var_less_than_a_minute_read: Less than a minute read
 var_min_read: min read # Text after reading time. Example: 5 min read.
 var_post_by: Post by
