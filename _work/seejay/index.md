@@ -1,13 +1,14 @@
 ---
-layout: work
-title: Seejay redesign
+layout: folio
+title: Seejay
 lead: A React component library to create a cohesive, unified product experience at Docker
+order: 1
 summary: The summary of the project
 cover: project-cover.webp
 client: Seejay
 year: 2014-2015
 role: UX/UI Designer
-platform: web
+platform: Web
 responsibilities:
   - Implementing process
   - Shaping the design process
