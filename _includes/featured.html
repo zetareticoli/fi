@@ -6,6 +6,9 @@
     {{work.title}}    
     {% endif %}
   </h3>
+  {% if work.image %}
+    <img src="{{work.image}}" alt="">
+  {% endif %}
   <p class="text-small color-text-light">{{ work.year }}</p>
   <p class="body">{{work.description}}</p>
   {% if work.link %}
