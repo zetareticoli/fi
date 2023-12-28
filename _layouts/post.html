@@ -21,6 +21,9 @@ inner: small
     {% if page.cover-image %}
     <img class="mb-xs" alt="{{ page.cover-alt }}" title="{{ page.cover-title }}" src="{{ site.baseurl }}/img/covers/{{ page.cover-image }}">
 	  {% endif %}
+    {% if page.cover-caption %}
+    <p class="caption color-text-light mb-m">{{page.cover-caption}}</p>
+    {% endif %}
   </header>
 
   <section class="post__body">
