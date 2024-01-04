@@ -43,7 +43,7 @@ img + em {
 ul,
 ol {
   font-size: var(--font-02);
-  padding: var(--space-base);
+  padding: 0 var(--space-base);
   margin: var(--spacing-stack-l) auto;
   list-style-position: outside;
 }
@@ -56,7 +56,7 @@ ol {
   list-style-type: decimal;
 }
 
-li {
+li:not(:last-child) {
   margin-bottom: var(--spacing-stack-m);
 }
 
