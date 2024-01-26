@@ -20,13 +20,13 @@ responsibilities:
 permalink: /work/citynews/
 ---
 
-## The Project
+## Full story
 
 Citynews provided me with an incredible canvas for creativity and innovation. Starting as a freelance designer, I initially joined to redesign their brand websites and community platforms. 
 
 My responsibilities expanded in 2015 when I was called back to spearhead a responsive design strategy and revamp the brand identity across all editorial products. 
 
-In April 2016, I officially **joined the team as the Head of Design**.
+In April 2016, I officially joined the company as the **Head of Design**.
 
 <div class="flex direction-col-to-row">
   <figure>
@@ -43,7 +43,7 @@ In April 2016, I officially **joined the team as the Head of Design**.
   </figure>
 </div>
 
-Over the years, I led the Product Design team, nurturing and collaborating with talented individuals who embraced my vision. 
+Over the years, I led the product design team, nurturing and collaborating with talented individuals who embraced my vision. 
 
 Together, we established a robust workflow in tandem with various departments, introducing cutting-edge tools and methodologies. 
 
@@ -69,7 +69,7 @@ Additionally, I oversaw the redesign of internal tools such as the **Content Man
 
 The evolution continued as we crafted **iOS** and **Android mobile apps**, iterating from v1 to v6. I lead the design and development work, managing external resources and suppliers.
 
-I personally developed a Responsive Design Strategy, optimizing the **design**, **front-end**, and **development** workflows. 
+I personally developed a responsive design strategy, optimizing the **design**, **front-end**, and **development** workflows. 
 
 <div class="flex direction-col-to-row">
   <figure>
