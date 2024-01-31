@@ -83,3 +83,8 @@ permalink: /work/
     </div>
   </div>
 </section>
+
+<section class="spacing-sections-inset inner">
+  {% include box-subscribe.html %}
+</section>
+
