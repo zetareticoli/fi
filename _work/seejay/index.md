@@ -1,5 +1,5 @@
 ---
-layout: work
+layout: folio
 title: Seejay redesign
 lead: A React component library to create a cohesive, unified product experience at Docker
 summary: The summary of the project
