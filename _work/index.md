@@ -33,7 +33,7 @@ permalink: /work/
 
 <section class="spacing-sections inner outer-margin">
   <h2 class="headline-default">Experiences across the years</h2>
-  <ul class="content-list m-none">
+  <ul class="content-list m-none mb-l">
   {% for client in site.data.clients %}
     <li class="content-list__item flex">
       <span class="content-list__year text-small color-text-weak mb-s">{{client.year}}</span>
@@ -42,7 +42,9 @@ permalink: /work/
     </li>
   {% endfor %}
   </ul>
-  <a href="https://www.linkedin.com/in/francescoimprota/" target="_blank">See full timeline on LinkedIn</a>
+  <a href="https://www.linkedin.com/in/francescoimprota/" target="_blank">
+    Visit the full timeline on Linkedin
+  </a>
 </section>
 
 <section class="spacing-sections-inset spacing-outer background-weak outer-margin">
