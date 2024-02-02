@@ -4,8 +4,13 @@
   &__item {
     --list-item-direction: column;
     --list-item-spacing: var(--spacing-stack-m);
-    margin-bottom: var(--list-item-spacing);
     flex-direction: var(--list-item-direction);
+
+    &:not(:last-child) {
+      margin-bottom: var(--list-item-spacing);
+      padding-bottom: var(--list-item-spacing);
+      border-bottom: 1px solid var(--border);
+    }
 
     @media screen and (min-width: 768px) {
       --list-item-direction: row;
@@ -16,7 +21,8 @@
 
   &__title {
     @media screen and (min-width: 768px) {
-      width: 16rem;
+      width: 40%;
+      padding-right: var(--spacing-inline-m);
     }
   }
 
