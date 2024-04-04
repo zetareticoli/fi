@@ -10,6 +10,10 @@ Welcome to my personal website and blog! This is a place where I share my though
 
 My name is Francesco, and I am a Senior Product Designer. I am passionate about design, and I enjoy hiking. I created this website to share my knowledge and experiences with others and to connect with like-minded individuals.
 
+## Work
+
+This section collects my notable work experiences.
+
 ## Writing
 
 In writing section, you can find a collection of articles on various topics. Some of the topics that I cover include:
