@@ -3,7 +3,7 @@ layout: post
 title: "My Tech Stack"
 cover-image: 
 sitemap:
-  priority: 0.9
+  priority: 0.85
 ---
 
 In today's fast-paced work environment, having a well-curated tech stack can significantly enhance productivity and streamline various tasks. In this blog post, I will delve into my personal tech stack that I rely on daily for work. From task management to design and communication tools, each software in my arsenal plays a crucial role in helping me stay organized, focused, and efficient.

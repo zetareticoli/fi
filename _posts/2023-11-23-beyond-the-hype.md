@@ -3,7 +3,7 @@ layout: post
 title: "Beyond the hype"
 cover-image: 
 sitemap:
-  priority: 0.85
+  priority: 0.8
 ---
 
 In the fast-paced landscape of design, the term "Design System" has emerged as a ubiquitous buzzword, often heralded as the ultimate achievement for design teams. 

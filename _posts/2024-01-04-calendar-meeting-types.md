@@ -3,7 +3,7 @@ layout: post
 title: "Calendar and Meeting Types "
 cover-image: 
 sitemap:
-  priority: 0.95
+  priority: 0.85
 ---
 
 Balancing work and life can feel like a juggling act, and our calendars play a big part in this. We've all had days filled with meetings and wondered if they really help us achieve our work goals. It was during these busy times that I found it helpful to organize my calendar meetings.
