@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Title"
+title: "Week Review"
 cover-image: 
 sitemap:
   priority: 0.95
