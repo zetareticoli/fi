@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Factes vs Filters"
+title: "Facets vs Filters"
 cover-image: 
 sitemap:
   priority: 0.92
