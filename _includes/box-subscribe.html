@@ -11,10 +11,10 @@
     <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
     <div data-element="fields" data-stacked="false" class="seva-fields formkit-fields">
       <div class="formkit-field"><input class="formkit-input" name="email_address"
-          style="border-color: rgb(58, 66, 75); color: rgb(0, 0, 0, 0.5); border-radius: 4px;"
+          style="border-color: rgb(58, 66, 75); border-radius: 4px;"
           aria-label="Your email" placeholder="Your email" required="" type="email"></div>
       <div class="formkit-field"><input class="formkit-input" aria-label="You name"
-          style="border-color: rgb(58, 66, 75); color: rgb(0, 0, 0, 0.5); border-radius: 4px;"
+          style="border-color: rgb(58, 66, 75); border-radius: 4px;"
           name="fields[first_name]" required="" placeholder="You name" type="text"></div><button data-element="submit"
         class="formkit-submit formkit-submit"
         style="background-color: rgb(243, 156, 12); color: rgb(255, 255, 255); border-radius: 4px;">
@@ -171,11 +171,12 @@
     }
 
     .formkit-form[data-uid="73a77bb495"] .formkit-input {
-      background: #ffffff;
+      background: #080B12;
+      color: #6b7280;
       font-size: var(--font-02);
       font-weight: var(--font-semibold);
       padding: 12px;
-      border: 1px solid #e3e3e3;
+      border: 1px solid #374151;
       -webkit-flex: 1 0 auto;
       -ms-flex: 1 0 auto;
       flex: 1 0 auto;
@@ -187,9 +188,11 @@
 
     .formkit-form[data-uid="73a77bb495"] .formkit-input:focus {
       outline: none;
+      background-color: #e5e7eb;
+      color: #080B12;
       border-color: #1677be;
-      -webkit-transition: border-color ease 300ms;
-      transition: border-color ease 300ms;
+      -webkit-transition: all ease 300ms;
+      transition: all ease 300ms;
     }
 
     .formkit-form[data-uid="73a77bb495"] .formkit-input::-webkit-input-placeholder {
@@ -491,11 +494,6 @@
       position: static;
     }
 
-    .formkit-form[data-uid="73a77bb495"][min-width~="700"] [data-style="clean"],
-    .formkit-form[data-uid="73a77bb495"][min-width~="800"] [data-style="clean"] {
-      padding: 10px;
-    }
-
     .formkit-form[data-uid="73a77bb495"][min-width~="700"] .formkit-fields[data-stacked="false"],
     .formkit-form[data-uid="73a77bb495"][min-width~="800"] .formkit-fields[data-stacked="false"] {
       margin-left: -5px;
@@ -510,14 +508,7 @@
     }
 
     .formkit-form[data-uid="73a77bb495"][min-width~="700"] .formkit-fields[data-stacked="false"] .formkit-field,
-    .formkit-form[data-uid="73a77bb495"][min-width~="800"] .formkit-fields[data-stacked="false"] .formkit-field {
-      -webkit-flex: 100 1 auto;
-      -ms-flex: 100 1 auto;
-      flex: 100 1 auto;
-    }
-
-    .formkit-form[data-uid="73a77bb495"][min-width~="700"] .formkit-fields[data-stacked="false"] .formkit-submit,
-    .formkit-form[data-uid="73a77bb495"][min-width~="800"] .formkit-fields[data-stacked="false"] .formkit-submit {
+    .formkit-form[data-uid="73a77bb495"][min-width~="700"] .formkit-fields[data-stacked="false"] .formkit-submit {
       -webkit-flex: 1 1 auto;
       -ms-flex: 1 1 auto;
       flex: 1 1 auto;
