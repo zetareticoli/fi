@@ -1,5 +1,5 @@
 [build]
-  command = "bundle install && yarn install && npm run build"
+  command = "bundle install"
 
 [build.environment]
   RUBY_VERSION = "3.0.3"
