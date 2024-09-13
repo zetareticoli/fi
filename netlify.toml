@@ -1,0 +1,9 @@
+[build]
+  command = "bundle install && yarn install && npm run build"
+
+[build.environment]
+  RUBY_VERSION = "3.0.3"
+
+[build.lifecycle]
+  [[build.lifecycle.onBuild]]
+    command = "rvm install ruby-3.0.3"
