@@ -1,5 +1,6 @@
 [build]
   command = "bundle install"
+  publish = "_site"
 
 [build.environment]
   RUBY_VERSION = "3.0.3"
