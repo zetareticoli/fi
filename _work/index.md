@@ -1,7 +1,7 @@
 ---
 layout: full
-headline: I design digital products.
-lead: I am a designer with expertise in multiple disciplines. My focus is on creating intuitive and enjoyable experiences through digital products, with a specialization in design systems and product design.
+headline: I design digital products
+lead: I'm a designer who creates user-friendly digital products. I'm best at building design systems and creating designs that help products work better for people.
 permalink: /work/
 ---
 
@@ -27,7 +27,7 @@ permalink: /work/
       {% include featured.html %}
     {% endfor %}
     </div>
-    <p class="text-small color-text-weak text-center">Check out my <a class="link-light link-underline" href="https://dribbble.com/zetareticoli" target="_blank">Dribbble profile</a> to see the screenshots of some projects I have worked on.</p>
+    <p class="text-small color-text-weak text-center">View my design work and project screenshots on my <a class="link-light link-underline" href="https://dribbble.com/zetareticoli" target="_blank">Dribbble profile</a>.</p>
   </div>
 </section>
 
@@ -42,9 +42,7 @@ permalink: /work/
     </li>
   {% endfor %}
   </ul>
-  <a href="https://www.linkedin.com/in/francescoimprota/" target="_blank">
-    Visit the full timeline on Linkedin
-  </a>
+  <p class="text-small color-text-weak text-center"> For a complete overview of my professional experience, visit my <a class="link-light link-underline" href="https://dribbble.com/zetareticoli" target="_blank">LinkedIn profile</a>.</p>
 </section>
 
 <section class="spacing-sections-inset spacing-outer background-weak outer-margin">
