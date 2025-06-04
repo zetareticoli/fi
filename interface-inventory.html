@@ -1,574 +1,573 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interface Inventory Workshop - Francesco Improta</title>
-    <meta name="description" content="Workshop pratico per designer e sviluppatori che vogliono creare un Design System in 4 ore, non in 4 mesi.">
-    
-    <link rel="stylesheet" href="/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interface Inventory Workshop - Francesco Improta</title>
+  <meta name="description"
+    content="Workshop pratico per designer e sviluppatori che vogliono creare un Design System in 4 ore, non in 4 mesi.">
+  <link rel="stylesheet" href="/css/style.css">
 
-    
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            line-height: 1.6;
-            color: #333;
-            background-color: #fafafa;
-        }
-        
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        header {
-            padding: 2rem 0;
-            text-align: center;
-            border-bottom: 1px solid #e5e5e5;
-        }
-        
-        .logo {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: #333;
-            text-decoration: none;
-            margin-bottom: 1rem;
-            display: inline-block;
-        }
-        
-        .hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 4rem 0;
-            text-align: center;
-        }
-        
-        .hero h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            line-height: 1.2;
-        }
-        
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-        }
-        
-        .badge {
-            background: rgba(255,255,255,0.2);
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-            display: inline-block;
-        }
-        
-        .price-section {
-            background: rgba(255,255,255,0.1);
-            padding: 1.5rem;
-            border-radius: 10px;
-            margin: 2rem 0;
-            text-align: center;
-        }
-        
-        .price {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-        }
-        
-        .price-old {
-            text-decoration: line-through;
-            opacity: 0.7;
-            font-size: 1.2rem;
-            margin-left: 1rem;
-        }
-        
-        .date {
-            font-size: 1.1rem;
-            margin-bottom: 1rem;
-        }
-        
-        .cta-primary {
-            background: #ff6b6b;
-            color: white;
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: 5px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-            transition: all 0.3s ease;
-        }
-        
-        .cta-primary:hover {
-            background: #ff5252;
-            transform: translateY(-2px);
-        }
-        
-        .section {
-            padding: 3rem 0;
-            background: white;
-        }
-        
-        .section:nth-child(even) {
-            background: #f8f9fa;
-        }
-        
-        .section h2 {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            text-align: center;
-            color: #333;
-        }
-        
-        .problem-list {
-            list-style: none;
-            margin-bottom: 2rem;
-        }
-        
-        .problem-list li {
-            padding: 0.5rem 0;
-            font-size: 1.1rem;
-        }
-        
-        .problem-list li:before {
-            content: "✗";
-            color: #ff6b6b;
-            font-weight: bold;
-            margin-right: 1rem;
-        }
-        
-        .benefits-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-        
-        .benefit-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        
-        .benefit-card h3 {
-            color: #667eea;
-            margin-bottom: 1rem;
-            font-size: 1.2rem;
-        }
-        
-        .program-timeline {
-            display: grid;
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
-        
-        .program-item {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            border-left: 4px solid #667eea;
-        }
-        
-        .program-item h3 {
-            color: #667eea;
-            margin-bottom: 0.5rem;
-        }
-        
-        .instructor {
-            text-align: center;
-            padding: 2rem;
-            background: white;
-            border-radius: 10px;
-            margin-top: 2rem;
-        }
-        
-        .instructor img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            margin-bottom: 1rem;
-        }
-        
-        .testimonials {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-        
-        .testimonial {
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        
-        .testimonial blockquote {
-            font-style: italic;
-            margin-bottom: 1rem;
-            font-size: 1.1rem;
-        }
-        
-        .testimonial cite {
-            font-weight: 600;
-            color: #667eea;
-        }
-        
-        .guarantee {
-            background: #e8f5e8;
-            padding: 2rem;
-            border-radius: 10px;
-            text-align: center;
-            margin: 2rem 0;
-            border: 2px solid #4caf50;
-        }
-        
-        .guarantee h3 {
-            color: #4caf50;
-            margin-bottom: 1rem;
-        }
-        
-        .faq {
-            margin-top: 2rem;
-        }
-        
-        .faq-item {
-            background: white;
-            border-radius: 8px;
-            margin-bottom: 1rem;
-            overflow: hidden;
-        }
-        
-        .faq-question {
-            background: #f8f9fa;
-            padding: 1rem;
-            font-weight: 600;
-            cursor: pointer;
-            border-bottom: 1px solid #e5e5e5;
-        }
-        
-        .faq-answer {
-            padding: 1rem;
-            display: none;
-        }
-        
-        .faq-item.active .faq-answer {
-            display: block;
-        }
-        
-        .final-cta {
-            background: #333;
-            color: white;
-            padding: 4rem 0;
-            text-align: center;
-        }
-        
-        .final-cta h2 {
-            color: white;
-            margin-bottom: 1rem;
-        }
-        
-        .countdown {
-            background: rgba(255,255,255,0.1);
-            padding: 1rem;
-            border-radius: 5px;
-            margin: 1rem 0;
-            font-size: 1.1rem;
-        }
-        
-        .spots-left {
-            color: #ff6b6b;
-            font-weight: 600;
-            margin-bottom: 1rem;
-        }
-        
-        .cta-secondary {
-            background: transparent;
-            color: #667eea;
-            border: 2px solid #667eea;
-            padding: 0.8rem 1.5rem;
-            border-radius: 5px;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 1rem;
-            transition: all 0.3s ease;
-        }
-        
-        .cta-secondary:hover {
-            background: #667eea;
-            color: white;
-        }
-        
-        footer {
-            background: #333;
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
-        }
-        
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-            
-            .hero p {
-                font-size: 1.1rem;
-            }
-            
-            .benefits-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .testimonials {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--background);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    header {
+      padding: 2rem 0;
+      text-align: center;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #F59E0B 0%, #b45309 100%);
+      color: white;
+      padding: 4rem 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      opacity: 0.9;
+    }
+
+    .badge {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .price-section {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1.5rem;
+      border-radius: 10px;
+      margin: 2rem 0;
+      text-align: center;
+    }
+
+    .price {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .price-old {
+      text-decoration: line-through;
+      opacity: 0.7;
+      font-size: 1.2rem;
+      margin-left: 1rem;
+    }
+
+    .date {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    .cta-primary {
+      background: #ff6b6b;
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.3s ease;
+    }
+
+    .cta-primary:hover {
+      background: #ff5252;
+      transform: translateY(-2px);
+    }
+
+    .section {
+      padding: 3rem 0;
+      background: white;
+    }
+
+    .section:nth-child(even) {
+      background: #f8f9fa;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      color: #333;
+    }
+
+    .problem-list {
+      list-style: none;
+      margin-bottom: 2rem;
+    }
+
+    .problem-list li {
+      padding: 0.5rem 0;
+      font-size: 1.1rem;
+    }
+
+    .problem-list li:before {
+      content: "✗";
+      color: #ff6b6b;
+      font-weight: bold;
+      margin-right: 1rem;
+    }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .benefit-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .benefit-card h3 {
+      color: #667eea;
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
+
+    .program-timeline {
+      display: grid;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .program-item {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid #667eea;
+    }
+
+    .program-item h3 {
+      color: #667eea;
+      margin-bottom: 0.5rem;
+    }
+
+    .instructor {
+      text-align: center;
+      padding: 2rem;
+      background: white;
+      border-radius: 10px;
+      margin-top: 2rem;
+    }
+
+    .instructor img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+
+    .testimonials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .testimonial {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .testimonial blockquote {
+      font-style: italic;
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+
+    .testimonial cite {
+      font-weight: 600;
+      color: #667eea;
+    }
+
+    .guarantee {
+      background: #e8f5e8;
+      padding: 2rem;
+      border-radius: 10px;
+      text-align: center;
+      margin: 2rem 0;
+      border: 2px solid #4caf50;
+    }
+
+    .guarantee h3 {
+      color: #4caf50;
+      margin-bottom: 1rem;
+    }
+
+    .faq {
+      margin-top: 2rem;
+    }
+
+    .faq-item {
+      background: white;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      overflow: hidden;
+    }
+
+    .faq-question {
+      background: #f8f9fa;
+      padding: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .faq-answer {
+      padding: 1rem;
+      display: none;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    .final-cta {
+      background: #333;
+      color: white;
+      padding: 4rem 0;
+      text-align: center;
+    }
+
+    .final-cta h2 {
+      color: white;
+      margin-bottom: 1rem;
+    }
+
+    .countdown {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1rem;
+      border-radius: 5px;
+      margin: 1rem 0;
+      font-size: 1.1rem;
+    }
+
+    .spots-left {
+      color: #ff6b6b;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .cta-secondary {
+      background: transparent;
+      color: #667eea;
+      border: 2px solid #667eea;
+      padding: 0.8rem 1.5rem;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .cta-secondary:hover {
+      background: #667eea;
+      color: white;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1.1rem;
+      }
+
+      .benefits-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .testimonials {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <a href="/" class="logo">← Francesco Improta</a>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <a class="logo" href="/">
+        <img alt="Francesco Improta Website" src="/img/logo.svg" style="height: 40px;">
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <span class="badge">SOLO 6 POSTI DISPONIBILI</span>
+      <h1>Organizza un Design System con l'interface inventory</h1>
+      <p>Workshop pratico per designer e sviluppatori che vogliono standardizzare le interfacce e ridurre drasticamente
+        i tempi di sviluppo</p>
+
+      <div class="price-section">
+        <div class="price">€89 <span class="price-old">€149</span></div>
+        <div class="date">📅 Sabato 06 Settembre, 14:00-18:00</div>
+        <a href="#prenota" class="cta-primary">PRENOTA IL TUO POSTO</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem Section -->
+  <section class="section">
+    <div class="container">
+      <h2>Ti riconosci in questa situazione?</h2>
+      <ul class="problem-list">
+        <li>Perdi molto tempo a ricreare componenti UI già esistenti</li>
+        <li>Ogni developer interpreta il design a modo suo</li>
+        <li>I progetti sembrano fatti da team diversi</li>
+        <li>Non hai mai tempo per "mettere ordine" nei file di design</li>
+      </ul>
+      <p><strong>La soluzione?</strong> Un Interface Inventory strutturato che diventa la base del tuo Design System.
+      </p>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="section">
+    <div class="container">
+      <h2>Alla fine del workshop saprai:</h2>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <h3>🎨 Analizzare la UI</h3>
+          <p>Catalogherai ogni elemento UI esistente con un metodo professionale</p>
         </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="badge">SOLO 6 POSTI DISPONIBILI</div>
-            <h1>Organizza un Design System con l'interface inventory</h1>
-            <p>Workshop pratico per designer e sviluppatori che vogliono standardizzare le interfacce e ridurre drasticamente i tempi di sviluppo</p>
-            
-            <div class="price-section">
-                <div class="price">€89 <span class="price-old">€149</span></div>
-                <div class="date">📅 Sabato 06 Settembre, 14:00-18:00</div>
-                <a href="#prenota" class="cta-primary">PRENOTA IL TUO POSTO</a>
-            </div>
+        <div class="benefit-card">
+          <h3>⚡ Riduzione del 50% dei tempi</h3>
+          <p>Componenti standardizzati = meno discussioni, più velocità</p>
         </div>
-    </section>
-
-    <!-- Problem Section -->
-    <section class="section">
-        <div class="container">
-            <h2>Ti riconosci in questa situazione?</h2>
-            <ul class="problem-list">
-                <li>Perdi molto tempo a ricreare componenti UI già esistenti</li>
-                <li>Ogni developer interpreta il design a modo suo</li>
-                <li>I progetti sembrano fatti da team diversi</li>
-                <li>Non hai mai tempo per "mettere ordine" nei file di design</li>
-            </ul>
-            <p><strong>La soluzione?</strong> Un Interface Inventory strutturato che diventa la base del tuo Design System.</p>
+        <div class="benefit-card">
+          <h3>🔧 Template riutilizzabili</h3>
+          <p>Strumenti pronti da applicare su qualsiasi interfaccia</p>
         </div>
-    </section>
-
-    <!-- Benefits Section -->
-    <section class="section">
-        <div class="container">
-            <h2>Alla fine del workshop saprai:</h2>
-            <div class="benefits-grid">
-                <div class="benefit-card">
-                    <h3>🎨 Analizzare la UI</h3>
-                    <p>Catalogherai ogni elemento UI esistente con un metodo professionale</p>
-                </div>
-                <div class="benefit-card">
-                    <h3>⚡ Riduzione del 50% dei tempi</h3>
-                    <p>Componenti standardizzati = meno discussioni, più velocità</p>
-                </div>
-                <div class="benefit-card">
-                    <h3>🔧 Template riutilizzabili</h3>
-                    <p>Strumenti pronti da applicare su qualsiasi interfaccia</p>
-                </div>
-                <div class="benefit-card">
-                    <h3>👥 Workflow ottimizzato</h3>
-                    <p>Designer, developer e PM finalmente allineati</p>
-                </div>
-            </div>
+        <div class="benefit-card">
+          <h3>👥 Workflow ottimizzato</h3>
+          <p>Designer, developer e PM finalmente allineati</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Program Section -->
-    <section class="section">
-        <div class="container">
-            <h2>4 ore intensive, risultati immediati</h2>
-            <div class="program-timeline">
-                <div class="program-item">
-                    <h3>Modulo 1: Fondamenta (60 min)</h3>
-                    <p>Anatomia di un Interface Inventory vincente e casi studio di Airbnb, Spotify e Shopify</p>
-                </div>
-                <div class="program-item">
-                    <h3>Modulo 2: Pratica Guidata (90 min)</h3>
-                    <p>Analisi dal vivo del TUO prodotto e catalogazione componenti su FigJam</p>
-                </div>
-                <div class="program-item">
-                    <h3>Modulo 3: Organizzazione (60 min)</h3>
-                    <p>Struttura gerarchica, naming convention e documentazione efficace</p>
-                </div>
-                <div class="program-item">
-                    <h3>Modulo 4: Implementazione (30 min)</h3>
-                    <p>Roadmap personalizzata e next steps concreti per il tuo Design System</p>
-                </div>
-            </div>
+  <!-- Program Section -->
+  <section class="section">
+    <div class="container">
+      <h2>4 ore intensive, risultati immediati</h2>
+      <div class="program-timeline">
+        <div class="program-item">
+          <h3>Modulo 1: Fondamenta (60 min)</h3>
+          <p>Anatomia di un Interface Inventory vincente e casi studio di Airbnb, Spotify e Shopify</p>
         </div>
-    </section>
-
-    <!-- Instructor Section -->
-    <section class="section">
-        <div class="container">
-            <div class="instructor">
-                <h2>Il tuo formatore</h2>
-                <h3>Francesco Improta</h3>
-                <p><strong>Product Designer con 17+ anni di esperienza</strong></p>
-                <p>✅ Design System per startup e aziende Fortune 500<br>
-                ✅ Oltre 200 professionisti formati<br>
-                ✅ Speaker a UX conferences internazionali<br>
-                ✅ Consulente per team di 50+ designer e developer</p>
-                <blockquote>"Ho visto troppi team perdere mesi per creare Design System partendo dal niente. Con il metodo giusto, puoi avere risultati concreti in poche ore."</blockquote>
-            </div>
+        <div class="program-item">
+          <h3>Modulo 2: Pratica Guidata (90 min)</h3>
+          <p>Analisi dal vivo del TUO prodotto e catalogazione componenti su FigJam</p>
         </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="section">
-        <div class="container">
-            <h2>Cosa dicono i partecipanti</h2>
-            <div class="testimonials">
-                <div class="testimonial">
-                    <blockquote>"In 4 ore ho fatto quello che da mesi rimandavo. Ora il mio team lavora il 60% più veloce sui componenti."</blockquote>
-                    <cite>— Marco R., Lead Designer @TechStartup</cite>
-                </div>
-                <div class="testimonial">
-                    <blockquote>"Francesco ci ha fatto risparmiare letteralmente settimane di lavoro. Il metodo è pratico e funziona subito."</blockquote>
-                    <cite>— Anna S., Frontend Developer @FinanceApp</cite>
-                </div>
-                <div class="testimonial">
-                    <blockquote>"Finalmente designer e developer parlano la stessa lingua. Game changer per il nostro prodotto."</blockquote>
-                    <cite>— Luca M., Product Manager @E-commerce</cite>
-                </div>
-            </div>
+        <div class="program-item">
+          <h3>Modulo 3: Organizzazione (60 min)</h3>
+          <p>Struttura gerarchica, naming convention e documentazione efficace</p>
         </div>
-    </section>
-
-    <!-- Guarantee Section -->
-    <section class="section">
-        <div class="container">
-            <div class="guarantee">
-                <h3>🛡️ Garanzia 100%</h3>
-                <p>Se dopo il workshop non hai un Interface Inventory funzionante, ti rimborsiamo completamente.</p>
-            </div>
+        <div class="program-item">
+          <h3>Modulo 4: Implementazione (30 min)</h3>
+          <p>Roadmap personalizzata e next steps concreti per il tuo Design System</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- FAQ Section -->
-    <section class="section">
-        <div class="container">
-            <h2>Domande frequenti</h2>
-            <div class="faq">
-                <div class="faq-item">
-                    <div class="faq-question">Devo avere esperienza con i Design System?</div>
-                    <div class="faq-answer">No, il workshop parte dalle basi. Serve solo un prodotto digitale da analizzare.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">Funziona anche per app mobile?</div>
-                    <div class="faq-answer">Assolutamente sì. Il metodo vale per web, mobile e qualsiasi interfaccia digitale.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">E se non posso partecipare dal vivo?</div>
-                    <div class="faq-answer">Ricevi il recording completo, ma l'interazione dal vivo vale molto di più.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">Cosa succede se il mio team è più grande di 6 persone?</div>
-                    <div class="faq-answer">Contattami per workshop aziendali personalizzati per team numerosi.</div>
-                </div>
-            </div>
+  <!-- Instructor Section -->
+  <section class="section">
+    <div class="container">
+      <div class="instructor">
+        <h2>Il tuo formatore</h2>
+        <h3>Francesco Improta</h3>
+        <p><strong>Product Designer con 17+ anni di esperienza</strong></p>
+        <p>✅ Design System per startup e aziende Fortune 500<br>
+          ✅ Oltre 200 professionisti formati<br>
+          ✅ Speaker a UX conferences internazionali<br>
+          ✅ Consulente per team di 50+ designer e developer</p>
+        <blockquote>"Ho visto troppi team perdere mesi per creare Design System partendo dal niente. Con il metodo
+          giusto, puoi avere risultati concreti in poche ore."</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section">
+    <div class="container">
+      <h2>Cosa dicono i partecipanti</h2>
+      <div class="testimonials">
+        <div class="testimonial">
+          <blockquote>"In 4 ore ho fatto quello che da mesi rimandavo. Ora il mio team lavora il 60% più veloce sui
+            componenti."</blockquote>
+          <cite>— Marco R., Lead Designer @TechStartup</cite>
         </div>
-    </section>
-
-    <!-- Final CTA Section -->
-    <section class="final-cta">
-        <div class="container">
-            <h2>Ultimo avviso: Restano solo 3 posti</h2>
-            <p>Il prossimo workshop è a settembre. Se vuoi risultati concreti già questa settimana, questo è il momento.</p>
-            
-            <div class="countdown">⏰ Prezzo Early Bird scade tra: 3 giorni, 14 ore, 27 minuti</div>
-            <div class="spots-left">👥 Posti rimasti: 3/6</div>
-            
-            <a href="#prenota" class="cta-primary" id="prenota">PRENOTA ORA IL TUO POSTO - €297</a>
-            
-            <br><br>
-            
-            <p>Non sei sicuro?</p>
-            <a href="#call" class="cta-secondary">PRENOTA CALL GRATUITA</a>
+        <div class="testimonial">
+          <blockquote>"Francesco ci ha fatto risparmiare letteralmente settimane di lavoro. Il metodo è pratico e
+            funziona subito."</blockquote>
+          <cite>— Anna S., Frontend Developer @FinanceApp</cite>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Francesco Improta. Tutti i diritti riservati.</p>
+        <div class="testimonial">
+          <blockquote>"Finalmente designer e developer parlano la stessa lingua. Game changer per il nostro prodotto."
+          </blockquote>
+          <cite>— Luca M., Product Manager @E-commerce</cite>
         </div>
-    </footer>
+      </div>
+    </div>
+  </section>
 
-    <script>
-        // FAQ Toggle
-        document.querySelectorAll('.faq-question').forEach(question => {
-            question.addEventListener('click', () => {
-                const item = question.parentNode;
-                item.classList.toggle('active');
-            });
-        });
+  <!-- Guarantee Section -->
+  <section class="section">
+    <div class="container">
+      <div class="guarantee">
+        <h3>🛡️ Garanzia 100%</h3>
+        <p>Se dopo il workshop non hai un Interface Inventory funzionante, ti rimborsiamo completamente.</p>
+      </div>
+    </div>
+  </section>
 
-        // Smooth scrolling for CTA buttons
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
+  <!-- FAQ Section -->
+  <section class="section">
+    <div class="container">
+      <h2>Domande frequenti</h2>
+      <div class="faq">
+        <div class="faq-item">
+          <div class="faq-question">Devo avere esperienza con i Design System?</div>
+          <div class="faq-answer">No, il workshop parte dalle basi. Serve solo un prodotto digitale da analizzare.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Funziona anche per app mobile?</div>
+          <div class="faq-answer">Assolutamente sì. Il metodo vale per web, mobile e qualsiasi interfaccia digitale.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">E se non posso partecipare dal vivo?</div>
+          <div class="faq-answer">Ricevi il recording completo, ma l'interazione dal vivo vale molto di più.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Cosa succede se il mio team è più grande di 6 persone?</div>
+          <div class="faq-answer">Contattami per workshop aziendali personalizzati per team numerosi.</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        // Simple countdown (you'll need to set the actual end date)
-        function updateCountdown() {
-            const endDate = new Date('2025-06-10T23:59:59').getTime();
-            const now = new Date().getTime();
-            const distance = endDate - now;
+  <!-- Final CTA Section -->
+  <section class="final-cta">
+    <div class="container">
+      <h2>Ultimo avviso: Restano solo 3 posti</h2>
+      <p>Il prossimo workshop è a settembre. Se vuoi risultati concreti già questa settimana, questo è il momento.</p>
 
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      <div class="countdown">⏰ Prezzo Early Bird scade tra: 3 giorni, 14 ore, 27 minuti</div>
+      <div class="spots-left">👥 Posti rimasti: 3/6</div>
 
-            const countdownElement = document.querySelector('.countdown');
-            if (countdownElement) {
-                countdownElement.innerHTML = `⏰ Prezzo Early Bird scade tra: ${days} giorni, ${hours} ore, ${minutes} minuti`;
-            }
+      <a href="#prenota" class="cta-primary" id="prenota">PRENOTA ORA IL TUO POSTO - €297</a>
 
-            if (distance < 0) {
-                countdownElement.innerHTML = "⏰ Offerta Early Bird scaduta!";
-            }
+      <br><br>
+
+      <p>Non sei sicuro?</p>
+      <a href="#call" class="cta-secondary">PRENOTA CALL GRATUITA</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Francesco Improta. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+  <script>
+    // FAQ Toggle
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', () => {
+        const item = question.parentNode;
+        item.classList.toggle('active');
+      });
+    });
+
+    // Smooth scrolling for CTA buttons
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth'
+          });
         }
+      });
+    });
 
-        // Update countdown every minute
-        setInterval(updateCountdown, 60000);
-        updateCountdown();
-    </script>
+    // Simple countdown (you'll need to set the actual end date)
+    function updateCountdown() {
+      const endDate = new Date('2025-06-10T23:59:59').getTime();
+      const now = new Date().getTime();
+      const distance = endDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+      const countdownElement = document.querySelector('.countdown');
+      if (countdownElement) {
+        countdownElement.innerHTML = `⏰ Prezzo Early Bird scade tra: ${days} giorni, ${hours} ore, ${minutes} minuti`;
+      }
+
+      if (distance < 0) {
+        countdownElement.innerHTML = "⏰ Offerta Early Bird scaduta!";
+      }
+    }
+
+    // Update countdown every minute
+    setInterval(updateCountdown, 60000);
+    updateCountdown();
+  </script>
 </body>
+
 </html>
