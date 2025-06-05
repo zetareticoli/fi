@@ -1,23 +1,12 @@
-<!DOCTYPE html>
-<html lang="it">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interface Inventory Workshop - Francesco Improta</title>
-  <meta name="description"
-    content="Workshop pratico per designer e sviluppatori che vogliono creare un Design System in 4 ore, non in 4 mesi.">
-  <link rel="stylesheet" href="/css/style.css">
+---
+layout: simple
+---
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
 
-    body {
-      background-color: var(--background);
+    ::selection {
+      background: var(--background-primary);
+      color: white;
     }
 
     .container {
@@ -26,27 +15,25 @@
       padding: 0 2rem;
     }
 
-    header {
-      padding: 2rem 0;
-      text-align: center;
+    .header {
+      margin: 0;
     }
 
     .hero {
-      background: linear-gradient(135deg, #F59E0B 0%, #b45309 100%);
       color: white;
       padding: 4rem 0;
       text-align: center;
+      position: relative;
+      z-index: 1;
     }
 
-    .hero h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
+    .hero h1 {  
       margin-bottom: 1rem;
       line-height: 1.2;
     }
 
     .hero p {
-      font-size: 1.2rem;
+      font-size: 1.25rem;
       margin-bottom: 2rem;
       opacity: 0.9;
     }
@@ -62,34 +49,36 @@
     }
 
     .price-section {
-      background: rgba(255, 255, 255, 0.1);
-      padding: 1.5rem;
+      background: var(--background-weak);
+      padding: 2rem;
       border-radius: 10px;
-      margin: 2rem 0;
+      margin-top: -7rem;
       text-align: center;
+      position: relative;
+      z-index: 10;
     }
 
     .price {
       font-size: 2rem;
       font-weight: 700;
-      margin-bottom: 0.5rem;
+      margin-bottom: 1rem;
     }
 
     .price-old {
       text-decoration: line-through;
       opacity: 0.7;
-      font-size: 1.2rem;
+      font-size: var(--font-03);
       margin-left: 1rem;
     }
 
     .date {
-      font-size: 1.1rem;
-      margin-bottom: 1rem;
+      font-size: var(--font-03);
+      margin-bottom: 2rem;
     }
 
     .cta-primary {
-      background: #ff6b6b;
-      color: white;
+      background: var(--background-primary);
+      color: var(--text);
       padding: 1rem 2rem;
       border: none;
       border-radius: 5px;
@@ -102,13 +91,12 @@
     }
 
     .cta-primary:hover {
-      background: #ff5252;
+      background: var(--state-hover);
       transform: translateY(-2px);
     }
 
     .section {
       padding: 3rem 0;
-      background: white;
     }
 
     .section:nth-child(even) {
@@ -141,13 +129,14 @@
 
     .benefits-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, 1fr);
       gap: 2rem;
       margin-top: 2rem;
     }
 
     .benefit-card {
       background: white;
+      color: var(--text);
       padding: 2rem;
       border-radius: 10px;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -327,25 +316,43 @@
       }
     }
   </style>
-</head>
 
-<body>
   <!-- Header -->
-  <header>
-    <div class="container">
-      <a class="logo" href="/">
-        <img alt="Francesco Improta Website" src="/img/logo.svg" style="height: 40px;">
-      </a>
-    </div>
+  <div class="inner">
+  <header class="header flex">
+    <a class="logo" href="/">
+      <img alt="Francesco Improta" src="/img/logo.svg">
+      <span style="font-weight: bold; color: var(--text-primary);">Workshop</span>
+    </a>
+    <nav class="nav">
+      <ul class="nav__list flex space-between m-none list-none">
+        <li class="m-none">
+          <a class="nav__item text-emphasis " href="#learn">Cosa impari</a>
+        </li>
+        <li class="m-none">
+          <a class="nav__item text-emphasis " href="#details">Dettagli</a>
+        </li>
+        <li class="m-none">
+          <a class="nav__item text-emphasis " href="#about">Chi sono</a>
+        </li>
+        <li class="m-none">
+          <a class="nav__item text-emphasis " href="#testimonials">Recensioni</a>
+        </li>
+      </ul>
+  </nav>
+  
   </header>
+  </div>
 
   <!-- Hero Section -->
   <section class="hero">
     <div class="container">
       <span class="badge">SOLO 6 POSTI DISPONIBILI</span>
-      <h1>Organizza un Design System con l'interface inventory</h1>
+      <h1>Dal caos all'ordine: creare un interface inventory</h1>
       <p>Workshop pratico per designer e sviluppatori che vogliono standardizzare le interfacce e ridurre drasticamente
         i tempi di sviluppo</p>
+
+        <img class="spacing-sections full-width outer-margin" src="/img/interface-inventory-workshop.webp" alt="A working desk reflected in a picture" title="My design studio image reflected">
 
       <div class="price-section">
         <div class="price">€89 <span class="price-old">€149</span></div>
@@ -555,6 +562,3 @@
     setInterval(updateCountdown, 60000);
     updateCountdown();
   </script>
-</body>
-
-</html>
