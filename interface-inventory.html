@@ -10,18 +10,18 @@ layout: simple
     }
 
     .container {
-      max-width: 800px;
+      max-width: 960px;
       margin: 0 auto;
       padding: 0 2rem;
     }
 
     .header {
-      margin: 0;
+      margin: 1rem 0;
     }
 
     .hero {
       color: white;
-      padding: 4rem 0;
+      padding: 3rem 0;
       text-align: center;
       position: relative;
       z-index: 1;
@@ -34,46 +34,58 @@ layout: simple
 
     .hero p {
       font-size: 1.25rem;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
       opacity: 0.9;
     }
 
     .badge {
-      background: rgba(255, 255, 255, 0.2);
+      background: var(--background-weak);
       padding: 0.5rem 1rem;
       border-radius: 20px;
-      font-size: 0.9rem;
+      font-size: 0.75rem;
       font-weight: 600;
-      margin-bottom: 1rem;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
       display: inline-block;
     }
 
     .price-section {
-      background: var(--background-weak);
-      padding: 2rem;
+      background: var(--background-light);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 1rem;
+      gap: 1rem;
+      margin-bottom: 1rem;
       border-radius: 10px;
-      margin-top: -7rem;
-      text-align: center;
-      position: relative;
-      z-index: 10;
+    }
+    @media screen and (min-width: 768px) {
+      .price-section {
+        padding: 0.5rem;
+        flex-direction: row;
+      }
     }
 
     .price {
       font-size: 2rem;
       font-weight: 700;
-      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 4px;
     }
 
     .price-old {
       text-decoration: line-through;
-      opacity: 0.7;
+      opacity: 0.5;
       font-size: var(--font-03);
-      margin-left: 1rem;
+      margin-left: 4px;
     }
 
     .date {
       font-size: var(--font-03);
-      margin-bottom: 2rem;
+      font-weight: 600;
+      color: var(--text);
     }
 
     .cta-primary {
@@ -100,7 +112,7 @@ layout: simple
     }
 
     .section:nth-child(even) {
-      background: #f8f9fa;
+      background: var(--background-weak);
     }
 
     .section h2 {
@@ -347,17 +359,37 @@ layout: simple
   <!-- Hero Section -->
   <section class="hero">
     <div class="container">
-      <span class="badge">SOLO 6 POSTI DISPONIBILI</span>
-      <h1>Dal caos all'ordine: creare un interface inventory</h1>
-      <p>Workshop pratico per designer e sviluppatori che vogliono standardizzare le interfacce e ridurre drasticamente
+      <span class="badge">Solo 6 posti disponibili</span>
+      <h1>Dal caos all'ordine ー <br>creare un interface inventory</h1>
+      <p>Un workshop pratico per designer e sviluppatori che vogliono organizzare le interfacce e ridurre drasticamente
         i tempi di sviluppo</p>
 
-        <img class="spacing-sections full-width outer-margin" src="/img/interface-inventory-workshop.webp" alt="A working desk reflected in a picture" title="My design studio image reflected">
-
       <div class="price-section">
-        <div class="price">€89 <span class="price-old">€149</span></div>
-        <div class="date">📅 Sabato 06 Settembre, 14:00-18:00</div>
-        <a href="#prenota" class="cta-primary">PRENOTA IL TUO POSTO</a>
+        <div class="price">€149 <span class="price-old">€229</span></div>
+        <div class="date">Sabato 06 Settembre, 14:00-18:00</div>
+        <a href="#prenota" class="cta-primary">Prenota il tuo posto</a>
+      </div>
+
+      <img class="spacing-sections full-width outer-margin" src="/img/interface-inventory-workshop.webp" alt="A working desk reflected in a picture" title="My design studio image reflected">
+  </section>
+
+  <section>
+    <div class="list-card-4">
+      <div class="grid-item">
+        <h3>100% remoto</h3>
+        <p>Per garantire un'esperienza personalizzata e interattiva</p>
+      </div>
+      <div class="grid-item">
+        <h3>Casi studio reali</h3>
+        <p>Analizzeremo insieme prodotti di successo</p>
+      </div>
+      <div class="grid-item">
+        <h3>4 ore intensive</h3>
+        <p>Sessioni pratiche e teoria per risultati immediati</p>
+      </div>
+      <div class="grid-item">
+        <h3>Strumenti inclusi</h3>
+        <p>Template, checklist e risorse per applicare subito il metodo</p>
       </div>
     </div>
   </section>
@@ -365,7 +397,7 @@ layout: simple
   <!-- Problem Section -->
   <section class="section">
     <div class="container">
-      <h2>Ti riconosci in questa situazione?</h2>
+      <h2>Questo workshop è per te se...</h2>
       <ul class="problem-list">
         <li>Perdi molto tempo a ricreare componenti UI già esistenti</li>
         <li>Ogni developer interpreta il design a modo suo</li>
