@@ -33,7 +33,7 @@
 .hero p {
   font-size: 1.25rem;
   margin-bottom: 1rem;
-  color: var(--text);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .badge {
@@ -55,14 +55,12 @@
   justify-content: space-evenly;
   padding: 1rem;
   gap: 1rem;
-  margin-bottom: 3rem;
   border-radius: 10px;
 }
 @media screen and (min-width: 768px) {
   .price-section {
     padding: 0.5rem;
     flex-direction: row;
-    margin-bottom: 6rem;
   }
 }
 
@@ -110,17 +108,6 @@
   padding: 3rem 0;
 }
 
-.section:nth-child(even) {
-  background: var(--background-weak);
-}
-
-.section h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  text-align: center;
-  color: #333;
-}
-
 .problem-list {
   list-style: none;
   margin-bottom: 2rem;
@@ -128,13 +115,11 @@
 
 .problem-list li {
   padding: 0.5rem 0;
-  font-size: 1.1rem;
+  font-size: 1.75rem;
 }
 
 .problem-list li:before {
-  content: "✗";
-  color: #ff6b6b;
-  font-weight: bold;
+  content: "🔴";
   margin-right: 1rem;
 }
 
@@ -166,9 +151,7 @@
 }
 
 .program-item {
-  background: white;
   padding: 1.5rem;
-  border-radius: 8px;
   border-left: 4px solid #667eea;
 }
 
