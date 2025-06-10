@@ -3,11 +3,6 @@
 # only Main files contain this front matter, not partials.
 ---
 
-::selection {
-  background: var(--background-primary);
-  color: white;
-}
-
 .container {
   max-width: 960px;
   margin: 0 auto;
@@ -146,18 +141,14 @@
 
 .program-timeline {
   display: grid;
-  gap: 1.5rem;
-  margin-top: 2rem;
+  gap: 4px;
+  margin-top: 3rem;
 }
 
 .program-item {
   padding: 1.5rem;
-  border-left: 4px solid #667eea;
-}
-
-.program-item h3 {
-  color: #667eea;
-  margin-bottom: 0.5rem;
+  background-color: var(--background-weak);
+  border-left: 4px solid var(--background-primary);
 }
 
 .instructor {
