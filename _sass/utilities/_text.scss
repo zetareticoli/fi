@@ -86,15 +86,25 @@
   text-transform: uppercase;
 }
 
+.underline {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
 .font-weight-regular {
   font-weight: var(--font-regular);
 }
+
 .font-weight-medium {
   font-weight: var(--font-medium);
 }
+
 .font-weight-semibold {
   font-weight: var(--font-semibold);
 }
+
 .font-weight-bold {
   font-weight: var(--font-bold);
 }
