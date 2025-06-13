@@ -124,16 +124,16 @@
 }
 
 .price-old {
-  margin-left: 4px;
-  opacity: 0.5;
-  font-size: var(--font-03);
+  margin-left: 0.5rem;
+  font-size: var(--font-04);
+  color: var(--text-light);
   text-decoration: line-through;
 }
 
 .date {
   color: var(--text);
   font-size: var(--font-03);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .cta-primary {
@@ -220,18 +220,17 @@
 }
 
 .faq-item {
-  margin-bottom: 1rem;
-  overflow: hidden;
-  border-radius: 8px;
-  background: white;
+  position: relative;
+  padding: 1.5rem 0;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+  }
 }
 
 .faq-question {
-  padding: 1rem;
-  border-bottom: 1px solid #e5e5e5;
-  background: #f8f9fa;
   font-weight: 600;
-  cursor: pointer;
 }
 
 .faq-answer {
