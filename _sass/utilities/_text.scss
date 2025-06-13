@@ -90,7 +90,12 @@
   text-decoration: underline;
   text-decoration-skip-ink: auto;
   text-decoration-thickness: 2px;
-  text-underline-offset: 4px;
+  text-underline-offset: 3px;
+
+  &:hover {
+    text-decoration-color: currentColor;
+    opacity: 0.8;
+  }
 }
 
 .font-regular {
