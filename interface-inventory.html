@@ -370,27 +370,30 @@ website: "https://francescoimprota.com"
 
   // Simple countdown (you'll need to set the actual end date)
   function updateCountdown() {
-    const endDate = new Date('2025-06-10T23:59:59').getTime();
-    const now = new Date().getTime();
-    const distance = endDate - now;
+    const eventDate = new Date('2025-07-31T14:00:00');
+    const now = new Date();
+    const diff = eventDate - now;
+    const daysUntilEvent = Math.floor(diff / (1000 * 60 * 60 * 24));
+    
+    const countdownElement = document.querySelector('.event-countdown');
+    const staticElement = document.querySelector('.event-static');
+    
+    if (daysUntilEvent <= 7 && daysUntilEvent > 0) {
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
 
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-
-    const countdownElement = document.querySelector('.countdown');
-    if (countdownElement) {
-      countdownElement.innerHTML = `⏰ Prezzo Early Bird scade tra: ${days} giorni, ${hours} ore, ${minutes} minuti`;
-    }
-
-    if (distance < 0) {
-      countdownElement.innerHTML = "⏰ Offerta Early Bird scaduta!";
+      countdownElement.innerHTML = `Solo ${daysUntilEvent}giorni, ${hours} ore ${minutes} minuti rimasti`;
+      countdownElement.style.display = 'block';
+      staticElement.style.display = 'none';
+    } else {
+      countdownElement.style.display = 'none';
+      staticElement.style.display = 'block';
     }
   }
 
   // Update countdown every minute
   setInterval(updateCountdown, 60000);
-  updateCountdown();
+  updateCountdown(); // Initial call
 
   // Add this to your existing script section
   document.querySelectorAll('.program-item').forEach(item => {
