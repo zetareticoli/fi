@@ -278,25 +278,23 @@
 
 footer {
   padding: 2rem 0;
-  background: #333;
-  color: white;
   text-align: center;
 }
 
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2rem;
-  }
+// @media (max-width: 768px) {
+//   .hero h1 {
+//     font-size: 2rem;
+//   }
 
-  .hero p {
-    font-size: 1.1rem;
-  }
+//   .hero p {
+//     font-size: 1.1rem;
+//   }
 
-  .benefits-grid {
-    grid-template-columns: 1fr;
-  }
+//   .benefits-grid {
+//     grid-template-columns: 1fr;
+//   }
 
-  .testimonials {
-    grid-template-columns: 1fr;
-  }
-}
+//   .testimonials {
+//     grid-template-columns: 1fr;
+//   }
+// }
