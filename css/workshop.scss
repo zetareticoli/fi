@@ -115,8 +115,9 @@
   justify-content: space-evenly;
   padding: 1rem;
   border-radius: 10px;
-  background: var(--background-light);
+  background: #19222a;
   gap: 1rem;
+  border: 1px solid rgba(255,255,255,0.06);
 }
 @media screen and (min-width: 768px) {
   .price-section {
@@ -289,21 +290,3 @@ footer {
   padding: 2rem 0;
   text-align: center;
 }
-
-// @media (max-width: 768px) {
-//   .hero h1 {
-//     font-size: 2rem;
-//   }
-
-//   .hero p {
-//     font-size: 1.1rem;
-//   }
-
-//   .benefits-grid {
-//     grid-template-columns: 1fr;
-//   }
-
-//   .testimonials {
-//     grid-template-columns: 1fr;
-//   }
-// }
