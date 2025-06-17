@@ -41,10 +41,7 @@
 {% endif %}
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
-{% if page.summary %}
-  <meta name="og:description" content="{{ page.summary }}">
-  {% else %}
-  <meta name="og:description" content="{{ site.description.subtitle }}">
+<meta name="og:description" content="{% if page.summary %} {{ page.summary }} {% else %} {{ site.description.subtitle }}">
 {% endif %}
 <!-- /og tags -->
 
