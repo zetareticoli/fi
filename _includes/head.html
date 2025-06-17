@@ -30,13 +30,13 @@
 <meta property="og:title" content="{% if page.title %}{{ page.title }} • {{ site.name }}{% else %}{{ site.name }}{% endif %}">
 <meta property="og:locale" content="{{ site.lang }}">
 {% if page.og-image %}
-  <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/img/{{ page.og-image }}">
+  <meta property="og:image" content="{{ site.url }}/img/{{ page.og-image }}">
 {% else %}
   {% if page.cover-image %}
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/img/covers/{{ page.cover-image }}">
+    <meta property="og:image" content="{{ site.url }}/img/covers/{{ page.cover-image }}">
   {% else %}
-    <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/android-chrome-192x192.png">
+    <meta property="og:image" content="{{ site.url }}/android-chrome-192x192.png">
   {% endif %}
 {% endif %}
 <meta property="og:type" content="website">
