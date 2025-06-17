@@ -11,20 +11,23 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
 <div class="inner">
   <header class="header flex">
 
-    <a class="logo" href="/">
+    <a class="logo justify-center" href="/">
       <img alt="Francesco Improta" src="/img/logo.svg" class="mr-xs">
       <span>Workshops</span>
     </a>
     <nav class="nav">
-      <ul class="nav__list flex m-none list-none">
+      <ul class="nav__list flex space-between m-none list-none">
         <li class="m-none">
-          <a class="nav__item text-emphasis" href="#details">Programma</a>
+          <a class="nav__item" href="#details">Programma</a>
         </li>
         <li class="m-none">
-          <a class="nav__item text-emphasis" href="#learn">Cosa impari</a>
+          <a class="nav__item" href="#learn">Impari</a>
         </li>
         <li class="m-none">
-          <a class="nav__item text-emphasis" href="#testimonials">Cosa dicono</a>
+          <a class="nav__item" href="#testimonials">Cosa dicono</a>
+        </li>
+        <li class="m-none">
+          <a class="nav__item" href="#faq">FAQ</a>
         </li>
       </ul>
     </nav>
