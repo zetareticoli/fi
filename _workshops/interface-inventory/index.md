@@ -54,9 +54,10 @@ website: "https://francescoimprota.com"
   
       <div class="list-card-4 mb-l">
         <div class="">
-          <h3 class="text-small flex items-center color-text-light"><svg class="mr-s" xmlns="http://www.w3.org/2000/svg"
+          <h3 class="text-small flex items-center color-text-light">
+            <svg xmlns="http://www.w3.org/2000/svg"
               width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-              stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-webcam-icon lucide-webcam">
+              stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-webcam-icon lucide-webcam mr-s">
               <circle cx="12" cy="10" r="8" />
               <circle cx="12" cy="10" r="3" />
               <path d="M7 22h10" />
@@ -65,10 +66,11 @@ website: "https://francescoimprota.com"
           <!-- <p>Per garantire un'esperienza personalizzata e interattiva</p> -->
         </div>
         <div class="">
-          <h3 class="text-small flex items-center color-text-light"><svg class="mr-s" xmlns="http://www.w3.org/2000/svg"
+          <h3 class="text-small flex items-center color-text-light">
+            <svg xmlns="http://www.w3.org/2000/svg"
               width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
               stroke-linecap="round" stroke-linejoin="round"
-              class="lucide lucide-layout-template-icon lucide-layout-template">
+              class="lucide lucide-layout-template-icon lucide-layout-template mr-s">
               <rect width="18" height="7" x="3" y="3" rx="1" />
               <rect width="9" height="7" x="3" y="14" rx="1" />
               <rect width="5" height="7" x="16" y="14" rx="1" />
@@ -76,18 +78,20 @@ website: "https://francescoimprota.com"
           <!-- <p>Analizzeremo insieme prodotti di successo</p> -->
         </div>
         <div class="">
-          <h3 class="text-small flex items-center color-text-light"><svg class="mr-s" xmlns="http://www.w3.org/2000/svg"
+          <h3 class="text-small flex items-center color-text-light">
+            <svg xmlns="http://www.w3.org/2000/svg"
               width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock2-icon lucide-clock-2">
+              stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock2-icon lucide-clock-2 mr-s">
               <circle cx="12" cy="12" r="10" />
               <polyline points="12 6 12 12 16 10" />
             </svg>4 ore immersive</h3>
           <!-- <p>Sessioni pratiche e teoria per risultati immediati</p> -->
         </div>
         <div class="">
-          <h3 class="text-small flex items-center color-text-light"><svg class="mr-s" xmlns="http://www.w3.org/2000/svg"
+          <h3 class="text-small flex items-center color-text-light">
+            <svg xmlns="http://www.w3.org/2000/svg"
               width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-              stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hammer-icon lucide-hammer">
+              stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hammer-icon lucide-hammer mr-s">
               <path d="m15 12-8.373 8.373a1 1 0 1 1-3-3L12 9" />
               <path d="m18 15 4-4" />
               <path
