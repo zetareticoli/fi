@@ -217,6 +217,8 @@ og-image: workshops/interface-inventory/interface-inventory-cover.jpg
         <div class="date">🗓️ Sabato 06 Settembre, 14:00-18:00</div>
         <a href="https://francescoimprota.kit.com/products/workshop-interface-inventory?promo=3G565J82BC" class="cta-primary">Prenota il tuo posto</a>
       </div>
+      <p class="event-countdown" style="display: none;"></p>
+      <p class="event-static mb-m text-small font-semibold color-text-light">Prezzo Early Bird valido fino al <strong>31 luglio, 2025</strong>. Ci sono ancora <strong>5 posti disponibili</strong>.</p>
     </div>
   </section>
   
