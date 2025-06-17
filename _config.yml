@@ -1,4 +1,3 @@
-
 # The name of your website.
 name: Francesco Improta
 
@@ -27,6 +26,9 @@ collections:
   work:
     output: true
     sort_by: 'order'
+  workshops:
+    output: true
+    permalink: /workshops/:path
 
 # FROM THIS POINT ON EVERYTHING IS OPTIONAL
 

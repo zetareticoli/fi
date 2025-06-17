@@ -47,7 +47,7 @@ website: "https://francescoimprota.com"
       <h1 class="headline-teaser">Dal caos all'ordine ー <br>creare un interface inventory</h1>
       <p>Un <strong>workshop pratico per designer e sviluppatori</strong> che vogliono organizzare le interfacce e ridurre drasticamente i tempi di sviluppo.</p>
       <div class="price-section mb-m">
-        <div class="price">€149 <span class="price-old">€229</span></div>
+        <div class="price">€99 <span class="price-old">€200</span></div>
         <div class="date">🗓️ Sabato 06 Settembre, 14:00-18:00</div>
         <a href="https://francescoimprota.kit.com/products/workshop-interface-inventory?promo=3G565J82BC" class="cta-primary">Prenota il tuo posto</a>
       </div>
@@ -99,6 +99,7 @@ website: "https://francescoimprota.com"
   
       <img class="full-width outer-margin" src="/img/interface-inventory-workshop.webp"
         alt="A working desk reflected in a picture" title="My design studio image reflected">
+    </div>
   </section>
   
   <!-- Program Section -->
@@ -215,7 +216,7 @@ website: "https://francescoimprota.com"
       </div>
   
       <div class="price-section container mb-m">
-        <div class="price">€149 <span class="price-old">€229</span></div>
+        <div class="price">€99 <span class="price-old">€200</span></div>
         <div class="date">🗓️ Sabato 06 Settembre, 14:00-18:00</div>
         <a href="https://francescoimprota.kit.com/products/workshop-interface-inventory?promo=3G565J82BC" class="cta-primary">Prenota il tuo posto</a>
       </div>
@@ -298,6 +299,13 @@ website: "https://francescoimprota.com"
       <p class="lead color-text-light">Hai dubbi se questo workshop fa per te? Ecco le risposte alle domande più comuni.</p>
       <div class="faq">
         <div class="faq-item">
+          <h4 class="faq-question m-none underline">Come funziona il workshop?</h4>
+          <div class="faq-answer color-text-light font-semibold">Il workshop si svolge online via Google Meet, con sessioni pratiche e teoria. Riceverai un link per accedere una settimana prima della data prevista.</div>
+          <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="faq-item">
           <h4 class="faq-question m-none underline">Devo avere esperienza con i Design System?</h4>
           <div class="faq-answer color-text-light font-semibold">No, il workshop parte dalle basi. Ti fornirò io un prodotto digitale da analizzare e gli strumenti per farlo.</div>
           <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -327,13 +335,6 @@ website: "https://francescoimprota.com"
           </svg>
         </div>
         <div class="faq-item">
-          <h4 class="faq-question m-none underline">Come funziona il workshop?</h4>
-          <div class="faq-answer color-text-light font-semibold">Il workshop si svolge online via Google Meet, con sessioni pratiche e teoria. Riceverai un link per accedere una settimana prima della data prevista.</div>
-          <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </div>
-        <div class="faq-item">
           <h4 class="faq-question m-none underline">Ho bisogno di strumenti specifici?</h4>
           <div class="faq-answer color-text-light font-semibold">No, basta un computer e una connessione internet. Ti fornirò tutto il materiale necessario.</div>
           <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -359,7 +360,7 @@ website: "https://francescoimprota.com"
         Impara ad organizzare un'interfaccia digitale in modo efficace!
       </p>
       <div class="price-section mb-m">
-        <div class="price">€149 <span class="price-old">€229</span></div>
+        <div class="price">€99 <span class="price-old">€200</span></div>
         <div class="date">🗓️ Sabato 06 Settembre, 14:00-18:00</div>
         <a href="https://francescoimprota.kit.com/products/workshop-interface-inventory?promo=3G565J82BC" class="cta-primary">Prenota il tuo posto</a>
       </div>
