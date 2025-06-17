@@ -36,7 +36,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
   <!-- Hero Section -->
   <section class="hero">
     <div class="container">
-      <span class="badge">Solo 6 posti disponibili</span>
+      <span class="badge">Workshop Online</span>
       <h1 class="headline-teaser">Dal caos all'ordine ー <br>creare un interface inventory</h1>
       <p>Un <strong>workshop pratico per designer e sviluppatori</strong> che vogliono organizzare le interfacce e ridurre drasticamente i tempi di sviluppo.</p>
       <div class="price-section mb-m">
@@ -56,7 +56,6 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
               <path d="M7 22h10" />
               <path d="M12 22v-4" />
             </svg>100% remoto</h3>
-          <!-- <p>Per garantire un'esperienza personalizzata e interattiva</p> -->
         </div>
         <div class="">
           <h3 class="text-small flex items-center color-text-light">
@@ -68,17 +67,11 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
               <rect width="9" height="7" x="3" y="14" rx="1" />
               <rect width="5" height="7" x="16" y="14" rx="1" />
             </svg>Casi studio reali</h3>
-          <!-- <p>Analizzeremo insieme prodotti di successo</p> -->
         </div>
         <div class="">
           <h3 class="text-small flex items-center color-text-light">
-            <svg xmlns="http://www.w3.org/2000/svg"
-              width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock2-icon lucide-clock-2 mr-s">
-              <circle cx="12" cy="12" r="10" />
-              <polyline points="12 6 12 12 16 10" />
-            </svg>4 ore immersive</h3>
-          <!-- <p>Sessioni pratiche e teoria per risultati immediati</p> -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users-icon lucide-users mr-s"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></svg>
+            Solo 6 partecipanti</h3>
         </div>
         <div class="">
           <h3 class="text-small flex items-center color-text-light">
@@ -90,7 +83,6 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
               <path
                 d="m21.5 11.5-1.914-1.914A2 2 0 0 1 19 8.172V7l-2.26-2.26a6 6 0 0 0-4.202-1.756L9 2.96l.92.82A6.18 6.18 0 0 1 12 8.4V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5" />
             </svg>Strumenti pratici</h3>
-          <!-- <p>Template, checklist e risorse per applicare subito il metodo</p> -->
         </div>
       </div>
   
@@ -212,13 +204,15 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
         </ul>
       </div>
   
-      <div class="price-section container mb-m">
+      <div class="price-section mb-m">
         <div class="price">€99 <span class="price-old">€199</span></div>
         <div class="date">🗓️ Sabato 06 Settembre, 14:00-18:00</div>
         <a href="https://francescoimprota.kit.com/products/workshop-interface-inventory?promo=3G565J82BC" class="cta-primary">Prenota il tuo posto</a>
       </div>
-      <p class="event-countdown" style="display: none;"></p>
-      <p class="event-static mb-m text-small font-semibold color-text-light">Prezzo Early Bird valido fino al <strong>31 luglio, 2025</strong>. Ci sono ancora <strong>5 posti disponibili</strong>.</p>
+      <div class="text-center">
+        <p class="event-countdown" style="display: none;"></p>
+        <p class="event-static mb-m text-small font-regular color-text-light">Prezzo Early Bird valido fino al <strong>31 luglio, 2025</strong>. Solo <strong>5/6 posti rimasti</strong>.</p>
+      </div>
     </div>
   </section>
   
@@ -364,7 +358,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
         <a href="https://francescoimprota.kit.com/products/workshop-interface-inventory?promo=3G565J82BC" class="cta-primary">Prenota il tuo posto</a>
       </div>
       <p class="event-countdown" style="display: none;"></p>
-      <p class="event-static mb-m text-small font-semibold color-text-light">Prezzo Early Bird valido fino al <strong>31 luglio, 2025</strong>. Ci sono ancora <strong>5 posti disponibili</strong>.</p>
+      <p class="event-static mb-m text-small font-regular color-text-light">Prezzo Early Bird valido fino al <strong>31 luglio, 2025</strong>. Solo <strong>5/6 posti rimasti</strong>.</p>
       <hr>
       <p class="text-small color-text-light mb-xs">Non sei sicuro?</p>
       <p>
@@ -378,7 +372,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
 <!-- Footer -->
 <footer>
   <div class="container">
-    <p class="color-text-weak">&copy; 2025 Francesco Improta. Tutti i diritti riservati.</p>
+    <p class="color-text-weak text-small">&copy; 2025 Francesco Improta. Tutti i diritti riservati.</p>
   </div>
 </footer>
 
