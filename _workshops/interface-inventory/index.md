@@ -4,7 +4,7 @@ css: /css/workshop.css
 title: "Workshop: Dal caos all'ordine - Creare un Interface Inventory"
 summary: "Un workshop pratico per designer e sviluppatori che vogliono organizzare le interfacce e ridurre drasticamente i tempi di sviluppo. Impara a creare un Interface Inventory efficace in 4 ore."
 lang: it
-og-image: workshops/interface-inventory/interface-inventory-cover.jpg
+og-image: workshops/interface-inventory/interface-inventory-og.png
 ---
 
 <!-- Header -->
