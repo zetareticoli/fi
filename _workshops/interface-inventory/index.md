@@ -2,17 +2,54 @@
 layout: simple
 css: /css/workshop.css
 title: "Workshop: Dal caos all'ordine - Creare un Interface Inventory"
-description: "Un workshop pratico per designer e sviluppatori che vogliono organizzare le interfacce e ridurre
-drasticamente i tempi di sviluppo"
+description: "Un workshop pratico per designer e sviluppatori che vogliono organizzare le interfacce e ridurre drasticamente i tempi di sviluppo. Impara a creare un Interface Inventory efficace in 4 ore."
 lang: it
 author:
-name: "Francesco Improta"
-info: "Product Designer con 17+ anni di esperienza"
-twitter: "https://twitter.com/francescoimprota"
-linkedin: "https://www.linkedin.com/in/francescoimprota/"
-website: "https://francescoimprota.com"
----
+  name: "Francesco Improta"
+  info: "Product Designer con 17+ anni di esperienza"
+  twitter: "https://twitter.com/francescoimprota"
+  linkedin: "https://www.linkedin.com/in/francescoimprota/"
+  website: "https://francescoimprota.com"
 
+# SEO
+keywords: "interface inventory, design system, workshop, ux design, ui design, user interface, user experience, design patterns"
+image: /img/workshops/interface-inventory/interface-inventory-cover.webp
+date: 2025-09-06
+last_modified_at: 2025-06-17
+
+# Open Graph / Facebook
+og_type: website
+og_title: "Workshop: Dal caos all'ordine - Creare un Interface Inventory"
+og_description: "Un workshop pratico per designer e sviluppatori. Impara a organizzare le interfacce e ridurre drasticamente i tempi di sviluppo con un Interface Inventory efficace."
+og_image: /img/workshops/interface-inventory/interface-inventory-cover.webp
+og_locale: it_IT
+
+# Twitter Card
+twitter_card: summary_large_image
+twitter_title: "Workshop: Dal caos all'ordine - Creare un Interface Inventory"
+twitter_description: "Un workshop pratico per designer e sviluppatori. Impara a organizzare le interfacce e ridurre drasticamente i tempi di sviluppo con un Interface Inventory efficace."
+twitter_image: /img/workshops/interface-inventory/interface-inventory-cover.webp
+twitter_creator: "@francescoimprota"
+
+# Schema.org for Google
+schema:
+  type: Course
+  name: "Workshop: Dal caos all'ordine - Creare un Interface Inventory"
+  description: "Un workshop pratico per designer e sviluppatori che vogliono organizzare le interfacce e ridurre drasticamente i tempi di sviluppo"
+  provider:
+    type: Person
+    name: Francesco Improta
+    sameAs: https://francescoimprota.com
+  duration: PT4H
+  startDate: 2025-09-06T14:00
+  endDate: 2025-09-06T18:00
+  price: 99
+  priceCurrency: EUR
+  url: https://francescoimprota.com/workshops/interface-inventory
+  location:
+    type: VirtualLocation
+    name: Google Meet
+---
 
 <!-- Header -->
 <div class="inner">
@@ -47,7 +84,7 @@ website: "https://francescoimprota.com"
       <h1 class="headline-teaser">Dal caos all'ordine ー <br>creare un interface inventory</h1>
       <p>Un <strong>workshop pratico per designer e sviluppatori</strong> che vogliono organizzare le interfacce e ridurre drasticamente i tempi di sviluppo.</p>
       <div class="price-section mb-m">
-        <div class="price">€99 <span class="price-old">€200</span></div>
+        <div class="price">€99 <span class="price-old">€199</span></div>
         <div class="date">🗓️ Sabato 06 Settembre, 14:00-18:00</div>
         <a href="https://francescoimprota.kit.com/products/workshop-interface-inventory?promo=3G565J82BC" class="cta-primary">Prenota il tuo posto</a>
       </div>
@@ -101,7 +138,7 @@ website: "https://francescoimprota.com"
         </div>
       </div>
   
-      <img class="full-width outer-margin" src="/img/interface-inventory-workshop.webp"
+      <img class="full-width outer-margin" src="/img/workshops/interface-inventory/interface-inventory-banner.webp"
         alt="A working desk reflected in a picture" title="My design studio image reflected">
     </div>
   </section>
@@ -220,7 +257,7 @@ website: "https://francescoimprota.com"
       </div>
   
       <div class="price-section container mb-m">
-        <div class="price">€99 <span class="price-old">€200</span></div>
+        <div class="price">€99 <span class="price-old">€199</span></div>
         <div class="date">🗓️ Sabato 06 Settembre, 14:00-18:00</div>
         <a href="https://francescoimprota.kit.com/products/workshop-interface-inventory?promo=3G565J82BC" class="cta-primary">Prenota il tuo posto</a>
       </div>
@@ -364,7 +401,7 @@ website: "https://francescoimprota.com"
         Impara ad organizzare un'interfaccia digitale in modo efficace!
       </p>
       <div class="price-section mb-m">
-        <div class="price">€99 <span class="price-old">€200</span></div>
+        <div class="price">€99 <span class="price-old">€199</span></div>
         <div class="date">🗓️ Sabato 06 Settembre, 14:00-18:00</div>
         <a href="https://francescoimprota.kit.com/products/workshop-interface-inventory?promo=3G565J82BC" class="cta-primary">Prenota il tuo posto</a>
       </div>
