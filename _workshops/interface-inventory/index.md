@@ -11,7 +11,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
 <div class="inner">
   <header class="header flex">
 
-    <a class="logo justify-center" href="/">
+    <a class="logo justify-center" href="{{ site.baseurl }}/workshops/interface-inventory">
       <img alt="Francesco Improta" src="/img/logo.svg" class="mr-xs">
       <span>Workshops</span>
     </a>
