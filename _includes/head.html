@@ -28,7 +28,7 @@
 <meta property="og:logo" content="{{ site.url }}{{ site.baseurl }}/android-chrome-192x192.png" />
 <meta property="og:site_name" content="{{ site.name }}">
 <meta property="og:title" content="{% if page.title %}{{ page.title }} • {{ site.name }}{% else %}{{ site.name }}{% endif %}">
-<meta property="og:locale" content="{{ site.lang }}">
+<meta property="og:locale" content="{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang }}{% endif %}">
 {% if page.og-image %}
   <meta property="og:image" content="{{ site.url }}/img/{{ page.og-image }}">
 {% else %}

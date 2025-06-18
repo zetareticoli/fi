@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang }}" prefix="og: http://ogp.me/ns#">
+<html lang="{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang }}{% endif %}" prefix="og: http://ogp.me/ns#">
 <head>
 	{% include head.html %}
 	{% if page.css %}
