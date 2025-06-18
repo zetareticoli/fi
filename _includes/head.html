@@ -30,11 +30,10 @@
 <meta property="og:site_name" content="{{ site.name }}">
 <meta property="og:title" content="{% if page.title %}{{ page.title }} • {{ site.name }}{% else %}{{ site.name }}{% endif %}">
 <meta property="og:locale" content="{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang }}{% endif %}">
-<meta property="og:image" content="{% if page.og-image %}{{ site.url }}/img/{{ page.og-image }}{% else if page.cover-image %}{{ site.url }}/img/{{ page.cover-image }}{% else %}{{ site.url }}/android-chrome-192x192.png{% endif %}">
+<meta name="image" property="og:image" content="{% if page.og-image %}{{ site.url }}/img/{{ page.og-image }}{% else if page.cover-image %}{{ site.url }}/img/{{ page.cover-image }}{% else %}{{ site.url }}/android-chrome-192x192.png{% endif %}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
-<meta name="og:description" content="{% if page.summary %} {{ page.summary }} {% else %} {{ site.description.subtitle }}">
-{% endif %}
+<meta name="og:description" content="{% if page.summary %} {{ page.summary }} {% else %} {{ site.description.subtitle }}{% endif %}">
 <!-- /og tags -->
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
