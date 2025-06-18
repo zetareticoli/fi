@@ -18,13 +18,13 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
     <nav class="nav">
       <ul class="nav__list flex space-between m-none list-none">
         <li class="m-none">
-          <a class="nav__item" href="#details">Programma</a>
+          <a class="nav__item" href="#details">Dettagli</a>
         </li>
         <li class="m-none">
-          <a class="nav__item" href="#learn">Impari</a>
+          <a class="nav__item" href="#learn">Cosa impari</a>
         </li>
         <li class="m-none">
-          <a class="nav__item" href="#testimonials">Cosa dicono</a>
+          <a class="nav__item" href="#testimonials">Testimonianze</a>
         </li>
         <li class="m-none">
           <a class="nav__item" href="#faq">FAQ</a>
@@ -317,15 +317,15 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
           </svg>
         </div>
         <div class="faq-item">
-          <h4 class="faq-question m-none underline">E se non posso partecipare dal vivo?</h4>
-          <div class="faq-answer color-text-light font-semibold">Ricevi il recording completo, ma l'interazione dal vivo vale molto di più.</div>
+          <h4 class="faq-question m-none underline">Cosa succede se acquisto il corso ma non posso partecipare? </h4>
+          <div class="faq-answer color-text-light font-semibold">Nessun problema, il tuo acquisto sarà valido per una delle date successive, a meno che non ci ripensi. In quel caso ti sarà inviato un rimborso.</div>
           <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
         <div class="faq-item">
           <h4 class="faq-question m-none underline">Cosa succede se non sono soddisfatto?</h4>
-          <div class="faq-answer color-text-light font-semibold">Offro una garanzia di rimborso entro 30 giorni se non sei soddisfatto del workshop.</div>
+          <div class="faq-answer color-text-light font-semibold">Puoi ottenere un rimborso entro 30 giorni dalla data di acquisto.</div>
           <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> 
           </svg>
@@ -338,8 +338,8 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
           </svg>
         </div>
         <div class="faq-item">
-          <h4 class="faq-question m-none underline">Cosa succede se il mio team è più grande di 6 persone?</h4>
-          <div class="faq-answer color-text-light font-semibold">Contattami per workshop aziendali personalizzati per team numerosi.</div>
+          <h4 class="faq-question m-none underline">È possibile organizzare un workshop per più di 6 persone?</h4>
+          <div class="faq-answer color-text-light font-semibold">Per workshop aziendali personalizzati puoi contattarmi a me[at]francescoimprota.com.</div>
           <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
@@ -363,7 +363,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
       <p class="event-countdown" style="display: none;"></p>
       <p class="event-static mb-m text-small font-regular color-text-light">Prezzo Early Bird valido fino al <strong>31 luglio, 2025</strong>. Solo <strong>5/6 posti rimasti</strong>.</p>
       <hr>
-      <p class="text-small color-text-light mb-xs">Non sei sicuro?</p>
+      <p class="text-small color-text-light mb-xs">Hai dubbi o altre domande?</p>
       <p>
         <a href="https://cal.com/francesco-improta/30min" class="flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-clock-icon lucide-calendar-clock mr-s"><path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h5"/><path d="M17.5 17.5 16 16.3V14"/><circle cx="16" cy="16" r="6"/></svg>Parliamone insieme</a>
       </p>
