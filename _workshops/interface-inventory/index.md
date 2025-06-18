@@ -214,7 +214,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
       </div>
       <div class="text-center">
         <p class="event-countdown" style="display: none;"></p>
-        <p class="event-static mb-m text-small font-regular color-text-light">Prezzo Early Bird valido fino al <strong>31 luglio, 2025</strong>. Solo <strong>5/6 posti rimasti</strong>.</p>
+        <p class="event-static mb-m text-small font-regular color-text-light">Prezzo Early Bird valido fino al <strong>30 giugno, 2025</strong>. Solo <strong>5/6 posti rimasti</strong>.</p>
       </div>
     </div>
   </section>
@@ -361,7 +361,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
         <a href="https://francescoimprota.kit.com/products/workshop-interface-inventory?promo=3G565J82BC" class="cta-primary">Prenota il tuo posto</a>
       </div>
       <p class="event-countdown" style="display: none;"></p>
-      <p class="event-static mb-m text-small font-regular color-text-light">Prezzo Early Bird valido fino al <strong>31 luglio, 2025</strong>. Solo <strong>5/6 posti rimasti</strong>.</p>
+      <p class="event-static mb-m text-small font-regular color-text-light">Prezzo Early Bird valido fino al <strong>30 giugno, 2025</strong>. Solo <strong>5/6 posti rimasti</strong>.</p>
       <hr>
       <p class="text-small color-text-light mb-xs">Hai dubbi o altre domande?</p>
       <p>
