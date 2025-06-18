@@ -25,20 +25,12 @@
 <!-- /icons -->
 
 <!-- og tags -->
+<meta name="twitter:card" content="summary_large_image">
 <meta property="og:logo" content="{{ site.url }}{{ site.baseurl }}/android-chrome-192x192.png" />
 <meta property="og:site_name" content="{{ site.name }}">
 <meta property="og:title" content="{% if page.title %}{{ page.title }} • {{ site.name }}{% else %}{{ site.name }}{% endif %}">
 <meta property="og:locale" content="{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang }}{% endif %}">
-{% if page.og-image %}
-  <meta property="og:image" content="{{ site.url }}/img/{{ page.og-image }}">
-{% else %}
-  {% if page.cover-image %}
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:image" content="{{ site.url }}/img/covers/{{ page.cover-image }}">
-  {% else %}
-    <meta property="og:image" content="{{ site.url }}/android-chrome-192x192.png">
-  {% endif %}
-{% endif %}
+<meta property="og:image" content="{% if page.og-image %}{{ site.url }}/img/{{ page.og-image }}{% else if page.cover-image %}{{ site.url }}/img/{{ page.cover-image }}{% else %}{{ site.url }}/android-chrome-192x192.png{% endif %}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
 <meta name="og:description" content="{% if page.summary %} {{ page.summary }} {% else %} {{ site.description.subtitle }}">
