@@ -21,7 +21,7 @@ Now comes the most important part of my weekly review: filling out my **week rev
 - what went wrong;
 - start to do; 
 - stop to do;
-- completed [pomodoros](/_posts/2024-01-11-100-pomodoro.md);
+- completed [pomodoros](/_posts/2024-01-11-100-pomodoro);
 - next actions.
 
 To make my week review more personal and engaging, I often **give it a title** and attach an image. This not only makes the review more visually appealing but also makes it easier to reference in the future.
