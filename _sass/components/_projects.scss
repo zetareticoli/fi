@@ -1,7 +1,3 @@
 .project {
-  --project-inner-spacing: var(--spacing-inset-l);
-  padding: var(--project-inner-spacing);
-  @media screen and (min-width: 768px) {
-    --project-inner-spacing: var(--spacing-inset-xl)
-  }
+  width: 100%;
 }

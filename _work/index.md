@@ -2,7 +2,7 @@
 layout: full
 headline: I design digital products
 lead: I'm a designer who creates user-friendly digital products. I'm best at building design systems and creating designs that help products work better for people.
-permalink: /work/
+permalink: /experience/
 ---
 
 
@@ -10,7 +10,6 @@ permalink: /work/
 	{% if page.headline %}
 		<h1 class="headline-default">{{ page.headline }}</h1>
 	{% endif %}
-
 	{% if page.lead %}
 		<p class="lead color-text-light">{{ page.lead }}</p>
 	{% endif %}
@@ -32,7 +31,7 @@ permalink: /work/
 </section>
 
 <section class="spacing-sections inner outer-margin">
-  <h2 class="headline-default">Experiences across the years</h2>
+  <h2 class="headline-default">Experience across the years</h2>
   <ul class="content-list m-none mb-l">
   {% for client in site.data.clients %}
     <li class="content-list__item flex">

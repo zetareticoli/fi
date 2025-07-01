@@ -81,10 +81,10 @@ display-next-prev-post: true
 navigation:
 - text: About
   url: /about/
+- text: Experience
+  url: /experience/
 - text: Writing
   url: /writing/
-- text: Work
-  url: /work/
 - text: Side projects
   url: /projects/
 

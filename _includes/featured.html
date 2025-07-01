@@ -1,4 +1,5 @@
 <article class="project">
+  <img src="{{work.image}}" alt="{{work.title}}" class="project-image" loading="lazy">
   <h3 class="headline-secondary">
     {% if work.url %}
       <a class="color-text-primary link-underline" href="{{work.url}}">{{work.title}}</a>
@@ -6,7 +7,6 @@
       {{work.title}}
     {% endif %}
   </h3>
-
-  <p class="text-small color-text-light">{{ work.year }}</p>
-  <p class="body">{{work.description}}</p>
+  <!-- <p class="text-small color-text-light">{{ work.year }}</p>
+  <p class="body">{{work.description}}</p> -->
 </article>
