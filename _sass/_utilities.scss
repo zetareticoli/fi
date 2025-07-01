@@ -8,6 +8,16 @@
   }
 }
 
+.list-card-4 {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr;
+  
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 .divider {
   border-bottom: 1px solid rgba($color-white, .15);
 }
@@ -32,10 +42,6 @@
 
 .width-50 {
   width: 50%;
-}
-
-.space {
-  margin-bottom: 3rem;
 }
 
 .text-small {

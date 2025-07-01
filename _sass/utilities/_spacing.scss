@@ -16,6 +16,10 @@
   margin: 0;
 }
 
+.mr-xs {
+  margin-right: var(--spacing-inline-xs);
+}
+
 .mr-s {
   margin-right: var(--spacing-inline-s);
 }

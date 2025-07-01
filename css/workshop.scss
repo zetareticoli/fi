@@ -1,0 +1,323 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+/* Base layout fixes */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  @media screen and (min-width: 768px) {
+    padding: 0 2rem;
+  }
+}
+
+.header {
+  margin: 1rem;
+
+  @media screen and (min-width: 960px) {
+    margin: 1rem 0;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: flex-end;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--text-light);
+  font-stretch: var(--stretch-wide);
+
+  img {
+    margin-left: 0;
+  }
+
+}
+
+.nav {
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
+}
+
+.hero {
+  position: relative;
+  z-index: 1;
+  padding: 3rem 0;
+  color: white;
+  text-align: center;
+}
+
+.hero h1 {  
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.25rem;
+}
+
+.badge {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  background: var(--background-weak);
+  color: var(--text-primary);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.program-timeline {
+  gap: 2px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.program-item {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1.5rem;
+  border-left: 4px solid var(--background-light);
+  background-color: var(--background-weak);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
+  gap: 1rem;
+
+
+  &:hover {
+    background-color: var(--background-light);
+  }
+
+  ul {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+
+  &.expanded {
+    border-color: var(--background-primary);
+
+    ul {
+      max-height: 200px; /* Adjust based on content */
+    }
+  }
+  
+}
+
+.program-content {
+  flex: 1;
+}
+
+.program-icon {
+  margin-top: 1rem;
+  color: var(--text-primary);
+  transition: transform 0.3s ease;
+}
+
+.program-item.expanded .program-icon {
+  transform: rotate(180deg);
+}
+
+.price-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem;
+  border-radius: 10px;
+  background: #19222a;
+  gap: 1rem;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+@media screen and (min-width: 768px) {
+  .price-section {
+    flex-direction: row;
+    padding: 0.5rem;
+  }
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 700;
+  gap: 4px;
+}
+
+.price-old {
+  margin-left: 0.5rem;
+  font-size: var(--font-04);
+  color: var(--text-light);
+  text-decoration: line-through;
+}
+
+.date {
+  color: var(--text);
+  font-size: var(--font-03);
+  font-weight: 500;
+}
+
+.cta-primary {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  background: var(--background-primary);
+  color: var(--text);
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.cta-primary:hover {
+  background: var(--state-hover);
+  transform: translateY(-2px);
+}
+
+.section {
+  padding: 3rem 0;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 1fr);
+  margin: 2rem 0;
+  gap: 2rem;
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.benefit-card {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  color: var(--text);
+
+  h3, p {
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 1024px) {
+      max-width: 75vw; 
+    }
+  }
+}
+
+.instructor {
+  margin-top: 2rem;
+  padding: 2rem;
+
+  img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.testimonial {
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial blockquote {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.testimonial cite {
+  color: #667eea;
+  font-weight: 600;
+}
+
+.faq {
+  margin-top: 2rem;
+}
+
+.faq-item {
+  position: relative;
+  padding: 1.5rem 0;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+  }
+}
+
+.faq-question {
+  font-weight: 600;
+}
+
+.faq-answer {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  transform: translateY(-10px);
+}
+
+.faq-item.expanded .faq-answer {
+  opacity: 1;
+  max-height: 500px;
+  transform: translateY(0);
+  margin-top: 1rem;
+}
+
+.faq-icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 1rem;
+  transition: transform 0.2s ease-in-out;
+  flex-shrink: 0;
+  color: var(--text-primary);
+}
+
+.faq-item.expanded .faq-icon {
+  transform: rotate(180deg);
+}
+
+.final-cta {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.event-countdown {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 1.1rem;
+}
+
+footer {
+  padding: 2rem 0;
+  text-align: center;
+}

@@ -24,45 +24,23 @@
 <meta name="msapplication-TileImage" content="{{ site.baseurl }}/mstile-310x310.png">
 <!-- /icons -->
 
-<!-- twitter cards 
-<meta name="twitter:creator" content="@{{ site.author.twitter }}">
-<meta name="twitter:title" content="{{ page.title }}">
-{% if page.summary %}
-  <meta name="twitter:description" content="{{ page.summary }}">
-{% else %}
-  <meta name="twitter:description" content="{{ site.description.subtitle }}">
-{% endif %}
-{% if page.cover-image %}
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="{{ site.baseurl }}/img/covers/{{ page.cover-image }}">
-{% endif %}
-<!-- /twitter cards -->
-
 <!-- og tags -->
-<meta property="og:logo" content="{{ site.url }}{{ site.baseurl }}/android-chrome-192x192.png" />
+<meta name="twitter:card" content="summary_large_image">
 <meta property="og:site_name" content="{{ site.name }}">
 <meta property="og:title" content="{% if page.title %}{{ page.title }} • {{ site.name }}{% else %}{{ site.name }}{% endif %}">
-<meta property="og:locale" content="{{ site.lang }}">
-{% if page.og-image %}
-  <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/img/{{ page.og-image }}">
-{% else %}
-  {% if page.cover-image %}
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/img/covers/{{ page.cover-image }}">
-  {% else %}
-    <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/android-chrome-192x192.jpg">
-  {% endif %}
-{% endif %}
+<meta property="og:description" content="{% if page.summary %}{{ page.summary }}{% else %}{{ site.description.subtitle }}{% endif %}">
+<meta property="og:locale" content="{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang }}{% endif %}">
+<meta property="og:image" content="{% if page.og-image %}{{ site.url }}/img/{{ page.og-image }}{% elsif page.cover-image %}{{ site.url }}/img/{{ page.cover-image }}{% else %}{{ site.url }}/android-chrome-192x192.png{% endif %}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
-{% if page.summary %}
-  <meta name="og:description" content="{{ page.summary }}">
-  {% else %}
-  <meta name="og:description" content="{{ site.description.subtitle }}">
-{% endif %}
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }} • {{ site.name }}{% else %}{{ site.name }}{% endif %}">
+<meta name="twitter:description" content="{% if page.summary %} {{ page.summary }} {% else %} {{ site.description.subtitle }}{% endif %}">
+<meta name="twitter:image" content="{% if page.og-image %}{{ site.url }}/img/{{ page.og-image }}{% elsif page.cover-image %}{{ site.url }}/img/{{ page.cover-image }}{% else %}{{ site.url }}/android-chrome-192x192.png{% endif %}">
+<meta name="twitter:site" content="{{ site.url }}{{ site.baseurl }}">
+<meta name="twitter:creator" content="{{ site.author.name }}">
 <!-- /og tags -->
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
 <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
 <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css">
-<link rel="preload" href={{ site.baseurl }}/css/fonts/"Mona-Sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ site.baseurl }}/css/fonts/"Mona-Sans.woff2" as="font" type="font/woff2" crossorigin>
