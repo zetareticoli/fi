@@ -1,14 +1,15 @@
 ---
 layout: full
-headline: I design digital products
-lead: I'm a designer who creates user-friendly digital products. I'm best at building design systems and creating designs that help products work better for people.
+headline: Experience
+summary: My professional journey as a designer, showcasing my notable work and experience across the years.
+lead: I design intuitive digital products with a focus on user experience. Expert in design systems, usability, and accessibility.
 permalink: /experience/
 ---
 
 
 <section class="spacing-sections inner outer-margin">
 	{% if page.headline %}
-		<h1 class="headline-default">{{ page.headline }}</h1>
+		<h1 class="headline-featured">{{ page.headline }}</h1>
 	{% endif %}
 	{% if page.lead %}
 		<p class="lead color-text-light">{{ page.lead }}</p>
@@ -18,7 +19,6 @@ permalink: /experience/
 <section class="spacing-sections spacing-sections-inset spacing-outer background-emphasis">
   <div class="inner">
     <h2 class="headline-default">Notable Work</h2>
-    <p class="body color-text-light">Projects that represent my experience and have marked the path of my career.</p>
   </div>
   <div class="inner-large">
     <div class="list-projects mb-l">
