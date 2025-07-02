@@ -26,7 +26,7 @@ permalink: /experience/
       {% include featured.html %}
     {% endfor %}
     </div>
-    <p class="text-small color-text-weak text-center">View my design work and project screenshots on my <a class="link-light link-underline" href="https://dribbble.com/zetareticoli" target="_blank">Dribbble profile</a>.</p>
+    <p class="text-small color-text-weak text-center">Explore more design work on my <a class="link-light link-underline" href="https://dribbble.com/zetareticoli" target="_blank">Dribbble profile</a>.</p>
   </div>
 </section>
 
