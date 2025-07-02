@@ -1,10 +1,11 @@
-<article class="project mb-m">
-  <img src="{{work.image}}" alt="{{work.title}}" class="project-image" loading="lazy" class="mb-s">
-  <h3 class="headline-secondary">
-    {% if work.url %}
-      <a class="color-text-primary link-underline" href="{{work.url}}">{{work.title}}</a>
-    {% else %}
-      {{work.title}}
-    {% endif %}
-  </h3>
+<article class="project mb-xl">
+  {% if work.url %}
+    <a href="{{work.url}}" class="color-text-primary link-underline">
+      <img src="{{work.image}}" alt="{{work.title}}" class="project-image mb-m" loading="lazy">
+      <h3 class="headline-secondary">{{work.title}}</h3>
+    </a>
+  {% else %}
+    <img src="{{work.image}}" alt="{{work.title}}" class="project-image mb-m" loading="lazy">
+    <h3 class="headline-secondary">{{work.title}}</h3>
+  {% endif %}
 </article>
