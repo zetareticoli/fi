@@ -1,16 +1,11 @@
-<article class="project project-{{work.slug}} background-weak">
-  <h3 class="headline-secondary color-text-inverse">
-    {% if work.url %}
-    <a href="{{work.url}}">{{work.title}}</a>
-    {% else  %}
-    {{work.title}}    
-    {% endif %}
-  </h3>
-  <p class="text-small color-text-light">{{ work.year }}</p>
-  <p class="body">{{work.description}}</p>
-  {% if work.link %}
-    <a class="color-text link-underline" href="{{work.link.url}}">{{work.link.title}}</a>
-    {% else %}
-    <span class="color-text-weak"><em>Full case study available soon!</em></span>
+<article class="project mb-xl">
+  {% if work.url %}
+    <a href="{{work.url}}" class="color-text-primary">
+      <img src="{{work.image}}" alt="{{work.title}}" class="project-image mb-m" loading="lazy">
+      <h3 class="headline-secondary">{{work.title}}</h3>
+    </a>
+  {% else %}
+    <img src="{{work.image}}" alt="{{work.title}}" class="project-image mb-m" loading="lazy">
+    <h3 class="headline-secondary">{{work.title}}</h3>
   {% endif %}
 </article>
