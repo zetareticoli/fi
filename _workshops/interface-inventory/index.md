@@ -45,7 +45,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
       <div class="price-section mb-m">
         <div class="price">€99 <span class="price-old">€199</span></div>
         <div class="date">🗓️ Sabato 06 Settembre, 14:00-18:00</div>
-        <a href="https://francescoimprota.kit.com/products/workshop-interface-inventory?promo=3G565J82BC" class="cta-primary">Prenota il tuo posto</a>
+        <a href="https://francescoimprota.kit.com/products/workshop-interface-inventory?promo=3G565J82BC" class="cta-primary plausible-event-name=Buy+Workshop">Prenota il tuo posto</a>
       </div>
   
       <div class="list-card-4 mb-l">
@@ -358,7 +358,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
       <div class="price-section mb-m">
         <div class="price">€99 <span class="price-old">€199</span></div>
         <div class="date">🗓️ Sabato 06 Settembre, 14:00-18:00</div>
-        <a href="https://francescoimprota.kit.com/products/workshop-interface-inventory?promo=3G565J82BC" class="cta-primary">Prenota il tuo posto</a>
+        <a href="https://francescoimprota.kit.com/products/workshop-interface-inventory?promo=3G565J82BC" class="cta-primary plausible-event-name=Buy+Workshop">Prenota il tuo posto</a>
       </div>
       <p class="event-countdown" style="display: none;"></p>
       <p class="event-static mb-m text-small font-regular color-text-light">Prezzo Early Bird valido fino al <strong>30 giugno, 2025</strong>. Solo <strong>5/6 posti rimasti</strong>.</p>
