@@ -1,0 +1,5 @@
+<ul class="list-none m-none">
+  {% for post in site.posts limit:6 %}
+    {% include post-list.html %}
+  {% endfor %}
+</ul>
