@@ -10,6 +10,10 @@ layout: default
 	{% if page.lead %}
 		<p class="lead color-text-light">{{ page.lead }}</p>
 	{% endif %}
+
+	{% if page.cta %}
+		<a class="text-emphasis underline color-text-light" href="{{ page.cta.url }}">{{ page.cta.text }}</a>
+	{% endif %}
 </section>
 
 {{ content }}
