@@ -44,8 +44,8 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
       <p>Un <strong>workshop pratico per designer e sviluppatori</strong> che vogliono organizzare le interfacce e ridurre drasticamente i tempi di sviluppo.</p>
       <div class="price-section mb-m">
         <div class="price">€99 <span class="price-old">€199</span></div>
-        <div class="date">🗓️ Sabato 06 Settembre, 14:00-18:00</div>
-        <a href="https://francescoimprota.kit.com/products/workshop-interface-inventory?promo=3G565J82BC" class="cta-primary plausible-event-name=Buy+Workshop">Prenota il tuo posto</a>
+        <div class="date">🗓️ Giovedì 16 ottobre, 09:00-13:00</div>
+        <a href="https://francescoimprota.kit.com/products/workshop-interface-inventory?promo=3G565J82BC&step=checkout" class="cta-primary plausible-event-name=Buy+Workshop">Riserva il tuo posto</a>
       </div>
   
       <div class="list-card-4 mb-l">
@@ -209,12 +209,12 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
   
       <div class="price-section mb-m">
         <div class="price">€99 <span class="price-old">€199</span></div>
-        <div class="date">🗓️ Sabato 06 Settembre, 14:00-18:00</div>
-        <a href="https://francescoimprota.kit.com/products/workshop-interface-inventory?promo=3G565J82BC" class="cta-primary">Prenota il tuo posto</a>
+        <div class="date">🗓️ Giovedì 16 ottobre, 09:00-13:00</div>
+        <a href="https://francescoimprota.kit.com/products/workshop-interface-inventory?promo=3G565J82BC&step=checkout" class="cta-primary">Riserva il tuo posto</a>
       </div>
       <div class="text-center">
         <p class="event-countdown" style="display: none;"></p>
-        <p class="event-static mb-m text-small font-regular color-text-light">Prezzo Early Bird valido fino al <strong>30 giugno, 2025</strong>. Solo <strong>5/6 posti rimasti</strong>.</p>
+        <p class="event-static mb-m text-small font-regular color-text-light">Prezzo Early Bird valido fino al <strong>30 settembre, 2025</strong>. Solo <strong>5/6 posti rimasti</strong>.</p>
       </div>
     </div>
   </section>
@@ -357,11 +357,11 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
       </p>
       <div class="price-section mb-m">
         <div class="price">€99 <span class="price-old">€199</span></div>
-        <div class="date">🗓️ Sabato 06 Settembre, 14:00-18:00</div>
-        <a href="https://francescoimprota.kit.com/products/workshop-interface-inventory?promo=3G565J82BC" class="cta-primary plausible-event-name=Buy+Workshop">Prenota il tuo posto</a>
+        <div class="date">🗓️ Giovedì 16 ottobre, 09:00-13:00</div>
+        <a href="https://francescoimprota.kit.com/products/workshop-interface-inventory?promo=3G565J82BC&step=checkout" class="cta-primary plausible-event-name=Buy+Workshop">Riserva il tuo posto</a>
       </div>
       <p class="event-countdown" style="display: none;"></p>
-      <p class="event-static mb-m text-small font-regular color-text-light">Prezzo Early Bird valido fino al <strong>30 giugno, 2025</strong>. Solo <strong>5/6 posti rimasti</strong>.</p>
+      <p class="event-static mb-m text-small font-regular color-text-light">Prezzo Early Bird valido fino al <strong>30 settembre, 2025</strong>. Solo <strong>5/6 posti rimasti</strong>.</p>
       <hr>
       <p class="text-small color-text-light mb-xs">Hai dubbi o altre domande?</p>
       <p>
@@ -402,7 +402,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
 
   // Simple countdown (you'll need to set the actual end date)
   function updateCountdown() {
-    const eventDate = new Date('2025-07-31T14:00:00');
+    const eventDate = new Date('2025-07-31T09:00:00');
     const now = new Date();
     const diff = eventDate - now;
     const daysUntilEvent = Math.floor(diff / (1000 * 60 * 60 * 24));
