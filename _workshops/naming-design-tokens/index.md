@@ -41,7 +41,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
     <div class="container">
       <span class="badge">Workshop Online</span>
   <h1 class="headline-teaser">Naming Design Tokens</h1>
-  <p>Un <strong>workshop pratico per designer e sviluppatori</strong> che vogliono imparare a nominare, organizzare e mantenere i design tokens per velocizzare lo sviluppo e migliorare la coerenza dell'interfaccia.</p>
+  <p>Un workshop pratico per imparare a organizzare, gestire e soprattutto nominare i design tokens in modo efficace, accelerando lo sviluppo e garantendo la coerenza dell'interfaccia.</p>
       <div class="price-section mb-m">
         <!-- <div class="price">€99 <span class="price-old">€199</span></div>
         <div class="date">🗓️ Sabato 06 Settembre, 14:00-18:00</div>
@@ -74,12 +74,12 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
               <rect width="18" height="7" x="3" y="3" rx="1" />
               <rect width="9" height="7" x="3" y="14" rx="1" />
               <rect width="5" height="7" x="16" y="14" rx="1" />
-            </svg>Casi studio reali</h3>
+            </svg>Approccio pratico</h3>
         </div>
         <div class="">
           <h3 class="text-small flex items-center color-text-light">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users-icon lucide-users mr-s"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></svg>
-            Posti limitati (6 partecipanti)</h3>
+            Solo 6 partecipanti</h3>
         </div>
         <div class="">
           <h3 class="text-small flex items-center color-text-light">
@@ -90,7 +90,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
               <path d="m18 15 4-4" />
               <path
                 d="m21.5 11.5-1.914-1.914A2 2 0 0 1 19 8.172V7l-2.26-2.26a6 6 0 0 0-4.202-1.756L9 2.96l.92.82A6.18 6.18 0 0 1 12 8.4V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5" />
-            </svg>Strumenti pratici e template</h3>
+            </svg>Risorse e strumenti</h3>
         </div>
       </div>
   
