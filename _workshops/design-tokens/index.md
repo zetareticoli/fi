@@ -44,7 +44,7 @@ og-image: workshops/og-design-tokens-workshop.png
       <div class="price-section mb-m">
         <div class="price">€149 <span class="price-old">€249</span></div>
         <div class="date">15-20 Gennaio 2026, 9:00-13:00</div>
-        <a href="https://francescoimprota.kit.com/products/naming-convention-per-i-design-token?promo=922HH6BIF7" class="cta-primary plausible-event-name=Buy+Workshop">Riserva il tuo posto</a>
+        <a href="https://francescoimprota.kit.com/products/design-tokens-workshop?promo=922HH6BIF7" class="cta-primary plausible-event-name=Buy+Workshop">Riserva il tuo posto</a>
       </div>
       <div class="list-card-4 mb-l">
         <div class="">
@@ -283,7 +283,7 @@ og-image: workshops/og-design-tokens-workshop.png
       <div class="price-section mb-m">
         <div class="price">€149 <span class="price-old">€249</span></div>
         <div class="date">15-20 Gennaio 2026, 9:00-13:00</div>
-        <a href="https://francescoimprota.kit.com/products/naming-convention-per-i-design-token?promo=922HH6BIF7" class="cta-primary plausible-event-name=Buy+Workshop">Riserva il tuo posto</a>
+        <a href="https://francescoimprota.kit.com/products/design-tokens-workshop?promo=922HH6BIF7" class="cta-primary plausible-event-name=Buy+Workshop">Riserva il tuo posto</a>
       </div>
       <div class="text-center">
         <p class="event-countdown" style="display: none;"></p>
@@ -387,7 +387,7 @@ og-image: workshops/og-design-tokens-workshop.png
       <div class="price-section mb-m">
         <div class="price">€149 <span class="price-old">€249</span></div>
         <div class="date">15-20 Gennaio 2026, 9:00-13:00</div>
-        <a href="https://francescoimprota.kit.com/products/naming-convention-per-i-design-token?promo=922HH6BIF7" class="cta-primary plausible-event-name=Buy+Workshop">Riserva il tuo posto</a>
+        <a href="https://francescoimprota.kit.com/products/design-tokens-workshop?promo=922HH6BIF7" class="cta-primary plausible-event-name=Buy+Workshop">Riserva il tuo posto</a>
       </div>
       <p class="event-countdown" style="display: none;"></p>
       <p class="event-static mb-m text-small font-regular color-text-light">Early Bird valido fino al <strong>15 dicembre, 2025</strong>. Solo 6 posti disponibili.</p>
