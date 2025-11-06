@@ -67,12 +67,13 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
               <rect width="18" height="7" x="3" y="3" rx="1" />
               <rect width="9" height="7" x="3" y="14" rx="1" />
               <rect width="5" height="7" x="16" y="14" rx="1" />
-            </svg>Approccio pratico</h3>
+            </svg>
+          Approccio interattivo</h3>
         </div>
         <div class="">
           <h3 class="text-small flex items-center color-text-light">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users-icon lucide-users mr-s"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></svg>
-            Solo 6 partecipanti</h3>
+            6 partecipanti</h3>
         </div>
         <div class="">
           <h3 class="text-small flex items-center color-text-light">
@@ -83,7 +84,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
               <path d="m18 15 4-4" />
               <path
                 d="m21.5 11.5-1.914-1.914A2 2 0 0 1 19 8.172V7l-2.26-2.26a6 6 0 0 0-4.202-1.756L9 2.96l.92.82A6.18 6.18 0 0 1 12 8.4V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5" />
-            </svg>Risorse e strumenti</h3>
+            </svg>Approfondimenti pratici</h3>
         </div>
       </div>
       <img class="full-width outer-margin mb-l" src="/img/workshops/design-tokens-workshop.webp"
@@ -225,8 +226,8 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
         <article class="program-item">
           <div class="program-content">
             <h4 class="text-tiny uppercase color-text-light mono mb-s">Modulo 05</h4>
-            <h3 class="color-text-primary mb-s">I design tokens nel CSS</h3>
-            <p>Dal design al codice CSS</p>
+            <h3 class="color-text-primary mb-s">I design tokens nel codice</h3>
+            <p>Implementare i design tokens nei files CSS per design system e componenti personalizzati.</p>
             <ul class="m-none text-small text-light">
               <li class="uppercase text-tiny list-none color-text-light">Argomenti</li>
               <li>Tecniche di trasformazione da JSON a CSS tramite Style Dictionary</li>
@@ -302,7 +303,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
       <div>
         <p class="lead mb-m">Ciao! Sono <strong>Francesco Improta</strong>, designer con oltre 20 anni di esperienza nella progettazione di prodotti digitali, specializzato in Design System.</p>
         <p class="color-text-light">Ho creato questo workshop per aiutarti a comprendere i design tokens e ad applicarli in modo efficace, riducendo i tempi e migliorando la qualità del prodotto.</p>
-        <p class="color-text-light">Durante il workshop, condividerò esperienze pratiche e strumenti che ho utilizzato in anni di lavoro su progetti di varia natura.</p> 
+        <p class="color-text-light">Durante il workshop, condividerò esperienze pratiche e strumenti che ho utilizzato in anni di lavoro su progetti di varia natura.</p>
         <p>
           <a href="/about" class="underline">Approfonisci chi sono<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-icon lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
         </p>
