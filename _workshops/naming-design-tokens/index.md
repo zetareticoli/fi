@@ -86,7 +86,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
             </svg>Risorse e strumenti</h3>
         </div>
       </div>
-      <img class="full-width outer-margin" src="/img/workshops/interface-inventory/interface-inventory-banner.webp"
+      <img class="full-width outer-margin" src="/img/workshops/design-tokens-workshop.webp"
         alt="A working desk reflected in a picture" title="My design studio image reflected">
     </div>
   </section>
@@ -100,6 +100,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
           <span class="color-text-primary headline-secondary">01</span>
           <div class="ml-s">
             <h3 class="mb-xs">Definire un'architettura scalabile</h3>
+            <img src="/img/workshops/tokens-decisions.png" alt="" class="mb-s w-1/2">
             <p class="color-text-light">Impari ad organizzare i design tokens in gruppi logici secondo un architettura modulare, stabilendo ruoli e responsabilità</p>
           </div>
         </div>
@@ -107,6 +108,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
           <span class="color-text-primary headline-secondary">02</span>
           <div class="ml-s">
             <h3 class="mb-xs">Nominare i design tokens in modo efficace</h3>
+            <img src="/img/workshops/tokens-vocabulary.png" alt="" class="mb-s">
             <p class="color-text-light">Acquisci le competenze per creare naming convention, evitando errori comuni e garantendo
             chiarezza nel lungo periodo.</p>
           </div>
@@ -115,6 +117,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
           <span class="color-text-primary headline-secondary">03</span>
           <div class="ml-s">
             <h3 class="mb-xs">Gestire il ciclo di vita dei design tokens</h3>
+            <img src="/img/workshops/tokens-process.png" alt="" class="mb-s">
             <p class="color-text-light">Da Figma al JSON alle variabili CSS, imparerai a governare l'intero ciclo di vita dei design tokens del tuo prodotto digitale.</p>
           </div>
         </div>
@@ -122,6 +125,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
           <span class="color-text-primary headline-secondary">04</span>
           <div class="ml-s">
             <h3 class="mb-s">Allineare il team e ottimizzare i processi</h3>
+            <img src="/img/workshops/tokens-purpose.png" alt="" class="mb-s">
             <p class="color-text-light">Designer, developer e PM parleranno finalmente la stessa lingua, grazie a una base condivisa e visibile del sistema esistente.</p>
           </div>
         </div>
@@ -297,9 +301,9 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
       <div>
         <p class="lead mb-m">Ciao! Sono <strong>Francesco Improta</strong>, designer con oltre 20 anni di esperienza nella progettazione di prodotti digitali, specializzato in Design System.</p>
         <p class="color-text-light">Ho creato questo workshop per aiutarti a comprendere i design tokens e ad applicarli in modo efficace, riducendo i tempi e migliorando la qualità del prodotto.</p>
-        <p class="color-text-light">Durante il workshop, condividerò esperienze pratiche e strumenti che ho utilizzato in anni di lavoro su progetti di varia natura.</p>
+        <p class="color-text-light">Durante il workshop, condividerò esperienze pratiche e strumenti che ho utilizzato in anni di lavoro su progetti di varia natura.</p> 
         <p>
-          <a href="/about" class="underline">Qualcosa su di me</a>
+          <a href="/about" class="underline">Qualcosa su di me <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-icon lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
         </p>
       </div>
     </div>
@@ -333,7 +337,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
         </div>
         <div class="faq-item">
           <h4 class="faq-question m-none underline">Devo avere esperienza con i design tokens?</h4>
-          <div class="faq-answer color-text-light text-emphasis">No, il workshop parte dalle basi. Ti fornirò io un prodotto digitale da analizzare e gli strumenti per farlo.</div>
+          <div class="faq-answer color-text-light text-emphasis">No, il workshop parte dalle basi. Ti fornirò io tutti gli strumenti teorici e pratici per mettere in pratica quanto appreso.</div>
           <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
@@ -341,7 +345,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
         <div class="faq-item">
           <h4 class="faq-question m-none underline">
             Posso partecipare anche se non sono un designer?</h4>
-          <div class="faq-answer color-text-light text-emphasis">Assolutamente sì! Il workshop è utile per designer e developer che vogliono migliorare la collaborazione.</div>
+          <div class="faq-answer color-text-light text-emphasis">Assolutamente sì! Il workshop è utile per tutti coloro i quali vogliono approfondire la conoscenza dei design tokens, indipendentemente dal proprio ruolo in un team.</div>
           <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
