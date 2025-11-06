@@ -86,8 +86,9 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
             </svg>Risorse e strumenti</h3>
         </div>
       </div>
-      <img class="full-width outer-margin" src="/img/workshops/design-tokens-workshop.webp"
+      <img class="full-width outer-margin mb-l" src="/img/workshops/design-tokens-workshop.webp"
         alt="A working desk reflected in a picture" title="My design studio image reflected">
+      <p class="lead">Dalle basi agli argomenti avanzati, questo corso copre tutti gli aspetti più importanti da conoscere per utilizzare al meglio i design tokens nella progettazione di un Design System e di interfacce digitali.</p>
     </div>
   </section>
 
@@ -137,7 +138,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
   <section class="spacing-sections-inset" id="details">
     <div class="container">
       <h2 class="headline-default">Il programma completo</h2>
-      <p class="color-text-light">Il workshop è diviso in <strong>due giornate</strong> da 4 ore ciascuna. <br>Ogni modulo prevede una <strong>parte teorica e una parte pratica o di demo</strong>.</p>
+      <p class="color-text-light">Il workshop è organizzato su <strong>due giornate</strong> da 4 ore. <br>I moduli prevedono sempre una <strong>parte teorica e una parte pratica </strong>e analisi esempi reali.</p>
       <div class="program-timeline mb-l">
         <article class="program-item">
           <div class="program-content">
@@ -242,7 +243,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
 
         <article class="program-item">
           <div class="program-content">
-            <h4 class="text-tiny uppercase color-text-primary mono mb-s">Modulo 06</h4>
+            <h4 class="text-tiny uppercase color-text-light mono mb-s">Modulo 06</h4>
             <h3 class="color-text-primary mb-s">Manutenzione e Governance</h3>
             <p>Pianifica e gestisci i design tokens nel tempo</p>
             <ul class="m-none text-small text-light">
@@ -267,13 +268,13 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
             📚 &nbsp;Materiale didattico e risorse scaricabili
           </li>
           <li class="flex items-center color-text-inverse text-emphasis">
-            📺 &nbsp;Registrazione del workshop
+            📺 &nbsp;Registrazioni delle lezioni
           </li>
           <li class="flex items-center color-text-inverse text-emphasis">
             🎤 &nbsp;Supporto post workshop
           </li>
           <li class="flex items-center color-text-inverse text-emphasis">
-            🏅 &nbsp;Certificato di partecipazione
+            🏅 &nbsp;Attestato di partecipazione
           </li>
         </ul>
       </div>
@@ -294,7 +295,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
   <section class="background-weak instructor spacing-sections-inset" id="teacher">
     <div class="container">
       <div class="text-center">
-        <h3 class="color-text-primary text-tiny uppercase mb-s font-semibold">Chi sono</h3>
+        <h3 class="color-text-primary text-tiny uppercase mb-s font-semibold">Docente</h3>
         <!-- <h2 class="mb-xl headline-default">Aiuto le persone a progettare esperienze digitali efficaci</h2> -->
         <img class="" src="/img/francesco-improta-profile.webp" alt="Francesco Improta - Design Token Expert and Course Instructor">
       </div>
@@ -303,7 +304,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
         <p class="color-text-light">Ho creato questo workshop per aiutarti a comprendere i design tokens e ad applicarli in modo efficace, riducendo i tempi e migliorando la qualità del prodotto.</p>
         <p class="color-text-light">Durante il workshop, condividerò esperienze pratiche e strumenti che ho utilizzato in anni di lavoro su progetti di varia natura.</p> 
         <p>
-          <a href="/about" class="underline">Qualcosa su di me <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-icon lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+          <a href="/about" class="underline">Approfonisci chi sono<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-icon lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
         </p>
       </div>
     </div>
