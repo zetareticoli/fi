@@ -40,7 +40,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
       <span class="badge">Workshop Online</span>
       <h1 class="headline-teaser">Design Tokens Workshop</h1>
       <h2 class="uppercase lead">Il corso completo sui design tokens</h2>
-      <p>Impara a creare e gestire i design tokens in modo efficace, accelerando lo sviluppo e garantendo la coerenza visiva dell'interfaccia.</p>
+      <p>Impara a creare e gestire i design tokens in modo efficace, garantendo la coerenza visiva dell'interfaccia e accelerando lo sviluppo.</p>
       <div class="price-section mb-m">
         <div class="price">€149 <span class="price-old">€249</span></div>
         <div class="date">15-20 Gennaio 2026, 9:00-13:00</div>
