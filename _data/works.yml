@@ -3,10 +3,12 @@
   year: 2022 - current
   image: /img/works/dtd/design-system-italia-cover.webp
   description: Create a design system for the Italian public administration.
+  url: https://designers.italia.it/design-system/
 - title: Digital Services for the Italian Public Administration
   slug: digital-services-italian-pa
   image: /img/works/dtd/designersitalia-cover.webp
   year: 2022 - 2026
+  url: https://designers.italia.it/modelli/comuni/
   description: Design a unified and user-friendly experience for citizens interacting with government digital services.
 - title: Designing News
   slug: citynews
