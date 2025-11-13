@@ -95,7 +95,7 @@ og-image: workshops/og-design-tokens-workshop.png
 
   <!-- Benefits Section -->
   <section class="background-emphasis spacing-sections-inset" id="learn">
-    <div class="container-fluid">
+    <div class="inner-large">
       <h2 class="mb-xl text-center headline-default">Cosa Impari</h2>
       <div class="benefits-grid">
         <div class="benefit-card flex flex-row justify-center">
