@@ -146,18 +146,18 @@ og-image: workshops/og-design-tokens-workshop.png
             <h4 class="text-tiny uppercase color-text-light mono mb-s">Modulo 01</h4>
             <h3 class="color-text-primary mb-s">Fondamenti Teorici</h3>
             <p>Fondamenti, evoluzione e valore dei design tokens nei design system moderni</p>
-            <ul class="m-none text-small text-light">
-              <li class="uppercase text-tiny list-none color-text-light">Argomenti</li>
-              <li>Definizione approfondita dei design tokens nel contesto dei moderni sistemi di design</li>
-              <li>Evoluzione dai valori hardcoded ai design tokens: storia e contesto
-              </li>
-              <li>Differenze pratiche tra variabili CSS, variabili SASS, stili Figma e tokens</li>
-            </ul>
+            <div class="program-details">
+              <ul class="m-none text-small text-light">
+                <li class="uppercase text-tiny list-none color-text-light">Argomenti</li>
+                <li>Definizione approfondita dei design tokens nel contesto dei moderni sistemi di design</li>
+                <li>Evoluzione dai valori hardcoded ai design tokens: storia e contesto
+                </li>
+                <li>Differenze pratiche tra variabili CSS, variabili SASS, stili Figma e tokens</li>
+              </ul>
+            </div>
           </div>
-          <svg class="program-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" />
+          <svg class="program-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </article>
         <article class="program-item">
@@ -165,19 +165,19 @@ og-image: workshops/og-design-tokens-workshop.png
             <h4 class="text-tiny uppercase color-text-light mono mb-s">Modulo 02</h4>
             <h3 class="color-text-primary mb-s">Architettura e Organizzazione</h3>
             <p>Organizza i design tokens in un sistema scalabile</p>
-            <ul class="m-none text-small text-light">
-              <li class="uppercase text-tiny list-none color-text-light">Argomenti</li>
-              <li>Architettura a livelli: global, alias e component tokens</li>
-              <li>Design tokens systems: color, typography, spacing, icon</li>
-              <li>Gestire la specificità</li>
-              <li>Strategie di versionamento</li>
-              <li>Esercitazione: pianificare la migrazione ai design tokens</li>
-            </ul>
+            <div class="program-details">
+              <ul class="m-none text-small text-light">
+                <li class="uppercase text-tiny list-none color-text-light">Argomenti</li>
+                <li>Architettura a livelli: global, alias e component tokens</li>
+                <li>Design tokens systems: color, typography, spacing, icon</li>
+                <li>Gestire la specificità</li>
+                <li>Strategie di versionamento</li>
+                <li>Esercitazione: pianificare la migrazione ai design tokens</li>
+              </ul>
+            </div>
           </div>
-          <svg class="program-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" />
+          <svg class="program-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </article>
   
@@ -186,19 +186,20 @@ og-image: workshops/og-design-tokens-workshop.png
             <h4 class="text-tiny uppercase color-text-light mono mb-s">Modulo 03</h4>
             <h3 class="color-text-primary mb-s">Naming e Tassonomia</h3>
             <p>Impara a scegliere nomi significativi che descrivono in modo chiaro i fondamenti visivi dell'interfaccia.</p>
-            <ul class="m-none text-small text-light">
-              <li class="uppercase text-tiny list-none color-text-light">Argomenti</li>
-              <li>Come costruire una tassonomia di vocaboli</li>
-              <li>Le caratteristiche di un buon nome</li>
-              <li>Creare nomi memorabili</li>
-              <li>Convenzioni di scrittura</li>
-              <li>Esercitazione: creare una tassonomia, dare un nomei ai design, progettare un inventario</li>
-            </ul>
+            <div class="program-details">
+              <ul class="m-none text-small text-light mb-l">
+                <li class="uppercase text-tiny list-none color-text-light">Argomenti</li>
+                <li>Come costruire una tassonomia di vocaboli</li>
+                <li>Le caratteristiche di un buon nome</li>
+                <li>Creare nomi memorabili</li>
+                <li>Convenzioni di scrittura</li>
+                <li>Esercitazione: creare una tassonomia, dare un nomei ai design, progettare un inventario</li>
+              </ul>
+              <!-- <img src="/img/workshops/esercitazione-naming-convention.png" alt="" class="width-50"> -->
+            </div>
           </div>
-          <svg class="program-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" />
+          <svg class="program-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </article>
   
@@ -207,19 +208,19 @@ og-image: workshops/og-design-tokens-workshop.png
             <h4 class="text-tiny uppercase color-text-light mono mb-s">Modulo 04</h4>
             <h3 class="color-text-primary mb-s">Costruzione e Adozione</h3>
             <p>Gestisci l'intero ciclo di vita dei design token attraverso strumenti e formati differenti</p>
-            <ul class="m-none text-small text-light">
-              <li class="uppercase text-tiny list-none color-text-light">Argomenti</li>
-              <li>Flusso di lavoro completo: dalla definizione all'implementazione</li>
-              <li>Usare i design tokens in Figma</li>
-              <li>Demo: esportazione e gestione tramite Style Dictionary</li>
-              <li>Strategie per la collaborazione designer-developer</li>
-              <li>Esercitazione: applicare i design tokens in Figma</li>
-            </ul>
+            <div class="program-details">
+              <ul class="m-none text-small text-light">
+                <li class="uppercase text-tiny list-none color-text-light">Argomenti</li>
+                <li>Flusso di lavoro completo: dalla definizione all'implementazione</li>
+                <li>Usare i design tokens in Figma</li>
+                <li>Demo: esportazione e gestione tramite Style Dictionary</li>
+                <li>Strategie per la collaborazione designer-developer</li>
+                <li>Esercitazione: applicare i design tokens in Figma</li>
+              </ul>
+            </div>
           </div>
-          <svg class="program-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" />
+          <svg class="program-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </article>
 
@@ -228,14 +229,16 @@ og-image: workshops/og-design-tokens-workshop.png
             <h4 class="text-tiny uppercase color-text-light mono mb-s">Modulo 05</h4>
             <h3 class="color-text-primary mb-s">I design tokens nel codice</h3>
             <p>Implementare i design tokens nei files CSS per design system e componenti personalizzati.</p>
-            <ul class="m-none text-small text-light">
-              <li class="uppercase text-tiny list-none color-text-light">Argomenti</li>
-              <li>Tecniche di trasformazione da JSON a CSS tramite Style Dictionary</li>
-              <li>Media queries e tokens: gestione responsive</li>
-              <li>Gestire temi e dark mode con i design tokens e CSS</li>
-              <li>Performance e ottimizzazione delle variabili CSS</li>
-              <li>Esercitazione: trasformare i design tokens in variabili per il codice</li>
-            </ul>
+            <div class="program-details">
+              <ul class="m-none text-small text-light">
+                <li class="uppercase text-tiny list-none color-text-light">Argomenti</li>
+                <li>Tecniche di trasformazione da JSON a CSS tramite Style Dictionary</li>
+                <li>Media queries e tokens: gestione responsive</li>
+                <li>Gestire temi e dark mode con i design tokens e CSS</li>
+                <li>Performance e ottimizzazione delle variabili CSS</li>
+                <li>Esercitazione: trasformare i design tokens in variabili per il codice</li>
+              </ul>
+            </div>
           </div>
           <svg class="program-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -247,14 +250,16 @@ og-image: workshops/og-design-tokens-workshop.png
             <h4 class="text-tiny uppercase color-text-light mono mb-s">Modulo 06</h4>
             <h3 class="color-text-primary mb-s">Manutenzione e Governance</h3>
             <p>Pianifica e gestisci i design tokens nel tempo</p>
-            <ul class="m-none text-small text-light">
-              <li class="uppercase text-tiny list-none color-text-light">Argomenti</li>
-              <li>Versionamento semantico</li>
-              <li>Gestire aggiornamenti e rilasci</li>
-              <li>Modello di governance: chi fa cosa</li>
-              <li>Documentare i design tokens</li>
-              <li>Specifiche W3C e standard emergenti</li>
-            </ul>
+            <div class="program-details">
+              <ul class="m-none text-small text-light">
+                <li class="uppercase text-tiny list-none color-text-light">Argomenti</li>
+                <li>Versionamento semantico</li>
+                <li>Gestire aggiornamenti e rilasci</li>
+                <li>Modello di governance: chi fa cosa</li>
+                <li>Documentare i design tokens</li>
+                <li>Specifiche W3C e standard emergenti</li>
+              </ul>
+            </div>
           </div>
           <svg class="program-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />

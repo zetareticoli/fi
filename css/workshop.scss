@@ -114,17 +114,17 @@ body {
     background-color: var(--background-light);
   }
 
-  ul {
+  .program-details {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-out;
+    transition: max-height 0.4s ease-in-out;
   }
 
   &.expanded {
     border-color: var(--background-primary);
 
-    ul {
-      max-height: 200px; /* Adjust based on content */
+    .program-details {
+      max-height: 1000px; /* Adjust based on content */
     }
   }
   
