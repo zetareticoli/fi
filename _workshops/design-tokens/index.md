@@ -192,7 +192,7 @@ og-image: workshops/og-design-tokens-workshop.png
               <li>Le caratteristiche di un buon nome</li>
               <li>Creare nomi memorabili</li>
               <li>Convenzioni di scrittura</li>
-              <li>Esercitazione: da una tassonomia all'inventario di design tokens</li>
+              <li>Esercitazione: creare una tassonomia, dare un nomei ai design, progettare un inventario</li>
             </ul>
           </div>
           <svg class="program-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
