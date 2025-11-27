@@ -350,6 +350,13 @@ og-image: workshops/og-design-tokens-workshop.png
           </svg>
         </div>
         <div class="faq-item">
+          <h4 class="faq-question m-none underline">L'acquisto del corso è per una data specifica? </h4>
+          <div class="faq-answer color-text-light text-emphasis">No, il tuo acquisto è valido per tutte le date disponibili. Se non puoi partecipare alla data pubblicata, potrai farlo in una delle successive. In genere annuncio le date un mese prima.</div>
+          <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="faq-item">
           <h4 class="faq-question m-none underline">
             Posso partecipare anche se non sono un designer?</h4>
           <div class="faq-answer color-text-light text-emphasis">Assolutamente sì! Il workshop è utile per tutti coloro i quali vogliono approfondire la conoscenza dei design tokens, indipendentemente dal proprio ruolo in un team.</div>
