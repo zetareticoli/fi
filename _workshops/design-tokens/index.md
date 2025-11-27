@@ -292,7 +292,7 @@ og-image: workshops/og-design-tokens-workshop.png
       </div>
       <div class="text-center">
         <p class="event-countdown" style="display: none;"></p>
-        <p class="event-static mb-m text-small font-regular color-text-light">Early Bird valido fino al <strong>15 dicembre, 2025</strong>. Solo 4 posti rimasti. Il tuo acquisto è valido per tutte le prossime date.</p>
+        <p class="event-static mb-m text-small font-regular color-text-light">Early Bird valido fino al 15 dicembre, 2025. Solo 4 posti rimasti.  <strong>Il tuo acquisto è valido anche per le prossime date</strong>.</p>
       </div>
     </div>
   </section>
@@ -409,7 +409,7 @@ og-image: workshops/og-design-tokens-workshop.png
         <a href="https://buy.stripe.com/14AcN44L94bUdMe76Xcs800?prefilled_promo_code=EARLY25" class="cta-primary plausible-event-name=Buy+Workshop">Riserva il tuo posto</a>
       </div>
       <p class="event-countdown" style="display: none;"></p>
-      <p class="event-static mb-m text-small font-regular color-text-light">Early Bird valido fino al <strong>15 dicembre, 2025</strong>. Solo 4 posti rimasti.  Il tuo acquisto è valido per tutte le prossime date.</p>
+      <p class="event-static mb-m text-small font-regular color-text-light">Early Bird valido fino al 15 dicembre, 2025. Solo 4 posti rimasti.  <strong>Il tuo acquisto è valido anche per le prossime date</strong>.</p>
       <hr>
       <p class="text-small color-text-light mb-xs">Hai dubbi o altre domande?</p>
       <p>
