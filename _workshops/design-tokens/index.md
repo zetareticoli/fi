@@ -44,7 +44,7 @@ og-image: workshops/og-design-tokens-workshop.png
       <div class="price-section mb-m">
         <div class="price">€149 <span class="price-old">€249</span></div>
         <div class="date">15-20 Gennaio 2026, 9:00-13:00</div>
-        <a href="https://francescoimprota.kit.com/products/design-tokens-workshop?promo=922HH6BIF7&step=checkout" class="cta-primary plausible-event-name=Buy+Workshop">Riserva il tuo posto</a>
+        <a href="https://buy.stripe.com/14AcN44L94bUdMe76Xcs800?prefilled_promo_code=EARLY25" class="cta-primary plausible-event-name=Buy+Workshop">Riserva il tuo posto</a>
       </div>
       <div class="list-card-4 mb-l">
         <div class="">
@@ -288,11 +288,11 @@ og-image: workshops/og-design-tokens-workshop.png
       <div class="price-section mb-m">
         <div class="price">€149 <span class="price-old">€249</span></div>
         <div class="date">15-20 Gennaio 2026, 9:00-13:00</div>
-        <a href="https://francescoimprota.kit.com/products/design-tokens-workshop?promo=922HH6BIF7&step=checkout" class="cta-primary plausible-event-name=Buy+Workshop">Riserva il tuo posto</a>
+        <a href="https://buy.stripe.com/14AcN44L94bUdMe76Xcs800?prefilled_promo_code=EARLY25" class="cta-primary plausible-event-name=Buy+Workshop">Riserva il tuo posto</a>
       </div>
       <div class="text-center">
         <p class="event-countdown" style="display: none;"></p>
-        <p class="event-static mb-m text-small font-regular color-text-light">Early Bird valido fino al <strong>15 dicembre, 2025</strong>. Solo 6 posti disponibili.</p>
+        <p class="event-static mb-m text-small font-regular color-text-light">Early Bird valido fino al <strong>15 dicembre, 2025</strong>. Solo 4 posti rimasti. Il tuo acquisto è valido per tutte le prossime date.</p>
       </div>
     </div>
   </section>
@@ -372,6 +372,13 @@ og-image: workshops/og-design-tokens-workshop.png
           </svg>
         </div>
         <div class="faq-item">
+          <h4 class="faq-question m-none underline">Posso pagare il corso a rate? </h4>
+          <div class="faq-answer color-text-light text-emphasis">Sì, supporto Paypal e Klarna come metodi di pagamento che ti consentono di suddividere l'importo in piani a rate, secondo le rispettive modalità.</div>
+          <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="faq-item">
           <h4 class="faq-question m-none underline">Ho bisogno di strumenti specifici?</h4>
           <div class="faq-answer color-text-light text-emphasis">No, basta un computer e una connessione internet. Ti fornirò tutto il materiale necessario.</div>
           <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -399,10 +406,10 @@ og-image: workshops/og-design-tokens-workshop.png
       <div class="price-section mb-m">
         <div class="price">€149 <span class="price-old">€249</span></div>
         <div class="date">15-20 Gennaio 2026, 9:00-13:00</div>
-        <a href="https://francescoimprota.kit.com/products/design-tokens-workshop?promo=922HH6BIF7&step=checkout" class="cta-primary plausible-event-name=Buy+Workshop">Riserva il tuo posto</a>
+        <a href="https://buy.stripe.com/14AcN44L94bUdMe76Xcs800?prefilled_promo_code=EARLY25" class="cta-primary plausible-event-name=Buy+Workshop">Riserva il tuo posto</a>
       </div>
       <p class="event-countdown" style="display: none;"></p>
-      <p class="event-static mb-m text-small font-regular color-text-light">Early Bird valido fino al <strong>15 dicembre, 2025</strong>. Solo 6 posti disponibili.</p>
+      <p class="event-static mb-m text-small font-regular color-text-light">Early Bird valido fino al <strong>15 dicembre, 2025</strong>. Solo 4 posti rimasti.  Il tuo acquisto è valido per tutte le prossime date.</p>
       <hr>
       <p class="text-small color-text-light mb-xs">Hai dubbi o altre domande?</p>
       <p>
