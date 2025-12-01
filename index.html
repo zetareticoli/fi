@@ -2,34 +2,31 @@
 layout: default
 home: true
 ---
+<img class="spacing-sections full-width outer-margin" src="/img/site-cover.webp" alt="A working desk reflected in a picture" title="My design studio image reflected">
 
-<p class="lead">
-  <strong>Francesco improta</strong> is a designer working at <a href="https://innovazione.gov.it/dipartimento/" target="blank" title="Italia Department for Digital Transformation" alt="Link to deparment website">Italian Department for Digital Transformation</a> as Senior Product Designer.
-  Former Head of Design at <a href="http://www.citynews.it" target="blank">Citynews</a>, he co-founded and designed <a href="https://blog.dnsimple.com/2012/09/dnsimple-acquires-robodomain/" target="blank" >Robodomain</a>. 
-  Based in Rome, Italy, he’s dad of two in the real life.
-</p>
-
-<p>
-  My work focuses on building thoughtful, intuitive and delightful experiences for the web, 
-  with a devotion to process, transparency, and sharing what I learn.
-</p>
-
-<img class="cover full-width" src="/img/cover.jpg" alt="Francesco Improta">
-
-<section class="box divider">
-  <h2><a href="/work" target="_self">Design + Code</a></h2>
-  <p class="lead unspace">
-    From responsive design strategy and front-end architectures to design systems, I design and code 
-    beautiful experiences on the web and beyond.
+<section class="spacing-sections outer-margin">
+  <h1 class="headline-default">Hi, I'm Francesco.</h1>
+  <p class="lead color-text-light">
+    I'm a <span class="color-text">Product Designer</span> based in Rome with over 17 years of experience  in the field. 
+  </p>
+  <p class="lead color-text-light">I design <span class="color-text">digital products</span> and <span class="color-text">design systems</span> that inspire user engagement and drive business growth, simplifying complex ideas and creating intuitive  user experiences.
+  </p>
+  <p>
+    <a class="text-emphasis" href="/about/">About me →</a>
+  </p>
+  <p>
+    <a class="text-emphasis" href="/experience/">Work experiences →</a>
   </p>
 </section>
 
-<section class="box">
-  <h2><a href="/blog" target="_self">Blog</a></h2>
-  <p class="lead unspace">
-    Thoughts about design, front-end and other interesting things about the web and beyond.
+<section class="spacing-sections outer-margin">
+  <h2 class="headline-default">Latest writing</h2>
+  <ul class="list-none m-none">
+    {% for post in site.posts limit:4 %}
+    {% include post-list.html %}
+    {% endfor %}
+  </ul>
+  <p>
+    <a class="link-light link-underline" href="/writing/">All writing →</a>
   </p>
 </section>
-
-  {% include box-subscribe.html %}
-

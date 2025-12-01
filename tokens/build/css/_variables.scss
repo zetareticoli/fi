@@ -1,0 +1,48 @@
+/**
+ * Do not edit directly
+ * Generated on Fri, 21 Jan 2022 15:39:26 GMT
+ */
+
+:root {
+  --global-letter-spacing-tracking-tight: -0.5;
+  --global-letter-spacing-tracking-narrow: -1;
+  --global-letter-spacing-tracking-normal: 0;
+  --global-font-size-font-8: 44;
+  --global-font-size-font-7: 32;
+  --global-font-size-font-6: 24;
+  --global-font-size-font-5: 21;
+  --global-font-size-font-4: 20;
+  --global-font-size-font-3: 18;
+  --global-font-size-font-2: 16;
+  --global-font-size-font-1: 12;
+  --global-font-weights-font-bold: Bold;
+  --global-font-weights-font-medium: Semi Bold;
+  --global-font-weights-font-regular: Regular;
+  --global-line-heights-lineheight-double: calc(1em + calc(var(--baseline) * 2));
+  --global-line-heights-lineheight-relaxed: 1.5;
+  --global-line-heights-lineheight-auto: calc(1em + var(--baseline));
+  --global-line-heights-lineheight-none: 1;
+  --global-font-families-font-sans: Inter;
+  --global-colors-white: #ffffff;
+  --global-colors-black: #080b12;
+  --global-colors-cool-gray-100: #f3f4f6;
+  --global-colors-cool-gray-200: #e5e7eb;
+  --global-colors-cool-gray-400: #9ca3af;
+  --global-colors-cool-gray-500: #6b7280;
+  --global-colors-cool-gray-800: #1f2937;
+  --global-colors-cool-gray-900: #111827;
+  --global-colors-orange-500: #f97316;
+  --global-colors-orange-600: #ea580c;
+  --global-colors-orange-700: #c2410c;
+  --light-text-primary: var(--global-colors-orange-600);
+  --light-state-hover: var(--global-colors-orange-500);
+  --light-state-active: var(--global-colors-orange-700);
+  --light-border: var(--global-colors-cool-gray-200);
+  --light-background-light: var(--global-colors-cool-gray-100);
+  --light-background-strong: var(--global-colors-black);
+  --light-background-primary: var(--global-colors-orange-600);
+  --light-background: var(--global-colors-white);
+  --light-text-light: var(--global-colors-cool-gray-400);
+  --light-text-weak: var(--global-colors-cool-gray-500);
+  --light-text: var(--global-colors-cool-gray-800);
+}

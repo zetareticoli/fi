@@ -1,5 +1,6 @@
 ---
 layout: default
+inner: small
 ---
 
 {% assign minutes = content | number_of_words | divided_by: 180 %}
@@ -9,20 +10,26 @@ layout: default
   {% assign read-time = minutes | append: "&nbsp;" | append: site.var_min_read %}
 {% endif %}
 
-<article class="box post">
-	<h1>{{ page.title }}</h1>
+<article class="post spacing-sections outer-margin">
   
-  <p class="caption">{{ page.date | date: site.date_format }} • {{ read-time }}</p>
-
-  {% if page.cover-image %}
-    <img class="mb-xsmall" alt="{{ page.cover-alt }}" title="{{ page.cover-title }}" src="{{ site.baseurl }}/img/covers/{{ page.cover-image }}">
+  <header class="mb-l">
+  	<h1 class="headline-teaser">{{ page.title }}</h1>
+    {% if post.excerpt %}
+    <p class="lead">{{ post.excerpt }}</p>
+    {% endif %}  
+    <p class="caption color-text-weak mb-m">{{ page.date | date: site.date_format }} • {{ read-time }}</p>
+    {% if page.cover-image %}
+    <img class="mb-xs" alt="{{ page.cover-alt }}" title="{{ page.cover-title }}" src="{{ site.baseurl }}/img/covers/{{ page.cover-image }}">
+	  {% endif %}
     {% if page.cover-caption %}
-      <p><small class="caption">{{ page.cover-caption}}</small></p>
+    <p class="caption color-text-light mb-m">{{page.cover-caption}}</p>
     {% endif %}
-	{% endif %}
+  </header>
 
-  {{ content }}
-
+  <section class="post__body">
+    {{ content }} 
+  </section>
+  
   {% if site.display-author-post-page %}
     {% if page.author.name %}
       <small><em>{{ site.var_guest_post_by }}: {{ page.author.name }} {{ page.author.info }}</em></small>
@@ -34,10 +41,12 @@ layout: default
   {% endif %}
 
   <hr>
-  
+
   {% include box-subscribe.html %}
 
-  <!-- <div class="text-center">
+  <hr>
+  
+    <!-- <div class="text-center">
     <p>
       <em>Find this post interesting?</em>
     </p>
@@ -45,7 +54,8 @@ layout: default
     <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter">
     Share on Twitter</a>
     </p>
-  </div> -->
+  </div> 
+  -->
 
   {% if site.display-next-prev-post and page.previous.url or site.display-next-prev-post and page.next.url %}
     <div class="pagination">

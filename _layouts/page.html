@@ -2,8 +2,18 @@
 layout: default
 ---
 
-{% if page.lead %}
-	<p class="lead">{{ page.lead }}</p>
-{% endif %}
+<section class="spacing-sections outer-margin">
+	{% if page.headline %}
+		<h1 class="headline-featured">{{ page.headline }}</h1>
+	{% endif %}
+
+	{% if page.lead %}
+		<p class="lead color-text-light">{{ page.lead }}</p>
+	{% endif %}
+
+	{% if page.cta %}
+		<a class="text-emphasis underline color-text-light" href="{{ page.cta.url }}">{{ page.cta.text }}</a>
+	{% endif %}
+</section>
 
 {{ content }}

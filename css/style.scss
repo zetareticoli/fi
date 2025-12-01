@@ -3,10 +3,28 @@
 # only Main files contain this front matter, not partials.
 ---
 
-@import 'settings';
-@import 'fonts';
-@import 'base';
-@import 'layout';
-@import 'objects';
-@import 'components';
-@import 'utilities';
+@import '../_sass/settings/settings';
+@import '../_sass/fonts';
+@import '../_sass/elements/base';
+@import '../_sass/elements/links';
+@import '../_sass/objects';
+@import '../_sass/objects/layout';
+@import '../_sass/objects/links';
+@import '../_sass/objects/lists';
+@import '../_sass/objects/post';
+@import '../_sass/objects/spacing';
+@import '../_sass/components';
+@import '../_sass/components/buttons';
+@import '../_sass/components/card';
+@import '../_sass/components/footer';
+@import '../_sass/components/header';
+@import '../_sass/components/lists';
+@import '../_sass/components/logo';
+@import '../_sass/components/nav';
+@import '../_sass/utilities';
+@import '../_sass/utilities/colors';
+@import '../_sass/utilities/flexbox';
+@import '../_sass/utilities/grid';
+@import '../_sass/utilities/lists';
+@import '../_sass/utilities/spacing';
+@import '../_sass/utilities/text';

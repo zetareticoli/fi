@@ -1,0 +1,121 @@
+// Headlines
+
+.headline-teaser {
+  font-size: var(--font-08);
+  line-height: var(--lineheight-auto);
+  font-stretch: var(--stretch-wide);
+  @media screen and (min-width: 768px) {
+    font-size: var(--font-09);
+  }
+}
+
+.headline-featured {
+  font-size: var(--font-08);
+  line-height: var(--lineheight-auto);
+  font-stretch: var(--stretch-wide);
+}
+
+.headline-default {
+  font-size: var(--font-07);
+  line-height: var(--lineheight-auto);
+  font-stretch: var(--stretch-wide);
+}
+
+.headline-secondary {
+  font-size: var(--font-06);
+  font-weight: var(--font-semibold);
+  line-height: var(--lineheight-auto);
+  font-stretch: var(--stretch-wide);
+}
+
+.headline-tertiary {
+  font-size: var(--font-04);
+  font-weight: var(--font-semibold);
+  line-height: var(--lineheight-auto);
+}
+
+// Copy
+
+.lead {
+  font-size: var(--font-04);
+  font-weight: var(--font-medium);
+  line-height: var(--lineheight-double);
+  @media screen and (min-width: 768px) {
+    font-size: var(--font-06);
+  }
+}
+
+.text-default {
+  font-size: var(--font-03);
+  font-weight: var(--font-regular);
+  line-height: var(--lineheight-auto);
+}
+
+.text-emphasis {
+  font-size: var(--font-03);
+  font-weight: var(--font-medium);
+  line-height: var(--lineheight-auto);
+}
+
+.text-small {
+  font-size: var(--font-02);
+  font-weight: var(--font-regular);
+  line-height: var(--lineheight-auto);
+}
+
+.text-tiny {
+  font-size: var(--font-01);
+  font-weight: var(--font-regular);
+  line-height: var(--lineheight-auto);
+}
+
+.body-default {
+  font-size: var(--font-03);
+  font-weight: var(--font-medium);
+  line-height: var(--lineheight-relaxed);
+}
+
+.body-post {
+  font-size: var(--font-04);
+  font-weight: var(--font-regular);
+  line-height: var(--lineheight-relaxed);
+}
+
+.caption {
+  font-size: var(--font-01);
+  font-weight: var(--font-regular);
+  font-stretch: var(--stretch-wide);
+  line-height: var(--lineheight-auto);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.underline {
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+
+  &:hover {
+    text-decoration-color: currentColor;
+    opacity: 0.8;
+  }
+}
+
+.font-regular {
+  font-weight: var(--font-regular);
+}
+
+.font-medium {
+  font-weight: var(--font-medium);
+}
+
+.font-semibold {
+  font-weight: var(--font-semibold);
+}
+
+.font-bold {
+  font-weight: var(--font-bold);
+}

@@ -1,17 +1,9 @@
 @font-face {
-  font-family: 'Inter';
-  font-style:  normal;
-  font-weight: 400;
+  font-family: 'Mona Sans';
+  src:
+    url('/css/fonts/Mona-Sans.woff2') format('woff2 supports variations'),
+    url('/css/fonts/Mona-Sans.woff2') format('woff2-variations');
+  font-weight: 400 700;
+  font-stretch: 95% 110%;
   font-display: swap;
-  src: url("/css/fonts/Inter-Regular.woff2?v=3.12") format("woff2"),
-       url("/css/fonts/Inter-Regular.woff?v=3.12") format("woff");
-}
-
-@font-face {
-  font-family: 'Inter';
-  font-style:  normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("/css/fonts/Inter-Bold.woff2?v=3.12") format("woff2"),
-       url("/css/fonts/Inter-Bold.woff?v=3.12") format("woff");
 }

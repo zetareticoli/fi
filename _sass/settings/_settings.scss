@@ -1,0 +1,162 @@
+$base-font-size: 16px;
+$color-dark: #111a23;
+$color-darker: #080d11;
+$color-bluedark: #192633;
+$color-white: rgb(255,255,255);
+$color-accent: #ff9500;
+$ui-background: $color-dark;
+$ui-border: rgba($color-white, 15%);
+$text-01: rgba($color-white, .87);
+$text-02: rgba($color-white, 40%);
+$text-03: $color-dark;
+$type-xlarge: 2.25rem;
+$type-large: 1.75rem;
+$type-medium: 1.25rem;
+$type-base: 1.15rem;
+$type-small: 1rem;
+$type-xsmall: .75rem;
+
+$spacing-large: 10vw;
+$spacing-small: 5vw;
+$spacing-xsmall: 2.5vw;
+
+
+$font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font: 'Inter', $font-stack;
+
+// -------------------------------------------//
+// NEW DESIGN TOKENS
+
+// Do not edit directly
+// Generated on Fri, 10 Dec 2021 12:58:38 GMT
+
+$baseline: 4px;
+$space-s: 12px;
+$space-base: 16px;
+$space-m: 24px;
+$space-l: 32px;
+$space-xl: 48px;
+$space-xxl: 80px;
+$color-orange-600: #ea580c;
+$color-orange-700: #c2410c;
+$color-orange-500: #f97316;
+$color-coolGray-900: #111827;
+$color-coolGray-800: #1f2937;
+$color-coolGray-500: #6b7280;
+$color-coolGray-400: #9ca3af;
+$color-coolGray-200: #e5e7eb;
+$color-coolGray-100: #f3f4f6;
+$color-black: #080b12;
+$color-white: #ffffff;
+$radius-smooth-corner: 8px;
+$font-sans: Inter, Helvetica, Arial, sans-serif;
+$font-weights-inter-0: 400;
+$font-weights-inter-1: 600;
+$font-weights-inter-2: 700;
+$font-01: 12px;
+$font-02: 16px;
+$font-03: 18px;
+$font-04: 20px;
+$font-05: 21px;
+$font-06: 24px;
+$font-07: 32px;
+$font-08: 44px;
+$lineheight-none: 1;
+$lineheight-auto: calc(1em + $baseline);
+$lineheight-relaxed: 1.4;
+$lineheight-double: calc(1em + calc($baseline * 2));
+$letter-spacing-tracking-normal: 0;
+$letter-spacing-tracking-narrow: -1;
+$letter-spacing-tracking-tight: -0.5;
+$paragraph-spacing-1: $space-s;
+$paragraph-spacing-2: $space-m;
+$paragraph-spacing-3: $space-l;
+
+/**
+ * Do not edit directly
+ * Generated on Fri, 10 Dec 2021 12:58:38 GMT
+ */
+
+:root {
+  --baseline: 4px;
+  --space-xs: 8px;
+  --space-s: 12px;
+  --space-base: 16px;
+  --space-m: 24px;
+  --space-l: 32px;
+  --space-xl: 48px;
+  --space-xxl: 80px;
+  --color-orange-700: #b45309;
+  --color-orange-600: #d97706;
+  --color-orange-500: #F59E0B;
+  --color-gray-900: #111a23;
+  --color-gray-800: #1f2937;
+  --color-gray-700: #374151;
+  --color-gray-500: #676F7E;
+  --color-gray-400: #9DA3AE;
+  --color-gray-200: #E2E4E9;
+  --color-gray-100: #F0F2F4;
+  --color-black: #080b12;
+  --color-white: #ffffff;
+  --color-red: #dc2626;
+  --color-offWhite: rgba(255,255,255, .87);
+  --radius-smooth-corner: 8px;
+  --font-sans: 'Mona Sans', Helvetica, Arial, sans-serif;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-01: 12px;
+  --font-02: 16px;
+  --font-03: 18px;
+  --font-04: 20px;
+  --font-05: 21px;
+  --font-06: 24px;
+  --font-07: 32px;
+  --font-08: 44px;
+  --font-09: 56px;
+  --lineheight-none: 1;
+  --lineheight-auto: calc(1em + var(--baseline));
+  --lineheight-relaxed: 1.5;
+  --lineheight-double: calc(1em + calc(var(--baseline) * 2));
+  --tracking-normal: 0;
+  --tracking-narrow: -1px;
+  --tracking-tight: -0.5px;
+  --paragraph-spacing-1: var(--space-s);
+  --paragraph-spacing-2: var(--space-m);
+  --paragraph-spacing-3: var(--space-l);
+  --text: var(--color-offWhite);
+  --text-weak: var(--color-gray-500);
+  --text-light: var(--color-gray-400);
+  --text-primary: var(--color-orange-500);
+  --text-inverse: var(--color-white);
+  --background: var(--color-gray-900);
+  --background-emphasis: var(--color-black);
+  --background-light: var(--color-gray-700);
+  --background-weak: var(--color-gray-800);
+  --background-primary: var(--color-orange-500);
+  --border: var(--color-gray-700);
+  --state-hover: var(--color-orange-600);
+  --state-active: var(--color-orange-700);
+  --spacing-stack-xs: var(--space-xs);
+  --spacing-stack-s: var(--space-s);
+  --spacing-stack-m: var(--space-m);
+  --spacing-stack-l: var(--space-l);
+  --spacing-stack-xl: var(--space-xl);
+  --spacing-stack-xxl: var(--space-xxl);
+  --spacing-inset-s: var(--space-s);
+  --spacing-inset-m: var(--space-m);
+  --spacing-inset-l: var(--space-l);
+  --spacing-inset-xl: var(--space-xl);
+  --spacing-inline-xs: var(--space-xs);
+  --spacing-inline-s: var(--space-s);
+  --spacing-inline-m: var(--space-m);
+  --spacing-inline-l: var(--space-l);
+  --grid-margin: var(--space-m);
+  --grid-gutter: var(--space-m);
+  --inner-size-large: 1440px;
+  --inner-size: 920px;
+  --inner-size-small: 684px;
+  --stretch-wide: 110%;
+  --stretch-tight: 95%;
+}

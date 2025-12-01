@@ -1,0 +1,12 @@
+{% assign minutes = post.content | number_of_words | divided_by: 180 %}
+
+{% if minutes == 0 %}
+  {% assign read-time = site.var_less_than_a_minute_read %}
+{% else %}
+  {% assign read-time = minutes | append: "&nbsp;" | append: site.var_min_read %}
+{% endif %}
+
+<li class="mb-l">
+  <h3 class="headline-secondary mb-xs"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+  <span class="caption color-text-light">{{ post.date | date: "%-d %B, %Y"}}</span>
+</li>

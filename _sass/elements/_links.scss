@@ -1,0 +1,18 @@
+a {
+  --link-color: var(--text-primary);
+  --link-decoration: none;
+  color: var(--link-color);
+  text-decoration: var(--link-decoration);
+  text-underline-offset: 0;
+  transition: all .15s ease-in;
+}
+
+a:hover {
+  --link-color: var(--state-hover);
+  --link-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:active {
+  --link-color: var(--state-active);
+}

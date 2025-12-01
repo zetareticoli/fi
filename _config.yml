@@ -1,11 +1,10 @@
-
 # The name of your website.
 name: Francesco Improta
 
 description:
 
   # Description of your site. This will show up in google.
-  meta: Personal website of Francesco Improta, designer in Rome, Italy. Blog about design, front-end and making things on the web.
+  meta: Personal website of Francesco Improta, product designer from Rome, Italy. Write about design, front-end and building stuff on the web.
 
   # Description of your site. This will show up on the front page.
   subtitle: Blog about design, front-end and making things on the web. Edited by Francesco Improta.
@@ -14,14 +13,22 @@ author:
   name: Francesco Improta
 
   # Necessary for contact page
-  email: francesco@designabile.com
+  email: me@francescoimprota.com
   twitter: zetareticoli
  
-url: http://francescoimprota.com
+url: https://francescoimprota.com
 baseurl: ""
 
 # language attribute in <html> element.
 lang: en
+
+collections: 
+  work:
+    output: true
+    sort_by: 'order'
+  workshops:
+    output: true
+    permalink: /workshops/:path
 
 # FROM THIS POINT ON EVERYTHING IS OPTIONAL
 
@@ -40,29 +47,16 @@ display-social-icons: false
 # If you want social links to open in a new tab, set this as true
 social-icons-open-newtab: true
 
-footer-text: Designed with <a href="#" class="link-alt">Figma</a>. Powered by <a class="link-alt" href="#">Jekyll</a> &amp; <a class="link-alt" href="#">Netlify</a>. Font <a class="link-alt" href="https://rsms.me/inter/">Inter</a> by <a class="link-alt" href="https://twitter.com/rsms">@rsms</a>
+footer-text: Designed with Figma. Powered by Jekyll &amp; Netlify. Font Mona Sans by <a class="link-light link-underline" href="https://github.com/mona-sans" target="_blank">Github</a>
 
 # Preferably 64px in height. Leave empty = disable.
 logo-image: /img/logo.svg
 
 # Toolbar color for Chrome on Android.
-theme-color-attr: "#00f0ff"
+theme-color-attr: "#111A23"
 
 # Color of Microsoft live Tile.
-ms-tile-color: "#00f0ff"
-
-# Color used throughout the theme. Format: R, G, B.
-theme-color: 0, 240, 255 # Original: 0, 240, 255
-
-# Text color used throughout the theme. Format: R, G, B.
-text-color: 0, 0, 0 # Original: 0, 0, 0
-
-# Background color used throughout the theme. Format: R, G, B.
-# Note: if you change the background color AND you use cover images, you should
-#       also change the CSS gradient in "_includes\gradient.css" to match the
-#       background color. Edit and copy it from here:
-#       http://www.colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100
-background-color: 255, 255, 255 # Original: 255, 255, 255
+ms-tile-color: "#111A23"
 
 display-author-post-page: false
 display-author-front-page: false
@@ -87,37 +81,13 @@ display-next-prev-post: true
 navigation:
 - text: About
   url: /about/
-- text: Blog
-  url: /blog/
-- text: Work
-  url: /work/
-- text: Portfolio
-  url: http://zetareticoli.dribbble.com
-  external: true
-- text: Workshop
-  url: /workshop/
+- text: Experience
+  url: /experience/
+- text: Writing
+  url: /writing/
+- text: Side projects
+  url: /projects/
 
-
-projects:
-- title: Typesmith
-  desc: A responsive typography library
-  url: https://www.github.com/zetareticoli/typesmith
-  color: orange
-  downloads: 200
-- title: Superilles
-  desc: Grid system with CSS Grid
-  url: https://www.github.com/zetareticoli/superilles
-  color: teal
-- title: Sass MQ
-  desc: A simple media query library for Sass
-  url: https://www.github.com/zetareticoli/mq
-  color: purple
-  downloads: 56
-- title: UIKit Starter kit
-  desc: UI Design Kit template for Sketch
-  url: https://www.github.com/zetareticoli/uikit-starter
-  color: blue
-  
 #####################
 # SOCIAL #
 #####################
@@ -136,6 +106,8 @@ var_newer: Newer
 var_older: Older
 var_next_post: Next post
 var_previous_post: Previous post
+var_next_work: Next work
+var_previous_work: Previous work
 var_less_than_a_minute_read: Less than a minute read
 var_min_read: min read # Text after reading time. Example: 5 min read.
 var_post_by: Post by

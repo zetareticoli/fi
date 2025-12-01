@@ -1,0 +1,25 @@
+.space {
+  margin-bottom: 3rem;
+}
+
+.spacing-sections {
+  margin-bottom: var(--spacing-stack-xl);
+  @media screen and (min-width: 768px) {
+    margin-bottom: var(--spacing-stack-xxl);
+  }
+}
+
+.spacing-sections-inset {
+  padding-top: var(--spacing-stack-xl);
+  padding-bottom: var(--spacing-stack-xl);
+
+  @media screen and (min-width: 768px) {
+    padding-top: var(--spacing-stack-xxl);
+    padding-bottom: var(--spacing-stack-xxl);
+  }
+}
+
+.spacing-outer {
+  padding-left: var(--spacing-inline-m);
+  padding-right: var(--spacing-inline-m);
+}

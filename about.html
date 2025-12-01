@@ -1,0 +1,91 @@
+---
+layout: page
+headline: I'm a designer with a love for coding
+lead: When not busy at work I love cycling, hiking in the Dolomites and playing LEGO with my two sons. I’m passionate about astronomy and sci-fi. 
+---
+
+<section class="spacing-sections outer-margin l-aside-right">
+  <article>
+    <p>
+      For the past 15 years, I've worked as a <strong>Product Designer</strong> designing and building a wide range of digital products. I believe that good design should be both functional and aesthetically pleasing, and strive to create intuitive and engaging user experiences.
+    </p>
+    <p>
+      During my career, I've had the pleasure of working with a variety of clients in fields such as Editorial, Healthcare, Banking, Sports, Public Administration, E-commerce, and Information Technology. <br>Some of my notable clients include <strong>Scuderia Ferrari F1</strong>, Enel Energia, <strong>ING Direct</strong>, and <strong>HCL Software</strong>. Most recently, I served as a Senior Product Designer at the Italian Department for Digital Transformation, where I managed complex ecosystems of user interfaces and front-end libraries for key government initiatives.
+    </p>
+    <p>
+      In addition to my work as a designer, I co-founded <strong>Robodomain</strong>, a SaaS company focused on domain management tools. Our software was acquired by DNSimple in 2013, which was a valuable learning experience.
+    </p>
+    <p>
+      From time to time, I <strong>write</strong> and <strong>speak</strong> about design methodologies, workflow, and tools at conferences and events. I am also a lecturer at UXUniversity, where I conduct a full-day workshop on Design Systems and Atomic Design.
+    </p>
+    <p>
+      If you're interested in learning more about my work, feel free to <a href="mailto:me@francescoimprota.com">connect with me</a> or <a href="/experience/">check out my work page</a>.
+    </p>
+  </article>
+  <img class="mb-m" src="/img/francesco-improta@2x.webp" alt="Taking a photo while hiking in the mountains">
+</section>
+
+<section class="spacing-sections outer-margin">
+  <h2 class="headline-default">Speaking</h2>
+  <ul class="content-list m-none">
+  {% for talk in site.data.talks %}
+    <li class="content-list__item flex">
+      <span class="content-list__year text-small color-text-weak mb-s">{{talk.year}}</span>
+      <h3 class="content-list__title headline-tertiary mb-s">{{talk.conf}}</h3>
+      <h4 class="content-list__desc headline-tertiary mb-s"><a href="{{talk.url}}" target="_blank">{{talk.title}}</a></h4>
+    </li>
+  {% endfor %}
+  </ul>
+
+</section>
+
+<section class="spacing-sections outer-margin">
+  <h2 class="headline-default">Books</h2>
+  <article>
+    <h3>
+      <a href="https://www.amazon.com/CSS3-Solutions-Essential-Techniques-Developers/dp/1430243376">CSS3 Solutions - Essential Techniques for CSS Developers</a>
+    </h3>
+    <p>CSS3 contains a broad set of new additions and changes to the core CSS language across a range of modules, which means lots of new things to learn, and lots of new things that can go wrong.</p>
+  </article>
+</section>
+
+<!--
+<section class="spacing-sections">
+  <h2 class="headline-default">Mentoring</h2>
+  <p>I love to share my experience. From a career advice to portfolio review and more, I’m here to help. You can book a 1:1 meeting slot using APList.org or Calendly.</p>
+  <a href="https://adplist.org/mentors/francesco-improta" target="_blank">Book a session on ADPList</a>
+  <!-- Calendly link widget begin 
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+  <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/francescoimprota?hide_landing_page_details=1&hide_gdpr_banner=1'});return false;">Schedule time with me</a>
+  <!-- Calendly link widget end 
+</section>
+-->
+
+<!--
+<section class="spacing-sections">
+  <h2 class="headline-default">Reading</h2>
+  <p>List of books that contributed to my education and had an impact on my way to work. I absolutely recommend:</p>
+  {% for book in site.data.books %}
+    <ul class="list-none">
+      <li>
+        <span>
+          <strong>{{book.title}}</strong>
+          <span>&mdash; by {{book.author}}</span>
+        </span>
+      </li>
+    </ul>
+  {% endfor %}
+</section> 
+
+
+<section class="spacing-sections">
+  <h2 class="headline-default">Playlists</h2>
+  <p>A collection of mixtapes I curated on Spotify. Available to listen for free. Let me know if you liked it.</p>
+</section>
+
+-->
+
+<hr>
+
+{% include box-subscribe.html %}

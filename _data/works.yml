@@ -1,0 +1,35 @@
+- title: Design System .italia
+  slug: design-system-italia
+  year: 2022 - current
+  image: /img/works/dtd/design-system-italia-cover.webp
+  description: Create a design system for the Italian public administration.
+  url: https://designers.italia.it/design-system/
+- title: Digital Services for the Italian Public Administration
+  slug: digital-services-italian-pa
+  image: /img/works/dtd/designersitalia-cover.webp
+  year: 2022 - 2026
+  url: https://designers.italia.it/modelli/comuni/
+  description: Design a unified and user-friendly experience for citizens interacting with government digital services.
+- title: Designing News
+  slug: citynews
+  image: /img/works/citynews/citynews-cover.webp
+  year: 2012-2021
+  description: A decade of evolution leading the design of user experience and product design at Citynews.
+  url: /work/citynews/
+- title: Seejay
+  slug: seejay
+  year: 2014-2015
+  image: /img/works/seejay/seejay-cover.webp
+  description: I had the pleasure of working with an Italian start-up that was developing a product for social storytelling. The company had a fantastic idea, but they were struggling to make their product stand out in a crowded market. Through co-design workshops and an iterative process, we rolled out the new responsive app in a very short time.
+  url: /2015/07/22/seejay-redesign/
+- title: Robodomain
+  slug: robodomain
+  year: 2009-2014
+  image: /img/works/robodomain/robodomain-cover.webp
+  description: The company I co-founded together with <a class="link-inverse link-underline" href="https://github.com/weppos">@weppos</a>. I took care of everything from finance to product design, from customers support to marketing.
+
+- title: Noemalife
+  slug: noemalife
+  year: 2011-2012
+  image: /img/works/noemalife/noemalife-cover.webp
+  description: Designed mobile solutions for digital healthcare.
