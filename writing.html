@@ -2,7 +2,11 @@
 layout: page
 headline: Writing
 lead: I confidently use writing as my outlet to express my ideas and bring my thoughts to life. I have been skillfully crafting pieces about design, side-projects, and personal growth for quite some time now.
+cta:
+  url: /subscribe
+  text: Subscribe to Writing
 ---
+
 
 <section class="spacing-sections outer-margin">
   {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}

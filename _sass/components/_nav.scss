@@ -2,12 +2,23 @@
 
 .nav {
   @media screen and (min-width: 768px) {
-    width: 40%;
+    width: 50%;
+  }
+
+  &__list {
+    gap: var(--spacing-inline-s);
+    justify-content: center;
+
+    @media screen and (min-width: 768px) {
+      gap: var(--spacing-inline-m);
+      justify-content: flex-end;
+    }
   }
 
   &__item {
+    font-size: var(--font-02);
     @media screen and (min-width: 768px) {
-      text-align: right;
+      font-size: var(--font-03);
     }
 
     &.active {

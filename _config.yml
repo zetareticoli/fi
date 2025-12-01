@@ -1,4 +1,3 @@
-
 # The name of your website.
 name: Francesco Improta
 
@@ -17,7 +16,7 @@ author:
   email: me@francescoimprota.com
   twitter: zetareticoli
  
-url: http://francescoimprota.com
+url: https://francescoimprota.com
 baseurl: ""
 
 # language attribute in <html> element.
@@ -27,6 +26,9 @@ collections:
   work:
     output: true
     sort_by: 'order'
+  workshops:
+    output: true
+    permalink: /workshops/:path
 
 # FROM THIS POINT ON EVERYTHING IS OPTIONAL
 
@@ -79,10 +81,10 @@ display-next-prev-post: true
 navigation:
 - text: About
   url: /about/
+- text: Experience
+  url: /experience/
 - text: Writing
   url: /writing/
-- text: Work
-  url: /work/
 - text: Side projects
   url: /projects/
 

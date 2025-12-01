@@ -22,7 +22,7 @@ The big news is that in 2020, during the first hard lockdown in Italy, I launche
   ![dark-mode-toggle](/img/posts/2020-year-review/2020-github-contributions.png)
 - Managed **137** tasks across **4** projects 
 - Built the first **styleguide & pattern library** for Citynews products -- the design system is on the way
-- Wrote [**7 posts**](/blog) on my blog, [**2 stories**](https://medium.com/@zetareticoli) on Medium and [**1 article**](https://dev.to/zetareticoli/dark-mode-with-sass-and-css-variables-4f9b) on DEV
+- Wrote [**7 posts**](/writing) on my blog, [**2 stories**](https://medium.com/@zetareticoli) on Medium and [**1 article**](https://dev.to/zetareticoli/dark-mode-with-sass-and-css-variables-4f9b) on DEV
 - Published **Typesmith** on [GitHub](https://github.com/zetareticoli/typesmith) and [NPM](https://www.npmjs.com/package/typesmith-lib), a Sass responsive typography library
 - Have been **productive** for an average of 75% of my working time, tracked with RescueTime app
 

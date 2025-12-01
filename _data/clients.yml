@@ -1,33 +1,36 @@
+- title: HCL Software
+  desc: Played a pivotal role in the successful transition from legacy software to web SaaS solutions for BigFix, an endpoint management system, enhancing user experience and operational efficiency
+  year: 2021
 - title: INPS
-  desc: UX/UI Design of internal BI tool
-  year: 2105
-- title: Banca d’Italia
-  desc: UI Design for a data research tool  
+  desc: Designed and developed a comprehensive internal Business Intelligence tool interface, focusing on data visualization and intuitive user workflows for enhanced analytics capabilities
+  year: 2015
+- title: Enel Energia
+  desc: Performed extensive UX analysis and optimization of commercial landing pages, including detailed prototype evaluation, usability recommendations, and conversion optimization strategies
+  year: 2015
+- title: Banca d'Italia
+  desc: Created an intuitive user interface for a sophisticated data research platform, incorporating advanced search functionality and data visualization tools for financial analysis
   year: 2014
 - title: Scuderia Ferrari
-  desc: Design of the users signup experience  
+  desc: Optimized the entire user registration experience for Ferrari's digital platform, streamlining the signup flow and implementing robust validation processes
   year: 2014
 - title: Bigodino.it
-  desc: Redesigned the media website dedicated to fashion, food, travel and more
+  desc: Led a complete redesign of this lifestyle media platform, implementing a modern content strategy and improving the user experience across fashion, food, and travel sections
   year: 2014
-- title: Enel Energia
-  desc: Conducted a design assesment and prototypes review for new commercial landing pages
-  year: 2015
 - title: TVZap
-  desc: Responsive website and EPG guide for the entertainment website 
+  desc: Developed a fully responsive entertainment website featuring an interactive Electronic Program Guide (EPG), optimized for multiple devices and screen sizes
   year: 2013
 - title: Altura Labs
-  desc: Responsive landing page to promote new educational courses 
+  desc: Created an engaging, responsive landing page focusing on conversion optimization and clear communication of educational offerings
   year: 2012
 - title: Ansaldo STS
-  desc: I designed the dashboard and UI kit for Wayside, which is a monitoring system for railways.
+  desc: Developed a comprehensive UI kit and dashboard interface for Wayside railway monitoring system, focusing on real-time data visualization and system status monitoring
   year: 2011
-- title: ING Direct 
-  desc: Redesigned the user flow and interfaces for a new bank account scenario 
+- title: ING Direct
+  desc: Optimized the digital banking experience by redesigning the account creation flow, improving user onboarding and reducing abandonment rates
   year: 2010
 - title: Dondup
-  desc: I designed the community for fans of the well-known clothing brand.
+  desc: Created an engaging brand community platform featuring user-generated content, social interactions, and exclusive brand updates for fashion enthusiasts
   year: 2010
 - title: Populis
-  desc: Web design for websites network and news portal 
+  desc: Designed cohesive interfaces across a network of news and content websites, ensuring consistent branding and optimal user experience
   year: 2006

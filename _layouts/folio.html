@@ -10,7 +10,7 @@ layout: default
     <p class="lead color-text-light">{{ page.lead }}</p>
     {% endif %}  
     {% if page.cover %}
-    <img class="full-width" alt="{{ page.cover-alt }}" title="{{ page.cover-alt }}" src="{{ site.baseurl }}/img/projects/{{page.client}}/{{ page.cover }}">
+    <img class="full-width" alt="{{ page.cover-alt }}" title="{{ page.cover-alt }}" src="{{ site.baseurl }}/img/works/{{page.client}}/{{ page.cover }}">
 	  {% endif %}
   </section>
 
@@ -47,7 +47,7 @@ layout: default
     </div>
     <div>
       {% if page.summary %}
-      <p class="lead color-text-inverse">
+      <p class="lead">
         {{page.summary}}
       </p>
       {% endif %}
