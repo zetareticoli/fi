@@ -172,7 +172,7 @@ og-image: workshops/og-design-tokens-workshop.png
                 <li>Design tokens systems: color, typography, spacing, icon</li>
                 <li>Gestire la specificità</li>
                 <li>Strategie di versionamento</li>
-                <li>Esercitazione: pianificare la migrazione ai design tokens</li>
+                <!-- <li>Esercitazione: pianificare la migrazione ai design tokens</li> -->
               </ul>
             </div>
           </div>
