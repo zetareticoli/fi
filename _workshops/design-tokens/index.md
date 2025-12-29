@@ -193,7 +193,7 @@ og-image: workshops/og-design-tokens-workshop.png
                 <li>Le caratteristiche di un buon nome</li>
                 <li>Creare nomi memorabili</li>
                 <li>Convenzioni di scrittura</li>
-                <li>Esercitazione: creare una tassonomia, dare un nomei ai design, progettare un inventario</li>
+                <li>Esercitazione: creare una tassonomia, dare un nome ai design, progettare un inventario</li>
               </ul>
               <!-- <img src="/img/workshops/esercitazione-naming-convention.png" alt="" class="width-50"> -->
             </div>
