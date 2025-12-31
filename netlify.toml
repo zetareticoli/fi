@@ -3,8 +3,8 @@
   publish = "_site"
 
 [build.environment]
-  RUBY_VERSION = "3.0.3"
+  RUBY_VERSION = "3.3.6"
 
 [build.lifecycle]
   [[build.lifecycle.onBuild]]
-    command = "rvm install ruby-3.0.3"
+    command = "rvm install ruby-3.3.6"
