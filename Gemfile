@@ -1,8 +1,7 @@
 source 'https://rubygems.org'
 
-ruby '3.0.3'
+ruby '3.4.6'
 
-gem 'jekyll'
+gem 'jekyll', '~> 4.4'
 gem 'rouge'
-gem 'github-pages', group: :jekyll_plugins
 gem "webrick", "~> 1.7"
