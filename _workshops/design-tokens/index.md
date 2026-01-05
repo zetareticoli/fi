@@ -44,7 +44,7 @@ og-image: workshops/og-design-tokens-workshop.png
       <div class="price-section mb-m">
         <div class="price">€189 <span class="price-old">€249</span></div>
         <div class="date">15-20 Gennaio 2026, 9:00-13:00</div>
-        <a href="https://buy.stripe.com/14AcN44L94bUdMe76Xcs800" class="cta-primary plausible-event-name=Buy+Workshop">Riserva il tuo posto</a>
+        <a href="https://buy.stripe.com/14AcN44L94bUdMe76Xcs800?prefilled_promo_code=LATE26" class="cta-primary plausible-event-name=Buy+Workshop">Riserva il tuo posto</a>
       </div>
       <div class="list-card-4 mb-l">
         <div class="">
@@ -288,7 +288,7 @@ og-image: workshops/og-design-tokens-workshop.png
       <div class="price-section mb-m">
         <div class="price">€189 <span class="price-old">€249</span></div>
         <div class="date">15-20 Gennaio 2026, 9:00-13:00</div>
-        <a href="https://buy.stripe.com/14AcN44L94bUdMe76Xcs800" class="cta-primary plausible-event-name=Buy+Workshop">Riserva il tuo posto</a>
+        <a href="https://buy.stripe.com/14AcN44L94bUdMe76Xcs800?prefilled_promo_code=LATE26" class="cta-primary plausible-event-name=Buy+Workshop">Riserva il tuo posto</a>
       </div>
       <div class="text-center">
         <p class="event-countdown" style="display: none;"></p>
@@ -406,7 +406,7 @@ og-image: workshops/og-design-tokens-workshop.png
       <div class="price-section mb-m">
         <div class="price">€189 <span class="price-old">€249</span></div>
         <div class="date">15-20 Gennaio 2026, 9:00-13:00</div>
-        <a href="https://buy.stripe.com/14AcN44L94bUdMe76Xcs800" class="cta-primary plausible-event-name=Buy+Workshop">Riserva il tuo posto</a>
+        <a href="https://buy.stripe.com/14AcN44L94bUdMe76Xcs800?prefilled_promo_code=LATE26" class="cta-primary plausible-event-name=Buy+Workshop">Riserva il tuo posto</a>
       </div>
       <p class="event-countdown" style="display: none;"></p>
       <p class="event-static mb-m text-small font-regular color-text-light">Early Bird valido scaduto il 15 dicembre, 2025. <strong>Ultimo posto disponibile</strong>. Il tuo acquisto è valido anche per le prossime date.</p>
