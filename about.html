@@ -36,7 +36,20 @@ lead: When not busy at work I love cycling, hiking in the Dolomites and playing 
     </li>
   {% endfor %}
   </ul>
+</section>
 
+<section class="spacing-sections outer-margin">
+  <h2 class="headline-default">Teaching</h2>
+  <ul class="content-list m-none">
+    {% for course in site.data.courses %}
+    <li class="content-list__item flex">
+      <h3 class="content-list__title headline-tertiary mb-s">{{course.faculty}}</h3>
+      <h4 class="content-list__desc headline-tertiary mb-s"><a href="{{course.url}}"
+          target="_blank">{{course.title}}</a>
+      </h4>
+    </li>
+    {% endfor %}
+  </ul>
 </section>
 
 <section class="spacing-sections outer-margin">
@@ -49,18 +62,6 @@ lead: When not busy at work I love cycling, hiking in the Dolomites and playing 
   </article>
 </section>
 
-<!--
-<section class="spacing-sections">
-  <h2 class="headline-default">Mentoring</h2>
-  <p>I love to share my experience. From a career advice to portfolio review and more, I’m here to help. You can book a 1:1 meeting slot using APList.org or Calendly.</p>
-  <a href="https://adplist.org/mentors/francesco-improta" target="_blank">Book a session on ADPList</a>
-  <!-- Calendly link widget begin 
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-  <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/francescoimprota?hide_landing_page_details=1&hide_gdpr_banner=1'});return false;">Schedule time with me</a>
-  <!-- Calendly link widget end 
-</section>
--->
 
 <!--
 <section class="spacing-sections">
