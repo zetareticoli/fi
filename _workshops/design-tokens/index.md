@@ -193,6 +193,7 @@ og-image: workshops/og-design-tokens-workshop.png
                 <li>Le caratteristiche di un buon nome</li>
                 <li>Creare nomi memorabili</li>
                 <li>Convenzioni di scrittura</li>
+                <li>Specifiche W3C e standard emergenti</li>
                 <li>Esercitazione: creare una tassonomia, dare un nome ai design, progettare un inventario</li>
               </ul>
               <!-- <img src="/img/workshops/esercitazione-naming-convention.png" alt="" class="width-50"> -->
@@ -235,7 +236,6 @@ og-image: workshops/og-design-tokens-workshop.png
                 <li>Tecniche di trasformazione da JSON a CSS tramite Style Dictionary</li>
                 <li>Media queries e tokens: gestione responsive</li>
                 <li>Gestire temi e dark mode con i design tokens e CSS</li>
-                <li>Performance e ottimizzazione delle variabili CSS</li>
                 <li>Esercitazione: trasformare i design tokens in variabili per il codice</li>
               </ul>
             </div>
@@ -248,16 +248,15 @@ og-image: workshops/og-design-tokens-workshop.png
         <article class="program-item">
           <div class="program-content">
             <h4 class="text-tiny uppercase color-text-light mono mb-s">Modulo 06</h4>
-            <h3 class="color-text-primary mb-s">Manutenzione e Governance</h3>
+            <h3 class="color-text-primary mb-s">Governance e Documentazione</h3>
             <p>Pianifica e gestisci i design tokens nel tempo</p>
             <div class="program-details">
               <ul class="m-none text-small text-light">
                 <li class="uppercase text-tiny list-none color-text-light">Argomenti</li>
-                <li>Versionamento semantico</li>
-                <li>Gestire aggiornamenti e rilasci</li>
                 <li>Modello di governance: chi fa cosa</li>
+                <li>Gestire aggiornamenti e rilasci</li>
+                <li>Versionamento semantico</li>
                 <li>Documentare i design tokens</li>
-                <li>Specifiche W3C e standard emergenti</li>
               </ul>
             </div>
           </div>
