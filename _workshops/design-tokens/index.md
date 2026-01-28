@@ -29,7 +29,6 @@ og-image: workshops/og-design-tokens-workshop.png
         </li>
       </ul>
     </nav>
-
   </header>
 </div>
 
@@ -41,11 +40,9 @@ og-image: workshops/og-design-tokens-workshop.png
       <h1 class="headline-teaser">Design Tokens Workshop</h1>
       <h2 class="uppercase lead">Il corso completo sui design tokens</h2>
       <p>Impara a creare e gestire i design tokens in modo efficace, garantendo la coerenza visiva dell'interfaccia e accelerando lo sviluppo.</p>
-      <div class="price-section mb-m">
-        <div class="price">€189 <span class="price-old">€249</span></div>
-        <div class="date">15-20 Gennaio 2026, 9:00-13:00</div>
-        <a href="https://buy.stripe.com/14AcN44L94bUdMe76Xcs800?prefilled_promo_code=LATE26" class="cta-primary plausible-event-name=Buy+Workshop">Riserva il tuo posto</a>
-      </div>
+
+      {% include payment-link.html %}
+
       <div class="list-card-4 mb-l">
         <div class="">
           <h3 class="text-small flex items-center color-text-light">
@@ -68,7 +65,7 @@ og-image: workshops/og-design-tokens-workshop.png
               <rect width="9" height="7" x="3" y="14" rx="1" />
               <rect width="5" height="7" x="16" y="14" rx="1" />
             </svg>
-          Approccio interattivo</h3>
+          Approccio pratico</h3>
         </div>
         <div class="">
           <h3 class="text-small flex items-center color-text-light">
@@ -84,7 +81,7 @@ og-image: workshops/og-design-tokens-workshop.png
               <path d="m18 15 4-4" />
               <path
                 d="m21.5 11.5-1.914-1.914A2 2 0 0 1 19 8.172V7l-2.26-2.26a6 6 0 0 0-4.202-1.756L9 2.96l.92.82A6.18 6.18 0 0 1 12 8.4V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5" />
-            </svg>Approfondimenti pratici</h3>
+            </svg>Project work</h3>
         </div>
       </div>
       <img class="full-width outer-margin mb-l" src="/img/workshops/design-tokens-workshop.webp"
@@ -284,15 +281,19 @@ og-image: workshops/og-design-tokens-workshop.png
         </ul>
       </div>
   
-      <div class="price-section mb-m">
-        <div class="price">€189 <span class="price-old">€249</span></div>
-        <div class="date">15-20 Gennaio 2026, 9:00-13:00</div>
-        <a href="https://buy.stripe.com/14AcN44L94bUdMe76Xcs800?prefilled_promo_code=LATE26" class="cta-primary plausible-event-name=Buy+Workshop">Riserva il tuo posto</a>
-      </div>
-      <div class="text-center">
-        <p class="event-countdown" style="display: none;"></p>
-        <p class="event-static mb-m text-small font-regular color-text-light">Early Bird valido scaduto il 15 dicembre, 2025. <strong>Ultimo posto disponibile</strong>. Il tuo acquisto è valido anche per le prossime date.</p>
-      </div>
+      {% include payment-link.html %}
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section" id="testimonials">
+    <div class="container text-center">
+      <h3 class="color-text-primary text-tiny uppercase mb-s font-semibold">Testimonials</h3>
+      <h2 class="headline-default mb-xl">Cosa dicono i partecipanti</h2>
+      <script src="https://widget.senja.io/widget/55431434-5c93-481f-a84f-4a9695afe5d1/platform.js" type="text/javascript"
+        async></script>
+      <div class="senja-embed" data-id="55431434-5c93-481f-a84f-4a9695afe5d1" data-mode="shadow" data-lazyload="false"
+        style="display: block; width: 100%;"></div>
     </div>
   </section>
 
@@ -315,17 +316,7 @@ og-image: workshops/og-design-tokens-workshop.png
     </div>
   </section>
 
-  <!-- Testimonials Section -->
-  <!-- <section class="section background-weak" id="testimonials">
-    <div class="container text-center">
-      <h3 class="color-text-primary text-tiny uppercase mb-s font-semibold">Testimonials</h3>
-      <h2 class="headline-default mb-xl">Cosa dicono i partecipanti</h2>
-      <script src="https://widget.senja.io/widget/55431434-5c93-481f-a84f-4a9695afe5d1/platform.js" type="text/javascript"
-        async></script>
-      <div class="senja-embed" data-id="55431434-5c93-481f-a84f-4a9695afe5d1" data-mode="shadow" data-lazyload="false"
-        style="display: block; width: 100%;"></div>
-    </div>
-  </section> -->
+
   
   <!-- FAQ Section -->
   <section class="spacing-sections-inset" id="faq">
@@ -402,13 +393,8 @@ og-image: workshops/og-design-tokens-workshop.png
       <p class="lead color-text-light">
         Partecipa al workshop e metti in pratica quanto imparato nei tuoi progetti
       </p>
-      <div class="price-section mb-m">
-        <div class="price">€189 <span class="price-old">€249</span></div>
-        <div class="date">15-20 Gennaio 2026, 9:00-13:00</div>
-        <a href="https://buy.stripe.com/14AcN44L94bUdMe76Xcs800?prefilled_promo_code=LATE26" class="cta-primary plausible-event-name=Buy+Workshop">Riserva il tuo posto</a>
-      </div>
-      <p class="event-countdown" style="display: none;"></p>
-      <p class="event-static mb-m text-small font-regular color-text-light">Early Bird valido scaduto il 15 dicembre, 2025. <strong>Ultimo posto disponibile</strong>. Il tuo acquisto è valido anche per le prossime date.</p>
+      {% include payment-link.html %}
+
       <hr>
       <p class="text-small color-text-light mb-xs">Hai dubbi o altre domande?</p>
       <p>
