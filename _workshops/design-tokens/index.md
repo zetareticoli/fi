@@ -11,7 +11,6 @@ og-image: workshops/og-design-tokens-workshop.png
 <!-- Header -->
 <div class="inner">
   <header class="header flex">
-
     <a class="logo justify-center" href="{{ site.baseurl }}/workshops/">
       <img alt="Francesco Improta" src="/img/logo.svg" class="mr-xs">
       <span>Workshops</span>
@@ -38,7 +37,7 @@ og-image: workshops/og-design-tokens-workshop.png
     <div class="container">
       <span class="badge">Workshop Online</span>
       <h1 class="headline-teaser">Design Tokens Workshop</h1>
-      <h2 class="uppercase lead">Il corso completo sui design tokens</h2>
+      <h2 class="uppercase lead text-light">Il corso completo sui design tokens</h2>
       <p>Impara a creare e gestire i design tokens in modo efficace, garantendo la coerenza visiva dell'interfaccia e accelerando lo sviluppo.</p>
 
       {% include payment-link.html %}
@@ -93,7 +92,7 @@ og-image: workshops/og-design-tokens-workshop.png
   <!-- Benefits Section -->
   <section class="background-emphasis spacing-sections-inset" id="learn">
     <div class="inner-large">
-      <h2 class="mb-xl text-center headline-default">Cosa Impari</h2>
+      <h2 class="mb-xl text-center headline-featured">Cosa Impari</h2>
       <div class="benefits-grid">
         <div class="benefit-card flex flex-row justify-center">
           <span class="color-text-primary headline-secondary">01</span>
@@ -135,7 +134,7 @@ og-image: workshops/og-design-tokens-workshop.png
   <!-- Details Section -->
   <section class="spacing-sections-inset" id="details">
     <div class="container">
-      <h2 class="headline-default">Il programma completo</h2>
+      <h2 class="headline-featured">Il programma completo</h2>
       <p class="color-text-light">Il workshop è organizzato su <strong>due giornate</strong> da 4 ore. <br>I moduli prevedono sempre una <strong>parte teorica e una parte pratica </strong>e analisi esempi reali.</p>
       <div class="program-timeline mb-l">
         <article class="program-item">
@@ -289,7 +288,7 @@ og-image: workshops/og-design-tokens-workshop.png
   <section class="section" id="testimonials">
     <div class="container text-center">
       <h3 class="color-text-primary text-tiny uppercase mb-s font-semibold">Testimonials</h3>
-      <h2 class="headline-default mb-xl">Cosa dicono i partecipanti</h2>
+      <h2 class="headline-featured mb-xl">Cosa dicono i partecipanti</h2>
       <script src="https://widget.senja.io/widget/55431434-5c93-481f-a84f-4a9695afe5d1/platform.js" type="text/javascript"
         async></script>
       <div class="senja-embed" data-id="55431434-5c93-481f-a84f-4a9695afe5d1" data-mode="shadow" data-lazyload="false"
@@ -301,16 +300,16 @@ og-image: workshops/og-design-tokens-workshop.png
   <section class="background-weak instructor spacing-sections-inset" id="teacher">
     <div class="container">
       <div class="text-center">
-        <h3 class="color-text-primary text-tiny uppercase mb-s font-semibold">Docente</h3>
-        <!-- <h2 class="mb-xl headline-default">Aiuto le persone a progettare esperienze digitali efficaci</h2> -->
+        <h3 class="color-text-primary text-tiny uppercase mb-s font-semibold">Chi sono</h3>
         <img class="" src="/img/francesco-improta-profile.webp" alt="Francesco Improta - Design Token Expert and Course Instructor">
+        <h2 class="mb-xl headline-featured">Francesco Improta</h2>
       </div>
       <div>
-        <p class="lead mb-m">Ciao! Sono <strong>Francesco Improta</strong>, designer con oltre 20 anni di esperienza nella progettazione di prodotti digitali, specializzato in Design System.</p>
+        <p class="lead mb-m">Ciao! Sono un designer con oltre 20 anni di esperienza nella progettazione di prodotti digitali, specializzato in Design System.</p>
         <p class="color-text-light">Ho creato questo workshop per aiutarti a comprendere i design tokens e ad applicarli in modo efficace, riducendo i tempi e migliorando la qualità del prodotto.</p>
         <p class="color-text-light">Durante il workshop, condividerò esperienze pratiche e strumenti che ho utilizzato in anni di lavoro su progetti di varia natura.</p>
         <p>
-          <a href="/about" class="underline">Approfonisci chi sono<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-icon lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+          <a href="/about" class="underline">Qualcosa in più su di me<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-icon lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
         </p>
       </div>
     </div>
@@ -322,7 +321,7 @@ og-image: workshops/og-design-tokens-workshop.png
   <section class="spacing-sections-inset" id="faq">
     <div class="container">
       <h3 class="color-text-primary text-tiny uppercase mb-s font-semibold">Domande Frequenti</h3>
-      <h2 class="mb-s headline-default">Questo corso è per me?</h2>
+      <h2 class="mb-s headline-featured">Questo corso è per me?</h2>
       <p class="lead color-text-light">Hai dubbi se questo workshop fa per te? Ecco le risposte alle domande più comuni.</p>
       <div class="faq">
         <div class="faq-item">
@@ -389,9 +388,9 @@ og-image: workshops/og-design-tokens-workshop.png
   <!-- Final CTA Section -->
   <section class="final-cta background-emphasis">
     <div class="container">
-      <h2 class="headline-default mb-s">Vuoi migliorare la coerenza della tua interfaccia?</h2>
+      <h2 class="headline-featured mb-s">Crea design tokens efficaci</h2>
       <p class="lead color-text-light">
-        Partecipa al workshop e metti in pratica quanto imparato nei tuoi progetti
+        Impara a creare e gestire i design tokens in modo efficace, garantendo la coerenza visiva dell'interfaccia e accelerando lo sviluppo.
       </p>
       {% include payment-link.html %}
 
