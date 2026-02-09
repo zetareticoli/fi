@@ -431,37 +431,28 @@ og-image: workshops/og-design-tokens-workshop.png
     });
   });
 
-  // Simple countdown (you'll need to set the actual end date)
-  function updateCountdown() {
-    const eventDate = new Date('2025-12-15T23:00:00');
-    const now = new Date();
-    const diff = eventDate - now;
-    const daysUntilEvent = Math.floor(diff / (1000 * 60 * 60 * 24));
-    const countdownElement = document.querySelector('.event-countdown');
-    const staticElement = document.querySelector('.event-static');
-    
-    if (daysUntilEvent <= 7 && daysUntilEvent > 0) {
-      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-      
-      countdownElement.innerHTML = `Solo ${daysUntilEvent}giorni, ${hours} ore ${minutes} minuti rimasti`;
-      countdownElement.style.display = 'block';
-      staticElement.style.display = 'none';
-    } else {
-      countdownElement.style.display = 'none';
-      staticElement.style.display = 'block';
-    }
+  // Program item toggle - Ensure DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initProgramItems);
+  } else {
+    initProgramItems();
   }
 
-  // Update countdown every minute
-  setInterval(updateCountdown, 60000);
-  updateCountdown(); // Initial call
-
-  // Add this to your existing script section
-  document.querySelectorAll('.program-item').forEach(item => {
-    item.addEventListener('click', () => {
-      item.classList.toggle('expanded');
+  function initProgramItems() {
+    const programItems = document.querySelectorAll('.program-item');
+    if (programItems.length === 0) {
+      console.warn('No .program-item elements found');
+      return;
+    }
+    
+    programItems.forEach(item => {
+      item.addEventListener('click', function(e) {
+        // Prevent event from bubbling if clicking nested elements
+        if (e.target.closest('.program-details') === null) {
+          this.classList.toggle('expanded');
+        }
+      });
     });
-  });
+  }
 
 </script>
