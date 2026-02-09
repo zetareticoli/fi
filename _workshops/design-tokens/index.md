@@ -202,7 +202,7 @@ og-image: workshops/og-design-tokens-workshop.png
         <article class="program-item">
           <div class="program-content">
             <h4 class="text-tiny uppercase color-text-light mono mb-s">Modulo 04</h4>
-            <h3 class="color-text-primary mb-s">Costruzione e Adozione</h3>
+            <h3 class="color-text-primary mb-s">I design tokens in Figma</h3>
             <p>Gestisci l'intero ciclo di vita dei design token attraverso strumenti e formati differenti</p>
             <div class="program-details">
               <ul class="m-none text-small text-light">
