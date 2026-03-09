@@ -361,7 +361,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
         <a href="https://book.stripe.com/8x2cN41yX23MfUm1MDcs803?prefilled_promo_code=EARLYMAG26" class="cta-primary plausible-event-name=Buy+Workshop">Riserva il tuo posto</a>
       </div>
       <p class="event-countdown" style="display: none;"></p>
-      <p class="event-static mb-m text-small font-regular color-text-light">Prezzo Early Bird valido fino al <strong>5 aprile, 2026</strong>. Solo <strong>5 posti rimasti</strong>.</p>
+      <p class="event-static mb-m text-small font-regular color-text-light">Prezzo Early Bird valido fino al <strong>5 aprile, 2026</strong>. Solo <strong>4 posti rimasti</strong>.</p>
       <hr>
       <p class="text-small color-text-light mb-xs">Hai dubbi o altre domande?</p>
       <p>
