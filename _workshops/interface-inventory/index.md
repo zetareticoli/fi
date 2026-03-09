@@ -357,11 +357,11 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
       </p>
       <div class="price-section mb-m">
         <div class="price">€99 <span class="price-old">€199</span></div>
-        <div class="date">🗓️ Giovedì 16 ottobre, 09:00-13:00</div>
+        <div class="date">🗓️ Mercoledì 15 aprile, 09:00-13:00</div>
         <a href="https://book.stripe.com/8x2cN41yX23MfUm1MDcs803?prefilled_promo_code=EARLYMAG26" class="cta-primary plausible-event-name=Buy+Workshop">Riserva il tuo posto</a>
       </div>
       <p class="event-countdown" style="display: none;"></p>
-      <p class="event-static mb-m text-small font-regular color-text-light">Prezzo Early Bird valido fino al <strong>30 settembre, 2025</strong>. Solo <strong>5/6 posti rimasti</strong>.</p>
+      <p class="event-static mb-m text-small font-regular color-text-light">Prezzo Early Bird valido fino al <strong>5 aprile, 2026</strong>. Solo <strong>5 posti rimasti</strong>.</p>
       <hr>
       <p class="text-small color-text-light mb-xs">Hai dubbi o altre domande?</p>
       <p>
