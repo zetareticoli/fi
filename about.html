@@ -26,16 +26,18 @@ lead: When not busy at work I love cycling, hiking in the Dolomites and playing 
 </section>
 
 <section class="spacing-sections outer-margin">
-  <h2 class="headline-default">Speaking</h2>
-  <ul class="content-list m-none">
-  {% for talk in site.data.talks %}
-    <li class="content-list__item flex">
-      <span class="content-list__year text-small color-text-weak mb-s">{{talk.year}}</span>
-      <h3 class="content-list__title headline-tertiary mb-s">{{talk.conf}}</h3>
-      <h4 class="content-list__desc headline-tertiary mb-s"><a href="{{talk.url}}" target="_blank">{{talk.title}}</a></h4>
-    </li>
-  {% endfor %}
-  </ul>
+  <h2 class="headline-default">Awards</h2>
+  <h3 class=" headline-secondary mb-s">ADI Design Index Award</h3>
+  <p class="text-small color-text-weak mb-s">2024</p>
+  <p class="mb-s color-text-light">
+    Won the ADI Design Index Award for the projects <strong>Modello di sito per le ASL</strong> and <strong>UI Kit
+      Italia</strong>, followed during my experience at the <strong>Italian Department for Digital
+      Transformation</strong>.
+  </p>
+  <figure class="m-none">
+    <img class="mb-m" src="/img/awards/adi-design-index-award.webp"
+      alt="ADI Design Index Award for Modello di sito per le ASL and UI Kit Italia">
+  </figure>
 </section>
 
 <section class="spacing-sections outer-margin">
@@ -49,6 +51,19 @@ lead: When not busy at work I love cycling, hiking in the Dolomites and playing 
       </h4>
     </li>
     {% endfor %}
+  </ul>
+</section>
+
+<section class="spacing-sections outer-margin">
+  <h2 class="headline-default">Speaking</h2>
+  <ul class="content-list m-none">
+  {% for talk in site.data.talks %}
+    <li class="content-list__item flex">
+      <span class="content-list__year text-small color-text-weak mb-s">{{talk.year}}</span>
+      <h3 class="content-list__title headline-tertiary mb-s">{{talk.conf}}</h3>
+      <h4 class="content-list__desc headline-tertiary mb-s"><a href="{{talk.url}}" target="_blank">{{talk.title}}</a></h4>
+    </li>
+  {% endfor %}
   </ul>
 </section>
 
