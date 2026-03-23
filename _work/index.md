@@ -1,5 +1,6 @@
 ---
 layout: full
+title: Experience
 headline: Experience
 summary: My professional journey as a designer, showcasing my notable work and experience across the years.
 lead: I design intuitive digital products with a focus on user experience. Expert in design systems, usability, and accessibility.
