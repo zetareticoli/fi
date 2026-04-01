@@ -39,7 +39,7 @@ When the feedback channel is slow or opaque, people stop using it. They start so
 
 A healthy design system has **clear contribution paths, predictable response times, and — most importantly — shows that feedback actually leads somewhere**. Even when the answer is "we can't do this right now, and here's why."
 
-##Adoption as a metric, not a hope
+## Adoption as a metric, not a hope
 
 Measure adoption. Go beyond the number of published components or documentation coverage. Look at how many product screens actually use system components. How many tokens get overridden. How often the system gets updated versus worked around.
 
