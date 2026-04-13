@@ -134,8 +134,7 @@ og-image: workshops/og-design-tokens-workshop.png
   <section class="spacing-sections-inset" id="details">
     <div class="container">
       <h2 class="headline-featured">Il programma completo</h2>
-      <p class="color-text-light">Il workshop è organizzato su <strong>due giornate</strong> da 4 ore. <br>I moduli prevedono sempre una <strong>parte teorica e una parte pratica </strong>e analisi esempi reali.</p>
-      <div class="program-timeline mb-l">
+      <p class="color-text-light lead">Il workshop è organizzato su <strong>due giornate da 4 ore</strong>, generalmente dalle 09:00 alle 13:00.</p>
         <article class="program-item">
           <div class="program-content">
             <h4 class="text-tiny uppercase color-text-light mono mb-s">Modulo 01</h4>
@@ -259,7 +258,6 @@ og-image: workshops/og-design-tokens-workshop.png
             <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </article>
-      </div>
       <div class="mb-xl">
         <hr>
         <h4 class="headline-secondary">Cosa Include</h4>
