@@ -38,12 +38,9 @@ og-image: workshops/og-design-tokens-workshop.png
       <h1 class="headline-teaser">Design Tokens Workshop</h1>
       <h2 class="uppercase lead text-light">Il corso completo sui design tokens</h2>
       <p>Impara a creare e gestire i design tokens in modo efficace, garantendo la coerenza visiva dell'interfaccia e accelerando lo sviluppo.</p>
-
-      {% include payment-link.html %}
-
       <div class="list-card-4 mb-l">
         <div class="">
-          <h3 class="text-small flex items-center color-text-light">
+          <h3 class="text-small flex items-center color-text-inverse">
             <svg xmlns="http://www.w3.org/2000/svg"
               width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
               stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-webcam-icon lucide-webcam mr-s">
@@ -54,7 +51,7 @@ og-image: workshops/og-design-tokens-workshop.png
             </svg>100% remoto</h3>
         </div>
         <div class="">
-          <h3 class="text-small flex items-center color-text-light">
+          <h3 class="text-small flex items-center color-text-inverse">
             <svg xmlns="http://www.w3.org/2000/svg"
               width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
               stroke-linecap="round" stroke-linejoin="round"
@@ -66,12 +63,12 @@ og-image: workshops/og-design-tokens-workshop.png
           Approccio pratico</h3>
         </div>
         <div class="">
-          <h3 class="text-small flex items-center color-text-light">
+          <h3 class="text-small flex items-center color-text-inverse">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users-icon lucide-users mr-s"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></svg>
             6 partecipanti</h3>
         </div>
         <div class="">
-          <h3 class="text-small flex items-center color-text-light">
+          <h3 class="text-small flex items-center color-text-inverse">
             <svg xmlns="http://www.w3.org/2000/svg"
               width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
               stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-hammer-icon lucide-hammer mr-s">
@@ -82,9 +79,12 @@ og-image: workshops/og-design-tokens-workshop.png
             </svg>Project work</h3>
         </div>
       </div>
+
+      {% include payment-link.html %}
+
       <img class="full-width outer-margin mb-l" src="/img/workshops/design-tokens-workshop.webp"
         alt="A working desk reflected in a picture" title="My design studio image reflected">
-      <p class="lead">Dalle basi agli argomenti avanzati, questo corso copre tutti gli aspetti più importanti da conoscere per utilizzare al meglio i design tokens nella progettazione di un Design System e di interfacce digitali.</p>
+      <p class="lead color-text-inverse">Dalle basi agli argomenti avanzati, questo corso copre tutti gli aspetti più importanti da conoscere per utilizzare al meglio i design tokens nella progettazione di un Design System e di interfacce digitali.</p>
     </div>
   </section>
 
@@ -115,7 +115,7 @@ og-image: workshops/og-design-tokens-workshop.png
           <div class="ml-s">
             <h3 class="mb-xs">Gestire il ciclo di vita dei design tokens</h3>
             <img src="/img/workshops/tokens-process.png" alt="" class="mb-s">
-            <p class="color-text-light">Da Figma al JSON alle variabili CSS, imparerai a governare l'intero ciclo di vita dei design tokens del tuo prodotto digitale.</p>
+            <p class="color-text-light">Da Figma al JSON alle variabili CSS, impari a governare l'intero ciclo di vita dei design tokens del tuo prodotto digitale.</p>
           </div>
         </div>
         <div class="benefit-card flex flex-row justify-center">
