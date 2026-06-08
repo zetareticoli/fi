@@ -3,7 +3,7 @@ layout: post
 title: "Week Review"
 cover-image: 
 sitemap:
-  priority: 0.95
+  priority: 0.5
 ---
 
 Every Friday at noon, I take the time to conduct a thorough review of my week. This has become an essential part of my routine and it helps me stay organized, focused, and motivated.

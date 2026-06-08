@@ -3,7 +3,7 @@ layout: post
 title: "3 good reasons to watch The Playlist"
 cover-image: the-playlist-cover.jpg
 sitemap:
-  priority: 0.85
+  priority: 0.5
 ---
 
 Last week I saw **[The Playlist](https://www.netflix.com/title/81186296)**, the mini-series dedicated to the history of Spotify produced by Netflix.

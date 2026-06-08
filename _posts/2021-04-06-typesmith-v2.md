@@ -3,7 +3,7 @@ layout: post
 title: "Typesmith v2.0.0"
 cover-image: typesmith-cover.png
 sitemap:
-  priority: 0.90
+  priority: 0.6
 ---
 
 Last week I released the new [Typesmith v2.0.0](https://github.com/zetareticoli/typesmith/releases/tag/v2.0.0).

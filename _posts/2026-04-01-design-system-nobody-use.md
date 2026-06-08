@@ -3,7 +3,7 @@ layout: post
 title: "The design system nobody uses"
 cover-image: 
 sitemap:
-  priority: 0.95
+  priority: 0.9
 ---
 
 After years working on design systems, I learned that adoption doesn't fail at launch. It fails six months later, quietly, when people find faster ways to work around what you built.

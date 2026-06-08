@@ -3,7 +3,7 @@ layout: post
 title: "Documenting : When and Why to Write It Down"
 cover-image: 
 sitemap:
-  priority: 0.92
+  priority: 0.85
 ---
 
 Let's talk about documentation - it's not just paperwork, it's your team's secret weapon for getting things done faster and smarter.

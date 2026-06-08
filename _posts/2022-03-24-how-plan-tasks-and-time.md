@@ -3,7 +3,7 @@ layout: post
 title: "How I Plan Side-projects Tasks"
 cover-image: 
 sitemap:
-  priority: 0.9
+  priority: 0.7
 ---
 
 I have always highly esteemed all those people who manage to carry out side projects with a certain regularity.

@@ -3,7 +3,7 @@ layout: post
 title: "Looking back to 2025"
 cover-image: 
 sitemap:
-  priority: 0.97
+  priority: 0.6
 ---
 
 2025 has been a year of building. Slowly, deliberately, and often behind the scenes. It’s been less about chasing trends and more about turning ideas I’ve had for a long time into something concrete, usable, and shared with others.

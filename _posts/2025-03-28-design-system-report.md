@@ -3,7 +3,7 @@ layout: post
 title: "Design Systems Report 2025"
 cover-image: 
 sitemap:
-  priority: 0.7
+  priority: 0.75
 ---
 
 Zeroheight's _"Design Systems Report 2025"_ offers an in-depth analysis of the industry. 

@@ -3,7 +3,7 @@ layout: post
 title: "How I do a Week Review"
 cover-image: 
 sitemap:
-  priority: 0.9
+  priority: 0.7
 ---
 
 Every Friday, I conduct a week review to evaluate my progress. This practice allows me to reflect on my accomplishments and challenges.

@@ -3,7 +3,7 @@ layout: post
 title: "The Designer Disconnection"
 cover-image: designer-disconnection.jpg
 sitemap:
-  priority: 0.9
+  priority: 0.8
 ---
 
 I believe that there is a fundamental disconnect between the way of thinking of a designer and of those who do business.

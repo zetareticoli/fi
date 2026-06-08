@@ -1,6 +1,8 @@
 ---
 layout: post
 title: A monster called @import
+sitemap:
+  priority: 0.7
 ---
 
 Third-party libraries and frameworks are widely used today often without thinking about potential security issues. This is the case of `@import` directive in CSS. To be honest, before working on this, I didn’t even know that you can import CSS within CSS. I thought `@import` can only be used for web fonts. 

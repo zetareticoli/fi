@@ -3,7 +3,7 @@ layout: post
 title: "Brutalism Web Design"
 cover-image: perfectmag.co.jpg 
 sitemap:
-  priority: 0.75
+  priority: 0.65
 ---
 
 In the era of Design Systems, where consistency, coherence and uniformity are the masters, it's quite impressive (and nice) to see **a new trend emerge**, the Brutalism Web Design.

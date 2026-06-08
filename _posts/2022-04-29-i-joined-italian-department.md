@@ -3,7 +3,7 @@ layout: post
 title: "I joined the Italian Digital Transformation Team"
 cover-image: italian-department-digital-transformation-logo.png
 sitemap:
-  priority: 0.95
+  priority: 0.4
 ---
 
 From March of this year I joined the [Italian Digital Transformation Team](https://innovazione.gov.it).

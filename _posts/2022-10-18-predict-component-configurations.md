@@ -3,7 +3,7 @@ layout: post
 title: "Predict Component Configurations in a Design System"
 cover-image: 
 sitemap:
-  priority: 0.95
+  priority: 0.85
 ---
 
 A Design System cannot anticipate and produce every possible configuration of any need anyone may have.

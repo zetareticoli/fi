@@ -2,7 +2,7 @@
 layout: post
 title: "How to communicate visual hierarchy on wireframes"
 sitemap:
-  priority: 0.8
+  priority: 0.75
 ---
 Many designers think they need to use color on a wireframe to communicate hierarchy. If you're doing so, you're totally wrong. The use of color is the best way to add emphasis to a specific element on visual design. But on a wireframe, it's the worst.
 

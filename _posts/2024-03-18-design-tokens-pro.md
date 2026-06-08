@@ -3,7 +3,7 @@ layout: post
 title: "Launching a Course on Design Tokens"
 cover-image: 
 sitemap:
-  priority: 0.95
+  priority: 0.9
 ---
 
 In the ever-evolving world of design, it's essential to stay updated with the latest trends and techniques. 

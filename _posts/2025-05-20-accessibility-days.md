@@ -3,7 +3,7 @@ layout: post
 title: "Accessibility Days"
 cover-image: accessibility-days-talk.webp
 sitemap:
-  priority: 0.95
+  priority: 0.7
 ---
 
 I had the privilege of presenting at Accessibility Days 2025 in Milan on 15th may, where I shared our journey with **Design System .italia** and the exciting developments we've been working on. 

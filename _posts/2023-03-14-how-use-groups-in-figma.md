@@ -3,7 +3,7 @@ layout: post
 title: "How I use groups in Figma"
 cover-image: figma-groups.png
 sitemap:
-  priority: 0.87
+  priority: 0.75
 ---
 
 Keeping layers organized in a design tool is not easy. Sometimes, for the sake of speed, we forget how important it is to structure layout elements according to a logical order.

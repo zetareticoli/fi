@@ -3,7 +3,7 @@ layout: post
 title: "Token Lens"
 cover-image: token-lens-logo.png
 sitemap:
-  priority: 0.96
+  priority: 0.85
 ---
 
 I didn't want to build just another checking tool. I wanted something simple like a flashlight. Point it at your CSS and get clear answers: which design tokens are actually being used, where they appear, and where things have changed without anyone noticing.

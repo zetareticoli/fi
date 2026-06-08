@@ -3,7 +3,7 @@ layout: post
 title: " Goals of Mobile UX"
 cover-image: mobile-ux-goals.png
 sitemap:
-  priority: 0.95
+  priority: 0.85
 ---
 
 Mobile User Experience falls into the following categories:

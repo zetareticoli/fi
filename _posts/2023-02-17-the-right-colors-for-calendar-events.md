@@ -3,7 +3,7 @@ layout: post
 title: "The right colors for calendar events"
 cover-image: calendar-colors.jpg
 sitemap:
-  priority: 0.87
+  priority: 0.75
 ---
 
 Choosing the right colors for your calendar events is an important aspect of week planning and prioritization. 

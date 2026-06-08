@@ -3,7 +3,7 @@ layout: post
 title: "Wrap up the work before holidays"
 cover-image: 
 sitemap:
-  priority: 0.87
+  priority: 0.6
 ---
 
 As the holiday season approaches, I face the challenge of balancing deadlines with festivities. With projects in full swing, I’m focused on maintaining productivity while embracing the season's spirit.

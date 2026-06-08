@@ -3,7 +3,7 @@ layout: post
 title: "CSSUI is out"
 cover-image: cssui-cover.jpg 
 sitemap:
-  priority: 0.95
+  priority: 0.6
 ---
 
 Last week I published [CSSUI](https://www.cssui.dev), a library of interactive components in pure CSS 🎉🎉🎉

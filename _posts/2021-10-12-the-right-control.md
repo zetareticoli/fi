@@ -2,7 +2,7 @@
 layout: post
 title: "The Right Control"
 sitemap:
-  priority: 0.95
+  priority: 0.9
 ---
 
 Forms design is one of the **most difficult tasks** every designer could face to. Fields alignment, errors handling and choosing the right control are the trickier part of the work. In particular, dealing with radio buttons.

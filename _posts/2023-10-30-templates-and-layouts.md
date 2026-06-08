@@ -3,7 +3,7 @@ layout: post
 title: "Template vs Layout"
 cover-image: 
 sitemap:
-  priority: 0.90
+  priority: 0.8
 ---
 
 Working and collaborating with other people in the design field, I always find confusion about the use of two terms: template and layout.

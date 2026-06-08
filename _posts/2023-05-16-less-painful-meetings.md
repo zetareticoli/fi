@@ -3,7 +3,7 @@ layout: post
 title: "Less Painful Meetings"
 cover-image: 
 sitemap:
-  priority: 0.9
+  priority: 0.75
 ---
 
 Meetings are super important for teamwork and all that jazz, but let's be real, they can also be a major buzzkill for productivity. 

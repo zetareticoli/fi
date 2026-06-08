@@ -3,7 +3,7 @@ layout: post
 title: "Interactions hidden by gestures"
 cover-image: 
 sitemap:
-  priority: 0.98
+  priority: 0.85
 ---
 
 How many features on your phone have you never discovered simply because no one told you they were there?

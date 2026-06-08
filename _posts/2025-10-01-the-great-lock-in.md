@@ -3,7 +3,7 @@ layout: post
 title: "The Great Lock-In"
 cover-image: 
 sitemap:
-  priority: 0.99
+  priority: 0.8
 ---
 
 Every year, as September rolls in, I notice the same energy online: people talking about the “Great Lock-In.” 

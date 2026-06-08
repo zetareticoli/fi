@@ -2,8 +2,7 @@
 layout: post
 title: "Title"
 cover-image: 
-sitemap:
-  priority: 0.95
+sitemap: false
 ---
 
 Your content here

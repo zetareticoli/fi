@@ -3,7 +3,7 @@ layout: post
 title: "Facets vs Filters"
 cover-image: 
 sitemap:
-  priority: 0.92
+  priority: 0.85
 ---
 
 Facets and filters are both **powerful** **tools** that help users navigate and explore data or products. 

@@ -3,7 +3,7 @@ layout: post
 title: "Design Tokens Manager for Notion"
 cover-image: design-tokens-manager.png
 sitemap:
-  priority: 0.9
+  priority: 0.8
 ---
 
 ## Effortless design tokens management in Notion

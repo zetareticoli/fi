@@ -3,7 +3,7 @@ layout: post
 title: "What an interface inventory really tells you"
 cover-image: 
 sitemap:
-  priority: 0.99
+  priority: 0.9
 ---
 
 I used to think an interface inventory was a tidying exercise. You open the product, screenshot the components, sort them by type, and at the end you've got a nice grid that says "look at the mess." Everyone agrees there's a mess, and you start consolidating.

@@ -3,7 +3,7 @@ layout: post
 title: "Semantic Terms for UI Design: Colors"
 cover-image: 
 sitemap:
-  priority: 0.95
+  priority: 0.85
 ---
 
 In the world of design and user interfaces, there's a rich vocabulary of terms that help professionals communicate ideas, concepts, and strategies.

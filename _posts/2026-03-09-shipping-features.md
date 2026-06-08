@@ -3,7 +3,7 @@ layout: post
 title: "Shipping features is not product success"
 cover-image: 
 sitemap:
-  priority: 0.97
+  priority: 0.8
 ---
 
 Most product teams are measured by what they ship. Roadmaps are full of features. Sprints end with releases. Stakeholders celebrate launches. And yet, months later, nobody uses what was built.

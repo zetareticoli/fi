@@ -3,7 +3,7 @@ layout: post
 title: "Documenting Patterns is a Designer's Job "
 cover-image: documenting-patterns.jpg 
 sitemap:
-  priority: 0.85
+  priority: 0.8
 ---
 
 *“Writing documentation is a boring job. In addition, it's upon the dev team because of coding. "*

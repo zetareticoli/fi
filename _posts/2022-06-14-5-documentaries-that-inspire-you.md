@@ -3,7 +3,7 @@ layout: post
 title: "5 Netflix Documentaries that Inspire You as Designer"
 cover-image: 
 sitemap:
-  priority: 0.80
+  priority: 0.5
 ---
 
 Documentaries like these will inspire you to become a better, more creative designer.

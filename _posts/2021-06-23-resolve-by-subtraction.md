@@ -2,7 +2,7 @@
 layout: post
 title: "Resolve by Subtraction"
 sitemap:
-  priority: 0.95
+  priority: 0.8
 ---
 
 How many times in your work have you found yourself facing a problem and thought that the solution might consist in **adding** a corrective?
