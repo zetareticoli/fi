@@ -39,24 +39,24 @@
   type: professional
   image: /img/works/noemalife/noemalife-cover.webp
   description: Designed mobile solutions for digital healthcare.
-- title: CSSUI
-  slug: cssui
-  year: 2021 - current
-  type: side
-  image: /img/works/project-cover.webp
-  description: A library of interactive components built in pure CSS — no JavaScript required.
-  url: https://www.cssui.dev
-- title: Design Tokens Manager
-  slug: design-tokens-manager
-  year: 2022
-  type: side
-  image: /img/works/project-cover.webp
-  description: A tool to manage design tokens in Notion using relational databases.
-  url: https://www.cssui.dev
-- title: Typesmith
-  slug: typesmith
-  year: 2019
-  type: side
-  image: /img/works/project-cover.webp
-  description: A responsive typography library for the web.
-  url: https://www.github.com/zetareticoli/typesmith
+# - title: CSSUI
+#   slug: cssui
+#   year: 2021 - current
+#   type: side
+#   image: /img/works/project-cover.webp
+#   description: A library of interactive components built in pure CSS — no JavaScript required.
+#   url: https://www.cssui.dev
+# - title: Design Tokens Manager
+#   slug: design-tokens-manager
+#   year: 2022
+#   type: side
+#   image: /img/works/project-cover.webp
+#   description: A tool to manage design tokens in Notion using relational databases.
+#   url: https://www.cssui.dev
+# - title: Typesmith
+#   slug: typesmith
+#   year: 2019
+#   type: side
+#   image: /img/works/project-cover.webp
+#   description: A responsive typography library for the web.
+#   url: https://www.github.com/zetareticoli/typesmith
