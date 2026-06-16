@@ -79,14 +79,12 @@ display-next-prev-post: true
 ##############
 
 navigation:
+- text: Work
+  url: /experience/
 - text: About
   url: /about/
-- text: Experience
-  url: /experience/
 - text: Writing
   url: /writing/
-- text: Side projects
-  url: /projects/
 
 #####################
 # SOCIAL #
