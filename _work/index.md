@@ -1,8 +1,8 @@
 ---
 layout: full
-title: Experience
-headline: Experience
-summary: My professional journey as a designer, showcasing my notable work and experience across the years.
+title: Work
+headline: Work
+summary: A selection of projects — from design systems for the Italian government to side tools built for the community.
 lead: I design intuitive digital products with a focus on user experience. Expert in design systems, usability, and accessibility.
 permalink: /experience/
 ---
@@ -18,9 +18,6 @@ permalink: /experience/
 </section>
 
 <section class="spacing-sections spacing-sections-inset spacing-outer background-emphasis">
-  <div class="inner">
-    <h2 class="headline-default">Notable Work</h2>
-  </div>
   <div class="inner-large">
     <div class="list-projects mb-l">
     {% for work in site.data.works %}
