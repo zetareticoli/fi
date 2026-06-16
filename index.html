@@ -19,12 +19,12 @@ home: true
     <h2 class="headline-default">Recent Work</h2>
   </div>
   <div class="inner-large">
-    <div class="list-projects mb-l">
+    <div class="list-projects">
     {% for work in site.data.works limit:4 %}
       {% include featured.html %}
     {% endfor %}
     </div>
-    <p class="text-small color-text-weak text-center">
+    <p>
       <a class="link-light link-underline" href="/experience/">All work experiences →</a>
     </p>
   </div>
