@@ -2,10 +2,23 @@
   {% if work.url %}
     <a href="{{work.url}}" class="color-text-primary">
       <img src="{{work.image}}" alt="{{work.title}}" class="project-image mb-m" loading="lazy">
-      <h3 class="headline-secondary">{{work.title}}</h3>
     </a>
   {% else %}
     <img src="{{work.image}}" alt="{{work.title}}" class="project-image mb-m" loading="lazy">
-    <h3 class="headline-secondary">{{work.title}}</h3>
   {% endif %}
+  <div class="project__meta">
+    {% if work.type == "side" %}
+      <span class="project__tag text-tiny uppercase color-text-weak">Side project</span>
+    {% endif %}
+    {% if work.url %}
+      <a href="{{work.url}}" class="color-text-primary">
+        <h3 class="headline-secondary mb-xs">{{work.title}}</h3>
+      </a>
+    {% else %}
+      <h3 class="headline-secondary">{{work.title}}</h3>
+    {% endif %}
+    {% if work.year %}
+      <span class="text-small color-text-weak">{{work.year}}</span>
+    {% endif %}
+  </div>
 </article>

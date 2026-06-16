@@ -46,3 +46,16 @@
     gap: var(--grid-gutter);
   }
 }
+
+.project-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: var(--radius-smooth-corner);
+}
+
+.project__tag {
+  display: block;
+  margin-bottom: var(--spacing-stack-xs);
+  letter-spacing: 0.08em;
+}
