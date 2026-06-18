@@ -5,7 +5,11 @@
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "style-dictionary build"
+    "build": "style-dictionary build",
+    "tw:build": "tailwindcss -i css/tw.css -o css/tw-compiled.css",
+    "tw:watch": "tailwindcss -i css/tw.css -o css/tw-compiled.css --watch",
+    "dev": "npm run tw:watch & bundle exec jekyll serve --livereload",
+    "build:all": "npm run tw:build && bundle exec jekyll build"
   },
   "repository": {
     "type": "git",
@@ -19,9 +23,11 @@
   "homepage": "https://github.com/zetareticoli/fi#readme",
   "dependencies": {
     "gulp": "^5.0.0",
-    "gulp-imagemin": "^7.1.0"
+    "gulp-imagemin": "^7.1.0",
+    "tailwindcss": "^4.3.1"
   },
   "devDependencies": {
+    "@tailwindcss/cli": "^4.3.1",
     "style-dictionary": "^3.1.1"
   }
 }

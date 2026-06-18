@@ -120,7 +120,7 @@ var_your_message: Your message
 
 # You don't have to change these.
 
-exclude: ['vendor', 'node_modules']
+exclude: ['vendor', 'node_modules', 'css/tw.css']
 highlighter: rouge
 kramdown:
   input: GFM
