@@ -49,27 +49,3 @@
     </div>
   </div>
 </nav>
-
-<!-- <nav class="lg:hidden fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
-  <div class="flex items-center justify-between px-6 py-4">
-    <img src="{{ site.logo-image | relative_url }}" alt="{{ site.logo-alt }}" class="w-10 h-10">
-    <a href="{{ '/' | relative_url }}" class="font-heading text-xl font-bold tracking-tighter">Francesco Improta</a>
-    <div class="flex items-center gap-3">
-      <span class="meta-tag hidden sm:inline">{{ page.nav_title | default: page.title }}</span>
-      <button id="theme-toggle-mobile" class="p-1 text-muted-foreground" aria-label="Toggle theme">◐</button>
-      <button id="mobile-menu-btn" class="p-1" aria-label="Toggle menu">☰</button>
-    </div>
-  </div>
-  <div id="mobile-menu" class="hidden px-6 pb-6 pt-2 border-b border-border bg-background">
-    <ul class="flex flex-col gap-3">
-      {% assign nav_pages = site.pages | where_exp: "p", "p.nav == true" | sort: "nav_order" %}
-      {% for nav_page in nav_pages %}
-      <li>
-        <a href="{{ nav_page.url | relative_url }}" class="text-sm block py-1 text-muted-foreground hover:text-foreground transition-colors">
-          {{ nav_page.nav_title | default: nav_page.title }}
-        </a>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
-</nav> -->
