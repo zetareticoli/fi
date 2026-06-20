@@ -1,12 +1,14 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 /* Scan Jekyll templates for class detection */
-@source "../_layouts/**/*.html";
-@source "../_includes/**/*.html";
-@source "../_posts/**/*.{md,html}";
-@source "../*.html";
-@source "../_work/**/*.{md,html}";
-@source "../_workshops/**/*.{md,html}";
+@source "_layouts/**/*.html";
+@source "_includes/**/*.html";
+@source "_posts/**/*.{md,html}";
+@source "*.md";
+@source "*.html";
+@source "_work/**/*.{md,html}";
+@source "_workshops/**/*.{md,html}";
 
 @theme {
   --radius: 0px;
@@ -38,11 +40,9 @@
   --color-ring: hsl(var(--ring));
 
   /* Font families */
-  --font-family-heading: var(--font-heading);
-  --font-family-body: var(--font-body);
-  --font-family-display: var(--font-display);
-  --font-family-mono: var(--font-mono);
-  --font-family-jetbrains: "JetBrains Mono", var(--font-mono);
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --font-heading: 'Mona Sans', ui-sans-serif, system-ui, sans-serif;
 
   /* Animations */
   --animate-accordion-down: accordion-down 0.2s ease-out;
@@ -70,21 +70,21 @@
     --popover-foreground: 0 0% 6.7%;
     --primary: 0 0% 6.7%;
     --primary-foreground: 0 0% 99.2%;
-    --secondary: 0 0% 96%;
+    --secondary: 0 0% 92%;
     --secondary-foreground: 0 0% 6.7%;
     --muted: 0 0% 96%;
     --muted-foreground: 0 0% 33.3%;
-    --accent: 220 100% 50%;
+    --accent: 38 98% 44%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 0 0% 88.6%;
     --input: 0 0% 88.6%;
     --ring: 220 100% 50%;
-    --font-heading: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    /* --font-heading: 'Inter', ui-sans-serif, system-ui, sans-serif;
     --font-body: 'Inter', ui-sans-serif, system-ui, sans-serif;
-    --font-display: 'Inter', ui-sans-serif, system-ui, sans-serif;
-    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    --font-display: 'Mona Sans', ui-sans-serif, system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; */
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
     --sidebar-primary: 240 5.9% 10%;
@@ -108,7 +108,7 @@
     --secondary-foreground: 0 0% 95%;
     --muted: 0 0% 12%;
     --muted-foreground: 0 0% 60%;
-    --accent: 220 100% 55%;
+    --accent: 38 98% 44%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;

@@ -29,8 +29,8 @@
 // @import '../_sass/utilities/spacing';
 // @import '../_sass/utilities/text';
 
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mona+Sans:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap');
 
 /* Hairline divider utility */
@@ -45,6 +45,7 @@
   line-height: 1.4;
   color: hsl(var(--muted-foreground));
   letter-spacing: 0.02em;
+  text-transform: uppercase;
 }
 
 /* Signal blue link */
@@ -71,4 +72,30 @@ html {
 /* Selection color */
 ::selection {
   background: hsl(220 100% 50% / 0.15);
+}
+
+/* Stagger animation */
+.animate-in {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+.animate-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero {
+  position: relative;
+  z-index: 1;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 15%;
+  height: 2px;
+  background: hsl(var(--accent));
 }
