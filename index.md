@@ -19,7 +19,7 @@ permalink: /
         <p class="mt-6 text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-2xl">
           I design digital products and design systems that simplify complex ideas into intuitive user experiences.
         </p>
-        <a href="{{ '/about' | relative_url }}" class="mt-8 text-sm text-accent underline font-medium hover:opacity-60 transition-opacity">
+        <a href="{{ '/about' | relative_url }}" class="mt-8 text-sm text-accent underline font-medium hover:opacity-60 transition-opacity underline-offset-2">
           About me →
         </a>
       </div>
@@ -46,7 +46,7 @@ permalink: /
         </div>
       </a>
       {% endfor %}
-      <a href="{{ '/work' | relative_url }}" class="text-sm text-muted-foreground underline hover:text-accent transition-colors mt-4 ml-3">All work →</a>
+      <a href="{{ '/work' | relative_url }}" class="text-sm text-muted-foreground underline hover:text-accent transition-colors mt-4 ml-3 underline-offset-2">All work →</a>
     </div>
     <div class="md:col-span-6 flex flex-col">
       <h2 class="meta-tag text-sm uppercase tracking-widest mb-8">RECENT WRITING</h2>
@@ -57,7 +57,7 @@ permalink: /
         <span class="col-span-3 text-right meta-tag hidden sm:block">{{ post.date | date: "%-d %b %Y" }}</span>
       </a>
       {% endfor %}
-      <a href="{{ '/writing' | relative_url }}" class="text-sm text-muted-foreground underline hover:text-accent transition-colors mt-4 ml-3">All writing →</a>
+      <a href="{{ '/writing' | relative_url }}" class="text-sm text-muted-foreground underline hover:text-accent transition-colors mt-4 ml-3 underline-offset-2">All writing →</a>
     </div>
 
   </section>
