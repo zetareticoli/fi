@@ -34,9 +34,9 @@ permalink: /
   <div class="mx-6 lg:mx-10 hairline"></div>
 
   <!-- Recent Artifacts -->
-  <section class="grid md:grid-cols-12 gap-8 px-6 lg:px-10 py-12 lg:py-16">
+  <section class="grid md:grid-cols-12 gap-24 md:gap-8 px-6 lg:px-10 py-16 lg:py-20">
     <div class="md:col-span-6 flex flex-col">
-      <h2 class="meta-tag text-sm uppercase tracking-widest mb-8">RECENT WORK</h2>
+      <h2 class="meta-tag text-sm uppercase tracking-widest mb-8 pl-3">RECENT WORK</h2>
       {% for item in site.data.work.featured limit: 3 %}
       <a href="{{ item.url | relative_url }}" class="animate-in group grid lg:grid-cols-12 gap-4 py-3.5 hairline items-start hover:bg-secondary/50 transition-colors px-3" style="transition-delay: {{ forloop.index | times: 120 }}ms;">
         <span class="col-span-6"><img src="{{ item.image | relative_url }}" alt="{{ item.title }}" class="w-full max-h-48 object-cover"></span>
@@ -49,12 +49,12 @@ permalink: /
       <a href="{{ '/work' | relative_url }}" class="text-sm text-muted-foreground underline hover:text-accent transition-colors mt-4 ml-3 underline-offset-2">All work →</a>
     </div>
     <div class="md:col-span-6 flex flex-col">
-      <h2 class="meta-tag text-sm uppercase tracking-widest mb-8">RECENT WRITING</h2>
+      <h2 class="meta-tag text-sm uppercase tracking-widest mb-8 pl-3">RECENT WRITING</h2>
       {% assign recent_posts = site.posts %}
       {% for post in recent_posts limit: 4 %}
       <a href="{{ post.url | relative_url }}" class="animate-in group grid grid-cols-12 gap-4 py-3.5 hairline items-center hover:bg-secondary/50 transition-colors px-3" style="transition-delay: {{ forloop.index | times: 120 }}ms;">
-        <span class="col-span-6 lg:col-span-7 text-md group-hover:text-accent transition-colors">{{ post.title }}</span>
-        <span class="col-span-3 text-right meta-tag hidden sm:block">{{ post.date | date: "%-d %b %Y" }}</span>
+        <span class="col-span-9 text-md group-hover:text-accent transition-colors">{{ post.title }}</span>
+        <span class="col-span-3 text-right meta-tag">{{ post.date | date: "%-d %b %Y" }}</span>
       </a>
       {% endfor %}
       <a href="{{ '/writing' | relative_url }}" class="text-sm text-muted-foreground underline hover:text-accent transition-colors mt-4 ml-3 underline-offset-2">All writing →</a>
