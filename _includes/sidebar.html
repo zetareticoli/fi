@@ -1,0 +1,75 @@
+<nav class="lg:flex fixed left-0 top-0 lg:h-screen w-full lg:w-48 flex-col justify-between p-6 lg:py-10 lg:px-8 z-50 bg-background"
+     aria-label="Main navigation">
+  <div class="flex flex-row lg:flex-col gap-10 justify-between lg:justify-normal">
+    <a href="{{ '/' | relative_url }}" class="inline-block hover:opacity-60 transition-opacity" aria-label="Home">
+      <svg viewBox="0 0 29 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-5 h-auto mb-2 transition-colors duration-200" aria-label="{{ site.logo-alt }}" role="img">
+        <path d="M26.312 10.844h-1.76l-1.672.44H11.572v-3.74c0-3.388.968-5.104 2.948-5.104 1.848 0 2.332 1.584 2.332 3.168 0 .748-.088 1.408-.176 2.024h4.62c1.012-.484 1.672-1.496 1.672-2.772 0-2.728-2.728-4.312-7.964-4.312-6.292 0-11.528 3.036-11.528 9.944v.572L.308 11.9v1.76h3.168v17.908c0 1.408-.704 1.584-2.464 1.716V35h12.936v-1.716c-1.76-.132-2.376-.308-2.376-1.716V13.66h6.644v17.908c0 1.408-.616 1.584-2.376 1.716V35h12.936v-1.716c-1.76-.132-2.464-.308-2.464-1.716V10.844z" fill="currentColor"/>
+      </svg>
+      <!-- <span class="hidden md:block font-heading text-xs text-muted-foreground font-medium tracking-tight uppercase leading-tight">Francesco Improta</span> -->
+    </a>
+    <ul class="hidden lg:flex flex-col gap-3">
+      {% assign nav_pages = site.pages | where_exp: "p", "p.nav == true" | sort: "nav_order" %}
+      {% for nav_page in nav_pages %}
+      <li>
+        <a href="{{ nav_page.url | relative_url }}"
+           class="text-sm underline underline-offset-2 active:no-underline transition-colors duration-200 {% if page.url == nav_page.url %}text-foreground font-medium{% else %}text-muted-foreground hover:text-foreground{% endif %}">
+          {{ nav_page.nav_title | default: nav_page.title }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    <div class="flex flex-row lg:hidden gap-3 justify-between lg:justify-normal">
+      <button id="theme-toggle-mobile" class="p-1 -ml-1 text-muted-foreground hover:text-foreground transition-colors text-sm" aria-label="Toggle theme">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun-icon lucide-sun" aria-label="Light mode icon icon"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon-icon lucide-moon" aria-label="Dark mode icon"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>
+      </button>
+      <button id="mobile-menu-btn" class="p-1" aria-label="Toggle menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-menu-icon lucide-square-menu" aria-label="Menu icon"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M7 8h10"/><path d="M7 12h10"/><path d="M7 16h10"/></svg></button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="hidden px-6 pb-6 pt-2 border-b border-border bg-background">
+    <ul class="flex flex-col gap-3">
+      {% assign nav_pages = site.pages | where_exp: "p", "p.nav == true" | sort: "nav_order" %}
+      {% for nav_page in nav_pages %}
+      <li>
+        <a href="{{ nav_page.url | relative_url }}" class="text-sm block py-1 text-muted-foreground hover:text-foreground transition-colors">
+          {{ nav_page.nav_title | default: nav_page.title }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="hidden lg:block flex flex-col gap-4">
+    <button id="theme-toggle" class="p-1 -ml-1 text-muted-foreground hover:text-foreground cursor-pointer transition-colors mb-4" aria-label="Toggle theme">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun-icon lucide-sun" aria-label="Light mode icon icon"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon-icon lucide-moon" aria-label="Dark mode icon"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>
+      </button>
+    <div class="meta-tag">
+      <span class="block">Rome, Italy</span>
+      <span class="block mt-1">41°54′N 12°29′E</span>
+    </div>
+  </div>
+</nav>
+
+<!-- <nav class="lg:hidden fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+  <div class="flex items-center justify-between px-6 py-4">
+    <img src="{{ site.logo-image | relative_url }}" alt="{{ site.logo-alt }}" class="w-10 h-10">
+    <a href="{{ '/' | relative_url }}" class="font-heading text-xl font-bold tracking-tighter">Francesco Improta</a>
+    <div class="flex items-center gap-3">
+      <span class="meta-tag hidden sm:inline">{{ page.nav_title | default: page.title }}</span>
+      <button id="theme-toggle-mobile" class="p-1 text-muted-foreground" aria-label="Toggle theme">◐</button>
+      <button id="mobile-menu-btn" class="p-1" aria-label="Toggle menu">☰</button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="hidden px-6 pb-6 pt-2 border-b border-border bg-background">
+    <ul class="flex flex-col gap-3">
+      {% assign nav_pages = site.pages | where_exp: "p", "p.nav == true" | sort: "nav_order" %}
+      {% for nav_page in nav_pages %}
+      <li>
+        <a href="{{ nav_page.url | relative_url }}" class="text-sm block py-1 text-muted-foreground hover:text-foreground transition-colors">
+          {{ nav_page.nav_title | default: nav_page.title }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</nav> -->
