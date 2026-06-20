@@ -5,8 +5,13 @@ description: Personal website of Francesco Improta, design lead UX/UI & design s
 author:
   name: Francesco Improta
   email: me@francescoimprota.com
-  linkedin: https://www.linkedin.com/in/francescoimprota/
-  dribbble: https://dribbble.com/francescoimprota
+  social:
+    - name: LinkedIn
+      url: https://www.linkedin.com/in/francescoimprota/
+    - name: GitHub
+      url: https://github.com/zetareticoli
+    - name: X
+      url: https://x.com/zetareticoli
  
 url: https://francescoimprota.com
 baseurl: ""
