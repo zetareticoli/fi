@@ -1,19 +1,23 @@
 ---
+# _layouts/page.html
 layout: default
 ---
+<div class="min-h-screen">
+  <section class="px-6 lg:px-10 pt-16 lg:pt-24 pb-12 lg:pb-16">
+    <span class="meta-tag block mb-4">[{{ page.tag | upcase }}]</span>
+    <h1 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
+      {{ page.title }}
+    </h1>
+    {% if page.description %}
+    <p class="mt-4 text-base text-muted-foreground max-w-2xl leading-relaxed">
+      {{ page.description }}
+    </p>
+    {% endif %}
+  </section>
 
-<section class="spacing-sections outer-margin">
-	{% if page.headline %}
-		<h1 class="headline-featured">{{ page.headline }}</h1>
-	{% endif %}
+  <div class="mx-6 lg:mx-10 hairline"></div>
 
-	{% if page.lead %}
-		<p class="lead color-text-light">{{ page.lead }}</p>
-	{% endif %}
-
-	{% if page.cta %}
-		<a class="text-emphasis underline color-text-light" href="{{ page.cta.url }}">{{ page.cta.text }}</a>
-	{% endif %}
-</section>
-
-{{ content }}
+  <section class="px-6 lg:px-10 py-12 lg:py-16">
+    {{ content }}
+  </section>
+</div>

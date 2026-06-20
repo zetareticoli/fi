@@ -1,18 +1,22 @@
+---
+# _layouts/default.html
+---
 <!DOCTYPE html>
-<html lang="{{ site.lang }}" prefix="og: http://ogp.me/ns#">
+<html lang="en" class="{{ page.theme | default: 'light' }}">
 <head>
-	{% include head.html %}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}" />
+  <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}" />
+  <link rel="stylesheet" href="{{ '/css/tw-compiled.css' | relative_url }}" />
 </head>
-<body class="page">
-	<div class="wrapper">
-		<div class="inner outer-margin">
-			{% include header.html %}
-		</div>
-		<main class="{% if layout.inner %}inner-small{% else %}inner{% endif %} spacing-sections">
-			{{ content }}
-		</main>
-	</div>
-	{% include footer.html %}
-
+<body class="bg-background text-foreground font-body">
+  {% include sidebar.html %}
+  <main class="lg:ml-48 pt-16 lg:pt-0">
+    {{ content }}
+  </main>
+  {% include footer.html %}
+  <script src="{{ '/js/app.js' | relative_url }}"></script>
 </body>
 </html>
