@@ -1,12 +1,12 @@
-<footer class="lg:ml-48 px-6 lg:px-10 pb-16 mt-8">
+<footer class="lg:ml-48 px-6 lg:px-10 pb-10 mt-8">
   <div class="hairline pt-8">
     <div class="flex flex-col sm:flex-row justify-between gap-6">
       <div class="flex flex-col gap-2">
-
-        <p class="text-sm text-muted leading-relaxed max-w-md">
-          Designed and built by {{ site.author.name }}.
-          Set in Inter and JetBrains Mono. No cookies, no trackers.
+        <p class="text-sm text-muted leading-relaxed max-w-md mb-8">
+          <span class="text-muted-foreground">Designed and built by {{ site.author.name }}</span>. <br>
+          Powered by Jekyll. Set in Mona Sans, Inter and JetBrains Mono. <br> No cookies, no trackers.
         </p>
+        <p class="uppercase font-mono text-xs text-muted">© {{ 'now' | date: '%Y' }} {{ site.author.name }}</p>
       </div>
       <div class="flex flex-col gap-2 sm:text-right">
         <span class="meta-tag">[CONNECT]</span>
@@ -20,6 +20,5 @@
         </div>
       </div>
     </div>
-    <p class="meta-tag mt-10">© {{ 'now' | date: '%Y' }} {{ site.author.name }}</p>
   </div>
 </footer>
