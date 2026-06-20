@@ -90,6 +90,12 @@ html {
   z-index: 1;
 }
 
+/* Theme toggle: sun visible in dark mode, moon visible in light mode */
+#theme-toggle .lucide-sun, #theme-toggle-mobile .lucide-sun { display: block; }
+#theme-toggle .lucide-moon, #theme-toggle-mobile .lucide-moon { display: none; }
+.dark #theme-toggle .lucide-sun, .dark #theme-toggle-mobile .lucide-sun { display: none; }
+.dark #theme-toggle .lucide-moon, .dark #theme-toggle-mobile .lucide-moon { display: block; }
+
 .hero::before {
   content: '';
   position: absolute;
