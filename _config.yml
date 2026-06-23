@@ -7,12 +7,18 @@ author:
   email: me@francescoimprota.com
   social:
     - name: LinkedIn
+      handle: /in/francescoimprota
       url: https://www.linkedin.com/in/francescoimprota/
     - name: GitHub
+      handle: /github/zetareticoli
       url: https://github.com/zetareticoli
     - name: X
+      handle: /zetareticoli
       url: https://x.com/zetareticoli
- 
+    - name: Dribbble
+      handle: /zetareticoli
+      url: https://dribbble.com/zetareticoli
+  
 url: https://francescoimprota.com
 baseurl: ""
 
