@@ -19,7 +19,7 @@ permalink: /
         <p class="mt-6 text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-2xl">
           I design digital products and design systems that simplify complex ideas into intuitive user experiences.
         </p>
-        <a href="{{ '/about' | relative_url }}" class="mt-8 text-sm text-accent underline font-medium hover:opacity-60 transition-opacity underline-offset-2">
+        <a href="{{ '/about' | relative_url }}" class="mt-8 text-sm underline font-medium hover:opacity-60 transition-opacity underline-offset-2">
           About me →
         </a>
       </div>

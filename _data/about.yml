@@ -1,8 +1,10 @@
 awards:
   - tag: "AWARD.01"
-    title: "ADI Design Index Award"
-    year: "2024"
-    description: "Won for projects Modello di sito per le ASL and UI Kit Italia."
+    title: "Honorable Mention -  ADI Compasso d'Oro Award"
+    year: "2026"
+    image: "/img/awards/adi-design-index-award.webp"
+    description: "The information website template for Local Health Authorities (ASL) received an Honorable Mention at the 29th edition of the ADI Compasso d'Oro Award, one of the most prestigious design awards."
+    link: "https://www.adi-design.org/xxix-compasso-d-oro.html"
 
 teaching:
   - tag: "TEACH.01"
@@ -43,5 +45,7 @@ speaking:
 publications:
   - tag: "BOOK.01"
     title: "CSS3 Solutions — Essential Techniques for CSS Developers"
-    url: "https://www.amazon.com/CSS3-Solutions-Essential-Techniques-Developers/dp/1430243376"
+    url: "https://www.oreilly.com/library/view/css3-solutions-essential/9781430243359/"
+    year: "2011"
+    publisher: "O'Reilly"
     description: "A comprehensive guide covering the broad set of new additions and changes to the core CSS language."
