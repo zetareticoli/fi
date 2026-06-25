@@ -1,0 +1,52 @@
+---
+layout: page
+title: Professional highlights
+tag: work
+nav: true
+nav_title: "Work"
+nav_order: 3
+description: I design intuitive digital products with a focus on user experience. Expert in design systems, usability, and accessibility.
+---
+
+<div class="min-h-screen max-w-screen-xl">
+
+  <!-- Featured -->
+  <section>
+    {% for project in site.data.work.featured %}
+    <div class="py-8 animate-in group" style="transition-delay: {{ forloop.index | times: 120 }}ms;">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-8">
+        <div class="lg:col-span-5">
+          <a href="{{ project.url | relative_url }}" target="_blank" rel="noopener noreferrer" class="block">
+            <figure><img src="{{ project.image | relative_url }}" alt="{{ project.title }}" class="w-full max-h-48 object-cover hover:scale-105 transition-transform duration-300"></figure>
+          </a>
+        </div>
+        <div class="lg:col-span-5">
+          <h3 class="text-xl lg:text-2xl font-heading font-semibold hover:text-accent transition-colors"><a class="hover:text-accent transition-colors" href="{{ project.url | relative_url }}" target="_blank" rel="noopener noreferrer">{{ project.title }}</a></h3>
+          <p class="text-sm text-muted-foreground leading-relaxed mt-3">{{ project.description }}</p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </section>
+
+  <div class="mx-6 lg:mx-10 hairline"></div>
+
+  <!-- Timeline -->
+  <section class="pt-12 lg:pt-16">
+    <span class="meta-tag block mb-8">Full Timeline</span>
+    <div class="flex flex-col">
+      {% for exp in site.data.work.timeline %}
+      <div class="grid grid-cols-12 gap-2 lg:gap-4 py-3.5 hairline items-baseline">
+        <!-- <span class="col-span-2 lg:col-span-1 meta-tag">[{{ exp.tag }}]</span> -->
+        <span class="col-span-1 meta-tag">{{ exp.year }}</span>
+        <span class="col-span-3 lg:col-span-2 text-sm font-medium truncate">{{ exp.org }}</span>
+        <span class="col-span-6 lg:col-span-8 text-sm text-muted-foreground">{{ exp.description }}</span>
+      </div>
+      {% endfor %}
+    </div>
+    <a href="{{ site.linkedin }}" target="_blank" rel="noopener noreferrer"
+      class="mt-8 inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors underline underline-offset-2">
+      Full experience on LinkedIn ↗
+    </a>
+  </section>
+</div>
