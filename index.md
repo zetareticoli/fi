@@ -36,7 +36,7 @@ permalink: /
   <!-- Recent Artifacts -->
   <section class="grid md:grid-cols-12 gap-24 md:gap-8 px-6 lg:px-10 py-16 lg:py-20">
     <div class="md:col-span-6 flex flex-col">
-      <h2 class="meta-tag text-sm uppercase tracking-widest mb-8 pl-3">RECENT WORK</h2>
+      <h2 class="meta-tag text-sm uppercase tracking-widest mb-8 pl-3">Selected Work</h2>
       {% for item in site.data.work.featured limit: 3 %}
       <a href="{{ item.url | relative_url }}" class="animate-in group grid lg:grid-cols-12 gap-4 py-3.5 hairline items-start hover:bg-secondary/50 transition-colors px-3" style="transition-delay: {{ forloop.index | times: 120 }}ms;">
         <span class="col-span-6"><img src="{{ item.image | relative_url }}" alt="{{ item.title }}" class="w-full max-h-48 object-cover"></span>
