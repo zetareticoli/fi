@@ -1,5 +1,4 @@
 ---
-# about.m
 layout: default
 title: "About"
 nav: true
@@ -7,7 +6,7 @@ nav_title: "About"
 nav_order: 1
 permalink: /about/
 ---
-<div class="min-h-screen">
+<div class="min-h-screen max-w-screen-xl">
   <section class="px-6 lg:px-10 pt-16 lg:pt-24 pb-12 lg:pb-16">
     <span class="meta-tag block mb-4">About me</span>
     <h1 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
@@ -38,7 +37,7 @@ permalink: /about/
       </div>
       <div class="md:col-span-5 flex flex-col gap-8 items-start">
         <img src="{{ page.portrait | default: '/img/francesco-improta.webp' | relative_url }}" alt="Francesco Improta"
-          class="w-full object-cover grayscale max-h-[65vh]" loading="lazy" />
+          class="w-full object-cover grayscale max-h-[65vh animate-in group" style="transition-delay: {{ forloop.index | times: 120 }}ms;" loading="lazy" />
         <div class="flex flex-col gap-3 w-full">
           <span class="meta-tag">Elsewhere on the web</span>
           {% for social in site.author.social %}
@@ -56,7 +55,7 @@ permalink: /about/
   <div class="mx-6 lg:mx-10 hairline"></div>
 
   <!-- Awards -->
-  <section class="md:col-span-6 px-6 lg:px-10 py-12 xl:py-16">
+  <section class="md:col-span-6 px-6 lg:px-10 py-12 xl:py-16 bg-gray-100">
     <span class="meta-tag block mb-8">Awards</span>
     {% for award in site.data.about.awards %}
     <div class="grid grid-cols-12 gap-4">
