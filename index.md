@@ -33,7 +33,7 @@ permalink: /
 
   <div class="mx-6 lg:mx-10 hairline"></div>
 
-  <!-- Recent Artifacts -->
+  <!-- Selected Work -->
   <section class="grid md:grid-cols-12 gap-24 md:gap-8 px-6 lg:px-10 py-16 lg:py-20">
     <div class="md:col-span-6 flex flex-col">
       <h2 class="meta-tag text-sm uppercase tracking-widest mb-8 pl-3">Selected Work</h2>
