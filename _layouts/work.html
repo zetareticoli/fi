@@ -34,6 +34,16 @@ layout: default
       {% if page.url %}<div><span class="meta-tag block mb-1">[LINK]</span><a href="{{ page.url }}" target="_blank"
           rel="noopener noreferrer" class="text-sm text-accent hover:opacity-70 transition-opacity">Visit site ↗</a>
       </div>{% endif %}
+      {% if page.tools %}
+      <div class="w-full basis-full">
+        <span class="meta-tag block mb-1">[TOOLS]</span>
+        <div class="flex flex-wrap gap-1.5">
+          {% for t in page.tools %}
+          <span class="font-mono text-xs text-muted-foreground border border-border px-2 py-0.5">{{ t }}</span>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
     </div>
   </section>
 
@@ -63,52 +73,36 @@ layout: default
   <div class="mx-6 lg:mx-10 hairline"></div>
   {% endif %}
 
-  <!-- Approach -->
+  <!-- Approach — labeled blocks grid -->
   {% if page.approach %}
   <section class="px-6 lg:px-10 py-12 lg:py-16">
     <span class="meta-tag block mb-8">[APPROACH]</span>
-    <div class="flex flex-col">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16">
       {% for item in page.approach %}
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-3 lg:gap-8 py-6 hairline">
-        <div class="lg:col-span-1"><span class="meta-tag">0{{ forloop.index }}</span></div>
-        <div class="lg:col-span-4">
+      <div class="flex flex-col">
+        <div class="flex items-baseline gap-3 mb-2">
+          <span class="meta-tag">{{ forloop.index | prepend: '00' | slice: -2, 2 }}</span>
           <h3 class="text-base font-heading font-semibold">{{ item.label }}</h3>
         </div>
-        <div class="lg:col-span-7">
-          <p class="text-sm text-muted-foreground leading-relaxed">{{ item.description }}</p>
-        </div>
+        <p class="text-sm text-muted-foreground leading-relaxed">{{ item.description }}</p>
       </div>
       {% endfor %}
     </div>
   </section>
-  <div class="mx-6 lg:mx-10 hairline"></div>
   {% endif %}
 
-  <!-- Outcomes + Tools -->
-  {% if page.outcomes or page.tools %}
-  <section class="px-6 lg:px-10 py-12 lg:py-16">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
-      {% if page.outcomes %}
-      <div class="lg:col-span-7">
-        <span class="meta-tag block mb-6">[OUTCOMES]</span>
-        <ul class="flex flex-col gap-3">
-          {% for o in page.outcomes %}
-          <li class="flex items-start gap-3"><span class="meta-tag mt-0.5 shrink-0">0{{ forloop.index }}</span><span
-              class="text-sm text-muted-foreground leading-relaxed">{{ o }}</span></li>
-          {% endfor %}
-        </ul>
+  <!-- Outcomes — high-impact, full width -->
+  {% if page.outcomes %}
+  <section class="px-6 lg:px-10 py-12 lg:py-16 bg-secondary/40">
+    <span class="meta-tag block mb-8">[OUTCOMES]</span>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 lg:gap-x-16 gap-y-6">
+      {% for o in page.outcomes %}
+      <div class="flex items-start gap-4">
+        <span class="font-mono text-lg font-semibold text-accent shrink-0 leading-none pt-0.5">{{ forloop.index |
+          prepend: '00' | slice: -2, 2 }}</span>
+        <p class="text-base font-medium leading-relaxed">{{ o }}</p>
       </div>
-      {% endif %}
-      {% if page.tools %}
-      <div class="lg:col-span-5">
-        <span class="meta-tag block mb-6">[TOOLS]</span>
-        <div class="flex flex-wrap gap-2">
-          {% for t in page.tools %}
-          <span class="font-mono text-xs text-muted-foreground border border-border px-2 py-0.5">{{ t }}</span>
-          {% endfor %}
-        </div>
-      </div>
-      {% endif %}
+      {% endfor %}
     </div>
   </section>
   <div class="mx-6 lg:mx-10 hairline"></div>
