@@ -48,4 +48,5 @@ publications:
     url: "https://www.oreilly.com/library/view/css3-solutions-essential/9781430243359/"
     year: "2011"
     publisher: "O'Reilly"
-    description: "A comprehensive guide covering the broad set of new additions and changes to the core CSS language."
+    description: "Co-authored a book covering the broad set of new additions and changes to the core CSS language."
+    image: "/img/css3-solutions-book-cover.webp"

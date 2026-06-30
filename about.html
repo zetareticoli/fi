@@ -140,8 +140,8 @@ permalink: /about/
       <div class="flex flex-col gap-4">
         {% for t in site.data.about.teaching %}
         <div class="grid grid-cols-12 gap-4 lg:gap-0 items-baseline">
-          <div class="col-span-12 flex flex-col xl:flex-row xl:items-baseline gap-2 xl:gap-4">
-            <span class="text-sm font-medium">{{ t.org }}</span>
+          <div class="col-span-12 flex flex-col gap-2 xl:gap-4">
+            <span class="text-lg font-medium">{{ t.org }}</span>
             <a href="{{ t.url }}" target="_blank" rel="noopener noreferrer"
               class="text-sm text-muted-foreground hover:text-foreground transition-colors underline underline-offset-2">{{ t.title }}</a>
           </div>
@@ -153,7 +153,7 @@ permalink: /about/
     <!-- Speaking -->
     <section class="col-span-12 lg:col-span-6 px-6 lg:px-10 py-12 xl:py-16">
       <span class="meta-tag block mb-8">SPEAKING</span>
-      <div class="flex flex-col gap-4 lg:gap-0">
+      <div class="flex flex-col gap-4 lg:gap-0 mb-12">
         {% for talk in site.data.about.speaking %}
         <div class="grid grid-cols-12 gap-2 xl:gap-4 py-3 hairline items-baseline">
           <span class="col-span-12 xl:col-span-1 meta-tag">{{ talk.year }}</span>
@@ -162,6 +162,22 @@ permalink: /about/
         </div>
         {% endfor %}
       </div>
+
+      <span class="meta-tag block mb-8">PUBLICATIONS</span>
+      {% for pub in site.data.about.publications %}
+      <div class="grid grid-cols-4 gap-4">
+        <span class="col-span-2 lg:col-span-1">
+          <img src="{{ pub.image | relative_url }}" alt="{{ pub.title }}" class="w-auto grayscale max-h-40 shadow-lg">
+        </span>
+        <div class="col-span-2 lg:col-span-3">
+          <h3 class="text-sm font-medium">{{ pub.title }}</h3>
+          <span class="meta-tag">{{ pub.year }} &middot; {{ pub.publisher }}</span>
+          <p class="text-sm text-muted-foreground my-2 max-w-2xl leading-relaxed">{{ pub.description }}</p>
+          <a href="{{ pub.url }}" target="_blank" rel="noopener noreferrer"
+            class="text-sm underline underline-offset-2 font-medium transition-colors mt-2">View Details →</a>
+        </div>
+      </div>
+      {% endfor %}
     </section>
 
   </section>
@@ -170,17 +186,6 @@ permalink: /about/
 
   <!-- Publications -->
   <section class="px-6 lg:px-10 py-12 xl:py-16">
-    <span class="meta-tag block mb-8">PUBLICATIONS</span>
-    {% for pub in site.data.about.publications %}
-    <div class="grid grid-cols-12 gap-4">
-      <div class="col-span-10 lg:col-span-11">
-        <h3 class="text-lg font-medium">{{ pub.title }}</h3>
-        <span class="meta-tag">{{ pub.year }} &middot; {{ pub.publisher }}</span>
-        <p class="text-sm text-muted-foreground my-2 max-w-2xl leading-relaxed">{{ pub.description }}</p>
-        <a href="{{ pub.url }}" target="_blank" rel="noopener noreferrer"
-          class="text-sm underline underline-offset-2 font-medium transition-colors mt-2">View Details →</a>
-      </div>
-    </div>
-    {% endfor %}
+    
   </section>
 </div>
