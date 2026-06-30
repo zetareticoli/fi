@@ -1,0 +1,132 @@
+---
+layout: default
+---
+<article class="min-h-screen">
+  <!-- Back nav -->
+  <div class="px-6 lg:px-10 pt-10 lg:pt-14">
+    <a href="{{ '/work' | relative_url }}"
+      class="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
+      ← Work
+    </a>
+  </div>
+
+  <!-- Header -->
+  <section class="px-6 lg:px-10 pt-8 pb-12 lg:pb-16">
+    <span class="meta-tag block mb-4">[{{ page.tag | upcase }}]</span>
+    <h1 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight max-w-3xl">
+      {{ page.title }}
+    </h1>
+    {% if page.overview %}
+    <p class="mt-4 text-base text-muted-foreground max-w-2xl leading-relaxed">{{ page.overview }}</p>
+    {% endif %}
+
+    <!-- Meta row -->
+    <div class="mt-8 flex flex-wrap gap-x-10 gap-y-4">
+      {% if page.role %}<div><span class="meta-tag block mb-1">[ROLE]</span>
+        <p class="text-sm font-medium">{{ page.role }}</p>
+      </div>{% endif %}
+      {% if page.org %}<div><span class="meta-tag block mb-1">[ORG]</span>
+        <p class="text-sm font-medium">{{ page.org }}</p>
+      </div>{% endif %}
+      {% if page.period %}<div><span class="meta-tag block mb-1">[PERIOD]</span>
+        <p class="text-sm font-medium">{{ page.period }}</p>
+      </div>{% endif %}
+      {% if page.url %}<div><span class="meta-tag block mb-1">[LINK]</span><a href="{{ page.url }}" target="_blank"
+          rel="noopener noreferrer" class="text-sm text-accent hover:opacity-70 transition-opacity">Visit site ↗</a>
+      </div>{% endif %}
+    </div>
+  </section>
+
+  <div class="mx-6 lg:mx-10 hairline"></div>
+
+  <!-- Cover image -->
+  {% if page.cover %}
+  <section class="px-6 lg:px-10 py-12 lg:py-16">
+    <img src="{{ page.cover | relative_url }}" alt="{{ page.title }}" class="w-full h-64 lg:h-96 object-cover grayscale"
+      loading="lazy" />
+  </section>
+  <div class="mx-6 lg:mx-10 hairline"></div>
+  {% endif %}
+
+  <!-- Context + Challenge -->
+  {% if page.context or page.challenge %}
+  <section class="px-6 lg:px-10 py-12 lg:py-16">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
+      {% if page.context %}<div class="lg:col-span-6"><span class="meta-tag block mb-4">[CONTEXT]</span>
+        <p class="text-base text-muted-foreground leading-relaxed">{{ page.context }}</p>
+      </div>{% endif %}
+      {% if page.challenge %}<div class="lg:col-span-6"><span class="meta-tag block mb-4">[CHALLENGE]</span>
+        <p class="text-base text-muted-foreground leading-relaxed">{{ page.challenge }}</p>
+      </div>{% endif %}
+    </div>
+  </section>
+  <div class="mx-6 lg:mx-10 hairline"></div>
+  {% endif %}
+
+  <!-- Approach -->
+  {% if page.approach %}
+  <section class="px-6 lg:px-10 py-12 lg:py-16">
+    <span class="meta-tag block mb-8">[APPROACH]</span>
+    <div class="flex flex-col">
+      {% for item in page.approach %}
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-3 lg:gap-8 py-6 hairline">
+        <div class="lg:col-span-1"><span class="meta-tag">0{{ forloop.index }}</span></div>
+        <div class="lg:col-span-4">
+          <h3 class="text-base font-heading font-semibold">{{ item.label }}</h3>
+        </div>
+        <div class="lg:col-span-7">
+          <p class="text-sm text-muted-foreground leading-relaxed">{{ item.description }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  <div class="mx-6 lg:mx-10 hairline"></div>
+  {% endif %}
+
+  <!-- Outcomes + Tools -->
+  {% if page.outcomes or page.tools %}
+  <section class="px-6 lg:px-10 py-12 lg:py-16">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
+      {% if page.outcomes %}
+      <div class="lg:col-span-7">
+        <span class="meta-tag block mb-6">[OUTCOMES]</span>
+        <ul class="flex flex-col gap-3">
+          {% for o in page.outcomes %}
+          <li class="flex items-start gap-3"><span class="meta-tag mt-0.5 shrink-0">0{{ forloop.index }}</span><span
+              class="text-sm text-muted-foreground leading-relaxed">{{ o }}</span></li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+      {% if page.tools %}
+      <div class="lg:col-span-5">
+        <span class="meta-tag block mb-6">[TOOLS]</span>
+        <div class="flex flex-wrap gap-2">
+          {% for t in page.tools %}
+          <span class="font-mono text-xs text-muted-foreground border border-border px-2 py-0.5">{{ t }}</span>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+    </div>
+  </section>
+  <div class="mx-6 lg:mx-10 hairline"></div>
+  {% endif %}
+
+  <!-- Custom body content (optional) -->
+  {% if content != "" %}
+  <section class="px-6 lg:px-10 py-12 lg:py-16 prose prose-sm max-w-3xl">
+    {{ content }}
+  </section>
+  <div class="mx-6 lg:mx-10 hairline"></div>
+  {% endif %}
+
+  <!-- Footer nav -->
+  <section class="px-6 lg:px-10 py-10 lg:py-14">
+    <a href="{{ '/work' | relative_url }}"
+      class="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
+      ← Back to all work
+    </a>
+  </section>
+</article>
