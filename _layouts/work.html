@@ -76,9 +76,18 @@ layout: default
   
   <!-- Custom body content (optional) -->
   {% if content != "" %}
-  <section class="px-6 lg:px-10 py-12 lg:py-16 prose prose-sm max-w-3xl">
-    <span class="meta-tag block mb-8">Full Story</span>
-    {{ content }}
+  <section class="px-6 lg:px-10 py-12 lg:py-16 grid grid-cols-1 xl:grid-cols-12 gap-10 xl:gap-16">
+    <div class="prose prose-sm max-w-3xl xl:col-span-6">
+      <span class="meta-tag block mb-8">Full Story</span>
+      {{ content }}
+    </div>
+    <div class="xl:col-span-6 xl:mt-24">
+      {% for image in page.images %}
+      <figure class="mb-4 animate-in rounded-md overflow-hidden" style="transition-delay: {{ forloop.index | times: 120 }}ms">
+        <img src="{{ image | relative_url }}" alt="{{ page.title }}" class="w-full h-full object-cover mt-0">
+      </figure>
+      {% endfor %}
+    </div>
   </section>
   {% endif %}
   
@@ -96,7 +105,7 @@ layout: default
     </div>
   </section>
   {% endif %}
-  
+
   <!-- Tools -->
   <section class="px-6 lg:px-10 py-12 lg:py-16">
     {% if page.tools %}
