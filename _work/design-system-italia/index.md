@@ -29,6 +29,10 @@ tools:
   - WCAG 2.1
   - GitHub
   - Web Components
+images:
+  - /img/work/design-system-italia/design-system-italia-1.jpg
+  - /img/work/design-system-italia/design-system-italia-1.jpg
+  - /img/work/design-system-italia/design-system-italia-1.jpg
 permalink: /work/design-system-italia/
 ---
 
