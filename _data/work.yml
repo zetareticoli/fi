@@ -1,11 +1,11 @@
 # _data/work.yml
 featured:
   - tag: "WORK.01"
-    title: "Design System .italia"
+    title: "Design System Italia"
     period: "2022 – current"
     image: "/img/works/dtd/design-system-italia-cover.webp"
     description: "Leading the design and development of Italy's national design system for public digital services."
-    role: "Senior Product Designer"
+    role: "Design System Lead"
     org: "Dept. for Digital Transformation"
     url: "/work/design-system-italia"
 
