@@ -12,7 +12,6 @@ layout: default
 
   <!-- Header -->
   <section class="px-6 lg:px-10 pt-8 pb-12 lg:pb-16">
-    <span class="meta-tag block mb-4">[{{ page.tag | upcase }}]</span>
     <h1 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight max-w-3xl">
       {{ page.title }}
     </h1>
@@ -49,7 +48,7 @@ layout: default
   {% endif %}
 
   <!-- Context + Challenge + Activities -->
-  {% if page.context or page.challenge or page.approach %}
+  {% if page.context or page.challenge or page.activities %}
   <section class="px-6 lg:px-10 py-12 lg:py-16">
     <div class="grid grid-cols-1 xl:grid-cols-12 gap-10 xl:gap-16">
       {% if page.context %}<div class="animate-in  xl:col-span-4"><span class="meta-tag block mb-4">CONTEXT</span>
@@ -58,9 +57,9 @@ layout: default
       {% if page.challenge %}<div class="animate-in xl:col-span-4" style="transition-delay: 120ms"><span class="meta-tag block mb-4">CHALLENGE</span>
         <p class="text-base leading-relaxed">{{ page.challenge }}</p>
       </div>{% endif %}
-      {% if page.approach %}<div class="animate-in xl:col-span-4" style="transition-delay: 240ms"><span class="meta-tag block mb-4">ACTIVITIES</span>
+      {% if page.activities %}<div class="animate-in xl:col-span-4" style="transition-delay: 240ms"><span class="meta-tag block mb-4">ACTIVITIES</span>
         <div class="flex flex-col gap-4">
-          {% for item in page.approach %}
+          {% for item in page.activities %}
           <div class="flex items-start gap-3">
             <span class="font-mono text-muted-foreground font-medium text-sm shrink-0 pt-1">{{ forloop.index | prepend: '00' | slice: -2, 2 }}</span>
             <p class="text-base text-primary leading-relaxed">{{ item.label }}</p>
@@ -73,6 +72,19 @@ layout: default
   <div class="mx-6 lg:mx-10 hairline"></div>
   {% endif %}
 
+  <!-- Images -->
+  {% if page.images %}
+  <section class="px-6 lg:px-10 py-12 lg:py-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2">
+      {% for image in page.images %}
+      <figure class="mb-4 animate-in rounded-md overflow-hidden" style="transition-delay: {{ forloop.index | times: 120 }}ms">
+        <img src="{{ image | relative_url }}" alt="{{ page.title }}" class="w-full h-full object-cover mt-0">
+      </figure>
+      {% endfor %}
+    </div>
+  </section>
+  <div class="mx-6 lg:mx-10 hairline"></div>
+  {% endif %}
   
   <!-- Custom body content (optional) -->
   {% if content != "" %}
@@ -81,49 +93,42 @@ layout: default
       <span class="meta-tag block mb-8">Full Story</span>
       {{ content }}
     </div>
-    <div class="xl:col-span-6 xl:mt-24">
-      {% for image in page.images %}
-      <figure class="mb-4 animate-in rounded-md overflow-hidden" style="transition-delay: {{ forloop.index | times: 120 }}ms">
-        <img src="{{ image | relative_url }}" alt="{{ page.title }}" class="w-full h-full object-cover mt-0">
-      </figure>
-      {% endfor %}
-    </div>
+    <!-- Outcomes — high-impact, full width -->
+    <div class="xl:col-span-6">
+      {% if page.outcomes %}
+      <div class="px-6 lg:px-10 py-12 lg:py-16 bg-secondary/40 ">
+        <span class="meta-tag block mb-12">OUTCOMES</span>
+        <div class="flex flex-col gap-10">
+          {% for o in page.outcomes %}
+          <div class="flex flex-col items-start gap-4 md:col-span-2">
+            <span class="font-mono text-lg font-semibold text-accent leading-0">{{ o.number }}</span>
+            <p class="text-base leading-relaxed">{{ o.label }}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+      <div class="mx-6 lg:mx-10 hairline"></div>
+      <!-- Tools -->
+      {% if page.tools %}
+        <div class="px-6 lg:px-10 py-12 lg:py-16">
+          <span class="meta-tag block mb-12">TOOLS</span>
+          <div class="flex flex-wrap gap-1.5">
+            {% for t in page.tools %}
+            <span class="font-mono text-xs text-muted-foreground border border-border px-2 py-0.5">{{ t }}</span>
+            {% endfor %}
+          </div>
+        </div>
+      {% endif %}
+      </div>
   </section>
   {% endif %}
   
-  <!-- Outcomes — high-impact, full width -->
-  {% if page.outcomes %}
-  <section class="px-6 lg:px-10 py-12 lg:py-16 bg-secondary/40">
-    <span class="meta-tag block mb-8">OUTCOMES</span>
-    <div class="grid grid-cols-1 md:grid-cols-6 gap-x-10 lg:gap-x-16 gap-y-6">
-      {% for o in page.outcomes %}
-      <div class="flex flex-col items-start gap-4 md:col-span-2">
-        <span class="font-mono text-lg font-semibold text-accent leading-0">{{ o.number }}</span>
-        <p class="text-base font-medium leading-relaxed">{{ o.label }}</p>
-      </div>
-      {% endfor %}
-    </div>
-  </section>
-  {% endif %}
-
-  <!-- Tools -->
-  <section class="px-6 lg:px-10 py-12 lg:py-16">
-    {% if page.tools %}
-    <div class="lg:col-span-2">
-      <span class="meta-tag block mb-1">TOOLS</span>
-      <div class="flex flex-wrap gap-1.5">
-        {% for t in page.tools %}
-        <span class="font-mono text-xs text-muted-foreground border border-border px-2 py-0.5">{{ t }}</span>
-        {% endfor %}
-      </div>
-    </div>
-    {% endif %}    
-  </section>
 
   <!-- Footer nav -->
   <section class="px-6 lg:px-10 py-10 lg:py-14">
     <a href="{{ '/work' | relative_url }}"
-      class="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
+      class="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors underline underline-offset-2">
       ← Back to all work
     </a>
   </section>
