@@ -1,26 +1,37 @@
 ---
-layout: folio
+layout: work
 title: Transforming Citynews — A Decade of Design Evolution
-lead: Crafting excellence, navigating challenges, and leaving a lasting legacy
+overview: Crafting excellence, navigating challenges, and leaving a lasting legacy
 order: 1
 summary: I worked at Citynews for nearly a decade. During this time, I established a design team and ushered in new working methodologies. This led to the successful launch of several projects, such as a corporate brand identity, new products, and a Design System.<br><br> In 2021, I bid farewell to Citynews after nearly ten years of committed design work. What started as a freelance opportunity blossomed into a significant chapter in my career.<br><br> This case study explores the transformative journey I embarked on at Citynews, focusing on key projects, technical constraints, personal growth, and the challenges I surmounted along the way.
 cover: citynews-cover.webp
 cover-alt: Screenshot of the intro video published on the Citynews website homepage
-client: citynews
-year: 2012-2021
+org: Citynews
+period: 2012-2021
 role: Head of Design
-platform: Web, Mobile Apps (iOS, Android)
-responsibilities:
-  - Leading a team
-  - Defining design strategy
-  - Leading design on multiple projects
-  - Managing stakeholders
-  - Creating a Design System
-  - Hiring & mentoring designers
+context: Citynews provided me with an incredible canvas for creativity and innovation. Starting as a freelance designer, I initially joined to redesign their brand websites and community platforms.
+challenge: Transforming the company from a small startup to a major player in the digital media industry, creating a design team and introducing new working methodologies.]
+activities: 
+  - label: Leading a team
+  - label: Defining design strategy
+  - label: Leading design on multiple projects
+  - label: Managing stakeholders
+  - label: Creating a Design System
+  - label: Hiring & mentoring designers
+images:
+  - /img/work/citynews/citynews-hp-sketch.webp
+  - /img/work/citynews/today-brand.webp
+  - /img/work/citynews/citynews-ui-kit.webp
+  - /img/work/citynews/citynews-gdl-products.webp
+  - /img/work/citynews/citynews-gdl-styleguide.webp
+  - /img/work/citynews/citynews-mobile-apps.webp
+  - /img/work/citynews/citynews-corporate-brands.webp
+  - /img/work/citynews/citynews-corporate-intro-homepage.webp
+  - /img/work/citynews/citynews-corporate-intro-video.webp
 permalink: /work/citynews/
 ---
 
-## Full story
+## From freelancing to leading the design team
 
 Citynews provided me with an incredible canvas for creativity and innovation. Starting as a freelance designer, I initially joined to redesign their brand websites and community platforms. 
 
@@ -28,7 +39,7 @@ My responsibilities expanded in 2015 when I was called back to spearhead a respo
 
 In April 2016, I officially joined the company as the **Head of Design**.
 
-<div class="flex direction-col-to-row">
+<!-- <div class="flex direction-col-to-row">
   <figure>
     <img src="/img/projects/citynews/citynews-hp-sketch.webp" alt="">
     <figcaption class="color-text-light">2012 — Early sketches of the new homepage for editorial brands</figcaption>
@@ -41,7 +52,7 @@ In April 2016, I officially joined the company as the **Head of Design**.
     <img src="/img/projects/citynews/citynews-ui-kit.webp" alt="">
     <figcaption class="color-text-light">2013 — UI kit snap preview</figcaption>
   </figure>
-</div>
+</div> -->
 
 Over the years, I led the product design team, nurturing and collaborating with talented individuals who embraced my vision. 
 
@@ -49,7 +60,7 @@ Together, we established a robust workflow in tandem with various departments, i
 
 A significant milestone was the creation of the **Global Design Language (GDL)**, a comprehensive Design System aimed at delivering exceptional experiences across all corporate brands. We introduced in late 2020 and it's currently used.
 
-<div class="flex direction-col-to-row">
+<!-- <div class="flex direction-col-to-row">
   <figure>
     <img src="/img/projects/citynews/citynews-gdl-products.webp" alt="">
     <figcaption class="color-text-light">2019-2020 — The Global Design Language in action: for multiple brands on multiple devices</figcaption>
@@ -58,20 +69,20 @@ A significant milestone was the creation of the **Global Design Language (GDL)**
     <img src="/img/projects/citynews/citynews-gdl-styleguide.webp" alt="">
     <figcaption class="color-text-light">2019-2020 — The Global Design Language styleguide built on Fractal</figcaption>
   </figure>
-</div>
+</div> -->
 
 Additionally, I oversaw the redesign of internal tools such as the **Content Management System** (CMS) and **Customer Relantionship Management** (powered by SuiteCRM), collaborating closely with people from various departments.
 
-<figure>
+<!-- <figure>
   <img src="/img/projects/citynews/citynews-mobile-apps.webp" alt="">
   <figcaption class="color-text-light">2020 — iOS mobile app v6</figcaption>
-</figure>
+</figure> -->
 
 The evolution continued as we crafted **iOS** and **Android mobile apps**, iterating from v1 to v6. I lead the design and development work, managing external resources and suppliers.
 
 I personally developed a responsive design strategy, optimizing the **design**, **front-end**, and **development** workflows. 
 
-<div class="flex direction-col-to-row">
+<!-- <div class="flex direction-col-to-row">
   <figure>
     <img src="/img/projects/citynews/citynews-corporate-brands.webp" alt="">
     <figcaption class="color-text-light">2018 — The Brands page of corporate website</figcaption>
@@ -84,7 +95,7 @@ I personally developed a responsive design strategy, optimizing the **design**, 
     <img src="/img/projects/citynews/citynews-corporate-intro-video.webp" alt="">
     <figcaption class="color-text-light">2018 — Snapshots of the intro video in website homepage</figcaption>
   </figure>
-</div>
+</div> -->
 
 In 2018, we proudly launched the new **corporate website**. A pivotal achievement was crafting a coherent, flexible, and scalable visual identity that resonated with all Citynews brands. 
 
