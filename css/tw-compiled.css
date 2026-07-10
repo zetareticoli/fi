@@ -13,7 +13,6 @@
     --spacing: 0.25rem;
     --breakpoint-xl: 80rem;
     --container-md: 28rem;
-    --container-xl: 36rem;
     --container-2xl: 42rem;
     --container-3xl: 48rem;
     --text-xs: 0.75rem;
@@ -1996,7 +1995,7 @@
     --background: 0 0% 4%;
     --foreground: 0 0% 95%;
     --card: 0 0% 6%;
-    --card-foreground: 0 0% 95%;
+    --card-foreground: 0 0% 10%;
     --popover: 0 0% 6%;
     --popover-foreground: 0 0% 95%;
     --primary: 0 0% 95%;
