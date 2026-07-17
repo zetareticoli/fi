@@ -1,10 +1,10 @@
 ---
 layout: work
 title: Transforming Citynews — A Decade of Design Evolution
+cover: "/img/work/citynews/citynews-cover.webp"
 overview: Crafting excellence, navigating challenges, and leaving a lasting legacy
 order: 1
 summary: I worked at Citynews for nearly a decade. During this time, I established a design team and ushered in new working methodologies. This led to the successful launch of several projects, such as a corporate brand identity, new products, and a Design System.<br><br> In 2021, I bid farewell to Citynews after nearly ten years of committed design work. What started as a freelance opportunity blossomed into a significant chapter in my career.<br><br> This case study explores the transformative journey I embarked on at Citynews, focusing on key projects, technical constraints, personal growth, and the challenges I surmounted along the way.
-cover: citynews-cover.webp
 cover-alt: Screenshot of the intro video published on the Citynews website homepage
 org: Citynews
 period: 2012-2021

@@ -1,6 +1,7 @@
 ---
 layout: work
 title: Design System .italia
+cover: "/img/work/design-system-italia/design-system-italia-cover.webp"
 tag: Design System
 order: 1
 overview: The official design system for the Italian public administration digital services.

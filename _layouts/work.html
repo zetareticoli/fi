@@ -51,13 +51,13 @@ layout: default
   {% if page.context or page.challenge or page.activities %}
   <section class="px-6 lg:px-10 py-12 lg:py-16">
     <div class="grid grid-cols-1 xl:grid-cols-12 gap-10 xl:gap-16">
-      {% if page.context %}<div class="animate-in  xl:col-span-4"><span class="meta-tag block mb-4">CONTEXT</span>
+      {% if page.context %}<div class="animate-in  xl:col-span-4"><span class="meta-tag block mb-4">Context</span>
         <p class="text-base leading-relaxed">{{ page.context }}</p>
       </div>{% endif %}
-      {% if page.challenge %}<div class="animate-in xl:col-span-4" style="transition-delay: 120ms"><span class="meta-tag block mb-4">CHALLENGE</span>
+      {% if page.challenge %}<div class="animate-in xl:col-span-4" style="transition-delay: 120ms"><span class="meta-tag block mb-4">Challenge</span>
         <p class="text-base leading-relaxed">{{ page.challenge }}</p>
       </div>{% endif %}
-      {% if page.activities %}<div class="animate-in xl:col-span-4" style="transition-delay: 240ms"><span class="meta-tag block mb-4">ACTIVITIES</span>
+      {% if page.activities %}<div class="animate-in xl:col-span-4" style="transition-delay: 240ms"><span class="meta-tag block mb-4">Responsibilities</span>
         <div class="flex flex-col gap-4">
           {% for item in page.activities %}
           <div class="flex items-start gap-3">
@@ -67,20 +67,6 @@ layout: default
           {% endfor %}
         </div>
       </div>{% endif %}
-    </div>
-  </section>
-  <div class="mx-6 lg:mx-10 hairline"></div>
-  {% endif %}
-
-  <!-- Images -->
-  {% if page.images %}
-  <section class="px-6 lg:px-10 py-12 lg:py-16">
-    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2">
-      {% for image in page.images %}
-      <figure class="mb-4 animate-in rounded-md overflow-hidden" style="transition-delay: {{ forloop.index | times: 120 }}ms">
-        <img src="{{ image | relative_url }}" alt="{{ page.title }}" class="w-full h-full object-cover mt-0">
-      </figure>
-      {% endfor %}
     </div>
   </section>
   <div class="mx-6 lg:mx-10 hairline"></div>
@@ -97,7 +83,7 @@ layout: default
     <div class="xl:col-span-6">
       {% if page.outcomes %}
       <div class="px-6 lg:px-10 py-12 lg:py-16 bg-secondary/40 ">
-        <span class="meta-tag block mb-12">OUTCOMES</span>
+        <span class="meta-tag block mb-12">Outcomes</span>
         <div class="flex flex-col gap-10">
           {% for o in page.outcomes %}
           <div class="flex flex-col items-start gap-4 md:col-span-2">
@@ -112,7 +98,7 @@ layout: default
       <!-- Tools -->
       {% if page.tools %}
         <div class="px-6 lg:px-10 py-12 lg:py-16">
-          <span class="meta-tag block mb-12">TOOLS</span>
+          <span class="meta-tag block mb-12">Tools</span>
           <div class="flex flex-wrap gap-1.5">
             {% for t in page.tools %}
             <span class="font-mono text-xs text-muted-foreground border border-border px-2 py-0.5">{{ t }}</span>
