@@ -8,27 +8,35 @@ nav_order: 3
 description: Professional highlights and work experience.
 ---
 
-<div class="min-h-screen max-w-screen-xl">
+<div class="min-h-screen">
 
   <!-- Featured -->
-  <section>
+  <!-- <section class="grid grid-cols-1 lg:grid-cols-12 gap-2">
     {%- assign sorted_work = site.work | sort: "period" | reverse -%}
     {% for project in sorted_work %}
-    <div class="py-8 animate-in group" style="transition-delay: {{ forloop.index | times: 120 }}ms;">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-8">
-        <div class="lg:col-span-5">
+    {% if project.published == false %}{% continue %}{% endif %}
+    <div class="col-span-1 lg:col-span-4 py-8 animate-in group" style="transition-delay: {{ forloop.index | times: 120 }}ms;">
+
           <a href="{{ project.url | relative_url }}" target="_blank" rel="noopener noreferrer" class="block">
-            <figure><img src="{{ project.cover | relative_url }}" alt="{{ project.title }}" class="w-full max-h-48 object-cover hover:scale-105 transition-transform duration-300"></figure>
+            <figure><img src="{{ project.cover | relative_url }}" alt="{{ project.title }}" class="w-full h-64 object-cover transition-transform duration-300"></figure>
+            <h3 class="text-xl lg:text-2xl font-heading font-semibold hover:text-accent transition-colors"><a class="hover:text-accent transition-colors" href="{{ project.url | relative_url }}" target="_blank" rel="noopener noreferrer">{{ project.title }}</a></h3>
+            <p class="text-sm text-muted-foreground leading-relaxed mt-3">{{ project.overview }}</p>
           </a>
-        </div>
-        <div class="lg:col-span-5">
-          <h3 class="text-xl lg:text-2xl font-heading font-semibold hover:text-accent transition-colors"><a class="hover:text-accent transition-colors" href="{{ project.url | relative_url }}" target="_blank" rel="noopener noreferrer">{{ project.title }}</a></h3>
-          <p class="text-sm text-muted-foreground leading-relaxed mt-3">{{ project.overview }}</p>
-        </div>
-      </div>
     </div>
     {% endfor %}
-  </section>
+  </section> -->
+
+    <section class="grid grid-cols-1 lg:grid-cols-12 gap-6 pt-12 lg:pt-16">
+      {% for item in site.data.featured %}
+      <div class="col-span-1 md:col-span-6 xl:col-span-4 animate-in group" style="transition-delay: {{ forloop.index | times: 120 }}ms;">
+        <figure class="rounded-2xl overflow-hidden">
+          <a href="{{ item.url | relative_url }}" target="_blank" rel="noopener noreferrer" class="block">
+            <img src="{{ item.image | relative_url }}" alt="{{ item.title }}" class="w-full h-96 object-cover transition-transform duration-300 ease-out group-hover:scale-105 group-hover:opacity-100">
+          </a>
+        </figure>
+      </div>
+      {% endfor %}
+    </section>
 
   <div class="mx-6 lg:mx-10 hairline"></div>
 

@@ -1,5 +1,5 @@
 ---
-layout: folio
+layout: work
 title: Seejay redesign
 lead: A React component library to create a cohesive, unified product experience at Docker
 summary: The summary of the project
@@ -13,6 +13,7 @@ responsibilities:
   - Shaping the design process
   - Hiring designers
 permalink: /work/seejay/
+published: false
 ---
 ## Technical details
 The component library itself is a lerna/yarn monorepo based on React and Styled Component built with Emotion. Each component of the DDS library was a yarn workspace package that let us build, test and release them individually and also as a whole. Additionally, each component would provide its own MDX documentation that would get bundled in a DocZ website which served as our internal documentation explaining how each component had to be used to all the other frontend developers at Docker

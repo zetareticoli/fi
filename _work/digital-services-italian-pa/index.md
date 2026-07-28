@@ -4,7 +4,7 @@ title: Digital Services for the Italian Public Administration
 cover: "/img/work/digital-public-services/digital-public-services-cover.webp"
 tag: Service Design
 order: 2
-overview: Designing research-validated, ready-to-adopt website models for Italian municipalities, schools, civic museums, and local health authorities.
+overview: Designed public services for the Italian public administration.
 role: Senior Product Designer
 org: Department for Digital Transformation
 period: 2022 – 2026

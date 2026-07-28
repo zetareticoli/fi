@@ -25,6 +25,12 @@ tools:
   - Balsamiq Mockups
   - Adobe Illustrator
   - Adobe Flex
+gallery:
+  - /img/work/noemalife/eprescribing.webp
+  - /img/work/noemalife/pch-encounters-list-default.webp
+  - /img/work/noemalife/er-management.webp
+  - /img/work/noemalife/athena-sketches.webp
+  - /img/work/noemalife/athena-tracking.webp
 permalink: /work/noemalife/
 ---
 
