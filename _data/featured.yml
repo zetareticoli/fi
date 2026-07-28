@@ -1,20 +1,34 @@
+# ar = aspect ratio (width / height) of the image, used by the justified gallery
 - image: /img/work/design-system-italia/design-system-italia-cover.webp
   url: /work/design-system-italia/
+  ar: 2.336
 - image: /img/projects/tokenlens.webp
-  url: /work/digital-public-services/
+  url: https://tokenlens.app
+  ar: 1.778
 - image: /img/work/citynews/citynews-corporate-intro-homepage.webp
   url: /work/citynews/
+  ar: 1.333
 - image: /img/work/digital-public-services/digital-public-services-cover.webp
   url: /work/digital-public-services/
+  ar: 2.336
 - image: /img/work/citynews/citynews-experience.webp
   url: /work/citynews/
-- image: /img/work/seejay/seejay-cover.webp
-  url: /work/seejay/
-- image: /img/work/digital-public-services/digital-public-services-2.png
-  url: /work/digital-public-services/
-- image: /img/work/citynews/today-brand.webp
+  ar: 1.689
+- image: /img/work/citynews/citynews-mobile-apps.webp
   url: /work/citynews/
+  ar: 1.49
+- image: /img/work/noemalife/athena-tracking.webp
+  url: /work/noemalife/
+  ar: 1.778
+- image: /img/work/digital-public-services/digital-public-services-1.png
+  url: /work/digital-public-services/
+  ar: 1.444
 - image: /img/work/robodomain/robodomain-cover.webp
   url: /work/robodomain/
-- image: /img/work/noemalife/eprescribing.webp
+  ar: 2.336
+- image: /img/work/noemalife/02-ctp-1.png
   url: /work/noemalife/
+  ar: 1.449
+- image: /img/work/citynews/today-brand.webp
+  url: /work/citynews/
+  ar: 1.333

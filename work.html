@@ -26,15 +26,9 @@ description: A collection of professional projects I've worked on.
     {% endfor %}
   </section> -->
 
-    <section class="grid grid-cols-1 lg:grid-cols-12 gap-6 pt-12 lg:pt-16">
+    <section class="justified-gallery pt-12 lg:pt-16">
       {% for item in site.data.featured %}
-      <div class="col-span-1 md:col-span-6 xl:col-span-4 animate-in group" style="transition-delay: {{ forloop.index | times: 120 }}ms;">
-        <figure class="rounded-2xl overflow-hidden">
-          <a href="{{ item.url | relative_url }}" target="_blank" rel="noopener noreferrer" class="block">
-            <img src="{{ item.image | relative_url }}" alt="{{ item.title }}" class="w-full h-96 object-cover transition-transform duration-300 ease-out group-hover:scale-105 group-hover:opacity-100">
-          </a>
-        </figure>
-      </div>
+        {% include featured.html %}
       {% endfor %}
     </section>
 
@@ -42,7 +36,7 @@ description: A collection of professional projects I've worked on.
 
   <!-- Timeline -->
   <section class="pt-12 lg:pt-16">
-    <span class="meta-tag block mb-8">Full Timeline</span>
+    <span class="meta-tag block mb-8">More Experience</span>
     <div class="flex flex-col">
       {% for exp in site.data.work.timeline %}
       <div class="grid grid-cols-12 gap-2 lg:gap-4 py-3.5 hairline items-baseline">

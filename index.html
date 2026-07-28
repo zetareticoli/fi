@@ -1,0 +1,57 @@
+---
+layout: default
+title: "Francesco Improta &ndash; Design Lead & Design System Expert"
+nav: true
+nav_title: "Home"
+nav_order: 0
+permalink: /
+---
+<div class="min-h-screen max-w-screen-7xl">
+  <!-- Hero -->
+  <section class="px-6 lg:px-10 pt-12 lg:pt-36 pb-16 lg:pb-20">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-2 lg:gap-4">
+      <div class="col-span-12 max-w-4xl flex flex-col">
+        <h1 class="font-heading text-4xl sm:text-5xl lg:text-5xl clamp-3 tracking-tight font-bold leading-tight">
+          I align design, code, people and process, so products don't fall apart at scale.
+        <!-- <p class="text-2xl text-primary font-medium">{{ site.description }}</p> -->
+        <!-- <p class="mt-6 text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-2xl">
+        </p> -->
+       </h1>
+        <a href="{{ '/about' | relative_url }}" class="mt-8 text-base underline font-medium hover:opacity-60 transition-opacity underline-offset-2">
+          About me →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="mx-6 lg:mx-10 hairline"></div>
+
+  <!-- Selected Work -->
+  <section class="px-6 lg:px-10 py-16 lg:py-20">
+    <h2 class="meta-tag text-sm uppercase tracking-widest mb-8">Featured Work</h2>
+    <div class="justified-gallery mb-12">
+      {% for item in site.data.featured limit: 6 %}
+      {% include featured.html %}
+      {% endfor %}
+    </div>
+    <a href="{{ '/work' | relative_url }}" class="text-sm text-muted-foreground underline hover:text-accent transition-colors mt-4 ml-3 underline-offset-2">All work →</a>
+  </section>
+
+  <section class="px-6 lg:px-10 py-16 lg:py-20 max-w-screen-7xl">
+    <div class="md:col-span-6 flex flex-col">
+      <h2 class="meta-tag text-sm uppercase tracking-widest mb-8 pl-3">RECENT WRITING</h2>
+      {% assign recent_posts = site.posts %}
+      {% for post in recent_posts limit: 6 %}
+      <a href="{{ post.url | relative_url }}"
+        class="animate-in group grid grid-cols-12 gap-4 py-3.5 hairline items-center transition-colors px-3"
+        style="transition-delay: {{ forloop.index | times: 120 }}ms;">
+        <span class="col-span-9 text-md group-hover:text-accent transition-colors">{{ post.title }}</span>
+        <span class="col-span-3 text-right meta-tag">{{ post.date | date: "%-d %b %Y" }}</span>
+      </a>
+      {% endfor %}
+      <a href="{{ '/writing' | relative_url }}"
+        class="text-sm text-muted-foreground underline hover:text-accent transition-colors mt-4 ml-3 underline-offset-2">All
+        writing →</a>
+    </div>
+  </section>
+</div>

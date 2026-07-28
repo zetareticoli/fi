@@ -139,3 +139,54 @@
     letter-spacing: -0.02em;
   }
 }
+
+@layer components {
+  /*
+   * Justified gallery: rows fill the full width, each item's width is
+   * proportional to its aspect ratio (--ar, set inline from _data/featured.yml).
+   * Because width/height keep the real aspect ratio, images are never cropped
+   * and everything scales proportionally with the viewport.
+   */
+  .justified-gallery {
+    --row-height: 20rem; /* base row height; final height adapts per row */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .justified-gallery > .justified-item {
+    display: block;
+    width: 100%;
+  }
+
+  /* On mobile: single column, natural aspect ratio, no cropping. */
+  .justified-gallery > .justified-item > img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  /* From md up: justified rows with variable widths. */
+  @media (min-width: 768px) {
+    .justified-gallery {
+      flex-flow: row wrap;
+    }
+
+    .justified-gallery > .justified-item {
+      width: auto;
+      aspect-ratio: var(--ar);
+      flex: var(--ar) 1 calc(var(--ar) * var(--row-height));
+    }
+
+    .justified-gallery > .justified-item > img {
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Spacer: keeps the last (incomplete) row from stretching to full width. */
+    .justified-gallery::after {
+      content: "";
+      flex-grow: 999;
+    }
+  }
+}
