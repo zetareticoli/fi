@@ -3,7 +3,7 @@ layout: default
 ---
 <article class="min-h-screen">
   <!-- Back nav -->
-  <div class="px-6 lg:px-10 pt-10 lg:pt-14">
+  <div class="px-6 lg:px-10 pt-10 lg:pt-36 max-w-7xl mx-auto">
     <a href="{{ '/work' | relative_url }}"
       class="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
       ← Work
@@ -11,7 +11,7 @@ layout: default
   </div>
 
   <!-- Header -->
-  <section class="px-6 lg:px-10 pt-8 pb-12 lg:pb-16">
+  <section class="px-6 lg:px-10 pt-8 pb-12 lg:pb-16 max-w-7xl mx-auto">
     <h1 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight max-w-3xl">
       {{ page.title }}
     </h1>
@@ -44,12 +44,11 @@ layout: default
     <img src="{{ page.cover | relative_url }}" alt="{{ page.title }}" class="w-full h-64 lg:h-96 object-cover"
       loading="lazy" />
   </section>
-  <div class="mx-6 lg:mx-10 hairline"></div>
   {% endif %}
 
   <!-- Context + Challenge + Activities -->
   {% if page.context or page.challenge %}
-  <section class="px-6 lg:px-10 py-12 lg:py-16">
+  <section class="px-6 lg:px-10 py-12 lg:py-16 max-w-7xl mx-auto">
     <div class="grid grid-cols-1 xl:grid-cols-12 gap-10 xl:gap-16">
       {% if page.context %}<div class="animate-in  xl:col-span-6"><span class="meta-tag block mb-4">Context</span>
         <p class="text-base leading-relaxed">{{ page.context }}</p>
@@ -59,12 +58,11 @@ layout: default
       </div>{% endif %}
     </div>
   </section>
-  <div class="mx-6 lg:mx-10 hairline"></div>
   {% endif %}
 
   <!-- Responsibilities -->
   {% if page.activities %}
-  <section class="px-6 lg:px-10 py-12 lg:py-16">
+  <section class="px-6 lg:px-10 py-12 lg:py-16 max-w-7xl mx-auto ">
     <div class="animate-in xl:col-span-4" style="transition-delay: 240ms"><span
         class="meta-tag block mb-4">Responsibilities</span>
       <div class="flex flex-col gap-4 max-w-3xl">
@@ -78,7 +76,7 @@ layout: default
       </div>
     </div>
   </section>
-  <div class="mx-6 lg:mx-10 hairline"></div>
+
   {% endif %}
 
   <!-- Gallery -->
@@ -90,12 +88,11 @@ layout: default
       {% endfor %}
     </div>
   </section>
-  <div class="mx-6 lg:mx-10 hairline"></div>
   {% endif %}
 
   <!-- Custom body content (optional) -->
   {% if content != "" %}
-  <section class="px-6 lg:px-10 py-12 lg:py-16 grid grid-cols-1 xl:grid-cols-12 gap-10 xl:gap-16">
+  <section class="px-6 lg:px-10 py-12 lg:py-16 grid grid-cols-1 xl:grid-cols-12 gap-10 xl:gap-16 max-w-7xl mx-auto">
     <div class="xl:col-span-8">
       <span class="meta-tag block mb-8">Full Story</span>
       <div id="full-story" class="prose prose-md max-w-3xl relative overflow-hidden max-h-36 transition-all duration-500 ease-in-out">
@@ -109,7 +106,6 @@ layout: default
       </button>
     </div>
   </section>
-  <div class="mx-6 lg:mx-10 hairline"></div>
   <script>
     (function () {
       var content = document.getElementById('full-story');
@@ -137,13 +133,13 @@ layout: default
   {% endif %}
 
   <!-- Outcomes — high-impact, full width -->
-  <section class="px-6 lg:px-10 py-12 lg:py-16">
+  <section class="px-6 lg:px-10 py-12 lg:py-16 max-w-7xl mx-auto">
     {% if page.outcomes %}
     <div class="px-6 lg:px-10 py-12 lg:py-16 bg-secondary/40 ">
       <span class="meta-tag block mb-12">Outcomes</span>
-      <div class="flex flex-col gap-10">
+      <div class="flex flex-col md:flex-row md:flex-wrap gap-10">
         {% for o in page.outcomes %}
-        <div class="flex flex-col items-start gap-4 md:col-span-2">
+        <div class="flex flex-col items-start gap-4 md:col-span-2 md:w-1/4">
           <span class="font-mono text-lg font-semibold text-accent leading-0">{{ o.number }}</span>
           <p class="text-base leading-relaxed">{{ o.label }}</p>
         </div>
@@ -151,20 +147,19 @@ layout: default
       </div>
     </div>
     {% endif %}
-    <div class="mx-6 lg:mx-10 hairline"></div>
-    <!-- Tools -->
-    {% if page.tools %}
-    <div class="px-6 lg:px-10 py-12 lg:py-16">
-      <span class="meta-tag block mb-12">Tools</span>
-      <div class="flex flex-wrap gap-1.5">
-        {% for t in page.tools %}
-        <span class="font-mono text-xs text-muted-foreground border border-border px-2 py-0.5">{{ t }}</span>
-        {% endfor %}
-      </div>
-    </div>
-    {% endif %} 
   </section>
-  <div class="mx-6 lg:mx-10 hairline"></div>
+
+  <!-- Tools -->
+  {% if page.tools %}
+  <section class="px-6 lg:px-10 py-12 lg:py-16 max-w-7xl mx-auto">
+    <span class="meta-tag block mb-12">Tools</span>
+    <div class="flex flex-wrap gap-1.5">
+      {% for t in page.tools %}
+      <span class="font-mono text-xs text-muted-foreground border border-border px-2 py-0.5">{{ t }}</span>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
 
   <!-- Footer nav -->
   <section class="px-6 lg:px-10 py-10 lg:py-14">
