@@ -48,7 +48,25 @@
       </button>
     <div class="uppercase font-mono text-xs">
       <span class="text-muted-foreground block">Rome, Italy</span>
-      <span class="text-muted block mt-1">41°54′N 12°29′E</span>
+      <span id="local-time" class="text-muted block mt-1"></span>
     </div>
   </div>
 </nav>
+
+<script>
+  (function () {
+    var el = document.getElementById('local-time');
+    if (!el) return;
+    function updateTime() {
+      el.textContent = new Intl.DateTimeFormat('en-GB', {
+        timeZone: 'Europe/Rome',
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: true,
+        timeZoneName: 'short'
+      }).format(new Date());
+    }
+    updateTime();
+    setInterval(updateTime, 1000);
+  })();
+</script>
