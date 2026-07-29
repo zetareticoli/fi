@@ -13,9 +13,15 @@
     <ul class="hidden lg:flex flex-col gap-3">
       {% assign nav_pages = site.pages | where_exp: "p", "p.nav == true" | sort: "nav_order" %}
       {% for nav_page in nav_pages %}
+      {% assign is_active = false %}
+      {% if page.url == nav_page.url %}
+        {% assign is_active = true %}
+      {% elsif nav_page.url != '/' and page.url contains nav_page.url %}
+        {% assign is_active = true %}
+      {% endif %}
       <li>
         <a href="{{ nav_page.url | relative_url }}"
-           class="text-sm font-semibold transition-colors duration-200 {% if page.url == nav_page.url %}text-foreground font-medium border-r-accent border-r-2 pr-2{% else %}text-muted-foreground hover:text-foreground hover:underline underline-offset-2{% endif %}">
+           class="text-sm font-semibold transition-colors duration-200 {% if is_active %}text-foreground font-medium border-r-accent border-r-2 pr-2{% else %}text-muted-foreground hover:text-foreground hover:underline underline-offset-2{% endif %}">
           {{ nav_page.nav_title | default: nav_page.title }}
         </a>
       </li>
