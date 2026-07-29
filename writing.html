@@ -7,20 +7,13 @@ nav_order: 4
 permalink: /writing/
 ---
 <div class="min-h-screen max-w-screen-xl">
-  <!-- <section class="px-6 lg:px-10 pt-16 lg:pt-24 pb-12 lg:pb-16">
-    <span class="meta-tag block mb-4">Blog</span>
-    <h1 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">Writing</h1>
-    <p class="mt-4 text-base text-muted-foreground max-w-2xl leading-relaxed">
-      Pieces about design, personal projects, career, and more.
-    </p>
-  </section> -->
 
-  <section class="py-12 lg:py-16 max-w-screen-xl">
+  <section>
     {% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
     {% for year_group in posts_by_year %}
     <div class="mb-12">
       <div class="flex items-baseline gap-4 mb-4">
-        <h2 class="font-heading text-2xl font-semibold">{{ year_group.name }}</h2>
+        <h2 class="font-heading text-2xl font-regular text-muted">{{ year_group.name }}</h2>
         <span class="meta-tag">{{ year_group.items | size }} entries</span>
       </div>
       <div class="flex flex-col">
@@ -30,7 +23,7 @@ permalink: /writing/
         <a href="{{ post.url | relative_url }}"
            class="group grid grid-cols-12 gap-2 lg:gap-4 py-3 hairline items-baseline hover:bg-secondary/50 transition-colors -mx-3 px-3 animate-in" style="transition-delay: {{ forloop.index | times: 120 }}ms">
           <!-- <span class="col-span-2 lg:col-span-1 meta-tag">[LOG.{{ n | prepend: '00' | slice: -2, 2 }}]</span> -->
-          <span class="col-span-7 lg:col-span-9 text-sm group-hover:text-accent transition-colors">{{ post.title }}</span>
+          <span class="col-span-7 lg:col-span-9 text-base font-medium group-hover:text-accent transition-colors">{{ post.title }}</span>
           <span class="col-span-3 lg:col-span-2 text-right meta-tag">{{ post.date | date: "%-d %b" }}</span>
         </a>
         {% endfor %}

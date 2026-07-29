@@ -1,36 +1,29 @@
 ---
-layout: default
-title: "About"
+layout: page
+title: "Hi, I'm Francesco."
 nav: true
 nav_title: "About"
 nav_order: 1
 permalink: /about/
 ---
 <div class="min-h-screen max-w-screen-xl">
-  <section class="px-6 lg:px-10 pt-16 lg:pt-36 pb-12 lg:pb-16">
-    <span class="meta-tag block mb-4">About me</span>
-    <h1 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
-      I'm a designer with<br />a love for coding.
-    </h1>
-  </section>
-
-  <div class="mx-6 lg:mx-10 hairline"></div>
 
   <!-- Bio + Portrait -->
-  <section class="px-6 lg:px-10 py-12 xl:py-16">
+  <section>
     <div class="grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-12">
       <div class="md:col-span-7 flex flex-col gap-6">
-        <p class="text-lg leading-relaxed font-medium">
-          For the past 17 years, I've worked as a Product Designer designing and building a wide range of digital
-          products. I believe that good design should be both functional and aesthetically pleasing, and strive to
+        <p class="text-lg font-medium leading-relaxed">
+          I'm a designer with two decades of experience designing products for government, big companies and small businesses
+        </p>
+        <p class="text-base text-muted-foreground leading-relaxed">
+          I believe that good design should be both functional and aesthetically pleasing, and strive to
           create intuitive and engaging user experiences.
         </p>
-        <p class="text-base text-muted-foreground leading-relaxed">During my career, I've had the pleasure of working
-          with a variety of clients in fields such as editorial, healthcare, banking, sports, public administration,
+        <p class="text-base text-muted-foreground leading-relaxed">During my career, I've worked for companies in different fields such as editorial, healthcare, banking, sports, government,
           e-commerce, and information technology. I worked for companies such as <span class="text-primary">Scuderia
             Ferrari F1</span>, <span class="text-primary">Enel Energia</span>, <span class="text-primary">ING
             Direct</span>, and <span class="text-primary">HCL Software</span>, as a freelance or full-time job. 
-            In 2009, <span class="text-primary">I co-founded a SaaS company</span> focused on domain management tools</span>. The company and software was acquired in 2013.
+            In 2009, <span class="text-primary">I co-founded a SaaS company</span>.
         </p>
         <p class="text-base text-muted-foreground leading-relaxed">Most recently, I serve as Senior Product Designer at
           the <span class="text-primary">Italian Department for Digital Transformation</span> where I'm responsible for
@@ -61,7 +54,7 @@ permalink: /about/
     </div>
   </section>
 
-  <section class="px-6 lg:px-10 py-6 lg:py-8">
+  <section>
     <!-- <span class="meta-tag block mb-8">Skills</span> -->
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
       <div class="lg:col-span-6">
@@ -135,7 +128,7 @@ permalink: /about/
   <section class="grid md:grid-cols-12 gap-4">
 
     <!-- Teaching -->
-    <section class="col-span-12 lg:col-span-6 px-6 lg:px-10 py-12 xl:py-16">
+    <section class="col-span-12 lg:col-span-6 py-12 xl:py-16">
       <span class="meta-tag block mb-8">TEACHING</span>
       <div class="flex flex-col gap-4">
         {% for t in site.data.about.teaching %}
@@ -151,7 +144,7 @@ permalink: /about/
     </section>
 
     <!-- Speaking -->
-    <section class="col-span-12 lg:col-span-6 px-6 lg:px-10 py-12 xl:py-16">
+    <section class="col-span-12 lg:col-span-6 py-12 xl:py-16">
       <span class="meta-tag block mb-8">SPEAKING</span>
       <div class="flex flex-col gap-4 lg:gap-0 mb-12">
         {% for talk in site.data.about.speaking %}

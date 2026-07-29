@@ -1,36 +1,18 @@
 ---
 layout: page
-title: Work
-tag: Professional Experience
+title: A collection of professional projects I've worked on.
 nav: true
 nav_title: "Work"
 nav_order: 3
-description: A collection of professional projects I've worked on.
 ---
 
 <div class="min-h-screen">
 
-  <!-- Featured -->
-  <!-- <section class="grid grid-cols-1 lg:grid-cols-12 gap-2">
-    {%- assign sorted_work = site.work | sort: "period" | reverse -%}
-    {% for project in sorted_work %}
-    {% if project.published == false %}{% continue %}{% endif %}
-    <div class="col-span-1 lg:col-span-4 py-8 animate-in group" style="transition-delay: {{ forloop.index | times: 120 }}ms;">
-
-          <a href="{{ project.url | relative_url }}" target="_blank" rel="noopener noreferrer" class="block">
-            <figure><img src="{{ project.cover | relative_url }}" alt="{{ project.title }}" class="w-full h-64 object-cover transition-transform duration-300"></figure>
-            <h3 class="text-xl lg:text-2xl font-heading font-semibold hover:text-accent transition-colors"><a class="hover:text-accent transition-colors" href="{{ project.url | relative_url }}" target="_blank" rel="noopener noreferrer">{{ project.title }}</a></h3>
-            <p class="text-sm text-muted-foreground leading-relaxed mt-3">{{ project.overview }}</p>
-          </a>
-    </div>
+  <section class="justified-gallery">
+    {% for item in site.data.featured %}
+      {% include featured.html %}
     {% endfor %}
-  </section> -->
-
-    <section class="justified-gallery pt-12 lg:pt-16">
-      {% for item in site.data.featured %}
-        {% include featured.html %}
-      {% endfor %}
-    </section>
+  </section>
 
   <div class="mx-6 lg:mx-10 hairline"></div>
 
