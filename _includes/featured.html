@@ -1,6 +1,19 @@
 <a href="{{ item.url | relative_url }}" target="_blank" rel="noopener noreferrer"
   class="justified-item group animate-in overflow-hidden"
   style="--ar: {{ item.ar | default: 1.5 }}; transition-delay: {{ forloop.index | times: 120 }}ms;">
-  <img src="{{ item.image | relative_url }}" alt="{{ item.title }}"
-    class="w-full transition-transform duration-300 ease-out group-hover:scale-105">
+  {% if item.video %}
+  <video autoplay loop muted playsinline preload="auto">
+    <source src="{{ item.video | relative_url }}" type="video/mp4">
+  </video>
+  <script>
+    document.querySelectorAll('video[autoplay]').forEach((video) => {
+      video.muted = true;
+      video.playsInline = true;
+      video.play().catch(() => {});
+    });
+  </script>
+  {% else %}  
+    <img src="{{ item.image | relative_url }}" alt="{{ item.title }}"
+      class="w-full transition-transform duration-300 ease-out group-hover:scale-105">
+  {% endif %}
 </a>

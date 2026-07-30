@@ -2,6 +2,7 @@
 layout: work
 title: Design System .italia
 cover: "/img/work/design-system-italia/design-system-italia-cover.webp"
+video: "/img/work/design-system-italia/video-corto-web.mp4"
 tag: Design System
 order: 1
 overview: The official design system for the Italian public administration digital services.
@@ -30,7 +31,7 @@ tools:
   - WCAG 2.1
   - GitHub
   - Web Components
-images:
+gallery:
   - /img/work/design-system-italia/design-system-italia-1.jpg
   - /img/work/design-system-italia/design-system-italia-1.jpg
   - /img/work/design-system-italia/design-system-italia-1.jpg
@@ -41,7 +42,12 @@ permalink: /work/design-system-italia/
 
 Design System .italia is maintained as a fully open-source project on GitHub. This means every decision — a component's default state, a naming convention, a colour token — is made in public and subject to community scrutiny. Early on, this felt like a constraint. Over time, it became a quality mechanism.
 
+<figure class="animate-in xl:col-span-6 bg-secondary/40 p-10 rounded-xl">
+  <img src="/img/work/design-system-italia/design-system-italia-1.jpg" alt="Design System Italia" class="w-full h-auto object-cover" loading="lazy" />
+</figure>
+
 Feedback from agency developers pushing their first pull requests revealed assumptions baked into the component API that would have gone unnoticed in a closed process. Maintaining that open channel required a different kind of discipline: writing decision rationale in commit messages, responding to issues from municipalities with no dedicated design team, and explaining trade-offs to people who had never worked with a design system before.
+
 
 ## The hardest tension: flexibility vs. coherence
 
@@ -62,3 +68,16 @@ This meant slower iteration cycles. When a new component required back-and-forth
 Fifteen thousand public administration websites didn't adopt the design system because it was good. They adopted it because the path to adoption was designed as carefully as the components themselves.
 
 This meant producing migration guides and Figma starter kits targeting designers with no design system experience, running community labs to surface adoption blockers before they stalled implementations, and working with the web agencies actually building the sites to make Bootstrap Italia the path of least resistance rather than an additional compliance burden.
+
+## Community labs
+
+Community Labs were a series of workshops designed to help public administration teams adopt the design system. They were a chance to learn about the design system, get hands-on with the components, and get feedback on their implementations.
+
+<iframe
+  src="https://www.youtube.com/embed/QyzK93Huhy8"
+  title="Design System Italia"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+  width="560"
+  height="315"
+></iframe>

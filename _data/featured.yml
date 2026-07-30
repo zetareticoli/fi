@@ -1,5 +1,5 @@
 # ar = aspect ratio (width / height) of the image, used by the justified gallery
-- image: /img/work/design-system-italia/design-system-italia-cover.webp
+- video: /img/work/design-system-italia/video-corto-web.mp4
   url: /work/design-system-italia/
   ar: 2.336
 - image: /img/projects/tokenlens.webp
