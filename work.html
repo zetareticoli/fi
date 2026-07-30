@@ -1,6 +1,6 @@
 ---
 layout: page
-title: A collection of professional projects I've worked on.
+title: Professional Highlights
 nav: true
 nav_title: "Work"
 nav_order: 3
@@ -8,7 +8,12 @@ nav_order: 3
 
 <div class="min-h-screen">
 
-  <section class="justified-gallery">
+  <section class="grid grid-flow-col gap-8 grid-cols-3 grid-rows-1 mb-16">
+    <p class="text-muted-foreground">My career as a designer started in 2005 at an advertising agency, where I created print ads. I began learning web design on my own and helped the agency publish its first website and expand into the digital world. <span class="text-primary">That experience changed my career path forever.</span></p>
+    <p class="text-muted-foreground">Here’s a collection of notable projects and companies I’ve worked on. Some have strong visuals to share; others don’t. Every one of them has a story to tell.</p>
+  </section>
+  <span class="meta-tag block mb-8">Work Highlights</span>
+  <section class="work-grid">
     {% for item in site.data.featured %}
       {% include featured.html %}
     {% endfor %}
@@ -18,20 +23,33 @@ nav_order: 3
 
   <!-- Timeline -->
   <section class="pt-12 lg:pt-16">
-    <span class="meta-tag block mb-8">More Experience</span>
-    <div class="flex flex-col">
-      {% for exp in site.data.work.timeline %}
-      <div class="grid grid-cols-12 gap-2 lg:gap-4 py-3.5 hairline items-baseline">
-        <!-- <span class="col-span-2 lg:col-span-1 meta-tag">[{{ exp.tag }}]</span> -->
-        <span class="col-span-1 meta-tag">{{ exp.year }}</span>
-        <span class="col-span-3 lg:col-span-2 text-sm font-medium truncate">{{ exp.org }}</span>
-        <span class="col-span-6 lg:col-span-8 text-sm text-muted-foreground">{{ exp.description }}</span>
+    <span class="meta-tag block mb-8">Notable Companies</span>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 items-start">
+      {% for brand in site.data.brands %}
+      <div class="group animate-in bg-card-foreground"
+        style="transition-delay: {{ forloop.index | times: 60 }}ms;">
+        <div class="flex items-center gap-3 p-4">
+          {% if brand.logo %}
+          <img src="{{ brand.logo | relative_url }}" alt="{{ brand.org }} logo"
+            class="w-30 h-30 shrink-0 object-contain {% if brand.inverse %}grayscale dark:invert{% else %}grayscale{% endif %}">
+          {% else %}
+          <h3 class="w-10 h-10 shrink-0 flex items-center justify-center font-mono text-lg font-bold">
+            {{ brand.org | slice: 0, 2 | upcase }}
+          </h3>
+          {% endif %}
+          <div class="flex-1 min-w-0">
+            <p class="text-sm font-medium truncate">{{ brand.org }}</p>
+            <p class="text-xs text-muted-foreground truncate"></p>
+            <p class="pb-4 text-sm text-muted-foreground leading-relaxed">{{ brand.description }}</p>
+            <span class="meta-tag">{{ brand.role }} &middot; {{ brand.year }}</span>
+          </div>
+        </div>
       </div>
       {% endfor %}
     </div>
     <a href="{{ site.linkedin }}" target="_blank" rel="noopener noreferrer"
       class="mt-8 inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors underline underline-offset-2">
-      Full experience on LinkedIn ↗
+      Visit my LinkedIn profile ↗
     </a>
   </section>
 </div>

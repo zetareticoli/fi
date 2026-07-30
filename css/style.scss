@@ -74,6 +74,14 @@ html {
   background: hsla(31, 100%, 50%, 0.18);
 }
 
+/* Remove native disclosure marker from <summary> (Safari/WebKit fallback) */
+summary {
+  list-style: none;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+
 /* Stagger animation */
 .animate-in {
   opacity: 0;
