@@ -1,34 +1,60 @@
-# ar = aspect ratio (width / height) of the image, used by the justified gallery
+# Ogni progetto dichiara quante colonne (su 12) e righe occupa nella work-grid,
+# per breakpoint (md = tablet, lg = desktop, xl = desktop largo).
+# Un breakpoint non specificato eredita il valore del breakpoint precedente
+# (xl -> lg -> md). Su mobile il layout è sempre impilato a colonna singola.
 - video: /img/work/design-system-italia/video-corto-web.mp4
   url: /work/design-system-italia/
-  ar: 2.336
+  grid:
+    md: { col: 6, row: 1 }
+    lg: { col: 6, row: 1 }
 - image: /img/projects/tokenlens.webp
   url: https://tokenlens.app
-  ar: 1.778
-- image: /img/work/citynews/citynews-corporate-intro-homepage.webp
-  url: /work/citynews/
-  ar: 1.333
-- video: "/img/work/digital-public-services/test-video.mp4"
-  url: /work/digital-public-services/
-  ar: 2.336
-- image: /img/work/citynews/citynews-experience.webp
-  url: /work/citynews/
-  ar: 1.689
+  grid:
+    md: { col: 6, row: 1 }
+    lg: { col: 4, row: 1 }
 - image: /img/work/citynews/mobile-app-video.mp4
   url: /work/citynews/
-  ar: 0.524
+  grid:
+    md: { col: 2, row: 2 }
+    lg: { col: 2, row: 1 }
+- image: /img/work/citynews/citynews-corporate-intro-homepage.webp
+  url: /work/citynews/
+  grid:
+    md: { col: 6, row: 1 }
+    lg: { col: 4, row: 1 }
+- video: "/img/work/digital-public-services/test-video.mp4"
+  url: /work/digital-public-services/
+  grid:
+    md: { col: 4, row: 1 }
+    lg: { col: 8, row: 1 }
+- image: /img/work/citynews/citynews-experience.webp
+  url: /work/citynews/
+  grid:
+    md: { col: 6, row: 1 }
+    lg: { col: 4, row: 1 }
+
 - image: /img/work/noemalife/athena-tracking.webp
   url: /work/noemalife/
-  ar: 1.778
+  grid:
+    md: { col: 6, row: 1 }
+    lg: { col: 4, row: 1 }
 - image: /img/work/digital-public-services/digital-public-services-1.png
   url: /work/digital-public-services/
-  ar: 1.444
+  grid:
+    md: { col: 6, row: 1 }
+    lg: { col: 4, row: 1 }
 - image: /img/work/robodomain/robodomain-cover.webp
   url: /work/robodomain/
-  ar: 2.336
+  grid:
+    md: { col: 12, row: 1 }
+    lg: { col: 8, row: 1 }
 - image: /img/work/noemalife/02-ctp-1.png
   url: /work/noemalife/
-  ar: 1.449
+  grid:
+    md: { col: 6, row: 1 }
+    lg: { col: 4, row: 1 }
 - image: /img/work/citynews/today-brand.webp
   url: /work/citynews/
-  ar: 1.333
+  grid:
+    md: { col: 6, row: 1 }
+    lg: { col: 4, row: 1 }
