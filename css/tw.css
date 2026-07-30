@@ -148,10 +148,10 @@
    * and everything scales proportionally with the viewport.
    */
   .justified-gallery {
-    --row-height: 20rem; /* base row height; final height adapts per row */
+    --row-height: 22rem; /* base row height; final height adapts per row */
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 8px;
   }
 
   .justified-gallery > .justified-item {

@@ -1,6 +1,6 @@
 <footer class="lg:ml-48 px-6 lg:px-10 pb-10 mt-8">
   <div class="hairline pt-8">
-    <div class="flex sm:flex-row flex-col-reverse justify-between gap-6">
+    <div class="flex sm:flex-row flex-col-reverse justify-between gap-10">
       <div class="flex flex-col gap-2">
         <p class="text-sm text-muted leading-relaxed max-w-md mb-8">
           <span class="text-muted-foreground">Designed and built by {{ site.author.name }}</span>. <br>
@@ -10,12 +10,12 @@
       </div>
       <div class="flex flex-col gap-2 sm:text-right">
         <span class="meta-tag">Connect with me</span>
-        <div class="flex flex-col gap-1">
-          <a href="mailto:{{ site.email }}" class="text-sm text-muted-foreground hover:text-foreground transition-colors">
-            {{ site.author.email }}
+        <div class="flex gap-4">
+          <a href="mailto:{{ site.author.email }}" class="text-sm text-muted-foreground hover:text-foreground transition-colors underline underline-offset-2">
+            Mail
           </a>
           {% for social in site.author.social %}
-          <a href="{{ social.url }}" target="_blank" rel="noopener noreferrer" class="text-sm text-muted-foreground hover:text-foreground transition-colors">{{ social.name }}</a>
+          <a href="{{ social.url }}" target="_blank" rel="noopener noreferrer" class="text-sm text-muted-foreground hover:text-foreground transition-colors underline underline-offset-2">{{ social.name }}</a>
           {% endfor %}
         </div>
       </div>
