@@ -8,15 +8,15 @@
 - image: /img/work/citynews/citynews-corporate-intro-homepage.webp
   url: /work/citynews/
   ar: 1.333
-- image: /img/work/digital-public-services/digital-public-services-cover.webp
+- video: "/img/work/digital-public-services/test-video.mp4"
   url: /work/digital-public-services/
   ar: 2.336
 - image: /img/work/citynews/citynews-experience.webp
   url: /work/citynews/
   ar: 1.689
-- image: /img/work/citynews/citynews-mobile-apps.webp
+- image: /img/work/citynews/mobile-app-video.mp4
   url: /work/citynews/
-  ar: 1.49
+  ar: 0.524
 - image: /img/work/noemalife/athena-tracking.webp
   url: /work/noemalife/
   ar: 1.778
