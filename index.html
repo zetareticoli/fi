@@ -29,7 +29,7 @@ permalink: /
   <section class="px-6 lg:px-10 py-16 lg:py-20">
     <h2 class="meta-tag text-sm uppercase tracking-widest mb-8">Featured Work</h2>
     <div class="work-grid mb-12">
-      {% for item in site.data.featured limit: 6 %}
+      {% for item in site.data.featured limit: 5 %}
       {% include featured.html %}
       {% endfor %}
     </div>

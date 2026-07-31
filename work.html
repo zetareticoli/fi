@@ -28,20 +28,15 @@ nav_order: 3
       {% for brand in site.data.brands %}
       <div class="group animate-in bg-card-foreground"
         style="transition-delay: {{ forloop.index | times: 60 }}ms;">
-        <div class="flex items-center gap-3 p-4">
+        <div class="flex items-center gap-8 p-8">
           {% if brand.logo %}
           <img src="{{ brand.logo | relative_url }}" alt="{{ brand.org }} logo"
             class="w-30 h-30 shrink-0 object-contain {% if brand.inverse %}grayscale dark:invert{% else %}grayscale{% endif %}">
-          {% else %}
-          <h3 class="w-10 h-10 shrink-0 flex items-center justify-center font-mono text-lg font-bold">
-            {{ brand.org | slice: 0, 2 | upcase }}
-          </h3>
           {% endif %}
           <div class="flex-1 min-w-0">
-            <p class="text-sm font-medium truncate">{{ brand.org }}</p>
-            <p class="text-xs text-muted-foreground truncate"></p>
+            <p class="text-lg font-medium truncate">{{ brand.org }}</p>
             <p class="pb-4 text-sm text-muted-foreground leading-relaxed">{{ brand.description }}</p>
-            <span class="meta-tag">{{ brand.role }} &middot; {{ brand.year }}</span>
+            <span class="meta-tag">{{ brand.role }} &middot; {{ brand.contract }} &middot; {{ brand.year }}</span>
           </div>
         </div>
       </div>

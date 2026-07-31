@@ -153,8 +153,7 @@
   .work-grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-auto-rows: 1fr;
-    grid-template-rows: auto;
+    grid-auto-rows: auto;
     gap: 8px;
   }
 
@@ -173,7 +172,6 @@
   @media (min-width: 768px) {
     .work-grid {
       grid-template-columns: repeat(12, 1fr);
-      grid-auto-rows: 11rem; /* base row unit; --row-* multiplies it */
       grid-auto-flow: dense; /* backfill gaps left by items with different spans */
     }
 
@@ -193,11 +191,13 @@
     .work-grid > .work-item {
       grid-column: span var(--col-lg, var(--col-md, 6));
       grid-row: span var(--row-lg, var(--row-md, 1));
+      grid-auto-rows: 30rem; /* base row unit; --row-* multiplies it */
     }
   }
 
-  @media (min-width: 1280px) {
+  @media (min-width: 1440px) {
     .work-grid > .work-item {
+      grid-auto-rows: minmax(25rem, 480px);
       grid-column: span var(--col-xl, var(--col-lg, var(--col-md, 6)));
       grid-row: span var(--row-xl, var(--row-lg, var(--row-md, 1)));
     }

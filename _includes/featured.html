@@ -5,7 +5,8 @@
   class="work-item group animate-in overflow-hidden"
   style="{% if md %}--col-md: {{ md.col }}; --row-md: {{ md.row | default: 1 }};{% endif %}{% if lg %} --col-lg: {{ lg.col }}; --row-lg: {{ lg.row | default: 1 }};{% endif %}{% if xl %} --col-xl: {{ xl.col }}; --row-xl: {{ xl.row | default: 1 }};{% endif %} transition-delay: {{ forloop.index | times: 120 }}ms;">
   {% if item.video %}
-  <video autoplay loop muted playsinline preload="auto">
+  <video autoplay loop muted playsinline preload="auto"
+    class="w-full transition-transform duration-300 ease-out group-hover:scale-105">
     <source src="{{ item.video | relative_url }}" type="video/mp4">
   </video>
   <script>

@@ -930,9 +930,6 @@
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
   }
-  .mt-16 {
-    margin-top: calc(var(--spacing) * 16);
-  }
   .mb-1 {
     margin-bottom: var(--spacing);
   }
@@ -987,9 +984,6 @@
   .h-1\.5 {
     height: calc(var(--spacing) * 1.5);
   }
-  .h-10 {
-    height: calc(var(--spacing) * 10);
-  }
   .h-24 {
     height: calc(var(--spacing) * 24);
   }
@@ -1022,9 +1016,6 @@
   }
   .w-5 {
     width: calc(var(--spacing) * 5);
-  }
-  .w-10 {
-    width: calc(var(--spacing) * 10);
   }
   .w-30 {
     width: calc(var(--spacing) * 30);
@@ -1077,14 +1068,8 @@
   .list-none {
     list-style-type: none;
   }
-  .grid-flow-col {
-    grid-auto-flow: column;
-  }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-  .grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
   .grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1238,8 +1223,8 @@
   .p-1 {
     padding: var(--spacing);
   }
-  .p-4 {
-    padding: calc(var(--spacing) * 4);
+  .p-8 {
+    padding: calc(var(--spacing) * 8);
   }
   .p-10 {
     padding: calc(var(--spacing) * 10);
@@ -1670,11 +1655,6 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
-  .md\:grid-cols-3 {
-    @media (width >= 48rem) {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-  }
   .md\:grid-cols-12 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -1758,11 +1738,6 @@
   .lg\:w-48 {
     @media (width >= 64rem) {
       width: calc(var(--spacing) * 48);
-    }
-  }
-  .lg\:grid-cols-3 {
-    @media (width >= 64rem) {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
   .lg\:grid-cols-12 {
@@ -2140,8 +2115,7 @@
   .work-grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-auto-rows: 1fr;
-    grid-template-rows: auto;
+    grid-auto-rows: auto;
     gap: 8px;
   }
   .work-grid > .work-item {
@@ -2155,7 +2129,6 @@
   @media (min-width: 768px) {
     .work-grid {
       grid-template-columns: repeat(12, 1fr);
-      grid-auto-rows: 11rem;
       grid-auto-flow: dense;
     }
     .work-grid > .work-item {
@@ -2171,10 +2144,12 @@
     .work-grid > .work-item {
       grid-column: span var(--col-lg, var(--col-md, 6));
       grid-row: span var(--row-lg, var(--row-md, 1));
+      grid-auto-rows: 30rem;
     }
   }
-  @media (min-width: 1280px) {
+  @media (min-width: 1440px) {
     .work-grid > .work-item {
+      grid-auto-rows: minmax(25rem, 480px);
       grid-column: span var(--col-xl, var(--col-lg, var(--col-md, 6)));
       grid-row: span var(--row-xl, var(--row-lg, var(--row-md, 1)));
     }

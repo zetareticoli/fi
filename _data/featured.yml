@@ -7,54 +7,58 @@
   grid:
     md: { col: 6, row: 1 }
     lg: { col: 6, row: 1 }
-- image: /img/projects/tokenlens.webp
-  url: https://tokenlens.app
+    xl: { col: 5, row: 1 }
+- image: /img/work/padigitale2026/padigitale2026.webp
+  url: /work/padigitale2026/
+  grid:
+    md: { col: 6, row: 1 }
+    lg: { col: 6, row: 1 }
+    xl: { col: 4, row: 1 }
+- video: "/img/work/digital-public-services/test-video.mp4"
+  url: /work/digital-public-services/
+  grid:
+    md: { col: 4, row: 1 }
+    lg: { col: 4, row: 1 }
+    xl: { col: 3, row: 2 }
+- image: /img/work/citynews/romatoday-mobile-app.webp
+  url: /work/citynews/
   grid:
     md: { col: 6, row: 1 }
     lg: { col: 4, row: 1 }
-- image: /img/work/citynews/mobile-app-video.mp4
+    xl: { col: 3, row: 1 }
+- image: /img/work/digital-public-services/comuni-website.webp
+  url: /work/digital-public-services/
+  grid:
+    md: { col: 6, row: 1 }
+    lg: { col: 6, row: 1 }
+    xl: { col: 6, row: 1 }
+- image: /img/work/citynews/today-video.mp4
   url: /work/citynews/
   grid:
-    md: { col: 2, row: 2 }
-    lg: { col: 2, row: 1 }
+    md: { col: 6, row: 1 }
+    lg: { col: 4, row: 1 }
+    xl: { col: 6, row: 1 }
 - image: /img/work/citynews/citynews-corporate-intro-homepage.webp
   url: /work/citynews/
   grid:
     md: { col: 6, row: 1 }
     lg: { col: 4, row: 1 }
-- video: "/img/work/digital-public-services/test-video.mp4"
-  url: /work/digital-public-services/
-  grid:
-    md: { col: 4, row: 1 }
-    lg: { col: 8, row: 1 }
-- image: /img/work/citynews/citynews-experience.webp
-  url: /work/citynews/
-  grid:
-    md: { col: 6, row: 1 }
-    lg: { col: 4, row: 1 }
-
-- image: /img/work/noemalife/athena-tracking.webp
+    xl: { col: 6, row: 1 }
+- image: /img/work/noemalife/galileo-mobile.webp
   url: /work/noemalife/
   grid:
-    md: { col: 6, row: 1 }
-    lg: { col: 4, row: 1 }
-- image: /img/work/digital-public-services/digital-public-services-1.png
-  url: /work/digital-public-services/
-  grid:
-    md: { col: 6, row: 1 }
-    lg: { col: 4, row: 1 }
-- image: /img/work/robodomain/robodomain-cover.webp
+    md: { col: 3, row: 1 }
+    lg: { col: 3, row: 1 }
+    xl: { col: 2, row: 1 }
+- image: /img/work/robodomain/robodomain.webp
   url: /work/robodomain/
   grid:
-    md: { col: 12, row: 1 }
-    lg: { col: 8, row: 1 }
-- image: /img/work/noemalife/02-ctp-1.png
-  url: /work/noemalife/
-  grid:
     md: { col: 6, row: 1 }
-    lg: { col: 4, row: 1 }
-- image: /img/work/citynews/today-brand.webp
+    lg: { col: 6, row: 1 }
+    xl: { col: 5, row: 1 }
+- image: /img/work/seejay/seejay.webp
   url: /work/citynews/
   grid:
     md: { col: 6, row: 1 }
-    lg: { col: 4, row: 1 }
+    lg: { col: 6, row: 1 }
+    xl: { col: 5, row: 1 }
