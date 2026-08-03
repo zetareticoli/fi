@@ -1131,6 +1131,9 @@
   .gap-10 {
     gap: calc(var(--spacing) * 10);
   }
+  .gap-16 {
+    gap: calc(var(--spacing) * 16);
+  }
   .gap-x-10 {
     column-gap: calc(var(--spacing) * 10);
   }
