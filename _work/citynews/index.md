@@ -4,20 +4,18 @@ title: Designing News
 cover: "/img/work/citynews/citynews-cover.webp"
 overview: Led the design team of a major Italian media company.
 order: 1
-summary: I worked at Citynews for nearly a decade. During this time, I established a design team and ushered in new working methodologies. This led to the successful launch of several projects, such as a corporate brand identity, new products, and a Design System.<br><br> In 2021, I bid farewell to Citynews after nearly ten years of committed design work. What started as a freelance opportunity blossomed into a significant chapter in my career.<br><br> This case study explores the transformative journey I embarked on at Citynews, focusing on key projects, technical constraints, personal growth, and the challenges I surmounted along the way.
 cover-alt: Screenshot of the intro video published on the Citynews website homepage
 org: Citynews
 period: 2012-2021
 role: Head of Design
-context: Citynews provided me with an incredible canvas for creativity and innovation. Starting as a freelance designer, I initially joined to redesign their brand websites and community platforms.
-challenge: Transforming the company from a small startup to a major player in the digital media industry, creating a design team and introducing new working methodologies.]
+context: Citynews is a major italian media company with a portfolio of over 55 local news websites and mobile apps. It reaches over 30M readers and 280M page views per month across 56 local editions, with a business built on advertising (3,100+ clients) and a strong social presence (15M followers).
+challenge: Build a design team and create a cohesive experience across local and national editions, while introducing new ways of working.
 activities: 
-  - label: Leading a team
-  - label: Defining design strategy
-  - label: Leading design on multiple projects
-  - label: Managing stakeholders
-  - label: Creating a Design System
-  - label: Hiring & mentoring designers
+  - label: Manage a design team, aligning varying skill sets and perspectives required communication, patience, and adaptability.
+  - label: Define a design strategy and create a cohesive experience across local and national editions.
+  - label: Collaborate with stakeholders to define the product roadmap and vision.
+  - label: Create a Design System to ensure consistency across all products, keeping a coherent visual identity 
+  - label: Design for multiple platforms, adapting concepts from web to mobile, requiring attention to detail and extensive testing.
 images:
   - /img/work/citynews/citynews-hp-sketch.webp
   - /img/work/citynews/today-brand.webp
@@ -31,73 +29,78 @@ images:
 permalink: /work/citynews/
 ---
 
+
 ## From freelancing to leading the design team
 
-Citynews provided me with an incredible canvas for creativity and innovation. Starting as a freelance designer, I initially joined to redesign their brand websites and community platforms. 
+Citynews provided me with an incredible canvas for creativity and innovation. I joined initially as a **freelance designer**, redesigning the brand websites and community platforms of individual local editions.
 
-My responsibilities expanded in 2015 when I was called back to spearhead a responsive design strategy and revamp the brand identity across all editorial products. 
+My responsibilities expanded in 2015, when I was called back to spearhead a responsive design strategy and revamp the brand identity across all editorial products. In April 2016, I officially joined the company as **Head of Design**, going on to build and lead the product design team over the following years.
 
-In April 2016, I officially joined the company as the **Head of Design**.
+Across this journey, my work centered on three major products: a shared brand identity built to scale, a design system spanning every platform, and a renewed corporate identity for the company itself.
 
-<!-- <div class="flex direction-col-to-row">
+### A brand identity built to scale
+
+One of the earliest challenges was designing a **unique brand identity** that could be shared consistently across dozens of local and national editions, while remaining flexible enough to scale smoothly to new market openings as Citynews kept expanding.
+
+<div class="flex direction-col-to-row">
   <figure>
-    <img src="/img/projects/citynews/citynews-hp-sketch.webp" alt="">
+    <img src="/img/work/citynews/citynews-hp-sketch.webp" alt="">
     <figcaption class="color-text-light">2012 — Early sketches of the new homepage for editorial brands</figcaption>
   </figure>
   <figure>
-    <img src="/img/projects/citynews/today-brand.webp" alt="">
+    <img src="/img/work/citynews/today-brand.webp" alt="">
     <figcaption class="color-text-light">2013 — Shape details of the brand identity for Today.it brand</figcaption>
   </figure>
   <figure>
-    <img src="/img/projects/citynews/citynews-ui-kit.webp" alt="">
+    <img src="/img/work/citynews/citynews-ui-kit.webp" alt="">
     <figcaption class="color-text-light">2013 — UI kit snap preview</figcaption>
   </figure>
-</div> -->
+</div>
 
-Over the years, I led the product design team, nurturing and collaborating with talented individuals who embraced my vision. 
+Over the years, I led the product design team, nurturing and collaborating with talented individuals who embraced this vision, and established a robust workflow in tandem with various departments, introducing cutting-edge tools and methodologies.
 
-Together, we established a robust workflow in tandem with various departments, introducing cutting-edge tools and methodologies. 
+### A design system for every platform
 
-A significant milestone was the creation of the **Global Design Language (GDL)**, a comprehensive Design System aimed at delivering exceptional experiences across all corporate brands. We introduced in late 2020 and it's currently used.
+A significant milestone was the creation of the **Global Design Language (GDL)**, a comprehensive design system built to let any team design digital products consistently across **web**, **iOS**, and **Android**. Introduced in late 2020, it's still in use today.
 
-<!-- <div class="flex direction-col-to-row">
+<div class="flex direction-col-to-row">
   <figure>
-    <img src="/img/projects/citynews/citynews-gdl-products.webp" alt="">
+    <img src="/img/work/citynews/citynews-gdl-products.webp" alt="">
     <figcaption class="color-text-light">2019-2020 — The Global Design Language in action: for multiple brands on multiple devices</figcaption>
   </figure>
   <figure>
-    <img src="/img/projects/citynews/citynews-gdl-styleguide.webp" alt="">
+    <img src="/img/work/citynews/citynews-gdl-styleguide.webp" alt="">
     <figcaption class="color-text-light">2019-2020 — The Global Design Language styleguide built on Fractal</figcaption>
   </figure>
-</div> -->
+</div>
 
-Additionally, I oversaw the redesign of internal tools such as the **Content Management System** (CMS) and **Customer Relantionship Management** (powered by SuiteCRM), collaborating closely with people from various departments.
+Alongside the GDL, I oversaw the redesign of internal tools such as the **Content Management System** (CMS) and **Customer Relationship Management** (powered by SuiteCRM), collaborating closely with people from various departments.
 
-<!-- <figure>
-  <img src="/img/projects/citynews/citynews-mobile-apps.webp" alt="">
+<figure>
+  <img src="/img/work/citynews/citynews-mobile-apps.webp" alt="">
   <figcaption class="color-text-light">2020 — iOS mobile app v6</figcaption>
-</figure> -->
+</figure>
 
-The evolution continued as we crafted **iOS** and **Android mobile apps**, iterating from v1 to v6. I lead the design and development work, managing external resources and suppliers.
+The design system also powered the evolution of the **iOS** and **Android mobile apps**, which I designed and helped develop from v1 to v6, managing external resources and suppliers along the way. I personally developed the responsive design strategy behind this work, optimizing the **design**, **front-end**, and **development** workflows.
 
-I personally developed a responsive design strategy, optimizing the **design**, **front-end**, and **development** workflows. 
+### A corporate identity rooted in local storytelling
 
-<!-- <div class="flex direction-col-to-row">
+In 2018, we launched the new **corporate website**, built on a coherent, flexible, and scalable visual identity shared with all Citynews brands. Its main goal was to communicate the company's core value: a strong **presence across the territory** and the ability to tell the stories of local communities through **video services** and **reportage**.
+
+<div class="flex direction-col-to-row">
   <figure>
-    <img src="/img/projects/citynews/citynews-corporate-brands.webp" alt="">
+    <img src="/img/work/citynews/citynews-corporate-brands.webp" alt="">
     <figcaption class="color-text-light">2018 — The Brands page of corporate website</figcaption>
   </figure>
   <figure>
-    <img src="/img/projects/citynews/citynews-corporate-intro-homepage.webp" alt="">
+    <img src="/img/work/citynews/citynews-corporate-intro-homepage.webp" alt="">
     <figcaption class="color-text-light">2018 — The homepage of corporate website</figcaption>
   </figure>
   <figure>
-    <img src="/img/projects/citynews/citynews-corporate-intro-video.webp" alt="">
+    <img src="/img/work/citynews/citynews-corporate-intro-video.webp" alt="">
     <figcaption class="color-text-light">2018 — Snapshots of the intro video in website homepage</figcaption>
   </figure>
-</div> -->
-
-In 2018, we proudly launched the new **corporate website**. A pivotal achievement was crafting a coherent, flexible, and scalable visual identity that resonated with all Citynews brands. 
+</div>
 
 Notably, I **engineered a front-end framework** from scratch, leveraging technologies like **Nunjucks**, **Git**, **Gulp**, **Node.js**, and **Fractal**.
 
@@ -113,17 +116,5 @@ My tenure at Citynews was not just about transforming the company. It was a **jo
 I learned the value of **leadership**, **teamwork**, and **adaptability**. Collaborating with talented individuals and navigating the **dynamic landscape** of design and technology significantly enriched my skillset. 
 
 I honed my project management abilities and developed a keen eye for **detail**, crucial in maintaining design consistency and **quality**.
-
-## Challenges
-Every journey is marked by challenges, and Citynews was no exception. Some of the key hurdles included:
-
-1. **Managing Diverse Teams**: Leading a diverse team with varying skill sets and perspectives required effective communication, patience, and adaptability to ensure our collective vision was realized.
-2. **Implementing New Tools and Workflows**: Introducing new tools and workflows across departments was met with resistance initially. It took time to demonstrate the benefits and ensure a smooth transition.
-3. **Designing for Multiple Platforms**: Adapting design concepts to multiple platforms, from web to mobile, demanded meticulous attention to detail and extensive testing to guarantee a seamless user experience.
-4. **Scaling Design**: As Citynews expanded, maintaining a coherent visual identity while accommodating growth presented a unique challenge. The creation of the GDL was instrumental in addressing this.
-
-In conclusion, my journey with Citynews has been a remarkable adventure of personal and professional growth, technical innovation, and creative excellence. 
-
-I carry with me a wealth of experiences and lessons that will continue to shape my future endeavors as a designer.
 
 [Read the goodbye post →](/2021/04/28/leaving-citynews)
