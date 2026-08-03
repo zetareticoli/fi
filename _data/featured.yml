@@ -57,7 +57,7 @@
     lg: { col: 6, row: 1 }
     xl: { col: 5, row: 1 }
 - image: /img/work/seejay/seejay.webp
-  url: /work/citynews/
+  url: /work/seejay/
   grid:
     md: { col: 6, row: 1 }
     lg: { col: 6, row: 1 }
