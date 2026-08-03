@@ -49,7 +49,7 @@ layout: default
   <!-- Context + Challenge + Activities -->
   {% if page.context or page.challenge %}
   <section class="px-6 lg:px-10 py-12 lg:py-16 max-w-7xl mx-auto">
-    <div class="grid grid-cols-1 xl:grid-cols-12 gap-10 xl:gap-16">
+    <div class="grid grid-cols-1 xl:grid-cols-12 gap-16">
       {% if page.context %}<div class="animate-in  xl:col-span-6"><span class="meta-tag block mb-4">Context</span>
         <p class="text-lg leading-relaxed">{{ page.context }}</p>
       </div>{% endif %}
@@ -62,7 +62,7 @@ layout: default
 
   <!-- Responsibilities -->
   {% if page.activities %}
-  <section class="px-6 lg:px-10 py-12 lg:py-16 max-w-7xl mx-auto ">
+  <section class="px-6 lg:px-10 py-12 lg:py-16 max-w-7xl mx-auto">
     <div class="animate-in xl:col-span-4" style="transition-delay: 240ms"><span
         class="meta-tag block mb-4">Responsibilities</span>
       <div class="flex flex-col gap-4">
