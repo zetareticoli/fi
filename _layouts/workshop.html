@@ -1,0 +1,20 @@
+---
+# _layouts/workshop.html
+# Landing page layout for the workshops collection: new site chrome
+# (sidebar + footer + theme) with the full head from head.html, needed
+# for the social/OG metadata of these pages.
+---
+<!DOCTYPE html>
+<html lang="{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang }}{% endif %}" class="{{ page.theme | default: 'light' }}" prefix="og: http://ogp.me/ns#">
+<head>
+  {% include head.html %}
+</head>
+<body class="bg-background text-foreground font-body">
+  {% include sidebar.html %}
+  <main class="lg:ml-48 pt-16 lg:pt-0">
+    {{ content }}
+  </main>
+  {% include footer.html %}
+  <script src="{{ '/js/app.js' | relative_url }}"></script>
+</body>
+</html>
