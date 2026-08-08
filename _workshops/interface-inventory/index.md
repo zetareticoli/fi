@@ -420,20 +420,21 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
     const diff = eventDate - now;
     const daysUntilEvent = Math.floor(diff / (1000 * 60 * 60 * 24));
 
-    const countdownElement = document.querySelector('.event-countdown');
-    const staticElement = document.querySelector('.event-static');
+    const countdownElements = document.querySelectorAll('.event-countdown');
+    const staticElements = document.querySelectorAll('.event-static');
+    const isCountdown = daysUntilEvent <= 7 && daysUntilEvent > 0;
 
-    if (daysUntilEvent <= 7 && daysUntilEvent > 0) {
+    if (isCountdown) {
       const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
 
-      countdownElement.innerHTML = `Solo ${daysUntilEvent}giorni, ${hours} ore ${minutes} minuti rimasti`;
-      countdownElement.style.display = 'block';
-      staticElement.style.display = 'none';
-    } else {
-      countdownElement.style.display = 'none';
-      staticElement.style.display = 'block';
+      countdownElements.forEach(el => {
+        el.innerHTML = `Solo ${daysUntilEvent}giorni, ${hours} ore ${minutes} minuti rimasti`;
+      });
     }
+
+    countdownElements.forEach(el => { el.style.display = isCountdown ? 'block' : 'none'; });
+    staticElements.forEach(el => { el.style.display = isCountdown ? 'none' : 'block'; });
   }
 
   // Update countdown every minute
