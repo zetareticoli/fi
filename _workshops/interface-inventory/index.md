@@ -129,7 +129,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
           </ul>
         </div>
       </details>
-      <details class="group border-l-2 border-border open:border-l-accent bg-secondary/40 hover:bg-secondary/60 transition-colors" open>
+      <details class="group border-l-2 border-border open:border-l-accent bg-secondary/40 hover:bg-secondary/60 transition-colors">
         <summary class="flex items-start justify-between gap-4 p-6 list-none cursor-pointer">
           <div>
             <h4 class="meta-tag mb-2"><span class="text-accent">02</span> Analisi Pratica</h4>
@@ -152,7 +152,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
         </div>
       </details>
 
-      <details class="group border-l-2 border-border open:border-l-accent bg-secondary/40 hover:bg-secondary/60 transition-colors" open>
+      <details class="group border-l-2 border-border open:border-l-accent bg-secondary/40 hover:bg-secondary/60 transition-colors">
         <summary class="flex items-start justify-between gap-4 p-6 list-none cursor-pointer">
           <div>
             <h4 class="meta-tag mb-2"><span class="text-accent">03</span> Organizzazione e Struttura</h4>
@@ -176,7 +176,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
         </div>
       </details>
 
-      <details class="group border-l-2 border-border open:border-l-accent bg-secondary/40 hover:bg-secondary/60 transition-colors" open>
+      <details class="group border-l-2 border-border open:border-l-accent bg-secondary/40 hover:bg-secondary/60 transition-colors">
         <summary class="flex items-start justify-between gap-4 p-6 list-none cursor-pointer">
           <div>
             <h4 class="meta-tag mb-2"><span class="text-accent">04</span> Evoluzione</h4>
