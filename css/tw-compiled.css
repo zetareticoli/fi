@@ -10,6 +10,7 @@
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-purple-500: oklch(62.7% 0.265 303.9);
     --color-gray-500: oklch(55.1% 0.027 264.364);
+    --color-black: #000;
     --spacing: 0.25rem;
     --breakpoint-xl: 80rem;
     --container-md: 28rem;
@@ -1448,8 +1449,8 @@
   .text-accent {
     color: var(--color-accent);
   }
-  .text-accent-foreground {
-    color: var(--color-accent-foreground);
+  .text-black {
+    color: var(--color-black);
   }
   .text-border {
     color: var(--color-border);
@@ -2187,7 +2188,7 @@
     --muted: 0 0% 60%;
     --muted-foreground: 0 0% 30%;
     --accent: 38 98% 44%;
-    --accent-foreground: 0 0% 6.7%;
+    --accent-foreground: 0 0% 100%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 0 0% 88.6%;
@@ -2216,7 +2217,7 @@
     --muted: 0 0% 30%;
     --muted-foreground: 0 0% 60%;
     --accent: 38 98% 44%;
-    --accent-foreground: 0 0% 6.7%;
+    --accent-foreground: 0 0% 100%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
     --border: 0 0% 16%;

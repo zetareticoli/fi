@@ -51,7 +51,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
         </div>
         <span class="font-mono text-xs uppercase tracking-wide text-muted-foreground">🗓️ Mercoledì 15 aprile, 09:00-13:00</span>
       </div>
-      <a href="https://book.stripe.com/8x2cN41yX23MfUm1MDcs803?prefilled_promo_code=EARLYMAG26" class="inline-flex items-center justify-center shrink-0 px-8 py-4 bg-accent text-accent-foreground text-base font-medium hover:opacity-90 transition-opacity plausible-event-name=Buy+Workshop">Riserva il tuo posto</a>
+      <a href="https://book.stripe.com/8x2cN41yX23MfUm1MDcs803?prefilled_promo_code=EARLYMAG26" class="inline-flex items-center justify-center shrink-0 px-8 py-4 bg-accent text-black text-base font-medium hover:opacity-90 transition-opacity plausible-event-name=Buy+Workshop">Riserva il tuo posto</a>
     </div>
 
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 text-left">
@@ -234,7 +234,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
         </div>
         <span class="font-mono text-xs uppercase tracking-wide text-muted-foreground">🗓️ Giovedì 16 ottobre, 09:00-13:00</span>
       </div>
-      <a href="https://francescoimprota.kit.com/products/workshop-interface-inventory?promo=3G565J82BC&step=checkout" class="inline-flex items-center justify-center shrink-0 px-8 py-4 bg-accent text-accent-foreground text-base font-medium hover:opacity-90 transition-opacity">Riserva il tuo posto</a>
+      <a href="https://francescoimprota.kit.com/products/workshop-interface-inventory?promo=3G565J82BC&step=checkout" class="inline-flex items-center justify-center shrink-0 px-8 py-4 bg-accent text-black text-base font-medium hover:opacity-90 transition-opacity">Riserva il tuo posto</a>
     </div>
     <div class="text-center">
       <p class="event-countdown text-sm text-muted-foreground" style="display: none;"></p>
@@ -400,7 +400,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
         </div>
         <span class="font-mono text-xs uppercase tracking-wide text-muted-foreground">🗓️ Mercoledì 15 aprile, 09:00-13:00</span>
       </div>
-      <a href="https://book.stripe.com/8x2cN41yX23MfUm1MDcs803?prefilled_promo_code=EARLYMAG26" class="inline-flex items-center justify-center shrink-0 px-8 py-4 bg-accent text-accent-foreground text-base font-medium hover:opacity-90 transition-opacity plausible-event-name=Buy+Workshop">Riserva il tuo posto</a>
+      <a href="https://book.stripe.com/8x2cN41yX23MfUm1MDcs803?prefilled_promo_code=EARLYMAG26" class="inline-flex items-center justify-center shrink-0 px-8 py-4 bg-accent text-black text-base font-medium hover:opacity-90 transition-opacity plausible-event-name=Buy+Workshop">Riserva il tuo posto</a>
     </div>
     <p class="event-countdown text-sm text-muted-foreground" style="display: none;"></p>
     <p class="event-static mt-6 mb-8 text-sm text-muted-foreground">Prezzo Early Bird valido fino al <strong class="font-medium text-foreground">5 aprile, 2026</strong>. Solo <strong class="font-medium text-foreground">4 posti rimasti</strong>.</p>
