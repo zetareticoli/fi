@@ -9,12 +9,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
 <!-- Header -->
 <div class="px-6 lg:px-10 py-6">
   <header class="flex flex-wrap items-center justify-between gap-4">
-    <a class="flex items-center gap-2 font-mono text-xs uppercase tracking-wide text-muted-foreground hover:text-foreground transition-colors" href="{{ site.baseurl }}/workshops/interface-inventory">
-      <svg viewBox="0 0 29 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-3 h-auto" aria-hidden="true">
-        <path d="M26.312 10.844h-1.76l-1.672.44H11.572v-3.74c0-3.388.968-5.104 2.948-5.104 1.848 0 2.332 1.584 2.332 3.168 0 .748-.088 1.408-.176 2.024h4.62c1.012-.484 1.672-1.496 1.672-2.772 0-2.728-2.728-4.312-7.964-4.312-6.292 0-11.528 3.036-11.528 9.944v.572L.308 11.9v1.76h3.168v17.908c0 1.408-.704 1.584-2.464 1.716V35h12.936v-1.716c-1.76-.132-2.376-.308-2.376-1.716V13.66h6.644v17.908c0 1.408-.616 1.584-2.376 1.716V35h12.936v-1.716c-1.76-.132-2.464-.308-2.464-1.716V10.844z" fill="currentColor"/>
-      </svg>
-      <span>Workshops</span>
-    </a>
+    <a class="font-mono text-xs uppercase tracking-wide text-muted-foreground hover:text-foreground transition-colors" href="{{ site.baseurl }}/workshops/interface-inventory">Workshops</a>
     <nav aria-label="Sezioni della pagina">
       <ul class="flex flex-wrap items-center gap-4 sm:gap-6 m-0 p-0 list-none">
         <li>
