@@ -63,7 +63,6 @@
     --color-muted: hsl(var(--muted));
     --color-muted-foreground: hsl(var(--muted-foreground));
     --color-accent: hsl(var(--accent));
-    --color-accent-foreground: hsl(var(--accent-foreground));
     --color-border: hsl(var(--border));
     --color-ring: hsl(var(--ring));
     --font-heading: 'Mona Sans', ui-sans-serif, system-ui, sans-serif;
@@ -248,11 +247,17 @@
   .top-0 {
     top: 0;
   }
+  .top-16 {
+    top: calc(var(--spacing) * 16);
+  }
   .bottom-0 {
     bottom: 0;
   }
   .left-0 {
     left: 0;
+  }
+  .z-40 {
+    z-index: 40;
   }
   .z-50 {
     z-index: 50;
@@ -1030,9 +1035,6 @@
   .w-1\/2 {
     width: calc(1 / 2 * 100%);
   }
-  .w-3 {
-    width: calc(var(--spacing) * 3);
-  }
   .w-5 {
     width: calc(var(--spacing) * 5);
   }
@@ -1089,6 +1091,9 @@
   }
   .resize {
     resize: both;
+  }
+  .scroll-mt-32 {
+    scroll-margin-top: calc(var(--spacing) * 32);
   }
   .list-none {
     list-style-type: none;
@@ -1792,6 +1797,11 @@
       padding: calc(var(--spacing) * 8);
     }
   }
+  .lg\:top-0 {
+    @media (width >= 64rem) {
+      top: 0;
+    }
+  }
   .lg\:col-span-1 {
     @media (width >= 64rem) {
       grid-column: span 1 / span 1;
@@ -1865,6 +1875,11 @@
   .lg\:w-48 {
     @media (width >= 64rem) {
       width: calc(var(--spacing) * 48);
+    }
+  }
+  .lg\:scroll-mt-24 {
+    @media (width >= 64rem) {
+      scroll-margin-top: calc(var(--spacing) * 24);
     }
   }
   .lg\:grid-cols-12 {

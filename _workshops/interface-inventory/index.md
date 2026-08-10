@@ -7,29 +7,30 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
 ---
 
 <!-- Header -->
-<div class="px-6 lg:px-10 py-6">
-  <header class="flex flex-wrap items-center justify-between gap-4">
-    <a class="font-mono text-xs uppercase tracking-wide text-muted-foreground hover:text-foreground transition-colors" href="{{ site.baseurl }}/workshops/interface-inventory">Workshops</a>
-    <nav aria-label="Sezioni della pagina">
-      <ul class="flex flex-wrap items-center gap-4 sm:gap-6 m-0 p-0 list-none">
-        <li>
-          <a class="text-sm text-muted-foreground hover:text-foreground hover:underline underline-offset-2 transition-colors" href="#details">Dettagli</a>
-        </li>
-        <li>
-          <a class="text-sm text-muted-foreground hover:text-foreground hover:underline underline-offset-2 transition-colors" href="#learn">Cosa impari</a>
-        </li>
-        <li>
-          <a class="text-sm text-muted-foreground hover:text-foreground hover:underline underline-offset-2 transition-colors" href="#testimonials">Testimonianze</a>
-        </li>
-        <li>
-          <a class="text-sm text-muted-foreground hover:text-foreground hover:underline underline-offset-2 transition-colors" href="#faq">FAQ</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+<div class="sticky top-16 lg:top-0 z-40 bg-background">
+  <div class="px-6 lg:px-10 py-4">
+    <header class="flex flex-wrap items-center justify-between gap-4">
+      <a class="font-mono text-xs uppercase tracking-wide text-muted-foreground hover:text-foreground transition-colors" href="{{ site.baseurl }}/workshops/interface-inventory">Workshops</a>
+      <nav aria-label="Sezioni della pagina">
+        <ul class="flex flex-wrap items-center gap-4 sm:gap-6 m-0 p-0 list-none">
+          <li>
+            <a class="text-sm text-muted-foreground hover:text-foreground hover:underline underline-offset-2 transition-colors" href="#details">Dettagli</a>
+          </li>
+          <li>
+            <a class="text-sm text-muted-foreground hover:text-foreground hover:underline underline-offset-2 transition-colors" href="#learn">Cosa impari</a>
+          </li>
+          <li>
+            <a class="text-sm text-muted-foreground hover:text-foreground hover:underline underline-offset-2 transition-colors" href="#testimonials">Testimonianze</a>
+          </li>
+          <li>
+            <a class="text-sm text-muted-foreground hover:text-foreground hover:underline underline-offset-2 transition-colors" href="#faq">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <div class="mx-6 lg:mx-10 hairline"></div>
 </div>
-
-<div class="mx-6 lg:mx-10 hairline"></div>
 
 <!-- Hero Section -->
 <section class="hero px-6 lg:px-10 pt-12 lg:pt-20 pb-12 lg:pb-16">
@@ -96,7 +97,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
 <div class="mx-6 lg:mx-10 hairline"></div>
 
 <!-- Program Section -->
-<section class="px-6 lg:px-10 py-12 lg:py-16" id="details">
+<section class="scroll-mt-32 lg:scroll-mt-24 px-6 lg:px-10 py-12 lg:py-16" id="details">
   <div class="mx-auto max-w-5xl">
     <h2 class="font-heading text-2xl sm:text-3xl font-bold leading-tight mb-8">Il programma completo</h2>
     <div class="flex flex-col gap-0.5 mb-12">
@@ -239,7 +240,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
 </section>
 
 <!-- Benefits Section -->
-<section class="bg-card-foreground px-6 lg:px-10 py-12 lg:py-20" id="learn">
+<section class="scroll-mt-32 lg:scroll-mt-24 bg-card-foreground px-6 lg:px-10 py-12 lg:py-20" id="learn">
   <div class="mx-auto max-w-5xl">
     <h2 class="font-heading text-2xl sm:text-3xl font-bold leading-tight text-center mb-12">Alla fine del workshop saprai...</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
@@ -276,7 +277,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
 </section>
 
 <!-- Instructor Section -->
-<section class="px-6 lg:px-10 py-12 lg:py-16" id="teacher">
+<section class="scroll-mt-32 lg:scroll-mt-24 px-6 lg:px-10 py-12 lg:py-16" id="teacher">
   <div class="mx-auto max-w-5xl">
     <div class="text-center">
       <span class="block mb-3 font-mono text-xs uppercase tracking-wide text-accent">Chi sono</span>
@@ -295,7 +296,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
 </section>
 
 <!-- Testimonials Section -->
-<section class="bg-secondary/40 px-6 lg:px-10 py-12 lg:py-16" id="testimonials">
+<section class="scroll-mt-32 lg:scroll-mt-24 bg-secondary/40 px-6 lg:px-10 py-12 lg:py-16" id="testimonials">
   <div class="mx-auto max-w-5xl text-center">
     <span class="block mb-3 font-mono text-xs uppercase tracking-wide text-accent">Testimonials</span>
     <h2 class="font-heading text-2xl sm:text-3xl font-bold leading-tight mb-12">Cosa dicono i partecipanti</h2>
@@ -307,7 +308,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
 </section>
 
 <!-- FAQ Section -->
-<section class="px-6 lg:px-10 py-12 lg:py-16" id="faq">
+<section class="scroll-mt-32 lg:scroll-mt-24 px-6 lg:px-10 py-12 lg:py-16" id="faq">
   <div class="mx-auto max-w-5xl">
     <span class="block mb-3 font-mono text-xs uppercase tracking-wide text-accent">Domande Frequenti</span>
     <h2 class="font-heading text-2xl sm:text-3xl font-bold leading-tight mb-3">Questo corso è per me?</h2>
