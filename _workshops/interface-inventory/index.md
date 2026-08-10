@@ -102,12 +102,12 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
     <h2 class="font-heading text-2xl sm:text-3xl font-bold leading-tight mb-8">Il programma completo</h2>
     <div class="flex flex-col gap-0.5 mb-12">
       <details class="group border-l-2 border-border open:border-l-accent bg-secondary/40 hover:bg-secondary/60 transition-colors" open>
-        <summary class="flex items-start justify-between gap-4 p-6 list-none cursor-pointer">
+        <summary class="flex items-center justify-between gap-4 p-6 list-none cursor-pointer">
           <div>
             <h4 class="meta-tag mb-2"><span class="text-accent">01</span> Fondamenti teorici</h4>
             <h3 class="font-heading text-lg font-medium">Introduzione all'Interface Inventory</h3>
           </div>
-          <svg class="shrink-0 mt-1 text-accent transition-transform duration-300 group-open:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          <svg class="shrink-0 text-accent transition-transform duration-300 group-open:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none"
             xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"
               stroke-linejoin="round" />
@@ -126,12 +126,12 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
         </div>
       </details>
       <details class="group border-l-2 border-border open:border-l-accent bg-secondary/40 hover:bg-secondary/60 transition-colors">
-        <summary class="flex items-start justify-between gap-4 p-6 list-none cursor-pointer">
+        <summary class="flex items-center justify-between gap-4 p-6 list-none cursor-pointer">
           <div>
             <h4 class="meta-tag mb-2"><span class="text-accent">02</span> Analisi Pratica</h4>
             <h3 class="font-heading text-lg font-medium">Analisi di un prodotto reale</h3>
           </div>
-          <svg class="shrink-0 mt-1 text-accent transition-transform duration-300 group-open:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          <svg class="shrink-0 text-accent transition-transform duration-300 group-open:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none"
             xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"
               stroke-linejoin="round" />
@@ -149,12 +149,12 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
       </details>
 
       <details class="group border-l-2 border-border open:border-l-accent bg-secondary/40 hover:bg-secondary/60 transition-colors">
-        <summary class="flex items-start justify-between gap-4 p-6 list-none cursor-pointer">
+        <summary class="flex items-center justify-between gap-4 p-6 list-none cursor-pointer">
           <div>
             <h4 class="meta-tag mb-2"><span class="text-accent">03</span> Organizzazione e Struttura</h4>
             <h3 class="font-heading text-lg font-medium">Creare un database dei componenti</h3>
           </div>
-          <svg class="shrink-0 mt-1 text-accent transition-transform duration-300 group-open:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          <svg class="shrink-0 text-accent transition-transform duration-300 group-open:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none"
             xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"
               stroke-linejoin="round" />
@@ -173,12 +173,12 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
       </details>
 
       <details class="group border-l-2 border-border open:border-l-accent bg-secondary/40 hover:bg-secondary/60 transition-colors">
-        <summary class="flex items-start justify-between gap-4 p-6 list-none cursor-pointer">
+        <summary class="flex items-center justify-between gap-4 p-6 list-none cursor-pointer">
           <div>
             <h4 class="meta-tag mb-2"><span class="text-accent">04</span> Evoluzione</h4>
             <h3 class="font-heading text-lg font-medium">Verso un Design System</h3>
           </div>
-          <svg class="shrink-0 mt-1 text-accent transition-transform duration-300 group-open:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          <svg class="shrink-0 text-accent transition-transform duration-300 group-open:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none"
             xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"
               stroke-linejoin="round" />
