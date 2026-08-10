@@ -39,8 +39,8 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
     <h1 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">Dal caos all'ordine ー <br>creare un interface inventory</h1>
     <p class="mx-auto mt-6 mb-8 max-w-3xl text-lg lg:text-xl text-muted-foreground leading-relaxed">Un <strong class="font-medium text-foreground">workshop pratico per designer e sviluppatori</strong> che vogliono organizzare le interfacce e ridurre drasticamente i tempi di sviluppo.</p>
 
-    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-8 p-6 md:p-8 border border-border bg-secondary/40 text-left">
-      <div class="flex flex-col gap-2">
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-8 p-6 md:p-8 border border-border bg-secondary/40 md:text-left">
+      <div class="flex flex-col items-center gap-2 md:items-start">
         <div class="flex items-baseline gap-3">
           <span class="font-heading text-3xl font-bold">€99</span>
           <span class="text-lg text-muted-foreground line-through">€199</span>
@@ -223,7 +223,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
     </div>
 
     <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 p-6 md:p-8 border border-border bg-secondary/40">
-      <div class="flex flex-col gap-2">
+      <div class="flex flex-col items-center gap-2 md:items-start">
         <div class="flex items-baseline gap-3">
           <span class="font-heading text-3xl font-bold">€99</span>
           <span class="text-lg text-muted-foreground line-through">€199</span>
@@ -388,8 +388,8 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
     <p class="text-lg lg:text-xl text-muted-foreground leading-relaxed mb-8">
       Impara ad organizzare un'interfaccia digitale in modo efficace!
     </p>
-    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 p-6 md:p-8 border border-border bg-background text-left">
-      <div class="flex flex-col gap-2">
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 p-6 md:p-8 border border-border bg-background md:text-left">
+      <div class="flex flex-col items-center gap-2 md:items-start">
         <div class="flex items-baseline gap-3">
           <span class="font-heading text-3xl font-bold">€99</span>
           <span class="text-lg text-muted-foreground line-through">€199</span>
