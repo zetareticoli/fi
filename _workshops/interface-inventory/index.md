@@ -9,8 +9,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
 <!-- Header -->
 <div class="sticky top-16 lg:top-0 z-40 bg-background">
   <div class="px-6 lg:px-10 py-4">
-    <header class="flex flex-wrap items-center justify-between gap-4">
-      <a class="font-mono text-xs uppercase tracking-wide text-muted-foreground hover:text-foreground transition-colors" href="{{ site.baseurl }}/workshops/interface-inventory">Workshops</a>
+    <header class="flex flex-wrap items-center gap-4">
       <nav aria-label="Sezioni della pagina">
         <ul class="flex flex-wrap items-center gap-4 sm:gap-6 m-0 p-0 list-none">
           <li>
