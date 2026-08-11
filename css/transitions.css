@@ -1,0 +1,186 @@
+/*
+ * Page transitions
+ * ----------------
+ * Cross-document View Transitions: opening a project slides the new page in
+ * from the right over the current one, going back slides it out again.
+ *
+ * Plain CSS on purpose: it must not go through Sass or Tailwind, so the
+ * `@view-transition` at-rule and the `::view-transition-*` pseudo elements
+ * reach the browser untouched.
+ *
+ * Direction is decided at runtime in js/page-transitions.js, which puts
+ * `.vt-forward` / `.vt-back` on <html> for the duration of the transition.
+ */
+
+@view-transition {
+  navigation: auto;
+}
+
+/*
+ * The sidebar is captured as its own snapshot so it stays anchored while the
+ * page slides underneath it. Everything else belongs to the `root` snapshot.
+ */
+.site-nav {
+  view-transition-name: site-nav;
+}
+
+/* Plain opacity, not the default plus-lighter cross-fade. */
+::view-transition-image-pair(root) {
+  isolation: auto;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  mix-blend-mode: normal;
+  animation-duration: 260ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes page-slide-in-from-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes page-slide-out-to-right {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+/* The page being left behind drifts back and dims, to suggest depth. */
+@keyframes page-push-back {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-5%);
+    opacity: 0.55;
+  }
+}
+
+@keyframes page-pull-forward {
+  from {
+    transform: translateX(-5%);
+    opacity: 0.55;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes page-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes page-fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Opening a project: the new page slides in on top. */
+html.vt-forward::view-transition-old(root) {
+  z-index: 0;
+  animation: page-push-back 480ms cubic-bezier(0.32, 0.72, 0, 1) both;
+}
+
+html.vt-forward::view-transition-new(root) {
+  z-index: 1;
+  animation: page-slide-in-from-right 480ms cubic-bezier(0.32, 0.72, 0, 1) both;
+  box-shadow: -24px 0 60px -12px rgb(0 0 0 / 0.28);
+}
+
+/* Leaving a project: the project page slides away and reveals what's below. */
+html.vt-back::view-transition-old(root) {
+  z-index: 1;
+  animation: page-slide-out-to-right 440ms cubic-bezier(0.32, 0.72, 0, 1) both;
+  box-shadow: -24px 0 60px -12px rgb(0 0 0 / 0.28);
+}
+
+html.vt-back::view-transition-new(root) {
+  z-index: 0;
+  animation: page-pull-forward 440ms cubic-bezier(0.32, 0.72, 0, 1) both;
+}
+
+/*
+ * The staggered reveal (.animate-in) would otherwise play while the page is
+ * still sliding, so content is shown at once during a transition instead.
+ */
+html.vt-active .animate-in {
+  transition: none;
+}
+
+/*
+ * Whatever we prefetch, the transition still cannot start before the next
+ * document is ready to paint, so the tap itself answers immediately: the card
+ * dips while the navigation is on its way. Without this, a slow connection
+ * reads as an unresponsive tap.
+ */
+.work-item {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+/*
+ * An animation rather than a transition: the cards carry an inline
+ * transition-delay for the staggered reveal, which would postpone the feedback
+ * by up to a second — the very thing this is here to avoid.
+ */
+@keyframes card-press {
+  to {
+    opacity: 0.82;
+  }
+}
+
+a.work-item.is-pressed,
+a.work-item:active {
+  animation: card-press 90ms ease-out both;
+}
+
+/*
+ * Fallback for browsers without cross-document View Transitions, flagged by
+ * js/page-transitions.js: the incoming project page slides in on its own,
+ * without the coordinated exit of the page being left behind.
+ */
+html.no-view-transitions main {
+  overflow-x: clip;
+}
+
+html.no-view-transitions .page-enter {
+  animation: page-slide-in-from-right 420ms cubic-bezier(0.32, 0.72, 0, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.vt-forward::view-transition-old(root),
+  html.vt-back::view-transition-old(root) {
+    animation: page-fade-out 160ms linear both;
+    box-shadow: none;
+  }
+
+  html.vt-forward::view-transition-new(root),
+  html.vt-back::view-transition-new(root) {
+    animation: page-fade-in 160ms linear both;
+    box-shadow: none;
+  }
+
+  html.no-view-transitions .page-enter {
+    animation: none;
+  }
+}
