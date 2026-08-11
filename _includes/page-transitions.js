@@ -1,8 +1,9 @@
-// js/page-transitions.js
+// _includes/page-transitions.js
 //
 // Decides the direction of the cross-document view transition described in
-// css/transitions.css. Loaded synchronously from <head> because `pagereveal`
-// fires before the new document is painted: a deferred script can miss it.
+// css/transitions.css. Inlined at the top of <head>: `pagereveal` fires before
+// the new document is painted, so a deferred script can miss it, and a
+// separate file would be one more request the transition has to wait for.
 (function () {
   'use strict';
 

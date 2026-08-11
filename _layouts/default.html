@@ -8,10 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ page.title | default: site.title }}</title>
   <meta name="description" content="{{ page.description | default: site.description }}" />
+  <script>{% include page-transitions.js %}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@300;400;500&amp;family=Mona+Sans:wght@300;400;500;600;700&amp;display=swap" />
   <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}" />
   <link rel="stylesheet" href="{{ '/css/tw-compiled.css' | relative_url }}" />
   <link rel="stylesheet" href="{{ '/css/transitions.css' | relative_url }}" />
-  <script src="{{ '/js/page-transitions.js' | relative_url }}"></script>
   {% include speculation-rules.html %}
 </head>
 <body class="bg-background text-foreground font-body">
