@@ -1,6 +1,11 @@
 ---
 # _layouts/default.html
 ---
+{%- comment -%}
+  Assets carry the build timestamp so they can be cached for a long time
+  (see the header rules in netlify.toml) without going stale after a deploy.
+{%- endcomment -%}
+{%- assign asset_version = site.time | date: '%Y%m%d%H%M' -%}
 <!DOCTYPE html>
 <html lang="en" class="{{ page.theme | default: 'light' }}">
 <head>
@@ -13,9 +18,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@300;400;500&amp;family=Mona+Sans:wght@300;400;500;600;700&amp;display=swap" />
-  <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}" />
-  <link rel="stylesheet" href="{{ '/css/tw-compiled.css' | relative_url }}" />
-  <link rel="stylesheet" href="{{ '/css/transitions.css' | relative_url }}" />
+  <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}?v={{ asset_version }}" />
+  <link rel="stylesheet" href="{{ '/css/tw-compiled.css' | relative_url }}?v={{ asset_version }}" />
+  <link rel="stylesheet" href="{{ '/css/transitions.css' | relative_url }}?v={{ asset_version }}" />
   {% include speculation-rules.html %}
 </head>
 <body class="bg-background text-foreground font-body">
@@ -24,6 +29,6 @@
     {{ content }}
   </main>
   {% include footer.html %}
-  <script src="{{ '/js/app.js' | relative_url }}"></script>
+  <script src="{{ '/js/app.js' | relative_url }}?v={{ asset_version }}"></script>
 </body>
 </html>
