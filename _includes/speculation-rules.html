@@ -1,0 +1,37 @@
+{%- comment -%}
+  A cross-document view transition can only start once the new document is
+  ready to paint, so on a slow connection the animation lags behind the tap by
+  however long the document takes to arrive. Prefetching removes that fetch
+  from the critical path: the document is already in cache when the tap lands.
+
+  Project cards are prefetched immediately because they are the main journey
+  and each page is a few KB of HTML; every other internal link waits for intent
+  ("moderate" means a 200ms hover, or pointerdown on a touch screen, which is
+  what buys the head start there). Document rules only match links that exist
+  in the page, so pages without cards prefetch nothing.
+
+  Note that "eager" no longer means "right away" — since Chrome 132 that is
+  "immediate", and "eager" fires on hover without the delay.
+
+  Chrome and Chromium only. Other browsers ignore the script.
+{%- endcomment -%}
+<script type="speculationrules">
+  {
+    "prefetch": [
+      {
+        "where": { "selector_matches": "a.work-item" },
+        "eagerness": "immediate"
+      },
+      {
+        "where": {
+          "and": [
+            { "href_matches": "/*" },
+            { "not": { "selector_matches": "a.work-item" } },
+            { "not": { "href_matches": "/*.xml" } }
+          ]
+        },
+        "eagerness": "moderate"
+      }
+    ]
+  }
+</script>
