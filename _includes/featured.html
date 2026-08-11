@@ -1,7 +1,12 @@
 {%- assign md = item.grid.md -%}
 {%- assign lg = item.grid.lg -%}
 {%- assign xl = item.grid.xl -%}
-<a href="{{ item.url | relative_url }}" target="_blank" rel="noopener noreferrer"
+{%- comment -%}
+  Internal links stay in the same tab so the page transition can run.
+{%- endcomment -%}
+{%- assign is_external = false -%}
+{%- if item.url contains '://' -%}{%- assign is_external = true -%}{%- endif -%}
+<a href="{{ item.url | relative_url }}"{% if is_external %} target="_blank" rel="noopener noreferrer"{% endif %}
   class="work-item group animate-in overflow-hidden"
   style="{% if md %}--col-md: {{ md.col }}; --row-md: {{ md.row | default: 1 }};{% endif %}{% if lg %} --col-lg: {{ lg.col }}; --row-lg: {{ lg.row | default: 1 }};{% endif %}{% if xl %} --col-xl: {{ xl.col }}; --row-xl: {{ xl.row | default: 1 }};{% endif %} transition-delay: {{ forloop.index | times: 120 }}ms;">
   {% if item.video %}
