@@ -11,6 +11,30 @@
   var STORAGE_KEY = 'page-transition:from';
   var STORAGE_MAX_AGE = 3000;
 
+  // However fast the next document arrives, it cannot arrive within the frame
+  // the finger lands, so the card answers the press itself. `:active` is not
+  // dependable for this on touch, hence the explicit class.
+  var pressed = null;
+
+  function release() {
+    if (!pressed) return;
+    pressed.classList.remove('is-pressed');
+    pressed = null;
+  }
+
+  document.addEventListener('pointerdown', function (event) {
+    var card = event.target.closest && event.target.closest('a.work-item');
+    if (!card) return;
+    release();
+    pressed = card;
+    card.classList.add('is-pressed');
+  }, { passive: true });
+
+  // pointercancel is what fires when the touch turns into a scroll.
+  ['pointerup', 'pointercancel', 'visibilitychange'].forEach(function (name) {
+    document.addEventListener(name, release, { passive: true });
+  });
+
   // `onpagereveal` is the signal for cross-document transitions specifically:
   // a browser can support same-document ones and still not fire it.
   if (!('startViewTransition' in document) || !('onpagereveal' in window)) {

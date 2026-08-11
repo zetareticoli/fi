@@ -128,6 +128,33 @@ html.vt-active .animate-in {
 }
 
 /*
+ * Whatever we prefetch, the transition still cannot start before the next
+ * document is ready to paint, so the tap itself answers immediately: the card
+ * dips while the navigation is on its way. Without this, a slow connection
+ * reads as an unresponsive tap.
+ */
+.work-item {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+/*
+ * An animation rather than a transition: the cards carry an inline
+ * transition-delay for the staggered reveal, which would postpone the feedback
+ * by up to a second — the very thing this is here to avoid.
+ */
+@keyframes card-press {
+  to {
+    opacity: 0.82;
+  }
+}
+
+a.work-item.is-pressed,
+a.work-item:active {
+  animation: card-press 90ms ease-out both;
+}
+
+/*
  * Fallback for browsers without cross-document View Transitions, flagged by
  * js/page-transitions.js: the incoming project page slides in on its own,
  * without the coordinated exit of the page being left behind.
