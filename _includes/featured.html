@@ -2,13 +2,17 @@
 {%- assign lg = item.grid.lg -%}
 {%- assign xl = item.grid.xl -%}
 {%- comment -%}
-  Internal links stay in the same tab so the page transition can run.
+  Internal links stay in the same tab so the page transition can run, and a
+  card only becomes a link when its target actually resolves to a published
+  work page — otherwise it is a plain tile with no hover affordance.
 {%- endcomment -%}
 {%- assign is_external = false -%}
 {%- if item.url contains '://' -%}{%- assign is_external = true -%}{%- endif -%}
-<a href="{{ item.url | relative_url }}"{% if is_external %} target="_blank" rel="noopener noreferrer"{% endif %}
-  class="work-item group animate-in overflow-hidden"
-  style="{% if md %}--col-md: {{ md.col }}; --row-md: {{ md.row | default: 1 }};{% endif %}{% if lg %} --col-lg: {{ lg.col }}; --row-lg: {{ lg.row | default: 1 }};{% endif %}{% if xl %} --col-xl: {{ xl.col }}; --row-xl: {{ xl.row | default: 1 }};{% endif %} transition-delay: {{ forloop.index | times: 120 }}ms;">
+{%- assign work_page = site.work | where: "url", item.url | first -%}
+{%- assign is_link = false -%}
+{%- if is_external or work_page -%}{%- assign is_link = true -%}{%- endif -%}
+{%- capture grid_style -%}{% if md %}--col-md: {{ md.col }}; --row-md: {{ md.row | default: 1 }};{% endif %}{% if lg %} --col-lg: {{ lg.col }}; --row-lg: {{ lg.row | default: 1 }};{% endif %}{% if xl %} --col-xl: {{ xl.col }}; --row-xl: {{ xl.row | default: 1 }};{% endif %} transition-delay: {{ forloop.index | times: 120 }}ms;{%- endcapture -%}
+{%- capture media -%}
   {% if item.video %}
   <video autoplay loop muted playsinline preload="auto"
     class="w-full transition-transform duration-300 ease-out group-hover:scale-105">
@@ -21,8 +25,19 @@
       video.play().catch(() => {});
     });
   </script>
-  {% else %}  
-    <img src="{{ item.image | relative_url }}" alt="{{ item.title }}"
+  {% else %}
+    <img src="{{ item.image | relative_url }}" alt="{{ work_page.title | default: item.title }}"
       class="w-full transition-transform duration-300 ease-out group-hover:scale-105">
   {% endif %}
+{%- endcapture -%}
+{%- if is_link -%}
+<a href="{{ item.url | relative_url }}"{% if is_external %} target="_blank" rel="noopener noreferrer"{% endif %}
+  class="work-item group animate-in overflow-hidden"
+  style="{{ grid_style }}">
+  {{ media }}
 </a>
+{%- else -%}
+<div class="work-item animate-in overflow-hidden" style="{{ grid_style }}">
+  {{ media }}
+</div>
+{%- endif -%}
