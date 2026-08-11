@@ -61,15 +61,15 @@
     opacity: 1;
   }
   to {
-    transform: translateX(-6%);
-    opacity: 0.4;
+    transform: translateX(-5%);
+    opacity: 0.55;
   }
 }
 
 @keyframes page-pull-forward {
   from {
-    transform: translateX(-6%);
-    opacity: 0.4;
+    transform: translateX(-5%);
+    opacity: 0.55;
   }
   to {
     transform: translateX(0);
@@ -128,14 +128,15 @@ html.vt-active .animate-in {
 }
 
 /*
- * Fallback for browsers without cross-document View Transitions (no
- * `.vt-native` class): the incoming project page still slides in, on its own.
+ * Fallback for browsers without cross-document View Transitions, flagged by
+ * js/page-transitions.js: the incoming project page slides in on its own,
+ * without the coordinated exit of the page being left behind.
  */
-html:not(.vt-native) main {
+html.no-view-transitions main {
   overflow-x: clip;
 }
 
-html:not(.vt-native) .page-enter {
+html.no-view-transitions .page-enter {
   animation: page-slide-in-from-right 420ms cubic-bezier(0.32, 0.72, 0, 1) both;
 }
 
@@ -152,7 +153,7 @@ html:not(.vt-native) .page-enter {
     box-shadow: none;
   }
 
-  html:not(.vt-native) .page-enter {
+  html.no-view-transitions .page-enter {
     animation: none;
   }
 }

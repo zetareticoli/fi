@@ -10,12 +10,12 @@
   var STORAGE_KEY = 'page-transition:from';
   var STORAGE_MAX_AGE = 3000;
 
+  // `onpagereveal` is the signal for cross-document transitions specifically:
+  // a browser can support same-document ones and still not fire it.
   if (!('startViewTransition' in document) || !('onpagereveal' in window)) {
+    root.classList.add('no-view-transitions');
     return;
   }
-
-  // Tells the stylesheet to drop the JS-less fallback animation.
-  root.classList.add('vt-native');
 
   function pathOf(url) {
     try {
