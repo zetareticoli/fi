@@ -13,6 +13,7 @@
     --spacing: 0.25rem;
     --breakpoint-xl: 80rem;
     --container-md: 28rem;
+    --container-xl: 36rem;
     --container-2xl: 42rem;
     --container-3xl: 48rem;
     --container-4xl: 56rem;
@@ -218,6 +219,14 @@
   }
 }
 @layer utilities {
+  .\@container\/box {
+    container-type: inline-size;
+    container-name: box;
+  }
+  .\@container\/fields {
+    container-type: inline-size;
+    container-name: fields;
+  }
   .pointer-events-none {
     pointer-events: none;
   }
@@ -1055,6 +1064,9 @@
   .max-w-screen-xl {
     max-width: var(--breakpoint-xl);
   }
+  .max-w-xl {
+    max-width: var(--container-xl);
+  }
   .min-w-0 {
     min-width: 0;
   }
@@ -1724,16 +1736,6 @@
       opacity: 60%;
     }
   }
-  .sm\:col-span-2 {
-    @media (width >= 40rem) {
-      grid-column: span 2 / span 2;
-    }
-  }
-  .sm\:w-auto {
-    @media (width >= 40rem) {
-      width: auto;
-    }
-  }
   .sm\:grid-cols-2 {
     @media (width >= 40rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1752,11 +1754,6 @@
   .sm\:justify-between {
     @media (width >= 40rem) {
       justify-content: space-between;
-    }
-  }
-  .sm\:justify-self-start {
-    @media (width >= 40rem) {
-      justify-self: flex-start;
     }
   }
   .sm\:text-right {
@@ -2087,6 +2084,41 @@
   .xl\:py-16 {
     @media (width >= 80rem) {
       padding-block: calc(var(--spacing) * 16);
+    }
+  }
+  .\@md\/fields\:col-span-2 {
+    @container fields (width >= 28rem) {
+      grid-column: span 2 / span 2;
+    }
+  }
+  .\@md\/fields\:w-auto {
+    @container fields (width >= 28rem) {
+      width: auto;
+    }
+  }
+  .\@md\/fields\:grid-cols-2 {
+    @container fields (width >= 28rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .\@md\/fields\:justify-self-start {
+    @container fields (width >= 28rem) {
+      justify-self: flex-start;
+    }
+  }
+  .\@3xl\/box\:grid-cols-2 {
+    @container box (width >= 48rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .\@3xl\/box\:items-start {
+    @container box (width >= 48rem) {
+      align-items: flex-start;
+    }
+  }
+  .\@3xl\/box\:gap-12 {
+    @container box (width >= 48rem) {
+      gap: calc(var(--spacing) * 12);
     }
   }
   .dark\:invert {
