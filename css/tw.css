@@ -144,6 +144,15 @@
 
 @layer components {
   /*
+   * On a successful signup Kit's script replaces the whole field group with a
+   * success alert it builds itself, so that node never carries our utility
+   * classes and has to be styled from here.
+   */
+  .formkit-alert-success {
+    @apply border border-border bg-background px-4 py-3 text-base text-foreground;
+  }
+
+  /*
    * Work grid: each project explicitly declares how many columns/rows it
    * spans per breakpoint via --col-/--row- (set inline from
    * _data/featured.yml). This makes the responsive layout fully predictable
