@@ -4,6 +4,16 @@ title: "Workshop: Le basi di un Design System - Creare un Interface Inventory"
 summary: "Un workshop pratico per designer e sviluppatori che vogliono organizzare le interfacce e ridurre drasticamente i tempi di sviluppo. Impara a creare un Interface Inventory efficace in 4 ore."
 lang: it
 og-image: workshops/interface-inventory/interface-inventory-og.png
+offer:
+  price: "€99"
+  price_full: "€199"
+  url: "https://book.stripe.com/8x2cN41yX23MfUm1MDcs803?prefilled_promo_code=EARLYMAG26"
+  cta: "Riserva il tuo posto"
+  plausible_event: "Buy+Workshop"
+  sessions:
+    - "Giovedì 15 ottobre 2026, 09:00-13:00"
+  deadline: "2026-09-15T09:00:00"
+  note: 'Prezzo Early Bird valido fino al <strong class="font-medium text-foreground">15 settembre 2026</strong>. Solo <strong class="font-medium text-foreground">4 posti rimasti</strong>.'
 ---
 
 <!-- Header -->
@@ -38,15 +48,8 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
     <h1 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">Dal caos all'ordine ー <br>creare un interface inventory</h1>
     <p class="mx-auto mt-6 mb-8 max-w-3xl text-lg lg:text-xl text-muted-foreground leading-relaxed">Un <strong class="font-medium text-foreground">workshop pratico per designer e sviluppatori</strong> che vogliono organizzare le interfacce e ridurre drasticamente i tempi di sviluppo.</p>
 
-    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-8 p-6 md:p-8 border border-border bg-secondary/40 md:text-left">
-      <div class="flex flex-col items-center gap-2 md:items-start">
-        <div class="flex items-baseline gap-3">
-          <span class="font-heading text-3xl font-bold">€99</span>
-          <span class="text-lg text-muted-foreground line-through">€199</span>
-        </div>
-        <span class="font-mono text-xs uppercase tracking-wide text-muted-foreground">🗓️ Mercoledì 15 aprile, 09:00-13:00</span>
-      </div>
-      <a href="https://book.stripe.com/8x2cN41yX23MfUm1MDcs803?prefilled_promo_code=EARLYMAG26" class="inline-flex items-center justify-center shrink-0 px-8 py-4 bg-accent text-black text-base font-medium hover:opacity-90 transition-opacity plausible-event-name=Buy+Workshop">Riserva il tuo posto</a>
+    <div class="mb-8">
+      {% include payment-link.html %}
     </div>
 
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 text-left">
@@ -221,20 +224,7 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
       </ul>
     </div>
 
-    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 p-6 md:p-8 border border-border bg-secondary/40">
-      <div class="flex flex-col items-center gap-2 md:items-start">
-        <div class="flex items-baseline gap-3">
-          <span class="font-heading text-3xl font-bold">€99</span>
-          <span class="text-lg text-muted-foreground line-through">€199</span>
-        </div>
-        <span class="font-mono text-xs uppercase tracking-wide text-muted-foreground">🗓️ Giovedì 16 ottobre, 09:00-13:00</span>
-      </div>
-      <a href="https://francescoimprota.kit.com/products/workshop-interface-inventory?promo=3G565J82BC&step=checkout" class="inline-flex items-center justify-center shrink-0 px-8 py-4 bg-accent text-black text-base font-medium hover:opacity-90 transition-opacity">Riserva il tuo posto</a>
-    </div>
-    <div class="text-center">
-      <p class="event-countdown text-sm text-muted-foreground" style="display: none;"></p>
-      <p class="event-static mt-6 text-sm text-muted-foreground">Prezzo Early Bird valido fino al <strong class="font-medium text-foreground">30 settembre, 2025</strong>. Solo <strong class="font-medium text-foreground">5/6 posti rimasti</strong>.</p>
-    </div>
+    {% include payment-link.html note=true %}
   </div>
 </section>
 
@@ -387,18 +377,9 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
     <p class="text-lg lg:text-xl text-muted-foreground leading-relaxed mb-8">
       Impara ad organizzare un'interfaccia digitale in modo efficace!
     </p>
-    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 p-6 md:p-8 border border-border bg-background md:text-left">
-      <div class="flex flex-col items-center gap-2 md:items-start">
-        <div class="flex items-baseline gap-3">
-          <span class="font-heading text-3xl font-bold">€99</span>
-          <span class="text-lg text-muted-foreground line-through">€199</span>
-        </div>
-        <span class="font-mono text-xs uppercase tracking-wide text-muted-foreground">🗓️ Mercoledì 15 aprile, 09:00-13:00</span>
-      </div>
-      <a href="https://book.stripe.com/8x2cN41yX23MfUm1MDcs803?prefilled_promo_code=EARLYMAG26" class="inline-flex items-center justify-center shrink-0 px-8 py-4 bg-accent text-black text-base font-medium hover:opacity-90 transition-opacity plausible-event-name=Buy+Workshop">Riserva il tuo posto</a>
+    <div class="mb-8">
+      {% include payment-link.html bg="bg-background" note=true %}
     </div>
-    <p class="event-countdown text-sm text-muted-foreground" style="display: none;"></p>
-    <p class="event-static mt-6 mb-8 text-sm text-muted-foreground">Prezzo Early Bird valido fino al <strong class="font-medium text-foreground">5 aprile, 2026</strong>. Solo <strong class="font-medium text-foreground">4 posti rimasti</strong>.</p>
     <div class="hairline mb-8"></div>
     <p class="mb-2 text-sm text-muted-foreground">Hai dubbi o altre domande?</p>
     <p>
@@ -406,33 +387,3 @@ og-image: workshops/interface-inventory/interface-inventory-og.png
     </p>
   </div>
 </section>
-
-<script>
-  // Simple countdown (you'll need to set the actual end date)
-  function updateCountdown() {
-    const eventDate = new Date('2025-07-31T09:00:00');
-    const now = new Date();
-    const diff = eventDate - now;
-    const daysUntilEvent = Math.floor(diff / (1000 * 60 * 60 * 24));
-
-    const countdownElements = document.querySelectorAll('.event-countdown');
-    const staticElements = document.querySelectorAll('.event-static');
-    const isCountdown = daysUntilEvent <= 7 && daysUntilEvent > 0;
-
-    if (isCountdown) {
-      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-
-      countdownElements.forEach(el => {
-        el.innerHTML = `Solo ${daysUntilEvent}giorni, ${hours} ore ${minutes} minuti rimasti`;
-      });
-    }
-
-    countdownElements.forEach(el => { el.style.display = isCountdown ? 'block' : 'none'; });
-    staticElements.forEach(el => { el.style.display = isCountdown ? 'none' : 'block'; });
-  }
-
-  // Update countdown every minute
-  setInterval(updateCountdown, 60000);
-  updateCountdown(); // Initial call
-</script>
