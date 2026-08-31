@@ -24,10 +24,8 @@ tools:
   - Balsamiq
   - Facebook Login (OAuth)
   - Annotated wireframe specs
-gallery:
-  - /img/work/ferrari/ferrari-sso-1.jpg
-  - /img/work/ferrari/ferrari-sso-2.jpg
 permalink: /work/ferrari/
+published: false
 ---
 
 ## One account, six digital worlds
