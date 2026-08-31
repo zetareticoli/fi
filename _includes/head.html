@@ -1,14 +1,21 @@
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width">
-<title>
-{% if page.title %}
-{{ page.title }} • {{ site.name }}
-{% else %}
-{{ site.name }}
-{% endif %}
-</title>
-<meta name="description" content="{{ page.summary }} {{ site.description.meta }}">
+{%- comment -%}
+  Assets carry the build timestamp so they can be cached for a long time
+  (see the header rules in netlify.toml) without going stale after a deploy.
+{%- endcomment -%}
+{%- assign asset_version = site.time | date: '%Y%m%d%H%M' -%}
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{{ page.title | default: site.title }}</title>
+<meta name="description" content="{{ page.description | default: page.summary | default: page.overview | default: site.description }}" />
 <meta name="google-site-verification" content="drpyPKCiDDE-Kuqx_u2-IHEyzrBMKgcLWgJ1HPvCh90" />
+{% include page-transitions.html %}
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@300;400;500&amp;family=Mona+Sans:wght@300;400;500;600;700&amp;display=swap" />
+<link rel="stylesheet" href="{{ '/css/tw-compiled.css' | relative_url }}?v={{ asset_version }}" />
+<link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}?v={{ asset_version }}" />
+<link rel="stylesheet" href="{{ '/css/transitions.css' | relative_url }}?v={{ asset_version }}" />
+{% include speculation-rules.html %}
 
 <script async defer data-domain="francescoimprota.com" src="https://plausible.io/js/plausible.js"></script>
 
@@ -25,34 +32,28 @@
 <!-- /icons -->
 
 <!-- og tags -->
+{%- assign og_title = page.title | default: site.title -%}
+{%- assign og_description = page.description | default: page.summary | default: page.overview | default: site.description -%}
+{%- if page.og-image -%}
+  {%- assign og_image = page.og-image | prepend: '/img/' | absolute_url -%}
+{%- elsif page.cover-image -%}
+  {%- assign og_image = page.cover-image | prepend: '/img/' | absolute_url -%}
+{%- elsif page.cover -%}
+  {%- assign og_image = page.cover | absolute_url -%}
+{%- else -%}
+  {%- assign og_image = '/android-chrome-192x192.png' | absolute_url -%}
+{%- endif -%}
 <meta name="twitter:card" content="summary_large_image">
-<meta property="og:site_name" content="{{ site.name }}">
-<meta property="og:title" content="{% if page.title %}{{ page.title }} • {{ site.name }}{% else %}{{ site.name }}{% endif %}">
-<meta property="og:description" content="{% if page.summary %}{{ page.summary }}{% else %}{{ site.description.subtitle }}{% endif %}">
-<meta property="og:locale" content="{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang }}{% endif %}">
-<meta property="og:image" content="{% if page.og-image %}{{ site.url }}/img/{{ page.og-image }}{% elsif page.cover-image %}{{ site.url }}/img/{{ page.cover-image }}{% else %}{{ site.url }}/android-chrome-192x192.png{% endif %}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:title" content="{{ og_title }}">
+<meta property="og:description" content="{{ og_description }}">
+<meta property="og:locale" content="{{ page.lang | default: site.lang }}">
+<meta property="og:image" content="{{ og_image }}">
 <meta property="og:type" content="website">
-<meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
-<meta name="twitter:title" content="{% if page.title %}{{ page.title }} • {{ site.name }}{% else %}{{ site.name }}{% endif %}">
-<meta name="twitter:description" content="{% if page.summary %} {{ page.summary }} {% else %} {{ site.description.subtitle }}{% endif %}">
-<meta name="twitter:image" content="{% if page.og-image %}{{ site.url }}/img/{{ page.og-image }}{% elsif page.cover-image %}{{ site.url }}/img/{{ page.cover-image }}{% else %}{{ site.url }}/android-chrome-192x192.png{% endif %}">
-<meta name="twitter:site" content="{{ site.url }}{{ site.baseurl }}">
-<meta name="twitter:creator" content="{{ site.author.name }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta name="twitter:title" content="{{ og_title }}">
+<meta name="twitter:description" content="{{ og_description }}">
+<meta name="twitter:image" content="{{ og_image }}">
+<meta name="twitter:site" content="@{{ site.twitter_username }}">
+<meta name="twitter:creator" content="@{{ site.twitter_username }}">
 <!-- /og tags -->
-
-{%- comment -%}
-  These stylesheets carry the build timestamp so they can be cached for a
-  long time (see the header rules in netlify.toml) without going stale
-  after a deploy, matching the cache-busting done in _layouts/default.html.
-{%- endcomment -%}
-{%- assign asset_version = site.time | date: '%Y%m%d%H%M' -%}
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
-<link rel="stylesheet" href="{{ site.baseurl }}/css/tw-compiled.css?v={{ asset_version }}">
-<link rel="stylesheet" href="{{ site.baseurl }}/css/style.css?v={{ asset_version }}">
-<link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css">
-<link rel="preload" href="{{ site.baseurl }}/css/fonts/"Mona-Sans.woff2" as="font" type="font/woff2" crossorigin>
-
-<!-- DataFast script -->
-<script defer data-website-id="dfid_mO5A9lX0liqPYd3eD9e5j" data-domain="francescoimprota.com"
-  src="https://datafa.st/js/script.js">
-  </script>
