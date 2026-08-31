@@ -1,7 +1,7 @@
 ---
 layout: work
-title: Seejay redesign
-lead: A React component library to create a cohesive, unified product experience at Docker
+title: Seejay
+lead: A platform for collecting, organising, and publishing images, video, audio, and text from social networks
 summary: The summary of the project
 cover: /img/work/seejay/seejay-cover.webp
 org: Seejay
@@ -28,7 +28,7 @@ Working this way also reduced the distance between design intention and implemen
 
 ## **Atomic design as an operating model**
 
-The redesign organised the interface using the atomic design methodology popularised by Brad Frost: atoms, molecules, and organisms. This gave the project a vocabulary for discussing the site as a reusable system rather than as a sequence of isolated pages.[[1]](call_EoeLuLk4ZDfkCc4RMkgEOkxz)
+The redesign organised the interface using the atomic design methodology popularised by Brad Frost: atoms, molecules, and organisms. This gave the project a vocabulary for discussing the site as a reusable system rather than as a sequence of isolated pages.
 
 Atoms defined the smallest interface elements. Molecules combined those elements into functional units. Organisms assembled those units into larger sections of the experience. This structure made the redesign easier to reason about, because each decision had a place in the system.
 
