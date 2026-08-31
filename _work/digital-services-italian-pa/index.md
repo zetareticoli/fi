@@ -4,29 +4,30 @@ title: Digital Services for the Italian Public Administration
 cover: "/img/work/digital-public-services/digital-public-services-cover.webp"
 tag: Service Design
 order: 2
-overview: Designed public services for the Italian public administration.
+overview: Designed research-validated, ready-to-ship website templates that helped Italian public institutions deliver accessible, consistent digital services at national scale.\.
 role: Senior Product Designer
 org: Department for Digital Transformation
 period: 2022 – 2026
 external_url: https://designers.italia.it/modelli/
 context: Italy's public administration is made up of thousands of institutions — municipalities, schools, local health authorities, and civic museums — each solving the same digital-service problems independently, with no shared baseline for quality, accessibility, or navigation.
-challenge: "Designing a single template system for an entire public administration: prescriptive enough to guarantee accessibility compliance and navigation consistency — both legal requirements — while flexible enough to serve institutions with radically different content priorities."
+challenge: "Design a system of website templates that help public institutions create research-validated services built around citizens’ needs. The templates should to adhere to national guidelines and digital design best practices, while including ready-to-use guidance and resources that help any institution set up and complete its project quickly and cost-effectively."
 activities:
-  - label: "<strong>Functional requirements</strong> — wrote and maintained functional specifications for each template, and verified that external suppliers implemented them correctly."
-  - label: "<strong>Information architecture</strong> — designed sitemaps, navigation structures, and content models tailored to each institution type."
-  - label: "<strong>Product Design</strong> — designed mid-fidelity and high-fidelity layouts and UI kits in Figma, built on the national design system (Design System Italia)."
-  - label: "<strong>Usability and accessibility testing</strong> — planned and conducted in-person and remote testing sessions with real users; validated components against legal accessibility requirements."
-  - label: "<strong>Development resources</strong> — implemented static HTML templates and CMS themes to make the compliant path the easiest one for agencies and developers to follow."
-  - label: "<strong>Collaborated with policy makers</strong>, civil servants, and the web agencies responsible for actual site delivery"
+  - label: "<strong>Cross-functional Project Leadership</strong> —  led sprint planning, backlog prioritization, milestone tracking, and coordination across designers, developers, and PMs, resolving issues to keep delivery on track."
+  - label: "<strong>Stakeholder & Supplier Management</strong> — managed suppliers and institutional partners to ensure requirements were understood and delivered correctly."
+  - label: "<strong>Design Governance & Mentoring</strong> — acted as a reference point for design quality, guiding teams and external partners in the consistent application of the official Design System UI kit."
+  - label: "<strong>Accessibility Advocacy</strong> — championed accessibility and inclusive design across stakeholders, planning and leading testing sessions to validate compliance with legal requirements (WCAG 2.1)."
+  - label: "<strong>Developer Enablement</strong> — coordinated development handoff with external agencies and developers, aligning technical and design teams to make the compliant path the easiest one to follow."
 outcomes:
-  - number: "4"
-    label: Institution types served — municipalities, schools, civic museums, and local health authorities
-  - number: "90+"
-    label: HTML templates available for Modello Comuni alone
-  - number: ADI 2024
-    label: Design Index Award received by the ASL model and UI Kit Italia
+  - number: "10.000+"
+    label: Institutions using the website and digital services templates
   - number: "26"
-    label: Digital services supported with reusable interaction patterns in Modello Comuni
+    label: Digital services designed and supported with reusable interaction patterns
+  - number: 45+
+    label: Prototypes tested and validated
+  - number: "110+"
+    label: Open source templates published on GitHub
+  - number: "2"
+    label: Awards received for the healthcare institutions website
 tools:
   - Figma
   - Bootstrap Italia
@@ -40,34 +41,68 @@ gallery:
 permalink: /work/digital-public-services/
 ---
 
-## Designing for seven thousand clients at once
+Public institutions manage their digital services either through external suppliers or in-house teams. My role was to create resources that worked for both: ready-to-adopt deliverables that made the compliant path the easiest one to follow, regardless of who built them. Bridging that gap required far more than documentation.
 
-Modello Comuni started from an uncomfortable observation: every Italian municipality was solving the same design problems independently, and almost all of them were solving them badly. Booking a municipal service, finding an administrative document, understanding a local regulation — these tasks were structurally identical across every comune, but the experience of completing them differed wildly depending on which agency had built the site and how long ago.
+## Four institutions, four distinct design problems
 
-The model was not a visual rebrand. It was an attempt to solve the underlying structural problem: municipalities lacked the information architecture, the content guidelines, and the reusable components needed to produce a working digital service. Providing these things as open, ready-to-adopt resources meant that a small mountain comune with one part-time administrator could achieve a baseline of quality that previously required a dedicated design team.
+Each template was developed as an independent project — the same foundation in the national design system, but different content logic. Fresh research informed new prototypes, which were tested and then published as standalone resources tailored to each institutional context.
 
-The challenge was that "seven thousand clients" is not a coherent design brief. A coastal municipality with a busy tourist season has different priority content than an industrial city managing complex administrative workflows. The model had to be prescriptive enough to ensure accessibility compliance and navigation consistency — both legal requirements — while leaving room for genuinely different content strategies.
+### Municipalities
 
-## Research as the non-negotiable foundation
+[placeholder for municipalities]
 
-Every model in the programme was grounded in qualitative research conducted with real users. For the schools model, this meant interviewing parents, students, and school staff to understand what information they actually needed and how they expected to find it — not what the institution assumed they needed. For the ASL model, it meant mapping the journeys people go through when navigating healthcare services, often in moments of stress or uncertainty.
+The most complex model in terms of service breadth. Municipalities offer a wide range of administrative services, from permits and certifications to local events and civic infrastructure. The template centres on a services-first information architecture, with a clear taxonomy of service types and a structured content model for each service page, designed to work for both small comuni and large cities.
 
-This research was not a one-time input. The models evolved through iterative testing, and the findings routinely contradicted assumptions baked into early prototypes. Navigation labels that seemed clear to the team were consistently misunderstood by users with lower digital literacy. Multi-step forms that felt streamlined in a workshop became confusing once real data was involved.
+### Schools
 
-The discipline of treating usability test results as binding — rather than as one input among many — is what separated the models from typical government web guidelines. It also created a more defensible position when stakeholders pushed back on navigation choices or content hierarchies. The decision had evidence behind it.
+[placeholder for schools]
 
-## The gap between a model and an adoption
+Designed around the needs of parents, students, and school staff. Research showed that users primarily looked for enrolment information, timetables, school communications, and contacts. The template prioritises these content types with a streamlined navigation structure, and includes specific content models for circolari and news updates — the most frequently published content type in Italian schools.
 
-Publishing a validated model and watching institutions actually adopt it are different problems. The municipalities, schools, and health authorities using these models were not running design teams. They were working with web agencies and vendors who had existing ways of building sites, existing relationships, and no particular incentive to adopt a new framework.
+### Healthcare institutions
 
-This is where the implementation resources — the HTML templates, the CMS themes, the Figma libraries — mattered as much as the model documentation itself. Making Bootstrap Italia the path of least resistance for a developer meant that compliance with the national design guidelines happened almost automatically. The agency did not need to agree with every design decision to implement it correctly.
+[placeholder for healthcare institutions]
 
-The same logic applied to the Figma component libraries: an editor or a junior designer working within an institution could use the kit to produce pages that were structurally sound without needing to understand the reasoning behind every spacing choice. The model did the heavy thinking so the institution didn't have to.
+The most sensitive model in terms of content and audience.
 
-## Expanding beyond municipalities
+Users navigate healthcare services often in moments of stress or urgency, and a significant portion of the audience is older or has lower digital literacy. The template prioritises clarity of wayfinding, plain-language content patterns, and accessibility.  
 
-Adapting the core model to schools, civic museums, and local health authorities exposed how much context-specific the original assumptions were. The civic museum model required a fundamentally different approach to content hierarchy — collections, exhibitions, and visiting information don't map cleanly onto the services-centred architecture of a municipal site. The ASL model had to account for the emotional weight of healthcare content and the specific accessibility needs of an older demographic.
+#### Award-winning design
 
-Each expansion was treated as a design problem in its own right, not a reskin. New research was commissioned, new prototypes were tested, and the resulting models were published as independent resources — architecturally consistent with the broader ecosystem but genuinely tailored to their institutional context.
+The healthcare institutions website was awarded the ADI 2024 prize for best public service website. The design was praised for its clarity of purpose, user-centred design, and accessibility.
 
-The result is a programme of four distinct models that share a common foundation in the national design system and a common commitment to citizen-centred design, while reflecting the real differences in how citizens interact with different types of public institution.
+![ADI 2024 award for the healthcare institutions website](/img/work/digital-public-services/adi-2024-award.png)
+
+### Civic museums
+
+[placeholder for civic museums]
+
+The most structurally different model. Collections, exhibitions, and visiting information don't map onto the services-centred architecture used for the other templates. The museum model required a content hierarchy built around cultural assets, with dedicated structures for permanent collections, temporary exhibitions, ticketing, and educational activities, while maintaining navigation consistency with the broader ecosystem.
+
+## Full Design Cycle
+
+Alongside each model, I produced a complete set of operational resources designed to make the compliant path the easiest to follow:
+
+### Information architecture
+
+Ready-made sitemaps, navigation structures, and content models for each type of institution, so an agency started from a validated skeleton instead of a blank page.
+
+### Figma layouts and libraries
+
+Complete UI kits and page layouts built on the national design system, letting editors and junior designers assemble structurally sound pages without reverse-engineering every spacing choice.
+
+### HTML templates
+
+Production-ready templates built on Bootstrap Italia, making the compliant markup the path of least resistance for developers.
+
+### Operational guides
+
+Step-by-step documentation on how to write content, structure pages, and configure the templates, written for non-specialists rather than for designers.
+
+### Usability and accessibility testing
+
+Every model and its components were validated with real users and against the legal accessibility requirements, so adopters inherited that testing for free.
+
+### Manage development handoff
+
+Developed static HTML templates and CMS themes to make the compliant path the easiest for agencies and developers to follow. Used Bootstrap Italia (HTML, CSS, JS), React Kit Italia, and Dev Kit Italia (web components).
