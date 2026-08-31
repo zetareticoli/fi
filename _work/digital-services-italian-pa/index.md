@@ -8,7 +8,7 @@ overview: Designed public services for the Italian public administration.
 role: Senior Product Designer
 org: Department for Digital Transformation
 period: 2022 – 2026
-url: https://designers.italia.it/modelli/
+external_url: https://designers.italia.it/modelli/
 context: Italy's public administration is made up of thousands of institutions — municipalities, schools, local health authorities, and civic museums — each solving the same digital-service problems independently, with no shared baseline for quality, accessibility, or navigation.
 challenge: "Designing a single template system for an entire public administration: prescriptive enough to guarantee accessibility compliance and navigation consistency — both legal requirements — while flexible enough to serve institutions with radically different content priorities."
 activities:

@@ -9,7 +9,7 @@ overview: The official design system for the Italian public administration digit
 role: Design System Lead
 org: Department for Digital Transformation
 period: 2022 – present
-url: https://designers.italia.it/design-system/
+external_url: https://designers.italia.it/design-system/
 context: Italy's public administration is a complex ecosystem — thousands of institutions, each with different budgets, technical capabilities, and design maturity. The goal of Design System Italia was to provide a shared foundation that any public body could adopt, from a small municipality to a national ministry.
 challenge: The challenge wasn't purely technical. It required balancing the needs of highly diverse stakeholders, ensuring that components worked for both small teams with no design resources and large agencies with established processes.
 activities:

@@ -30,7 +30,7 @@ layout: default
       {% if page.period %}<div><span class="meta-tag block mb-1">PERIOD</span>
         <p class="text-sm font-medium">{{ page.period }}</p>
       </div>{% endif %}
-      {% if page.url %}<div><span class="meta-tag block mb-1">LINK</span><a href="{{ page.url }}" target="_blank"
+      {% if page.external_url %}<div><span class="meta-tag block mb-1">LINK</span><a href="{{ page.external_url }}" target="_blank"
           rel="noopener noreferrer" class="text-sm underline underline-offset-2 hover:opacity-70 transition-opacity">Visit site ↗</a>
       </div>{% endif %}
     </div>
