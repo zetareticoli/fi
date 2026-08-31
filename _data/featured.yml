@@ -32,7 +32,7 @@
     md: { col: 6, row: 1 }
     lg: { col: 6, row: 1 }
     xl: { col: 6, row: 1 }
-- image: /img/work/citynews/today-video.mp4
+- video: /img/work/citynews/today-video.mp4
   url: /work/citynews/
   grid:
     md: { col: 6, row: 1 }
