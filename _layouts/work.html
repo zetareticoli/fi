@@ -99,7 +99,7 @@ layout: default
       <span class="meta-tag block mb-8">Full Story</span>
       <div id="full-story" class="prose prose-md max-w-3xl relative overflow-hidden max-h-36 transition-all duration-500 ease-in-out">
         {{ content }}
-        <div id="full-story-fade" class="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-background to-transparent"></div>
+        <div id="full-story-fade" class="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-linear-to-t from-background to-transparent"></div>
       </div>
       <button id="full-story-toggle" type="button" aria-expanded="false" aria-controls="full-story"
         class="mt-8 inline-flex items-center gap-2 text-sm font-medium underline underline-offset-2 hover:opacity-70 transition-opacity cursor-pointer">
@@ -118,12 +118,12 @@ layout: default
         var expanded = toggle.getAttribute('aria-expanded') === 'true';
         if (expanded) {
           content.style.maxHeight = '';
-          content.classList.add('max-h-64');
+          content.classList.add('max-h-36');
           if (fade) fade.classList.remove('hidden');
           toggle.setAttribute('aria-expanded', 'false');
           toggle.innerHTML = 'Read the full story <span aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-unfold-vertical-icon lucide-unfold-vertical"><path d="M12 22v-6"/><path d="M12 8V2"/><path d="M4 12H2"/><path d="M10 12H8"/><path d="M16 12h-2"/><path d="M22 12h-2"/><path d="m15 19-3 3-3-3"/><path d="m15 5-3-3-3 3"/></svg></span>';
         } else {
-          content.classList.remove('max-h-64');
+          content.classList.remove('max-h-36');
           content.style.maxHeight = content.scrollHeight + 'px';
           if (fade) fade.classList.add('hidden');
           toggle.setAttribute('aria-expanded', 'true');
