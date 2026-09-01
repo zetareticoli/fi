@@ -954,9 +954,6 @@
   .ml-3 {
     margin-left: calc(var(--spacing) * 3);
   }
-  .ml-48 {
-    margin-left: calc(var(--spacing) * 48);
-  }
   .block {
     display: block;
   }
@@ -981,14 +978,8 @@
   .list-item {
     display: list-item;
   }
-  .table {
-    display: table;
-  }
   .aspect-square {
     aspect-ratio: 1 / 1;
-  }
-  .h-1 {
-    height: var(--spacing);
   }
   .h-1\.5 {
     height: calc(var(--spacing) * 1.5);
@@ -1014,9 +1005,6 @@
   .min-h-screen {
     min-height: 100vh;
   }
-  .w-1 {
-    width: var(--spacing);
-  }
   .w-1\.5 {
     width: calc(var(--spacing) * 1.5);
   }
@@ -1034,6 +1022,12 @@
   }
   .w-full {
     width: 100%;
+  }
+  .max-w-1\/2 {
+    max-width: calc(1 / 2 * 100%);
+  }
+  .max-w-2\/3 {
+    max-width: calc(2 / 3 * 100%);
   }
   .max-w-2xl {
     max-width: var(--container-2xl);
@@ -1059,20 +1053,11 @@
   .flex-1 {
     flex: 1;
   }
-  .flex-shrink {
-    flex-shrink: 1;
-  }
   .shrink-0 {
     flex-shrink: 0;
   }
-  .flex-grow {
-    flex-grow: 1;
-  }
   .grow {
     flex-grow: 1;
-  }
-  .border-collapse {
-    border-collapse: collapse;
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
@@ -1217,9 +1202,6 @@
   .bg-purple-500 {
     background-color: var(--color-purple-500);
   }
-  .bg-secondary {
-    background-color: var(--color-secondary);
-  }
   .bg-secondary\/40 {
     background-color: color-mix(in srgb, hsl(var(--secondary)) 40%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -1264,9 +1246,6 @@
   }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
-  }
-  .py-0 {
-    padding-block: 0;
   }
   .py-0\.5 {
     padding-block: calc(var(--spacing) * 0.5);
