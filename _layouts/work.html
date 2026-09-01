@@ -82,9 +82,9 @@ layout: default
   <!-- Gallery -->
   {% if page.gallery %}
   <section class="px-6 lg:px-10 py-12 lg:py-16">
-    <div class="grid grid-cols-1 xl:grid-cols-12 gap-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-2">
       {% for image in page.gallery %}
-      <figure class="animate-in xl:col-span-6 bg-secondary/40 p-10 rounded-xl">
+      <figure class="animate-in lg:col-span-6">
         <img src="{{ image | relative_url }}" alt="{{ image.alt }}" class="w-full h-auto object-cover" loading="lazy" />
       </figure>
       {% endfor %}
