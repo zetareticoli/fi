@@ -2,9 +2,9 @@
 layout: work
 title: Designing News
 cover: "/img/work/citynews/citynews-cover.webp"
-overview: Led the design team of a major Italian media company.
+overview: Led the design team of a major italian media company.
 order: 1
-cover-alt: Screenshot of the intro video published on the Citynews website homepage
+cover-alt: Introduction video on the Citynews website homepage
 org: Citynews
 period: 2012-2021
 role: Head of Design
@@ -16,52 +16,60 @@ activities:
   - label: Collaborate with stakeholders to define the product roadmap and vision.
   - label: Create a Design System to ensure consistency across all products, keeping a coherent visual identity 
   - label: Design for multiple platforms, adapting concepts from web to mobile, requiring attention to detail and extensive testing.
-images:
-  - /img/work/citynews/citynews-hp-sketch.webp
-  - /img/work/citynews/today-brand.webp
+gallery:
+  - /img/work/citynews/citynews-ui-sketch.webp
+  - /img/work/citynews/citynews-brand-shape.webp
+  - /img/work/citynews/citynews-brand-exploration.webp
   - /img/work/citynews/citynews-ui-kit.webp
   - /img/work/citynews/citynews-gdl-products.webp
-  - /img/work/citynews/citynews-gdl-styleguide.webp
-  - /img/work/citynews/citynews-mobile-apps.webp
-  - /img/work/citynews/citynews-corporate-brands.webp
-  - /img/work/citynews/citynews-corporate-intro-homepage.webp
-  - /img/work/citynews/citynews-corporate-intro-video.webp
+  - /img/work/citynews/citynews-gdl-styleguide.webp  
 permalink: /work/citynews/
 ---
 
+## From consultancy to leading the design team
 
-## From freelancing to leading the design team
+Citynews gave me an incredible canvas for creativity and innovation. I started in 2012as a freelance designer, redesigning the websites and community platforms for individual local editions.
 
-Citynews provided me with an incredible canvas for creativity and innovation. I joined initially as a **freelance designer**, redesigning the brand websites and community platforms of individual local editions.
+<div class="flex flex-col md:flex-row gap-4">
+  <figure class="animate-in bg-secondary/40 p-10 rounded-xl">
+    <img src="/img/work/citynews/citynews-ui-sketch.webp" alt="" class="w-full h-auto object-cover" loading="lazy" />
+    <figcaption class="color-text-light">2012 — Early sketches of the new homepage for editorial brands</figcaption>
+  </figure>
+</div>
 
 My responsibilities expanded in 2015, when I was called back to spearhead a responsive design strategy and revamp the brand identity across all editorial products. In April 2016, I officially joined the company as **Head of Design**, going on to build and lead the product design team over the following years.
 
-Across this journey, my work centered on three major products: a shared brand identity built to scale, a design system spanning every platform, and a renewed corporate identity for the company itself.
+Throughout this journey, my work focused on three core products: a scalable shared brand identity, a cross-platform design system, and a refreshed corporate identity for the company itself.
 
 ### A brand identity built to scale
 
 One of the earliest challenges was designing a **unique brand identity** that could be shared consistently across dozens of local and national editions, while remaining flexible enough to scale smoothly to new market openings as Citynews kept expanding.
 
-<div class="flex direction-col-to-row">
-  <figure>
-    <img src="/img/work/citynews/citynews-hp-sketch.webp" alt="">
-    <figcaption class="color-text-light">2012 — Early sketches of the new homepage for editorial brands</figcaption>
-  </figure>
-  <figure>
-    <img src="/img/work/citynews/today-brand.webp" alt="">
-    <figcaption class="color-text-light">2013 — Shape details of the brand identity for Today.it brand</figcaption>
-  </figure>
-  <figure>
-    <img src="/img/work/citynews/citynews-ui-kit.webp" alt="">
-    <figcaption class="color-text-light">2013 — UI kit snap preview</figcaption>
-  </figure>
-</div>
+<figure class="animate-in bg-secondary/40 p-10 rounded-xl w-full">
+  <img src="/img/work/citynews/citynews-brand-shape.webp" alt="" class="w-full h-auto object-cover" loading="lazy" />
+  <figcaption class="color-text-light">Shape details of the brand identity for Today.it brand</figcaption>
+</figure>
+
+<figure class="animate-in bg-secondary/40 p-10 rounded-xl w-full">
+  <img src="/img/work/citynews/citynews-brand-exploration.webp" alt="" class="w-full h-auto object-cover" loading="lazy" />
+  <figcaption class="color-text-light">Exploring typeface alternatives</figcaption>
+</figure>
+
+<figure class="animate-in bg-secondary/40 p-10 rounded-xl w-full">
+  <img src="/img/work/citynews/citynews-brands.webp" alt="" class="w-full h-auto object-cover" loading="lazy" />
+  <figcaption class="color-text-light">Scaling the brand identity across multiple brands</figcaption>
+</figure>
 
 Over the years, I led the product design team, nurturing and collaborating with talented individuals who embraced this vision, and established a robust workflow in tandem with various departments, introducing cutting-edge tools and methodologies.
 
 ### A design system for every platform
 
 A significant milestone was the creation of the **Global Design Language (GDL)**, a comprehensive design system built to let any team design digital products consistently across **web**, **iOS**, and **Android**. Introduced in late 2020, it's still in use today.
+
+<figure class="animate-in bg-secondary/40 p-10 rounded-xl">
+  <img src="/img/work/citynews/citynews-ui-kit.webp" alt="" class="w-full h-auto object-cover" loading="lazy" />
+  <figcaption class="color-text-light">2013 — UI kit snap preview</figcaption>
+</figure>
 
 <div class="flex direction-col-to-row">
   <figure>
