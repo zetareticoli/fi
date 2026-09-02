@@ -4,3 +4,24 @@
 
 [build.environment]
   RUBY_VERSION = "3.0.3"
+
+# The layout requests these four files with a ?v=<build timestamp> query, so a
+# deploy always produces a new URL and a long cache never serves a stale file.
+# This is what keeps a page transition from waiting on a revalidation round
+# trip: on a repeat visit the browser needs nothing but the HTML.
+# Only add a file here once its URL carries that query.
+
+[[headers]]
+  for = "/css/style.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/css/tw-compiled.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/js/app.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

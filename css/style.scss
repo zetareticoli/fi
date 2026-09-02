@@ -29,9 +29,9 @@
 // @import '../_sass/utilities/spacing';
 // @import '../_sass/utilities/text';
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mona+Sans:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap');
+// The webfonts are requested from a <link> in the layout instead of from here:
+// an @import is only discovered once this file has been fetched and parsed,
+// which puts a second round trip in front of the first paint of every page.
 
 /* Hairline divider utility */
 .hairline {
