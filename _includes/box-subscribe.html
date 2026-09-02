@@ -12,8 +12,8 @@
 
   Accepts optional {% include box-subscribe.html title="…" text="…" %}.
 {%- endcomment -%}
-{%- assign subscribe_title = include.title | default: "Subscribe to my writing" -%}
-{%- assign subscribe_text = include.text | default: "Receive an email whenever I publish a new article or post news about my work." -%}
+{%- assign subscribe_title = include.title | default: "Subscribe to writing" -%}
+{%- assign subscribe_text = include.text | default: "Get notified when I publish new articles and share news about my work." -%}
 <aside class="not-prose @container/box border border-border bg-secondary/40 px-6 py-10 lg:px-10 lg:py-12">
   <div class="grid gap-8 @3xl/box:grid-cols-2 @3xl/box:gap-12 @3xl/box:items-start">
     <div class="max-w-xl">
@@ -32,21 +32,21 @@
         data-sv-form="6087649" data-uid="73a77bb495" data-format="inline" data-version="6"
         data-options="{&quot;settings&quot;:{&quot;after_subscribe&quot;:{&quot;action&quot;:&quot;redirect&quot;,&quot;success_message&quot;:&quot;Great! Once confirmed, you'll receive articles directly in your inbox\n&quot;,&quot;redirect_url&quot;:&quot;https://francescoimprota.com/thanks&quot;},&quot;analytics&quot;:{&quot;google&quot;:null,&quot;fathom&quot;:null,&quot;facebook&quot;:null,&quot;segment&quot;:null,&quot;pinterest&quot;:null,&quot;sparkloop&quot;:null,&quot;googletagmanager&quot;:null},&quot;modal&quot;:{&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;powered_by&quot;:{&quot;show&quot;:true,&quot;url&quot;:&quot;https://kit.com/features/forms?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic&quot;},&quot;recaptcha&quot;:{&quot;enabled&quot;:false},&quot;return_visitor&quot;:{&quot;action&quot;:&quot;show&quot;,&quot;custom_content&quot;:&quot;&quot;},&quot;slide_in&quot;:{&quot;display_in&quot;:&quot;bottom_right&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;sticky_bar&quot;:{&quot;display_in&quot;:&quot;top&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15}},&quot;version&quot;:&quot;6&quot;}">
         <ul class="formkit-alert formkit-alert-error empty:hidden mb-4 list-none border border-destructive/50 bg-destructive/10 px-4 py-3 text-sm text-destructive" data-element="errors" data-group="alert"></ul>
-        <div data-element="fields" data-stacked="false" class="seva-fields formkit-fields grid gap-3 @md/fields:grid-cols-2">
+        <div data-element="fields" data-stacked="false" class="seva-fields formkit-fields grid gap-3 @md/fields:grid-cols-3 lg:mt-6">
           {%- comment -%}
             The wrappers are positioned because Kit absolutely positions the
             "did you mean …" email suggestion it injects next to the input.
           {%- endcomment -%}
           <div class="formkit-field relative">
-            <input name="email_address" type="email" required aria-label="Your email" placeholder="Your email"
+            <input name="email_address" type="email" required aria-label="Your email" placeholder="Email"
               class="formkit-input w-full border border-border bg-background px-4 py-3 text-base text-foreground placeholder:text-muted transition-colors hover:border-muted focus:border-accent focus:outline-none disabled:opacity-60">
           </div>
           <div class="formkit-field relative">
-            <input name="fields[first_name]" type="text" aria-label="Your name" placeholder="Your name (optional)"
+            <input name="fields[first_name]" type="text" aria-label="Your name" placeholder="Name (optional)"
               class="formkit-input w-full border border-border bg-background px-4 py-3 text-base text-foreground placeholder:text-muted transition-colors hover:border-muted focus:border-accent focus:outline-none disabled:opacity-60">
           </div>
           <button type="submit" data-element="submit"
-            class="formkit-submit group/submit relative inline-flex w-full items-center justify-center overflow-hidden bg-primary px-6 py-3 text-base font-medium text-primary-foreground transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent disabled:cursor-not-allowed @md/fields:col-span-2 @md/fields:w-auto @md/fields:justify-self-start">
+            class="formkit-submit group/submit relative inline-flex w-full items-center justify-center overflow-hidden bg-primary px-6 py-3 text-base font-medium text-primary-foreground transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent disabled:cursor-not-allowed @md/fields:justify-self-start">
             <span class="formkit-spinner pointer-events-none absolute inset-0 flex items-center justify-center gap-1.5 opacity-0 transition-opacity group-data-[active]/submit:opacity-100" aria-hidden="true">
               <span class="size-1.5 animate-bounce rounded-full bg-current [animation-delay:-0.32s]"></span>
               <span class="size-1.5 animate-bounce rounded-full bg-current [animation-delay:-0.16s]"></span>
@@ -57,7 +57,7 @@
         </div>
       </form>
 
-      <p class="meta-tag mt-6">No spam · Unsubscribe at any time</p>
+      <p class="text-xs text-muted-foreground mt-6">No spam · Unsubscribe at any time</p>
     </div>
   </div>
 </aside>
