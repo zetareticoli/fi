@@ -97,12 +97,12 @@ layout: default
   <section class="px-6 lg:px-10 py-12 lg:py-16 grid grid-cols-1 xl:grid-cols-12 gap-10 xl:gap-16 max-w-7xl mx-auto">
     <div class="xl:col-span-8">
       <span class="meta-tag block mb-8">Full Story</span>
-      <div id="full-story" class="prose prose-md max-w-3xl relative overflow-hidden max-h-36 transition-all duration-500 ease-in-out">
+      <div id="full-story" class="prose prose-md max-w-3xl relative overflow-hidden max-h-36 transition-[max-height] duration-500 ease-in-out">
         {{ content }}
-        <div id="full-story-fade" class="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-linear-to-t from-background to-transparent"></div>
+        <div id="full-story-fade" class="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-linear-to-t from-background to-transparent transition-opacity duration-500"></div>
       </div>
       <button id="full-story-toggle" type="button" aria-expanded="false" aria-controls="full-story"
-        class="mt-8 inline-flex items-center gap-2 text-sm font-medium underline underline-offset-2 hover:opacity-70 transition-opacity cursor-pointer">
+        class="mt-8 inline-flex items-center gap-2 px-4 py-2 text-sm font-medium border border-black/10 hover:border-black/40 dark:border-white/20 dark:hover:border-white underline underline-offset-2 transition-colors cursor-pointer">
         Read the full story
         <span aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-unfold-vertical-icon lucide-unfold-vertical"><path d="M12 22v-6"/><path d="M12 8V2"/><path d="M4 12H2"/><path d="M10 12H8"/><path d="M16 12h-2"/><path d="M22 12h-2"/><path d="m15 19-3 3-3-3"/><path d="m15 5-3-3-3 3"/></svg></span>
       </button>
@@ -114,20 +114,46 @@ layout: default
       var toggle = document.getElementById('full-story-toggle');
       var fade = document.getElementById('full-story-fade');
       if (!content || !toggle) return;
-      toggle.addEventListener('click', function () {
-        var expanded = toggle.getAttribute('aria-expanded') === 'true';
-        if (expanded) {
+
+      var icon = '<span aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-unfold-vertical-icon lucide-unfold-vertical"><path d="M12 22v-6"/><path d="M12 8V2"/><path d="M4 12H2"/><path d="M10 12H8"/><path d="M16 12h-2"/><path d="M22 12h-2"/><path d="m15 19-3 3-3-3"/><path d="m15 5-3-3-3 3"/></svg></span>';
+      var expandLabel = 'Read the full story ' + icon;
+      var collapseLabel = 'Show less ' + icon;
+      var collapsedHeight = getComputedStyle(content).maxHeight;
+
+      function expand() {
+        content.style.maxHeight = collapsedHeight;
+        content.classList.remove('max-h-36');
+        content.offsetHeight;
+        content.style.maxHeight = content.scrollHeight + 'px';
+        if (fade) fade.classList.add('opacity-0');
+        toggle.setAttribute('aria-expanded', 'true');
+        toggle.innerHTML = collapseLabel;
+      }
+
+      function collapse() {
+        content.style.maxHeight = content.scrollHeight + 'px';
+        content.offsetHeight;
+        content.style.maxHeight = collapsedHeight;
+        if (fade) fade.classList.remove('opacity-0');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.innerHTML = expandLabel;
+      }
+
+      content.addEventListener('transitionend', function (e) {
+        if (e.propertyName !== 'max-height') return;
+        if (toggle.getAttribute('aria-expanded') === 'true') {
+          content.style.maxHeight = 'none';
+        } else {
           content.style.maxHeight = '';
           content.classList.add('max-h-36');
-          if (fade) fade.classList.remove('hidden');
-          toggle.setAttribute('aria-expanded', 'false');
-          toggle.innerHTML = 'Read the full story <span aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-unfold-vertical-icon lucide-unfold-vertical"><path d="M12 22v-6"/><path d="M12 8V2"/><path d="M4 12H2"/><path d="M10 12H8"/><path d="M16 12h-2"/><path d="M22 12h-2"/><path d="m15 19-3 3-3-3"/><path d="m15 5-3-3-3 3"/></svg></span>';
+        }
+      });
+
+      toggle.addEventListener('click', function () {
+        if (toggle.getAttribute('aria-expanded') === 'true') {
+          collapse();
         } else {
-          content.classList.remove('max-h-36');
-          content.style.maxHeight = content.scrollHeight + 'px';
-          if (fade) fade.classList.add('hidden');
-          toggle.setAttribute('aria-expanded', 'true');
-          toggle.innerHTML = 'Show less <span aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-unfold-vertical-icon lucide-unfold-vertical"><path d="M12 22v-6"/><path d="M12 8V2"/><path d="M4 12H2"/><path d="M10 12H8"/><path d="M16 12h-2"/><path d="M22 12h-2"/><path d="m15 19-3 3-3-3"/><path d="m15 5-3-3-3 3"/></svg></span>';
+          expand();
         }
       });
     })();
