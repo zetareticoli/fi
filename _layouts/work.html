@@ -85,7 +85,13 @@ layout: default
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-2">
       {% for image in page.gallery %}
       <figure class="animate-in lg:col-span-6">
+        {% if image contains '.mp4' %}
+        <video autoplay loop muted playsinline preload="auto" class="w-full h-auto object-cover">
+          <source src="{{ image | relative_url }}" type="video/mp4">
+        </video>
+        {% else %}
         <img src="{{ image | relative_url }}" alt="{{ image.alt }}" class="w-full h-auto object-cover" loading="lazy" />
+        {% endif %}
       </figure>
       {% endfor %}
     </div>

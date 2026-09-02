@@ -28,13 +28,6 @@ outcomes:
     label: Open source templates published on GitHub
   - number: "2"
     label: Awards received for the healthcare institutions website
-tools:
-  - Figma
-  - Bootstrap Italia
-  - HTML and CSS
-  - WCAG 2.1
-  - GitHub
-  - Miro
 gallery:
   - /img/work/digital-public-services/digital-public-services-1.png
   - /img/work/digital-public-services/digital-public-services-2.png
