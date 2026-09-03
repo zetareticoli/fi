@@ -32,9 +32,16 @@ tools:
   - GitHub
   - Web Components
 gallery:
-  - /img/work/design-system-italia/design-system-italia-1.jpg
-  - /img/work/design-system-italia/design-system-italia-1.jpg
-  - /img/work/design-system-italia/design-system-italia-1.jpg
+  - /img/work/design-system-italia/design-system-italia-website.webp
+  - /img/work/design-system-italia/uikit-italia.webp
+  - /img/work/design-system-italia/design-system-italia-colors.webp
+  - /img/work/design-system-italia/design-system-italia-foundations.webp
+  - /img/work/design-system-italia/design-system-italia-typography.webp
+  - /img/work/design-system-italia/design-system-italia-github-board.webp
+  - /img/work/design-system-italia/design-system-italia-icons.webp
+  - /img/work/design-system-italia/design-system-italia-component.webp
+  - /img/work/design-system-italia/design-system-italia-palette.webp
+  - /img/work/design-system-italia/bootstrap-italia.webp
 permalink: /work/design-system-italia/
 ---
 
