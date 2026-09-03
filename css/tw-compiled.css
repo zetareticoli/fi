@@ -2276,31 +2276,6 @@
       padding-block: calc(var(--spacing) * 16);
     }
   }
-  .\@md\/fields\:col-span-1 {
-    @container fields (width >= 28rem) {
-      grid-column: span 1 / span 1;
-    }
-  }
-  .\@md\/fields\:col-span-2 {
-    @container fields (width >= 28rem) {
-      grid-column: span 2 / span 2;
-    }
-  }
-  .\@md\/fields\:col-span-3 {
-    @container fields (width >= 28rem) {
-      grid-column: span 3 / span 3;
-    }
-  }
-  .\@md\/fields\:w-auto {
-    @container fields (width >= 28rem) {
-      width: auto;
-    }
-  }
-  .\@md\/fields\:grid-cols-2 {
-    @container fields (width >= 28rem) {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
   .\@md\/fields\:grid-cols-3 {
     @container fields (width >= 28rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
