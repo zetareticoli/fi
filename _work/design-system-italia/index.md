@@ -13,9 +13,11 @@ external_url: https://designers.italia.it/design-system/
 context: Italy's public administration is a complex ecosystem — thousands of institutions, each with different budgets, technical capabilities, and design maturity. The goal of Design System Italia was to provide a shared foundation that any public body could adopt, from a small municipality to a national ministry.
 challenge: The challenge wasn't purely technical. It required balancing the needs of highly diverse stakeholders, ensuring that components worked for both small teams with no design resources and large agencies with established processes.
 activities:
-  - label: Designed and maintained UI Kit Italia — 60+ components with multiple variants, mapped to Bootstrap Italia
   - label: Authored all component documentation and usage guidelines
-  - label: Verified WCAG 2.1 AA compliance for every published component
+  - label: Defined interaction patterns and guidelines for each component
+  - label: Managing the Figma component library (UI Kit Italia)
+  - label: Coordinated with front-end developers to ensure implementation consistency
+  - label: Ensured accessibility compliance (WCAG 2.1 AA)
   - label: Reviewed community contributions and governed design decisions in public on GitHub
 outcomes:
   - number: "15,000"
@@ -49,16 +51,15 @@ permalink: /work/design-system-italia/
 
 Design System .italia is maintained as a fully open-source project on GitHub. This means every decision — a component's default state, a naming convention, a colour token — is made in public and subject to community scrutiny. Early on, this felt like a constraint. Over time, it became a quality mechanism.
 
-<figure class="animate-in xl:col-span-6 bg-secondary/40 p-10 rounded-xl">
-  <img src="/img/work/design-system-italia/design-system-italia-1.jpg" alt="Design System Italia" class="w-full h-auto object-cover" loading="lazy" />
+<figure class="animate-in">
+  <img src="/img/work/design-system-italia/design-system-italia-github-board.webp" alt="Design System Italia GitHub Project Board" class="w-full h-auto object-cover" loading="lazy" />
 </figure>
 
 Feedback from agency developers pushing their first pull requests revealed assumptions baked into the component API that would have gone unnoticed in a closed process. Maintaining that open channel required a different kind of discipline: writing decision rationale in commit messages, responding to issues from municipalities with no dedicated design team, and explaining trade-offs to people who had never worked with a design system before.
 
+## Consistency and flexibility
 
-## The hardest tension: flexibility vs. coherence
-
-The design system serves an extraordinarily diverse audience. A small mountain municipality with one part-time web administrator has entirely different needs than a ministry with a team of twenty developers. Both need to comply with the same accessibility standards. Both need to produce something that reads unmistakably as a public service.
+The design system serves an extraordinarily diverse audience. A small municipality with one part-time web administrator has entirely different needs than a ministry with a team of twenty developers. Both need to comply with the same accessibility standards. Both need to produce something that reads unmistakably as a public service.
 
 The recurring pressure was to add escape hatches — custom colour overrides, optional layout variations, theme tokens for individual institutions. Each request was individually reasonable. Collectively, they would have dissolved the system into a theme kit.
 
@@ -76,9 +77,9 @@ Fifteen thousand public administration websites didn't adopt the design system b
 
 This meant producing migration guides and Figma starter kits targeting designers with no design system experience, running community labs to surface adoption blockers before they stalled implementations, and working with the web agencies actually building the sites to make Bootstrap Italia the path of least resistance rather than an additional compliance burden.
 
-## Community labs
+## Conducting Workshops
 
-Community Labs were a series of workshops designed to help public administration teams adopt the design system. They were a chance to learn about the design system, get hands-on with the components, and get feedback on their implementations.
+CommunityLab were a series of workshops designed to help public administration teams adopt the design system. They were a chance to learn about the design system, get hands-on with the components, and get feedback on their implementations.
 
 <iframe
   src="https://www.youtube.com/embed/QyzK93Huhy8"
