@@ -25,14 +25,9 @@ outcomes:
   - number: "60+"
     label: Components in the design system
   - number: 5
-    label: Resources available to the community UI Kit Italia, Bootstrap Italia, Dev Kit Italia, Design Tokens Italia
-tools:
-  - Figma
-  - Bootstrap Italia
-  - HTML and CSS
-  - WCAG 2.1
-  - GitHub
-  - Web Components
+    label: Different resources available to the community
+  - number: "1"
+    label: Award won for UI Kit Italia
 gallery:
   - /img/work/design-system-italia/design-system-italia-website.webp
   - /img/work/design-system-italia/uikit-italia.webp
@@ -47,39 +42,77 @@ gallery:
 permalink: /work/design-system-italia/
 ---
 
+Design System Italia is an open-source design system for Italian public services that provides guidelines, tools and resources so thousands of teams can build consistent, compliant interfaces. I curated all of them, keeping in sync, coordinating the work, and reviewing and community contributions in public on GitHub.
+
+## Authoring the system
+
+I authored all component documentation and usage guidelines and defined the interaction patterns for each component: how it changes state, behaves, and supports people navigating with a keyboard or screen reader. This work rarely shows up in a component library screenshot, but it’s what enabled fifteen thousand teams to build consistent interfaces without needing to ask me directly.
+
+<figure class="animate-in">
+  <img src="/img/work/design-system-italia/design-system-italia-component.webp" alt="Design System Italia Component" class="w-full h-auto object-cover" loading="lazy" />
+</figure>
+
+## Managing the Figma component library
+
+I directly curated **UI Kit Italia**, the Figma component library keeping it mirrored token-for-token and state-for-state against the coded components. Keeping those two sources of truth in sync across every release was a constant, low-visibility maintenance job that nobody notices until it breaks.
+
+<figure class="animate-in">
+  <img src="/img/work/design-system-italia/uikit-italia.webp" alt="UI Kit Italia" class="w-full h-auto object-cover" loading="lazy" />
+</figure>
+
+## Ensuring implementation consistency
+
+Bootstrap Italia is the coded front-end framework that turns the system's tokens, elements and interaction patterns into production-ready components.
+
+<figure class="animate-in">
+  <img src="/img/work/design-system-italia/bootstrap-italia.webp" alt="Bootstrap Italia Homepage" class="w-full h-auto object-cover" loading="lazy" />
+</figure>
+
+Across the v2.x line and in v3.0.0, I translated design decisions into implementation requirements for the development team and worked directly on the HTML and CSS across foundations and components.
+
+I wrote the interaction specification for every new or revised component, reviewed incoming pull requests against those specs before merge, and worked directly with the front-end developers to close the gaps between what a component looked like in Figma and what it had to do in the browser.
+
+The new v3.0.0 rewrite meant re-verifying the entire component set against WCAG 2.1 AA as the underlying markup and CSS architecture changed, and defining a migration path so the fifteen thousand sites already built on v2.x wouldn't break on upgrade.
+
+### Design Tokens Italia
+
+Design Tokens Italia is where every colour, spacing value, and typographic scale in the system lives as a single source of truth, and I own that architecture end to end. I define and maintain the tokens as JSON files in a public repository, structured so that a change to a core value — a brand colour, a base spacing unit — propagates automatically to every platform that consumes it, rather than being hand-edited in a dozen places.
+
+<figure class="animate-in">
+  <img src="/img/work/design-system-italia/design-system-italia-tokens.webp" alt="Design Tokens Italia" class="w-full h-auto object-cover" loading="lazy" />
+</figure>
+
+I set up the Style Dictionary pipeline that transforms those JSON definitions into the CSS variables Bootstrap Italia and Dev Kit Italia actually ship, wired into continuous integration so a token change is validated and published the same way as any other code change, not passed along informally to whoever remembers to update it. On the design side, I maintain the equivalent token set in Figma Tokens Studio, so designers work against the same values developers build against.
+
+<figure class="animate-in">
+  <img src="/img/work/design-system-italia/design-system-italia-tokens-repo.webp" alt="Design Tokens Italia" class="w-full h-auto object-cover" loading="lazy" />
+</figure>
+
+Keeping that pipeline reliable, rather than just defining the tokens once, is most of the actual work: reviewing every proposed token change for downstream impact before it merges, and making sure the public repository stays legible to contributors who only ever touch it once.
+
+## Consistency and flexibility
+
+The design system had to work for everyone from small municipalities to large ministries, all under the same accessibility rules and expectations of public-service clarity.
+
+The constant pull was toward exceptions — custom colours, layout variants, institution-specific themes. Each made sense alone; together they would have turned the system into a theme kit.
+
+So I kept the flexibility surface intentionally small (spacing scale and a limited set of semantic colour tokens) and documented “no” decisions to vendors and stakeholders, translating constraints into clear, actionable guidance.
+
 ## Working in the open
 
-Design System .italia is maintained as a fully open-source project on GitHub. This means every decision — a component's default state, a naming convention, a colour token — is made in public and subject to community scrutiny. Early on, this felt like a constraint. Over time, it became a quality mechanism.
+Design System Italia is fully open source on GitHub. For most of the project, I helped set the rules for working in the open: what we documented, how we explained trade-offs, and which community pull requests we merged.
 
 <figure class="animate-in">
   <img src="/img/work/design-system-italia/design-system-italia-github-board.webp" alt="Design System Italia GitHub Project Board" class="w-full h-auto object-cover" loading="lazy" />
 </figure>
 
-Feedback from agency developers pushing their first pull requests revealed assumptions baked into the component API that would have gone unnoticed in a closed process. Maintaining that open channel required a different kind of discipline: writing decision rationale in commit messages, responding to issues from municipalities with no dedicated design team, and explaining trade-offs to people who had never worked with a design system before.
+Most decisions (states, naming, tokens) happened in public. At first it slowed me down, but it became a strong quality check.
 
-## Consistency and flexibility
+Reviewing first-time contributors showed me where the docs were unclear. I wrote clear rationale in commits and PR reviews, replied to issues from small teams, and explained choices in plain language. Many of those conversations became documentation.
 
-The design system serves an extraordinarily diverse audience. A small municipality with one part-time web administrator has entirely different needs than a ministry with a team of twenty developers. Both need to comply with the same accessibility standards. Both need to produce something that reads unmistakably as a public service.
+## Community Workshops
 
-The recurring pressure was to add escape hatches — custom colour overrides, optional layout variations, theme tokens for individual institutions. Each request was individually reasonable. Collectively, they would have dissolved the system into a theme kit.
-
-The decision I kept returning to was to hold a narrow surface of intentional flexibility (spacing scales, a limited set of semantic colour tokens) and resist everything else. This required saying no — repeatedly and with documented reasoning — to suppliers used to bespoke deliverables, and to institutions convinced their brand required an exception. Translating "this constraint protects your users" into something a non-designer stakeholder could act on was its own design challenge.
-
-## Accessibility as a non-negotiable
-
-WCAG 2.1 AA compliance was a legal requirement under Italian digital services regulations, not a best practice. Every component was designed and verified against colour contrast ratios, keyboard navigation flows, focus management, and screen reader behaviour before being published.
-
-This meant slower iteration cycles. When a new component required back-and-forth over focus trap behaviour in a modal, the temptation was to ship a known-acceptable version and iterate. We didn't. That discipline built trust with institutional stakeholders who had real legal exposure on accessibility — and eventually became a credibility differentiator for the project as a whole.
-
-## Adoption as a design problem
-
-Fifteen thousand public administration websites didn't adopt the design system because it was good. They adopted it because the path to adoption was designed as carefully as the components themselves.
-
-This meant producing migration guides and Figma starter kits targeting designers with no design system experience, running community labs to surface adoption blockers before they stalled implementations, and working with the web agencies actually building the sites to make Bootstrap Italia the path of least resistance rather than an additional compliance burden.
-
-## Conducting Workshops
-
-CommunityLab were a series of workshops designed to help public administration teams adopt the design system. They were a chance to learn about the design system, get hands-on with the components, and get feedback on their implementations.
+Community Lab were a series of workshops designed to help public administration teams adopt the design system. They were a chance to learn about the design system, get hands-on with the components, and get feedback on their implementations.
 
 <iframe
   src="https://www.youtube.com/embed/QyzK93Huhy8"
@@ -89,3 +122,4 @@ CommunityLab were a series of workshops designed to help public administration t
   width="560"
   height="315"
 ></iframe>
+
