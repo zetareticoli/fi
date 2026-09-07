@@ -17,13 +17,13 @@
 - video: "/img/work/digital-public-services/healthcare-website.mp4"
   url: /work/digital-public-services/
   grid:
-    md: { col: 4, row: 1 }
-    lg: { col: 4, row: 1 }
+    md: { col: 2, row: 1 }
+    lg: { col: 2, row: 1 }
     xl: { col: 3, row: 2 }
 - image: /img/work/citynews/romatoday-mobile-app.webp
   url: /work/citynews/
   grid:
-    md: { col: 6, row: 1 }
+    md: { col: 4, row: 1 }
     lg: { col: 4, row: 1 }
     xl: { col: 3, row: 1 }
 - image: /img/work/digital-public-services/municipalities-website.webp
@@ -42,7 +42,7 @@
   url: /work/citynews/
   grid:
     md: { col: 6, row: 1 }
-    lg: { col: 4, row: 1 }
+    lg: { col: 5, row: 1 }
     xl: { col: 6, row: 1 }
 - image: /img/work/noemalife/galileo-mobile.webp
   url: /work/noemalife/
