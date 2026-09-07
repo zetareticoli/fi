@@ -27,10 +27,16 @@ outcomes:
   - number: "110+"
     label: Open source templates published on GitHub
   - number: "2"
-    label: Awards received for the healthcare institutions website
+    label: Awards won by the healthcare institutions website
 gallery:
-  - /img/work/digital-public-services/digital-public-services-1.png
-  - /img/work/digital-public-services/digital-public-services-2.png
+  - /img/work/digital-public-services/municipalities-website.webp
+  - /img/work/digital-public-services/healthcare-website.mp4
+  - /img/work/digital-public-services/padigitale2026.webp
+  - /img/work/digital-public-services/civic-museums-website.webp
+  - /img/work/digital-public-services/municipalities-services.webp
+  - /img/work/digital-public-services/how-to-customize.webp
+  - /img/work/digital-public-services/schools-website.webp
+  - /img/work/digital-public-services/civic-museums-components.webp
 permalink: /work/digital-public-services/
 ---
 
@@ -42,35 +48,50 @@ Each template was developed as an independent project — the same foundation in
 
 ### Municipalities
 
-[placeholder for municipalities]
+The most complex model in terms of service breadth. 
 
-The most complex model in terms of service breadth. Municipalities offer a wide range of administrative services, from permits and certifications to local events and civic infrastructure. The template centres on a services-first information architecture, with a clear taxonomy of service types and a structured content model for each service page, designed to work for both small comuni and large cities.
+The public website template for municipalities addresses the essential need for citizens to find information and services quickly and easily. It delivers clear navigation, well-organized pages, and intuitive access to everything from permits and certifications to local events and civic infrastructure, making it effective for both small comuni and larger cities.
+
+![Municipalities website](/img/work/digital-public-services/municipalities-website.webp)
+
+
+In parallel, the design closely supports digital public services themselves—structuring each service page with a consistent, research-driven content model and a clear taxonomy of service types. This approach enables municipalities to present their services in a user-centric, accessible way, seamlessly integrating service delivery within the broader website experience.
+
+![Municipalities website](/img/work/digital-public-services/municipalities-services.webp)
 
 ### Schools
 
-[placeholder for schools]
+![Schools website](/img/work/digital-public-services/schools-website.webp)
 
 Designed around the needs of parents, students, and school staff. Research showed that users primarily looked for enrolment information, timetables, school communications, and contacts. The template prioritises these content types with a streamlined navigation structure, and includes specific content models for circolari and news updates — the most frequently published content type in Italian schools.
 
 ### Healthcare institutions
 
-[placeholder for healthcare institutions]
+<video src="/img/work/digital-public-services/healthcare-website.mp4" autoplay muted loop playsinline></video>
 
 The most sensitive model in terms of content and audience.
 
 Users navigate healthcare services often in moments of stress or urgency, and a significant portion of the audience is older or has lower digital literacy. The template prioritises clarity of wayfinding, plain-language content patterns, and accessibility.  
 
-#### Award-winning design
+#### An Award-winning design
 
 The healthcare institutions website was awarded the ADI 2024 prize for best public service website. The design was praised for its clarity of purpose, user-centred design, and accessibility.
 
-![ADI 2024 award for the healthcare institutions website](/img/work/digital-public-services/adi-2024-award.png)
+![ADI 2024 award for the healthcare institutions website](/img/awards/adi-design-index-award.webp)
 
 ### Civic museums
 
-[placeholder for civic museums]
+![Civic museums website](/img/work/digital-public-services/civic-museums-website.webp)
 
-The most structurally different model. Collections, exhibitions, and visiting information don't map onto the services-centred architecture used for the other templates. The museum model required a content hierarchy built around cultural assets, with dedicated structures for permanent collections, temporary exhibitions, ticketing, and educational activities, while maintaining navigation consistency with the broader ecosystem.
+The most structurally different website template. 
+
+Collections, exhibitions, and visiting information don't map onto the services-centred architecture used for the other website templates. It required a content hierarchy built around cultural assets, with dedicated structures for permanent collections, temporary exhibitions, ticketing, and educational activities, while maintaining navigation consistency with the broader ecosystem.
+
+The website template was designed to be used in a wide range of civic museums, from small local museums to large national institutions. For that reason, every structural component was designed to be flexible and adaptable to different museum types and content structures.
+
+![Civic museums components](/img/work/digital-public-services/civic-museums-components.webp)
+
+I tested the website template with a range of users, including museum staff, visitors, and local residents (both in italian and english), to ensure it was easy to use and understand.
 
 ## Full Design Cycle
 
@@ -80,9 +101,15 @@ Alongside each model, I produced a complete set of operational resources designe
 
 Ready-made sitemaps, navigation structures, and content models for each type of institution, so an agency started from a validated skeleton instead of a blank page.
 
+![Information architecture for the website templates](/img/work/digital-public-services/information-architecture.webp)
+
 ### Figma layouts and libraries
 
 Complete UI kits and page layouts built on the national design system, letting editors and junior designers assemble structurally sound pages without reverse-engineering every spacing choice.
+
+![How to customize the website templates](/img/work/digital-public-services/how-to-customize.webp)
+
+I created a guide to customization and extension of the website templates, to help agencies and developers to make the templates their own.
 
 ### HTML templates
 

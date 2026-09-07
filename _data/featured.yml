@@ -8,13 +8,13 @@
     md: { col: 6, row: 1 }
     lg: { col: 6, row: 1 }
     xl: { col: 5, row: 1 }
-- image: /img/work/padigitale2026/padigitale2026.webp
-  url: /work/padigitale2026/
+- image: /img/work/digital-public-services/padigitale2026.webp
+  url: /work/digital-public-services/
   grid:
     md: { col: 6, row: 1 }
     lg: { col: 6, row: 1 }
     xl: { col: 4, row: 1 }
-- video: "/img/work/digital-public-services/test-video.mp4"
+- video: "/img/work/digital-public-services/healthcare-website.mp4"
   url: /work/digital-public-services/
   grid:
     md: { col: 4, row: 1 }
@@ -26,7 +26,7 @@
     md: { col: 6, row: 1 }
     lg: { col: 4, row: 1 }
     xl: { col: 3, row: 1 }
-- image: /img/work/digital-public-services/comuni-website.webp
+- image: /img/work/digital-public-services/municipalities-website.webp
   url: /work/digital-public-services/
   grid:
     md: { col: 6, row: 1 }

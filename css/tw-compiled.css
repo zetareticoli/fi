@@ -49,7 +49,6 @@
     --leading-normal: 1.5;
     --leading-relaxed: 1.625;
     --radius-xs: 0.125rem;
-    --radius-xl: 0.75rem;
     --ease-out: cubic-bezier(0, 0, 0.2, 1);
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --animate-bounce: bounce 1s infinite;
