@@ -6,7 +6,7 @@ nav_title: "About"
 nav_order: 1
 permalink: /about/
 ---
-<div class="min-h-screen max-w-screen-xl">
+<div class="min-h-screen max-w-7xl">
 
   <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
 
@@ -41,14 +41,17 @@ permalink: /about/
           for the Executive Course on User Interface Design.</p>
         <p class="text-base text-muted-foreground leading-relaxed">When not busy at work I love swimming, hiking in the
           Dolomites and traveling the world with my family. I'm passionate about astronomy and sci-fi movies.</p>
+        <p>
+          <a href="{{ '/work' | relative_url }}"
+            class="mt-2 inline-flex items-center gap-2 text-base font-medium hover:opacity-60 transition-opacity underline underline-offset-2">
+            See my work →
+          </a>
+        </p>
       </section>
 
       <!-- How I work + Skills -->
       <section>
         <h4 class="meta-tag mb-4">Expertise</h4>
-        <p class="text-lg text-foreground leading-relaxed font-medium mb-6">I work hands-on across design and engineering, treating
-          design systems as shared infrastructure rather than a set of components.</p>
-        
         <div class="flex flex-col gap-5 mt-6">
           <div class="flex flex-col gap-1">
             <h3 class="text-md font-semibold leading-snug">UI System Architecture</h3>
@@ -75,15 +78,8 @@ permalink: /about/
             <p class="text-sm text-muted-foreground leading-relaxed">Helping designers and engineers grow within structured, system-oriented
               environments.</p>
           </div>
-
-          <a href="{{ '/work' | relative_url }}"
-            class="mt-2 inline-flex items-center gap-2 text-sm font-medium hover:opacity-60 transition-opacity underline underline-offset-2">
-            See my work →
-          </a>
         </div>
             
-      
-
       </section>
 
     </div>
@@ -115,9 +111,9 @@ permalink: /about/
         <div class="flex flex-col gap-5">
           {% for t in site.data.about.teaching %}
           <div class="flex flex-col gap-1">
-            <span class="text-sm font-medium">{{ t.org }}</span>
             <a href="{{ t.url }}" target="_blank" rel="noopener noreferrer"
-              class="text-sm text-muted-foreground hover:text-foreground transition-colors underline underline-offset-2">{{ t.title }}</a>
+            class="text-sm text-primary hover:text-foreground font-medium transition-colors underline underline-offset-2">{{ t.title }}</a>
+            <span class="text-sm text-muted-foreground">{{ t.org }}</span>
           </div>
           {% endfor %}
         </div>
@@ -131,7 +127,7 @@ permalink: /about/
         <div class="flex flex-col">
           {% for talk in site.data.about.speaking %}
           <div class="flex flex-col gap-0.5 py-3 hairline">
-            <span class="text-sm text-primary leading-snug">{{ talk.title }}</span>
+            <span class="text-sm text-primary font-medium leading-snug">{{ talk.title }}</span>
             <span class="meta-tag">{{ talk.year }} @{{ talk.event }}</span>
           </div>
           {% endfor %}
@@ -145,7 +141,7 @@ permalink: /about/
         <span class="meta-tag block mb-6">Publications</span>
         {% for pub in site.data.about.publications %}
         <div class="flex flex-col gap-3 sm:flex-row sm:gap-4">
-          <img src="{{ pub.image | relative_url }}" alt="{{ pub.title }}" class="w-20 h-auto self-start flex-shrink-0 grayscale shadow-lg">
+          <img src="{{ pub.image | relative_url }}" alt="{{ pub.title }}" class="w-20 h-auto self-start shrink-0 grayscale shadow-lg">
           <div class="flex flex-col gap-1">
             <h3 class="text-sm font-medium leading-snug"><a href="{{ pub.url }}" target="_blank" rel="noopener noreferrer"
               class="text-sm underline underline-offset-2 font-medium transition-colors">{{ pub.title }}</a></h3>
