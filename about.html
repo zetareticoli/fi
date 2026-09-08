@@ -27,17 +27,17 @@ permalink: /about/
           I help organizations establish design systems as infrastructure — aligning design and front-end architecture to enable consistency, speed, and long-term maintainability. My focus is on system thinking, governance, and reducing organizational friction at scale.
         </p>
         <p class="mb-6 text-base text-muted-foreground leading-relaxed">I've worked across editorial, healthcare, banking, sports, government,
-          e-commerce, and information technology — for companies such as <span class="text-primary">Scuderia
-            Ferrari F1</span>, <span class="text-primary">Enel Energia</span>, <span class="text-primary">ING
-            Direct</span>, and <span class="text-primary">HCL Software</span>, as a freelance or full-time job.
-            In 2009, <span class="text-primary">I co-founded a SaaS company</span>.
+          e-commerce, and information technology — for companies such as <span class="text-primary font-medium">Scuderia
+            Ferrari F1</span>, <span class="text-primary font-medium">Enel Energia</span>, <span class="text-primary font-medium">ING
+            Direct</span>, and <span class="text-primary font-medium">HCL Software</span>, as a freelance or full-time job.
+            In 2009, <span class="text-primary font-medium">I co-founded a SaaS company</span>.
         </p>
         <p class="mb-6 text-base text-muted-foreground leading-relaxed">Most recently, I serve as Senior Product Designer at
-          the <span class="text-primary">Italian Department for Digital Transformation</span>, where I design and
+          the <span class="text-primary font-medium">Italian Department for Digital Transformation</span>, where I design and
           build public digital services and help maintain Design System Italia.
         </p>
         <p class="mb-6 text-base text-muted-foreground leading-relaxed">I write, teach, and speak about design systems, design
-          tokens, and workflow best practices. I'm part of the faculty at <span class="text-primary">POLI.design</span>
+          tokens, and workflow best practices. I'm part of the faculty at <span class="text-primary font-medium">POLI.design</span>
           for the Executive Course on User Interface Design.</p>
         <p class="text-base text-muted-foreground leading-relaxed">When not busy at work I love swimming, hiking in the
           Dolomites and traveling the world with my family. I'm passionate about astronomy and sci-fi movies.</p>
@@ -52,30 +52,30 @@ permalink: /about/
       <!-- How I work + Skills -->
       <section>
         <h4 class="meta-tag mb-4">Expertise</h4>
-        <div class="flex flex-col gap-5 mt-6">
+        <div class="flex flex-col gap-6 mt-6">
           <div class="flex flex-col gap-1">
-            <h3 class="text-md font-semibold leading-snug">UI System Architecture</h3>
-            <p class="text-sm text-muted-foreground leading-relaxed">Building and governing UI platforms designed to scale across teams, products,
+            <h3 class="text-lg font-semibold leading-snug">Design System Architecture</h3>
+            <p class="text-base text-muted-foreground leading-relaxed">Building and governing UI platforms designed to scale across teams, products,
               and organizational boundaries.</p>
           </div>
           <div class="flex flex-col gap-1">
-            <h3 class="text-md font-semibold leading-snug">Cross-functional Enablement</h3>
-            <p class="text-sm text-muted-foreground leading-relaxed">Enabling collaboration between design, product, and engineering through shared
+            <h3 class="text-lg font-semibold leading-snug">Cross-functional Enablement</h3>
+            <p class="text-base text-muted-foreground leading-relaxed">Enabling collaboration between design, product, and engineering through shared
               language, processes, and systems.</p>
           </div>
           <div class="flex flex-col gap-1">
-            <h3 class="text-md font-semibold leading-snug">Decision-making in Complex Environments</h3>
-            <p class="text-sm text-muted-foreground leading-relaxed">Assessing constraints, trade-offs, and risks to support sustainable product and
+            <h3 class="text-lg font-semibold leading-snug">Decision-making in Complex Environments</h3>
+            <p class="text-base text-muted-foreground leading-relaxed">Assessing constraints, trade-offs, and risks to support sustainable product and
               technical decisions.</p>
           </div>
           <div class="flex flex-col gap-1">
-            <h3 class="text-md font-semibold leading-snug">Standards, Documentation, and Adoption</h3>
-            <p class="text-sm text-muted-foreground leading-relaxed">Defining standards and documentation that encourage consistency while leaving
+            <h3 class="text-lg font-semibold leading-snug">Standards, Documentation, and Adoption</h3>
+            <p class="text-base text-muted-foreground leading-relaxed">Defining standards and documentation that encourage consistency while leaving
               room for evolution.</p>
           </div>
           <div class="flex flex-col gap-1">
-            <h3 class="text-md font-semibold leading-snug">Mentorship and Team Support</h3>
-            <p class="text-sm text-muted-foreground leading-relaxed">Helping designers and engineers grow within structured, system-oriented
+            <h3 class="text-lg font-semibold leading-snug">Mentorship and Team Leading</h3>
+            <p class="text-base text-muted-foreground leading-relaxed">Helping designers and engineers grow within structured, system-oriented
               environments.</p>
           </div>
         </div>
@@ -112,7 +112,7 @@ permalink: /about/
           {% for t in site.data.about.teaching %}
           <div class="flex flex-col gap-1">
             <a href="{{ t.url }}" target="_blank" rel="noopener noreferrer"
-            class="text-sm text-primary hover:text-foreground font-medium transition-colors underline underline-offset-2">{{ t.title }}</a>
+            class="text-sm text-primary hover:text-foreground font-medium transition-colors underline underline-offset-2 mb-1">{{ t.title }}</a>
             <span class="text-sm text-muted-foreground">{{ t.org }}</span>
           </div>
           {% endfor %}
@@ -127,7 +127,7 @@ permalink: /about/
         <div class="flex flex-col">
           {% for talk in site.data.about.speaking %}
           <div class="flex flex-col gap-0.5 py-3 hairline">
-            <span class="text-sm text-primary font-medium leading-snug">{{ talk.title }}</span>
+            <span class="text-sm text-primary font-medium leading-snug mb-1">{{ talk.title }}</span>
             <span class="meta-tag">{{ talk.year }} @{{ talk.event }}</span>
           </div>
           {% endfor %}
