@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Design ownership for products, systems, and everything that connects them."
-description: "I'm a designer with two decades of experience designing products for government, big companies and small businesses."
+description: "Design Lead with two decades of experience designing products for government, enterprise, and small businesses."
 nav: true
 nav_title: "Home"
 nav_order: 0
@@ -16,7 +16,7 @@ permalink: /
           {{ page.title }}
         </h1>
         <p class="text-lg text-muted-foreground font-regular">{{ page.description }}</p>
-        <a href="{{ '/about' | relative_url }}" class="mt-8 text-base underline font-medium hover:opacity-60 transition-opacity underline-offset-2">
+        <a href="{{ '/about' | relative_url }}" class="mt-8 text-base underline font-medium hover:text-accent transition-colors underline-offset-2">
           About me →
         </a>
       </div>
@@ -33,7 +33,7 @@ permalink: /
       {% include featured.html %}
       {% endfor %}
     </div>
-    <a href="{{ '/work' | relative_url }}" class="text-base text-muted-foreground underline hover:text-primary transition-colors mt-4 ml-3 underline-offset-2">All work →</a>
+    <a href="{{ '/work' | relative_url }}" class="text-base text-base font-medium underline hover:text-accent transition-colors mt-4 ml-3 underline-offset-2">Explore my work →</a>
   </section>
 
   <section class="px-6 lg:px-10 py-16 lg:py-20 max-w-7xl">
@@ -48,8 +48,9 @@ permalink: /
         <span class="col-span-3 text-right meta-tag">{{ post.date | date: "%-d %b %Y" }}</span>
       </a>
       {% endfor %}
+      <div class="hairline"></div>
       <a href="{{ '/writing' | relative_url }}"
-        class="text-base text-muted-foreground underline hover:text-primary transition-colors mt-4 ml-3 underline-offset-2">All
+        class="text-base text-muted-foreground font-medium underline hover:text-accent transition-colors mt-4 ml-3 underline-offset-2">All
         writing →</a>
     </div>
   </section>
