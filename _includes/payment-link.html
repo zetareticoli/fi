@@ -1,7 +1,39 @@
-<div class="price-section mb-m">
-  <div class="price">€149 <span class="price-old">€249</span></div>
-  <div class="date">📅 2 date disponibili, dalle 09:00 alle 13:00</div>
-  <a href="https://book.stripe.com/5kQaEW2D1cIq8rU76Xcs801?prefilled_promo_code=EARLYMAG26"
-    class="cta-primary plausible-event-name=Buy+Workshop">Riserva il tuo posto</a>
+{%- comment -%}
+Workshop offer block, driven by the `offer` map in the page front matter:
+
+  offer:
+    price: "€99"              # required
+    price_full: "€199"        # optional, shown struck through
+    url: "https://…"          # checkout link
+    cta: "Riserva il tuo posto"
+    plausible_event: "Buy+Workshop"
+    sessions:                 # explicit dates, one line each
+      - "Giovedì 15 ottobre 2026, 09:00-13:00"
+    dates_note: "2 date disponibili"   # used only when `sessions` is missing
+    deadline: "2026-09-15T09:00:00"    # drives the countdown in the layout
+    note: "Early Bird fino al …"       # early bird copy, rendered with note=true
+
+Parameters: bg (surface class), note (render the early bird note),
+url (override the checkout link for this block only).
+{%- endcomment -%}
+{%- assign offer = page.offer -%}
+<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 p-6 md:p-8 border border-border {{ include.bg | default: 'bg-secondary/40' }} md:text-left">
+  <div class="flex flex-col items-center gap-2 md:items-start">
+    <div class="flex items-baseline gap-3">
+      <span class="font-heading text-3xl font-bold">{{ offer.price }}</span>
+      {% if offer.price_full %}<span class="text-lg text-muted-foreground line-through">{{ offer.price_full }}</span>{% endif %}
+    </div>
+    {% if offer.sessions %}{% for session in offer.sessions %}
+    <span class="font-mono text-xs uppercase tracking-wide text-muted-foreground">🗓️ {{ session }}</span>
+    {% endfor %}{% elsif offer.dates_note %}
+    <span class="font-mono text-xs uppercase tracking-wide text-muted-foreground">🗓️ {{ offer.dates_note }}</span>
+    {% endif %}
+  </div>
+  <a href="{{ include.url | default: offer.url }}" class="inline-flex items-center justify-center shrink-0 px-8 py-4 bg-accent text-black text-base font-medium hover:opacity-90 transition-opacity{% if offer.plausible_event %} plausible-event-name={{ offer.plausible_event }}{% endif %}">{{ offer.cta | default: 'Riserva il tuo posto' }}</a>
 </div>
-<div class="event-static mb-m text-small block font-regular color-text-light">Early Bird fino al 30 aprile. <strong>4 posti rimasti</strong>. Il tuo acquisto è valido anche per le prossime date.</div>
+{% if include.note and offer.note %}
+<div class="text-center">
+  <p class="event-countdown text-sm text-muted-foreground" style="display: none;"></p>
+  <p class="event-static mt-6 text-sm text-muted-foreground">{{ offer.note }}</p>
+</div>
+{% endif %}

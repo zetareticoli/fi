@@ -1,55 +1,142 @@
 ---
-layout: folio
+layout: work
 title: Digital Services for the Italian Public Administration
-lead: Designing a unified, citizen-friendly experience for government digital services
+cover: "/img/work/digital-public-services/digital-public-services-cover.webp"
+tag: Service Design
 order: 2
-summary: At the Italian Department for Digital Transformation, I worked on designing scalable models and templates for digital services used by Italian citizens — from municipality websites to national health portals. The work involved defining UX patterns, building reusable templates, and ensuring consistency across the entire public administration digital ecosystem.
-cover: designersitalia-cover.webp
-cover-alt: Screenshot of the designers.italia.it website showing service design templates
-client: dtd
-year: 2022 - 2026
+overview: Designed research-validated, ready-to-ship website templates that helped Italian public institutions deliver accessible, consistent digital services at national scale.
 role: Senior Product Designer
-platform: Web, Mobile
-responsibilities:
-  - UX research and service design
-  - Designing page templates and service flows
-  - Building reusable layouts for comuni (municipalities)
-  - Defining navigation and information architecture patterns
-  - Collaborating with policy makers and civil servants
-  - Testing with real citizens
-permalink: /work/digital-services-italian-pa/
+org: Department for Digital Transformation
+period: 2022 – 2026
+external_url: https://designers.italia.it/modelli/
+context: Italy's public administration is made up of thousands of institutions — municipalities, schools, local health authorities, and civic museums — each solving the same digital-service problems independently, with no shared baseline for quality, accessibility, or navigation.
+challenge: "Design a system of website templates that help public institutions create research-validated services built around citizens’ needs. The templates should to adhere to national guidelines and digital design best practices, while including ready-to-use guidance and resources that help any institution set up and complete its project quickly and cost-effectively."
+activities:
+  - label: "<strong>Cross-functional Project Leadership</strong> —  led sprint planning, backlog prioritization, milestone tracking, and coordination across designers, developers, and PMs, resolving issues to keep delivery on track."
+  - label: "<strong>Stakeholder & Supplier Management</strong> — managed suppliers and institutional partners to ensure requirements were understood and delivered correctly."
+  - label: "<strong>Design Governance & Mentoring</strong> — acted as a reference point for design quality, guiding teams and external partners in the consistent application of the official Design System UI kit."
+  - label: "<strong>Accessibility Advocacy</strong> — championed accessibility and inclusive design across stakeholders, planning and leading testing sessions to validate compliance with legal requirements (WCAG 2.1)."
+  - label: "<strong>Developer Enablement</strong> — coordinated development handoff with external agencies and developers, aligning technical and design teams to make the compliant path the easiest one to follow."
+outcomes:
+  - number: "10.000+"
+    label: Institutions using the website and digital services templates
+  - number: "26"
+    label: Digital services designed and supported with reusable interaction patterns
+  - number: 45+
+    label: Prototypes tested and validated
+  - number: "110+"
+    label: Open source templates published on GitHub
+  - number: "2"
+    label: Awards won by the healthcare institutions website
+gallery:
+  - /img/work/digital-public-services/municipalities-website.webp
+  - /img/work/digital-public-services/healthcare-website.mp4
+  - /img/work/digital-public-services/padigitale2026.webp
+  - /img/work/digital-public-services/civic-museums-website.webp
+  - /img/work/digital-public-services/municipalities-services.webp
+  - /img/work/digital-public-services/how-to-customize.webp
+  - /img/work/digital-public-services/schools-website.webp
+  - /img/work/digital-public-services/civic-museums-components.webp
+permalink: /work/digital-public-services/
 ---
 
-## The challenge
+Public institutions manage their digital services either through external suppliers or in-house teams. My role was to create resources that worked for both: ready-to-adopt deliverables that made the compliant path the easiest one to follow, regardless of who built them. Bridging that gap required far more than documentation.
 
-Italy has over 7,700 municipalities, each with a website serving local citizens for services like booking appointments, paying fines, or accessing local documents. Most of these sites were outdated, inconsistent, and difficult to use — especially for elderly or less digitally-literate citizens.
+## Four institutions, four distinct design problems
 
-The mission was to design a **standard model** that any municipality could adopt, reducing the design and development burden while dramatically improving the citizen experience.
+Each template was developed as an independent project — the same foundation in the national design system, but different content logic. Fresh research informed new prototypes, which were tested and then published as standalone resources tailored to each institutional context.
 
-## What I worked on
+### Municipalities
 
-### Modello Comuni
+The most complex model in terms of service breadth. 
 
-I contributed to the design of **Modello Comuni** — a complete website template for Italian municipalities. This included the information architecture, page templates for over 20 content types (services, news, events, locations, administrative documents), and the navigation structure.
+The public website template for municipalities addresses the essential need for citizens to find information and services quickly and easily. It delivers clear navigation, well-organized pages, and intuitive access to everything from permits and certifications to local events and civic infrastructure, making it effective for both small comuni and larger cities.
 
-The model is available as a free, open-source kit that municipalities can directly adopt or customise, paired with a CMS-agnostic content structure.
+![Municipalities website](/img/work/digital-public-services/municipalities-website.webp)
 
-### Service design patterns
 
-Beyond the visual layer, the work involved defining the flows citizens go through to complete tasks — booking a service, understanding their eligibility, receiving updates. I documented these as reusable service patterns that could be applied across different institution types.
+In parallel, the design closely supports digital public services themselves—structuring each service page with a consistent, research-driven content model and a clear taxonomy of service types. This approach enables municipalities to present their services in a user-centric, accessible way, seamlessly integrating service delivery within the broader website experience.
 
-### Citizen testing
+![Municipalities website](/img/work/digital-public-services/municipalities-services.webp)
 
-We ran usability tests with real citizens across different age groups and digital literacy levels. Insights from these sessions directly shaped navigation choices, content labelling, and the simplification of multi-step forms.
+### Schools
 
-### Scalability across institution types
+![Schools website](/img/work/digital-public-services/schools-website.webp)
 
-The model had to work not just for municipalities but also for school websites, healthcare facilities (ASL), and cultural institutions. I worked on adapting the core patterns to these contexts, maintaining consistency while accommodating different content needs.
+Designed around the needs of parents, students, and school staff. Research showed that users primarily looked for enrolment information, timetables, school communications, and contacts. The template prioritises these content types with a streamlined navigation structure, and includes specific content models for circolari and news updates — the most frequently published content type in Italian schools.
 
-## Outcome
+### Healthcare institutions
 
-The Modello Comuni has been adopted by thousands of Italian municipalities. The broader digital services work contributed to Italy climbing in the **EU DESI** (Digital Economy and Society Index) rankings.
+<video src="/img/work/digital-public-services/healthcare-website.mp4" autoplay muted loop playsinline></video>
 
-The **ASL website model** and **UI Kit Italia** — both developed within this programme — received the **ADI Design Index Award 2024**.
+The most sensitive model in terms of content and audience.
 
-Explore the published models at [designers.italia.it/modelli](https://designers.italia.it/modelli/comuni/).
+Users navigate healthcare services often in moments of stress or urgency, and a significant portion of the audience is older or has lower digital literacy. The template prioritises clarity of wayfinding, plain-language content patterns, and accessibility.  
+
+#### An Award-winning design
+
+The healthcare institutions website was awarded the ADI 2024 prize for best public service website. The design was praised for its clarity of purpose, user-centred design, and accessibility.
+
+![ADI 2024 award for the healthcare institutions website](/img/awards/adi-design-index-award.webp)
+
+### Civic museums
+
+![Civic museums website](/img/work/digital-public-services/civic-museums-website.webp)
+
+The most structurally different website template. 
+
+Collections, exhibitions, and visiting information don't map onto the services-centred architecture used for the other website templates. It required a content hierarchy built around cultural assets, with dedicated structures for permanent collections, temporary exhibitions, ticketing, and educational activities, while maintaining navigation consistency with the broader ecosystem.
+
+The website template was designed to be used in a wide range of civic museums, from small local museums to large national institutions. For that reason, every structural component was designed to be flexible and adaptable to different museum types and content structures.
+
+![Civic museums components](/img/work/digital-public-services/civic-museums-components.webp)
+
+I tested the website template with a range of users, including museum staff, visitors, and local residents (both in italian and english), to ensure it was easy to use and understand.
+
+## PA Digitale 2026
+
+![PA Digitale 2026](/img/work/digital-public-services/padigitale2026.webp)
+
+I coordinated the redesign of the online platform for the Italian Public Administration, to help public institutions get access to financial resources to build digital services. 
+
+The platform is built on the national design system using UI Kit Italia and Bootstrap Italia for the front-end. Content is managed through a custom installation of Dato CMS.
+
+## Full Design Cycle
+
+Alongside each model, I produced a complete set of operational resources designed to make the compliant path the easiest to follow:
+
+### Information architecture
+
+Ready-made sitemaps, navigation structures, and content models for each type of institution, so an agency started from a validated skeleton instead of a blank page.
+
+![Information architecture for the website templates](/img/work/digital-public-services/information-architecture.webp)
+
+### Figma layouts and libraries
+
+Complete UI kits and page layouts built on the national design system, letting editors and junior designers assemble structurally sound pages without reverse-engineering every spacing choice.
+
+![How to customize the website templates](/img/work/digital-public-services/how-to-customize.webp)
+
+I created a guide to customization and extension of the website templates, to help agencies and developers to make the templates their own.
+
+### HTML templates
+
+Production-ready templates built on Bootstrap Italia, making the compliant markup the path of least resistance for developers.
+
+### Operational guides
+
+Step-by-step documentation on how to write content, structure pages, and configure the templates, written for non-specialists rather than for designers.
+
+### Usability and accessibility testing
+
+Every model and its components were validated with real users and against the legal accessibility requirements, so adopters inherited that testing for free.
+
+<div class="grid grid-cols-2 gap-4 mb-6">
+  <img src="/img/work/digital-public-services/usability-testing-01.webp" alt="Usability and accessibility testing" class="w-full object-cover">
+  <img src="/img/work/digital-public-services/usability-testing-02.webp" alt="Usability and accessibility testing" class="w-full object-cover">
+</div>
+
+
+### Manage development handoff
+
+Developed static HTML templates and CMS themes to make the compliant path the easiest for agencies and developers to follow. Used Bootstrap Italia (HTML, CSS, JS), React Kit Italia, and Dev Kit Italia (web components).

@@ -3,28 +3,121 @@
 # only Main files contain this front matter, not partials.
 ---
 
-@import '../_sass/settings/settings';
-@import '../_sass/fonts';
-@import '../_sass/elements/base';
-@import '../_sass/elements/links';
-@import '../_sass/objects';
-@import '../_sass/objects/layout';
-@import '../_sass/objects/links';
-@import '../_sass/objects/lists';
-@import '../_sass/objects/post';
-@import '../_sass/objects/spacing';
-@import '../_sass/components';
-@import '../_sass/components/buttons';
-@import '../_sass/components/card';
-@import '../_sass/components/footer';
-@import '../_sass/components/header';
-@import '../_sass/components/lists';
-@import '../_sass/components/logo';
-@import '../_sass/components/nav';
-@import '../_sass/utilities';
-@import '../_sass/utilities/colors';
-@import '../_sass/utilities/flexbox';
-@import '../_sass/utilities/grid';
-@import '../_sass/utilities/lists';
-@import '../_sass/utilities/spacing';
-@import '../_sass/utilities/text';
+// @import '../_sass/settings/settings';
+// @import '../_sass/fonts';
+// @import '../_sass/elements/base';
+// @import '../_sass/elements/links';
+// @import '../_sass/objects';
+// @import '../_sass/objects/layout';
+// @import '../_sass/objects/links';
+// @import '../_sass/objects/lists';
+// @import '../_sass/objects/post';
+// @import '../_sass/objects/spacing';
+// @import '../_sass/components';
+// @import '../_sass/components/buttons';
+// @import '../_sass/components/card';
+// @import '../_sass/components/footer';
+// @import '../_sass/components/header';
+// @import '../_sass/components/lists';
+// @import '../_sass/components/logo';
+// @import '../_sass/components/nav';
+// @import '../_sass/utilities';
+// @import '../_sass/utilities/colors';
+// @import '../_sass/utilities/flexbox';
+// @import '../_sass/utilities/grid';
+// @import '../_sass/utilities/lists';
+// @import '../_sass/utilities/spacing';
+// @import '../_sass/utilities/text';
+
+// The webfonts are requested from a <link> in the layout instead of from here:
+// an @import is only discovered once this file has been fetched and parsed,
+// which puts a second round trip in front of the first paint of every page.
+
+/* Hairline divider utility */
+.hairline {
+  border-top: 0.5px solid unquote("hsl(var(--border))");
+}
+
+/* Metadata tag style */
+.meta-tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: unquote("hsl(var(--muted-foreground))");
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+/* Signal blue link */
+a.signal-link {
+  color: hsl(220, 100%, 50%);
+  text-decoration: none;
+  transition: opacity 200ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+a.signal-link:hover {
+  opacity: 0.7;
+}
+
+/* Focus ring for accessibility */
+*:focus-visible {
+  outline: 2px solid hsl(220, 100%, 50%);
+  outline-offset: 2px;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+  background: hsla(31, 100%, 50%, 0.18);
+}
+
+/* Remove native disclosure marker from <summary> (Safari/WebKit fallback) */
+summary {
+  list-style: none;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Stagger animation */
+.animate-in {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+.animate-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero {
+  position: relative;
+  z-index: 1;
+}
+
+/* Theme toggle: sun visible in dark mode, moon visible in light mode */
+#theme-toggle .lucide-sun, #theme-toggle-mobile .lucide-sun { display: block; }
+#theme-toggle .lucide-moon, #theme-toggle-mobile .lucide-moon { display: none; }
+.dark #theme-toggle .lucide-sun, .dark #theme-toggle-mobile .lucide-sun { display: none; }
+.dark #theme-toggle .lucide-moon, .dark #theme-toggle-mobile .lucide-moon { display: block; }
+
+.hero::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 15%;
+  height: 2px;
+  background: unquote("hsl(var(--accent))");
+}
+
+.prose {
+  color: unquote("hsl(var(--muted-foreground))");
+
+  h2, h3, h4, h5, h6, strong {
+    color: unquote("hsl(var(--foreground))");
+  }
+}

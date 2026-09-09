@@ -1,0 +1,64 @@
+# Ogni progetto dichiara quante colonne (su 12) e righe occupa nella work-grid,
+# per breakpoint (md = tablet, lg = desktop, xl = desktop largo).
+# Un breakpoint non specificato eredita il valore del breakpoint precedente
+# (xl -> lg -> md). Su mobile il layout è sempre impilato a colonna singola.
+- video: /img/work/design-system-italia/video-corto-web.mp4
+  url: /work/design-system-italia/
+  grid:
+    md: { col: 6, row: 1 }
+    lg: { col: 6, row: 1 }
+    xl: { col: 5, row: 1 }
+- image: /img/work/digital-public-services/padigitale2026.webp
+  url: /work/digital-public-services/
+  grid:
+    md: { col: 6, row: 1 }
+    lg: { col: 6, row: 1 }
+    xl: { col: 4, row: 1 }
+- video: "/img/work/digital-public-services/healthcare-website.mp4"
+  url: /work/digital-public-services/
+  grid:
+    md: { col: 2, row: 1 }
+    lg: { col: 2, row: 1 }
+    xl: { col: 3, row: 2 }
+- image: /img/work/citynews/romatoday-mobile-app.webp
+  url: /work/citynews/
+  grid:
+    md: { col: 4, row: 1 }
+    lg: { col: 4, row: 1 }
+    xl: { col: 3, row: 1 }
+- image: /img/work/digital-public-services/municipalities-website.webp
+  url: /work/digital-public-services/
+  grid:
+    md: { col: 6, row: 1 }
+    lg: { col: 6, row: 1 }
+    xl: { col: 6, row: 1 }
+- video: /img/work/citynews/today-video.mp4
+  url: /work/citynews/
+  grid:
+    md: { col: 6, row: 1 }
+    lg: { col: 4, row: 1 }
+    xl: { col: 6, row: 1 }
+- image: /img/work/citynews/citynews-corporate-intro-homepage.webp
+  url: /work/citynews/
+  grid:
+    md: { col: 6, row: 1 }
+    lg: { col: 5, row: 1 }
+    xl: { col: 6, row: 1 }
+- image: /img/work/noemalife/galileo-mobile.webp
+  url: /work/noemalife/
+  grid:
+    md: { col: 3, row: 1 }
+    lg: { col: 3, row: 1 }
+    xl: { col: 2, row: 1 }
+- image: /img/work/robodomain/robodomain.webp
+  url: /work/robodomain/
+  grid:
+    md: { col: 6, row: 1 }
+    lg: { col: 6, row: 1 }
+    xl: { col: 5, row: 1 }
+- image: /img/work/seejay/seejay.webp
+  url: /work/seejay/
+  grid:
+    md: { col: 6, row: 1 }
+    lg: { col: 6, row: 1 }
+    xl: { col: 5, row: 1 }

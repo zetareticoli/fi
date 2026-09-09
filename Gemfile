@@ -6,3 +6,5 @@ ruby '>= 3.0.3'
 gem 'jekyll', '~> 4.4'
 gem 'rouge'
 gem "webrick", "~> 1.7"
+# Ruby 3.4 extracted bigdecimal from default gems; Liquid still requires it.
+gem 'bigdecimal'

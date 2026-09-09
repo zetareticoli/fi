@@ -1,108 +1,158 @@
 ---
 layout: page
-title: About
-headline: I'm a designer with a love for coding
-lead: When not busy at work I love swimming, hiking in the Dolomites and traveling the world with my family. I’m passionate about astronomy and sci-fi. 
+title: "Hi, I'm Francesco."
+nav: true
+nav_title: "About"
+nav_order: 1
+permalink: /about/
 ---
+<div class="min-h-screen max-w-7xl">
 
-<section class="spacing-sections outer-margin l-aside-right">
-  <article>
-    <p>
-      For the past 15 years, I've worked as a <strong>Product Designer</strong> designing and building a wide range of digital products. I believe that good design should be both functional and aesthetically pleasing, and strive to create intuitive and engaging user experiences.
-    </p>
-    <p>
-      During my career, I've had the pleasure of working with a variety of clients in fields such as editorial, healthcare, banking, sports, public administration, e-commerce, and information technology. <br>Some of my notable clients include <strong>Scuderia Ferrari F1</strong>, Enel Energia, <strong>ING Direct</strong>, and <strong>HCL Software</strong>. Most recently, I serve as Senior Product Designer at the Italian Department for Digital Transformation, where I design and build digital public services.
-    </p>
-    <p>
-      In 2009, I co-founded <strong>Robodomain</strong>, a SaaS company focused on domain management tools. The company and software was acquired by DNSimple in 2013. It has been a valuable learning experience.
-    </p>
-    <p>
-      I teach and speak about design systems, design tokens, and workflow best practices. I'm part of the faculty at <strong>POLI.design</strong> for the course on "User Interface Design".
-    </p>
-    <p>
-      If you're interested in learning more about my work, feel free to <a href="mailto:me@francescoimprota.com">connect with me</a> or <a href="/experience/">check out my work page</a>.
-    </p>
-  </article>
-  <img class="mb-m" src="/img/francesco-improta@2x.webp" alt="Taking a photo while hiking in the mountains">
-</section>
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
 
-<section class="spacing-sections outer-margin">
-  <h2 class="headline-default">Awards</h2>
-  <h3 class=" headline-secondary mb-s">ADI Design Index Award</h3>
-  <p class="text-small color-text-weak mb-s">2024</p>
-  <p class="mb-s color-text-light">
-    Won the ADI Design Index Award for the projects <strong>Modello di sito per le ASL</strong> and <strong>UI Kit
-      Italia</strong>, followed during my experience at the <strong>Italian Department for Digital
-      Transformation</strong>.
-  </p>
-  <figure class="m-none">
-    <img class="mb-m" src="/img/awards/adi-design-index-award.webp"
-      alt="ADI Design Index Award for Modello di sito per le ASL and UI Kit Italia">
-  </figure>
-</section>
+    <!-- Main column (~2/3) -->
+    <div class="lg:col-span-8 flex flex-col gap-12 lg:gap-16">
 
-<section class="spacing-sections outer-margin">
-  <h2 class="headline-default">Teaching</h2>
-  <ul class="content-list m-none">
-    {% for course in site.data.courses %}
-    <li class="content-list__item flex">
-      <h3 class="content-list__title headline-tertiary mb-s">{{course.faculty}}</h3>
-      <h4 class="content-list__desc headline-tertiary mb-s"><a href="{{course.url}}"
-          target="_blank">{{course.title}}</a>
-      </h4>
-    </li>
-    {% endfor %}
-  </ul>
-</section>
+      <!-- Bio + Portrait -->
+      <section class="flow-root animate-in">
+        <p class="mb-6 text-lg font-medium leading-relaxed">
+          I'm a Design Technologist with 15+ years of experience building and leading scalable UI platforms for complex,
+          multi-team environments.
+        </p>
+        <img src="{{ page.portrait | default: '/img/francesco-improta.webp' | relative_url }}" alt="Francesco Improta"
+          class="float-right ml-4 sm:ml-6 mb-4 w-full sm:w-[42%] md:w-[40%] object-cover rounded-xs grayscale max-h-[65vh]"
+          loading="lazy" />
+ 
+        <p class="mb-6 text-base text-muted-foreground leading-relaxed">
+          I help organizations establish design systems as infrastructure — aligning design and front-end architecture to enable consistency, speed, and long-term maintainability. My focus is on system thinking, governance, and reducing organizational friction at scale.
+        </p>
+        <p class="mb-6 text-base text-muted-foreground leading-relaxed">I've worked across editorial, healthcare, banking, sports, government,
+          e-commerce, and information technology — for companies such as <span class="text-primary font-medium">Scuderia
+            Ferrari F1</span>, <span class="text-primary font-medium">Enel Energia</span>, <span class="text-primary font-medium">ING
+            Direct</span>, and <span class="text-primary font-medium">HCL Software</span>, as a freelance or full-time job.
+            In 2009, <span class="text-primary font-medium">I co-founded a SaaS company</span>.
+        </p>
+        <p class="mb-6 text-base text-muted-foreground leading-relaxed">Most recently, I serve as Senior Product Designer at
+          the <span class="text-primary font-medium">Italian Department for Digital Transformation</span>, where I design and
+          build public digital services and help maintain Design System Italia.
+        </p>
+        <p class="mb-6 text-base text-muted-foreground leading-relaxed">I write, teach, and speak about design systems, design
+          tokens, and workflow best practices. I'm part of the faculty at <span class="text-primary font-medium">POLI.design</span>
+          for the Executive Course on User Interface Design.</p>
+        <p class="mb-6 text-base text-muted-foreground leading-relaxed">When not busy at work I love swimming, hiking in the
+          Dolomites and traveling the world with my family. I'm passionate about astronomy and sci-fi movies.</p>
+        <p>
+          <a href="{{ '/work' | relative_url }}"
+            class="mt-2 inline-flex items-center gap-2 text-base text-accent font-medium hover:opacity-60 transition-opacity underline underline-offset-2">
+            Explore my work →
+          </a>
+        </p>
+      </section>
 
-<section class="spacing-sections outer-margin">
-  <h2 class="headline-default">Speaking</h2>
-  <ul class="content-list m-none">
-  {% for talk in site.data.talks %}
-    <li class="content-list__item flex">
-      <span class="content-list__year text-small color-text-weak mb-s">{{talk.year}}</span>
-      <h3 class="content-list__title headline-tertiary mb-s">{{talk.conf}}</h3>
-      <h4 class="content-list__desc headline-tertiary mb-s"><a href="{{talk.url}}" target="_blank">{{talk.title}}</a></h4>
-    </li>
-  {% endfor %}
-  </ul>
-</section>
+      <!-- How I work + Skills -->
+      <section>
+        <h4 class="meta-tag mb-4">Expertise</h4>
+        <div class="flex flex-col gap-6 mt-6">
+          <div class="flex flex-col gap-1">
+            <h3 class="text-lg font-semibold leading-snug">Design System Architecture</h3>
+            <p class="text-base text-muted-foreground leading-relaxed">Building and governing UI platforms designed to scale across teams, products,
+              and organizational boundaries.</p>
+          </div>
+          <div class="flex flex-col gap-1">
+            <h3 class="text-lg font-semibold leading-snug">Cross-functional Enablement</h3>
+            <p class="text-base text-muted-foreground leading-relaxed">Enabling collaboration between design, product, and engineering through shared
+              language, processes, and systems.</p>
+          </div>
+          <div class="flex flex-col gap-1">
+            <h3 class="text-lg font-semibold leading-snug">Decision-making in Complex Environments</h3>
+            <p class="text-base text-muted-foreground leading-relaxed">Assessing constraints, trade-offs, and risks to support sustainable product and
+              technical decisions.</p>
+          </div>
+          <div class="flex flex-col gap-1">
+            <h3 class="text-lg font-semibold leading-snug">Standards, Documentation, and Adoption</h3>
+            <p class="text-base text-muted-foreground leading-relaxed">Defining standards and documentation that encourage consistency while leaving
+              room for evolution.</p>
+          </div>
+          <div class="flex flex-col gap-1">
+            <h3 class="text-lg font-semibold leading-snug">Mentorship and Team Leading</h3>
+            <p class="text-base text-muted-foreground leading-relaxed">Helping designers and engineers grow within structured, system-oriented
+              environments.</p>
+          </div>
+        </div>
+            
+      </section>
 
-<section class="spacing-sections outer-margin">
-  <h2 class="headline-default">Books</h2>
-  <article>
-    <h3>
-      <a href="https://www.amazon.com/CSS3-Solutions-Essential-Techniques-Developers/dp/1430243376">CSS3 Solutions - Essential Techniques for CSS Developers</a>
-    </h3>
-    <p>CSS3 contains a broad set of new additions and changes to the core CSS language across a range of modules, which means lots of new things to learn, and lots of new things that can go wrong.</p>
-  </article>
-</section>
+    </div>
 
+    <!-- Sidebar (~1/3) -->
+    <aside class="lg:col-span-4 flex flex-col gap-10 lg:gap-12">
 
-<!--
-<section class="spacing-sections">
-  <h2 class="headline-default">Reading</h2>
-  <p>List of books that contributed to my education and had an impact on my way to work. I absolutely recommend:</p>
-  {% for book in site.data.books %}
-    <ul class="list-none">
-      <li>
-        <span>
-          <strong>{{book.title}}</strong>
-          <span>&mdash; by {{book.author}}</span>
-        </span>
-      </li>
-    </ul>
-  {% endfor %}
-</section> 
+      <!-- Awards -->
+      <section class="animate-in" style="transition-delay: 120ms">
+        <span class="meta-tag block mb-6">Awards</span>
+        {% for award in site.data.about.awards %}
+        <div class="flex flex-col gap-2">
+          <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
+            <h3 class="text-sm font-medium leading-snug">{{ award.title }}</h3>
+            <span class="meta-tag shrink-0">{{ award.year }}</span>
+          </div>
+          <p class="text-sm text-muted-foreground leading-relaxed">{{ award.description }}</p>
+          <a href="{{ award.link }}" target="_blank" rel="noopener noreferrer"
+            class="text-sm underline underline-offset-2 transition-colors">Read more →</a>
+        </div>
+        {% endfor %}
+      </section>
 
+      <div class="hairline"></div>
 
-<section class="spacing-sections">
-  <h2 class="headline-default">Playlists</h2>
-  <p>A collection of mixtapes I curated on Spotify. Available to listen for free. Let me know if you liked it.</p>
-</section>
+      <!-- Teaching -->
+      <section class="animate-in" style="transition-delay: 240ms"> 
+        <span class="meta-tag block mb-6">Teaching</span>
+        <div class="flex flex-col gap-5">
+          {% for t in site.data.about.teaching %}
+          <div class="flex flex-col gap-1">
+            <a href="{{ t.url }}" target="_blank" rel="noopener noreferrer"
+            class="text-sm text-primary hover:text-foreground font-medium transition-colors underline underline-offset-2 mb-1">{{ t.title }}</a>
+            <span class="text-sm text-muted-foreground">{{ t.org }}</span>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
 
--->
+      <div class="hairline"></div>
 
-<hr>
+      <!-- Speaking -->
+      <section class="animate-in" style="transition-delay: 360ms">
+        <span class="meta-tag block mb-6">Speaking</span>
+        <div class="flex flex-col">
+          {% for talk in site.data.about.speaking %}
+          <div class="flex flex-col gap-0.5 py-3 hairline">
+            <span class="text-sm text-primary font-medium leading-snug mb-1">{{ talk.title }}</span>
+            <span class="meta-tag">{{ talk.year }} @{{ talk.event }}</span>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
 
-{% include box-subscribe.html %}
+      <div class="hairline"></div>
+
+      <!-- Publications -->
+      <section class="animate-in" style="transition-delay: 480ms">
+        <span class="meta-tag block mb-6">Publications</span>
+        {% for pub in site.data.about.publications %}
+        <div class="flex flex-col gap-3 sm:flex-row sm:gap-4">
+          <img src="{{ pub.image | relative_url }}" alt="{{ pub.title }}" class="w-20 h-auto self-start shrink-0 grayscale shadow-lg">
+          <div class="flex flex-col gap-1">
+            <h3 class="text-sm font-medium leading-snug"><a href="{{ pub.url }}" target="_blank" rel="noopener noreferrer"
+              class="text-sm underline underline-offset-2 font-medium transition-colors">{{ pub.title }}</a></h3>
+            <span class="meta-tag">{{ pub.year }} &middot; {{ pub.publisher }}</span>
+            <p class="text-sm text-muted-foreground leading-relaxed">{{ pub.description }}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </section>
+
+    </aside>
+
+  </div>
+</div>

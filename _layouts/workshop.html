@@ -1,0 +1,51 @@
+---
+# _layouts/workshop.html
+# Landing page layout for the workshops collection: new site chrome
+# (sidebar + footer + theme) with the full head from head.html, needed
+# for the social/OG metadata of these pages.
+---
+<!DOCTYPE html>
+<html lang="{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang }}{% endif %}" class="{{ page.theme | default: 'light' }}" prefix="og: http://ogp.me/ns#">
+<head>
+  {% include head.html %}
+</head>
+<body class="bg-background text-foreground font-body">
+  {% include sidebar.html %}
+  <main class="lg:ml-48 pt-16 lg:pt-0">
+    {{ content }}
+  </main>
+  {% include footer.html %}
+  <script src="{{ '/js/app.js' | relative_url }}"></script>
+  {% if page.offer.deadline %}
+  <script>
+    (function () {
+      const deadline = new Date('{{ page.offer.deadline }}');
+      const countdownElements = document.querySelectorAll('.event-countdown');
+      const staticElements = document.querySelectorAll('.event-static');
+      if (!countdownElements.length) return;
+
+      function updateCountdown() {
+        const diff = deadline - new Date();
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        // The countdown replaces the early bird note during the last week only.
+        const isCountdown = days > 0 && days <= 7;
+
+        if (isCountdown) {
+          const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+          countdownElements.forEach(el => {
+            el.textContent = `Solo ${days} giorni, ${hours} ore e ${minutes} minuti rimasti`;
+          });
+        }
+
+        countdownElements.forEach(el => { el.style.display = isCountdown ? 'block' : 'none'; });
+        staticElements.forEach(el => { el.style.display = isCountdown ? 'none' : 'block'; });
+      }
+
+      updateCountdown();
+      setInterval(updateCountdown, 60000);
+    })();
+  </script>
+  {% endif %}
+</body>
+</html>

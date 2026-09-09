@@ -1,43 +1,64 @@
 ---
 layout: default
-home: true
+title: "Design ownership for products, systems, and everything that connects them."
+description: "Design Lead with two decades of experience designing products for government, enterprise, and small businesses."
+nav: true
+nav_title: "Home"
+nav_order: 0
+permalink: /
 ---
-<section class="spacing-sections outer-margin">
-  <h1 class="headline-default">Hi, I'm Francesco.</h1>
-  <p class="lead color-text-light">
-    I'm a <span class="color-text">Product Designer</span> based in Rome with over 17 years of experience in the field.
-  </p>
-  <p class="lead color-text-light">I design <span class="color-text">digital products</span> and <span class="color-text">design systems</span> that inspire user engagement and drive business growth, simplifying complex ideas and creating intuitive user experiences.
-  </p>
-  <p>
-    <a class="text-emphasis" href="/about/">About me →</a>
-  </p>
-</section>
-
-<section class="spacing-sections">
-  <div class="inner">
-    <h2 class="headline-default">Recent Work</h2>
-  </div>
-  <div class="inner-large">
-    <div class="list-projects">
-    {% for work in site.data.works limit:2 %}
-      {% include featured.html %}
-    {% endfor %}
+<div class="min-h-screen">
+  <!-- Hero -->
+  <section class="px-6 lg:px-10 pt-12 lg:pt-36 pb-16 lg:pb-20">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-2 lg:gap-4">
+      <div class="col-span-12 max-w-4xl flex flex-col">
+        <h1 class="font-heading text-3xl lg:text-4xl clamp-3 tracking-tight font-semibold leading-tight mb-4">
+          {{ page.title }}
+        </h1>
+        <p class="text-lg text-muted-foreground font-regular">{{ page.description }}</p>
+        <a href="{{ '/about' | relative_url }}" class="mt-8 text-base underline font-medium hover:text-accent transition-colors underline-offset-2">
+          About me →
+        </a>
+      </div>
     </div>
-    <p>
-      <a class="link-light link-underline" href="/experience/">All work experiences →</a>
-    </p>
-  </div>
-</section>
+  </section>
 
-<section class="spacing-sections outer-margin">
-  <h2 class="headline-default">Latest writing</h2>
-  <ul class="list-none m-none">
-    {% for post in site.posts limit:4 %}
-    {% include post-list.html %}
-    {% endfor %}
-  </ul>
-  <p>
-    <a class="link-light link-underline" href="/writing/">All writing →</a>
-  </p>
-</section>
+  <div class="mx-6 lg:mx-10 hairline"></div>
+
+  <!-- Selected Work -->
+  <section class="px-6 lg:px-10 py-16 lg:py-20">
+    <h2 class="meta-tag text-sm uppercase tracking-widest mb-8">Featured Work</h2>
+    <div class="work-grid mb-12">
+      {% for item in site.data.featured limit: 5 %}
+      {% include featured.html %}
+      {% endfor %}
+    </div>
+    <a href="{{ '/work' | relative_url }}" class="text-base text-base font-medium underline hover:text-accent transition-colors mt-4 ml-3 underline-offset-2">Explore my work →</a>
+  </section>
+
+  <section class="px-6 lg:px-10 py-16 lg:py-20 max-w-7xl">
+    <div class="md:col-span-6 flex flex-col">
+      <h2 class="meta-tag text-sm uppercase tracking-widest mb-8 pl-3">RECENT WRITING</h2>
+      {% assign recent_posts = site.posts %}
+      {% for post in recent_posts limit: 6 %}
+      <a href="{{ post.url | relative_url }}"
+        class="animate-in group grid grid-cols-12 gap-4 py-3.5 hairline items-center hover:bg-secondary/50  transition-colors px-3"
+        style="transition-delay: {{ forloop.index | times: 120 }}ms;">
+        <span class="col-span-9 text-md font-medium group-hover:text-accent transition-colors">{{ post.title }}</span>
+        <span class="col-span-3 text-right meta-tag">{{ post.date | date: "%-d %b %Y" }}</span>
+      </a>
+      {% endfor %}
+      <div class="hairline"></div>
+      <a href="{{ '/writing' | relative_url }}"
+        class="text-base text-muted-foreground font-medium underline hover:text-accent transition-colors mt-4 ml-3 underline-offset-2">All
+        writing →</a>
+    </div>
+  </section>
+
+  <div class="mx-6 lg:mx-10 hairline"></div>
+
+  <!-- Newsletter -->
+  <section class="px-6 lg:px-10 py-16 lg:py-20 max-w-7xl">
+    {% include box-subscribe.html %}
+  </section>
+</div>

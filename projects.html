@@ -1,23 +1,48 @@
 ---
-layout: page
-title: Side projects
-headline: Side projects
-lead: From experimental projects to coding libraries and creative resources, my side projects serve a purpose beyond just being fun. I want to create something meaningful the community.
+layout: default
+title: "Projects"
+tag: "Side projects & open source"
+nav: false
+nav_title: "Projects"
+nav_order: 4
+permalink: /projects/
 ---
+<div class="min-h-screen">
+  <section class="px-6 lg:px-10 pt-16 lg:pt-24 pb-12 lg:pb-16">
+    <span class="meta-tag block mb-4">{{ page.tag }}</span>
+    <h1 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
+      {{ page.title }}
+    </h1>
+    <p class="mt-4 text-base text-muted-foreground max-w-2xl leading-relaxed">
+      Tools, resources, and experiments I've built outside of my main work.
+    </p>
+  </section>
 
-<section class="inner outer-margin">
-  <ul class="list-none">
-    {% for project in site.data.side %}
-    <li class="mb-xl">
-      <h2 class="headline-secondary mb-xs"><a href="{{project.url}}">{{project.title}}</a></h2>
-      <p class="color-text-light">{{project.desc}}</p>
-    </li>
+  <!-- <div class="mx-6 lg:mx-10 hairline"></div> -->
+
+  <section class="px-6 lg:px-10 py-12 lg:py-16">
+    {% for project in site.data.projects %}
+    <div class="py-8 hairline">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-8">
+        <div class="lg:col-span-7">
+          <h3 class="text-lg lg:text-2xl font-heading font-semibold">
+            <a href="{{ project.url }}" target="_blank" rel="noopener noreferrer" class="hover:underline hover:text-primary">{{ project.title }}</a>
+          </h3>
+          <p class="text-sm text-muted-foreground leading-relaxed mt-2">{{ project.description }}</p>
+        </div>
+        <div class="lg:col-span-4 flex flex-col gap-2 lg:items-end">
+          <span class="meta-tag">{{ project.period }}</span>
+          <span class="inline-flex items-center gap-2">
+            {% if project.status == "Active" %}<span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+            {% elsif project.status == "Beta Testing" %}<span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+            {% elsif project.status == "Open Source" %}<span class="w-1.5 h-1.5 rounded-full bg-purple-500"></span>
+            {% elsif project.status == "Commercial" %}<span class="w-1.5 h-1.5 rounded-full bg-green-500"></span>
+            {% else %}<span class="w-1.5 h-1.5 rounded-full bg-gray-500"></span>{% endif %}
+            <span class="meta-tag">{{ project.status }}</span>
+          </span>
+        </div>
+      </div>
+    </div>
     {% endfor %}
-  </ul>
-</section>
-
-<hr>
-
-<section class="spacing-sections outer-margin">
-  {% include box-subscribe.html %}
-</section>
+  </section>
+</div>

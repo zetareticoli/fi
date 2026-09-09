@@ -1,0 +1,63 @@
+---
+layout: page
+title: Professional Highlights
+nav: true
+nav_title: "Work"
+nav_order: 3
+---
+
+<div class="min-h-screen">
+
+  <section class="grid md:grid-flow-col gap-8 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-rows-1 mb-16">
+    <p class="text-muted-foreground">My career as a designer started in 2005 at an advertising agency, where I created print ads. I began learning web design on my own and helped the agency publish its first website and expand into the digital world. <span class="text-primary">That experience changed my career path forever.</span></p>
+    <p class="text-muted-foreground">Here’s a collection of notable projects and companies I’ve worked on. Some have strong visuals to share; others don’t. Every one of them has a story to tell.</p>
+  </section>
+  <span class="meta-tag block mb-8">Work Highlights</span>
+  <section class="work-grid">
+    {% for item in site.data.featured %}
+      {% include featured.html %}
+    {% endfor %}
+  </section>
+
+  <div class="mx-6 lg:mx-10 hairline"></div>
+
+  <!-- Timeline -->
+  <section class="pt-12 lg:pt-16">
+    <span class="meta-tag block mb-8">Notable Companies</span>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 items-start">
+      {% for brand in site.data.brands %}
+      <div class="group animate-in bg-card-foreground"
+        style="transition-delay: {{ forloop.index | times: 60 }}ms;">
+        <div class="flex items-center gap-8 p-8">
+          {% if brand.logo %}
+          <img src="{{ brand.logo | relative_url }}" alt="{{ brand.org }} logo"
+            class="w-30 h-30 shrink-0 object-contain {% if brand.inverse %}grayscale dark:invert{% else %}grayscale{% endif %}">
+          {% endif %}
+          <div class="flex-1 min-w-0">
+            <p class="text-lg font-medium truncate">{{ brand.org }}</p>
+            <p class="pb-4 text-sm text-muted-foreground leading-relaxed">{{ brand.description }}</p>
+            <span class="meta-tag">{{ brand.role }} &middot; {{ brand.contract }} &middot; {{ brand.year }}</span>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="py-10 lg:py-16">
+    <p class="text-primary text-xl mb-4">
+      Have a project in mind?
+    </p>
+    <p class="text-muted-foreground">
+      <a href="mailto:{{ site.email }}" target="_blank" rel="noopener noreferrer"
+        class="text-muted-foreground hover:text-primary transition-colors underline underline-offset-2">
+        Write me an email
+      </a>
+      <span class="text-muted-foreground">or</span>
+      <a href="https://cal.com/{{ site.calcom }}" target="_blank" rel="noopener noreferrer"
+        class="text-muted-foreground hover:text-primary transition-colors underline underline-offset-2">
+        Book a call
+      </a>
+    </p>
+  </section>
+</div>

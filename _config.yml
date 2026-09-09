@@ -1,26 +1,29 @@
-# The name of your website.
-name: Francesco Improta
-
-description:
-
-  # Description of your site. This will show up in google.
-  meta: Personal website of Francesco Improta, product designer from Rome, Italy. Write about design, front-end and building stuff on the web.
-
-  # Description of your site. This will show up on the front page.
-  subtitle: Blog about design, front-end and making things on the web. Edited by Francesco Improta.
+title: "Francesco Improta &ndash; Design Lead & Design System Expert"
+description: Senior designer with two decades of experience designing products for government, big companies and small businesses.
 
 author:
   name: Francesco Improta
-
-  # Necessary for contact page
   email: me@francescoimprota.com
-  twitter: zetareticoli
- 
+  social:
+    - name: LinkedIn
+      handle: /in/francescoimprota
+      url: https://www.linkedin.com/in/francescoimprota/
+    - name: GitHub
+      handle: /github/zetareticoli
+      url: https://github.com/zetareticoli
+    - name: X
+      handle: /zetareticoli
+      url: https://x.com/zetareticoli
+  
 url: https://francescoimprota.com
 baseurl: ""
 
 # language attribute in <html> element.
 lang: en
+
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
 
 collections: 
   work:
@@ -29,6 +32,14 @@ collections:
   workshops:
     output: true
     permalink: /workshops/:path
+
+defaults:
+  - scope: { path: "", type: "posts" }
+    values: { layout: "post" }
+  - scope: { path: "", type: "work" }
+    values: { layout: "work" }
+  - scope: { path: "", type: "projects" }
+    values: { layout: "page", tag: "projects" }
 
 # FROM THIS POINT ON EVERYTHING IS OPTIONAL
 
@@ -78,6 +89,9 @@ display-next-prev-post: true
 # CONTENT #
 ##############
 
+logo-image: /img/logo.svg
+logo-alt: Francesco Improta personal website logotype icon
+
 navigation:
 - text: Work
   url: /experience/
@@ -120,7 +134,7 @@ var_your_message: Your message
 
 # You don't have to change these.
 
-exclude: ['vendor', 'node_modules']
+exclude: ['vendor', 'node_modules', 'css/tw.css', '.cursor']
 highlighter: rouge
 kramdown:
   input: GFM

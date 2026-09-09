@@ -1,0 +1,205 @@
+---
+layout: default
+---
+<article class="page-enter min-h-screen">
+  <!-- Back nav -->
+  <div class="px-6 lg:px-10 pt-10 lg:pt-36">
+    <a href="{{ '/work' | relative_url }}"
+      class="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground underline underline-offset-2 transition-colors">
+      ← Work
+    </a>
+  </div>
+
+  <!-- Header -->
+  <section class="px-6 lg:px-10 pt-8 pb-12 lg:pb-16">
+    <h1 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
+      {{ page.title }}
+    </h1>
+    {% if page.overview %}
+    <p class="mt-4 text-2xl font-regular text-muted-foreground max-w-2xl leading-relaxed">{{ page.overview }}</p>
+    {% endif %}
+
+    <!-- Meta row -->
+    <div class="mt-8 flex flex-wrap gap-x-10 gap-y-4">
+      {% if page.role %}<div><span class="meta-tag block mb-1">ROLE</span>
+        <p class="text-sm font-medium">{{ page.role }}</p>
+      </div>{% endif %}
+      {% if page.org %}<div><span class="meta-tag block mb-1">ORG</span>
+        <p class="text-sm font-medium">{{ page.org }}</p>
+      </div>{% endif %}
+      {% if page.period %}<div><span class="meta-tag block mb-1">PERIOD</span>
+        <p class="text-sm font-medium">{{ page.period }}</p>
+      </div>{% endif %}
+      {% if page.external_url %}<div><span class="meta-tag block mb-1">LINK</span><a href="{{ page.external_url }}" target="_blank"
+          rel="noopener noreferrer" class="text-sm underline underline-offset-2 hover:opacity-70 transition-opacity">Visit site ↗</a>
+      </div>{% endif %}
+    </div>
+  </section>
+
+  <div class="mx-6 lg:mx-10 hairline"></div>
+
+  <!-- Cover image -->
+  {% if page.cover %}
+  <section class="px-6 lg:px-10 py-12 lg:py-16 mx-auto">
+    <img src="{{ page.cover | relative_url }}" alt="{{ page.title }}" class="w-full h-auto object-cover"
+      loading="lazy" />
+  </section>
+  {% endif %}
+
+  <!-- Context + Challenge + Activities -->
+  {% if page.context or page.challenge %}
+  <section class="px-6 lg:px-10 py-12 lg:py-16 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 xl:grid-cols-12 gap-16">
+      {% if page.context %}<div class="animate-in  xl:col-span-6"><span class="meta-tag block mb-4">Context</span>
+        <p class="text-lg leading-relaxed">{{ page.context }}</p>
+      </div>{% endif %}
+      {% if page.challenge %}<div class="animate-in xl:col-span-6" style="transition-delay: 120ms"><span class="meta-tag block mb-4">Challenge</span>
+        <p class="text-lg leading-relaxed">{{ page.challenge }}</p>
+      </div>{% endif %}
+    </div>
+  </section>
+  {% endif %}
+
+  <!-- Responsibilities -->
+  {% if page.activities %}
+  <section class="px-6 lg:px-10 py-12 lg:py-16 max-w-7xl mx-auto">
+    <div class="animate-in xl:col-span-4" style="transition-delay: 240ms"><span
+        class="meta-tag block mb-4">Responsibilities</span>
+      <div class="flex flex-col gap-4">
+        {% for item in page.activities %}
+        <div class="flex items-start xl:items-center gap-3">
+          <span class="font-mono text-accent font-medium text-sm shrink-0 pt-1">{{ forloop.index | prepend: '00' |
+            slice: -2, 2 }}. </span>
+          <p class="text-xl text-primary leading-normal">{{ item.label }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  {% endif %}
+
+  <!-- Gallery -->
+  {% if page.gallery %}
+  <section class="px-6 lg:px-10 py-12 lg:py-16">
+    <div class="grid grid-cols-1 xl:grid-cols-12 gap-2">
+      {% for image in page.gallery %}
+      <figure class="animate-in lg:col-span-6">
+        {% if image contains '.mp4' %}
+        <video autoplay loop muted playsinline preload="auto" class="w-full h-auto object-cover">
+          <source src="{{ image | relative_url }}" type="video/mp4">
+        </video>
+        {% else %}
+        <img src="{{ image | relative_url }}" alt="{{ image.alt }}" class="w-full h-auto object-cover" loading="lazy" />
+        {% endif %}
+      </figure>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  <!-- Custom body content (optional) -->
+  {% if content != "" %}
+  <section class="px-6 lg:px-10 py-12 lg:py-16 grid grid-cols-1 xl:grid-cols-12 gap-10 xl:gap-16 max-w-7xl mx-auto">
+    <div class="xl:col-span-8">
+      <span class="meta-tag block mb-8">Full Story</span>
+      <div id="full-story" class="prose prose-md max-w-3xl relative overflow-hidden max-h-36 transition-[max-height] duration-500 ease-in-out">
+        {{ content }}
+        <div id="full-story-fade" class="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-linear-to-t from-background to-transparent transition-opacity duration-500"></div>
+      </div>
+      <button id="full-story-toggle" type="button" aria-expanded="false" aria-controls="full-story"
+        class="mt-8 inline-flex items-center gap-2 px-4 py-2 text-sm font-medium border border-black/10 hover:border-black/40 dark:border-white/20 dark:hover:border-white underline underline-offset-2 transition-colors cursor-pointer">
+        Read the full story
+        <span aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-unfold-vertical-icon lucide-unfold-vertical"><path d="M12 22v-6"/><path d="M12 8V2"/><path d="M4 12H2"/><path d="M10 12H8"/><path d="M16 12h-2"/><path d="M22 12h-2"/><path d="m15 19-3 3-3-3"/><path d="m15 5-3-3-3 3"/></svg></span>
+      </button>
+    </div>
+  </section>
+  <script>
+    (function () {
+      var content = document.getElementById('full-story');
+      var toggle = document.getElementById('full-story-toggle');
+      var fade = document.getElementById('full-story-fade');
+      if (!content || !toggle) return;
+
+      var icon = '<span aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-unfold-vertical-icon lucide-unfold-vertical"><path d="M12 22v-6"/><path d="M12 8V2"/><path d="M4 12H2"/><path d="M10 12H8"/><path d="M16 12h-2"/><path d="M22 12h-2"/><path d="m15 19-3 3-3-3"/><path d="m15 5-3-3-3 3"/></svg></span>';
+      var expandLabel = 'Read the full story ' + icon;
+      var collapseLabel = 'Show less ' + icon;
+      var collapsedHeight = getComputedStyle(content).maxHeight;
+
+      function expand() {
+        content.style.maxHeight = collapsedHeight;
+        content.classList.remove('max-h-36');
+        content.offsetHeight;
+        content.style.maxHeight = content.scrollHeight + 'px';
+        if (fade) fade.classList.add('opacity-0');
+        toggle.setAttribute('aria-expanded', 'true');
+        toggle.innerHTML = collapseLabel;
+      }
+
+      function collapse() {
+        content.style.maxHeight = content.scrollHeight + 'px';
+        content.offsetHeight;
+        content.style.maxHeight = collapsedHeight;
+        if (fade) fade.classList.remove('opacity-0');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.innerHTML = expandLabel;
+      }
+
+      content.addEventListener('transitionend', function (e) {
+        if (e.propertyName !== 'max-height') return;
+        if (toggle.getAttribute('aria-expanded') === 'true') {
+          content.style.maxHeight = 'none';
+        } else {
+          content.style.maxHeight = '';
+          content.classList.add('max-h-36');
+        }
+      });
+
+      toggle.addEventListener('click', function () {
+        if (toggle.getAttribute('aria-expanded') === 'true') {
+          collapse();
+        } else {
+          expand();
+        }
+      });
+    })();
+  </script>
+  {% endif %}
+
+  <!-- Outcomes — high-impact, full width -->
+  <section class="px-6 lg:px-10 py-12 lg:py-16 max-w-7xl mx-auto">
+    {% if page.outcomes %}
+    <div class="px-6 lg:px-10 py-12 lg:py-16 bg-secondary/40 ">
+      <span class="meta-tag block mb-12">Outcomes</span>
+      <div class="flex flex-col md:flex-row gap-10">
+        {% for o in page.outcomes %}
+        <div class="flex flex-col items-start gap-8 md:col-span-2 flex-1">
+          <span class="font-mono text-3xl font-medium text-accent leading-0 mb-2">{{ o.number }}</span>
+          <p class="text-xl leading-relaxed">{{ o.label }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+  </section>
+
+  <!-- Tools -->
+  {% if page.tools %}
+  <section class="px-6 lg:px-10 py-12 lg:py-16 max-w-7xl mx-auto">
+    <span class="meta-tag block mb-12">Tools</span>
+    <div class="flex flex-wrap gap-8">
+      {% for t in page.tools %}
+      <span class="font-mono text-lg text-muted-foreground">{{ t }}</span>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  <!-- Footer nav -->
+  <section class="px-6 lg:px-10 py-10 lg:py-14 max-w-7xl mx-auto">
+    <a href="{{ '/work' | relative_url }}"
+      class="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors underline underline-offset-2">
+      ← Back to all work
+    </a>
+  </section>
+</article>

@@ -1,0 +1,214 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@variant dark (&:where(.dark, .dark *));
+
+/* Scan Jekyll templates for class detection */
+@source "_layouts/**/*.html";
+@source "_includes/**/*.html";
+@source "_posts/**/*.{md,html}";
+@source "*.md";
+@source "*.html";
+@source "_work/**/*.{md,html}";
+@source "_workshops/**/*.{md,html}";
+
+@theme {
+  --radius: 0px;
+
+  /* Border radius scale */
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+
+  /* Colors */
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+
+  /* Font families */
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --font-heading: 'Mona Sans', ui-sans-serif, system-ui, sans-serif;
+
+  /* Animations */
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+}
+
+@keyframes accordion-down {
+  from { height: 0; }
+  to { height: var(--radix-accordion-content-height); }
+}
+
+@keyframes accordion-up {
+  from { height: var(--radix-accordion-content-height); }
+  to { height: 0; }
+}
+
+/* CSS custom properties for runtime theming (light mode) */
+@layer base {
+  :root {
+    --background: 0 0% 99.2%;
+    --foreground: 0 0% 6.7%;
+    --card: 0 0% 99.2%;
+    --card-foreground: 0 0% 95%;
+    --popover: 0 0% 99.2%;
+    --popover-foreground: 0 0% 6.7%;
+    --primary: 0 0% 6.7%;
+    --primary-foreground: 0 0% 99.2%;
+    --secondary: 0 0% 92%;
+    --secondary-foreground: 0 0% 6.7%;
+    --muted: 0 0% 60%;
+    --muted-foreground: 0 0% 30%;
+    --accent: 38 98% 44%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 88.6%;
+    --input: 0 0% 88.6%;
+    --ring: 220 100% 50%;
+    /* --font-heading: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    --font-body: 'Inter', ui-sans-serif, system-ui, sans-serif;
+    --font-display: 'Mona Sans', ui-sans-serif, system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 0 0% 4%;
+    --foreground: 0 0% 95%;
+    --card: 0 0% 6%;
+    --card-foreground: 0 0% 10%;
+    --popover: 0 0% 6%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 0 0% 95%;
+    --primary-foreground: 0 0% 6%;
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 95%;
+    --muted: 0 0% 30%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 38 98% 44%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 16%;
+    --input: 0 0% 16%;
+    --ring: 220 100% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer components {
+  /*
+   * On a successful signup Kit's script replaces the whole field group with a
+   * success alert it builds itself, so that node never carries our utility
+   * classes and has to be styled from here.
+   */
+  .formkit-alert-success {
+    @apply border border-border bg-background px-4 py-3 text-base text-foreground;
+  }
+
+  /*
+   * Work grid: each project explicitly declares how many columns/rows it
+   * spans per breakpoint via --col-/--row- (set inline from
+   * _data/featured.yml). This makes the responsive layout fully predictable
+   * and art-directable, instead of being derived from image aspect ratio.
+   * On mobile everything is stacked in a single column.
+   */
+  .work-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: 8px;
+  }
+
+  .work-grid > .work-item {
+    display: block;
+  }
+
+  .work-grid > .work-item img,
+  .work-grid > .work-item video {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  /* From md up: 12-col grid, each item spans the declared columns/rows. */
+  @media (min-width: 768px) {
+    .work-grid {
+      grid-template-columns: repeat(12, 1fr);
+      grid-auto-flow: dense; /* backfill gaps left by items with different spans */
+    }
+
+    .work-grid > .work-item {
+      grid-column: span var(--col-md, 6);
+      grid-row: span var(--row-md, 1);
+    }
+
+    .work-grid > .work-item img,
+    .work-grid > .work-item video {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .work-grid > .work-item {
+      grid-column: span var(--col-lg, var(--col-md, 6));
+      grid-row: span var(--row-lg, var(--row-md, 1));
+      grid-auto-rows: 30rem; /* base row unit; --row-* multiplies it */
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .work-grid > .work-item {
+      grid-auto-rows: minmax(25rem, 480px);
+      grid-column: span var(--col-xl, var(--col-lg, var(--col-md, 6)));
+      grid-row: span var(--row-xl, var(--row-lg, var(--row-md, 1)));
+    }
+  }
+}
