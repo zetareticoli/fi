@@ -285,6 +285,9 @@
   .col-span-3 {
     grid-column: span 3 / span 3;
   }
+  .col-span-6 {
+    grid-column: span 6 / span 6;
+  }
   .col-span-7 {
     grid-column: span 7 / span 7;
   }
@@ -1134,6 +1137,9 @@
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
   .grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
@@ -1749,6 +1755,13 @@
         @supports (color: color-mix(in lab, red, red)) {
           background-color: color-mix(in oklab, var(--color-secondary) 60%, transparent);
         }
+      }
+    }
+  }
+  .hover\:text-accent {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-accent);
       }
     }
   }

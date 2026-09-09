@@ -93,6 +93,14 @@ The website template was designed to be used in a wide range of civic museums, f
 
 I tested the website template with a range of users, including museum staff, visitors, and local residents (both in italian and english), to ensure it was easy to use and understand.
 
+## PA Digitale 2026
+
+![PA Digitale 2026](/img/work/digital-public-services/padigitale2026.webp)
+
+I coordinated the redesign of the online platform for the Italian Public Administration, to help public institutions get access to financial resources to build digital services. 
+
+The platform is built on the national design system using UI Kit Italia and Bootstrap Italia for the front-end. Content is managed through a custom installation of Dato CMS.
+
 ## Full Design Cycle
 
 Alongside each model, I produced a complete set of operational resources designed to make the compliant path the easiest to follow:
@@ -122,6 +130,12 @@ Step-by-step documentation on how to write content, structure pages, and configu
 ### Usability and accessibility testing
 
 Every model and its components were validated with real users and against the legal accessibility requirements, so adopters inherited that testing for free.
+
+<div class="grid grid-cols-2 gap-4 mb-6">
+  <img src="/img/work/digital-public-services/usability-testing-01.webp" alt="Usability and accessibility testing" class="w-full object-cover">
+  <img src="/img/work/digital-public-services/usability-testing-02.webp" alt="Usability and accessibility testing" class="w-full object-cover">
+</div>
+
 
 ### Manage development handoff
 
