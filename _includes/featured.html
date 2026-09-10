@@ -14,7 +14,9 @@
 {%- capture grid_style -%}{% if md %}--col-md: {{ md.col }}; --row-md: {{ md.row | default: 1 }};{% endif %}{% if lg %} --col-lg: {{ lg.col }}; --row-lg: {{ lg.row | default: 1 }};{% endif %}{% if xl %} --col-xl: {{ xl.col }}; --row-xl: {{ xl.row | default: 1 }};{% endif %} transition-delay: {{ forloop.index | times: 120 }}ms;{%- endcapture -%}
 {%- capture media -%}
   {% if item.video %}
-  <video loop muted playsinline preload="none" poster="{{ item.poster | relative_url }}"
+  {%- assign featured_poster_url = item.poster | url_encode -%}
+  <video loop muted playsinline preload="none"
+    poster="/.netlify/images?url={{ featured_poster_url }}&amp;w=768&amp;h=432&amp;fit=cover&amp;q=80"
     width="{{ item.width }}" height="{{ item.height }}" aria-hidden="true" data-autoplay-video
     class="w-full transition-transform duration-300 ease-out group-hover:scale-105">
     <source data-src="{{ item.video | relative_url }}" type="video/mp4">

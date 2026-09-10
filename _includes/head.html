@@ -39,6 +39,13 @@
 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+{% if page.url == '/' or page.url == '/work/' %}
+  {%- assign first_featured = site.data.featured | first -%}
+  {%- if first_featured.video and first_featured.poster -%}
+    {%- assign first_poster_url = first_featured.poster | url_encode -%}
+<link rel="preload" as="image" href="/.netlify/images?url={{ first_poster_url }}&amp;w=768&amp;h=432&amp;fit=cover&amp;q=80" fetchpriority="high" />
+  {%- endif -%}
+{% endif %}
 <title>{{ meta_title | escape }}</title>
 <meta name="description" content="{{ meta_description | strip_html | normalize_whitespace | escape }}" />
 <link rel="canonical" href="{{ page.url | absolute_url }}" />
