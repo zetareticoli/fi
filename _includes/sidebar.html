@@ -1,8 +1,8 @@
 <nav class="site-nav lg:flex fixed left-0 top-0 lg:h-screen w-full lg:w-48 flex-col justify-between px-6 py-4 lg:py-10 lg:px-8 z-50 bg-background"
      aria-label="Main navigation">
   <div class="flex flex-row lg:flex-col gap-10 justify-between lg:justify-normal">
-    <a href="{{ '/' | relative_url }}" class="flex flex-row lg:flex-col gap-4 lg:gap-2 items-center lg:items-start hover:opacity-60 transition-opacity" aria-label="Home">
-      <svg viewBox="0 0 29 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-5 h-auto mb-2 transition-colors duration-200" aria-label="{{ site.logo-alt }}" role="img">
+    <a href="{{ '/' | relative_url }}" class="flex flex-row lg:flex-col gap-4 lg:gap-2 items-center lg:items-start hover:opacity-60 transition-opacity">
+      <svg viewBox="0 0 29 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-5 h-auto mb-2" aria-hidden="true" focusable="false">
         <path d="M26.312 10.844h-1.76l-1.672.44H11.572v-3.74c0-3.388.968-5.104 2.948-5.104 1.848 0 2.332 1.584 2.332 3.168 0 .748-.088 1.408-.176 2.024h4.62c1.012-.484 1.672-1.496 1.672-2.772 0-2.728-2.728-4.312-7.964-4.312-6.292 0-11.528 3.036-11.528 9.944v.572L.308 11.9v1.76h3.168v17.908c0 1.408-.704 1.584-2.464 1.716V35h12.936v-1.716c-1.76-.132-2.376-.308-2.376-1.716V13.66h6.644v17.908c0 1.408-.616 1.584-2.376 1.716V35h12.936v-1.716c-1.76-.132-2.464-.308-2.464-1.716V10.844z" fill="currentColor"/>
       </svg>
       <div class="flex flex-col">
@@ -28,7 +28,7 @@
       {% endfor %}
     </ul>
     <div class="flex flex-row lg:hidden gap-3 justify-between lg:justify-normal">
-      <button id="theme-toggle-mobile" class="p-1 -ml-1 text-muted-foreground hover:text-foreground transition-colors text-sm" aria-label="Toggle theme">
+      <button id="theme-toggle-mobile" class="p-1 -ml-1 text-muted-foreground hover:text-foreground text-sm" aria-label="Toggle theme">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun-icon lucide-sun" aria-label="Light mode icon icon"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon-icon lucide-moon" aria-label="Dark mode icon"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>
       </button>
@@ -48,7 +48,7 @@
     </ul>
   </div>
   <div class="hidden lg:block flex flex-col gap-4">
-    <button id="theme-toggle" class="p-1 -ml-1 text-muted-foreground hover:text-foreground cursor-pointer transition-colors mb-4" aria-label="Toggle theme">
+    <button id="theme-toggle" class="p-1 -ml-1 text-muted-foreground hover:text-foreground cursor-pointer mb-4" aria-label="Toggle theme">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun-icon lucide-sun" aria-label="Light mode icon icon"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon-icon lucide-moon" aria-label="Dark mode icon"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>
       </button>
