@@ -1,5 +1,8 @@
 ---
 layout: page
+title: Workshops
+seo_title: "Design Workshops — Francesco Improta"
+description: "Design systems and product design workshops taught by Francesco Improta."
 lead: <strong>Workshops</strong>
 ---
 
@@ -11,4 +14,3 @@ This workshop takes place remotely and it's in 🇮🇹 Italian.
 <a href="https://www.uxuniversity.it/11/c_13/design-systems" target="_blank" alt="Visit UXUuniversity workshop page" title="See workshop details">View workshop details &rarr;</a>
 
 <br>
-

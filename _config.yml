@@ -1,5 +1,8 @@
-title: "Francesco Improta &ndash; Design Lead & Design System Expert"
+title: "Francesco Improta — Design Lead & Design Systems Expert"
+name: Francesco Improta
 description: Senior designer with two decades of experience designing products for government, big companies and small businesses.
+image: /img/social/default-og.webp
+logo: /img/logo.svg
 
 author:
   name: Francesco Improta
@@ -17,6 +20,8 @@ author:
   
 url: https://francescoimprota.com
 baseurl: ""
+email: me@francescoimprota.com
+calcom: francesco-improta/30min
 
 # language attribute in <html> element.
 lang: en
@@ -40,6 +45,9 @@ defaults:
     values: { layout: "work" }
   - scope: { path: "", type: "projects" }
     values: { layout: "page", tag: "projects" }
+
+plugins:
+  - jekyll-sitemap
 
 # FROM THIS POINT ON EVERYTHING IS OPTIONAL
 
@@ -79,9 +87,6 @@ date_format: "%b %-d, %Y"
 # vertical to horizontal.
 nav-breaking-point: 520px
 
-# Number of posts on each page.
-paginate: 3
-
 # Display links for the previous and next post on post pages.
 display-next-prev-post: true
 
@@ -94,7 +99,7 @@ logo-alt: Francesco Improta personal website logotype icon
 
 navigation:
 - text: Work
-  url: /experience/
+  url: /work/
 - text: About
   url: /about/
 - text: Writing
@@ -138,7 +143,6 @@ exclude: ['vendor', 'node_modules', 'css/tw.css', '.cursor']
 highlighter: rouge
 kramdown:
   input: GFM
-paginate_path: "/page-:num/"
 permalink: pretty
 defaults:
   -
