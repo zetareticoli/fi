@@ -40,9 +40,13 @@ layout: default
 
   <!-- Cover image -->
   {% if page.cover %}
+  {% assign cover_alt = page.cover_alt | default: page['cover-alt'] | default: page.title %}
+  {% assign cover_url = page.cover | url_encode %}
   <section class="px-6 lg:px-10 py-12 lg:py-16 mx-auto">
-    <img src="{{ page.cover | relative_url }}" alt="{{ page.title }}" class="w-full h-auto object-cover"
-      loading="lazy" />
+    <img src="{{ page.cover | relative_url }}" alt="{{ cover_alt }}" class="w-full h-auto object-cover"
+      srcset="/.netlify/images?url={{ cover_url }}&amp;w=640&amp;q=82 640w, /.netlify/images?url={{ cover_url }}&amp;w=1280&amp;q=82 1280w, /.netlify/images?url={{ cover_url }}&amp;w=1920&amp;q=82 1920w"
+      sizes="calc(100vw - 3rem)"
+      width="{{ page.cover_width }}" height="{{ page.cover_height }}" decoding="async" fetchpriority="high" />
   </section>
   {% endif %}
 
@@ -50,10 +54,10 @@ layout: default
   {% if page.context or page.challenge %}
   <section class="px-6 lg:px-10 py-12 lg:py-16 max-w-7xl mx-auto">
     <div class="grid grid-cols-1 xl:grid-cols-12 gap-16">
-      {% if page.context %}<div class="animate-in  xl:col-span-6"><span class="meta-tag block mb-4">Context</span>
+      {% if page.context %}<div class="animate-in  xl:col-span-6"><h2 class="meta-tag block mb-4">Context</h2>
         <p class="text-lg leading-relaxed">{{ page.context }}</p>
       </div>{% endif %}
-      {% if page.challenge %}<div class="animate-in xl:col-span-6" style="transition-delay: 120ms"><span class="meta-tag block mb-4">Challenge</span>
+      {% if page.challenge %}<div class="animate-in xl:col-span-6" style="transition-delay: 120ms"><h2 class="meta-tag block mb-4">Challenge</h2>
         <p class="text-lg leading-relaxed">{{ page.challenge }}</p>
       </div>{% endif %}
     </div>
@@ -63,8 +67,8 @@ layout: default
   <!-- Responsibilities -->
   {% if page.activities %}
   <section class="px-6 lg:px-10 py-12 lg:py-16 max-w-7xl mx-auto">
-    <div class="animate-in xl:col-span-4" style="transition-delay: 240ms"><span
-        class="meta-tag block mb-4">Responsibilities</span>
+    <div class="animate-in xl:col-span-4" style="transition-delay: 240ms"><h2
+        class="meta-tag block mb-4">Responsibilities</h2>
       <div class="flex flex-col gap-4">
         {% for item in page.activities %}
         <div class="flex items-start xl:items-center gap-3">
@@ -82,16 +86,25 @@ layout: default
   <!-- Gallery -->
   {% if page.gallery %}
   <section class="px-6 lg:px-10 py-12 lg:py-16">
+    <h2 class="sr-only">Project gallery</h2>
     <div class="grid grid-cols-1 xl:grid-cols-12 gap-2">
       {% for image in page.gallery %}
+      {% assign media_src = image.src | default: image %}
       <figure class="animate-in lg:col-span-6">
-        {% if image contains '.mp4' %}
-        <video autoplay loop muted playsinline preload="auto" class="w-full h-auto object-cover">
-          <source src="{{ image | relative_url }}" type="video/mp4">
+        {% if media_src contains '.mp4' %}
+        <video loop muted playsinline preload="none" poster="{{ image.poster | default: page.cover | relative_url }}"
+          width="{{ image.width }}" height="{{ image.height }}" aria-label="{{ image.alt }}" data-autoplay-video
+          class="w-full h-auto object-cover">
+          <source data-src="{{ media_src | relative_url }}" type="video/mp4">
         </video>
         {% else %}
-        <img src="{{ image | relative_url }}" alt="{{ image.alt }}" class="w-full h-auto object-cover" loading="lazy" />
+        {% assign gallery_image_url = media_src | url_encode %}
+        <img src="{{ media_src | relative_url }}" alt="{{ image.alt }}" width="{{ image.width }}" height="{{ image.height }}"
+          srcset="/.netlify/images?url={{ gallery_image_url }}&amp;w=480&amp;q=80 480w, /.netlify/images?url={{ gallery_image_url }}&amp;w=960&amp;q=80 960w, /.netlify/images?url={{ gallery_image_url }}&amp;w=1600&amp;q=80 1600w"
+          sizes="(min-width: 1280px) 50vw, calc(100vw - 3rem)"
+          class="w-full h-auto object-cover" loading="lazy" decoding="async" />
         {% endif %}
+        {% if image.caption %}<figcaption class="mt-2 text-sm text-muted-foreground">{{ image.caption }}</figcaption>{% endif %}
       </figure>
       {% endfor %}
     </div>
@@ -102,7 +115,7 @@ layout: default
   {% if content != "" %}
   <section class="px-6 lg:px-10 py-12 lg:py-16 grid grid-cols-1 xl:grid-cols-12 gap-10 xl:gap-16 max-w-7xl mx-auto">
     <div class="xl:col-span-8">
-      <span class="meta-tag block mb-8">Full Story</span>
+      <h2 class="meta-tag block mb-8">Full Story</h2>
       <div id="full-story" class="prose prose-md max-w-3xl relative overflow-hidden max-h-36 transition-[max-height] duration-500 ease-in-out">
         {{ content }}
         <div id="full-story-fade" class="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-linear-to-t from-background to-transparent transition-opacity duration-500"></div>
@@ -170,7 +183,7 @@ layout: default
   <section class="px-6 lg:px-10 py-12 lg:py-16 max-w-7xl mx-auto">
     {% if page.outcomes %}
     <div class="px-6 lg:px-10 py-12 lg:py-16 bg-secondary/40 ">
-      <span class="meta-tag block mb-12">Outcomes</span>
+      <h2 class="meta-tag block mb-12">Outcomes</h2>
       <div class="flex flex-col md:flex-row gap-10">
         {% for o in page.outcomes %}
         <div class="flex flex-col items-start gap-8 md:col-span-2 flex-1">
@@ -186,7 +199,7 @@ layout: default
   <!-- Tools -->
   {% if page.tools %}
   <section class="px-6 lg:px-10 py-12 lg:py-16 max-w-7xl mx-auto">
-    <span class="meta-tag block mb-12">Tools</span>
+    <h2 class="meta-tag block mb-12">Tools</h2>
     <div class="flex flex-wrap gap-8">
       {% for t in page.tools %}
       <span class="font-mono text-lg text-muted-foreground">{{ t }}</span>

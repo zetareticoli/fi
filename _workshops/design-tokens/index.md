@@ -4,6 +4,7 @@ title: "Design Tokens Workshop - Corso Completo"
 summary: "Impara a creare e gestire i design tokens in modo efficace, accelerando lo sviluppo e garantendo la coerenza visiva dell'interfaccia."
 lang: it
 og-image: workshops/og-design-tokens-workshop.png
+permalink: /workshops/design-tokens/
 offer:
   price: "€149"
   price_full: "€249"
@@ -92,7 +93,7 @@ offer:
     </div>
 
     <img class="w-full h-auto object-cover mb-8" src="/img/workshops/design-tokens-workshop.webp"
-      alt="A working desk reflected in a picture" title="My design studio image reflected">
+      alt="A working desk reflected in a picture" title="My design studio image reflected" width="2400" height="740" decoding="async" fetchpriority="high">
     <p class="mx-auto max-w-3xl text-lg lg:text-xl leading-relaxed">Dalle basi agli argomenti avanzati, questo corso copre tutti gli aspetti più importanti da conoscere per utilizzare al meglio i design tokens nella progettazione di un Design System e di interfacce digitali.</p>
   </div>
 </section>
@@ -106,7 +107,7 @@ offer:
         <span class="font-heading text-xl font-semibold text-accent" aria-hidden="true">01</span>
         <div>
           <h3 class="font-heading text-lg font-medium mb-2">Definire un'architettura scalabile</h3>
-          <img src="/img/workshops/tokens-decisions.png" alt="" class="mb-4 w-1/2">
+          <img src="/img/workshops/tokens-decisions.png" alt="Diagram showing how design token decisions form a scalable architecture" width="1200" height="675" loading="lazy" decoding="async" class="mb-4 w-1/2">
           <p class="text-base text-muted-foreground leading-relaxed">Impari ad organizzare i design tokens in gruppi logici secondo un architettura modulare, stabilendo ruoli e responsabilità</p>
         </div>
       </div>
@@ -114,7 +115,7 @@ offer:
         <span class="font-heading text-xl font-semibold text-accent" aria-hidden="true">02</span>
         <div>
           <h3 class="font-heading text-lg font-medium mb-2">Nominare i design tokens in modo efficace</h3>
-          <img src="/img/workshops/tokens-vocabulary.png" alt="" class="mb-4">
+          <img src="/img/workshops/tokens-vocabulary.png" alt="Example vocabulary for a clear design token naming convention" width="1200" height="675" loading="lazy" decoding="async" class="mb-4">
           <p class="text-base text-muted-foreground leading-relaxed">Acquisci le competenze per creare naming convention, evitando errori comuni e garantendo chiarezza nel lungo periodo.</p>
         </div>
       </div>
@@ -122,7 +123,7 @@ offer:
         <span class="font-heading text-xl font-semibold text-accent" aria-hidden="true">03</span>
         <div>
           <h3 class="font-heading text-lg font-medium mb-2">Gestire il ciclo di vita dei design tokens</h3>
-          <img src="/img/workshops/tokens-process.png" alt="" class="mb-4">
+          <img src="/img/workshops/tokens-process.png" alt="Design token lifecycle from Figma to JSON and CSS" width="1200" height="675" loading="lazy" decoding="async" class="mb-4">
           <p class="text-base text-muted-foreground leading-relaxed">Da Figma al JSON alle variabili CSS, impari a governare l'intero ciclo di vita dei design tokens del tuo prodotto digitale.</p>
         </div>
       </div>
@@ -130,7 +131,7 @@ offer:
         <span class="font-heading text-xl font-semibold text-accent" aria-hidden="true">04</span>
         <div>
           <h3 class="font-heading text-lg font-medium mb-2">Allineare il team e ottimizzare i processi</h3>
-          <img src="/img/workshops/tokens-purpose.png" alt="" class="mb-4">
+          <img src="/img/workshops/tokens-purpose.png" alt="Shared design token model connecting design, development, and product teams" width="1200" height="675" loading="lazy" decoding="async" class="mb-4">
           <p class="text-base text-muted-foreground leading-relaxed">Designer, developer e PM parleranno finalmente la stessa lingua, grazie a una base condivisa e visibile del sistema esistente.</p>
         </div>
       </div>
@@ -325,7 +326,7 @@ offer:
   <div class="mx-auto max-w-5xl">
     <div class="text-center">
       <span class="block mb-3 font-mono text-xs uppercase tracking-wide text-accent">Chi sono</span>
-      <img class="mx-auto mb-8 w-32 h-32 object-cover grayscale" src="/img/francesco-improta-profile.webp" alt="Francesco Improta - Design Token Expert and Course Instructor">
+      <img class="mx-auto mb-8 w-32 h-32 object-cover grayscale" src="/img/francesco-improta-profile.webp" alt="Francesco Improta - Design Token Expert and Course Instructor" width="400" height="400" loading="lazy" decoding="async">
       <h2 class="font-heading text-2xl sm:text-3xl font-bold leading-tight mb-8">Francesco Improta</h2>
     </div>
     <div class="flex flex-col gap-4 max-w-3xl">

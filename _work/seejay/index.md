@@ -1,19 +1,23 @@
 ---
 layout: work
 title: Seejay
+seo_title: Seejay Redesign Case Study — Francesco Improta
 lead: A platform for collecting, organising, and publishing images, video, audio, and text from social networks
-summary: The summary of the project
+description: How I redesigned Seejay in the browser using HTML prototypes, atomic design, and a shared workflow for designers, developers, and stakeholders.
 cover: /img/work/seejay/seejay-cover.webp
+cover_width: 2560
+cover_height: 1080
 org: Seejay
-year: 2014-2015
+period: 2014–2015
+order: 5
 role: UX/UI Designer
 context: Seejay was a startup from Catania, helping people collect, organise, and publish images, video, audio, and text from social networks to tell a live, shared story around any event or topic. It worked for both journalism and marketing, and by 2015 it had about 100,000 users, including brands and publishers like Kellogg's, Repubblica, and Il Messaggero.
 challenge: For Seejay, the redesign had to make the interface more coherent while also making the process more truthful. The team needed a way to show progress without pretending that a static composition was the final product, and a way to involve stakeholders in decisions that were closer to how users would actually experience the site.
 activities:
-  - Define the design system and create a cohesive experience across all products
-  - Design for multiple platforms, adapting concepts from web to mobile, requiring attention to detail and extensive testing.
-  - Collaborate with stakeholders to define the product roadmap and vision.
-  - Create a Design System to ensure consistency across all products, keeping a coherent visual identity 
+  - label: Define the design system and create a cohesive experience across all products.
+  - label: Design for multiple platforms, adapting concepts from web to mobile and testing responsive behaviour.
+  - label: Collaborate with stakeholders to define the product roadmap and vision.
+  - label: Create reusable interface patterns that keep the product experience consistent.
 permalink: /work/seejay/
 published: true
 ---

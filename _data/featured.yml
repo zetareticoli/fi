@@ -2,61 +2,101 @@
 # per breakpoint (md = tablet, lg = desktop, xl = desktop largo).
 # Un breakpoint non specificato eredita il valore del breakpoint precedente
 # (xl -> lg -> md). Su mobile il layout è sempre impilato a colonna singola.
-- video: /img/work/design-system-italia/video-corto-web.mp4
+- title: Design System .italia
+  video: /img/work/design-system-italia/video-corto-web.mp4
+  poster: /img/work/design-system-italia/design-system-italia-cover.webp
+  width: 1280
+  height: 720
   url: /work/design-system-italia/
   grid:
     md: { col: 6, row: 1 }
     lg: { col: 6, row: 1 }
     xl: { col: 5, row: 1 }
-- image: /img/work/digital-public-services/padigitale2026.webp
+- title: Digital Services for the Italian Public Administration
+  image: /img/work/digital-public-services/padigitale2026.webp
+  alt: PA Digitale 2026 public administration funding platform interface
+  width: 1920
+  height: 1080
   url: /work/digital-public-services/
   grid:
     md: { col: 6, row: 1 }
     lg: { col: 6, row: 1 }
     xl: { col: 4, row: 1 }
-- video: "/img/work/digital-public-services/healthcare-website.mp4"
+- title: Digital Services for the Italian Public Administration
+  video: "/img/work/digital-public-services/healthcare-website.mp4"
+  poster: /img/work/digital-public-services/digital-public-services-cover.webp
+  width: 1920
+  height: 1080
   url: /work/digital-public-services/
   grid:
     md: { col: 2, row: 1 }
     lg: { col: 2, row: 1 }
     xl: { col: 3, row: 2 }
-- image: /img/work/citynews/romatoday-mobile-app.webp
+- title: Designing News
+  image: /img/work/citynews/romatoday-mobile-app.webp
+  alt: RomaToday mobile news application interface
+  width: 1920
+  height: 1080
   url: /work/citynews/
   grid:
     md: { col: 4, row: 1 }
     lg: { col: 4, row: 1 }
     xl: { col: 3, row: 1 }
-- image: /img/work/digital-public-services/municipalities-website.webp
+- title: Digital Services for the Italian Public Administration
+  image: /img/work/digital-public-services/municipalities-website.webp
+  alt: Website template for Italian municipalities
+  width: 1920
+  height: 1080
   url: /work/digital-public-services/
   grid:
     md: { col: 6, row: 1 }
     lg: { col: 6, row: 1 }
     xl: { col: 6, row: 1 }
-- video: /img/work/citynews/today-video.mp4
+- title: Designing News
+  video: /img/work/citynews/today-video.mp4
+  poster: /img/work/citynews/citynews-cover.webp
+  width: 1998
+  height: 1124
   url: /work/citynews/
   grid:
     md: { col: 6, row: 1 }
     lg: { col: 4, row: 1 }
     xl: { col: 6, row: 1 }
-- image: /img/work/citynews/citynews-corporate-intro-homepage.webp
+- title: Designing News
+  image: /img/work/citynews/citynews-corporate-intro-homepage.webp
+  alt: Citynews corporate website homepage
+  width: 1920
+  height: 1080
   url: /work/citynews/
   grid:
     md: { col: 6, row: 1 }
     lg: { col: 5, row: 1 }
     xl: { col: 6, row: 1 }
-- image: /img/work/noemalife/galileo-mobile.webp
+- title: Mobile applications for healthcare
+  image: /img/work/noemalife/galileo-mobile.webp
+  alt: Galileo mobile healthcare application interface
+  width: 1928
+  height: 1080
   url: /work/noemalife/
   grid:
     md: { col: 3, row: 1 }
     lg: { col: 3, row: 1 }
     xl: { col: 2, row: 1 }
-- image: /img/work/robodomain/robodomain.webp
+- title: Robodomain
+  image: /img/work/robodomain/robodomain.webp
+  alt: Robodomain robot domain name generator interface
+  width: 1920
+  height: 1080
   url: /work/robodomain/
   grid:
     md: { col: 6, row: 1 }
     lg: { col: 6, row: 1 }
     xl: { col: 5, row: 1 }
-- image: /img/work/seejay/seejay.webp
+- title: Seejay
+  image: /img/work/seejay/seejay.webp
+  alt: Seejay social storytelling platform interface
+  width: 1920
+  height: 1080
   url: /work/seejay/
   grid:
     md: { col: 6, row: 1 }

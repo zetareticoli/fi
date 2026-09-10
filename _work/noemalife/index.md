@@ -2,6 +2,8 @@
 layout: work
 title: Mobile applications for healthcare
 cover: "/img/work/noemalife/noemalife-cover.webp"
+cover_width: 2560
+cover_height: 1080
 tag: UX/UI Design
 order: 4
 overview: Designing mobile applications for healthcare professionals.
@@ -26,11 +28,26 @@ tools:
   - Adobe Illustrator
   - Adobe Flex
 gallery:
-  - /img/work/noemalife/eprescribing.webp
-  - /img/work/noemalife/pch-encounters-list-default.webp
-  - /img/work/noemalife/er-management.webp
-  - /img/work/noemalife/athena-sketches.webp
-  - /img/work/noemalife/athena-tracking.webp
+  - src: /img/work/noemalife/eprescribing.webp
+    alt: Mobile ePrescribing application for healthcare professionals
+    width: 1449
+    height: 1000
+  - src: /img/work/noemalife/pch-encounters-list-default.webp
+    alt: Patient clinical history encounters list on mobile
+    width: 1008
+    height: 760
+  - src: /img/work/noemalife/er-management.webp
+    alt: Emergency room management mobile interface
+    width: 1008
+    height: 780
+  - src: /img/work/noemalife/athena-sketches.webp
+    alt: Early sketches for the Athena healthcare application
+    width: 1000
+    height: 652
+  - src: /img/work/noemalife/athena-tracking.webp
+    alt: Athena patient tracking interface
+    width: 1920
+    height: 1080
 permalink: /work/noemalife/
 ---
 
@@ -55,21 +72,21 @@ I worked on the **user experience and interface design** for several Galileo fea
 #### **ePrescribing**
 
 <figure class="mb-4">
-  <img src="/img/work/noemalife/eprescribing.webp" alt="ePrescribing" class="w-full h-full object-cover">
+  <img src="/img/work/noemalife/eprescribing.webp" alt="ePrescribing interface for medications and clinical tests" width="1449" height="1000" loading="lazy" decoding="async" class="w-full h-full object-cover">
   <figcaption>ePrescribing allows doctors to prescribe medications and order tests directly from the patient's record.</figcaption>
 </figure>
 
 #### **Patient Clinical History**
 
 <figure class="mb-4">
-  <img src="/img/work/noemalife/pch-encounters-list-default.webp" alt="Patient Clinical History" class="w-full h-full object-cover">
+  <img src="/img/work/noemalife/pch-encounters-list-default.webp" alt="Patient Clinical History interface showing clinical encounters" width="1008" height="760" loading="lazy" decoding="async" class="w-full h-full object-cover">
   <figcaption>Patient Clinical History shows the patient's encounters, medications, and allergies.</figcaption>
 </figure>
 
 #### **ER Management**
 
 <figure class="mb-4">
-  <img src="/img/work/noemalife/er-management.webp" alt="ER Management" class="w-full h-full object-cover">
+  <img src="/img/work/noemalife/er-management.webp" alt="Emergency room management interface for clinical staff" width="1008" height="780" loading="lazy" decoding="async" class="w-full h-full object-cover">
   <figcaption>ER Management helps nurses and doctors manage the Emergency Department.</figcaption>
 </figure>
 
@@ -78,17 +95,17 @@ I worked on the **user experience and interface design** for several Galileo fea
 Athena Tracking is management software for anatomical pathology laboratories. It helps hospitals manage the full lifecycle of biological tissues—from sampling to diagnosis—and integrates with digital imaging (telepathology).
 
 <figure class="mb-4">
-  <img src="/img/work/noemalife/athena-original-interface.webp" alt="Athena original interface" class="w-full h-full object-cover">
+  <img src="/img/work/noemalife/athena-original-interface.webp" alt="Athena Tracking interface before the redesign" width="1588" height="1190" loading="lazy" decoding="async" class="w-full h-full object-cover">
   <figcaption>The original interface of Athena Tracking software before the redesign.</figcaption>
 </figure>
 
 <figure class="mb-4">
-  <img src="/img/work/noemalife/athena-sketches.webp" alt="Athena sketches" class="w-full h-full object-cover">
+  <img src="/img/work/noemalife/athena-sketches.webp" alt="Early sketches for the Athena Tracking redesign" width="1000" height="652" loading="lazy" decoding="async" class="w-full h-full object-cover">
   <figcaption>Some sketches from early UX design stage.</figcaption>
 </figure>
 
 <figure class="mb-4">
-  <img src="/img/work/noemalife/athena-tracking.webp" alt="Athena Tracking" class="w-full h-full object-cover">
+  <img src="/img/work/noemalife/athena-tracking.webp" alt="Redesigned Athena Tracking laboratory interface" width="1920" height="1080" loading="lazy" decoding="async" class="w-full h-full object-cover">
   <figcaption>The new interface of Athena Tracking software.</figcaption>
 </figure>
 

@@ -15,7 +15,7 @@
     {{ content }}
   </main>
   {% include footer.html %}
-  <script src="{{ '/js/app.js' | relative_url }}"></script>
+  <script src="{{ '/js/app.js' | relative_url }}?v={{ asset_version }}"></script>
   {% if page.offer.deadline %}
   <script>
     (function () {

@@ -1,6 +1,8 @@
 ---
 layout: page
 title: "Hi, I'm Francesco."
+seo_title: "About Francesco Improta — Design Lead & Technologist"
+description: "Design technologist and design systems lead with 15+ years of experience building scalable UI platforms for complex organizations."
 nav: true
 nav_title: "About"
 nav_order: 1
@@ -20,8 +22,11 @@ permalink: /about/
           multi-team environments.
         </p>
         <img src="{{ page.portrait | default: '/img/francesco-improta.webp' | relative_url }}" alt="Francesco Improta"
+          srcset="/.netlify/images?url=%2Fimg%2Ffrancesco-improta.webp&amp;w=320&amp;q=82 320w, /.netlify/images?url=%2Fimg%2Ffrancesco-improta.webp&amp;w=656&amp;q=82 656w"
+          sizes="(min-width: 768px) 40vw, (min-width: 640px) 42vw, 100vw"
+          width="656" height="1180"
           class="float-right ml-4 sm:ml-6 mb-4 w-full sm:w-[42%] md:w-[40%] object-cover rounded-xs grayscale max-h-[65vh]"
-          loading="lazy" />
+          loading="lazy" decoding="async" />
  
         <p class="mb-6 text-base text-muted-foreground leading-relaxed">
           I help organizations establish design systems as infrastructure — aligning design and front-end architecture to enable consistency, speed, and long-term maintainability. My focus is on system thinking, governance, and reducing organizational friction at scale.
@@ -51,7 +56,7 @@ permalink: /about/
 
       <!-- How I work + Skills -->
       <section>
-        <h4 class="meta-tag mb-4">Expertise</h4>
+        <h2 class="meta-tag mb-4">Expertise</h2>
         <div class="flex flex-col gap-6 mt-6">
           <div class="flex flex-col gap-1">
             <h3 class="text-lg font-semibold leading-snug">Design System Architecture</h3>
@@ -89,7 +94,7 @@ permalink: /about/
 
       <!-- Awards -->
       <section class="animate-in" style="transition-delay: 120ms">
-        <span class="meta-tag block mb-6">Awards</span>
+        <h2 class="meta-tag block mb-6">Awards</h2>
         {% for award in site.data.about.awards %}
         <div class="flex flex-col gap-2">
           <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
@@ -107,7 +112,7 @@ permalink: /about/
 
       <!-- Teaching -->
       <section class="animate-in" style="transition-delay: 240ms"> 
-        <span class="meta-tag block mb-6">Teaching</span>
+        <h2 class="meta-tag block mb-6">Teaching</h2>
         <div class="flex flex-col gap-5">
           {% for t in site.data.about.teaching %}
           <div class="flex flex-col gap-1">
@@ -123,7 +128,7 @@ permalink: /about/
 
       <!-- Speaking -->
       <section class="animate-in" style="transition-delay: 360ms">
-        <span class="meta-tag block mb-6">Speaking</span>
+        <h2 class="meta-tag block mb-6">Speaking</h2>
         <div class="flex flex-col">
           {% for talk in site.data.about.speaking %}
           <div class="flex flex-col gap-0.5 py-3 hairline">
@@ -138,10 +143,11 @@ permalink: /about/
 
       <!-- Publications -->
       <section class="animate-in" style="transition-delay: 480ms">
-        <span class="meta-tag block mb-6">Publications</span>
+        <h2 class="meta-tag block mb-6">Publications</h2>
         {% for pub in site.data.about.publications %}
         <div class="flex flex-col gap-3 sm:flex-row sm:gap-4">
-          <img src="{{ pub.image | relative_url }}" alt="{{ pub.title }}" class="w-20 h-auto self-start shrink-0 grayscale shadow-lg">
+          <img src="{{ pub.image | relative_url }}" alt="{{ pub.title }}" width="{{ pub.width }}" height="{{ pub.height }}"
+            loading="lazy" decoding="async" class="w-20 h-auto self-start shrink-0 grayscale shadow-lg">
           <div class="flex flex-col gap-1">
             <h3 class="text-sm font-medium leading-snug"><a href="{{ pub.url }}" target="_blank" rel="noopener noreferrer"
               class="text-sm underline underline-offset-2 font-medium transition-colors">{{ pub.title }}</a></h3>

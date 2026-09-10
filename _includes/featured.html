@@ -14,24 +14,23 @@
 {%- capture grid_style -%}{% if md %}--col-md: {{ md.col }}; --row-md: {{ md.row | default: 1 }};{% endif %}{% if lg %} --col-lg: {{ lg.col }}; --row-lg: {{ lg.row | default: 1 }};{% endif %}{% if xl %} --col-xl: {{ xl.col }}; --row-xl: {{ xl.row | default: 1 }};{% endif %} transition-delay: {{ forloop.index | times: 120 }}ms;{%- endcapture -%}
 {%- capture media -%}
   {% if item.video %}
-  <video autoplay loop muted playsinline preload="auto"
+  <video loop muted playsinline preload="none" poster="{{ item.poster | relative_url }}"
+    width="{{ item.width }}" height="{{ item.height }}" aria-hidden="true" data-autoplay-video
     class="w-full transition-transform duration-300 ease-out group-hover:scale-105">
-    <source src="{{ item.video | relative_url }}" type="video/mp4">
+    <source data-src="{{ item.video | relative_url }}" type="video/mp4">
   </video>
-  <script>
-    document.querySelectorAll('video[autoplay]').forEach((video) => {
-      video.muted = true;
-      video.playsInline = true;
-      video.play().catch(() => {});
-    });
-  </script>
   {% else %}
-    <img src="{{ item.image | relative_url }}" alt="{{ work_page.title | default: item.title }}"
+    {%- assign featured_image_url = item.image | url_encode -%}
+    <img src="{{ item.image | relative_url }}" alt="{{ item.alt | default: work_page.title | default: item.title }}"
+      srcset="/.netlify/images?url={{ featured_image_url }}&amp;w=480&amp;q=80 480w, /.netlify/images?url={{ featured_image_url }}&amp;w=960&amp;q=80 960w, /.netlify/images?url={{ featured_image_url }}&amp;w=1600&amp;q=80 1600w"
+      sizes="(min-width: 1024px) 50vw, 100vw"
+      width="{{ item.width }}" height="{{ item.height }}" loading="lazy" decoding="async"
       class="w-full transition-transform duration-300 ease-out group-hover:scale-105">
   {% endif %}
 {%- endcapture -%}
 {%- if is_link -%}
 <a href="{{ item.url | relative_url }}"{% if is_external %} target="_blank" rel="noopener noreferrer"{% endif %}
+  aria-label="{{ item.title | default: work_page.title }}"
   class="work-item group animate-in overflow-hidden"
   style="{{ grid_style }}">
   {{ media }}

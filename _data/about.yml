@@ -50,3 +50,5 @@ publications:
     publisher: "O'Reilly"
     description: "Co-authored a book covering the broad set of new additions and changes to the core CSS language."
     image: "/img/css3-solutions-book-cover.webp"
+    width: 296
+    height: 391

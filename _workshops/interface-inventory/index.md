@@ -4,6 +4,7 @@ title: "Workshop: Le basi di un Design System - Creare un Interface Inventory"
 summary: "Un workshop pratico per designer e sviluppatori che vogliono organizzare le interfacce e ridurre drasticamente i tempi di sviluppo. Impara a creare un Interface Inventory efficace in 4 ore."
 lang: it
 og-image: workshops/interface-inventory/interface-inventory-og.png
+permalink: /workshops/interface-inventory/
 offer:
   price: "€99"
   price_full: "€199"
@@ -92,7 +93,7 @@ offer:
     </div>
 
     <img class="w-full h-auto object-cover" src="/img/workshops/interface-inventory/interface-inventory-banner.webp"
-      alt="A working desk reflected in a picture" title="My design studio image reflected">
+      alt="Interface inventory workshop banner" title="Interface inventory workshop" width="2784" height="520" decoding="async" fetchpriority="high">
   </div>
 </section>
 
@@ -271,7 +272,7 @@ offer:
     <div class="text-center">
       <span class="block mb-3 font-mono text-xs uppercase tracking-wide text-accent">Chi sono</span>
       <h2 class="font-heading text-2xl sm:text-3xl font-bold leading-tight mb-8">Aiuto le persone a progettare esperienze digitali efficaci</h2>
-      <img class="mx-auto mb-8 w-32 h-32 object-cover grayscale" src="/img/francesco-improta-profile.webp" alt="Francesco Improta - Design Token Expert and Course Instructor">
+      <img class="mx-auto mb-8 w-32 h-32 object-cover grayscale" src="/img/francesco-improta-profile.webp" alt="Francesco Improta - Design Token Expert and Course Instructor" width="400" height="400" loading="lazy" decoding="async">
     </div>
     <div class="flex flex-col gap-4 max-w-3xl">
       <p class="text-lg font-medium leading-relaxed">👋 Ciao, sono <strong class="font-semibold">Francesco Improta</strong>, designer con oltre 20 anni di esperienza nel design di prodotti digitali, specializzato in Design System.</p>
