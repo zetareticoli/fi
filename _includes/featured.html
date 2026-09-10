@@ -24,7 +24,7 @@
   {% else %}
     {%- assign featured_image_url = item.image | url_encode -%}
     <img src="{{ item.image | relative_url }}" alt="{{ item.alt | default: work_page.title | default: item.title }}"
-      srcset="/.netlify/images?url={{ featured_image_url }}&amp;w=480&amp;q=80 480w, /.netlify/images?url={{ featured_image_url }}&amp;w=960&amp;q=80 960w, /.netlify/images?url={{ featured_image_url }}&amp;w=1600&amp;q=80 1600w"
+      srcset="/.netlify/images?url={{ featured_image_url }}&amp;w=480&amp;q=80 480w, /.netlify/images?url={{ featured_image_url }}&amp;w=768&amp;q=80 768w, /.netlify/images?url={{ featured_image_url }}&amp;w=960&amp;q=80 960w, /.netlify/images?url={{ featured_image_url }}&amp;w=1600&amp;q=80 1600w"
       sizes="(min-width: 1024px) 50vw, 100vw"
       width="{{ item.width }}" height="{{ item.height }}" loading="lazy" decoding="async"
       class="w-full transition-transform duration-300 ease-out group-hover:scale-105">

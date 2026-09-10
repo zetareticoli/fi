@@ -71,6 +71,7 @@
     --color-destructive: hsl(var(--destructive));
     --color-border: hsl(var(--border));
     --color-ring: hsl(var(--ring));
+    --font-body: var(--font-sans);
     --font-heading: 'Mona Sans', ui-sans-serif, system-ui, sans-serif;
   }
 }
@@ -240,6 +241,17 @@
   .visible {
     visibility: visible;
   }
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border-width: 0;
+  }
   .absolute {
     position: absolute;
   }
@@ -284,9 +296,6 @@
   }
   .col-span-3 {
     grid-column: span 3 / span 3;
-  }
-  .col-span-6 {
-    grid-column: span 6 / span 6;
   }
   .col-span-7 {
     grid-column: span 7 / span 7;
@@ -1137,9 +1146,6 @@
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .grid-cols-6 {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-  }
   .grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
@@ -1436,6 +1442,9 @@
   }
   .text-right {
     text-align: right;
+  }
+  .font-body {
+    font-family: var(--font-body);
   }
   .font-heading {
     font-family: var(--font-heading);
@@ -2385,6 +2394,27 @@
       line-height: var(--leading-relaxed);
     }
   }
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('/css/fonts/Inter-Variable.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/css/fonts/JetBrains-Mono-Variable.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 300 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Mona Sans';
+  src: url('/css/fonts/Mona-Sans-Variable.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
 }
 @keyframes accordion-down {
   from {

@@ -41,4 +41,9 @@
 [[headers]]
   for = "/img/*"
   [headers.values]
-    Cache-Control = "public, max-age=604800, stale-while-revalidate=2592000"
+    Cache-Control = "public, max-age=2592000, stale-while-revalidate=7776000"
+
+[[headers]]
+  for = "/css/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

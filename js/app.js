@@ -25,7 +25,8 @@
     if (!videos.length) return;
 
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (reducedMotion) return;
+    const desktopViewport = window.matchMedia('(min-width: 768px)').matches;
+    if (reducedMotion || !desktopViewport) return;
 
     if (!('IntersectionObserver' in window)) {
       videos.forEach(function(video) {
@@ -45,9 +46,30 @@
           video.pause();
         }
       });
-    }, { rootMargin: '200px 0px', threshold: 0.01 });
+    }, { rootMargin: '0px', threshold: 0.01 });
 
     videos.forEach(function(video) { observer.observe(video); });
+  }
+
+  function initializeKitForms() {
+    const forms = document.querySelectorAll('[data-kit-form]');
+    if (!forms.length) return;
+
+    let requested = false;
+    function loadKit() {
+      if (requested || document.querySelector('script[data-kit-script]')) return;
+      requested = true;
+      const script = document.createElement('script');
+      script.src = 'https://f.convertkit.com/ckjs/ck.5.js';
+      script.async = true;
+      script.dataset.kitScript = '';
+      document.head.appendChild(script);
+    }
+
+    forms.forEach(function(form) {
+      form.addEventListener('focusin', loadKit, { once: true });
+      form.addEventListener('submit', loadKit, { once: true });
+    });
   }
 
   document.addEventListener('DOMContentLoaded', function() {
@@ -59,6 +81,7 @@
     });
 
     initializeDeferredVideos();
+    initializeKitForms();
 
     const mobileBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');

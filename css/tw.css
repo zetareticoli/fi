@@ -1,6 +1,30 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+@font-face {
+  font-family: 'Inter';
+  src: url('/css/fonts/Inter-Variable.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/css/fonts/JetBrains-Mono-Variable.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 300 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mona Sans';
+  src: url('/css/fonts/Mona-Sans-Variable.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+}
+
 @variant dark (&:where(.dark, .dark *));
 
 /* Scan Jekyll templates for class detection */
@@ -43,6 +67,7 @@
 
   /* Font families */
   --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-body: var(--font-sans);
   --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   --font-heading: 'Mona Sans', ui-sans-serif, system-ui, sans-serif;
 
