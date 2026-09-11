@@ -1,9 +1,8 @@
 ---
 layout: work
-title: Seejay
-seo_title: Seejay Redesign Case Study — Francesco Improta
-lead: A platform for collecting, organising, and publishing images, video, audio, and text from social networks
-description: How I redesigned Seejay in the browser using HTML prototypes, atomic design, and a shared workflow for designers, developers, and stakeholders.
+title: From Startup Idea to Scalable Product 
+lead: A digital platform for collecting, organising, and publishing curated content from social networks
+summary: The summary of the project
 cover: /img/work/seejay/seejay-cover.webp
 cover_width: 2560
 cover_height: 1080
@@ -19,7 +18,7 @@ activities:
   - label: Collaborate with stakeholders to define the product roadmap and vision.
   - label: Create reusable interface patterns that keep the product experience consistent.
 permalink: /work/seejay/
-published: true
+published: false
 ---
 
 ## **Designing in the browser, not around it**
