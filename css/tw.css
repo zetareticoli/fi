@@ -106,6 +106,158 @@
   }
 }
 
+body.mobile-menu-open {
+  overflow: hidden;
+}
+
+.mobile-nav-header {
+  position: relative;
+  z-index: 2;
+}
+
+.mobile-menu-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  height: 100vh;
+  height: 100dvh;
+  padding: 6rem 1.5rem max(2rem, env(safe-area-inset-bottom));
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  background-color: hsl(var(--background));
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.35s ease, visibility 0s linear 0.35s;
+}
+
+.site-nav.is-menu-open .mobile-menu-overlay {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transition-delay: 0s;
+}
+
+.site-nav.is-menu-open #theme-toggle-mobile {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.mobile-menu-content {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100dvh - 8rem - env(safe-area-inset-bottom));
+}
+
+.mobile-menu-primary {
+  border-top: 1px solid hsl(var(--border));
+}
+
+.mobile-menu-primary li {
+  border-bottom: 1px solid hsl(var(--border));
+}
+
+.mobile-menu-primary a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+  font-family: var(--font-heading);
+  font-size: clamp(1.75rem, 8vw, 2.5rem);
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.mobile-menu-primary a[aria-current='page'] {
+  color: hsl(var(--accent));
+}
+
+.mobile-menu-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.5rem;
+  margin-top: auto;
+  padding-top: 3rem;
+}
+
+.mobile-menu-secondary {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.mobile-menu-secondary a,
+.mobile-menu-quote {
+  color: hsl(var(--muted-foreground));
+  font-size: 1rem;
+  line-height: 1.5;
+  text-decoration-line: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 0.25rem;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.mobile-menu-secondary a:hover,
+.mobile-menu-secondary a:focus-visible,
+.mobile-menu-quote:hover,
+.mobile-menu-quote:focus-visible {
+  color: hsl(var(--foreground));
+  text-decoration-color: currentColor;
+}
+
+.mobile-menu-quote {
+  color: hsl(var(--foreground));
+  white-space: nowrap;
+  text-decoration-color: currentColor;
+}
+
+.mobile-menu-item {
+  opacity: 0;
+  transform: translateY(-1rem);
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+.site-nav.is-menu-open .mobile-menu-item {
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: 0.45s;
+  transition-delay: calc(0.08s + var(--menu-index, 0) * 0.055s);
+}
+
+@media (max-height: 620px) {
+  .mobile-menu-overlay {
+    padding-top: 5rem;
+  }
+
+  .mobile-menu-primary a {
+    padding: 0.65rem 0;
+    font-size: 1.5rem;
+  }
+
+  .mobile-menu-footer {
+    padding-top: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mobile-menu-overlay {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mobile-menu-overlay,
+  .mobile-menu-item,
+  .mobile-menu-secondary a,
+  .mobile-menu-quote {
+    transition-duration: 0.01ms !important;
+    transition-delay: 0s !important;
+  }
+}
+
 @variant dark (&:where(.dark, .dark *));
 
 /* Scan Jekyll templates for class detection */
