@@ -2609,15 +2609,19 @@
     }
   }
   @media (min-width: 1024px) {
+    .work-grid {
+      grid-auto-rows: 30rem;
+    }
     .work-grid > .work-item {
       grid-column: span var(--col-lg, var(--col-md, 6));
       grid-row: span var(--row-lg, var(--row-md, 1));
-      grid-auto-rows: 30rem;
     }
   }
   @media (min-width: 1440px) {
-    .work-grid > .work-item {
+    .work-grid {
       grid-auto-rows: minmax(25rem, 480px);
+    }
+    .work-grid > .work-item {
       grid-column: span var(--col-xl, var(--col-lg, var(--col-md, 6)));
       grid-row: span var(--row-xl, var(--row-lg, var(--row-md, 1)));
     }

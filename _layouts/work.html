@@ -44,8 +44,10 @@ layout: default
   {% assign cover_url = page.cover | url_encode %}
   <section class="px-6 lg:px-10 py-12 lg:py-16 mx-auto">
     <img src="{{ page.cover | relative_url }}" alt="{{ cover_alt }}" class="w-full h-auto object-cover"
+      {% if jekyll.environment == 'production' %}
       srcset="/.netlify/images?url={{ cover_url }}&amp;w=640&amp;q=82 640w, /.netlify/images?url={{ cover_url }}&amp;w=1280&amp;q=82 1280w, /.netlify/images?url={{ cover_url }}&amp;w=1920&amp;q=82 1920w"
       sizes="calc(100vw - 3rem)"
+      {% endif %}
       width="{{ page.cover_width }}" height="{{ page.cover_height }}" decoding="async" fetchpriority="high" />
   </section>
   {% endif %}
@@ -100,8 +102,10 @@ layout: default
         {% else %}
         {% assign gallery_image_url = media_src | url_encode %}
         <img src="{{ media_src | relative_url }}" alt="{{ image.alt }}" width="{{ image.width }}" height="{{ image.height }}"
+          {% if jekyll.environment == 'production' %}
           srcset="/.netlify/images?url={{ gallery_image_url }}&amp;w=480&amp;q=80 480w, /.netlify/images?url={{ gallery_image_url }}&amp;w=768&amp;q=80 768w, /.netlify/images?url={{ gallery_image_url }}&amp;w=960&amp;q=80 960w, /.netlify/images?url={{ gallery_image_url }}&amp;w=1600&amp;q=80 1600w"
           sizes="(min-width: 1280px) 50vw, calc(100vw - 3rem)"
+          {% endif %}
           class="w-full h-auto object-cover" loading="lazy" decoding="async" />
         {% endif %}
         {% if image.caption %}<figcaption class="mt-2 text-sm text-muted-foreground">{{ image.caption }}</figcaption>{% endif %}

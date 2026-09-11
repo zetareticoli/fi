@@ -22,8 +22,10 @@ permalink: /about/
           multi-team environments.
         </p>
         <img src="{{ page.portrait | default: '/img/francesco-improta.webp' | relative_url }}" alt="Francesco Improta"
+          {% if jekyll.environment == 'production' %}
           srcset="/.netlify/images?url=%2Fimg%2Ffrancesco-improta.webp&amp;w=320&amp;q=82 320w, /.netlify/images?url=%2Fimg%2Ffrancesco-improta.webp&amp;w=656&amp;q=82 656w"
           sizes="(min-width: 768px) 40vw, (min-width: 640px) 42vw, 100vw"
+          {% endif %}
           width="656" height="1180"
           class="float-right ml-4 sm:ml-6 mb-4 w-full sm:w-[42%] md:w-[40%] object-cover rounded-xs grayscale max-h-[65vh]"
           loading="lazy" decoding="async" />

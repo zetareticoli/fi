@@ -43,7 +43,11 @@
   {%- assign first_featured = site.data.featured | first -%}
   {%- if first_featured.video and first_featured.poster -%}
     {%- assign first_poster_url = first_featured.poster | url_encode -%}
+    {%- if jekyll.environment == 'production' -%}
 <link rel="preload" as="image" href="/.netlify/images?url={{ first_poster_url }}&amp;w=768&amp;h=432&amp;fit=cover&amp;q=80" fetchpriority="high" />
+    {%- else -%}
+<link rel="preload" as="image" href="{{ first_featured.poster | relative_url }}" fetchpriority="high" />
+    {%- endif -%}
   {%- endif -%}
 {% endif %}
 <title>{{ meta_title | escape }}</title>

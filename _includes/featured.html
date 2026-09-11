@@ -16,7 +16,7 @@
   {% if item.video %}
   {%- assign featured_poster_url = item.poster | url_encode -%}
   <video loop muted playsinline preload="none"
-    poster="/.netlify/images?url={{ featured_poster_url }}&amp;w=768&amp;h=432&amp;fit=cover&amp;q=80"
+    poster="{% if jekyll.environment == 'production' %}/.netlify/images?url={{ featured_poster_url }}&amp;w=768&amp;h=432&amp;fit=cover&amp;q=80{% else %}{{ item.poster | relative_url }}{% endif %}"
     width="{{ item.width }}" height="{{ item.height }}" aria-hidden="true" data-autoplay-video
     class="w-full transition-transform duration-300 ease-out group-hover:scale-105">
     <source data-src="{{ item.video | relative_url }}" type="video/mp4">
@@ -24,8 +24,10 @@
   {% else %}
     {%- assign featured_image_url = item.image | url_encode -%}
     <img src="{{ item.image | relative_url }}" alt="{{ item.alt | default: work_page.title | default: item.title }}"
+      {% if jekyll.environment == 'production' %}
       srcset="/.netlify/images?url={{ featured_image_url }}&amp;w=480&amp;q=80 480w, /.netlify/images?url={{ featured_image_url }}&amp;w=768&amp;q=80 768w, /.netlify/images?url={{ featured_image_url }}&amp;w=960&amp;q=80 960w, /.netlify/images?url={{ featured_image_url }}&amp;w=1600&amp;q=80 1600w"
       sizes="(min-width: 1024px) 50vw, 100vw"
+      {% endif %}
       width="{{ item.width }}" height="{{ item.height }}" loading="lazy" decoding="async"
       class="w-full transition-transform duration-300 ease-out group-hover:scale-105">
   {% endif %}
