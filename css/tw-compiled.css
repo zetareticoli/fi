@@ -2702,6 +2702,9 @@ body.mobile-menu-open {
     grid-auto-rows: auto;
     gap: 8px;
   }
+  .work-grid-container {
+    container-type: inline-size;
+  }
   .work-grid > .work-item {
     display: block;
   }
@@ -2714,6 +2717,7 @@ body.mobile-menu-open {
     .work-grid {
       grid-template-columns: repeat(12, 1fr);
       grid-auto-flow: dense;
+      grid-auto-rows: calc(28.125cqw - 2.25px);
     }
     .work-grid > .work-item {
       grid-column: span var(--col-md, 6);
@@ -2721,22 +2725,17 @@ body.mobile-menu-open {
     }
     .work-grid > .work-item img, .work-grid > .work-item video {
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
+      object-position: center;
     }
   }
   @media (min-width: 1024px) {
-    .work-grid {
-      grid-auto-rows: 30rem;
-    }
     .work-grid > .work-item {
       grid-column: span var(--col-lg, var(--col-md, 6));
       grid-row: span var(--row-lg, var(--row-md, 1));
     }
   }
   @media (min-width: 1440px) {
-    .work-grid {
-      grid-auto-rows: minmax(25rem, 480px);
-    }
     .work-grid > .work-item {
       grid-column: span var(--col-xl, var(--col-lg, var(--col-md, 6)));
       grid-row: span var(--row-xl, var(--row-lg, var(--row-md, 1)));
