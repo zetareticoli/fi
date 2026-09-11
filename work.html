@@ -15,10 +15,12 @@ nav_order: 3
     <p class="text-muted-foreground">Here’s a collection of notable projects and companies I’ve worked on. Some have strong visuals to share; others don’t. Every one of them has a story to tell.</p>
   </section>
   <h2 class="meta-tag block mb-8">Work Highlights</h2>
-  <section class="work-grid">
+  <section class="work-grid-container">
+    <div class="work-grid">
     {% for item in site.data.featured %}
       {% include featured.html %}
     {% endfor %}
+    </div>
   </section>
 
   <div class="mx-6 lg:mx-10 hairline"></div>
