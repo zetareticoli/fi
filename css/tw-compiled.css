@@ -2725,7 +2725,7 @@ body.mobile-menu-open {
     }
     .work-grid > .work-item img, .work-grid > .work-item video {
       height: 100%;
-      object-fit: contain;
+      object-fit: cover;
       object-position: center;
     }
   }
