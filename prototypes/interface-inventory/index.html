@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f2ec">
+  <title>Dal prodotto al sistema — Interface Inventory</title>
+  <link rel="stylesheet" href="prototype.css">
+  <script src="prototype.js" defer></script>
+</head>
+<body>
+  <header class="masthead">
+    <a class="brand" href="#inizio" aria-label="Torna all’inizio"><span class="monogram">fi</span><span>Francesco Improta<small>Design Workshops</small></span></a>
+    <nav aria-label="Fasi dell’inventario">
+      <a href="#osserva" data-step="0" aria-current="location">Osserva</a>
+      <a href="#scomponi" data-step="1">Scomponi</a>
+      <a href="#riordina" data-step="2">Riordina</a>
+    </nav>
+    <span class="prototype-label">STUDIO DI MOVIMENTO <i>01</i></span>
+  </header>
+
+  <main id="inizio">
+    <section class="journey" aria-label="Da un’interfaccia a un inventario di componenti">
+      <div class="scene">
+        <div class="intro">
+          <p class="eyebrow"><span></span> INTERFACE INVENTORY <b>DAL CAOS ALL’ORDINE</b></p>
+          <h1>Guarda oltre lo schermo.<br><em>Scopri il sistema.</em></h1>
+          <p class="lede">Ogni interfaccia contiene un sistema. Impara a riconoscerlo,<br class="desktop-break"> scomporlo e dare un posto a ogni elemento.</p>
+        </div>
+        <div class="artboard">
+          <svg id="inventory-scene" viewBox="0 0 1200 610" role="img" aria-labelledby="scene-title scene-desc">
+            <title id="scene-title">Gli elementi di un’app si trasformano in un interface inventory</title>
+            <desc id="scene-desc">Scorrendo, nove elementi vengono estratti da un dispositivo e organizzati in tre categorie: azioni, controlli e contenuti.</desc>
+            <defs>
+              <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#a9b6ce" opacity=".4"/></pattern>
+              <linearGradient id="screen-fill" x2="0" y2="1"><stop stop-color="#f8fafc"/><stop offset="1" stop-color="#e8edf6"/></linearGradient>
+              <linearGradient id="tile-fill" x2="1" y2="1"><stop stop-color="#d4e2fd"/><stop offset="1" stop-color="#91afe5"/></linearGradient>
+              <filter id="lift" x="-50%" y="-70%" width="200%" height="260%"><feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#173b76" flood-opacity=".17"/></filter>
+              <filter id="device-shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="18" stdDeviation="17" flood-color="#182e54" flood-opacity=".18"/></filter>
+            </defs>
+            <g id="board"></g>
+            <g id="device"></g>
+            <g id="paths" fill="none" stroke="#6083c4" stroke-width="1" stroke-dasharray="3 7"></g>
+            <g id="ghosts"></g>
+            <g id="pieces"></g>
+            <g id="annotations"></g>
+          </svg>
+          <noscript><p>Il prototipo animato richiede JavaScript. Il processo: osservare l’interfaccia, estrarre gli elementi, organizzarli in azioni, controlli e contenuti.</p></noscript>
+        </div>
+        <div class="scene-bottom">
+          <div class="phase-copy"><span id="phase-number">01 / 03</span><p id="phase-text">Un prodotto, tanti elementi da riconoscere.</p></div>
+          <div class="scroll-cue"><span id="scroll-label">SCORRI PER SCOMPORRE</span><span aria-hidden="true">↓</span></div>
+          <div class="progress" aria-hidden="true"><span id="progress-fill"></span></div>
+        </div>
+      </div>
+    </section>
+    <section class="outcome" id="risultato">
+      <p class="eyebrow">IL PRIMO PASSO VERSO UN DESIGN SYSTEM</p>
+      <h2>Prima riconosci i pezzi.<br><em>Poi progetti l’insieme.</em></h2>
+      <div class="outcome-grid">
+        <div><span>01 — OSSERVA</span><h3>Parti da ciò che esiste.</h3><p>Schermate reali, componenti ripetuti e piccole incoerenze: il tuo prodotto è il punto di partenza.</p></div>
+        <div><span>02 — SCOMPONI</span><h3>Rendi visibili i dettagli.</h3><p>Isola azioni, controlli e contenuti. Distingui gli elementi dalle pagine che li contengono.</p></div>
+        <div><span>03 — RIORDINA</span><h3>Costruisci una visione comune.</h3><p>Raggruppa per funzione. L’inventario diventa una base concreta per le decisioni del team.</p></div>
+      </div>
+      <a class="replay" href="#osserva" data-step="0">Rivedi la trasformazione <span aria-hidden="true">↗</span></a>
+      <p class="footnote">Prototipo concettuale · Interfaccia dimostrativa · Elementi vettoriali, nessun video</p>
+    </section>
+  </main>
+</body>
+</html>
