@@ -3,32 +3,6 @@
 # only Main files contain this front matter, not partials.
 ---
 
-// @import '../_sass/settings/settings';
-// @import '../_sass/fonts';
-// @import '../_sass/elements/base';
-// @import '../_sass/elements/links';
-// @import '../_sass/objects';
-// @import '../_sass/objects/layout';
-// @import '../_sass/objects/links';
-// @import '../_sass/objects/lists';
-// @import '../_sass/objects/post';
-// @import '../_sass/objects/spacing';
-// @import '../_sass/components';
-// @import '../_sass/components/buttons';
-// @import '../_sass/components/card';
-// @import '../_sass/components/footer';
-// @import '../_sass/components/header';
-// @import '../_sass/components/lists';
-// @import '../_sass/components/logo';
-// @import '../_sass/components/nav';
-// @import '../_sass/utilities';
-// @import '../_sass/utilities/colors';
-// @import '../_sass/utilities/flexbox';
-// @import '../_sass/utilities/grid';
-// @import '../_sass/utilities/lists';
-// @import '../_sass/utilities/spacing';
-// @import '../_sass/utilities/text';
-
 /* Local variable fonts */
 @font-face {
   font-family: 'Inter';
@@ -76,10 +50,6 @@
     --border: 0 0% 88.6%;
     --input: 0 0% 88.6%;
     --ring: 220 100% 50%;
-    /* --font-heading: 'Inter', ui-sans-serif, system-ui, sans-serif;
-    --font-body: 'Inter', ui-sans-serif, system-ui, sans-serif;
-    --font-display: 'Mona Sans', ui-sans-serif, system-ui, sans-serif;
-    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; */
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
     --sidebar-primary: 240 5.9% 10%;
