@@ -2,153 +2,59 @@ title: "Francesco Improta — Design Lead & Design Systems Expert"
 name: Francesco Improta
 description: Senior designer with two decades of experience designing products for government, big companies and small businesses.
 image: /img/social/default-og.webp
-logo: /img/logo.svg
 
 author:
   name: Francesco Improta
   email: me@francescoimprota.com
   social:
     - name: LinkedIn
-      handle: /in/francescoimprota
       url: https://www.linkedin.com/in/francescoimprota/
     - name: GitHub
-      handle: /github/zetareticoli
       url: https://github.com/zetareticoli
     - name: X
-      handle: /zetareticoli
       url: https://x.com/zetareticoli
-  
+
 url: https://francescoimprota.com
 baseurl: ""
-email: me@francescoimprota.com
 calcom: francesco-improta/30min
-
-# language attribute in <html> element.
 lang: en
 
-markdown: kramdown
-highlighter: rouge
-permalink: /:categories/:title/
+permalink: pretty
+kramdown:
+  input: GFM
 
-collections: 
+collections:
   work:
     output: true
-    sort_by: 'order'
   workshops:
     output: true
     permalink: /workshops/:path
 
 defaults:
   - scope: { path: "", type: "posts" }
-    values: { layout: "post" }
+    values:
+      layout: post
+      excerpt_separator: "<!--more-->"
   - scope: { path: "", type: "work" }
-    values: { layout: "work" }
-  - scope: { path: "", type: "projects" }
-    values: { layout: "page", tag: "projects" }
+    values:
+      layout: work
 
 plugins:
   - jekyll-sitemap
 
-# FROM THIS POINT ON EVERYTHING IS OPTIONAL
-
-##############
-# APPEREANCE #
-##############
-
 sass:
-  sass_dir: _sass
   style: compressed
 
-# If you want to show the subtitle anywhere else than the front page, use
-# {% include subtitle.html %} to include it anywhere you want.
-show-subtitle: false
-display-social-icons: false
-# If you want social links to open in a new tab, set this as true
-social-icons-open-newtab: true
-
-footer-text: Designed with Figma. Powered by Jekyll &amp; Netlify. Font Mona Sans by <a class="link-light link-underline" href="https://github.com/mona-sans" target="_blank">Github</a>
-
-# Preferably 64px in height. Leave empty = disable.
-logo-image: /img/logo.svg
-
-# Toolbar color for Chrome on Android.
 theme-color-attr: "#111A23"
-
-# Color of Microsoft live Tile.
 ms-tile-color: "#111A23"
-
-display-author-post-page: false
-display-author-front-page: false
-
-# http://alanwsmith.com/jekyll-liquid-date-formatting-examples
 date_format: "%b %-d, %Y"
-
-# Minimal screen-width after which the navigation will change position from
-# vertical to horizontal.
-nav-breaking-point: 520px
-
-# Display links for the previous and next post on post pages.
-display-next-prev-post: true
-
-##############
-# CONTENT #
-##############
-
-logo-image: /img/logo.svg
-logo-alt: Francesco Improta personal website logotype icon
-
-navigation:
-- text: Work
-  url: /work/
-- text: About
-  url: /about/
-- text: Writing
-  url: /writing/
-
-#####################
-# SOCIAL #
-#####################
-
 twitter_username: zetareticoli
 
-#####################
-# CUSTOMIZABLE TEXT #
-#####################
-
-# Useful for translating into other languages.
-
-var_on_the_web: On the web
-var_read: Read # Text after each post summary on the homepage.
-var_newer: Newer
-var_older: Older
-var_next_post: Next post
-var_previous_post: Previous post
-var_next_work: Next work
-var_previous_work: Previous work
-var_less_than_a_minute_read: Less than a minute read
-var_min_read: min read # Text after reading time. Example: 5 min read.
-var_post_by: Post by
-var_guest_post_by: Guest post by
 var_your_email: Your email
 var_your_message: Your message
 
-
-##################
-# BUILD SETTINGS #
-##################
-
-# You don't have to change these.
-
-exclude: ['vendor', 'node_modules', 'css/tw.css', '.cursor']
-highlighter: rouge
-kramdown:
-  input: GFM
-permalink: pretty
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      excerpt_separator: "<!--more-->"
+exclude:
+  - vendor
+  - node_modules
+  - css/tw.css
+  - .cursor
