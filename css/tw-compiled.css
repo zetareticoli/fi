@@ -70,7 +70,6 @@
     --color-accent-foreground: hsl(var(--accent-foreground));
     --color-destructive: hsl(var(--destructive));
     --color-border: hsl(var(--border));
-    --color-ring: hsl(var(--ring));
     --font-body: var(--font-sans);
     --font-heading: 'Mona Sans', ui-sans-serif, system-ui, sans-serif;
   }
