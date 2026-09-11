@@ -165,7 +165,7 @@ body.mobile-menu-open {
   gap: 1rem;
   padding: 1rem 0;
   font-family: var(--font-heading);
-  font-size: clamp(1.75rem, 8vw, 2.5rem);
+  font-size: clamp(1.75rem, 8vw, 2rem);
   font-weight: 500;
   line-height: 1.15;
 }
