@@ -87,7 +87,10 @@
     const mobileMenu = document.getElementById('mobile-menu');
     if (mobileBtn && mobileMenu) {
       mobileBtn.addEventListener('click', function() {
-        mobileMenu.classList.toggle('hidden');
+        const isOpen = mobileMenu.classList.toggle('hidden') === false;
+        mobileBtn.classList.toggle('is-active', isOpen);
+        mobileBtn.setAttribute('aria-expanded', String(isOpen));
+        mobileBtn.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
       });
     }
   });
