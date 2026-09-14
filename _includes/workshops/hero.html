@@ -1,0 +1,34 @@
+    <section class="journey" aria-label="{{ page.course_name }}: animazione introduttiva">
+      <div class="scene">
+        {% if page.hero_background %}<img class="scene-background" src="{{ page.hero_background | relative_url }}" alt="" aria-hidden="true" width="1440" height="900">{% endif %}
+        <div class="intro">
+          <p class="eyebrow"><span></span> {{ page.course_name }} <b>WORKSHOP ONLINE</b></p>
+          <h1>{{ page.hero_title }}<br><em>{{ page.hero_emphasis }}</em></h1>
+          <p class="lede">{{ page.hero_subtitle }}</p>
+        <a class="hero-cta" href="#iscrizione">{{ page.offer.cta }} <span aria-hidden="true">↗</span></a></div>
+        <div class="artboard" data-animation="{{ page.animation }}">
+          <svg id="inventory-scene" viewBox="0 0 1200 610" role="img" aria-labelledby="scene-title scene-desc">
+            <title id="scene-title">{{ page.animation_title }}</title>
+            <desc id="scene-desc">{{ page.animation_description }}</desc>
+            <defs>
+              <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#a9b6ce" opacity=".4"/></pattern>
+              <linearGradient id="screen-fill" x2="0" y2="1"><stop stop-color="#f8fafc"/><stop offset="1" stop-color="#e8edf6"/></linearGradient>
+              <linearGradient id="tile-fill" x2="1" y2="1"><stop stop-color="#d4e2fd"/><stop offset="1" stop-color="#91afe5"/></linearGradient>
+              <filter id="lift" x="-50%" y="-70%" width="200%" height="260%"><feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#173b76" flood-opacity=".17"/></filter>
+              <filter id="device-shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="18" stdDeviation="17" flood-color="#182e54" flood-opacity=".18"/></filter>
+            </defs>
+            <g id="board"></g>
+            <g id="device"></g>
+            <g id="paths" fill="none" stroke="#6083c4" stroke-width="1" stroke-dasharray="3 7"></g>
+            <g id="ghosts"></g>
+            <g id="pieces"></g>
+            <g id="annotations"></g>
+          </svg>
+          <noscript><style>.course-page .journey{height:auto}.course-page .scene{height:auto;position:relative;top:0}.course-page .artboard{padding:25px}.course-page .artboard svg,.course-page .phase-links,.course-page .progress{display:none}</style><p>{{ page.animation_description }}</p></noscript>
+        </div>
+        <div class="scene-bottom">
+          <div class="phase-copy"><span id="phase-number">01 / 03</span><div><strong id="phase-title">{{ page.phase_titles[0] }}</strong><p id="phase-text">{{ page.animation_description }}</p></div></div>
+          <div class="phase-links" aria-label="Fasi dell’animazione">{% for title in page.phase_titles %}<a href="#{{ page.phase_ids[forloop.index0] }}" data-step="{{ forloop.index0 }}">{{ title }}</a>{% endfor %}</div><div class="progress" aria-hidden="true"><span id="progress-fill"></span></div>
+        </div>
+      </div>
+    </section>

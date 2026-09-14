@@ -1,0 +1,5 @@
+{% if page.companies.size > 0 %}
+<section class="companies" aria-label="Aziende partecipanti"><p>Hanno scelto questo corso per il loro team</p><div class="company-logos">{% for company in page.companies %}<img src="{{ company.logo | relative_url }}" alt="{{ company.name | escape }}" width="160" height="64" loading="lazy">{% endfor %}</div></section>
+{% elsif jekyll.environment != 'production' %}
+<section class="companies asset-preview" aria-label="Anteprima fascia loghi"><p>Aziende partecipanti · segnaposto da sostituire con loghi reali</p><div class="company-logos">{% for i in (1..4) %}<img src="{{ '/img/workshops/placeholders/company.svg' | relative_url }}" alt="Segnaposto logo aziendale {{ i }}" width="160" height="64" loading="lazy">{% endfor %}</div></section>
+{% endif %}

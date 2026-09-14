@@ -1,21 +1,24 @@
 ---
-# _layouts/workshop.html
-# Landing page layout for the workshops collection: new site chrome
-# (sidebar + footer + theme) with the full head from head.html, needed
-# for the social/OG metadata of these pages.
 ---
 <!DOCTYPE html>
-<html lang="{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang }}{% endif %}" class="{{ page.theme | default: 'light' }}" prefix="og: http://ogp.me/ns#">
-<head>
-  {% include head.html %}
-</head>
-<body class="bg-background text-foreground font-body">
-  {% include sidebar.html %}
-  <main class="lg:ml-48 pt-16 lg:pt-0">
-    {{ content }}
-  </main>
-  {% include footer.html %}
-  <script src="{{ '/js/app.js' | relative_url }}?v={{ asset_version }}"></script>
+<html lang="it" class="light" prefix="og: http://ogp.me/ns#">
+<head>{% include head.html %}<link rel="stylesheet" href="{{ '/css/workshops.css' | relative_url }}?v={{ asset_version }}"></head>
+<body class="course-page" data-course="{{ page.animation }}">
+<a class="skip-link" href="#learn">Vai ai contenuti del corso</a>
+<header class="masthead">
+<a class="brand" href="{{ '/' | relative_url }}"><span class="monogram" aria-hidden="true">fi</span><span>Francesco Improta<small>Design Workshops</small></span></a>
+<nav aria-label="Sezioni del corso"><a href="#learn">Cosa impari</a><a href="#details">Programma</a><a href="#teacher">Chi sono</a><a href="#testimonials">Testimonianze</a><a href="#faq">FAQ</a></nav>
+<a class="header-cta" href="#iscrizione">Iscriviti <span aria-hidden="true">↗</span></a>
+</header>
+<main id="inizio">
+{% include workshops/hero.html %}
+{% include workshops/companies.html %}
+<div class="course-content">{{ content }}</div>
+</main>
+<footer class="course-footer"><a href="{{ '/' | relative_url }}">© {{ 'now' | date: '%Y' }} Francesco Improta</a><a href="mailto:{{ site.author.email }}">Contattami</a></footer>
+<script id="course-animation-config" type="application/json">{"titles":{{ page.phase_titles | jsonify }},"ids":{{ page.phase_ids | jsonify }}}</script>
+<script src="{{ '/js/workshops-animation.js' | relative_url }}?v={{ asset_version }}" defer></script>
+<script src="{{ '/js/workshops.js' | relative_url }}?v={{ asset_version }}" defer></script>
   {% if page.offer.deadline %}
   <script>
     (function () {
@@ -47,5 +50,4 @@
     })();
   </script>
   {% endif %}
-</body>
-</html>
+</body></html>
