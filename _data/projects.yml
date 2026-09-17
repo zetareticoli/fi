@@ -1,0 +1,27 @@
+- title: Token Lens
+  period: "2025"
+  description: "Design token inspector and visualization tool for design systems."
+  status: "Beta Testing"
+  url: https://www.github.com/zetareticoli/token-lens
+
+- title: "CSSUI"
+  period: "2021"
+  description: "Pure CSS interactive components for building modern web interfaces."
+  status: "Open Source"
+  url: "https://www.cssui.dev"
+
+- title: "Design Tokens Manager for Notion"
+  period: "2023"
+  description: "A Notion template and workflow for managing design tokens."
+  status: "Commercial"
+
+- title: Sass MQ
+  description: Media query utilities for Sass
+  url: https://www.github.com/zetareticoli/mq
+  status: "Open Source"
+
+- title: "Typesmith"
+  period: "2021"
+  description: "Manage web typography with type scale generation."
+  status: "Open Source"
+  url: https://www.github.com/zetareticoli/typesmith

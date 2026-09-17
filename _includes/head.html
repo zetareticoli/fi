@@ -1,51 +1,92 @@
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width">
-<title>
-{% if page.title %}
-{{ page.title }} • {{ site.name }}
-{% else %}
-{{ site.name }}
+{%- comment -%}
+  Assets carry the build timestamp so they can be cached for a long time.
+{%- endcomment -%}
+{%- assign asset_version = site.time | date: '%Y%m%d%H%M' -%}
+{%- if page.seo_title -%}
+  {%- assign meta_title = page.seo_title -%}
+{%- elsif page.url == '/' -%}
+  {%- assign meta_title = site.title -%}
+{%- elsif page.title -%}
+  {%- capture meta_title -%}{{ page.title }} — {{ site.name }}{%- endcapture -%}
+{%- else -%}
+  {%- assign meta_title = site.title -%}
+{%- endif -%}
+{%- assign meta_description = page.description | default: page.summary | default: page.overview | default: site.description -%}
+{%- assign page_language = page.lang | default: site.lang -%}
+{%- if page_language == 'it' -%}
+  {%- assign og_locale = 'it_IT' -%}
+{%- else -%}
+  {%- assign og_locale = 'en_US' -%}
+{%- endif -%}
+{%- if page.image -%}
+  {%- assign og_image = page.image | absolute_url -%}
+{%- elsif page.og-image -%}
+  {%- assign og_image_path = page.og-image | prepend: '/img/' -%}
+  {%- assign og_image = og_image_path | absolute_url -%}
+{%- elsif page.cover-image -%}
+  {%- assign og_image_path = page.cover-image | prepend: '/img/covers/' -%}
+  {%- assign og_image = og_image_path | absolute_url -%}
+{%- elsif page.cover -%}
+  {%- assign og_image = page.cover | absolute_url -%}
+{%- else -%}
+  {%- assign og_image = site.image | absolute_url -%}
+{%- endif -%}
+{%- if page.layout == 'post' -%}
+  {%- assign og_type = 'article' -%}
+{%- else -%}
+  {%- assign og_type = 'website' -%}
+{%- endif -%}
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+{% if page.url == '/' or page.url == '/work/' %}
+  {%- assign first_featured = site.data.featured | first -%}
+  {%- if first_featured.video and first_featured.poster -%}
+    {%- assign first_poster_url = first_featured.poster | url_encode -%}
+    {%- if jekyll.environment == 'production' -%}
+<link rel="preload" as="image" href="/.netlify/images?url={{ first_poster_url }}&amp;w=768&amp;h=432&amp;fit=cover&amp;q=80" fetchpriority="high" />
+    {%- else -%}
+<link rel="preload" as="image" href="{{ first_featured.poster | relative_url }}" fetchpriority="high" />
+    {%- endif -%}
+  {%- endif -%}
 {% endif %}
-</title>
-<meta name="description" content="{{ page.summary }} {{ site.description.meta }}">
+<title>{{ meta_title | escape }}</title>
+<meta name="description" content="{{ meta_description | strip_html | normalize_whitespace | escape }}" />
+<link rel="canonical" href="{{ page.url | absolute_url }}" />
+{% if page.sitemap == false %}<meta name="robots" content="noindex, follow" />{% endif %}
 <meta name="google-site-verification" content="drpyPKCiDDE-Kuqx_u2-IHEyzrBMKgcLWgJ1HPvCh90" />
 
-<script async defer data-domain="francescoimprota.com" src="https://plausible.io/js/plausible.js"></script>
+<link rel="preload" href="{{ '/css/fonts/Mona-Sans-Variable.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="{{ '/css/tw-compiled.css' | relative_url }}?v={{ asset_version }}" />
+<link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}?v={{ asset_version }}" />
 
-<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="{{ site.baseurl }}/feed.xml">
+<script async defer data-domain="francescoimprota.com" src="https://plausible.io/js/plausible.js"></script>
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="{{ '/feed.xml' | absolute_url }}" />
 
 <!-- icons -->
-<link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png">
-<link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="{{ site.baseurl }}/android-chrome-192x192.png" sizes="192x192">
-<meta name="theme-color" content="{{ site.theme-color-attr }}">
-<meta name="msapplication-TileColor" content="{{ site.ms-tile-color }}">
-<meta name="msapplication-TileImage" content="{{ site.baseurl }}/mstile-310x310.png">
+<link rel="apple-touch-icon" href="{{ '/apple-touch-icon.png' | relative_url }}" />
+<link rel="icon" type="image/png" href="{{ '/favicon-96x96.png' | relative_url }}" sizes="96x96" />
+<link rel="icon" type="image/png" href="{{ '/favicon-32x32.png' | relative_url }}" sizes="32x32" />
+<link rel="icon" type="image/png" href="{{ '/android-chrome-192x192.png' | relative_url }}" sizes="192x192" />
+<meta name="theme-color" content="{{ site.theme-color-attr }}" />
+<meta name="msapplication-TileColor" content="{{ site.ms-tile-color }}" />
+<meta name="msapplication-TileImage" content="{{ '/mstile-310x310.png' | relative_url }}" />
 <!-- /icons -->
 
-<!-- og tags -->
-<meta name="twitter:card" content="summary_large_image">
-<meta property="og:site_name" content="{{ site.name }}">
-<meta property="og:title" content="{% if page.title %}{{ page.title }} • {{ site.name }}{% else %}{{ site.name }}{% endif %}">
-<meta property="og:description" content="{% if page.summary %}{{ page.summary }}{% else %}{{ site.description.subtitle }}{% endif %}">
-<meta property="og:locale" content="{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang }}{% endif %}">
-<meta property="og:image" content="{% if page.og-image %}{{ site.url }}/img/{{ page.og-image }}{% elsif page.cover-image %}{{ site.url }}/img/{{ page.cover-image }}{% else %}{{ site.url }}/android-chrome-192x192.png{% endif %}">
-<meta property="og:type" content="website">
-<meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
-<meta name="twitter:title" content="{% if page.title %}{{ page.title }} • {{ site.name }}{% else %}{{ site.name }}{% endif %}">
-<meta name="twitter:description" content="{% if page.summary %} {{ page.summary }} {% else %} {{ site.description.subtitle }}{% endif %}">
-<meta name="twitter:image" content="{% if page.og-image %}{{ site.url }}/img/{{ page.og-image }}{% elsif page.cover-image %}{{ site.url }}/img/{{ page.cover-image }}{% else %}{{ site.url }}/android-chrome-192x192.png{% endif %}">
-<meta name="twitter:site" content="{{ site.url }}{{ site.baseurl }}">
-<meta name="twitter:creator" content="{{ site.author.name }}">
-<!-- /og tags -->
+<!-- social metadata -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="og:site_name" content="{{ site.name | escape }}" />
+<meta property="og:title" content="{{ meta_title | escape }}" />
+<meta property="og:description" content="{{ meta_description | strip_html | normalize_whitespace | escape }}" />
+<meta property="og:locale" content="{{ og_locale }}" />
+<meta property="og:image" content="{{ og_image }}" />
+<meta property="og:type" content="{{ og_type }}" />
+<meta property="og:url" content="{{ page.url | absolute_url }}" />
+<meta name="twitter:title" content="{{ meta_title | escape }}" />
+<meta name="twitter:description" content="{{ meta_description | strip_html | normalize_whitespace | escape }}" />
+<meta name="twitter:image" content="{{ og_image }}" />
+<meta name="twitter:site" content="@{{ site.twitter_username }}" />
+<meta name="twitter:creator" content="@{{ site.twitter_username }}" />
+<!-- /social metadata -->
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
-<link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
-<link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css">
-<link rel="preload" href="{{ site.baseurl }}/css/fonts/"Mona-Sans.woff2" as="font" type="font/woff2" crossorigin>
-
-<!-- DataFast script -->
-<script defer data-website-id="dfid_mO5A9lX0liqPYd3eD9e5j" data-domain="francescoimprota.com"
-  src="https://datafa.st/js/script.js">
-  </script>
+{% include structured-data.html meta_title=meta_title meta_description=meta_description og_image=og_image %}

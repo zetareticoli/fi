@@ -1,5 +1,8 @@
 ---
 layout: page
+title: Grazie per esserti iscritto
+lang: it
+sitemap: false
 headline: Grazie per esserti iscritto!
 lead: Riceverai tutti gli aggiornamenti non appena il workshop sarà pronto.
 ---

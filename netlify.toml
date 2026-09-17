@@ -4,3 +4,47 @@
 
 [build.environment]
   RUBY_VERSION = "3.0.3"
+  JEKYLL_ENV = "production"
+
+[[redirects]]
+  from = "/experience/"
+  to = "/work/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/work/digital-services-italian-pa/"
+  to = "/work/digital-public-services/"
+  status = 301
+  force = true
+
+# The layout requests these four files with a ?v=<build timestamp> query, so a
+# deploy always produces a new URL and a long cache never serves a stale file.
+# This is what keeps a page transition from waiting on a revalidation round
+# trip: on a repeat visit the browser needs nothing but the HTML.
+# Only add a file here once its URL carries that query.
+
+[[headers]]
+  for = "/css/style.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/css/tw-compiled.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/js/app.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000, stale-while-revalidate=7776000"
+
+[[headers]]
+  for = "/css/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
