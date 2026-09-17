@@ -25,63 +25,114 @@
   const groups = Object.fromEntries(['board','device','paths','ghosts','pieces','annotations'].map(id => [id,document.getElementById(id)]));
   let layout, framePending = false, activePhase = -1;
   let tokenPieces = [];
+  let tokenHeadings = [];
   function setupTokens() {
-    const mobile=innerWidth<=600;
-    svg.setAttribute('viewBox',mobile?'0 0 620 880':'0 0 1200 560');
-    Object.values(groups).forEach(g=>g.innerHTML='');
-    const target=mobile?{x:65,y:425,w:490,h:340}:{x:695,y:80,w:450,h:350};
-    groups.board.innerHTML=`<rect x="${target.x-14}" y="${target.y-35}" width="${target.w+28}" height="${target.h+60}" rx="18" fill="#344156" stroke="#637087"/><circle cx="${target.x+2}" cy="${target.y-18}" r="3" fill="#8490a2"/><circle cx="${target.x+14}" cy="${target.y-18}" r="3" fill="#8490a2"/><circle cx="${target.x+26}" cy="${target.y-18}" r="3" fill="#8490a2"/><text x="${target.x+48}" y="${target.y-14}" font-size="10" fill="#bdc6d4">L’interfaccia prende forma</text>`;
-    const blocks=[
-      {x:0,y:0,w:450,h:40,name:'color.surface',value:'#657487',color:'#657487'},
-      {x:0,y:57,w:255,h:33,name:'type.heading',value:'24 / 32',color:'#8994a5'},
-      {x:273,y:57,w:177,h:90,name:'radius.card',value:'12 px',color:'#bec5cf'},
-      {x:0,y:107,w:255,h:190,name:'color.brand',value:'#E7AD45',color:'#e7ad45'},
-      {x:273,y:164,w:177,h:75,name:'space.stack',value:'16 px',color:'#8795a8'},
-      {x:273,y:257,w:177,h:40,name:'color.action',value:'#F4A900',color:'#f4a900'}
+    const mobile = innerWidth <= 600;
+    svg.setAttribute('viewBox', mobile ? '0 0 660 880' : '0 0 1200 560');
+    Object.values(groups).forEach(group => { group.innerHTML = ''; });
+    const target = mobile ? { x:105, y:360 } : { x:375, y:100 };
+    const blocks = [
+      {x:0,y:0,w:450,h:40,global:'color.slate.500',semantic:'color.surface',component:'header.background',value:'#657487',color:'#657487'},
+      {x:0,y:57,w:255,h:33,global:'font.size.24',semantic:'font.heading',component:'title.fontSize',value:'24 px',color:'#8994a5'},
+      {x:273,y:57,w:177,h:90,global:'radius.12',semantic:'radius.container',component:'card.borderRadius',value:'12 px',color:'#bec5cf'},
+      {x:0,y:107,w:255,h:190,global:'color.amber.300',semantic:'color.brand',component:'cover.background',value:'#E7AD45',color:'#e7ad45'},
+      {x:273,y:164,w:177,h:75,global:'space.16',semantic:'space.content',component:'card.padding',value:'16 px',color:'#8795a8'},
+      {x:273,y:257,w:177,h:40,global:'color.amber.500',semantic:'color.action',component:'button.background',value:'#F4A900',color:'#f4a900'}
     ];
-    tokenPieces=blocks.map((block,i)=>{
-      const source=mobile?{x:90+(i%3)*165,y:60+Math.floor(i/3)*120}:{x:90+(i%2)*125+(i%3-1)*12,y:100+Math.floor(i/2)*115+(i%2)*15};
-      const middle=mobile?{x:70+(i%3)*180,y:65+Math.floor(i/3)*140}:{x:385+(i%2)*137,y:80+Math.floor(i/2)*135};
-      const factor=target.w/450;
-      const end={x:target.x+block.x*factor,y:target.y+block.y*factor};
-      const g=document.createElementNS(ns,'g');
-      const glyph='<path d="M30 0 56 15v30L30 60 4 45V15Z" fill="#F4A900"/><path d="M30 9 48 19v22L30 51 12 41V19Z M12 19l18 11 18-11 M30 30v21" stroke="white" stroke-width="2" stroke-linejoin="round" fill="none"/><circle cx="30" cy="29" r="6" fill="#F4A900" stroke="white" stroke-width="2"/>';
-      let detail='';
-      if(i===0)detail='<circle cx="22" cy="20" r="7" fill="#f4a900"/><path d="M44 16h65m-65 8h40M320 20h24m20 0h24" stroke="#cdd4df" stroke-width="3" stroke-linecap="round"/>';
-      if(i===1)detail='<text x="14" y="22" font-size="16" font-weight="600" fill="#fff">Il tuo prossimo progetto.</text>';
-      if(i===3)detail='<circle cx="193" cy="42" r="19" fill="#fff" opacity=".65"/><path d="M0 190 82 61l79 98 35-41 59 72" fill="#a76b21"/><path d="M0 190 62 122l55 68" fill="#835522"/>';
-      if(i===2||i===4)detail='<path d="M18 20h95m-95 12h125m-125 12h74" stroke="#e9edf4" stroke-width="4" stroke-linecap="round" opacity=".8"/>';
-      if(i===5)detail='<text x="88" y="25" font-size="12" text-anchor="middle" fill="#263347">Inizia il progetto ↗</text>';
-      g.innerHTML=`<g class="token-block"><rect width="${block.w}" height="${block.h}" rx="8" fill="${block.color}"/><g class="block-details">${detail}</g></g><g class="token-symbol">${glyph}</g><g class="token-label"><text y="82" x="30" text-anchor="middle" font-size="10" fill="#d5dce6">${block.name}</text><text y="98" x="30" text-anchor="middle" font-size="9" fill="#f6bf50">${block.value}</text></g>`;
-      groups.pieces.appendChild(g);
-      return{...block,source,middle,end,factor,g};
+    // Three explicit reference levels: primitive → semantic alias → component.
+    const position = (level, row) => mobile
+      ? {x:25+(row%2)*320, y:80+level*285+Math.floor(row/2)*70}
+      : {x:45+level*390, y:100+row*65};
+    const pillWidth = mobile ? 290 : 330;
+    const titles = ['01  GLOBALI', '02  SEMANTICI', '03  COMPONENTI'];
+    const subtitles = ['Il valore di base', 'L’intenzione di design', 'Il punto di applicazione'];
+    let architecture = `<defs><linearGradient id="token-surface" x2="0" y2="1"><stop stop-color="#ffffff"/><stop offset="1" stop-color="#f6f5f2"/></linearGradient><filter id="token-shadow" x="-15%" y="-35%" width="130%" height="190%"><feDropShadow dy="2" stdDeviation="2" flood-color="#263347" flood-opacity=".06"/></filter><filter id="product-shadow" x="-25%" y="-25%" width="150%" height="170%"><feDropShadow dy="12" stdDeviation="16" flood-color="#263347" flood-opacity=".10"/></filter></defs>`;
+    for (let level=0; level<3; level++) {
+      const heading = mobile ? {x:25,y:45+level*285} : {x:45+level*390,y:48};
+      architecture += `<g data-token-heading="${level}"><text x="${heading.x}" y="${heading.y}" font-size="${mobile?24:15}" font-weight="600" fill="#86550e">${titles[level]}</text><text x="${heading.x}" y="${heading.y+22}" font-size="${mobile?18:12}" fill="#697587">${subtitles[level]}</text></g>`;
+      blocks.forEach((b,i) => {
+        const point = position(level,i);
+        const name = [b.global,b.semantic,b.component][level];
+        const reference = [b.value,`{${b.global}}`,`{${b.semantic}}`][level];
+        if(level>0) architecture += `<g data-token-level="${level}" data-token-row="${i}"><rect width="${pillWidth}" height="58" rx="29" fill="url(#token-surface)" stroke="#d6d5d1" filter="url(#token-shadow)"/><rect x="1.5" y="1.5" width="${pillWidth-3}" height="55" rx="27.5" fill="none" stroke="#fff" stroke-opacity=".8"/><text x="22" y="25" font-size="${mobile?22:16}" fill="#263347">${name}</text><text x="22" y="43" font-size="${mobile?17:12}" fill="#7c8390">${reference}</text></g>`;
+      });
+    }
+    groups.board.innerHTML = architecture;
+    tokenHeadings = [...groups.board.querySelectorAll('[data-token-heading]')];
+    groups.device.innerHTML = `<rect x="${target.x-14}" y="${target.y-35}" width="478" height="382" rx="18" fill="url(#token-surface)" stroke="#c6cdd5" filter="url(#product-shadow)"/><circle cx="${target.x+2}" cy="${target.y-18}" r="3" fill="#b6bdc7"/><circle cx="${target.x+14}" cy="${target.y-18}" r="3" fill="#b6bdc7"/><circle cx="${target.x+26}" cy="${target.y-18}" r="3" fill="#b6bdc7"/><text x="${target.x+48}" y="${target.y-14}" font-size="11" fill="#697587">Un sistema di decisioni, un’interfaccia.</text>`;
+    tokenPieces = blocks.map((b,i) => {
+      const source = mobile ? {x:90+(i%2)*270,y:230+Math.floor(i/2)*125+(i%2)*22}
+        : {x:210+(i%3)*290+(i%2)*15,y:160+Math.floor(i/3)*150+(i%3)*18};
+      const start = position(0,i), component = position(2,i);
+      const end = {x:target.x+b.x+b.w-16,y:target.y+b.y-9};
+      const preview = b.value.startsWith('#')
+        ? `<circle cx="30" cy="29" r="15" fill="${b.value}" stroke="#000" stroke-opacity=".08"/>`
+        : i===1 ? '<text x="15" y="36" font-family="Georgia,serif" font-size="25" fill="#53657d">Aa</text>'
+          : i===2 ? '<rect x="16" y="15" width="28" height="28" rx="10" fill="none" stroke="#9b712f" stroke-width="2"/>'
+            : '<path d="M16 17v24m28-24v24M16 29h28m-5-4 5 4-5 4m-18-8-5 4 5 4" fill="none" stroke="#9b712f" stroke-width="2"/>';
+      const raw = document.createElementNS(ns,'g');
+      raw.innerHTML = `<rect width="205" height="58" rx="29" fill="url(#token-surface)" stroke="#d6d5d1" filter="url(#token-shadow)"/><g data-preview>${preview}</g><text data-raw-value x="59" y="35" font-size="${mobile?24:18}" fill="#344156" font-family="monospace">${b.value}</text><g data-global-label opacity="0"><text x="59" y="25" font-size="${mobile?22:16}" fill="#263347">${b.global}</text><text x="59" y="43" font-size="${mobile?17:12}" fill="#7c8390">${b.value}</text></g>`;
+      groups.pieces.appendChild(raw);
+      const icon = document.createElementNS(ns,'g');
+      icon.innerHTML = '<path d="M30 0 56 15v30L30 60 4 45V15Z" fill="#F4A900"/><path d="M30 9 48 19v22L30 51 12 41V19Z M12 19l18 11 18-11 M30 30v21" stroke="white" stroke-width="2" stroke-linejoin="round" fill="none"/><circle cx="30" cy="29" r="6" fill="#F4A900" stroke="white" stroke-width="2"/>';
+      groups.annotations.appendChild(icon);
+      let detail = '';
+      if(i===0) detail='<circle cx="22" cy="20" r="7" fill="#f4a900"/><path d="M44 16h65m-65 8h40M320 20h24m20 0h24" stroke="#cdd4df" stroke-width="3" stroke-linecap="round"/>';
+      if(i===1) detail='<text x="14" y="24" font-size="24" font-weight="600" fill="#fff">Il tuo progetto.</text>';
+      if(i===3) detail='<circle cx="193" cy="42" r="19" fill="#fff" opacity=".65"/><path d="M0 190 82 61l79 98 35-41 59 72" fill="#a76b21"/><path d="M0 190 62 122l55 68" fill="#835522"/>';
+      if(i===2||i===4) detail='<path d="M16 20h95m-95 12h125m-125 12h74" stroke="#e9edf4" stroke-width="4" stroke-linecap="round" opacity=".8"/>';
+      if(i===5) detail='<text x="88" y="25" font-size="12" text-anchor="middle" fill="#263347">Inizia il progetto ↗</text>';
+      const ui = document.createElementNS(ns,'g');
+      ui.innerHTML=`<rect width="${b.w}" height="${b.h}" rx="${i===2?12:8}" fill="${b.color}"/>${detail}`;
+      ui.setAttribute('transform',`translate(${target.x+b.x} ${target.y+b.y})`);
+      groups.device.appendChild(ui);
+      return {...b,source,start,component,end,raw,icon,ui,pillWidth,
+        rawRect:raw.querySelector('rect'), rawValue:raw.querySelector('[data-raw-value]'), globalLabel:raw.querySelector('[data-global-label]'),
+        levels:[1,2].map(level=>({node:groups.board.querySelector(`[data-token-level="${level}"][data-token-row="${i}"]`),point:position(level,i)}))};
     });
-    groups.annotations.innerHTML=mobile?'':`<text x="145" y="495" text-anchor="middle" fill="#b2becf" font-size="12">VALORI</text><text x="495" y="495" text-anchor="middle" fill="#b2becf" font-size="12">RUOLI</text><text x="920" y="495" text-anchor="middle" fill="#b2becf" font-size="12">INTERFACCIA</text><path d="M285 270h48m-12-12 12 12-12 12M620 270h42m-12-12 12 12-12 12" stroke="#8b98ac" stroke-width="2" fill="none"/>`;
   }
   function renderTokens(p) {
-    const mobile=innerWidth<=600;
-    const organize=smooth((p-.1)/.27);
-    const build=smooth((p-.43)/.52);
-    if(mobile){const zoom=smooth((p-.5)/.45);svg.setAttribute('viewBox',`0 ${355*zoom} 620 ${880-400*zoom}`);}
-    groups.board.style.opacity=.12+.88*build;
-    groups.annotations.style.opacity=1-smooth((p-.65)/.3);
-    if(!mobile){const camera=smooth((p-.6)/.35);svg.setAttribute('viewBox',`${580*camera} ${40*camera} ${1200-580*camera} ${560-110*camera}`);}
-    tokenPieces.forEach((b,i)=>{
-      const t=smooth((p-.4-i*.018)/.44);
-      const midX=lerp(b.source.x,b.middle.x,organize);
-      const midY=lerp(b.source.y,b.middle.y,organize);
-      const x=lerp(midX,b.end.x,t),y=lerp(midY,b.end.y,t)-Math.sin(t*Math.PI)*35;
-      b.g.setAttribute('transform',`translate(${x} ${y})`);
-      const block=b.g.querySelector('.token-block');
-      block.setAttribute('opacity',organize);
-      block.setAttribute('transform',`scale(${lerp(.23,b.factor,t)})`);
-      b.g.querySelector('.block-details').setAttribute('opacity',smooth((t-.4)/.55));
-      const icon=b.g.querySelector('.token-symbol');
-      icon.setAttribute('transform',`translate(${lerp(0,b.w*b.factor-21,t)} ${lerp(0,-10,t)}) scale(${lerp(1,.38,t)})`);
-      b.g.querySelector('.token-label').setAttribute('opacity',1-smooth(t/.45));
-      b.g.querySelector('.token-label text').setAttribute('opacity',organize);
+    const mobile = innerWidth<=600;
+    // Overlapping, staggered intervals keep identity visible throughout the journey.
+    const camera = smooth((p-.82)/.18);
+    svg.setAttribute('viewBox',mobile
+      ? `0 ${290*camera} 660 ${880-380*camera}`
+      : `${235*camera} ${25*camera} ${1200-470*camera} ${560-95*camera}`);
+    groups.board.style.opacity = 1;
+    groups.annotations.style.opacity = 1;
+    groups.device.style.opacity = smooth((p-.77)/.14);
+    groups.device.setAttribute('transform',`translate(0 ${24*(1-smooth((p-.77)/.17))})`);
+    tokenHeadings.forEach((heading,level)=> {
+      const enter=smooth((p-[.10,.29,.45][level])/.08);
+      const leave=smooth((p-.76-level*.025)/.15);
+      heading.setAttribute('opacity',enter*(1-leave));
+      heading.setAttribute('transform',`translate(0 ${12*(1-enter)-35*leave})`);
+    });
+    tokenPieces.forEach((b,i) => {
+      const organize=smooth((p-.07-i*.015)/.20);
+      const name=smooth((p-.17-i*.015)/.12);
+      const leave=smooth((p-.75-i*.009)/.15);
+      b.raw.setAttribute('transform',`translate(${lerp(b.source.x,b.start.x,organize)} ${lerp(b.source.y,b.start.y,organize)-55*leave})`);
+      b.raw.setAttribute('opacity',1-leave);
+      b.rawRect.setAttribute('width',lerp(205,b.pillWidth,organize));
+      b.rawValue.setAttribute('opacity',1-name);
+      b.globalLabel.setAttribute('opacity',name);
+      b.levels.forEach(({node,point},level)=> {
+        const enter=smooth((p-[.30,.47][level]-i*.018)/.10);
+        const exit=smooth((p-.77-level*.025-i*.009)/.14);
+        node.setAttribute('opacity',enter*(1-exit));
+        node.setAttribute('transform',`translate(${point.x-22*(1-enter)} ${point.y+12*(1-enter)-55*exit})`);
+      });
+      // Icons first settle onto the component pills, then detach as the lists leave.
+      const appear=smooth((p-.68-i*.008)/.055);
+      const t=smooth((p-.79-i*.012)/.15);
+      const from={x:b.component.x+b.pillWidth-22,y:b.component.y-10};
+      b.icon.setAttribute('opacity',appear);
+      b.icon.setAttribute('transform',`translate(${lerp(from.x,b.end.x,t)} ${lerp(from.y,b.end.y,t)-Math.sin(t*Math.PI)*45}) scale(${lerp(.54,.38,t)*lerp(.85,1,appear)})`);
+      b.ui.setAttribute('opacity',lerp(.16,1,smooth((t-.1)/.8)));
     });
   }
+
   function setup() {
     if(tokens){setupTokens();update();return;}
     const mobile = innerWidth <= 600;
@@ -143,12 +194,12 @@
   }
   function renderPhase(p) {
     document.getElementById('progress-fill').style.transform=`scaleX(${p})`;
-    const phase=tokens ? (p<.18?0:p<.5?1:2) : (p<.18?0:p<.79?1:2);
+    const phase=tokens ? (p<.25?0:p<.68?1:2) : (p<.18?0:p<.79?1:2);
     if(phase!==activePhase){
       activePhase=phase;
       document.getElementById('phase-title').textContent=config.titles[phase];
       document.getElementById('phase-number').textContent=`0${phase+1} / 03`;
-      document.getElementById('phase-text').textContent=(tokens ? ['Valori distinti, ancora senza una relazione.','Ogni token esprime una decisione di design.','Le decisioni diventano un’interfaccia coerente.'] : ['Un prodotto, tanti elementi da riconoscere.','Isola gli elementi. Fai emergere le relazioni.','Nove elementi. Tre categorie. Una visione comune.'])[phase];
+      document.getElementById('phase-text').textContent=(tokens ? ['Colori, misure e forme: parti dai valori grezzi.','Globali → semantici → componenti: ogni livello fa riferimento al precedente.','I token portano le decisioni dentro l’interfaccia.'] : ['Un prodotto, tanti elementi da riconoscere.','Isola gli elementi. Fai emergere le relazioni.','Nove elementi. Tre categorie. Una visione comune.'])[phase];
       document.querySelectorAll('.phase-links [data-step]').forEach(a=>{
         if(Number(a.dataset.step)===phase) a.setAttribute('aria-current','location');
         else a.removeAttribute('aria-current');
@@ -159,7 +210,7 @@
     const top=journey.getBoundingClientRect().top+scrollY;
     const offset=parseFloat(getComputedStyle(scene).top)||0;
     const travel=Math.max(0,journey.offsetHeight-scene.offsetHeight);
-    scrollTo({top:top-offset+travel*(tokens ? [0,.3,.98] : [0,.47,.94])[step],behavior:reduced.matches||!smoothScroll?'instant':'smooth'});
+    scrollTo({top:top-offset+travel*(tokens ? [0,.66,1] : [0,.47,.94])[step],behavior:reduced.matches||!smoothScroll?'instant':'smooth'});
   }
   document.querySelectorAll('[data-step]').forEach(a=>a.addEventListener('click',e=>{
     e.preventDefault(); history.pushState(null,'',a.getAttribute('href'));goToStep(Number(a.dataset.step));

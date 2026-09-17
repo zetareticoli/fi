@@ -44,7 +44,7 @@ Se non ci sono loghi, l'anteprima development mostra segnaposto espliciti. In bu
 | Docente | Foto reale già nel sito | Ritratto o foto durante una lezione; è disponibile `placeholders/teacher-wide.svg` (3:2) |
 | Aziende | `placeholders/company.svg` nell'anteprima | Loghi reali in SVG, con spazio di rispetto; nessun nome fittizio in produzione |
 
-Le illustrazioni placeholder sono SVG originali; le immagini di riferimento fornite nella conversazione non sono copiate nella pagina. L'animazione Tokens riprende la sequenza esagoni/cubi → blocchi → interfaccia del riferimento. Gli elementi sono esempi concettuali, non token di un sistema reale.
+Le illustrazioni placeholder sono SVG originali; le immagini di riferimento fornite nella conversazione non sono copiate nella pagina. L'animazione Tokens segue la sequenza valori grezzi in pill (con campione colore) → tre livelli globali/semantici/componenti con riferimenti espliciti → icone esagonali applicate all'interfaccia. Le pill iniziali restano gli stessi elementi e si allargano mentre raggiungono i globali; le righe semantiche e poi quelle di componente entrano in sequenza. Le icone compaiono sulle pill di componente prima del distacco; le liste escono gradualmente mentre entra la UI. Tutti i passaggi sono reversibili e determinati dallo scroll, senza timer. La scena ha sfondo trasparente, integrato con la hero, con superfici neutre, bordi sottili e ombre leggere. Gli elementi sono esempi concettuali, non token di un sistema reale.
 
 ## Movimento e accessibilità
 

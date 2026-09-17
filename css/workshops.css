@@ -856,14 +856,14 @@ svg .category {
   --accent:35 100% 34%;
 }
 .course-page[data-course="tokens"] .artboard {
-  background:#263347;
-  border-radius:12px;
-  width:min(1150px,92%);
+  background:transparent;
+  border-radius:0;
+  width:min(1200px,100%);
   margin-top:12px;
   margin-bottom:14px;
 }
 .course-page[data-course="tokens"] .scene {
-  background:radial-gradient(ellipse at 50% 70%,#e6ded0 0,transparent 65%);
+  background:radial-gradient(ellipse at 50% 70%,#ebe6dc 0,transparent 65%);
 }
 .course-page[data-course="tokens"] .header-cta,.course-page[data-course="tokens"] .hero-cta {
   background:#995900;

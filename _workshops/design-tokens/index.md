@@ -23,7 +23,7 @@ hero_title: "Dai valori alle decisioni."
 hero_emphasis: "Dai forma al sistema."
 hero_subtitle: "Impara a creare e gestire design tokens: una base condivisa che collega le decisioni di design alle interfacce reali."
 animation_title: "I design tokens compongono un’interfaccia"
-animation_description: "Raccogli i token, assegna loro un ruolo e applicali agli elementi dell’interfaccia."
+animation_description: "Dai valori grezzi a un’architettura di token globali, semantici e di componente, fino all’interfaccia."
 phase_titles: ["Raccogli", "Assegna un ruolo", "Componi"]
 phase_ids: ["raccogli", "assegna", "componi"]
 faq_collapsible: true
