@@ -1,7 +1,7 @@
 ---
 layout: workshop
-title: "Workshop: Le basi di un Design System - Creare un Interface Inventory"
-summary: "Un workshop pratico per designer e sviluppatori che vogliono organizzare le interfacce e ridurre drasticamente i tempi di sviluppo. Impara a creare un Interface Inventory efficace in 4 ore."
+title: "Creare un Interface Inventory"
+summary: "Impara a creare un inventario degli elementi di un prodotto digitale per progettare un Design System."
 lang: it
 og-image: workshops/interface-inventory/interface-inventory-og.png
 permalink: /workshops/interface-inventory/
@@ -12,9 +12,12 @@ offer:
   cta: "Riserva il tuo posto"
   plausible_event: "Buy+Workshop"
   sessions:
-    - "Giovedì 15 ottobre 2026, 09:00-13:00"
+    - "8 ottobre"
+    - "5 novembre"
+    - "3 dicembre"
+  session_time: "09:00–13:00"
   deadline: "2026-09-15T09:00:00"
-  note: 'Prezzo Early Bird valido fino al <strong class="font-medium text-foreground">15 settembre 2026</strong>. Solo <strong class="font-medium text-foreground">4 posti rimasti</strong>.'
+  note: 'Prezzo Early Bird valido fino al <strong class="font-medium">15 settembre 2026</strong>. Solo <strong class="font-medium">4 posti rimasti</strong>.'
 ---
 
 <!-- Header -->

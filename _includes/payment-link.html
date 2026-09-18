@@ -9,6 +9,7 @@ Workshop offer block, driven by the `offer` map in the page front matter:
     plausible_event: "Buy+Workshop"
     sessions:                 # explicit dates, one line each
       - "Giovedì 15 ottobre 2026, 09:00-13:00"
+    session_time: "09:00-13:00"       # optional shared time, shown once
     dates_note: "2 date disponibili"   # used only when `sessions` is missing
     deadline: "2026-09-15T09:00:00"    # drives the countdown in the layout
     note: "Early Bird fino al …"       # early bird copy, rendered with note=true
@@ -17,23 +18,35 @@ Parameters: bg (surface class), note (render the early bird note),
 url (override the checkout link for this block only).
 {%- endcomment -%}
 {%- assign offer = page.offer -%}
-<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 p-6 md:p-8 border border-border {{ include.bg | default: 'bg-secondary/40' }} md:text-left">
-  <div class="flex flex-col items-center gap-2 md:items-start">
-    <div class="flex items-baseline gap-3">
-      <span class="font-heading text-3xl font-bold">{{ offer.price }}</span>
-      {% if offer.price_full %}<span class="text-lg text-muted-foreground line-through">{{ offer.price_full }}</span>{% endif %}
-    </div>
-    {% if offer.sessions %}{% for session in offer.sessions %}
-    <span class="font-mono text-xs uppercase tracking-wide text-muted-foreground">🗓️ {{ session }}</span>
-    {% endfor %}{% elsif offer.dates_note %}
-    <span class="font-mono text-xs uppercase tracking-wide text-muted-foreground">🗓️ {{ offer.dates_note }}</span>
+<div class="flex flex-col md:flex-row md:items-start gap-6 md:gap-8 p-6 md:p-8 {{ include.bg | default: 'bg-secondary/40' }} text-left">
+  <div class="flex shrink-0 items-baseline gap-3 w-1/3">
+    <span class="font-heading text-3xl font-bold">{{ offer.price }}</span>
+    {% if offer.price_full %}<span class="text-lg text-muted-foreground line-through">{{ offer.price_full }}</span>{% endif %}
+  </div>
+  {% if offer.sessions or offer.dates_note %}
+  <div class="flex flex-1 flex-col gap-2 md:pt-1">
+    <span class="text-sm font-medium text-foreground">Date disponibili:</span>
+    {% if offer.sessions %}
+    <ul class="m-0 flex list-none flex-col gap-1 p-0 lg:flex-row lg:flex-wrap lg:gap-2">
+      {% for session in offer.sessions %}
+      <li class="text-sm font-normal text-muted-foreground">{{ session }}</li>
+      {% endfor %}
+    </ul>
+    {% if offer.session_time %}
+    <span class="mt-1 text-sm font-normal text-foreground">Orario: {{ offer.session_time }}</span>
+    {% endif %}
+    {% elsif offer.dates_note %}
+    <span class="font-mono text-sm font-normal normal-case leading-relaxed text-muted-foreground">{{ offer.dates_note }}</span>
     {% endif %}
   </div>
-  <a href="{{ include.url | default: offer.url }}" class="inline-flex items-center justify-center shrink-0 px-8 py-4 bg-accent text-black text-base font-medium hover:opacity-90 transition-opacity{% if offer.plausible_event %} plausible-event-name={{ offer.plausible_event }}{% endif %}">{{ offer.cta | default: 'Riserva il tuo posto' }}</a>
+  {% endif %}
+  <div class="flex shrink-0 flex-col items-stretch gap-2 md:items-center">
+    <a href="{{ include.url | default: offer.url }}" class="inline-flex items-center justify-center px-8 py-4 bg-accent text-black text-base font-medium hover:opacity-90 transition-opacity{% if offer.plausible_event %} plausible-event-name={{ offer.plausible_event }}{% endif %}">{{ offer.cta | default: 'Riserva il tuo posto' }}</a>
+    {% if include.note and offer.note %}
+    <div class="max-w-xs text-center text-xs leading-relaxed text-muted-foreground">
+      <p class="event-countdown" style="display: none;"></p>
+      <p class="event-static">{{ offer.note }}</p>
+    </div>
+    {% endif %}
+  </div>
 </div>
-{% if include.note and offer.note %}
-<div class="text-center">
-  <p class="event-countdown text-sm text-muted-foreground" style="display: none;"></p>
-  <p class="event-static mt-6 text-sm text-muted-foreground">{{ offer.note }}</p>
-</div>
-{% endif %}
