@@ -1,0 +1,22 @@
+<div class="sticky top-0 z-40 bg-background/95 backdrop-blur-sm">
+  <header class="flex min-h-16 flex-wrap items-center justify-between gap-4 px-6 py-6 lg:px-10">
+    <a href="{{ '/' | relative_url }}" class="flex shrink-0 items-center gap-3 hover:opacity-60 transition-opacity mb-4 lg:mb-0" aria-label="Francesco Improta — Home">
+      <img src="{{ '/img/logo.svg' | relative_url }}" alt="" width="29" height="35" class="w-5 h-auto dark:invert" />
+      <span class="flex flex-col">
+        <span class="font-heading text-sm font-medium leading-tight text-primary">Francesco Improta</span>
+        <span class="font-heading text-sm font-medium leading-tight text-accent">Design Workshops</span>
+      </span>
+    </a>
+    {% if page.workshop_nav %}
+    <nav aria-label="Sezioni della pagina">
+      <ul class="flex flex-wrap items-center justify-start lg:justify-end gap-4 lg:gap-10 sm:gap-6 m-0 p-0 list-none">
+        {% for item in page.workshop_nav %}
+        <li>
+          <a class="text-base lg:text-lg font-medium text-muted-foreground hover:text-foreground hover:underline underline-offset-2 transition-colors" href="{{ item.url }}">{{ item.label }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+    {% endif %}
+  </header>
+</div>
