@@ -5,52 +5,39 @@ summary: "Impara a creare e gestire i design tokens in modo efficace, accelerand
 lang: it
 og-image: workshops/og-design-tokens-workshop.png
 permalink: /workshops/design-tokens/
+workshop_nav:
+  - label: "Cosa impari"
+    url: "#learn"
+  - label: "Programma"
+    url: "#details"
+  - label: "Testimonianze"
+    url: "#testimonials"
+  - label: "FAQ"
+    url: "#faq"
 offer:
   price: "€149"
   price_full: "€249"
   url: "https://book.stripe.com/5kQaEW2D1cIq8rU76Xcs801?prefilled_promo_code=EARLYMAG26"
   cta: "Riserva il tuo posto"
   plausible_event: "Buy+Workshop"
-  dates_note: "2 date disponibili in ottobre 2026, dalle 09:00 alle 13:00"
+  dates_note: "2 date disponibili in ottobre 2026"
+  session_time: "09:00–13:00"
   deadline: "2026-09-15T09:00:00"
   note: 'Early Bird fino al <strong class="font-medium text-foreground">15 settembre 2026</strong>. <strong class="font-medium text-foreground">4 posti rimasti</strong>. Il tuo acquisto è valido anche per le prossime date.'
 ---
 
-<!-- Header -->
-<div class="sticky top-16 lg:top-0 z-40 bg-background">
-  <div class="px-6 lg:px-10 py-4">
-    <header class="flex flex-wrap items-center gap-4">
-      <nav aria-label="Sezioni della pagina">
-        <ul class="flex flex-wrap items-center gap-4 sm:gap-6 m-0 p-0 list-none">
-          <li>
-            <a class="text-sm text-muted-foreground hover:text-foreground hover:underline underline-offset-2 transition-colors" href="#learn">Cosa impari</a>
-          </li>
-          <li>
-            <a class="text-sm text-muted-foreground hover:text-foreground hover:underline underline-offset-2 transition-colors" href="#details">Programma</a>
-          </li>
-          <li>
-            <a class="text-sm text-muted-foreground hover:text-foreground hover:underline underline-offset-2 transition-colors" href="#testimonials">Testimonianze</a>
-          </li>
-          <li>
-            <a class="text-sm text-muted-foreground hover:text-foreground hover:underline underline-offset-2 transition-colors" href="#faq">FAQ</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-  </div>
-  <div class="mx-6 lg:mx-10 hairline"></div>
-</div>
-
 <!-- Hero Section -->
 <section class="hero px-6 lg:px-10 pt-12 lg:pt-20 pb-12 lg:pb-16">
-  <div class="mx-auto max-w-5xl text-center">
-    <span class="inline-flex items-center border border-border px-3 py-1 mb-6 font-mono text-xs uppercase tracking-wide text-accent">Workshop Online</span>
-    <h1 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">Design Tokens Workshop</h1>
-    <h2 class="mt-4 font-mono text-sm uppercase tracking-wide text-muted-foreground">Il corso completo sui design tokens</h2>
-    <p class="mx-auto mt-6 mb-8 max-w-3xl text-lg lg:text-xl text-muted-foreground leading-relaxed">Impara a creare e gestire i design tokens in modo efficace, garantendo la <strong class="font-medium text-foreground">coerenza visiva dell'interfaccia</strong> e accelerando lo sviluppo.</p>
+  <div class="mx-auto max-w-7xl">
+    <div class="grid gap-12 lg:grid-cols-3 lg:gap-12 xl:gap-16">
+      <div class="flex flex-col items-start lg:col-span-2 lg:pr-8 xl:pr-16">
+        <span class="mb-6 inline-flex items-center border border-border px-3 py-1 font-mono text-xs uppercase tracking-wide text-accent">Workshop Online</span>
+        <h1 class="max-w-xl font-heading text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">Design Tokens Workshop</h1>
+        <h2 class="mt-5 font-mono text-sm uppercase tracking-wide text-muted-foreground">Il corso completo sui design tokens</h2>
+        <p class="mt-8 max-w-xl text-lg leading-relaxed text-muted-foreground lg:text-xl">Impara a creare e gestire i design tokens in modo efficace, garantendo la <strong class="font-medium text-foreground">coerenza visiva dell'interfaccia</strong> e accelerando lo sviluppo.</p>
 
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8 text-left">
-      <div class="flex items-center gap-3 p-4 border border-border">
+        <div class="mt-10 grid w-full grid-cols-1 border-t border-border sm:grid-cols-2">
+      <div class="flex items-center gap-3 border-b border-border py-4 sm:pr-4">
         <svg xmlns="http://www.w3.org/2000/svg"
           width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
           stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-accent" aria-hidden="true">
@@ -61,7 +48,7 @@ offer:
         </svg>
         <h3 class="text-sm font-medium text-muted-foreground">100% remoto</h3>
       </div>
-      <div class="flex items-center gap-3 p-4 border border-border">
+      <div class="flex items-center gap-3 border-b border-border py-4 sm:pl-4">
         <svg xmlns="http://www.w3.org/2000/svg"
           width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
           stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-accent" aria-hidden="true">
@@ -71,11 +58,11 @@ offer:
         </svg>
         <h3 class="text-sm font-medium text-muted-foreground">Approccio pratico</h3>
       </div>
-      <div class="flex items-center gap-3 p-4 border border-border">
+      <div class="flex items-center gap-3 border-b border-border py-4 sm:pr-4">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-accent" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></svg>
         <h3 class="text-sm font-medium text-muted-foreground">6 partecipanti</h3>
       </div>
-      <div class="flex items-center gap-3 p-4 border border-border">
+      <div class="flex items-center gap-3 border-b border-border py-4 sm:pl-4">
         <svg xmlns="http://www.w3.org/2000/svg"
           width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
           stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-accent" aria-hidden="true">
@@ -85,16 +72,18 @@ offer:
             d="m21.5 11.5-1.914-1.914A2 2 0 0 1 19 8.172V7l-2.26-2.26a6 6 0 0 0-4.202-1.756L9 2.96l.92.82A6.18 6.18 0 0 1 12 8.4V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5" />
         </svg>
         <h3 class="text-sm font-medium text-muted-foreground">Project work</h3>
+        </div>
+      </div>
+      </div>
+
+      <div>
+        {% include payment-link.html note=true %}
       </div>
     </div>
 
-    <div class="mb-12">
-      {% include payment-link.html note=true %}
-    </div>
-
-    <img class="w-full h-auto object-cover mb-8" src="/img/workshops/design-tokens-workshop.webp"
+    <img class="relative left-1/2 mt-16 h-72 w-screen max-w-none -translate-x-1/2 object-cover md:h-96 lg:mt-24" src="/img/workshops/design-tokens-workshop.webp"
       alt="A working desk reflected in a picture" title="My design studio image reflected" width="2400" height="740" decoding="async" fetchpriority="high">
-    <p class="mx-auto max-w-3xl text-lg lg:text-xl leading-relaxed">Dalle basi agli argomenti avanzati, questo corso copre tutti gli aspetti più importanti da conoscere per utilizzare al meglio i design tokens nella progettazione di un Design System e di interfacce digitali.</p>
+    <p class="mx-auto mt-8 max-w-3xl text-lg leading-relaxed lg:text-xl">Dalle basi agli argomenti avanzati, questo corso copre tutti gli aspetti più importanti da conoscere per utilizzare al meglio i design tokens nella progettazione di un Design System e di interfacce digitali.</p>
   </div>
 </section>
 

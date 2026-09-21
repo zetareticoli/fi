@@ -1,6 +1,6 @@
 <div class="sticky top-0 z-40 bg-background/95 backdrop-blur-sm">
   <header class="flex min-h-16 flex-wrap items-center justify-between gap-4 px-6 py-6 lg:px-10">
-    <a href="{{ '/' | relative_url }}" class="flex shrink-0 items-center gap-3 hover:opacity-60 transition-opacity mb-4 lg:mb-0" aria-label="Francesco Improta — Home">
+    <a href="{{ page.url | relative_url }}" class="flex shrink-0 items-center gap-3 hover:opacity-60 transition-opacity mb-4 md:mb-0" aria-label="{{ page.title }}">
       <img src="{{ '/img/logo.svg' | relative_url }}" alt="" width="29" height="35" class="w-5 h-auto dark:invert" />
       <span class="flex flex-col">
         <span class="font-heading text-sm font-medium leading-tight text-primary">Francesco Improta</span>

@@ -5,6 +5,15 @@ summary: "Impara a creare un inventario degli elementi di un prodotto digitale p
 lang: it
 og-image: workshops/interface-inventory/interface-inventory-og.png
 permalink: /workshops/interface-inventory/
+workshop_nav:
+  - label: "Dettagli"
+    url: "#details"
+  - label: "Cosa impari"
+    url: "#learn"
+  - label: "Testimonianze"
+    url: "#testimonials"
+  - label: "FAQ"
+    url: "#faq"
 offer:
   price: "€99"
   price_full: "€199"
@@ -12,52 +21,25 @@ offer:
   cta: "Riserva il tuo posto"
   plausible_event: "Buy+Workshop"
   sessions:
-    - "8 ottobre"
-    - "5 novembre"
-    - "3 dicembre"
-  session_time: "09:00–13:00"
-  deadline: "2026-09-15T09:00:00"
-  note: 'Prezzo Early Bird valido fino al <strong class="font-medium">15 settembre 2026</strong>. Solo <strong class="font-medium">4 posti rimasti</strong>.'
+    - "8 ottobre 2026"
+    - "5 novembre 2026"
+    - "3 dicembre 2026"
+  session_time: "09:30–13:30"
+  deadline: "2026-09-30T23:59:59"
+  note: 'Prezzo Early Bird valido fino al <strong class="font-medium">30 settembre 2026</strong>. Solo <strong class="font-medium">3 posti rimasti</strong>.'
 ---
-
-<!-- Header -->
-<div class="sticky top-16 lg:top-0 z-40 bg-background">
-  <div class="px-6 lg:px-10 py-4">
-    <header class="flex flex-wrap items-center gap-4">
-      <nav aria-label="Sezioni della pagina">
-        <ul class="flex flex-wrap items-center gap-4 sm:gap-6 m-0 p-0 list-none">
-          <li>
-            <a class="text-sm text-muted-foreground hover:text-foreground hover:underline underline-offset-2 transition-colors" href="#details">Dettagli</a>
-          </li>
-          <li>
-            <a class="text-sm text-muted-foreground hover:text-foreground hover:underline underline-offset-2 transition-colors" href="#learn">Cosa impari</a>
-          </li>
-          <li>
-            <a class="text-sm text-muted-foreground hover:text-foreground hover:underline underline-offset-2 transition-colors" href="#testimonials">Testimonianze</a>
-          </li>
-          <li>
-            <a class="text-sm text-muted-foreground hover:text-foreground hover:underline underline-offset-2 transition-colors" href="#faq">FAQ</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-  </div>
-  <div class="mx-6 lg:mx-10 hairline"></div>
-</div>
 
 <!-- Hero Section -->
 <section class="hero px-6 lg:px-10 pt-12 lg:pt-20 pb-12 lg:pb-16">
-  <div class="mx-auto max-w-5xl text-center">
-    <span class="inline-flex items-center border border-border px-3 py-1 mb-6 font-mono text-xs uppercase tracking-wide text-accent">Workshop Online</span>
-    <h1 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">Dal caos all'ordine ー <br>creare un interface inventory</h1>
-    <p class="mx-auto mt-6 mb-8 max-w-3xl text-lg lg:text-xl text-muted-foreground leading-relaxed">Un <strong class="font-medium text-foreground">workshop pratico per designer e sviluppatori</strong> che vogliono organizzare le interfacce e ridurre drasticamente i tempi di sviluppo.</p>
+  <div class="mx-auto max-w-7xl">
+    <div class="grid gap-12 lg:grid-cols-3 lg:gap-12 xl:gap-16">
+      <div class="flex flex-col items-start lg:col-span-2 lg:pr-8 xl:pr-16">
+        <span class="mb-6 inline-flex items-center border border-border px-3 py-1 font-mono text-xs uppercase tracking-wide text-accent">Workshop Online</span>
+        <h1 class="max-w-xl font-heading text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">Dal caos all'ordine ー creare un interface inventory</h1>
+        <p class="mt-8 max-w-xl text-lg leading-relaxed text-muted-foreground lg:text-xl">Un workshop pratico per imparare a mettere in ordine le interfacce di un prodotto digitale, gettando le basi di un Design System.</p>
 
-    <div class="mb-8">
-      {% include payment-link.html %}
-    </div>
-
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 text-left">
-      <div class="flex items-center gap-3 p-4 border border-border">
+        <div class="mt-10 grid w-full grid-cols-1 border-t border-border sm:grid-cols-2">
+      <div class="flex items-center gap-3 border-b border-border py-4 sm:pr-4">
         <svg xmlns="http://www.w3.org/2000/svg"
           width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
           stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-accent" aria-hidden="true">
@@ -68,7 +50,7 @@ offer:
         </svg>
         <h3 class="text-sm font-medium text-muted-foreground">100% remoto</h3>
       </div>
-      <div class="flex items-center gap-3 p-4 border border-border">
+      <div class="flex items-center gap-3 border-b border-border py-4 sm:pl-4">
         <svg xmlns="http://www.w3.org/2000/svg"
           width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
           stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-accent" aria-hidden="true">
@@ -78,11 +60,11 @@ offer:
         </svg>
         <h3 class="text-sm font-medium text-muted-foreground">Casi studio reali</h3>
       </div>
-      <div class="flex items-center gap-3 p-4 border border-border">
+      <div class="flex items-center gap-3 border-b border-border py-4 sm:pr-4">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-accent" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></svg>
         <h3 class="text-sm font-medium text-muted-foreground">Solo 6 partecipanti</h3>
       </div>
-      <div class="flex items-center gap-3 p-4 border border-border">
+      <div class="flex items-center gap-3 border-b border-border py-4 sm:pl-4">
         <svg xmlns="http://www.w3.org/2000/svg"
           width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
           stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-accent" aria-hidden="true">
@@ -92,15 +74,19 @@ offer:
             d="m21.5 11.5-1.914-1.914A2 2 0 0 1 19 8.172V7l-2.26-2.26a6 6 0 0 0-4.202-1.756L9 2.96l.92.82A6.18 6.18 0 0 1 12 8.4V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5" />
         </svg>
         <h3 class="text-sm font-medium text-muted-foreground">Strumenti pratici</h3>
+        </div>
+      </div>
+      </div>
+
+      <div>
+        {% include payment-link.html note=true %}
       </div>
     </div>
 
-    <img class="w-full h-auto object-cover" src="/img/workshops/interface-inventory/interface-inventory-banner.webp"
+    <img class="relative left-1/2 mt-16 h-72 w-screen max-w-none -translate-x-1/2 object-cover md:h-96 lg:mt-24" src="/img/workshops/interface-inventory/interface-inventory-banner.webp"
       alt="Interface inventory workshop banner" title="Interface inventory workshop" width="2784" height="520" decoding="async" fetchpriority="high">
   </div>
 </section>
-
-<div class="mx-6 lg:mx-10 hairline"></div>
 
 <!-- Program Section -->
 <section class="scroll-mt-32 lg:scroll-mt-24 px-6 lg:px-10 py-12 lg:py-16" id="details">
@@ -227,8 +213,6 @@ offer:
         </li>
       </ul>
     </div>
-
-    {% include payment-link.html note=true %}
   </div>
 </section>
 

@@ -18,32 +18,38 @@ Parameters: bg (surface class), note (render the early bird note),
 url (override the checkout link for this block only).
 {%- endcomment -%}
 {%- assign offer = page.offer -%}
-<div class="flex flex-col md:flex-row md:items-start gap-6 md:gap-8 p-6 md:p-8 {{ include.bg | default: 'bg-secondary/40' }} text-left">
-  <div class="flex shrink-0 items-baseline gap-3 w-1/3">
-    <span class="font-heading text-3xl font-bold">{{ offer.price }}</span>
-    {% if offer.price_full %}<span class="text-lg text-muted-foreground line-through">{{ offer.price_full }}</span>{% endif %}
+<div class="flex h-full flex-col gap-8 border border-border p-6 text-left sm:p-8 lg:p-10 {{ include.bg | default: 'bg-secondary/40' }}">
+  <div class="flex items-baseline gap-3 border-b border-border pb-8">
+    <span class="font-heading text-4xl font-bold tracking-tight lg:text-5xl">{{ offer.price }}</span>
+    {% if offer.price_full %}<span class="text-lg text-muted-foreground line-through lg:text-xl">{{ offer.price_full }}</span>{% endif %}
   </div>
   {% if offer.sessions or offer.dates_note %}
-  <div class="flex flex-1 flex-col gap-2 md:pt-1">
-    <span class="text-sm font-medium text-foreground">Date disponibili:</span>
+  <div class="flex flex-col gap-4">
+    <span class="font-mono text-xs font-medium uppercase tracking-widest text-muted-foreground">Date disponibili</span>
     {% if offer.sessions %}
-    <ul class="m-0 flex list-none flex-col gap-1 p-0 lg:flex-row lg:flex-wrap lg:gap-2">
+    <ul class="m-0 flex list-none flex-col gap-3 p-0">
       {% for session in offer.sessions %}
-      <li class="text-sm font-normal text-muted-foreground">{{ session }}</li>
+      <li class="flex items-center gap-3 text-base font-medium">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="size-4 shrink-0 text-accent" aria-hidden="true"><path d="M8 2v3"/><path d="M16 2v3"/><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg>
+        {{ session }}
+      </li>
       {% endfor %}
     </ul>
-    {% if offer.session_time %}
-    <span class="mt-1 text-sm font-normal text-foreground">Orario: {{ offer.session_time }}</span>
-    {% endif %}
     {% elsif offer.dates_note %}
-    <span class="font-mono text-sm font-normal normal-case leading-relaxed text-muted-foreground">{{ offer.dates_note }}</span>
+    <p class="m-0 text-base font-medium leading-relaxed">{{ offer.dates_note }}</p>
+    {% endif %}
+    {% if offer.session_time %}
+    <div class="flex items-center gap-3 border-t border-border pt-4 text-sm text-muted-foreground">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="size-4 shrink-0" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+      <span>Orario: <strong class="font-medium text-foreground">{{ offer.session_time }}</strong></span>
+    </div>
     {% endif %}
   </div>
   {% endif %}
-  <div class="flex shrink-0 flex-col items-stretch gap-2 md:items-center">
-    <a href="{{ include.url | default: offer.url }}" class="inline-flex items-center justify-center px-8 py-4 bg-accent text-black text-base font-medium hover:opacity-90 transition-opacity{% if offer.plausible_event %} plausible-event-name={{ offer.plausible_event }}{% endif %}">{{ offer.cta | default: 'Riserva il tuo posto' }}</a>
+  <div class="mt-auto flex flex-col items-stretch gap-4">
+    <a href="{{ include.url | default: offer.url }}" class="inline-flex items-center justify-center bg-accent px-8 py-4 text-base font-medium text-white transition-opacity hover:opacity-90{% if offer.plausible_event %} plausible-event-name={{ offer.plausible_event }}{% endif %}">{{ offer.cta | default: 'Riserva il tuo posto' }}</a>
     {% if include.note and offer.note %}
-    <div class="max-w-xs text-center text-xs leading-relaxed text-muted-foreground">
+    <div class="border-t border-border pt-4 text-left text-xs leading-relaxed text-muted-foreground">
       <p class="event-countdown" style="display: none;"></p>
       <p class="event-static">{{ offer.note }}</p>
     </div>
