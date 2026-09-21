@@ -1,7 +1,7 @@
 ---
 layout: workshop
-title: "Creare un Interface Inventory"
-summary: "Impara a creare un inventario degli elementi di un prodotto digitale per progettare un Design System."
+title: "Interface Inventory Workshop"
+summary: "Impara a creare un inventario di elementi e componenti dell'interfaccia di un prodotto digitale. Passa dal caos all'ordine con un metodo pratico e facile da implementare."
 lang: it
 og-image: workshops/interface-inventory/interface-inventory-og.png
 permalink: /workshops/interface-inventory/
@@ -97,16 +97,16 @@ offer:
 
   .inventory-art[data-art="phone"] {
     --art-width: clamp(180px, 18vw, 270px);
-    --art-opacity: 0.96;
+    /* --art-opacity: 0.96; */
     top: 7rem;
-    left: clamp(-8rem, -6vw, -4rem);
+    right: clamp(-8rem, -6vw, -4rem);
   }
 
   .inventory-art[data-art="wireframes"] {
-    --art-width: clamp(280px, 28vw, 420px);
-    --art-opacity: 0.94;
+    --art-width: clamp(180px, 18vw, 270px);
+    --art-opacity: 0.5;
     top: 1.5rem;
-    right: clamp(-9rem, -6vw, -4rem);
+    left: clamp(-9rem, -6vw, -4rem);
   }
 
   .inventory-art[data-art="note-one"] {
@@ -147,7 +147,7 @@ offer:
   .inventory-art[data-art="tablet"] {
     --art-width: clamp(330px, 38vw, 540px);
     --art-opacity: 0.94;
-    top: 101rem;
+    top: 92rem;
     right: clamp(-14rem, -10vw, -7rem);
   }
 
@@ -172,7 +172,7 @@ offer:
     }
 
     .inventory-art[data-art="phone"] {
-      left: -8rem;
+      right: -3rem;
     }
 
     .inventory-art[data-art="wireframes"] {
@@ -188,7 +188,8 @@ offer:
     }
 
     .inventory-art[data-art="tablet"] {
-      right: -15rem;
+      right: -12rem;
+      top: 105rem;
     }
   }
 
@@ -213,13 +214,13 @@ offer:
     .inventory-art[data-art="phone"] {
       --art-width: 190px;
       top: 14rem;
-      left: -8.5rem;
+      right: -8.5rem;
     }
 
     .inventory-art[data-art="wireframes"] {
       --art-width: 245px;
       top: 1rem;
-      right: -10rem;
+      left: -10rem;
     }
 
     .inventory-art[data-art="note-one"] {
@@ -248,8 +249,7 @@ offer:
     }
 
     .inventory-art[data-art="tablet"] {
-      top: 123rem;
-      right: -17rem;
+      top: 130rem;
     }
 
     .inventory-art[data-art="profile-strip"] {
@@ -266,6 +266,33 @@ offer:
       opacity: var(--art-opacity, 0.92);
       transform: none;
       transition: none;
+    }
+  }
+
+  .benefit-band + .benefit-band {
+    margin-top: 3rem;
+    padding-top: 3rem;
+    border-top: 0.5px solid hsl(var(--border));
+  }
+
+  .benefit-band-visual {
+    width: 100%;
+  }
+
+  .benefit-band-visual img {
+    width: min(100%, 22rem);
+    height: auto;
+    filter: drop-shadow(0 18px 22px rgb(24 48 72 / 0.12));
+  }
+
+  @media (min-width: 768px) {
+    .benefit-band + .benefit-band {
+      margin-top: 4rem;
+      padding-top: 4rem;
+    }
+
+    .benefit-band-visual img {
+      width: min(100%, 26rem);
     }
   }
 </style>
@@ -286,53 +313,53 @@ offer:
 <!-- Hero Section -->
 <section class="hero px-6 lg:px-10 pt-12 lg:pt-20 pb-12 lg:pb-16">
   <div class="mx-auto max-w-7xl">
-    <div class="grid gap-12 lg:grid-cols-3 lg:gap-12 xl:gap-16">
-      <div class="flex flex-col items-start lg:col-span-2 lg:pr-8 xl:pr-16">
+    <div class="grid gap-12 md:grid-cols-6 lg:gap-12 xl:gap-16">
+      <div class="flex flex-col items-start md:col-span-3 lg:col-span-4 lg:pr-8 xl:pr-16">
         <span class="mb-6 inline-flex items-center border border-border px-3 py-1 font-mono text-xs uppercase tracking-wide text-accent">Workshop Online</span>
-        <h1 class="max-w-xl font-heading text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">Dal caos all'ordine ー creare un interface inventory</h1>
-        <p class="mt-8 max-w-xl text-lg leading-relaxed text-muted-foreground lg:text-xl">Un workshop pratico per imparare a mettere in ordine le interfacce di un prodotto digitale, gettando le basi di un Design System.</p>
+        <h1 class="max-w-xl font-heading text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">{{page.title}}</h1>
+        <p class="mt-8 max-w-xl text-lg leading-relaxed text-muted-foreground lg:text-xl">{{page.summary}}</p>
 
         <div class="mt-10 grid w-full grid-cols-1 border-t border-border sm:grid-cols-2">
-      <div class="flex items-center gap-3 border-b border-border py-4 sm:pr-4">
-        <svg xmlns="http://www.w3.org/2000/svg"
-          width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-          stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-accent" aria-hidden="true">
-          <circle cx="12" cy="10" r="8" />
-          <circle cx="12" cy="10" r="3" />
-          <path d="M7 22h10" />
-          <path d="M12 22v-4" />
-        </svg>
-        <h3 class="text-sm font-medium text-muted-foreground">100% remoto</h3>
-      </div>
-      <div class="flex items-center gap-3 border-b border-border py-4 sm:pl-4">
-        <svg xmlns="http://www.w3.org/2000/svg"
-          width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-          stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-accent" aria-hidden="true">
-          <rect width="18" height="7" x="3" y="3" rx="1" />
-          <rect width="9" height="7" x="3" y="14" rx="1" />
-          <rect width="5" height="7" x="16" y="14" rx="1" />
-        </svg>
-        <h3 class="text-sm font-medium text-muted-foreground">Casi studio reali</h3>
-      </div>
-      <div class="flex items-center gap-3 border-b border-border py-4 sm:pr-4">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-accent" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></svg>
-        <h3 class="text-sm font-medium text-muted-foreground">Solo 6 partecipanti</h3>
-      </div>
-      <div class="flex items-center gap-3 border-b border-border py-4 sm:pl-4">
-        <svg xmlns="http://www.w3.org/2000/svg"
-          width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-          stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-accent" aria-hidden="true">
-          <path d="m15 12-8.373 8.373a1 1 0 1 1-3-3L12 9" />
-          <path d="m18 15 4-4" />
-          <path
-            d="m21.5 11.5-1.914-1.914A2 2 0 0 1 19 8.172V7l-2.26-2.26a6 6 0 0 0-4.202-1.756L9 2.96l.92.82A6.18 6.18 0 0 1 12 8.4V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5" />
-        </svg>
-        <h3 class="text-sm font-medium text-muted-foreground">Strumenti pratici</h3>
+        <div class="flex items-center gap-3 border-b border-border py-4 sm:pr-4">
+          <svg xmlns="http://www.w3.org/2000/svg"
+            width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-accent" aria-hidden="true">
+            <circle cx="12" cy="10" r="8" />
+            <circle cx="12" cy="10" r="3" />
+            <path d="M7 22h10" />
+            <path d="M12 22v-4" />
+          </svg>
+          <h3 class="text-lg font-medium text-muted-foreground">Online da remoto</h3>
+        </div>
+        <div class="flex items-center gap-3 border-b border-border py-4 sm:pl-4">
+          <svg xmlns="http://www.w3.org/2000/svg"
+            width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-accent" aria-hidden="true">
+            <rect width="18" height="7" x="3" y="3" rx="1" />
+            <rect width="9" height="7" x="3" y="14" rx="1" />
+            <rect width="5" height="7" x="16" y="14" rx="1" />
+          </svg>
+          <h3 class="text-lg font-medium text-muted-foreground">Analisi di prodotti reali</h3>
+        </div>
+        <div class="flex items-center gap-3 border-b border-border py-4 sm:pr-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-accent" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></svg>
+          <h3 class="text-lg font-medium text-muted-foreground">Solo 6 partecipanti</h3>
+        </div>
+        <div class="flex items-center gap-3 border-b border-border py-4 sm:pl-4">
+          <svg xmlns="http://www.w3.org/2000/svg"
+            width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-accent" aria-hidden="true">
+            <path d="m15 12-8.373 8.373a1 1 0 1 1-3-3L12 9" />
+            <path d="m18 15 4-4" />
+            <path
+              d="m21.5 11.5-1.914-1.914A2 2 0 0 1 19 8.172V7l-2.26-2.26a6 6 0 0 0-4.202-1.756L9 2.96l.92.82A6.18 6.18 0 0 1 12 8.4V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5" />
+          </svg>
+          <h3 class="text-lg font-medium text-muted-foreground">Poca teoria, tanta pratica</h3>
+          </div>
         </div>
       </div>
-      </div>
 
-      <div>
+      <div class="md:col-span-3 lg:col-span-2">
         {% include payment-link.html note=true %}
       </div>
     </div>
@@ -473,36 +500,56 @@ offer:
 <!-- Benefits Section -->
 <section class="scroll-mt-32 lg:scroll-mt-24 bg-card-foreground px-6 lg:px-10 py-12 lg:py-20" id="learn">
   <div class="mx-auto max-w-5xl">
-    <h2 class="font-heading text-2xl sm:text-3xl font-bold leading-tight text-center mb-12">Alla fine del workshop saprai...</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-      <div class="flex flex-row gap-4">
-        <span class="font-heading text-xl font-semibold text-accent" aria-hidden="true">¬</span>
-        <div>
-          <h3 class="font-heading text-lg font-medium mb-2">Analizzare lo stato dell’arte di un prodotto digitale</h3>
-          <p class="text-base text-muted-foreground leading-relaxed">Imparerai a raccogliere e catalogare in modo sistematico tutti gli elementi di un’interfaccia esistente.</p>
+    <h2 class="font-heading text-2xl sm:text-3xl font-bold leading-tight text-center mb-12 lg:mb-16">Alla fine del workshop saprai...</h2>
+    <div class="flex flex-col">
+      <article class="benefit-band flex flex-col items-center gap-8 md:flex-row lg:gap-16">
+        <div class="flex w-full flex-1 flex-row gap-4">
+          <span class="font-heading text-xl font-semibold text-accent" aria-hidden="true">¬</span>
+          <div>
+            <h3 class="font-heading text-lg font-medium mb-2">Analizzare lo stato dell’arte di un prodotto digitale</h3>
+            <p class="text-base text-muted-foreground leading-relaxed">Imparerai a raccogliere e catalogare in modo sistematico tutti gli elementi di un’interfaccia esistente.</p>
+          </div>
         </div>
-      </div>
-      <div class="flex flex-row gap-4">
-        <span class="font-heading text-xl font-semibold text-accent" aria-hidden="true">¬</span>
-        <div>
-          <h3 class="font-heading text-lg font-medium mb-2">Organizzare i componenti in categorie utili</h3>
-          <p class="text-base text-muted-foreground leading-relaxed">Costruirai un inventario strutturato, suddividendo gli elementi per tipologia e importanza, così da facilitare il riuso.</p>
+        <div class="benefit-band-visual flex flex-1 justify-center">
+          <img src="/img/workshops/interface-inventory/tablet-bottom-right.svg" alt="Tablet con schermate di un prodotto digitale da analizzare" width="477" height="364" loading="lazy" decoding="async">
         </div>
-      </div>
-      <div class="flex flex-row gap-4">
-        <span class="font-heading text-xl font-semibold text-accent" aria-hidden="true">¬</span>
-        <div>
-          <h3 class="font-heading text-lg font-medium mb-2">Definire priorità e interventi chiave</h3>
-          <p class="text-base text-muted-foreground leading-relaxed">Saprai identificare incoerenze, duplicati e opportunità di standardizzazione per migliorare la collaborazione tra team.</p>
+      </article>
+      <article class="benefit-band flex flex-col items-center gap-8 md:flex-row-reverse lg:gap-16">
+        <div class="flex w-full flex-1 flex-row gap-4">
+          <span class="font-heading text-xl font-semibold text-accent" aria-hidden="true">¬</span>
+          <div>
+            <h3 class="font-heading text-lg font-medium mb-2">Organizzare i componenti in categorie utili</h3>
+            <p class="text-base text-muted-foreground leading-relaxed">Costruirai un inventario strutturato, suddividendo gli elementi per tipologia e importanza, così da facilitare il riuso.</p>
+          </div>
         </div>
-      </div>
-      <div class="flex flex-row gap-4">
-        <span class="font-heading text-xl font-semibold text-accent" aria-hidden="true">¬</span>
-        <div>
-          <h3 class="font-heading text-lg font-medium mb-3">Allineare il team e ottimizzare i processi</h3>
-          <p class="text-base text-muted-foreground leading-relaxed">Designer, developer e PM parleranno finalmente la stessa lingua, grazie a una base condivisa e visibile del sistema esistente.</p>
+        <div class="benefit-band-visual flex flex-1 justify-center">
+          <img src="/img/workshops/interface-inventory/checklist-paper-bottom-left.svg" alt="Lista di controllo per catalogare i componenti di interfaccia" width="240" height="206" loading="lazy" decoding="async">
         </div>
-      </div>
+      </article>
+      <article class="benefit-band flex flex-col items-center gap-8 md:flex-row lg:gap-16">
+        <div class="flex w-full flex-1 flex-row gap-4">
+          <span class="font-heading text-xl font-semibold text-accent" aria-hidden="true">¬</span>
+          <div>
+            <h3 class="font-heading text-lg font-medium mb-2">Definire priorità e interventi chiave</h3>
+            <p class="text-base text-muted-foreground leading-relaxed">Saprai identificare incoerenze, duplicati e opportunità di standardizzazione per migliorare la collaborazione tra team.</p>
+          </div>
+        </div>
+        <div class="benefit-band-visual flex flex-1 justify-center">
+          <img src="/img/workshops/interface-inventory/paper-wireframes-upper-right.svg" alt="Wireframe annotati per individuare incoerenze e priorità" width="345" height="272" loading="lazy" decoding="async">
+        </div>
+      </article>
+      <article class="benefit-band flex flex-col items-center gap-8 md:flex-row-reverse lg:gap-16">
+        <div class="flex w-full flex-1 flex-row gap-4">
+          <span class="font-heading text-xl font-semibold text-accent" aria-hidden="true">¬</span>
+          <div>
+            <h3 class="font-heading text-lg font-medium mb-2">Allineare il team e ottimizzare i processi</h3>
+            <p class="text-base text-muted-foreground leading-relaxed">Designer, developer e PM parleranno finalmente la stessa lingua, grazie a una base condivisa e visibile del sistema esistente.</p>
+          </div>
+        </div>
+        <div class="benefit-band-visual flex flex-1 justify-center">
+          <img src="/img/workshops/interface-inventory/profile-strip-bottom.svg" alt="Scheda profilo che rappresenta l’allineamento del team" width="393" height="215" loading="lazy" decoding="async">
+        </div>
+      </article>
     </div>
   </div>
 </section>

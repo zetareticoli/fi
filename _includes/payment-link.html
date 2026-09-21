@@ -18,7 +18,7 @@ Parameters: bg (surface class), note (render the early bird note),
 url (override the checkout link for this block only).
 {%- endcomment -%}
 {%- assign offer = page.offer -%}
-<div class="flex h-full flex-col gap-8 border border-border p-6 text-left sm:p-8 lg:p-10 {{ include.bg | default: 'bg-secondary/40' }}">
+<div class="flex h-full flex-col gap-8 border border-border p-6 text-left sm:p-8 lg:p-10 rounded-2xl shadow-lg {{ include.bg | default: 'bg-secondary/40' }}">
   <div class="flex items-baseline gap-3 border-b border-border pb-8">
     <span class="font-heading text-4xl font-bold tracking-tight lg:text-5xl">{{ offer.price }}</span>
     {% if offer.price_full %}<span class="text-lg text-muted-foreground line-through lg:text-xl">{{ offer.price_full }}</span>{% endif %}
