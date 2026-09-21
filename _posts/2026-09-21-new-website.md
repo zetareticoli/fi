@@ -10,10 +10,6 @@ For three years I kept this website alive with small commits: a fix here, a new 
 
 Last week I finally shipped **v2.0**: a full redesign of the layout, content architecture, case studies, and build pipeline.
 
-<video muted loop playsinline preload="none" controls aria-label="Personal website redesign walkthrough" data-autoplay-video>
-  <source data-src="/img/posts/personal-website.mp4" type="video/mp4">
-</video>
-
 ## Why a redesign, and why now
 
 Because I’m about to change chapter. By the end of November I’ll leave the Italian Department of Digital Transformation — a journey that started four years ago. A site that no longer described my work was going to become a problem very soon.
