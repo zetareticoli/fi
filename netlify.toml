@@ -48,3 +48,19 @@
   for = "/css/fonts/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
+
+# Keep crawl directives reachable even if the Netlify origin briefly
+# returns 5xx — Google treats robots.txt 5xx as "file inaccessible" and
+# may pause crawling. Edge cache + stale-if-error avoids that.
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
+    Cache-Control = "public, max-age=86400, stale-while-revalidate=604800, stale-if-error=604800"
+    X-Content-Type-Options = "nosniff"
+
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Content-Type = "application/xml; charset=utf-8"
+    Cache-Control = "public, max-age=3600, stale-while-revalidate=86400, stale-if-error=86400"
