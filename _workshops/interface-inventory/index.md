@@ -29,6 +29,260 @@ offer:
   note: 'Prezzo Early Bird valido fino al <strong class="font-medium">30 settembre 2026</strong>. Solo <strong class="font-medium">3 posti rimasti</strong>.'
 ---
 
+<style>
+  .interface-inventory-page {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    overflow: clip;
+  }
+
+  .interface-inventory-page::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      hsl(var(--background) / 0.78) 12%,
+      hsl(var(--background) / 0.96) 25%,
+      hsl(var(--background) / 0.96) 75%,
+      hsl(var(--background) / 0.78) 88%,
+      transparent 100%
+    );
+  }
+
+  .interface-inventory-page > section {
+    position: relative;
+    z-index: 2;
+  }
+
+  .inventory-artboard {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .inventory-art {
+    position: absolute;
+    z-index: var(--layer, 1);
+    width: var(--art-width);
+    height: auto;
+    opacity: 0;
+    filter: drop-shadow(0 18px 22px rgb(24 48 72 / 0.1));
+    transform: translate3d(
+      0,
+      calc(var(--entry-y, 96px) + var(--parallax-y, 0px)),
+      0
+    ) scale(0.985);
+    transition:
+      opacity 700ms cubic-bezier(0.16, 1, 0.3, 1) var(--delay, 0ms),
+      transform 1000ms cubic-bezier(0.16, 1, 0.3, 1) var(--delay, 0ms);
+    will-change: transform;
+  }
+
+  .interface-inventory-page.is-art-ready .inventory-art {
+    --entry-y: 0px;
+    opacity: var(--art-opacity, 0.92);
+    transform: translate3d(0, var(--parallax-y, 0px), 0) scale(1);
+  }
+
+  .interface-inventory-page.is-parallax-ready .inventory-art {
+    transition: opacity 200ms linear;
+  }
+
+  .inventory-art[data-art="phone"] {
+    --art-width: clamp(180px, 18vw, 270px);
+    --art-opacity: 0.96;
+    top: 7rem;
+    left: clamp(-8rem, -6vw, -4rem);
+  }
+
+  .inventory-art[data-art="wireframes"] {
+    --art-width: clamp(280px, 28vw, 420px);
+    --art-opacity: 0.94;
+    top: 1.5rem;
+    right: clamp(-9rem, -6vw, -4rem);
+  }
+
+  .inventory-art[data-art="note-one"] {
+    --art-width: clamp(92px, 9vw, 132px);
+    --layer: 3;
+    top: 4rem;
+    right: clamp(2rem, 12vw, 12rem);
+  }
+
+  .inventory-art[data-art="note-two"] {
+    --art-width: clamp(86px, 8vw, 124px);
+    --layer: 4;
+    top: 10.5rem;
+    right: clamp(-1rem, 5vw, 5rem);
+  }
+
+  .inventory-art[data-art="note-three"] {
+    --art-width: clamp(88px, 8.5vw, 128px);
+    --layer: 2;
+    top: 14rem;
+    right: clamp(6rem, 15vw, 15rem);
+  }
+
+  .inventory-art[data-art="checklist"] {
+    --art-width: clamp(190px, 21vw, 285px);
+    --art-opacity: 0.9;
+    top: 51rem;
+    left: clamp(-7rem, -4vw, -2rem);
+  }
+
+  .inventory-art[data-art="media-card"] {
+    --art-width: clamp(230px, 25vw, 350px);
+    --layer: 2;
+    top: 61rem;
+    left: clamp(-2rem, 5vw, 5rem);
+  }
+
+  .inventory-art[data-art="tablet"] {
+    --art-width: clamp(330px, 38vw, 540px);
+    --art-opacity: 0.94;
+    top: 101rem;
+    right: clamp(-14rem, -10vw, -7rem);
+  }
+
+  .inventory-art[data-art="profile-strip"] {
+    --art-width: clamp(250px, 28vw, 400px);
+    --layer: 2;
+    top: 119rem;
+    right: clamp(-1rem, 5vw, 6rem);
+  }
+
+  @media (max-width: 1023px) {
+    .interface-inventory-page::before {
+      background: linear-gradient(
+        90deg,
+        transparent,
+        hsl(var(--background) / 0.9) 10%,
+        hsl(var(--background) / 0.98) 24%,
+        hsl(var(--background) / 0.98) 76%,
+        hsl(var(--background) / 0.9) 90%,
+        transparent
+      );
+    }
+
+    .inventory-art[data-art="phone"] {
+      left: -8rem;
+    }
+
+    .inventory-art[data-art="wireframes"] {
+      right: -10rem;
+    }
+
+    .inventory-art[data-art="checklist"] {
+      left: -8rem;
+    }
+
+    .inventory-art[data-art="media-card"] {
+      left: -5rem;
+    }
+
+    .inventory-art[data-art="tablet"] {
+      right: -15rem;
+    }
+  }
+
+  @media (max-width: 639px) {
+    .interface-inventory-page::before {
+      background: linear-gradient(
+        90deg,
+        hsl(var(--background) / 0.38),
+        hsl(var(--background) / 0.92) 20%,
+        hsl(var(--background) / 0.96) 50%,
+        hsl(var(--background) / 0.92) 80%,
+        hsl(var(--background) / 0.38)
+      );
+    }
+
+    .inventory-art,
+    .inventory-art[data-art] {
+      --art-opacity: 0.42;
+      filter: none;
+    }
+
+    .inventory-art[data-art="phone"] {
+      --art-width: 190px;
+      top: 14rem;
+      left: -8.5rem;
+    }
+
+    .inventory-art[data-art="wireframes"] {
+      --art-width: 245px;
+      top: 1rem;
+      right: -10rem;
+    }
+
+    .inventory-art[data-art="note-one"] {
+      top: 5rem;
+      right: 1rem;
+    }
+
+    .inventory-art[data-art="note-two"] {
+      top: 10rem;
+      right: -2.5rem;
+    }
+
+    .inventory-art[data-art="note-three"] {
+      top: 15rem;
+      right: 2rem;
+    }
+
+    .inventory-art[data-art="checklist"] {
+      top: 64rem;
+      left: -8rem;
+    }
+
+    .inventory-art[data-art="media-card"] {
+      top: 74rem;
+      left: -6rem;
+    }
+
+    .inventory-art[data-art="tablet"] {
+      top: 123rem;
+      right: -17rem;
+    }
+
+    .inventory-art[data-art="profile-strip"] {
+      top: 142rem;
+      right: -8rem;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .inventory-art,
+    .interface-inventory-page.is-art-ready .inventory-art {
+      --entry-y: 0px;
+      --parallax-y: 0px;
+      opacity: var(--art-opacity, 0.92);
+      transform: none;
+      transition: none;
+    }
+  }
+</style>
+
+<div class="interface-inventory-page" data-interface-inventory-page>
+  <div class="inventory-artboard" aria-hidden="true">
+    <img class="inventory-art" data-art="phone" data-parallax-speed="0.035" style="--delay: 0ms" src="/img/workshops/interface-inventory/phone-left.svg" alt="" width="254" height="371" decoding="async">
+    <img class="inventory-art" data-art="wireframes" data-parallax-speed="0.075" style="--delay: 90ms" src="/img/workshops/interface-inventory/paper-wireframes-upper-right.svg" alt="" width="345" height="272" decoding="async">
+    <img class="inventory-art" data-art="note-one" data-parallax-speed="0.11" style="--delay: 180ms" src="/img/workshops/interface-inventory/sticky-note-yellow-top.svg" alt="" width="122" height="116" decoding="async">
+    <img class="inventory-art" data-art="note-two" data-parallax-speed="0.085" style="--delay: 260ms" src="/img/workshops/interface-inventory/sticky-note-yellow-top-1.svg" alt="" width="118" height="111" decoding="async">
+    <img class="inventory-art" data-art="note-three" data-parallax-speed="0.125" style="--delay: 340ms" src="/img/workshops/interface-inventory/sticky-note-yellow-top-2.svg" alt="" width="124" height="119" decoding="async">
+    <img class="inventory-art" data-art="checklist" data-parallax-speed="0.045" style="--delay: 420ms" src="/img/workshops/interface-inventory/checklist-paper-bottom-left.svg" alt="" width="240" height="206" decoding="async">
+    <img class="inventory-art" data-art="media-card" data-parallax-speed="0.085" style="--delay: 500ms" src="/img/workshops/interface-inventory/blue-media-card-bottom-left.svg" alt="" width="265" height="141" decoding="async">
+    <img class="inventory-art" data-art="tablet" data-parallax-speed="0.04" style="--delay: 580ms" src="/img/workshops/interface-inventory/tablet-bottom-right.svg" alt="" width="477" height="364" decoding="async">
+    <img class="inventory-art" data-art="profile-strip" data-parallax-speed="0.095" style="--delay: 660ms" src="/img/workshops/interface-inventory/profile-strip-bottom.svg" alt="" width="393" height="215" decoding="async">
+  </div>
+
 <!-- Hero Section -->
 <section class="hero px-6 lg:px-10 pt-12 lg:pt-20 pb-12 lg:pb-16">
   <div class="mx-auto max-w-7xl">
@@ -83,8 +337,8 @@ offer:
       </div>
     </div>
 
-    <img class="relative left-1/2 mt-16 h-72 w-screen max-w-none -translate-x-1/2 object-cover md:h-96 lg:mt-24" src="/img/workshops/interface-inventory/interface-inventory-banner.webp"
-      alt="Interface inventory workshop banner" title="Interface inventory workshop" width="2784" height="520" decoding="async" fetchpriority="high">
+    <!-- <img class="relative left-1/2 mt-16 h-72 w-screen max-w-none -translate-x-1/2 object-cover md:h-96 lg:mt-24" src="/img/workshops/interface-inventory/interface-inventory.webp"
+      alt="Interface inventory workshop banner" title="Interface inventory workshop" width="2784" height="520" decoding="async" fetchpriority="high"> -->
   </div>
 </section>
 
@@ -375,3 +629,63 @@ offer:
     </p>
   </div>
 </section>
+</div>
+
+<script>
+  (function () {
+    const page = document.querySelector('[data-interface-inventory-page]');
+    if (!page) return;
+
+    const artwork = Array.from(page.querySelectorAll('[data-parallax-speed]'));
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    let frameRequested = false;
+    let introTimer;
+
+    function renderParallax() {
+      frameRequested = false;
+      if (reducedMotion.matches) {
+        artwork.forEach(function (item) {
+          item.style.setProperty('--parallax-y', '0px');
+        });
+        return;
+      }
+
+      const pageTop = page.getBoundingClientRect().top + window.scrollY;
+      const localScroll = Math.max(0, window.scrollY - pageTop);
+
+      artwork.forEach(function (item) {
+        const speed = Number(item.dataset.parallaxSpeed) || 0;
+        const distance = Math.min(localScroll * speed, 420);
+        item.style.setProperty('--parallax-y', distance.toFixed(2) + 'px');
+      });
+    }
+
+    function requestRender() {
+      if (frameRequested) return;
+      frameRequested = true;
+      window.requestAnimationFrame(renderParallax);
+    }
+
+    function startArtwork() {
+      renderParallax();
+      window.requestAnimationFrame(function () {
+        page.classList.add('is-art-ready');
+      });
+
+      window.clearTimeout(introTimer);
+      introTimer = window.setTimeout(function () {
+        page.classList.add('is-parallax-ready');
+      }, 1800);
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', startArtwork, { once: true });
+    } else {
+      startArtwork();
+    }
+
+    window.addEventListener('scroll', requestRender, { passive: true });
+    window.addEventListener('resize', requestRender, { passive: true });
+    reducedMotion.addEventListener('change', requestRender);
+  })();
+</script>
