@@ -35,6 +35,7 @@ offer:
     isolation: isolate;
     overflow: hidden;
     overflow: clip;
+    --inventory-video-overlap: 4.5rem;
   }
 
   .interface-inventory-page::before {
@@ -295,6 +296,49 @@ offer:
       width: min(100%, 26rem);
     }
   }
+
+  .interface-inventory-page > section.inventory-what {
+    z-index: 3;
+  }
+
+  .inventory-what-media {
+    margin-bottom: calc(var(--inventory-video-overlap) * -1);
+  }
+
+  .inventory-what-media video {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    max-height: 28rem;
+    object-fit: cover;
+    background: hsl(var(--secondary));
+    filter: drop-shadow(0 18px 22px rgb(24 48 72 / 0.12));
+  }
+
+  .inventory-what-next {
+    padding-top: calc(3rem + var(--inventory-video-overlap) + 1.5rem);
+  }
+
+  @media (min-width: 1024px) {
+    .interface-inventory-page {
+      --inventory-video-overlap: 7.5rem;
+    }
+
+    .inventory-what-media video {
+      max-height: 36rem;
+    }
+
+    .inventory-what-next {
+      padding-top: calc(4rem + var(--inventory-video-overlap) + 2rem);
+    }
+  }
+
+  @media (max-width: 639px) {
+    .interface-inventory-page {
+      --inventory-video-overlap: 3.5rem;
+    }
+  }
 </style>
 
 <div class="interface-inventory-page" data-interface-inventory-page>
@@ -369,8 +413,75 @@ offer:
   </div>
 </section>
 
+<!-- What is an Interface Inventory -->
+<section class="inventory-what px-6 lg:px-10 pt-12 lg:pt-16" id="what">
+  <div class="mx-auto max-w-7xl">
+    <div class="grid grid-cols-1 items-start gap-10 lg:grid-cols-2 lg:gap-16 xl:gap-24">
+      <div>
+        <span class="mb-4 block font-mono text-xs uppercase tracking-wide text-accent">Il metodo</span>
+        <h2 class="max-w-xl font-heading text-3xl font-bold leading-[1.1] tracking-tight sm:text-4xl lg:text-5xl">Cos’è un Interface Inventory</h2>
+        <p class="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground lg:text-lg">Un Interface Inventory è un catalogo visivo di tutti gli elementi di un’interfaccia: pulsanti, form, card, navigation, stati. Non è un esercizio di pulizia: è il modo più rapido per vedere il prodotto com’è davvero e decidere cosa standardizzare.</p>
+      </div>
+
+      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-x-10 sm:gap-y-12">
+        <div>
+          <div class="mb-2 flex items-center gap-2.5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-accent" aria-hidden="true">
+              <rect width="7" height="7" x="3" y="3" rx="1" />
+              <rect width="7" height="7" x="14" y="3" rx="1" />
+              <rect width="7" height="7" x="14" y="14" rx="1" />
+              <rect width="7" height="7" x="3" y="14" rx="1" />
+            </svg>
+            <h3 class="font-heading text-base font-medium">Vedere l’esistente</h3>
+          </div>
+          <p class="text-sm leading-relaxed text-muted-foreground">Cataloga schermate e componenti, senza interpretazioni né wishful thinking.</p>
+        </div>
+        <div>
+          <div class="mb-2 flex items-center gap-2.5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-accent" aria-hidden="true">
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.3-4.3" />
+            </svg>
+            <h3 class="font-heading text-base font-medium">Trovare le incoerenze</h3>
+          </div>
+          <p class="text-sm leading-relaxed text-muted-foreground">Duplicati, varianti e pattern divergenti diventano evidenti in un colpo d’occhio.</p>
+        </div>
+        <div>
+          <div class="mb-2 flex items-center gap-2.5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-accent" aria-hidden="true">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+              <path d="M16 3.128a4 4 0 0 1 0 7.744" />
+              <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+              <circle cx="9" cy="7" r="4" />
+            </svg>
+            <h3 class="font-heading text-base font-medium">Allineare il team</h3>
+          </div>
+          <p class="text-sm leading-relaxed text-muted-foreground">Designer, developer e PM lavorano sullo stesso quadro del prodotto reale.</p>
+        </div>
+        <div>
+          <div class="mb-2 flex items-center gap-2.5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-accent" aria-hidden="true">
+              <path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z" />
+              <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12" />
+              <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17" />
+            </svg>
+            <h3 class="font-heading text-base font-medium">Partire dal sistema</h3>
+          </div>
+          <p class="text-sm leading-relaxed text-muted-foreground">È il primo passo concreto verso un design system, non un documento teorico.</p>
+        </div>
+      </div>
+    </div>
+
+    <figure class="inventory-what-media mt-12 lg:mt-16">
+      <video loop muted playsinline preload="none" poster="/img/workshops/interface-inventory/interface-inventory.webp" width="1920" height="1080" aria-label="Anteprima delle classi precedenti del workshop Interface Inventory" data-autoplay-video>
+        <source data-src="/img/workshops/interface-inventory/workshop-classes.mp4" type="video/mp4">
+      </video>
+    </figure>
+  </div>
+</section>
+
 <!-- Program Section -->
-<section class="scroll-mt-32 lg:scroll-mt-24 px-6 lg:px-10 py-12 lg:py-16" id="details">
+<section class="inventory-what-next scroll-mt-32 lg:scroll-mt-24 px-6 lg:px-10 pb-12 lg:pb-16" id="details">
   <div class="mx-auto max-w-5xl">
     <h2 class="font-heading text-2xl sm:text-3xl font-bold leading-tight mb-8">Il programma completo</h2>
     <div class="flex flex-col gap-0.5 mb-12">

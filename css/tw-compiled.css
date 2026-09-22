@@ -983,6 +983,9 @@
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
+  .mt-12 {
+    margin-top: calc(var(--spacing) * 12);
+  }
   .mt-16 {
     margin-top: calc(var(--spacing) * 16);
   }
@@ -1228,6 +1231,9 @@
   }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
+  }
+  .gap-2\.5 {
+    gap: calc(var(--spacing) * 2.5);
   }
   .gap-3 {
     gap: calc(var(--spacing) * 3);
@@ -1544,6 +1550,10 @@
   .leading-0 {
     --tw-leading: 0;
     line-height: 0;
+  }
+  .leading-\[1\.1\] {
+    --tw-leading: 1.1;
+    line-height: 1.1;
   }
   .leading-\[1\.05\] {
     --tw-leading: 1.05;
@@ -1967,6 +1977,16 @@
       gap: calc(var(--spacing) * 6);
     }
   }
+  .sm\:gap-x-10 {
+    @media (width >= 40rem) {
+      column-gap: calc(var(--spacing) * 10);
+    }
+  }
+  .sm\:gap-y-12 {
+    @media (width >= 40rem) {
+      row-gap: calc(var(--spacing) * 12);
+    }
+  }
   .sm\:p-8 {
     @media (width >= 40rem) {
       padding: calc(var(--spacing) * 8);
@@ -2015,11 +2035,6 @@
       grid-column: span 3 / span 3;
     }
   }
-  .md\:col-span-4 {
-    @media (width >= 48rem) {
-      grid-column: span 4 / span 4;
-    }
-  }
   .md\:col-span-6 {
     @media (width >= 48rem) {
       grid-column: span 6 / span 6;
@@ -2050,11 +2065,6 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
-  .md\:grid-cols-4 {
-    @media (width >= 48rem) {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-  }
   .md\:grid-cols-6 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -2078,11 +2088,6 @@
   .lg\:col-span-2 {
     @media (width >= 64rem) {
       grid-column: span 2 / span 2;
-    }
-  }
-  .lg\:col-span-3 {
-    @media (width >= 64rem) {
-      grid-column: span 3 / span 3;
     }
   }
   .lg\:col-span-4 {
@@ -2118,6 +2123,11 @@
   .lg\:mt-6 {
     @media (width >= 64rem) {
       margin-top: calc(var(--spacing) * 6);
+    }
+  }
+  .lg\:mt-16 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 16);
     }
   }
   .lg\:mt-20 {
@@ -2168,6 +2178,11 @@
   .lg\:scroll-mt-24 {
     @media (width >= 64rem) {
       scroll-margin-top: calc(var(--spacing) * 24);
+    }
+  }
+  .lg\:grid-cols-2 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
   .lg\:grid-cols-3 {
@@ -2400,6 +2415,11 @@
   .xl\:gap-16 {
     @media (width >= 80rem) {
       gap: calc(var(--spacing) * 16);
+    }
+  }
+  .xl\:gap-24 {
+    @media (width >= 80rem) {
+      gap: calc(var(--spacing) * 24);
     }
   }
   .xl\:pr-16 {
