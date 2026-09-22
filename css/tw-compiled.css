@@ -2380,6 +2380,12 @@
       font-weight: var(--font-weight-medium);
     }
   }
+  .prose-li\:text-base {
+    & :is(:where(li):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+      font-size: var(--text-base);
+      line-height: var(--tw-leading, var(--text-base--line-height));
+    }
+  }
   .prose-li\:leading-relaxed {
     & :is(:where(li):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       --tw-leading: var(--leading-relaxed);
