@@ -539,7 +539,7 @@ offer:
       <h1 class="font-heading text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">Metti ordine nelle tue interfacce partendo da ciò che esiste davvero</h1>
       <p class="mt-8 max-w-2xl text-lg leading-relaxed text-muted-foreground lg:text-xl">In questo workshop impari a raccogliere, confrontare e organizzare tutti gli elementi visivi e funzionali che compongono un sito web o un'applicazione, definendo priorità concrete.</p>
       <p class="mt-5 flex items-center gap-3 text-sm text-muted-foreground">
-        <img class="h-24 w-24 md:h-28 md:w-28 shrink-0 object-cover grayscale rounded-full" src="/img/francesco-improta-profile.png" alt="Francesco Improta" width="300" height="300" decoding="async">
+        <img class="h-24 w-24 md:h-28 md:w-28 shrink-0 object-cover grayscale rounded-4xl" src="/img/francesco-improta-profile.png" alt="Francesco Improta" width="300" height="300" decoding="async">
         <span>Con <strong class="font-medium text-foreground">Francesco Improta</strong>, designer esperto in Design Systems e Product Design.</span>
       </p>
 
@@ -556,37 +556,37 @@ offer:
   <div class="mx-auto max-w-7xl">
     <div class="mb-10 max-w-2xl">
       <span class="mb-4 block font-mono text-xs uppercase tracking-wide text-accent">L’esperienza</span>
-      <h2 class="font-heading text-3xl font-bold leading-[1.1] tracking-tight sm:text-4xl">Cosa aspettarti da questo workshop</h2>
+      <h2 class="font-heading text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl">Cosa aspettarti da questo workshop</h2>
     </div>
     <div class="grid grid-cols-1 gap-x-8 gap-y-8 md:grid-cols-2 lg:grid-cols-3">
       <article class="border-t border-border pt-5">
         <span class="font-mono text-xs text-accent">01</span>
-        <h3 class="mt-3 font-heading text-lg font-medium">Sessione live interattiva</h3>
+        <h3 class="mt-1 font-heading text-lg font-medium">Sessione live interattiva</h3>
         <p class="mt-2 text-sm leading-relaxed text-muted-foreground">Quattro ore insieme da remoto, con spazio per domande, confronto e feedback diretto.</p>
       </article>
       <article class="border-t border-border pt-5">
         <span class="font-mono text-xs text-accent">02</span>
-        <h3 class="mt-3 font-heading text-lg font-medium">Approccio hands-on</h3>
+        <h3 class="mt-1 font-heading text-lg font-medium">Approccio hands-on</h3>
         <p class="mt-2 text-sm leading-relaxed text-muted-foreground">Analizziamo insieme un prodotto reale, non un caso costruito solo per la lezione.</p>
       </article>
       <article class="border-t border-border pt-5">
         <span class="font-mono text-xs text-accent">03</span>
-        <h3 class="mt-3 font-heading text-lg font-medium">Insights pratici</h3>
+        <h3 class="mt-1 font-heading text-lg font-medium">Insights pratici</h3>
         <p class="mt-2 text-sm leading-relaxed text-muted-foreground">Scopri come applicare questo metodo per ottenere risultati concreti.</p>
       </article>
       <article class="border-t border-border pt-5">
         <span class="font-mono text-xs text-accent">04</span>
-        <h3 class="mt-3 font-heading text-lg font-medium">Gruppo ristretto</h3>
+        <h3 class="mt-1 font-heading text-lg font-medium">Gruppo ristretto</h3>
         <p class="mt-2 text-sm leading-relaxed text-muted-foreground">Massimo sei partecipanti per rendere il confronto utile e partecipato.</p>
       </article>
       <article class="border-t border-border pt-5">
         <span class="font-mono text-xs text-accent">05</span>
-        <h3 class="mt-3 font-heading text-lg font-medium">Accesso ai materiali</h3>
+        <h3 class="mt-1 font-heading text-lg font-medium">Accesso ai materiali</h3>
         <p class="mt-2 text-sm leading-relaxed text-muted-foreground">Ricevi registrazione, materiale didattico e template per continuare in autonomia.</p>
       </article>
       <article class="border-t border-border pt-5">
         <span class="font-mono text-xs text-accent">06</span>
-        <h3 class="mt-3 font-heading text-lg font-medium">Certificato di partecipazione</h3>
+        <h3 class="mt-1 font-heading text-lg font-medium">Certificato di partecipazione</h3>
         <p class="mt-2 text-sm leading-relaxed text-muted-foreground">Ricevi un certificato digitale di partecipazione da poter inserire nel tuo profilo LinkedIn.</p>
       </article>
     </div>
@@ -597,8 +597,8 @@ offer:
 <section class="scroll-mt-32 px-6 py-12 lg:scroll-mt-24 lg:px-10 lg:py-16" id="booking">
   <div class="mx-auto max-w-7xl">
     <div class="mb-8 text-center">
-      <span class="mb-3 block font-mono text-xs uppercase tracking-wide text-accent">Prenotazione</span>
-      <h2 class="font-heading text-3xl font-bold leading-tight sm:text-4xl">Prenota il tuo posto</h2>
+      <span class="mb-3 block font-mono text-xs uppercase tracking-wide text-accent">Partecipa</span>
+      <h2 class="font-heading text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl">Riserva il tuo posto</h2>
       <p class="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground">L’Early Bird è valido per tutte le sessioni. Sceglierai la data che preferisci nel checkout Stripe.</p>
     </div>
     {% include payment-link.html note=true wide=true %}
@@ -611,7 +611,7 @@ offer:
     <div class="grid grid-cols-1 items-start gap-10 lg:grid-cols-2 lg:gap-16 xl:gap-24">
       <div>
         <span class="mb-4 block font-mono text-xs uppercase tracking-wide text-accent">Il metodo</span>
-        <h2 class="max-w-xl font-heading text-3xl font-bold leading-[1.1] tracking-tight sm:text-4xl lg:text-5xl">Perché partire da un Interface Inventory</h2>
+        <h2 class="max-w-xl font-heading text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl">Perché partire da un Interface Inventory</h2>
         <p class="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground lg:text-lg">Quando un prodotto cresce, componenti duplicati, varianti e decisioni non documentate rallentano designer e developer. Un Interface Inventory fotografa ciò che esiste davvero e crea una base condivisa per decidere cosa mantenere, consolidare o riprogettare.</p>
       </div>
 
@@ -677,12 +677,12 @@ offer:
   <div class="mx-auto max-w-5xl">
     <div class="mb-10 max-w-2xl">
       <span class="mb-3 block font-mono text-xs uppercase tracking-wide text-accent">Destinatari</span>
-      <h2 class="font-heading text-3xl font-bold leading-tight sm:text-4xl">Chi può partecipare?</h2>
+      <h2 class="font-heading text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl">Chi può partecipare?</h2>
     </div>
     <div class="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-16">
       <div>
         <h3 class="font-heading text-xl font-medium">Hai questo ruolo</h3>
-        <ul class="mt-5 flex list-none flex-col gap-4 p-0 text-base leading-relaxed text-muted-foreground">
+        <ul class="mt-5 flex list-none flex-col gap-4 p-0 text-base leading-relaxed">
           <li class="flex gap-3"><span class="text-accent" aria-hidden="true">¬</span><span>Sei <strong>product, UX/UI o design system designer</strong> e vuoi partire dallo stato reale dell’interfaccia.</span></li>
           <li class="flex gap-3"><span class="text-accent" aria-hidden="true">¬</span><span>Ti occupi di  <strong>content e information architecture</strong> e vuoi capire come è strutturato il tuo prodotto.</span></li>
           <li class="flex gap-3"><span class="text-accent" aria-hidden="true">¬</span><span>Sei <strong>developer o design engineer</strong> e incontri componenti duplicati o poco coerenti.</span></li>
@@ -691,7 +691,7 @@ offer:
       </div>
       <div>
         <h3 class="font-heading text-xl font-medium">Hai questi problemi</h3>
-        <ul class="mt-5 flex list-none flex-col gap-4 p-0 text-base leading-relaxed text-muted-foreground">
+        <ul class="mt-5 flex list-none flex-col gap-4 p-0 text-base leading-relaxed">
           <li class="flex gap-3"><span class="text-accent" aria-hidden="true">¬</span><span>Design e codice raccontano <strong>versioni diverse</strong> dello stesso componente.</span></li>
           <li class="flex gap-3"><span class="text-accent" aria-hidden="true">¬</span><span><strong>Il team non sa</strong> quali varianti consolidare e quali mantenere.</span></li>
           <li class="flex gap-3"><span class="text-accent" aria-hidden="true">¬</span><span>Vuoi iniziare con un <strong>metodo pratico</strong>: non servono esperienza avanzata o strumenti specifici.</span></li>
@@ -705,15 +705,14 @@ offer:
 <section class="scroll-mt-32 bg-card-foreground px-6 py-12 lg:scroll-mt-24 lg:px-10 lg:py-20" id="learn">
   <div class="mx-auto max-w-5xl">
     <div class="mb-12 max-w-2xl lg:mb-16">
-      <span class="mb-3 block font-mono text-xs uppercase tracking-wide text-accent">Cosa imparerai</span>
-      <h2 class="font-heading text-3xl font-bold leading-tight sm:text-4xl">Alla fine del workshop saprai...</h2>
+      <span class="mb-3 block font-mono text-xs uppercase tracking-wide text-accent">Competenze</span>
+      <h2 class="font-heading text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl">Cosa impari in questo workshop</h2>
     </div>
     <div class="flex flex-col">
       <article class="benefit-band flex flex-col items-center gap-8 md:flex-row lg:gap-16">
         <div class="flex w-full flex-1 flex-row gap-4">
-          <span class="font-heading text-xl font-semibold text-accent" aria-hidden="true">¬</span>
           <div>
-            <h3 class="font-heading text-lg font-medium mb-2">Definire lo scope dell’analisi</h3>
+            <h3 class="font-heading text-xl font-medium mb-2">Definire lo scope dell’analisi</h3>
             <p class="text-base text-muted-foreground leading-relaxed">Scegliere pagine, sezioni e categorie di elementi da osservare senza disperdere tempo ed energie.</p>
           </div>
         </div>
@@ -723,9 +722,8 @@ offer:
       </article>
       <article class="benefit-band flex flex-col items-center gap-8 md:flex-row-reverse lg:gap-16">
         <div class="flex w-full flex-1 flex-row gap-4">
-          <span class="font-heading text-xl font-semibold text-accent" aria-hidden="true">¬</span>
           <div>
-            <h3 class="font-heading text-lg font-medium mb-2">Costruire un inventario consultabile</h3>
+            <h3 class="font-heading text-xl font-medium mb-2">Costruire un inventario consultabile</h3>
             <p class="text-base text-muted-foreground leading-relaxed">Raccogliere elementi e varianti in categorie comprensibili, pronte per essere confrontate con il team.</p>
           </div>
         </div>
@@ -735,9 +733,8 @@ offer:
       </article>
       <article class="benefit-band flex flex-col items-center gap-8 md:flex-row lg:gap-16">
         <div class="flex w-full flex-1 flex-row gap-4">
-          <span class="font-heading text-xl font-semibold text-accent" aria-hidden="true">¬</span>
           <div>
-            <h3 class="font-heading text-lg font-medium mb-2">Individuare duplicati e incoerenze</h3>
+            <h3 class="font-heading text-xl font-medium mb-2">Individuare duplicati e incoerenze</h3>
             <p class="text-base text-muted-foreground leading-relaxed">Riconoscere pattern divergenti e opportunità di standardizzazione in modo sistematico.</p>
           </div>
         </div>
@@ -747,9 +744,8 @@ offer:
       </article>
       <article class="benefit-band flex flex-col items-center gap-8 md:flex-row-reverse lg:gap-16">
         <div class="flex w-full flex-1 flex-row gap-4">
-          <span class="font-heading text-xl font-semibold text-accent" aria-hidden="true">¬</span>
           <div>
-            <h3 class="font-heading text-lg font-medium mb-2">Definire priorità condivise</h3>
+            <h3 class="font-heading text-xl font-medium mb-2">Definire priorità condivise</h3>
             <p class="text-base text-muted-foreground leading-relaxed">Trasformare l’inventario in decisioni documentate e in una base concreta per il Design System.</p>
           </div>
         </div>
@@ -766,7 +762,7 @@ offer:
   <div class="mx-auto max-w-7xl">
     <div class="mb-10 max-w-3xl lg:mb-14">
       <span class="mb-4 block font-mono text-xs uppercase tracking-wide text-accent">Il processo</span>
-      <h2 class="font-heading text-3xl font-bold leading-[1.1] tracking-tight sm:text-4xl lg:text-5xl">Come si svolge il workshop</h2>
+      <h2 class="font-heading text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl">Cosa farai nel workshop</h2>
       <p class="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground lg:text-lg">Seguiamo un percorso in tre fasi: definiamo cosa osservare, raccogliamo le varianti e trasformiamo ciò che emerge in decisioni condivise.</p>
     </div>
 
@@ -851,7 +847,7 @@ offer:
     <div class="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-16">
       <div>
         <span class="mb-3 block font-mono text-xs uppercase tracking-wide text-accent">Time &amp; Schedule</span>
-        <h2 class="font-heading text-3xl font-bold leading-tight sm:text-4xl">Quattro ore di lavoro insieme</h2>
+        <h2 class="font-heading text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl">Quattro ore di lavoro insieme</h2>
         <p class="mt-5 text-base leading-relaxed text-muted-foreground lg:text-lg">Il workshop si svolge online su Google Meet, dalle <strong class="font-medium text-foreground">{{ page.offer.session_time }}</strong>. Alterniamo spiegazioni essenziali, analisi guidata, esercitazione e confronto finale.</p>
         <dl class="mt-8 grid grid-cols-1 gap-5 border-t border-border pt-6 sm:grid-cols-2">
           <div>
@@ -892,8 +888,8 @@ offer:
 <!-- Program Section -->
 <section class="scroll-mt-32 lg:scroll-mt-24 px-6 lg:px-10 py-12 lg:py-16" id="details">
   <div class="mx-auto max-w-5xl">
-    <h2 class="font-heading text-2xl sm:text-3xl font-bold leading-tight mb-8">Il programma completo</h2>
-    <div class="flex flex-col gap-0.5 mb-12">
+    <h2 class="font-heading text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl mb-8">Il programma completo</h2>
+    <div class="flex flex-col gap-0.5 mb-6">
       <details class="group border-l-2 border-border open:border-l-accent bg-secondary/40 hover:bg-secondary/60 transition-colors">
         <summary class="flex items-center justify-between gap-4 p-6 list-none cursor-pointer">
           <div>
@@ -907,14 +903,12 @@ offer:
           </svg>
         </summary>
         <div class="px-6 pb-6">
-          <p class="text-base text-muted-foreground leading-relaxed">Scopri come un Interface Inventory può trasformare il tuo workflow e migliorare la qualità del tuo design.
-          </p>
           <ul class="flex flex-col gap-2 mt-4 m-0 p-0 list-none">
-            <li class="meta-tag">Argomenti</li>
-            <li class="text-sm text-muted-foreground"><span class="text-accent" aria-hidden="true">¬</span> <strong class="font-medium text-foreground">Cos'è</strong> un Interface Inventory e perché è fondamentale</li>
-            <li class="text-sm text-muted-foreground"><span class="text-accent" aria-hidden="true">¬</span> Come un Interface Inventory può <strong class="font-medium text-foreground">migliorare la collaborazione</strong> tra designer e developer
+            <li class="text-base mb-2">Argomenti:</li>
+            <li class="text-base"><span class="text-accent" aria-hidden="true">¬</span> <strong class="font-medium text-foreground">Le basi teoriche</strong>: un audit del design</li>
+            <li class="text-base"><span class="text-accent" aria-hidden="true">¬</span> Come <strong class="font-medium text-foreground">collaborare con gli stakeholder</strong> alla creazione dell'inventory.
             </li>
-            <li class="text-sm text-muted-foreground"><span class="text-accent" aria-hidden="true">¬</span> Come <strong class="font-medium text-foreground">integrare</strong> l'Interface Inventory nel tuo <strong class="font-medium text-foreground">workflow quotidiano</strong></li>
+            <li class="text-base"><span class="text-accent" aria-hidden="true">¬</span> Come <strong class="font-medium text-foreground">integrare</strong> attività di audit nel <strong class="font-medium text-foreground">processo progettuale</strong>.</li>
           </ul>
         </div>
       </details>
@@ -931,12 +925,11 @@ offer:
           </svg>
         </summary>
         <div class="px-6 pb-6">
-          <p class="text-base text-muted-foreground leading-relaxed">Mettiamo in pratica subito le teorie apprese analizzando un prodotto digitale reale.</p>
           <ul class="flex flex-col gap-2 mt-4 m-0 p-0 list-none">
-            <li class="meta-tag">Argomenti</li>
-            <li class="text-sm text-muted-foreground"><span class="text-accent" aria-hidden="true">¬</span> Analizziamo l'interfaccia di un prodotto digitale conosciuto</li>
-            <li class="text-sm text-muted-foreground"><span class="text-accent" aria-hidden="true">¬</span> Raccogliamo e organizziamo gli elementi: pulsanti, form, menu, card e ogni componente presente</li>
-            <li class="text-sm text-muted-foreground"><span class="text-accent" aria-hidden="true">¬</span> <strong class="font-medium text-foreground">Annotiamo incongruenze</strong> o similitudini</li>
+            <li class="text-base mb-2">Argomenti:</li>
+            <li class="text-base"><span class="text-accent" aria-hidden="true">¬</span> Analisi delle interfacce di un prodotto digitale reale</li>
+            <li class="text-base"><span class="text-accent" aria-hidden="true">¬</span> Mappatura degli elementi raccolti e organizzazione in categorie</li>
+            <li class="text-sm"><span class="text-accent" aria-hidden="true">¬</span> Come annotare le <strong class="font-medium text-foreground">incongruenze</strong> e similitudini</li>
           </ul>
         </div>
       </details>
@@ -954,13 +947,11 @@ offer:
           </svg>
         </summary>
         <div class="px-6 pb-6">
-          <p class="text-base text-muted-foreground leading-relaxed">Impara a strutturare e categorizzare gli elementi raccolti per creare un database di componenti
-            riutilizzabili.</p>
           <ul class="flex flex-col gap-2 mt-4 m-0 p-0 list-none">
             <li class="meta-tag">Argomenti</li>
-            <li class="text-sm text-muted-foreground"><span class="text-accent" aria-hidden="true">¬</span> Come categorizzare gli elementi raccolti</li>
-            <li class="text-sm text-muted-foreground"><span class="text-accent" aria-hidden="true">¬</span> Creazione di un database di componenti riutilizzabili</li>
-            <li class="text-sm text-muted-foreground"><span class="text-accent" aria-hidden="true">¬</span> Standardizzazione e naming convention per una facile consultazione</li>
+            <li class="text-sm text-base"><span class="text-accent" aria-hidden="true">¬</span> Creare un database di componenti</li>
+            <li class="text-sm text-base"><span class="text-accent" aria-hidden="true">¬</span> Dare un nome e una descrizione ai componenti</li>
+            <li class="text-sm text-base"><span class="text-accent" aria-hidden="true">¬</span> Decidere il destino dei componenti: riuso, deprecato, sostituito o migliorato</li>
           </ul>
         </div>
       </details>
@@ -969,7 +960,7 @@ offer:
         <summary class="flex items-center justify-between gap-4 p-6 list-none cursor-pointer">
           <div>
             <h4 class="meta-tag mb-2"><span class="text-accent">04</span> Evoluzione</h4>
-            <h3 class="font-heading text-lg font-medium">Verso un Design System</h3>
+            <h3 class="font-heading text-xl font-medium">Verso un Design System</h3>
           </div>
           <svg class="shrink-0 text-accent" width="24" height="24" viewBox="0 0 24 24" fill="none"
             xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -978,13 +969,11 @@ offer:
           </svg>
         </summary>
         <div class="px-6 pb-6">
-          <p class="text-base text-muted-foreground leading-relaxed">Scopri come l'Interface Inventory è il primo passo verso un Design System completo e come mantenerlo
-            aggiornato.</p>
           <ul class="flex flex-col gap-2 mt-4 m-0 p-0 list-none">
             <li class="meta-tag">Argomenti</li>
-            <li class="text-sm text-muted-foreground"><span class="text-accent" aria-hidden="true">¬</span> Come l'Interface Inventory è il primo passo verso un Design System completo</li>
-            <li class="text-sm text-muted-foreground"><span class="text-accent" aria-hidden="true">¬</span> Strategie per mantenere aggiornato l'Interface Inventory</li>
-            <li class="text-sm text-muted-foreground"><span class="text-accent" aria-hidden="true">¬</span> Risorse e strumenti per continuare a migliorare il tuo Design System</li>
+            <li class="text-sm text-base"><span class="text-accent" aria-hidden="true">¬</span> Pianificare sessioni di audit periodici</li>
+            <li class="text-sm text-base"><span class="text-accent" aria-hidden="true">¬</span> I nuovi fondamenti visivi del Design System</li>
+            <li class="text-sm text-base"><span class="text-accent" aria-hidden="true">¬</span> Da un semplice inventory a un backlog di attività</li>
           </ul>
         </div>
       </details>
@@ -992,22 +981,22 @@ offer:
 
     <div class="mb-12">
       <div class="hairline mb-8"></div>
-      <h4 class="font-heading text-xl font-semibold mb-6">Incluso nel workshop:</h4>
+      <h4 class="font-heading text-xl font-semibold mb-6">Materiali inclusi</h4>
       <ul class="grid grid-cols-1 md:grid-cols-2 gap-3 m-0 p-0 list-none">
         <li class="flex items-center text-base font-medium">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-library-big preview-icon text-accent"><rect width="8" height="18" x="3" y="3" rx="1"/><path d="M7 3v18"/><path d="M20.4 18.9c.2.5-.1 1.1-.6 1.3l-1.9.7c-.5.2-1.1-.1-1.3-.6L11.1 5.1c-.2-.5.1-1.1.6-1.3l1.9-.7c.5-.2 1.1.1 1.3.6Z"/></svg>&nbsp;Materiale didattico completo
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-library-big preview-icon text-accent mr-2"><rect width="8" height="18" x="3" y="3" rx="1"/><path d="M7 3v18"/><path d="M20.4 18.9c.2.5-.1 1.1-.6 1.3l-1.9.7c-.5.2-1.1-.1-1.3-.6L11.1 5.1c-.2-.5.1-1.1.6-1.3l1.9-.7c.5-.2 1.1.1 1.3.6Z"/></svg>&nbsp;Materiale didattico completo
         </li>
         <li class="flex items-center text-base font-medium">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-video preview-icon text-accent"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg> &nbsp;Registrazione del workshop
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-video preview-icon text-accent mr-2"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg> &nbsp;Registrazione del workshop
         </li>
         <li class="flex items-center text-base font-medium">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-dashed-kanban preview-icon text-accent"><path d="M8 7v7"/><path d="M12 7v4"/><path d="M16 7v9"/><path d="M5 3a2 2 0 0 0-2 2"/><path d="M9 3h1"/><path d="M14 3h1"/><path d="M19 3a2 2 0 0 1 2 2"/><path d="M21 9v1"/><path d="M21 14v1"/><path d="M21 19a2 2 0 0 1-2 2"/><path d="M14 21h1"/><path d="M9 21h1"/><path d="M5 21a2 2 0 0 1-2-2"/><path d="M3 14v1"/><path d="M3 9v1"/></svg> &nbsp;Template per creare il tuo Interface Inventory
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-dashed-kanban preview-icon text-accent mr-2"><path d="M8 7v7"/><path d="M12 7v4"/><path d="M16 7v9"/><path d="M5 3a2 2 0 0 0-2 2"/><path d="M9 3h1"/><path d="M14 3h1"/><path d="M19 3a2 2 0 0 1 2 2"/><path d="M21 9v1"/><path d="M21 14v1"/><path d="M21 19a2 2 0 0 1-2 2"/><path d="M14 21h1"/><path d="M9 21h1"/><path d="M5 21a2 2 0 0 1-2-2"/><path d="M3 14v1"/><path d="M3 9v1"/></svg> &nbsp;Template per creare il tuo Interface Inventory
         </li>
         <li class="flex items-center text-base font-medium">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-database preview-icon text-accent"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg> &nbsp;Template database componenti
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-database preview-icon text-accent mr-2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg> &nbsp;Template database componenti
         </li>
         <li class="flex items-center text-base font-medium">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award preview-icon text-accent"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg> &nbsp;Certificato di partecipazione
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award preview-icon text-accent mr-2"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg> &nbsp;Certificato di partecipazione
         </li>
       </ul>
     </div>
@@ -1019,15 +1008,15 @@ offer:
   <div class="mx-auto max-w-5xl">
     <div class="text-center">
       <span class="block mb-3 font-mono text-xs uppercase tracking-wide text-accent">Chi sono</span>
-      <h2 class="font-heading text-2xl sm:text-3xl font-bold leading-tight mb-8">Porto nel workshop oltre 20 anni di esperienza sui prodotti digitali</h2>
-      <img class="mx-auto mb-8 w-32 h-32 object-cover grayscale" src="/img/francesco-improta-profile.png" alt="Francesco Improta - Design Token Expert and Course Instructor" width="400" height="400" loading="lazy" decoding="async">
+      <h2 class="font-heading text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl mb-8">Porto nel workshop oltre 20 anni di esperienza sui prodotti digitali</h2>
+      <img class="mx-auto mb-8 w-32 h-32 object-cover grayscale rounded-4xl" src="/img/francesco-improta-profile.png" alt="Francesco Improta - Design Token Expert and Course Instructor" width="400" height="400" loading="lazy" decoding="async">
     </div>
     <div class="flex flex-col gap-4 max-w-3xl">
       <p class="text-lg font-medium leading-relaxed">👋 Ciao, sono <strong class="font-semibold">Francesco Improta</strong>, designer con oltre 20 anni di esperienza nel design di prodotti digitali, specializzato in Design System.</p>
       <p class="text-base text-muted-foreground leading-relaxed">Ho creato questo workshop per <strong class="font-medium text-foreground">aiutare designer e developer a organizzare le interfacce in modo efficace</strong>, riducendo i tempi di sviluppo e migliorando la qualità del prodotto.</p>
       <p class="text-base text-muted-foreground leading-relaxed">Durante il workshop, <strong class="font-medium text-foreground">condividerò le mie esperienze pratiche e gli strumenti</strong> che ho utilizzato in anni di lavoro su progetti complessi.</p>
       <p>
-        <a href="/about" class="text-sm underline underline-offset-2 hover:opacity-70 transition-opacity">Qualcosa su di me →</a>
+        <a href="/about" class="text-sm underline text-muted-foreground underline-offset-2 hover:opacity-70 transition-opacity">Qualcosa su di me →</a>
       </p>
     </div>
   </div>
@@ -1036,8 +1025,8 @@ offer:
 <!-- Testimonials Section -->
 <section class="scroll-mt-32 lg:scroll-mt-24 bg-secondary/40 px-6 lg:px-10 py-12 lg:py-16" id="testimonials">
   <div class="mx-auto max-w-5xl text-center">
-    <span class="block mb-3 font-mono text-xs uppercase tracking-wide text-accent">Testimonials</span>
-    <h2 class="font-heading text-2xl sm:text-3xl font-bold leading-tight mb-12">Cosa dicono i partecipanti</h2>
+    <span class="block mb-3 font-mono text-xs uppercase tracking-wide text-accent">Testimonianze</span>
+    <h2 class="font-heading text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl mb-12">Cosa dicono i partecipanti</h2>
     <script src="https://widget.senja.io/widget/55431434-5c93-481f-a84f-4a9695afe5d1/platform.js" type="text/javascript"
       async></script>
     <div class="senja-embed" data-id="55431434-5c93-481f-a84f-4a9695afe5d1" data-mode="shadow" data-lazyload="false"
@@ -1049,7 +1038,7 @@ offer:
 <section class="scroll-mt-32 lg:scroll-mt-24 px-6 lg:px-10 py-12 lg:py-16" id="faq">
   <div class="mx-auto max-w-5xl">
     <span class="block mb-3 font-mono text-xs uppercase tracking-wide text-accent">Domande Frequenti</span>
-    <h2 class="font-heading text-2xl sm:text-3xl font-bold leading-tight mb-3">Domande frequenti</h2>
+    <h2 class="font-heading text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl mb-3">Domande frequenti</h2>
     <p class="text-lg lg:text-xl text-muted-foreground leading-relaxed">Tutto quello che serve sapere prima di prenotare il workshop.</p>
     <div class="flex flex-col mt-8">
       <details class="group py-6 hairline">
@@ -1113,8 +1102,8 @@ offer:
 <!-- Final CTA Section -->
 <section class="bg-card-foreground px-6 lg:px-10 py-16 lg:py-20">
   <div class="mx-auto max-w-7xl text-center">
-    <h2 class="font-heading text-3xl sm:text-4xl font-bold leading-tight mb-3">Parti da ciò che esiste e trasforma il caos in decisioni condivise</h2>
-    <p class="mx-auto max-w-2xl text-lg lg:text-xl text-muted-foreground leading-relaxed mb-8">Prenota il workshop e scegli nel checkout Stripe la sessione più adatta a te.</p>
+    <h2 class="font-heading text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl mb-3">Parti da ciò che esiste e trasforma il caos in decisioni condivise</h2>
+    <p class="mx-auto max-w-2xl text-lg lg:text-xl text-muted-foreground leading-relaxed mb-8">Riserva il tuo posto in una delle date disponibilis.</p>
     <div class="mb-8">
       {% include payment-link.html bg="bg-background" note=true wide=true %}
     </div>
