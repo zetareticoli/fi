@@ -3,10 +3,19 @@
   const stored = localStorage.getItem('theme');
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   const isDark = stored ? stored === 'dark' : prefersDark;
-  document.documentElement.classList.toggle('dark', isDark);
+  function applyTheme(dark) {
+    document.documentElement.classList.toggle('dark', dark);
+    document.documentElement.classList.toggle('light', !dark);
+    document.querySelectorAll('img[data-theme-light-src][data-theme-dark-src]').forEach(function(image) {
+      image.src = dark ? image.dataset.themeDarkSrc : image.dataset.themeLightSrc;
+    });
+  }
+
+  applyTheme(isDark);
 
   function toggle() {
-    const dark = document.documentElement.classList.toggle('dark');
+    const dark = !document.documentElement.classList.contains('dark');
+    applyTheme(dark);
     localStorage.setItem('theme', dark ? 'dark' : 'light');
   }
 

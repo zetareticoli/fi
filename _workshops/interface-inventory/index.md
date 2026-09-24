@@ -1,9 +1,15 @@
 ---
 layout: workshop
-title: "Interface Inventory Workshop"
+title: "Interface Inventory Workshop con Francesco Improta"
+seo_title: "Interface Inventory Workshop con Francesco Improta"
 summary: "Impara a creare un inventario di elementi e componenti dell'interfaccia di un prodotto digitale. Passa dal caos all'ordine con un metodo pratico e facile da implementare."
+description: "Impara a creare un inventario di elementi e componenti dell'interfaccia di un prodotto digitale. Passa dal caos all'ordine con un metodo pratico e facile da implementare."
 lang: it
-og-image: workshops/interface-inventory/interface-inventory-og.png
+og-image: workshops/interface-inventory/interface-inventory-og.webp
+image_alt: "Metti ordine nelle tue interfacce. Impara a creare un interface inventory — workshop online di Francesco Improta"
+image_width: 1200
+image_height: 630
+image_type: image/webp
 permalink: /workshops/interface-inventory/
 workshop_nav:
   - label: "Risultati"
@@ -21,13 +27,13 @@ offer:
   cta: "Riserva il tuo posto"
   plausible_event: "Buy+Workshop"
   sessions:
-    - "martedì, 21 ottobre 2026"
-    - "martedì, 4 novembre 2026"
+    - "mercoledì, 21 ottobre 2026"
+    - "mercoledì, 4 novembre 2026"
     - "mercoledì, 2 dicembre 2026"
   session_time: "09:30–13:30"
   deadline: "2026-10-02T23:59:59"
   note: 'Prezzo Early Bird valido fino al <strong class="font-medium">02 ottobre 2026</strong>.'
-  checkout_note: "Sceglierai la data durante il checkout sicuro con Stripe."
+  checkout_note: "Puoi scegliere la data durante il checkout con Stripe."
 ---
 
 <style>
@@ -151,15 +157,15 @@ offer:
   .inventory-art[data-art="tablet"] {
     --art-width: clamp(330px, 38vw, 540px);
     --art-opacity: 0.9;
-    top: 80rem;
-    left: clamp(-5rem, -5vw, -10rem);
+    top: 90rem;
+    left: clamp(-8rem, -5vw, -10rem);
   }
 
   .inventory-art[data-art="profile-strip"] {
     --art-width: clamp(250px, 28vw, 400px);
     --layer: 2;
-    top: 119rem;
-    right: clamp(-1rem, 5vw, 6rem);
+    top: 132rem;
+    right: clamp(-1rem, 5vw, -3rem);
   }
 
   @media (max-width: 1023px) {
@@ -194,6 +200,10 @@ offer:
     .inventory-art[data-art="tablet"] {
       right: -12rem;
       top: 105rem;
+    }
+
+    .inventory-art[data-art="profile-strip"] {
+      top:  180rem;
     }
   }
 
@@ -300,7 +310,6 @@ offer:
   .benefit-band + .benefit-band {
     margin-top: 3rem;
     padding-top: 3rem;
-    border-top: 0.5px solid hsl(var(--border));
   }
 
   .benefit-band-visual {
@@ -308,9 +317,8 @@ offer:
   }
 
   .benefit-band-visual img {
-    width: min(100%, 22rem);
+    width: min(100%, 60rem);
     height: auto;
-    filter: drop-shadow(0 18px 22px rgb(24 48 72 / 0.12));
   }
 
   @media (min-width: 768px) {
@@ -319,9 +327,9 @@ offer:
       padding-top: 4rem;
     }
 
-    .benefit-band-visual img {
-      width: min(100%, 26rem);
-    }
+    /* .benefit-band-visual img {
+      width: min(100%, 60rem);
+    } */
   }
 
   .interface-inventory-page > section.inventory-what {
@@ -367,123 +375,6 @@ offer:
     }
   }
 
-  .inventory-process-desktop {
-    display: none;
-  }
-
-  .inventory-process-mobile {
-    margin-right: -1.5rem;
-  }
-
-  .inventory-process-rail {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: minmax(17rem, 84vw);
-    gap: 1rem;
-    overflow-x: auto;
-    overscroll-behavior-inline: contain;
-    padding: 0 1.5rem 1rem 0;
-    scroll-padding-inline: 0 1.5rem;
-    scroll-snap-type: inline mandatory;
-    scrollbar-width: none;
-  }
-
-  .inventory-process-rail::-webkit-scrollbar {
-    display: none;
-  }
-
-  .inventory-process-card {
-    overflow: hidden;
-    border: 1px solid hsl(var(--border));
-    background: hsl(var(--secondary) / 0.5);
-    scroll-snap-align: start;
-  }
-
-  .inventory-process-media {
-    position: relative;
-    overflow: hidden;
-    aspect-ratio: 16 / 10;
-    background: hsl(var(--secondary));
-  }
-
-  .inventory-process-media img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .inventory-process-media[data-step-media="1"] img {
-    object-position: left center;
-  }
-
-  .inventory-process-media[data-step-media="2"] img {
-    object-position: center center;
-  }
-
-  .inventory-process-media[data-step-media="3"] img {
-    object-position: right center;
-  }
-
-  .inventory-process-tab {
-    width: 100%;
-    border: 1px solid transparent;
-    padding: 1.25rem;
-    color: hsl(var(--muted-foreground));
-    text-align: left;
-    transition:
-      color 180ms ease,
-      border-color 180ms ease,
-      background-color 180ms ease;
-  }
-
-  .inventory-process-tab:hover {
-    color: hsl(var(--foreground));
-  }
-
-  .inventory-process-tab[aria-selected="true"] {
-    border-color: hsl(var(--border));
-    background: hsl(var(--secondary) / 0.72);
-    color: hsl(var(--foreground));
-  }
-
-  .inventory-process-tab:focus-visible {
-    outline: 2px solid hsl(var(--accent));
-    outline-offset: 2px;
-  }
-
-  @media (min-width: 1024px) {
-    .inventory-process-mobile {
-      display: none;
-    }
-
-    .inventory-process-desktop {
-      display: grid;
-      grid-template-columns: minmax(18rem, 0.8fr) minmax(0, 1.2fr);
-      align-items: stretch;
-      gap: 3rem;
-    }
-
-    .inventory-process-tablist {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 0.5rem;
-    }
-
-    .inventory-process-panel,
-    .inventory-process-panel .inventory-process-media {
-      height: 100%;
-      min-height: 31rem;
-    }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .inventory-process-tab {
-      transition: none;
-    }
-  }
-
   .workshop-offer-wide {
     display: grid;
     gap: 2rem;
@@ -518,17 +409,18 @@ offer:
   }
 </style>
 
+<!-- Artboard -->
 <div class="interface-inventory-page" data-interface-inventory-page>
   <div class="inventory-artboard" aria-hidden="true">
-    <img class="inventory-art" data-art="phone" data-parallax-speed="0.035" style="--delay: 0ms" src="/img/workshops/interface-inventory/phone-left.svg" alt="" width="254" height="371" decoding="async">
-    <img class="inventory-art" data-art="wireframes" data-parallax-speed="0.075" style="--delay: 90ms" src="/img/workshops/interface-inventory/paper-wireframes-upper-right.svg" alt="" width="345" height="272" decoding="async">
-    <img class="inventory-art" data-art="note-one" data-parallax-speed="0.11" style="--delay: 180ms" src="/img/workshops/interface-inventory/sticky-note-yellow-top.svg" alt="" width="122" height="116" decoding="async">
-    <img class="inventory-art" data-art="note-two" data-parallax-speed="0.085" style="--delay: 260ms" src="/img/workshops/interface-inventory/sticky-note-yellow-top-1.svg" alt="" width="118" height="111" decoding="async">
-    <img class="inventory-art" data-art="note-three" data-parallax-speed="0.125" style="--delay: 340ms" src="/img/workshops/interface-inventory/sticky-note-yellow-top-2.svg" alt="" width="124" height="119" decoding="async">
-    <img class="inventory-art" data-art="checklist" data-parallax-speed="0.045" style="--delay: 420ms" src="/img/workshops/interface-inventory/checklist-paper-bottom-left.svg" alt="" width="240" height="206" decoding="async">
-    <img class="inventory-art" data-art="media-card" data-parallax-speed="0.085" style="--delay: 500ms" src="/img/workshops/interface-inventory/blue-media-card-bottom-left.svg" alt="" width="265" height="141" decoding="async">
-    <img class="inventory-art" data-art="tablet" data-parallax-speed="0.04" style="--delay: 580ms" src="/img/workshops/interface-inventory/tablet-bottom-right.svg" alt="" width="477" height="364" decoding="async">
-    <img class="inventory-art" data-art="profile-strip" data-parallax-speed="0.095" style="--delay: 660ms" src="/img/workshops/interface-inventory/profile-strip-bottom.svg" alt="" width="393" height="215" decoding="async">
+    <img class="inventory-art" data-art="phone" data-parallax-speed="0.035" style="--delay: 0ms" src="/img/workshops/interface-inventory/phone-left.svg" data-theme-light-src="/img/workshops/interface-inventory/phone-left.svg" data-theme-dark-src="/img/workshops/interface-inventory/phone-left-dark.svg" alt="" width="254" height="371" decoding="async">
+    <img class="inventory-art" data-art="wireframes" data-parallax-speed="0.075" style="--delay: 90ms" src="/img/workshops/interface-inventory/paper-wireframes-upper-right.svg" data-theme-light-src="/img/workshops/interface-inventory/paper-wireframes-upper-right.svg" data-theme-dark-src="/img/workshops/interface-inventory/paper-wireframes-upper-right-dark.svg" alt="" width="345" height="272" decoding="async">
+    <img class="inventory-art" data-art="note-one" data-parallax-speed="0.11" style="--delay: 180ms" src="/img/workshops/interface-inventory/sticky-note-yellow-top.svg" data-theme-light-src="/img/workshops/interface-inventory/sticky-note-yellow-top.svg" data-theme-dark-src="/img/workshops/interface-inventory/sticky-note-yellow-top-dark.svg" alt="" width="122" height="116" decoding="async">
+    <img class="inventory-art" data-art="note-two" data-parallax-speed="0.085" style="--delay: 260ms" src="/img/workshops/interface-inventory/sticky-note-yellow-top-1.svg" data-theme-light-src="/img/workshops/interface-inventory/sticky-note-yellow-top-1.svg" data-theme-dark-src="/img/workshops/interface-inventory/sticky-note-yellow-top-1-dark.svg" alt="" width="118" height="111" decoding="async">
+    <img class="inventory-art" data-art="note-three" data-parallax-speed="0.125" style="--delay: 340ms" src="/img/workshops/interface-inventory/sticky-note-yellow-top-2.svg" data-theme-light-src="/img/workshops/interface-inventory/sticky-note-yellow-top-2.svg" data-theme-dark-src="/img/workshops/interface-inventory/sticky-note-yellow-top-2-dark.svg" alt="" width="124" height="119" decoding="async">
+    <img class="inventory-art" data-art="checklist" data-parallax-speed="0.045" style="--delay: 420ms" src="/img/workshops/interface-inventory/checklist-paper-bottom-left.svg" data-theme-light-src="/img/workshops/interface-inventory/checklist-paper-bottom-left.svg" data-theme-dark-src="/img/workshops/interface-inventory/checklist-paper-bottom-left-dark.svg" alt="" width="240" height="206" decoding="async">
+    <img class="inventory-art" data-art="media-card" data-parallax-speed="0.085" style="--delay: 500ms" src="/img/workshops/interface-inventory/blue-media-card-bottom-left.svg" data-theme-light-src="/img/workshops/interface-inventory/blue-media-card-bottom-left.svg" data-theme-dark-src="/img/workshops/interface-inventory/blue-media-card-bottom-left-dark.svg" alt="" width="265" height="141" decoding="async">
+    <img class="inventory-art" data-art="tablet" data-parallax-speed="0.04" style="--delay: 580ms" src="/img/workshops/interface-inventory/tablet-bottom-right.svg" data-theme-light-src="/img/workshops/interface-inventory/tablet-bottom-right.svg" data-theme-dark-src="/img/workshops/interface-inventory/tablet-bottom-right-dark.svg" alt="" width="477" height="364" decoding="async">
+    <img class="inventory-art" data-art="profile-strip" data-parallax-speed="0.095" style="--delay: 660ms" src="/img/workshops/interface-inventory/profile-strip-bottom.svg" data-theme-light-src="/img/workshops/interface-inventory/profile-strip-bottom.svg" data-theme-dark-src="/img/workshops/interface-inventory/profile-strip-bottom-dark.svg" alt="" width="393" height="215" decoding="async">
   </div>
 
 <!-- Hero Section -->
@@ -536,15 +428,15 @@ offer:
   <div class="mx-auto max-w-7xl">
     <div class="flex max-w-4xl flex-col items-start">
       <span class="mb-6 inline-flex items-center border border-border px-3 py-1 font-mono text-xs uppercase tracking-wide text-accent">Interface Inventory · Workshop online</span>
-      <h1 class="font-heading text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">Metti ordine nelle tue interfacce partendo da ciò che esiste davvero</h1>
+      <h1 class="font-heading text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">Metti ordine nelle interfacce partendo da ciò che esiste davvero</h1>
       <p class="mt-8 max-w-2xl text-lg leading-relaxed text-muted-foreground lg:text-xl">In questo workshop impari a raccogliere, confrontare e organizzare tutti gli elementi visivi e funzionali che compongono un sito web o un'applicazione, definendo priorità concrete.</p>
       <p class="mt-5 flex items-center gap-3 text-sm text-muted-foreground">
-        <img class="h-24 w-24 md:h-28 md:w-28 shrink-0 object-cover grayscale rounded-4xl" src="/img/francesco-improta-profile.png" alt="Francesco Improta" width="300" height="300" decoding="async">
+        <img class="h-24 w-24 md:h-28 md:w-28 shrink-0 object-cover grayscale rounded-4xl shadow-2xl" src="/img/francesco-improta-profile.png" alt="Francesco Improta" width="300" height="300" decoding="async">
         <span>Con <strong class="font-medium text-foreground">Francesco Improta</strong>, designer esperto in Design Systems e Product Design.</span>
       </p>
 
       <div class="mt-8 flex w-full flex-col items-stretch gap-4 sm:w-auto sm:flex-row sm:items-center">
-        <a href="#booking" class="inline-flex items-center justify-center bg-accent px-8 py-4 text-lg font-medium text-white hover:opacity-90 rounded-full shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">Vedi date e prenota</a>
+        <a href="#booking" class="inline-flex items-center justify-center bg-accent px-8 py-4 text-lg font-medium text-accent-foreground hover:opacity-90 rounded-full shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">Vedi date e prenota</a>
         <a href="#details" class="inline-flex items-center justify-center px-2 py-3 text-sm font-medium underline underline-offset-4 transition-opacity hover:opacity-70">Scopri il programma →</a>
       </div>
     </div>
@@ -606,7 +498,7 @@ offer:
 </section>
 
 <!-- What is an Interface Inventory -->
-<section class="inventory-what px-6 lg:px-10 pt-12 lg:pt-16" id="what">
+<section class="inventory-what px-6 lg:px-10 py-12 lg:py-16" id="what">
   <div class="mx-auto max-w-7xl">
     <div class="grid grid-cols-1 items-start gap-10 lg:grid-cols-2 lg:gap-16 xl:gap-24">
       <div>
@@ -614,19 +506,13 @@ offer:
         <h2 class="max-w-xl font-heading text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl">Perché partire da un Interface Inventory</h2>
         <p class="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground lg:text-lg">Quando un prodotto cresce, componenti duplicati, varianti e decisioni non documentate rallentano designer e developer. Un Interface Inventory fotografa ciò che esiste davvero e crea una base condivisa per decidere cosa mantenere, consolidare o riprogettare.</p>
       </div>
-
       <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 sm:gap-x-10 sm:gap-y-12">
         <div>
           <div class="mb-2 flex items-center gap-2.5">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-accent" aria-hidden="true">
-              <rect width="7" height="7" x="3" y="3" rx="1" />
-              <rect width="7" height="7" x="14" y="3" rx="1" />
-              <rect width="7" height="7" x="14" y="14" rx="1" />
-              <rect width="7" height="7" x="3" y="14" rx="1" />
-            </svg>
-            <h3 class="font-heading text-base font-medium">Vedere l’esistente</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-accent" aria-hidden="true"><path d="M13.997 4a2 2 0 0 1 1.76 1.05l.486.9A2 2 0 0 0 18.003 7H20a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1.997a2 2 0 0 0 1.759-1.048l.489-.904A2 2 0 0 1 10.004 4z"/><circle cx="12" cy="13" r="3"/></svg>
+            <h3 class="font-heading text-base font-medium">Fotografia reale</h3>
           </div>
-          <p class="text-sm leading-relaxed text-muted-foreground">Cataloga schermate e componenti, senza interpretazioni né wishful thinking.</p>
+          <p class="text-sm leading-relaxed text-muted-foreground">Cataloga schermate e componenti dell'ultima versione del tuo prodotto.</p>
         </div>
         <div>
           <div class="mb-2 flex items-center gap-2.5">
@@ -634,7 +520,7 @@ offer:
               <circle cx="11" cy="11" r="8" />
               <path d="m21 21-4.3-4.3" />
             </svg>
-            <h3 class="font-heading text-base font-medium">Trovare le incoerenze</h3>
+            <h3 class="font-heading text-base font-medium">Fa emergere le incoerenze</h3>
           </div>
           <p class="text-sm leading-relaxed text-muted-foreground">Duplicati, varianti e pattern divergenti diventano evidenti in un colpo d’occhio.</p>
         </div>
@@ -646,27 +532,23 @@ offer:
               <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
               <circle cx="9" cy="7" r="4" />
             </svg>
-            <h3 class="font-heading text-base font-medium">Allineare il team</h3>
+            <h3 class="font-heading text-base font-medium">Allinea il team</h3>
           </div>
-          <p class="text-sm leading-relaxed text-muted-foreground">Designer, developer e PM lavorano sullo stesso quadro del prodotto reale.</p>
+          <p class="text-sm leading-relaxed text-muted-foreground">Designer, developer e PM lavorano sullo stesso quadro e parlano la stessa lingua.</p>
         </div>
         <div>
           <div class="mb-2 flex items-center gap-2.5">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-accent" aria-hidden="true">
-              <path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z" />
-              <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12" />
-              <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17" />
-            </svg>
-            <h3 class="font-heading text-base font-medium">Partire dal sistema</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-accent" aria-hidden="true"><circle cx="6" cy="6" r="3"/><path d="M8.12 8.12 12 12"/><path d="M20 4 8.12 15.88"/><circle cx="6" cy="18" r="3"/><path d="M14.8 14.8 20 20"/></svg>
+            <h3 class="font-heading text-base font-medium">Riduce il debito</h3>
           </div>
-          <p class="text-sm leading-relaxed text-muted-foreground">È il primo passo concreto verso un design system, non un documento teorico.</p>
+          <p class="text-sm leading-relaxed text-muted-foreground">Ridurre il debito tecnico e design prima di iniziare a costruire un Design System.</p>
         </div>
       </div>
     </div>
 
     <figure class="inventory-what-media mt-12 lg:mt-16">
-      <video loop muted playsinline preload="none" poster="/img/workshops/interface-inventory/interface-inventory.webp" width="1920" height="1080" aria-label="Anteprima delle classi precedenti del workshop Interface Inventory" data-autoplay-video>
-        <source data-src="/img/workshops/interface-inventory/workshop-classes.mp4" type="video/mp4">
+      <video loop muted playsinline preload="none" poster="/img/workshops/interface-inventory/how-it-works-poster.webp" width="1920" height="1080" aria-label="Anteprima delle classi precedenti del workshop Interface Inventory" data-autoplay-video>
+        <source data-src="/img/workshops/interface-inventory/how-it-works.mp4" type="video/mp4">
       </video>
     </figure>
   </div>
@@ -683,18 +565,18 @@ offer:
       <div>
         <h3 class="font-heading text-xl font-medium">Hai questo ruolo</h3>
         <ul class="mt-5 flex list-none flex-col gap-4 p-0 text-base leading-relaxed">
-          <li class="flex gap-3"><span class="text-accent" aria-hidden="true">¬</span><span>Sei <strong>product, UX/UI o design system designer</strong> e vuoi partire dallo stato reale dell’interfaccia.</span></li>
-          <li class="flex gap-3"><span class="text-accent" aria-hidden="true">¬</span><span>Ti occupi di  <strong>content e information architecture</strong> e vuoi capire come è strutturato il tuo prodotto.</span></li>
-          <li class="flex gap-3"><span class="text-accent" aria-hidden="true">¬</span><span>Sei <strong>developer o design engineer</strong> e incontri componenti duplicati o poco coerenti.</span></li>
-          <li class="flex gap-3"><span class="text-accent" aria-hidden="true">¬</span><span><strong>Coordini un team</strong> che deve definire priorità condivise prima di costruire o rivedere un Design System.</span></li>
+          <li class="flex gap-3 text-muted-foreground"><span class="text-accent" aria-hidden="true">¬</span><span>Sei <strong class="text-primary">product, UX/UI o design system designer</strong> e vuoi partire dallo stato reale dell’interfaccia.</span></li>
+          <li class="flex gap-3 text-muted-foreground"><span class="text-accent" aria-hidden="true">¬</span><span>Ti occupi di  <strong class="text-primary">content e information architecture</strong> e vuoi capire come è strutturato il tuo prodotto.</span></li>
+          <li class="flex gap-3 text-muted-foreground"><span class="text-accent" aria-hidden="true">¬</span><span>Sei <strong class="text-primary">developer o design engineer</strong> e incontri componenti duplicati o poco coerenti.</span></li>
+          <li class="flex gap-3 text-muted-foreground"><span class="text-accent" aria-hidden="true">¬</span><span><strong class="text-primary">Coordini un team</strong> che deve definire priorità condivise prima di costruire o rivedere un Design System.</span></li>
         </ul>
       </div>
       <div>
         <h3 class="font-heading text-xl font-medium">Hai questi problemi</h3>
         <ul class="mt-5 flex list-none flex-col gap-4 p-0 text-base leading-relaxed">
-          <li class="flex gap-3"><span class="text-accent" aria-hidden="true">¬</span><span>Design e codice raccontano <strong>versioni diverse</strong> dello stesso componente.</span></li>
-          <li class="flex gap-3"><span class="text-accent" aria-hidden="true">¬</span><span><strong>Il team non sa</strong> quali varianti consolidare e quali mantenere.</span></li>
-          <li class="flex gap-3"><span class="text-accent" aria-hidden="true">¬</span><span>Vuoi iniziare con un <strong>metodo pratico</strong>: non servono esperienza avanzata o strumenti specifici.</span></li>
+          <li class="flex gap-3 text-muted-foreground"><span class="text-accent" aria-hidden="true">¬</span><span>Design e codice raccontano <strong class="text-primary">versioni diverse</strong> dello stesso componente.</span></li>
+          <li class="flex gap-3 text-muted-foreground"><span class="text-accent" aria-hidden="true">¬</span><span><strong class="text-primary"> Il team non sa</strong> quali varianti consolidare e quali mantenere.</span></li>
+          <li class="flex gap-3 text-muted-foreground"><span class="text-accent" aria-hidden="true">¬</span><span>Vuoi iniziare con un <strong class="text-primary">metodo pratico</strong>: non servono esperienza avanzata o strumenti specifici.</span></li>
         </ul>
       </div>
     </div>
@@ -706,51 +588,51 @@ offer:
   <div class="mx-auto max-w-5xl">
     <div class="mb-12 max-w-2xl lg:mb-16">
       <span class="mb-3 block font-mono text-xs uppercase tracking-wide text-accent">Competenze</span>
-      <h2 class="font-heading text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl">Cosa impari in questo workshop</h2>
+      <h2 class="font-heading text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl">Cosa impari</h2>
     </div>
     <div class="flex flex-col">
       <article class="benefit-band flex flex-col items-center gap-8 md:flex-row lg:gap-16">
         <div class="flex w-full flex-1 flex-row gap-4">
           <div>
-            <h3 class="font-heading text-xl font-medium mb-2">Definire lo scope dell’analisi</h3>
-            <p class="text-base text-muted-foreground leading-relaxed">Scegliere pagine, sezioni e categorie di elementi da osservare senza disperdere tempo ed energie.</p>
+            <h3 class="font-heading text-2xl lg:text-3xl font-medium leading-tight mb-0">Definire lo scope di un analisi.</h3>
+            <p class="font-heading text-2xl lg:text-3xl text-muted-foreground font-regular leading-tight">Selezioni pagine, sezioni e categorie di elementi da osservare secondo un obiettivo specifico.</p>
           </div>
         </div>
         <div class="benefit-band-visual flex flex-1 justify-center">
-          <img src="/img/workshops/interface-inventory/tablet-bottom-right.svg" alt="Tablet con schermate di un prodotto digitale da analizzare" width="477" height="364" loading="lazy" decoding="async">
+          <img src="/img/workshops/interface-inventory/scope-analisi.png" alt="Tablet con schermate di un prodotto digitale da analizzare" width="477" height="364" loading="lazy" decoding="async">
         </div>
       </article>
       <article class="benefit-band flex flex-col items-center gap-8 md:flex-row-reverse lg:gap-16">
         <div class="flex w-full flex-1 flex-row gap-4">
           <div>
-            <h3 class="font-heading text-xl font-medium mb-2">Costruire un inventario consultabile</h3>
-            <p class="text-base text-muted-foreground leading-relaxed">Raccogliere elementi e varianti in categorie comprensibili, pronte per essere confrontate con il team.</p>
+            <h3 class="font-heading text-2xl lg:text-3xl font-medium leading-tight mb-0">Costruire un inventario consultabile</h3>
+            <p class="font-heading text-2xl lg:text-3xl text-muted-foreground font-regular leading-tight">Raccogli elementi e componenti in categorie comprensibili, pronte per essere confrontate con il team.</p>
           </div>
         </div>
         <div class="benefit-band-visual flex flex-1 justify-center">
-          <img src="/img/workshops/interface-inventory/checklist-paper-bottom-left.svg" alt="Lista di controllo per catalogare i componenti di interfaccia" width="240" height="206" loading="lazy" decoding="async">
+          <img src="/img/workshops/interface-inventory/inventario-categorie.webp" alt="Lista di controllo per catalogare i componenti di interfaccia" width="240" height="206" loading="lazy" decoding="async">
         </div>
       </article>
       <article class="benefit-band flex flex-col items-center gap-8 md:flex-row lg:gap-16">
         <div class="flex w-full flex-1 flex-row gap-4">
           <div>
-            <h3 class="font-heading text-xl font-medium mb-2">Individuare duplicati e incoerenze</h3>
-            <p class="text-base text-muted-foreground leading-relaxed">Riconoscere pattern divergenti e opportunità di standardizzazione in modo sistematico.</p>
+            <h3 class="font-heading text-2xl lg:text-3xl font-medium leading-tight mb-0">Individuare duplicati e incoerenze.</h3>
+            <p class="font-heading text-2xl lg:text-3xl text-muted-foreground font-regular leading-tight">Riconosci pattern divergenti e opportunità di standardizzazione in modo sistematico.</p>
           </div>
         </div>
         <div class="benefit-band-visual flex flex-1 justify-center">
-          <img src="/img/workshops/interface-inventory/paper-wireframes-upper-right.svg" alt="Wireframe annotati per individuare incoerenze e priorità" width="345" height="272" loading="lazy" decoding="async">
+          <img src="/img/workshops/interface-inventory/componenti-incoerenti.webp" alt="Pulsanti duplicati e diversi tra loro per colore, dimensione e stile" width="345" height="272" loading="lazy" decoding="async">
         </div>
       </article>
       <article class="benefit-band flex flex-col items-center gap-8 md:flex-row-reverse lg:gap-16">
         <div class="flex w-full flex-1 flex-row gap-4">
           <div>
-            <h3 class="font-heading text-xl font-medium mb-2">Definire priorità condivise</h3>
-            <p class="text-base text-muted-foreground leading-relaxed">Trasformare l’inventario in decisioni documentate e in una base concreta per il Design System.</p>
+            <h3 class="font-heading text-2xl lg:text-3xl font-medium leading-tight mb-0">Definire priorità condivise</h3>
+            <p class="font-heading text-2xl lg:text-3xl text-muted-foreground font-regular leading-tight">Trasformare l’inventario in decisioni documentate e in una base concreta per il Design System.</p>
           </div>
         </div>
         <div class="benefit-band-visual flex flex-1 justify-center">
-          <img src="/img/workshops/interface-inventory/profile-strip-bottom.svg" alt="Scheda profilo che rappresenta l’allineamento del team" width="393" height="215" loading="lazy" decoding="async">
+          <img src="/img/workshops/interface-inventory/definire-priorita.png" alt="Foglio excel con le priorità definite in base all'inventario" width="393" height="215" loading="lazy" decoding="async">
         </div>
       </article>
     </div>
@@ -761,81 +643,46 @@ offer:
 <section class="scroll-mt-32 px-6 py-12 lg:scroll-mt-24 lg:px-10 lg:py-20" id="process" data-inventory-process>
   <div class="mx-auto max-w-7xl">
     <div class="mb-10 max-w-3xl lg:mb-14">
-      <span class="mb-4 block font-mono text-xs uppercase tracking-wide text-accent">Il processo</span>
-      <h2 class="font-heading text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl">Cosa farai nel workshop</h2>
-      <p class="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground lg:text-lg">Seguiamo un percorso in tre fasi: definiamo cosa osservare, raccogliamo le varianti e trasformiamo ciò che emerge in decisioni condivise.</p>
+      <span class="mb-4 block font-mono text-xs uppercase tracking-wide text-accent">Metodo</span>
+      <h2 class="font-heading text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl">Cosa fai, in pratica</h2>
+      <p class="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground lg:text-lg">Partendo da un prodotto reale, definisci cosa osservare, raccogli tutti gli elementi necessari, e infine crea un inventario consultabile. Attività concrete che puoi mettere in pratica subito.</p>
     </div>
 
-    <div class="inventory-process-desktop">
-      <div class="inventory-process-tablist" role="tablist" aria-label="Fasi del workshop">
-        <button class="inventory-process-tab" type="button" role="tab" id="process-tab-1" aria-controls="process-panel-1" aria-selected="true" tabindex="0" data-process-tab="1">
+    <div class="grid grid-cols-1 items-start gap-8 lg:grid-cols-2 lg:gap-12">
+      <div class="-mx-6 flex min-w-0 gap-2 snap-x snap-mandatory overflow-x-auto overscroll-x-contain scroll-px-6 px-6 py-1 lg:mx-0 lg:flex-col lg:gap-4 lg:snap-none lg:overflow-visible lg:scroll-p-1 lg:p-1" role="tablist" aria-label="Fasi del workshop">
+        <button class="w-[66.667vw] shrink-0 snap-center whitespace-normal lg:w-full lg:min-w-0 cursor-pointer rounded-2xl p-5 text-left text-muted-foreground transition-colors duration-200 hover:bg-gray-100 hover:text-foreground aria-selected:bg-secondary/70 aria-selected:text-foreground active:bg-accent/20 aria-selected:active:bg-accent/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent motion-reduce:transition-none" type="button" role="tab" id="process-tab-1" aria-controls="process-panel-1" aria-selected="true" tabindex="0" data-process-tab="1">
           <span class="mb-2 block font-mono text-xs text-accent">01</span>
-          <span class="block font-heading text-lg font-medium leading-snug">Scegli cosa analizzare</span>
-          <span class="mt-2 block text-sm leading-relaxed">Pagine, sezioni, intero sito e quali categorie di elementi.</span>
+          <span class="block font-heading text-lg font-medium leading-snug">Esplori un prodotto</span>
+          <span class="mt-2 block text-sm leading-relaxed">Pagine, sezioni, intero sito e quali categorie di elementi. Scegli cosa osservare secondo un obiettivo specifico.</span>
         </button>
-        <button class="inventory-process-tab" type="button" role="tab" id="process-tab-2" aria-controls="process-panel-2" aria-selected="false" tabindex="-1" data-process-tab="2">
+        <button class="w-[66.667vw] shrink-0 snap-center whitespace-normal lg:w-full lg:min-w-0 cursor-pointer rounded-2xl p-5 text-left text-muted-foreground transition-colors duration-200 hover:bg-gray-100 hover:text-foreground aria-selected:bg-secondary/70 aria-selected:text-foreground active:bg-accent/20 aria-selected:active:bg-accent/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent motion-reduce:transition-none" type="button" role="tab" id="process-tab-2" aria-controls="process-panel-2" aria-selected="false" tabindex="-1" data-process-tab="2">
           <span class="mb-2 block font-mono text-xs text-accent">02</span>
-          <span class="block font-heading text-lg font-medium leading-snug">Screenshot di ogni singolo elemento e variante</span>
-          <span class="mt-2 block text-sm leading-relaxed">Catturiamo gli elementi così come esistono nel prodotto, senza interpretarli o riprogettarli.</span>
+          <span class="block font-heading text-lg font-medium leading-snug">Raccogli gli elementi</span>
+          <span class="mt-2 block text-sm leading-relaxed">Catturi tutto ciò che reputi necessario segnalare, così come esiste nel prodotto.</span>
         </button>
-        <button class="inventory-process-tab" type="button" role="tab" id="process-tab-3" aria-controls="process-panel-3" aria-selected="false" tabindex="-1" data-process-tab="3">
+        <button class="w-[66.667vw] shrink-0 snap-center whitespace-normal lg:w-full lg:min-w-0 cursor-pointer rounded-2xl p-5 text-left text-muted-foreground transition-colors duration-200 hover:bg-gray-100 hover:text-foreground aria-selected:bg-secondary/70 aria-selected:text-foreground active:bg-accent/20 aria-selected:active:bg-accent/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent motion-reduce:transition-none" type="button" role="tab" id="process-tab-3" aria-controls="process-panel-3" aria-selected="false" tabindex="-1" data-process-tab="3">
           <span class="mb-2 block font-mono text-xs text-accent">03</span>
-          <span class="block font-heading text-lg font-medium leading-snug">Raccolta dei risultati e decisioni</span>
-          <span class="mt-2 block text-sm leading-relaxed">Raggruppiamo ciò che emerge e definiamo insieme priorità e prossimi interventi.</span>
+          <span class="block font-heading text-lg font-medium leading-snug">Crei un inventario</span>
+          <span class="mt-2 block text-sm leading-relaxed">Raggruppiamo ciò che emerge in una lista consultabile, definendo priorità di intervento.</span>
         </button>
       </div>
 
-      <div>
-        <div class="inventory-process-panel" role="tabpanel" id="process-panel-1" aria-labelledby="process-tab-1" data-process-panel="1">
-          <div class="inventory-process-media" data-step-media="1">
-            <img src="/img/workshops/interface-inventory/interface-inventory.webp" alt="Esempio visivo della selezione delle pagine e degli elementi da analizzare" width="2590" height="1000" loading="lazy" decoding="async">
+      <div class="min-w-0">
+        <div class="w-full min-w-0" role="tabpanel" id="process-panel-1" aria-labelledby="process-tab-1" data-process-panel="1">
+          <div class="w-full overflow-hidden rounded-2xl bg-secondary shadow-2xl">
+            <img class="block h-auto w-full max-w-full object-contain" src="/img/workshops/interface-inventory/esplora-prodotto.webp" alt="Esempio visivo della selezione delle pagine e degli elementi da analizzare" width="2590" height="1000" loading="lazy" decoding="async">
           </div>
         </div>
-        <div class="inventory-process-panel" role="tabpanel" id="process-panel-2" aria-labelledby="process-tab-2" data-process-panel="2" hidden>
-          <div class="inventory-process-media" data-step-media="2">
-            <img src="/img/workshops/interface-inventory/interface-inventory.webp" alt="Esempio visivo della raccolta degli screenshot di elementi e varianti" width="2590" height="1000" loading="lazy" decoding="async">
+        <div class="w-full min-w-0" role="tabpanel" id="process-panel-2" aria-labelledby="process-tab-2" data-process-panel="2" hidden>
+          <div class="w-full overflow-hidden rounded-2xl bg-secondary shadow-2xl">
+            <img class="block h-auto w-full max-w-full object-contain" src="/img/workshops/interface-inventory/raccolta-elementi.webp" alt="Esempio visivo della raccolta degli screenshot di elementi e varianti" width="2590" height="1000" loading="lazy" decoding="async">
           </div>
         </div>
-        <div class="inventory-process-panel" role="tabpanel" id="process-panel-3" aria-labelledby="process-tab-3" data-process-panel="3" hidden>
-          <div class="inventory-process-media" data-step-media="3">
-            <img src="/img/workshops/interface-inventory/interface-inventory.webp" alt="Esempio visivo della raccolta dei risultati e delle decisioni" width="2590" height="1000" loading="lazy" decoding="async">
+        <div class="w-full min-w-0" role="tabpanel" id="process-panel-3" aria-labelledby="process-tab-3" data-process-panel="3" hidden>
+          <div class="w-full overflow-hidden rounded-2xl bg-secondary shadow-2xl">
+            <img class="block h-auto w-full max-w-full object-contain" src="/img/workshops/interface-inventory/raccolta-risultati.webp" alt="Esempio visivo della raccolta dei risultati e delle decisioni" width="2590" height="1000" loading="lazy" decoding="async">
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="inventory-process-mobile">
-      <div class="inventory-process-rail" aria-label="Fasi del workshop">
-        <article class="inventory-process-card">
-          <div class="inventory-process-media" data-step-media="1">
-            <img src="/img/workshops/interface-inventory/interface-inventory.webp" alt="Esempio visivo della selezione delle pagine e degli elementi da analizzare" width="2590" height="1000" loading="lazy" decoding="async">
-          </div>
-          <div class="p-5">
-            <span class="mb-2 block font-mono text-xs text-accent">01</span>
-            <h3 class="font-heading text-lg font-medium leading-snug">Scegli cosa analizzare</h3>
-            <p class="mt-2 text-sm leading-relaxed text-muted-foreground">Pagine, sezioni, intero sito e quali categorie di elementi.</p>
-          </div>
-        </article>
-        <article class="inventory-process-card">
-          <div class="inventory-process-media" data-step-media="2">
-            <img src="/img/workshops/interface-inventory/interface-inventory.webp" alt="Esempio visivo della raccolta degli screenshot di elementi e varianti" width="2590" height="1000" loading="lazy" decoding="async">
-          </div>
-          <div class="p-5">
-            <span class="mb-2 block font-mono text-xs text-accent">02</span>
-            <h3 class="font-heading text-lg font-medium leading-snug">Screenshot di ogni singolo elemento e variante</h3>
-            <p class="mt-2 text-sm leading-relaxed text-muted-foreground">Catturiamo gli elementi così come esistono nel prodotto, senza interpretarli o riprogettarli.</p>
-          </div>
-        </article>
-        <article class="inventory-process-card">
-          <div class="inventory-process-media" data-step-media="3">
-            <img src="/img/workshops/interface-inventory/interface-inventory.webp" alt="Esempio visivo della raccolta dei risultati e delle decisioni" width="2590" height="1000" loading="lazy" decoding="async">
-          </div>
-          <div class="p-5">
-            <span class="mb-2 block font-mono text-xs text-accent">03</span>
-            <h3 class="font-heading text-lg font-medium leading-snug">Raccolta dei risultati e decisioni</h3>
-            <p class="mt-2 text-sm leading-relaxed text-muted-foreground">Raggruppiamo ciò che emerge e definiamo insieme priorità e prossimi interventi.</p>
-          </div>
-        </article>
       </div>
     </div>
   </div>
@@ -849,7 +696,9 @@ offer:
         <span class="mb-3 block font-mono text-xs uppercase tracking-wide text-accent">Time &amp; Schedule</span>
         <h2 class="font-heading text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl">Quattro ore di lavoro insieme</h2>
         <p class="mt-5 text-base leading-relaxed text-muted-foreground lg:text-lg">Il workshop si svolge online su Google Meet, dalle <strong class="font-medium text-foreground">{{ page.offer.session_time }}</strong>. Alterniamo spiegazioni essenziali, analisi guidata, esercitazione e confronto finale.</p>
-        <dl class="mt-8 grid grid-cols-1 gap-5 border-t border-border pt-6 sm:grid-cols-2">
+      </div>
+      <div>
+        <dl class="grid grid-cols-1 gap-5 sm:grid-cols-2">
           <div>
             <dt class="font-mono text-xs uppercase tracking-wide text-muted-foreground">Formato</dt>
             <dd class="mt-2 text-base font-medium">Online, dal vivo</dd>
@@ -867,19 +716,7 @@ offer:
             <dd class="mt-2 text-base font-medium">Registrazione e materiali</dd>
           </div>
         </dl>
-      </div>
-      <div>
-        <h3 class="font-heading text-xl font-medium">Date disponibili</h3>
-        <ul class="mt-5 flex list-none flex-col gap-3 p-0">
-          {% for session in page.offer.sessions %}
-          <li class="flex items-center gap-4 border border-border bg-background/70 p-5">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="shrink-0 text-accent" aria-hidden="true"><path d="M8 2v3"/><path d="M16 2v3"/><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg>
-            <span class="text-base font-medium">{{ session }}</span>
-          </li>
-          {% endfor %}
-        </ul>
-        <p class="mt-5 text-sm leading-relaxed text-muted-foreground">Sceglierai la sessione che preferisci nel checkout sicuro Stripe.</p>
-        <a href="#booking" class="mt-6 inline-flex text-sm font-medium underline underline-offset-4 transition-opacity hover:opacity-70">Vedi prezzo e prenota →</a>
+        <a href="#booking-final" class="mt-6 inline-flex text-sm font-medium underline underline-offset-4 transition-opacity hover:opacity-70">Vedi prezzo e prenota →</a>
       </div>
     </div>
   </div>
@@ -929,7 +766,7 @@ offer:
             <li class="text-base mb-2">Argomenti:</li>
             <li class="text-base"><span class="text-accent" aria-hidden="true">¬</span> Analisi delle interfacce di un prodotto digitale reale</li>
             <li class="text-base"><span class="text-accent" aria-hidden="true">¬</span> Mappatura degli elementi raccolti e organizzazione in categorie</li>
-            <li class="text-sm"><span class="text-accent" aria-hidden="true">¬</span> Come annotare le <strong class="font-medium text-foreground">incongruenze</strong> e similitudini</li>
+            <li class="text-base"><span class="text-accent" aria-hidden="true">¬</span> Come annotare le <strong class="font-medium text-foreground">incongruenze</strong> e similitudini</li>
           </ul>
         </div>
       </details>
@@ -949,9 +786,9 @@ offer:
         <div class="px-6 pb-6">
           <ul class="flex flex-col gap-2 mt-4 m-0 p-0 list-none">
             <li class="meta-tag">Argomenti</li>
-            <li class="text-sm text-base"><span class="text-accent" aria-hidden="true">¬</span> Creare un database di componenti</li>
-            <li class="text-sm text-base"><span class="text-accent" aria-hidden="true">¬</span> Dare un nome e una descrizione ai componenti</li>
-            <li class="text-sm text-base"><span class="text-accent" aria-hidden="true">¬</span> Decidere il destino dei componenti: riuso, deprecato, sostituito o migliorato</li>
+            <li class="text-base"><span class="text-accent" aria-hidden="true">¬</span> Creare un database di componenti</li>
+            <li class="text-base"><span class="text-accent" aria-hidden="true">¬</span> Dare un nome e una descrizione ai componenti</li>
+            <li class="text-base"><span class="text-accent" aria-hidden="true">¬</span> Decidere il destino dei componenti: riuso, deprecato, sostituito o migliorato</li>
           </ul>
         </div>
       </details>
@@ -971,9 +808,9 @@ offer:
         <div class="px-6 pb-6">
           <ul class="flex flex-col gap-2 mt-4 m-0 p-0 list-none">
             <li class="meta-tag">Argomenti</li>
-            <li class="text-sm text-base"><span class="text-accent" aria-hidden="true">¬</span> Pianificare sessioni di audit periodici</li>
-            <li class="text-sm text-base"><span class="text-accent" aria-hidden="true">¬</span> I nuovi fondamenti visivi del Design System</li>
-            <li class="text-sm text-base"><span class="text-accent" aria-hidden="true">¬</span> Da un semplice inventory a un backlog di attività</li>
+            <li class="text-base"><span class="text-accent" aria-hidden="true">¬</span> Pianificare sessioni di audit periodici</li>
+            <li class="text-base"><span class="text-accent" aria-hidden="true">¬</span> I nuovi fondamenti visivi del Design System</li>
+            <li class="text-base"><span class="text-accent" aria-hidden="true">¬</span> Da un semplice inventory a un backlog di attività</li>
           </ul>
         </div>
       </details>
@@ -1009,9 +846,9 @@ offer:
     <div class="text-center">
       <span class="block mb-3 font-mono text-xs uppercase tracking-wide text-accent">Chi sono</span>
       <h2 class="font-heading text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl mb-8">Porto nel workshop oltre 20 anni di esperienza sui prodotti digitali</h2>
-      <img class="mx-auto mb-8 w-32 h-32 object-cover grayscale rounded-4xl" src="/img/francesco-improta-profile.png" alt="Francesco Improta - Design Token Expert and Course Instructor" width="400" height="400" loading="lazy" decoding="async">
+      <img class="mx-auto mb-8 w-32 h-32 object-cover grayscale rounded-4xl shadow-2xl" src="/img/francesco-improta-profile.png" alt="Francesco Improta - Design Token Expert and Course Instructor" width="400" height="400" loading="lazy" decoding="async">
     </div>
-    <div class="flex flex-col gap-4 max-w-3xl">
+    <div class="mx-auto flex max-w-2xl flex-col gap-4">
       <p class="text-lg font-medium leading-relaxed">👋 Ciao, sono <strong class="font-semibold">Francesco Improta</strong>, designer con oltre 20 anni di esperienza nel design di prodotti digitali, specializzato in Design System.</p>
       <p class="text-base text-muted-foreground leading-relaxed">Ho creato questo workshop per <strong class="font-medium text-foreground">aiutare designer e developer a organizzare le interfacce in modo efficace</strong>, riducendo i tempi di sviluppo e migliorando la qualità del prodotto.</p>
       <p class="text-base text-muted-foreground leading-relaxed">Durante il workshop, <strong class="font-medium text-foreground">condividerò le mie esperienze pratiche e gli strumenti</strong> che ho utilizzato in anni di lavoro su progetti complessi.</p>
@@ -1043,7 +880,7 @@ offer:
     <div class="flex flex-col mt-8">
       <details class="group py-6 hairline">
         <summary class="flex items-start justify-between gap-4 list-none cursor-pointer">
-          <h4 class="m-0 text-base font-medium underline underline-offset-2">Come funziona il workshop?</h4>
+          <h4 class="m-0 text-lg font-medium underline underline-offset-2">Come funziona il workshop?</h4>
           <svg class="shrink-0 text-accent transition-transform duration-200 group-open:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
@@ -1052,7 +889,7 @@ offer:
       </details>
       <details class="group py-6 hairline">
         <summary class="flex items-start justify-between gap-4 list-none cursor-pointer">
-          <h4 class="m-0 text-base font-medium underline underline-offset-2">Quando scelgo la data?</h4>
+          <h4 class="m-0 text-lg font-medium underline underline-offset-2">Quando scelgo la data?</h4>
           <svg class="shrink-0 text-accent transition-transform duration-200 group-open:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
@@ -1061,7 +898,7 @@ offer:
       </details>
       <details class="group py-6 hairline">
         <summary class="flex items-start justify-between gap-4 list-none cursor-pointer">
-          <h4 class="m-0 text-base font-medium underline underline-offset-2">Cosa succede se acquisto il corso ma non posso partecipare?</h4>
+          <h4 class="m-0 text-lg font-medium underline underline-offset-2">Cosa succede se acquisto il corso ma non posso partecipare?</h4>
           <svg class="shrink-0 text-accent transition-transform duration-200 group-open:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
@@ -1070,7 +907,7 @@ offer:
       </details>
       <details class="group py-6 hairline">
         <summary class="flex items-start justify-between gap-4 list-none cursor-pointer">
-          <h4 class="m-0 text-base font-medium underline underline-offset-2">Cosa succede se non sono soddisfatto?</h4>
+          <h4 class="m-0 text-lg font-medium underline underline-offset-2">Cosa succede se non sono soddisfatto?</h4>
           <svg class="shrink-0 text-accent transition-transform duration-200 group-open:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
@@ -1079,7 +916,7 @@ offer:
       </details>
       <details class="group py-6 hairline">
         <summary class="flex items-start justify-between gap-4 list-none cursor-pointer">
-          <h4 class="m-0 text-base font-medium underline underline-offset-2">Ho bisogno di strumenti specifici?</h4>
+          <h4 class="m-0 text-lg font-medium underline underline-offset-2">Ho bisogno di strumenti specifici?</h4>
           <svg class="shrink-0 text-accent transition-transform duration-200 group-open:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
@@ -1088,7 +925,7 @@ offer:
       </details>
       <details class="group py-6 hairline">
         <summary class="flex items-start justify-between gap-4 list-none cursor-pointer">
-          <h4 class="m-0 text-base font-medium underline underline-offset-2">È possibile organizzare un workshop per più di 6 persone?</h4>
+          <h4 class="m-0 text-lg font-medium underline underline-offset-2">È possibile organizzare un workshop per più di 6 persone?</h4>
           <svg class="shrink-0 text-accent transition-transform duration-200 group-open:rotate-180" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
@@ -1100,17 +937,17 @@ offer:
 </section>
 
 <!-- Final CTA Section -->
-<section class="bg-card-foreground px-6 lg:px-10 py-16 lg:py-20">
+<section class="scroll-mt-32 lg:scroll-mt-24 bg-card-foreground px-6 lg:px-10 py-16 lg:py-20" id="booking-final">
   <div class="mx-auto max-w-7xl text-center">
-    <h2 class="font-heading text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl mb-3">Parti da ciò che esiste e trasforma il caos in decisioni condivise</h2>
-    <p class="mx-auto max-w-2xl text-lg lg:text-xl text-muted-foreground leading-relaxed mb-8">Riserva il tuo posto in una delle date disponibilis.</p>
+    <h2 class="font-heading text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl mb-3">Passa dal caos all'ordine</h2>
+    <p class="mx-auto max-w-2xl text-lg lg:text-xl text-muted-foreground leading-relaxed mb-8">Riserva il tuo posto in una delle date disponibili.</p>
     <div class="mb-8">
       {% include payment-link.html bg="bg-background" note=true wide=true %}
     </div>
     <div class="hairline mb-8"></div>
     <p class="mb-2 text-sm text-muted-foreground">Hai dubbi o altre domande?</p>
     <p>
-      <a href="https://cal.com/francesco-improta/30min" class="inline-flex items-center justify-center gap-2 text-sm underline underline-offset-2 hover:opacity-70 transition-opacity"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-accent" aria-hidden="true"><path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h5"/><path d="M17.5 17.5 16 16.3V14"/><circle cx="16" cy="16" r="6"/></svg>Parliamone insieme</a>
+      <a href="https://cal.com/francesco-improta/catch-up?overlayCalendar=true" class="inline-flex items-center justify-center gap-2 text-lg underline underline-offset-2 hover:opacity-70 transition-opacity"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-accent" aria-hidden="true"><path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h5"/><path d="M17.5 17.5 16 16.3V14"/><circle cx="16" cy="16" r="6"/></svg>Parliamone insieme</a>
     </p>
   </div>
 </section>
@@ -1180,6 +1017,9 @@ offer:
     const process = document.querySelector('[data-inventory-process]');
     if (!process) return;
 
+    const tablist = process.querySelector('[role="tablist"]');
+    const desktop = window.matchMedia('(min-width: 64rem)');
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
     const tabs = Array.from(process.querySelectorAll('[data-process-tab]'));
     const panels = Array.from(process.querySelectorAll('[data-process-panel]'));
 
@@ -1196,7 +1036,17 @@ offer:
         panel.hidden = panel.dataset.processPanel !== step;
       });
 
-      if (moveFocus) tab.focus();
+      if (moveFocus) tab.focus({ preventScroll: !desktop.matches });
+
+      if (!desktop.matches) {
+        const tabBounds = tab.getBoundingClientRect();
+        const listBounds = tablist.getBoundingClientRect();
+        tablist.scrollTo({
+          left: tablist.scrollLeft + tabBounds.left - listBounds.left
+            - (tablist.clientWidth - tabBounds.width) / 2,
+          behavior: reducedMotion.matches ? 'instant' : 'smooth'
+        });
+      }
     }
 
     tabs.forEach(function (tab, index) {

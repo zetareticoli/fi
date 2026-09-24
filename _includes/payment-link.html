@@ -48,7 +48,7 @@ wide (use the horizontal layout for full-width booking sections).
   </div>
   {% endif %}
   <div class="workshop-offer-action mt-auto flex flex-col items-stretch gap-4">
-    <a href="{{ include.url | default: offer.url }}" class="inline-flex items-center justify-center bg-accent px-8 py-4 text-lg font-medium text-white hover:opacity-90 rounded-full shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300{% if offer.plausible_event %} plausible-event-name={{ offer.plausible_event }}{% endif %}">{{ offer.cta | default: 'Riserva il tuo posto' }}</a>
+    <a href="{{ include.url | default: offer.url }}" class="inline-flex items-center justify-center bg-accent px-8 py-4 text-lg font-medium text-accent-foreground hover:opacity-90 rounded-full shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300{% if offer.plausible_event %} plausible-event-name={{ offer.plausible_event }}{% endif %}">{{ offer.cta | default: 'Riserva il tuo posto' }}</a>
     
     {% if include.note and offer.note %}
       <p class="text-xs text-center leading-tight text-muted-foreground event-countdown" style="display: none;"></p>
