@@ -9,31 +9,53 @@ Workshop offer block, driven by the `offer` map in the page front matter:
     plausible_event: "Buy+Workshop"
     sessions:                 # explicit dates, one line each
       - "Giovedì 15 ottobre 2026, 09:00-13:00"
+    session_time: "09:00-13:00"       # optional shared time, shown once
     dates_note: "2 date disponibili"   # used only when `sessions` is missing
     deadline: "2026-09-15T09:00:00"    # drives the countdown in the layout
     note: "Early Bird fino al …"       # early bird copy, rendered with note=true
 
 Parameters: bg (surface class), note (render the early bird note),
-url (override the checkout link for this block only).
+url (override the checkout link for this block only),
+wide (use the horizontal layout for full-width booking sections).
 {%- endcomment -%}
 {%- assign offer = page.offer -%}
-<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 p-6 md:p-8 border border-border {{ include.bg | default: 'bg-secondary/40' }} md:text-left">
-  <div class="flex flex-col items-center gap-2 md:items-start">
-    <div class="flex items-baseline gap-3">
-      <span class="font-heading text-3xl font-bold">{{ offer.price }}</span>
-      {% if offer.price_full %}<span class="text-lg text-muted-foreground line-through">{{ offer.price_full }}</span>{% endif %}
+<div class="{% if include.wide %}workshop-offer workshop-offer-wide{% else %}flex h-full flex-col gap-8{% endif %} border border-border p-6 text-left sm:p-8 lg:p-10 rounded-2xl shadow-lg {{ include.bg | default: 'bg-secondary/80 backdrop-blur-sm' }}">
+  <div class="workshop-offer-price flex items-center gap-3 border-b border-border h-full pb-8">
+    <span class="font-heading text-4xl font-bold tracking-tight lg:text-5xl">{{ offer.price }}</span>
+    {% if offer.price_full %}<span class="text-lg text-muted-foreground line-through lg:text-xl">{{ offer.price_full }}</span>{% endif %}
+  </div>
+  {% if offer.sessions or offer.dates_note %}
+  <div class="workshop-offer-sessions flex flex-col gap-4">
+    <span class="font-mono text-xs font-medium uppercase tracking-widest text-muted-foreground">Date disponibili</span>
+    {% if offer.sessions %}
+    <ul class="m-0 flex list-none flex-col gap-3 p-0">
+      {% for session in offer.sessions %}
+      <li class="flex items-center gap-3 text-base font-medium">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="size-4 shrink-0 text-emerald-500" aria-hidden="true"><path d="M8 2v3"/><path d="M16 2v3"/><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg>
+        {{ session }}
+      </li>
+      {% endfor %}
+    </ul>
+    {% elsif offer.dates_note %}
+    <p class="m-0 text-base font-medium leading-relaxed">{{ offer.dates_note }}</p>
+    {% endif %}
+    {% if offer.session_time %}
+    <div class="flex items-center gap-3 border-t border-border pt-4 text-sm text-muted-foreground">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="size-4 shrink-0" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+      <span>Orario: <strong class="font-medium text-foreground">{{ offer.session_time }}</strong></span>
     </div>
-    {% if offer.sessions %}{% for session in offer.sessions %}
-    <span class="font-mono text-xs uppercase tracking-wide text-muted-foreground">🗓️ {{ session }}</span>
-    {% endfor %}{% elsif offer.dates_note %}
-    <span class="font-mono text-xs uppercase tracking-wide text-muted-foreground">🗓️ {{ offer.dates_note }}</span>
     {% endif %}
   </div>
-  <a href="{{ include.url | default: offer.url }}" class="inline-flex items-center justify-center shrink-0 px-8 py-4 bg-accent text-black text-base font-medium hover:opacity-90 transition-opacity{% if offer.plausible_event %} plausible-event-name={{ offer.plausible_event }}{% endif %}">{{ offer.cta | default: 'Riserva il tuo posto' }}</a>
+  {% endif %}
+  <div class="workshop-offer-action mt-auto flex flex-col items-stretch gap-4">
+    <a href="{{ include.url | default: offer.url }}" class="inline-flex items-center justify-center bg-accent px-8 py-4 text-lg font-medium text-accent-foreground hover:opacity-90 rounded-full shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300{% if offer.plausible_event %} plausible-event-name={{ offer.plausible_event }}{% endif %}">{{ offer.cta | default: 'Riserva il tuo posto' }}</a>
+    
+    {% if include.note and offer.note %}
+      <p class="text-xs text-center leading-tight text-muted-foreground event-countdown" style="display: none;"></p>
+      <p class="text-xs text-center leading-tight text-muted-foreground event-static mb-0">{{ offer.note }}</p>
+    {% endif %}
+    {% if offer.checkout_note %}
+      <p class="m-0 text-xs text-center italic leading-tight text-muted-foreground">{{ offer.checkout_note }}</p>
+    {% endif %}
+  </div>
 </div>
-{% if include.note and offer.note %}
-<div class="text-center">
-  <p class="event-countdown text-sm text-muted-foreground" style="display: none;"></p>
-  <p class="event-static mt-6 text-sm text-muted-foreground">{{ offer.note }}</p>
-</div>
-{% endif %}

@@ -44,7 +44,7 @@
     --muted: 0 0% 60%;
     --muted-foreground: 0 0% 30%;
     --accent: 38 98% 44%;
-    --accent-foreground: 0 0% 100%;
+    --accent-foreground: 0 0% 6.7%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 0 0% 88.6%;
@@ -74,7 +74,7 @@
     --muted: 0 0% 30%;
     --muted-foreground: 0 0% 60%;
     --accent: 38 98% 44%;
-    --accent-foreground: 0 0% 100%;
+    --accent-foreground: 0 0% 6.7%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
     --border: 0 0% 16%;
@@ -181,16 +181,6 @@ summary::-webkit-details-marker {
 #theme-toggle .lucide-moon, #theme-toggle-mobile .lucide-moon { display: none; }
 .dark #theme-toggle .lucide-sun, .dark #theme-toggle-mobile .lucide-sun { display: none; }
 .dark #theme-toggle .lucide-moon, .dark #theme-toggle-mobile .lucide-moon { display: block; }
-
-.hero::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 15%;
-  height: 2px;
-  background: unquote("hsl(var(--accent))");
-}
 
 .prose {
   color: unquote("hsl(var(--muted-foreground))");

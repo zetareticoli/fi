@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" fill="none">
+  <title>Hero background — editable interface inventory</title>
+  <desc>Vector reconstruction of the supplied reference. Main objects and their internal UI pieces are arranged in named groups for individual editing in Figma.</desc>
+
+  <defs>
+    <linearGradient id="blue-screen" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#1667C9"/>
+      <stop offset="1" stop-color="#3E8EEE"/>
+    </linearGradient>
+    <linearGradient id="yellow-note" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFE76A"/>
+      <stop offset="1" stop-color="#FFD84F"/>
+    </linearGradient>
+    <linearGradient id="paper-warm" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#FCFCFA"/>
+    </linearGradient>
+    <radialGradient id="canvas-glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(768 500) rotate(90) scale(640 860)">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="0.72" stop-color="#FCFBF8"/>
+      <stop offset="1" stop-color="#F4F4F1"/>
+    </radialGradient>
+  </defs>
+
+  <g id="canvas-background">
+    <rect width="1536" height="1024" fill="url(#canvas-glow)"/>
+  </g>
+
+  <g id="paper-fragment-top-left" transform="translate(146 -92) rotate(7 58 90)">
+    <rect x="10" y="12" width="94" height="168" fill="#DDE3EC" opacity="0.7"/>
+    <rect width="94" height="168" fill="url(#paper-warm)"/>
+    <path d="M18 19H72V92H18" stroke="#2B6FC9" stroke-width="3"/>
+    <path d="M26 112H71M37 129H75" stroke="#2B6FC9" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <g id="paper-wireframe-upper-left" transform="translate(245 -68) rotate(-8 190 177)">
+    <rect x="10" y="12" width="382" height="354" fill="#DDE3EC" opacity="0.66"/>
+    <rect width="382" height="354" fill="url(#paper-warm)"/>
+    <g id="paper-wireframe-upper-left-main-placeholder" stroke="#2B6FC9" stroke-width="4">
+      <rect x="34" y="28" width="282" height="172"/>
+      <path d="M34 28L316 200M316 28L34 200"/>
+    </g>
+    <g id="paper-wireframe-upper-left-checkbox-one">
+      <rect x="35" y="223" width="32" height="34" stroke="#2B6FC9" stroke-width="4"/>
+      <path d="M88 232H244M88 249H225" stroke="#2B6FC9" stroke-width="4" stroke-linecap="round"/>
+    </g>
+    <g id="paper-wireframe-upper-left-checkbox-two">
+      <rect x="35" y="276" width="32" height="34" stroke="#2B6FC9" stroke-width="4"/>
+      <path d="M88 285H251M88 302H196" stroke="#65A1E3" stroke-width="4" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <g id="arrow-down-coral" transform="translate(608 181)">
+    <path d="M8 0C29 29 35 65 30 105" stroke="#FF6B5D" stroke-width="6" stroke-linecap="round"/>
+    <path d="M15 87L30 110L45 87" stroke="#FF6B5D" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g id="sticky-note-yellow-top" transform="translate(728 20) rotate(-13 95 84)">
+    <rect x="8" y="11" width="190" height="170" fill="#D6DCE4" opacity="0.72"/>
+    <path d="M0 12L16 0H190V170H0V12Z" fill="url(#yellow-note)"/>
+    <path d="M34 56H149M34 83H112M34 110H147" stroke="#344C69" stroke-width="7" stroke-linecap="round"/>
+  </g>
+
+  <g id="paper-wireframes-upper-right" transform="translate(970 -29) rotate(9 208 156)">
+    <rect x="10" y="12" width="416" height="312" fill="#DFE4EC" opacity="0.7"/>
+    <rect width="416" height="312" fill="url(#paper-warm)"/>
+    <path d="M34 20V170" stroke="#2B6FC9" stroke-width="4" stroke-linecap="round"/>
+    <g id="paper-wireframes-upper-right-card-striped">
+      <rect x="62" y="26" width="120" height="142" stroke="#2B6FC9" stroke-width="4"/>
+      <path d="M62 26L182 168M182 26L62 168" stroke="#2B6FC9" stroke-width="4"/>
+      <path d="M70 34L116 97L72 153M174 35L128 97L174 156" stroke="#FF6157" stroke-width="4" stroke-linecap="round"/>
+      <path d="M73 46L104 88M72 59L99 95M73 73L94 101M72 87L89 108M72 101L84 116M73 115L81 122M171 49L140 87M172 63L145 93M172 77L150 99M172 91L155 106M171 106L160 113M171 121L165 120" stroke="#FF6157" stroke-width="3"/>
+    </g>
+    <g id="paper-wireframes-upper-right-card-plain">
+      <rect x="203" y="26" width="166" height="142" stroke="#2B6FC9" stroke-width="4"/>
+      <path d="M203 26L369 168M369 26L203 168" stroke="#FF6157" stroke-width="4"/>
+    </g>
+    <g id="paper-wireframes-upper-right-copy">
+      <path d="M43 194H293M43 217H347M43 240H324M43 263H238" stroke="#2B6FC9" stroke-width="5" stroke-linecap="round"/>
+    </g>
+    <circle cx="388" cy="39" r="2.5" fill="#2B6FC9"/>
+  </g>
+
+  <g id="decorative-bars-coral-top-right" transform="translate(1440 65) rotate(-7)">
+    <rect x="0" y="0" width="18" height="142" stroke="#FF6157" stroke-width="10"/>
+    <rect x="65" y="25" width="25" height="139" stroke="#FF6157" stroke-width="5"/>
+  </g>
+
+  <g id="phone-left" transform="translate(-103 61) rotate(9 166 276)">
+    <rect x="13" y="16" width="332" height="568" rx="45" fill="#C7D0DC" opacity="0.86"/>
+    <rect width="332" height="568" rx="45" fill="#203040"/>
+    <rect x="8" y="8" width="316" height="552" rx="38" fill="#26384A" stroke="#172432" stroke-width="3"/>
+    <g id="phone-left-speaker">
+      <rect x="134" y="23" width="60" height="5" rx="2.5" fill="#53667A"/>
+    </g>
+    <g id="phone-left-hero-panel">
+      <rect x="21" y="52" width="290" height="196" fill="url(#blue-screen)"/>
+      <rect x="42" y="81" width="232" height="68" rx="3" fill="#F8FAFD"/>
+      <rect x="43" y="177" width="123" height="37" rx="3" fill="#F8FAFD"/>
+    </g>
+    <g id="phone-left-copy-card">
+      <rect x="21" y="270" width="290" height="114" fill="#F9FAFC"/>
+      <path d="M40 291H111M40 307H105M40 323H169M40 339H144M40 355H179" stroke="#3C7FCF" stroke-width="6" stroke-linecap="round"/>
+    </g>
+    <g id="phone-left-image-card">
+      <rect x="21" y="401" width="290" height="111" fill="#F9FAFC"/>
+      <rect x="34" y="415" width="121" height="81" fill="#3D86E2"/>
+      <path d="M34 496L73 451L104 482L126 457L155 496H34Z" fill="#76ACEC"/>
+      <circle cx="128" cy="435" r="10" fill="#9AC5F4"/>
+    </g>
+    <g id="phone-left-footer-card">
+      <rect x="21" y="526" width="290" height="30" fill="#F9FAFC"/>
+      <path d="M39 540H111M39 551H81" stroke="#76A9E7" stroke-width="5" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <g id="profile-card-right" transform="translate(1301 230) rotate(9 166 209)">
+    <rect x="9" y="12" width="332" height="418" fill="#DCE2EA" opacity="0.65"/>
+    <rect width="332" height="418" fill="url(#paper-warm)" stroke="#4D91E8" stroke-width="3"/>
+    <g id="profile-card-right-heading">
+      <circle cx="54" cy="70" r="25" stroke="#2B6FC9" stroke-width="4"/>
+      <path d="M105 54H220M105 76H178" stroke="#2B6FC9" stroke-width="7" stroke-linecap="round"/>
+    </g>
+    <g id="profile-card-right-image">
+      <rect x="34" y="117" width="262" height="146" stroke="#2B6FC9" stroke-width="4"/>
+      <path d="M34 263L121 172L185 263H34Z" fill="#BFD7F5" stroke="#2B6FC9" stroke-width="4" stroke-linejoin="round"/>
+      <circle cx="243" cy="163" r="19" fill="#D2E2F7" stroke="#2B6FC9" stroke-width="4"/>
+    </g>
+    <g id="profile-card-right-footer">
+      <rect x="34" y="293" width="54" height="54" stroke="#2B6FC9" stroke-width="4"/>
+      <path d="M113 302H257M113 323H263M113 344H204" stroke="#2B6FC9" stroke-width="6" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <g id="checklist-paper-bottom-left" transform="translate(8 588) rotate(-14 190 150)">
+    <rect x="10" y="13" width="380" height="300" fill="#DDE3EC" opacity="0.72"/>
+    <rect width="380" height="300" fill="url(#paper-warm)"/>
+    <g id="checklist-paper-row-one">
+      <rect x="48" y="56" width="40" height="40" stroke="#2BA68F" stroke-width="4"/>
+      <path d="M57 75L70 88L89 61" stroke="#2BA68F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M112 54H329M112 76H281M112 98H253" stroke="#496B8B" stroke-width="5" stroke-linecap="round"/>
+    </g>
+    <g id="checklist-paper-row-two">
+      <rect x="48" y="122" width="40" height="40" stroke="#2BA68F" stroke-width="4"/>
+      <rect x="111" y="126" width="211" height="20" stroke="#2BA68F" stroke-width="4"/>
+      <path d="M112 166H260" stroke="#496B8B" stroke-width="5" stroke-linecap="round"/>
+    </g>
+    <g id="checklist-paper-row-three">
+      <rect x="48" y="188" width="40" height="40" stroke="#2BA68F" stroke-width="4"/>
+      <path d="M57 207L70 220L89 193" stroke="#2BA68F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M112 193H276M112 216H326" stroke="#496B8B" stroke-width="5" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <g id="sticky-note-yellow-left-edge" transform="translate(-56 845) rotate(-13 55 86)">
+    <rect x="8" y="11" width="112" height="174" fill="#D6DCE4" opacity="0.7"/>
+    <path d="M0 12L16 0H112V174H0V12Z" fill="url(#yellow-note)"/>
+  </g>
+
+  <g id="blue-media-card-bottom-left" transform="translate(109 826) rotate(-10 271 102)">
+    <rect x="10" y="12" width="542" height="204" fill="#DDE3EC" opacity="0.68"/>
+    <rect width="542" height="204" fill="url(#blue-screen)"/>
+    <g id="blue-media-card-thumbnail">
+      <rect x="42" y="50" width="147" height="92" fill="#F7F9FC"/>
+    </g>
+    <path d="M208 49V151" stroke="#B7D4F7" stroke-width="2"/>
+    <g id="blue-media-card-copy">
+      <rect x="232" y="46" width="266" height="12" rx="3" fill="#F6F8FB"/>
+      <rect x="232" y="75" width="196" height="12" rx="3" fill="#F6F8FB"/>
+      <rect x="232" y="101" width="157" height="12" rx="3" fill="#F6F8FB"/>
+      <rect x="232" y="127" width="167" height="12" rx="3" fill="#F6F8FB"/>
+    </g>
+    <g id="blue-media-card-play-button">
+      <circle cx="481" cy="157" r="26" fill="#F7F9FC"/>
+      <path d="M474 144L492 157L474 170V144Z" fill="#3F86DE"/>
+    </g>
+  </g>
+
+  <g id="profile-strip-bottom" transform="translate(690 850) rotate(9 182 74)">
+    <rect x="8" y="10" width="364" height="148" fill="#DFE4EC" opacity="0.65"/>
+    <rect width="364" height="148" fill="url(#paper-warm)"/>
+    <circle cx="59" cy="52" r="24" stroke="#2B6FC9" stroke-width="5"/>
+    <path d="M111 39H239M111 59H191" stroke="#2B6FC9" stroke-width="7" stroke-linecap="round"/>
+    <path d="M34 102H245M34 123H187" stroke="#67A0E0" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <g id="arrow-up-coral" transform="translate(946 824) rotate(-8)">
+    <path d="M57 87C28 70 8 44 5 9" stroke="#FF6B5D" stroke-width="6" stroke-linecap="round"/>
+    <path d="M0 31L5 5L27 20" stroke="#FF6B5D" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g id="tablet-bottom-right" transform="translate(1037 700) rotate(-10 308 204)">
+    <rect x="14" y="16" width="626" height="418" rx="43" fill="#CBD3DE" opacity="0.82"/>
+    <rect width="626" height="418" rx="43" fill="#203040"/>
+    <rect x="46" y="33" width="560" height="352" rx="9" fill="#FFFFFF"/>
+    <g id="tablet-bottom-right-speaker">
+      <rect x="20" y="172" width="7" height="49" rx="3.5" fill="#516478"/>
+    </g>
+    <g id="tablet-bottom-right-card-striped-one">
+      <rect x="75" y="71" width="130" height="119" stroke="#2B6FC9" stroke-width="4"/>
+      <path d="M75 71L205 190M205 71L75 190" stroke="#2B6FC9" stroke-width="4"/>
+      <path d="M82 79L132 130L82 180M198 79L148 130L198 180" stroke="#FF6157" stroke-width="4"/>
+      <path d="M85 92L121 125M84 105L115 133M84 119L109 141M85 133L104 149M85 147L98 157M195 93L159 125M196 106L166 133M196 120L171 141M195 134L176 149M195 148L182 157" stroke="#FF6157" stroke-width="3"/>
+    </g>
+    <g id="tablet-bottom-right-card-plain-one">
+      <rect x="226" y="71" width="168" height="119" stroke="#2B6FC9" stroke-width="4"/>
+      <path d="M226 71L394 190M394 71L226 190" stroke="#FF6157" stroke-width="4"/>
+    </g>
+    <g id="tablet-bottom-right-card-striped-two">
+      <rect x="75" y="210" width="130" height="119" stroke="#2B6FC9" stroke-width="4"/>
+      <path d="M75 210L205 329M205 210L75 329" stroke="#2B6FC9" stroke-width="4"/>
+      <path d="M82 218L132 269L82 319M198 218L148 269L198 319" stroke="#FF6157" stroke-width="4"/>
+      <path d="M85 231L121 264M84 244L115 272M84 258L109 280M85 272L104 288M85 286L98 296M195 232L159 264M196 245L166 272M196 259L171 280M195 273L176 288M195 287L182 296" stroke="#FF6157" stroke-width="3"/>
+    </g>
+    <g id="tablet-bottom-right-card-plain-two">
+      <rect x="226" y="210" width="168" height="119" stroke="#2B6FC9" stroke-width="4"/>
+      <path d="M226 210L394 329M394 210L226 329" stroke="#FF6157" stroke-width="4"/>
+    </g>
+    <g id="tablet-bottom-right-side-controls">
+      <rect x="426" y="71" width="19" height="116" stroke="#FF6157" stroke-width="4"/>
+      <rect x="469" y="81" width="19" height="109" stroke="#FF6157" stroke-width="4"/>
+      <rect x="424" y="216" width="154" height="50" stroke="#4D91E8" stroke-width="3"/>
+      <path d="M438 239C455 226 468 250 485 235C500 222 515 245 532 232" stroke="#5A9BEC" stroke-width="4" stroke-linecap="round"/>
+      <path d="M424 290H554M424 309H521" stroke="#2B6FC9" stroke-width="5" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <g id="central-safe-area" opacity="0">
+    <rect x="410" y="306" width="730" height="470" rx="24" fill="#FFFFFF"/>
+  </g>
+</svg>
