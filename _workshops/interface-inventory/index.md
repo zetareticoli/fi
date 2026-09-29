@@ -23,7 +23,7 @@ workshop_nav:
 offer:
   price: "€99"
   price_full: "€199"
-  url: "https://book.stripe.com/8x2cN41yX23MfUm1MDcs803?prefilled_promo_code=EARLYMAG26"
+  url: "https://book.stripe.com/8x2cN41yX23MfUm1MDcs803?prefilled_promo_code=OCTEARLY "
   cta: "Riserva il tuo posto"
   plausible_event: "Buy+Workshop"
   sessions:
@@ -31,8 +31,8 @@ offer:
     - "mercoledì, 4 novembre 2026"
     - "mercoledì, 2 dicembre 2026"
   session_time: "09:30–13:30"
-  deadline: "2026-10-02T23:59:59"
-  note: 'Prezzo Early Bird valido fino al <strong class="font-medium">02 ottobre 2026</strong>.'
+  deadline: "2026-10-05T23:59:59"
+  note: 'Prezzo Early Bird valido fino al <strong class="font-medium">05 ottobre 2026</strong>.'
   checkout_note: "Puoi scegliere la data durante il checkout con Stripe."
 ---
 
