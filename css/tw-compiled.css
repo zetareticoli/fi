@@ -2696,6 +2696,17 @@
       }
     }
   }
+  .dark\:hover\:not-active\:bg-secondary {
+    &:where(.dark, .dark *) {
+      &:hover {
+        @media (hover: hover) {
+          &:not(*:active) {
+            background-color: var(--color-secondary);
+          }
+        }
+      }
+    }
+  }
   .prose-headings\:font-heading {
     & :is(:where(h1, h2, h3, h4, h5, h6, th):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
       font-family: var(--font-heading);
