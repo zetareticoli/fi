@@ -20,6 +20,7 @@
   "image": {{ include.og_image | jsonify }}{% if page.layout == 'post' %},
   "headline": {{ page.title | jsonify }},
   "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+  "dateModified": {{ page.last_modified_at | default: page.date | date_to_xmlschema | jsonify }},
   "author": {
     "@type": "Person",
     "name": {{ site.author.name | jsonify }},
