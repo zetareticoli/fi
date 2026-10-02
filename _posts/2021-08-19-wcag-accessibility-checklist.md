@@ -4,7 +4,7 @@ title: "The Must Have WCAG 2.1 Checklist (Updated for WCAG 2.2)"
 seo_title: "WCAG 2.1 & 2.2 Checklist for Designers: AA Made Simple"
 description: "A practical WCAG 2.1 and 2.2 checklist for designers: contrast ratios, focus, forms, target size and the AA criteria to meet, plus tools to test your work."
 cover-image: wcag-checklist.jpg
-image_alt: "WCAG 2.1 accessibility checklist for designers"
+image_alt: "WCAG 2.1 and 2.2 accessibility checklist for designers"
 permalink: /2021/08/19/wcag-accessibility-checklist/
 read_time: 8 min read
 sitemap:
