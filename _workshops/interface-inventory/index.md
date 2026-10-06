@@ -21,9 +21,9 @@ workshop_nav:
   - label: "FAQ"
     url: "#faq"
 offer:
-  price: "€99"
+  price: "€159"
   price_full: "€199"
-  url: "https://book.stripe.com/8x2cN41yX23MfUm1MDcs803?prefilled_promo_code=OCTEARLY "
+  url: "https://book.stripe.com/8x2cN41yX23MfUm1MDcs803?prefilled_promo_code=LATE20"
   cta: "Riserva il tuo posto"
   plausible_event: "Buy+Workshop"
   sessions:
@@ -31,8 +31,7 @@ offer:
     - "mercoledì, 4 novembre 2026"
     - "mercoledì, 2 dicembre 2026"
   session_time: "09:30–13:30"
-  deadline: "2026-10-05T23:59:59"
-  note: 'Prezzo Early Bird valido fino al <strong class="font-medium">05 ottobre 2026</strong>.'
+  note: "Sconto del 20% applicato automaticamente al checkout."
   checkout_note: "Puoi scegliere la data durante il checkout con Stripe."
 ---
 
@@ -491,9 +490,9 @@ offer:
     <div class="mb-8 text-center">
       <span class="mb-3 block font-mono text-xs uppercase tracking-wide text-accent">Partecipa</span>
       <h2 class="font-heading text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl">Riserva il tuo posto</h2>
-      <p class="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground">L’Early Bird è valido per tutte le sessioni. Sceglierai la data che preferisci nel checkout Stripe.</p>
+      <p class="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground">Sceglierai la data che preferisci nel checkout Stripe.</p>
     </div>
-    {% include payment-link.html note=true wide=true %}
+    {% include payment-link.html wide=true %}
   </div>
 </section>
 
@@ -942,7 +941,7 @@ offer:
     <h2 class="font-heading text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl mb-3">Passa dal caos all'ordine</h2>
     <p class="mx-auto max-w-2xl text-lg lg:text-xl text-muted-foreground leading-relaxed mb-8">Riserva il tuo posto in una delle date disponibili.</p>
     <div class="mb-8">
-      {% include payment-link.html bg="bg-background" note=true wide=true %}
+      {% include payment-link.html bg="bg-background" wide=true %}
     </div>
     <div class="hairline mb-8"></div>
     <p class="mb-2 text-sm text-muted-foreground">Hai dubbi o altre domande?</p>
