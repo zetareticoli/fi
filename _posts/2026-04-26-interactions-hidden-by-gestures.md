@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Interactions hidden by gestures"
+description: "Long press and swipe hide features behind gestures users have no reason to try. A clean UI is not the same as a findable one."
 cover-image: 
 sitemap:
   priority: 0.85

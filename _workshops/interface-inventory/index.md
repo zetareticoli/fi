@@ -2,7 +2,6 @@
 layout: workshop
 title: "Interface Inventory Workshop con Francesco Improta"
 seo_title: "Interface Inventory Workshop con Francesco Improta"
-summary: "Impara a creare un inventario di elementi e componenti dell'interfaccia di un prodotto digitale. Passa dal caos all'ordine con un metodo pratico e facile da implementare."
 description: "Impara a creare un inventario di elementi e componenti dell'interfaccia di un prodotto digitale. Passa dal caos all'ordine con un metodo pratico e facile da implementare."
 lang: it
 og-image: workshops/interface-inventory/interface-inventory-og.webp

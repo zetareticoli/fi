@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "On the last redesign"
+description: "A full redesign so the site states the work clearly: design systems and product design leadership, with case studies that show context, challenge, and outcome."
 cover-image: 
 sitemap: 
   priority: 0.96

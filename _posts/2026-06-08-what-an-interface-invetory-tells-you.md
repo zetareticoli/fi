@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "What an interface inventory really tells you"
+description: "An interface inventory is not a tidy grid of components. It is a mirror of how the product was actually built, by whom, and against which deadlines."
 cover-image: 
 sitemap:
   priority: 0.9

@@ -11,7 +11,12 @@
 {%- else -%}
   {%- assign meta_title = site.title -%}
 {%- endif -%}
-{%- assign meta_description = page.description | default: page.summary | default: page.overview | default: site.description -%}
+{%- if page.layout == 'post' -%}
+  {%- assign writing_page = site.pages | where: 'permalink', '/writing/' | first -%}
+  {%- assign meta_description = page.description | default: writing_page.description | default: site.description -%}
+{%- else -%}
+  {%- assign meta_description = page.description | default: page.summary | default: page.overview | default: site.description -%}
+{%- endif -%}
 {%- assign canonical_url = page.url | absolute_url -%}
 {%- assign page_language = page.lang | default: site.lang -%}
 {%- if page_language == 'it' -%}
