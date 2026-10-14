@@ -1,8 +1,8 @@
 ---
 layout: work
 title: From Startup Idea to Scalable Product 
-lead: A digital platform for collecting, organising, and publishing curated content from social networks
-summary: The summary of the project
+overview: A digital platform for collecting, organising, and publishing curated content from social networks.
+description: "Redesigning Seejay in the browser: a multi-platform interface for collecting and publishing social content, built as a reusable system rather than a set of static screens."
 cover: /img/work/seejay/seejay-cover.webp
 cover_width: 2560
 cover_height: 1080

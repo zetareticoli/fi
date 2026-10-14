@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Using AI as a product designer"
+description: "How a 2026 design stack moved from Figma-first to intent-to-code: Claude for thinking, Notion for specs, Cursor for software."
 cover-image: 
 sitemap:
   priority: 0.99

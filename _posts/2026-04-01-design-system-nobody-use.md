@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The design system nobody uses"
+description: "Design system adoption fails months after launch, when people work around what you built. The problem is rarely technical."
 cover-image: 
 sitemap:
   priority: 0.9

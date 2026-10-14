@@ -1,7 +1,7 @@
 ---
 layout: workshop
 title: "Design Tokens Workshop - Corso Completo"
-summary: "Impara a creare e gestire i design tokens in modo efficace, accelerando lo sviluppo e garantendo la coerenza visiva dell'interfaccia."
+description: "Impara a creare e gestire i design tokens in modo efficace, accelerando lo sviluppo e garantendo la coerenza visiva dell'interfaccia."
 lang: it
 og-image: workshops/og-design-tokens-workshop.png
 permalink: /workshops/design-tokens/

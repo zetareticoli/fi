@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Design Tokens Pro is officially live"
+description: "The design tokens guide now lives at designtokens.pro: naming, architecture, themes, and documentation, with two free chapters."
 cover-image: design-tokens-pro.webp
 image_alt: "Design Tokens Pro guide, shown as a book beside the website on desktop and tablet"
 sitemap:

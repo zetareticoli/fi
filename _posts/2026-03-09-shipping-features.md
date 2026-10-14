@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Shipping features is not product success"
+description: "Teams celebrate releases while unused features pile up. Output is not outcome — and velocity metrics hide the difference."
 cover-image: 
 sitemap:
   priority: 0.8
