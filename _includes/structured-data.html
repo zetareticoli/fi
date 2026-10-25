@@ -1,4 +1,7 @@
 {%- assign canonical_url = page.url | absolute_url -%}
+{%- assign person_id = '/#person' | absolute_url -%}
+{%- assign person_url = '/' | absolute_url -%}
+{%- assign person_image = '/img/francesco-improta.webp' | absolute_url -%}
 {%- assign schema_type = 'WebPage' -%}
 {%- if page.url == '/' -%}
   {%- assign schema_type = 'WebSite' -%}
@@ -17,35 +20,48 @@
   "name": {{ include.meta_title | jsonify }},
   "description": {{ include.meta_description | strip_html | normalize_whitespace | jsonify }},
   "inLanguage": {{ page.lang | default: site.lang | jsonify }},
-  "image": {{ include.og_image | jsonify }}{% if page.layout == 'post' %},
+  "image": {{ include.og_image | jsonify }}{% if page.url == '/about/' %},
+  "mainEntity": {
+    "@type": "Person",
+    "@id": {{ person_id | jsonify }},
+    "name": {{ site.author.name | jsonify }},
+    "url": {{ person_url | jsonify }},
+    "description": {{ include.meta_description | strip_html | normalize_whitespace | jsonify }},
+    "image": {{ person_image | jsonify }},
+    "sameAs": [{% for social in site.author.social %}{{ social.url | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}]
+  }{% elsif page.layout == 'post' %},
   "headline": {{ page.title | jsonify }},
   "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
   "dateModified": {{ page.last_modified_at | default: page.date | date_to_xmlschema | jsonify }},
   "author": {
     "@type": "Person",
+    "@id": {{ person_id | jsonify }},
     "name": {{ site.author.name | jsonify }},
-    "url": {{ '/' | absolute_url | jsonify }}
+    "url": {{ person_url | jsonify }}
   },
   "publisher": {
     "@type": "Person",
+    "@id": {{ person_id | jsonify }},
     "name": {{ site.author.name | jsonify }},
-    "url": {{ '/' | absolute_url | jsonify }}
+    "url": {{ person_url | jsonify }}
   }{% elsif page.collection == 'work' %},
   "creator": {
     "@type": "Person",
+    "@id": {{ person_id | jsonify }},
     "name": {{ site.author.name | jsonify }},
-    "url": {{ '/' | absolute_url | jsonify }}
+    "url": {{ person_url | jsonify }}
   }{% endif %}
 }
 </script>
-{% if page.url == '/' or page.url == '/about/' %}
+{% if page.url == '/' %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Person",
+  "@id": {{ person_id | jsonify }},
   "name": {{ site.author.name | jsonify }},
-  "url": {{ '/' | absolute_url | jsonify }},
-  "image": {{ '/img/francesco-improta.webp' | absolute_url | jsonify }},
+  "url": {{ person_url | jsonify }},
+  "image": {{ person_image | jsonify }},
   "sameAs": [{% for social in site.author.social %}{{ social.url | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}]
 }
 </script>
