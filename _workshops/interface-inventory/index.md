@@ -26,8 +26,7 @@ offer:
   cta: "Riserva il tuo posto"
   plausible_event: "Buy+Workshop"
   sessions:
-    - "mercoledì, 21 ottobre 2026"
-    - "mercoledì, 4 novembre 2026"
+    - "mercoledì, 11 novembre 2026"
     - "mercoledì, 2 dicembre 2026"
   session_time: "09:30–13:30"
   note: "Sconto del 20% applicato automaticamente al checkout."
