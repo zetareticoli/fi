@@ -22,7 +22,7 @@ workshop_nav:
 offer:
   price: "€159"
   price_full: "€199"
-  url: "https://book.stripe.com/8x2cN41yX23MfUm1MDcs803?prefilled_promo_code=LATE20"
+  url: "https://book.stripe.com/8x2cN41yX23MfUm1MDcs803?prefilled_promo_code=EARLYNOV"
   cta: "Riserva il tuo posto"
   plausible_event: "Buy+Workshop"
   sessions:
