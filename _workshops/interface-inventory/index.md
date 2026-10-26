@@ -20,7 +20,7 @@ workshop_nav:
   - label: "FAQ"
     url: "#faq"
 offer:
-  price: "€159"
+  price: "€99"
   price_full: "€199"
   url: "https://book.stripe.com/8x2cN41yX23MfUm1MDcs803?prefilled_promo_code=EARLYNOV"
   cta: "Riserva il tuo posto"
