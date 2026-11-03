@@ -1,0 +1,11 @@
+{
+  "browser": "156.0.8078.80",
+  "platform": "darwin",
+  "architecture": "arm64",
+  "deviceScaleFactor": 1,
+  "theme": "light",
+  "renderer": "software compositing (--disable-gpu)",
+  "frozenTime": "2026-11-03T10:00:00Z",
+  "method": "Same DOM, original CSS replaced by candidate CSS; separate cold context for candidate network; two identical consecutive captures required on each side; no masks or tolerance",
+  "media": "External requests and video playback blocked; GIF first frame; CSS transitions/animations disabled"
+}

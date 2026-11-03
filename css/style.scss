@@ -3,30 +3,8 @@
 # only Main files contain this front matter, not partials.
 ---
 
-/* Local variable fonts */
-@font-face {
-  font-family: 'Inter';
-  src: url('/css/fonts/Inter-Variable.woff2') format('woff2');
-  font-style: normal;
-  font-weight: 300 700;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'JetBrains Mono';
-  src: url('/css/fonts/JetBrains-Mono-Variable.woff2') format('woff2');
-  font-style: normal;
-  font-weight: 300 500;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Mona Sans';
-  src: url('/css/fonts/Mona-Sans-Variable.woff2') format('woff2');
-  font-style: normal;
-  font-weight: 300 700;
-  font-display: swap;
-}
+/* Generated offline; see scripts/font-tools/README.md. */
+@import 'font-subsets';
 
 /* Runtime theme and global element styles */
 @layer base {

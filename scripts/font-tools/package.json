@@ -1,0 +1,9 @@
+{
+  "name": "fi-font-audit",
+  "private": true,
+  "description": "Manual font verification only; never part of the site build",
+  "devDependencies": {
+    "playwright": "1.62.1",
+    "pngjs": "7.0.0"
+  }
+}
