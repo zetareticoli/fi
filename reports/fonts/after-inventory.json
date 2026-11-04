@@ -1,0 +1,204 @@
+{
+  "Inter": {
+    "removedUnusedVariationTuples": 0,
+    "retainedVariationRange": [
+      100.0,
+      900.0
+    ],
+    "usedWeights": [
+      400.0,
+      500.0,
+      600.0,
+      700.0
+    ],
+    "enabledCssFeatures": [
+      "tnum"
+    ],
+    "sourceBytes": 48432,
+    "sourceSha256": "c940764593d0fe5d596be327ca7558855e018039fb78509aa21921fd3644c3e4",
+    "files": {
+      "core": {
+        "sha256": "ba6cf5c94a5f276a92ba3b6d308cb67cebdefe7aaab8c2f03a1873c15b91e209",
+        "url": "/css/fonts/Inter-core.woff2?v=ba6cf5c94a5f276a",
+        "bytes": 27160,
+        "glyphs": 217,
+        "unicodeRange": "U+0020-007E, U+00A0, U+00A9, U+00AC, U+00B7, U+00C8, U+00D7, U+00E0, U+00E7-00E9, U+00EC, U+00F2, U+00F9, U+200B, U+2010, U+2013-2014, U+2018-2019, U+201C-201D, U+2022, U+2026, U+20AC",
+        "cmapRange": "U+0020-007E, U+00A0, U+00A9, U+00AC, U+00B7, U+00C8, U+00D7, U+00E0, U+00E7-00E9, U+00EC, U+00F2, U+00F9, U+200B, U+2010, U+2013-2014, U+2018-2019, U+201C-201D, U+2022, U+2026, U+20AC",
+        "axes": {
+          "wght": [
+            100.0,
+            400.0,
+            900.0
+          ]
+        },
+        "features": {
+          "GSUB": [
+            "calt",
+            "locl",
+            "tnum"
+          ],
+          "GPOS": [
+            "kern"
+          ]
+        }
+      },
+      "extended": {
+        "sha256": "81a08d87aed0dcb450865cb2ca0feccb6b6a2efe0d8920b96e2e838ee39111ce",
+        "url": "/css/fonts/Inter-extended.woff2?v=81a08d87aed0dcb4",
+        "bytes": 16672,
+        "glyphs": 141,
+        "unicodeRange": "U+00A1-00A8, U+00AA-00AB, U+00AE-00B6, U+00B8-00C7, U+00C9-00D6, U+00D8-00DF, U+00E1-00E6, U+00EA-00EB, U+00ED-00F1, U+00F3-00F8, U+00FA-00FF, U+0131, U+0152-0153, U+0300-0301, U+0303-0304, U+0308-0309, U+0323",
+        "cmapRange": "U+0058, U+00A1-00A8, U+00AA-00AB, U+00AE-00B6, U+00B8-00C7, U+00C9-00D6, U+00D8-00DF, U+00E1-00E6, U+00EA-00EB, U+00ED-00F1, U+00F3-00F8, U+00FA-00FF, U+0131, U+0152-0153, U+0300-0301, U+0303-0304, U+0308-0309, U+0323",
+        "axes": {
+          "wght": [
+            100.0,
+            400.0,
+            900.0
+          ]
+        },
+        "features": {
+          "GSUB": [
+            "calt",
+            "ccmp",
+            "tnum"
+          ],
+          "GPOS": [
+            "kern",
+            "mark",
+            "mkmk"
+          ]
+        }
+      }
+    }
+  },
+  "Mona-Sans": {
+    "removedUnusedVariationTuples": 0,
+    "retainedVariationRange": [
+      200.0,
+      900.0
+    ],
+    "usedWeights": [
+      400.0,
+      500.0,
+      600.0,
+      700.0
+    ],
+    "enabledCssFeatures": [],
+    "sourceBytes": 39796,
+    "sourceSha256": "44e710b0717b17343dd52dd731b9d9efaf62ed6b4fb466e3b49742ae85325f4e",
+    "files": {
+      "core": {
+        "sha256": "452ca8dc4a141c518a95346195cd96f27a16333929eb8ccdd726b0f1df5a6a49",
+        "url": "/css/fonts/Mona-Sans-core.woff2?v=452ca8dc4a141c51",
+        "bytes": 24988,
+        "glyphs": 134,
+        "unicodeRange": "U+0020-007E, U+00A0, U+00A9, U+00AC, U+00B7, U+00C8, U+00D7, U+00E0, U+00E7-00E9, U+00EC, U+00F2, U+00F9, U+2010, U+2013-2014, U+2018-2019, U+201C-201D, U+2022, U+2026, U+20AC",
+        "cmapRange": "U+0020-007E, U+00A0, U+00A9, U+00AC, U+00B7, U+00C8, U+00D7, U+00E0, U+00E7-00E9, U+00EC, U+00F2, U+00F9, U+2010, U+2013-2014, U+2018-2019, U+201C-201D, U+2022, U+2026, U+20AC",
+        "axes": {
+          "wght": [
+            200.0,
+            200.0,
+            900.0
+          ]
+        },
+        "features": {
+          "GSUB": [
+            "ccmp",
+            "liga",
+            "locl"
+          ],
+          "GPOS": [
+            "kern"
+          ]
+        }
+      },
+      "extended": {
+        "sha256": "a7585366cdaa42562ad3e6d6d0628905555ab2e80cd22c0fd0bed13da776f87b",
+        "url": "/css/fonts/Mona-Sans-extended.woff2?v=a7585366cdaa4256",
+        "bytes": 11804,
+        "glyphs": 124,
+        "unicodeRange": "U+00A1-00A8, U+00AA-00AB, U+00AE-00B4, U+00B6, U+00B8-00C7, U+00C9-00D6, U+00D8-00DF, U+00E1-00E6, U+00EA-00EB, U+00ED-00F1, U+00F3-00F8, U+00FA-00FF, U+0102, U+0131, U+0152-0153, U+0300-0301, U+0303-0304, U+0308-0309, U+0323",
+        "cmapRange": "U+0058, U+00A1-00A8, U+00AA-00AB, U+00AE-00B4, U+00B6, U+00B8-00C7, U+00C9-00D6, U+00D8-00DF, U+00E1-00E6, U+00EA-00EB, U+00ED-00F1, U+00F3-00F8, U+00FA-00FF, U+0102, U+0131, U+0152-0153, U+0300-0301, U+0303-0304, U+0308-0309, U+0323",
+        "axes": {
+          "wght": [
+            200.0,
+            200.0,
+            900.0
+          ]
+        },
+        "features": {
+          "GSUB": [],
+          "GPOS": [
+            "kern",
+            "mark"
+          ]
+        }
+      }
+    }
+  },
+  "JetBrains-Mono": {
+    "removedUnusedVariationTuples": 385,
+    "retainedVariationRange": [
+      400.0,
+      800.0
+    ],
+    "usedWeights": [
+      400.0,
+      500.0,
+      600.0
+    ],
+    "enabledCssFeatures": [
+      "tnum"
+    ],
+    "sourceBytes": 40480,
+    "sourceSha256": "1e06740a02a443fb7f3eeda8fcaa685a0f6c620e3f01e6666e847295469ce3ad",
+    "files": {
+      "core": {
+        "sha256": "02e18aa30b97350dffd252a88b4fb560e0700079413dcc3b29a976f5878517c4",
+        "url": "/css/fonts/JetBrains-Mono-core.woff2?v=02e18aa30b97350d",
+        "bytes": 25904,
+        "glyphs": 267,
+        "unicodeRange": "U+0020-007E, U+00A0, U+00A9, U+00AC, U+00B7, U+00C8, U+00D7, U+00E0, U+00E7-00E9, U+00EC, U+00F2, U+00F9, U+2010, U+2013-2014, U+2018-2019, U+201C-201D, U+2022, U+2026, U+20AC",
+        "cmapRange": "U+0020-007E, U+00A0, U+00A9, U+00AC, U+00B7, U+00C8, U+00D7, U+00E0, U+00E7-00E9, U+00EC, U+00F2, U+00F9, U+2010, U+2013-2014, U+2018-2019, U+201C-201D, U+2022, U+2026, U+20AC",
+        "axes": {
+          "wght": [
+            100.0,
+            400.0,
+            800.0
+          ]
+        },
+        "features": {
+          "GSUB": [
+            "calt",
+            "ccmp",
+            "locl"
+          ],
+          "GPOS": []
+        }
+      },
+      "extended": {
+        "sha256": "5b7ca58dae2d13f160eb4162afdedbdca456581b40953be583b434841051b5c6",
+        "url": "/css/fonts/JetBrains-Mono-extended.woff2?v=5b7ca58dae2d13f1",
+        "bytes": 8228,
+        "glyphs": 126,
+        "unicodeRange": "U+00A1-00A8, U+00AA-00AB, U+00AD-00B6, U+00B8-00C7, U+00C9-00D6, U+00D8-00DF, U+00E1-00E6, U+00EA-00EB, U+00ED-00F1, U+00F3-00F8, U+00FA-00FF, U+0102, U+0131, U+0152-0153, U+0300-0301, U+0303-0304, U+0308-0309, U+0323",
+        "cmapRange": "U+0058, U+00A1-00A8, U+00AA-00AB, U+00AD-00B6, U+00B8-00C7, U+00C9-00D6, U+00D8-00DF, U+00E1-00E6, U+00EA-00EB, U+00ED-00F1, U+00F3-00F8, U+00FA-00FF, U+0102, U+0131, U+0152-0153, U+0300-0301, U+0303-0304, U+0308-0309, U+0323",
+        "axes": {
+          "wght": [
+            100.0,
+            400.0,
+            800.0
+          ]
+        },
+        "features": {
+          "GSUB": [
+            "ccmp"
+          ],
+          "GPOS": [
+            "mark"
+          ]
+        }
+      }
+    }
+  }
+}

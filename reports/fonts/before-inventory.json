@@ -1,0 +1,836 @@
+{
+  "Inter-Bold.woff": {
+    "bytes": 143708,
+    "glyphs": 2538,
+    "characters": 2529,
+    "axes": {},
+    "features": {
+      "GSUB": [
+        "aalt",
+        "calt",
+        "case",
+        "ccmp",
+        "cv01",
+        "cv02",
+        "cv03",
+        "cv04",
+        "cv05",
+        "cv06",
+        "cv07",
+        "cv08",
+        "cv09",
+        "cv10",
+        "cv11",
+        "dlig",
+        "dnom",
+        "frac",
+        "locl",
+        "numr",
+        "ordn",
+        "pnum",
+        "rlig",
+        "salt",
+        "ss01",
+        "ss02",
+        "ss03",
+        "subs",
+        "sups",
+        "tnum",
+        "zero"
+      ],
+      "GPOS": [
+        "cpsp",
+        "kern"
+      ]
+    },
+    "hinting": {
+      "tables": [],
+      "glyphPrograms": 0
+    },
+    "license": [
+      "Copyright 2020 The Inter Project Authors (https://github.com/rsms/inter)",
+      "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "http://scripts.sil.org/OFL"
+    ]
+  },
+  "Inter-Bold.woff2": {
+    "bytes": 107400,
+    "glyphs": 2538,
+    "characters": 2529,
+    "axes": {},
+    "features": {
+      "GSUB": [
+        "aalt",
+        "calt",
+        "case",
+        "ccmp",
+        "cv01",
+        "cv02",
+        "cv03",
+        "cv04",
+        "cv05",
+        "cv06",
+        "cv07",
+        "cv08",
+        "cv09",
+        "cv10",
+        "cv11",
+        "dlig",
+        "dnom",
+        "frac",
+        "locl",
+        "numr",
+        "ordn",
+        "pnum",
+        "rlig",
+        "salt",
+        "ss01",
+        "ss02",
+        "ss03",
+        "subs",
+        "sups",
+        "tnum",
+        "zero"
+      ],
+      "GPOS": [
+        "cpsp",
+        "kern"
+      ]
+    },
+    "hinting": {
+      "tables": [],
+      "glyphPrograms": 0
+    },
+    "license": [
+      "Copyright 2020 The Inter Project Authors (https://github.com/rsms/inter)",
+      "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "http://scripts.sil.org/OFL"
+    ]
+  },
+  "Inter-DisplayBold.woff2": {
+    "bytes": 105568,
+    "glyphs": 2553,
+    "characters": 2479,
+    "axes": {},
+    "features": {
+      "GSUB": [
+        "aalt",
+        "c2sc",
+        "calt",
+        "case",
+        "ccmp",
+        "cv01",
+        "cv02",
+        "cv03",
+        "cv04",
+        "cv05",
+        "cv07",
+        "cv08",
+        "cv09",
+        "cv10",
+        "cv11",
+        "dlig",
+        "dnom",
+        "frac",
+        "locl",
+        "numr",
+        "ordn",
+        "pnum",
+        "salt",
+        "sinf",
+        "smcp",
+        "ss01",
+        "ss02",
+        "ss04",
+        "ss05",
+        "subs",
+        "sups",
+        "tnum",
+        "zero"
+      ],
+      "GPOS": [
+        "cpsp",
+        "kern",
+        "mark",
+        "mkmk"
+      ]
+    },
+    "hinting": {
+      "tables": [],
+      "glyphPrograms": 0
+    },
+    "license": [
+      "Copyright 2020 The Inter Project Authors",
+      "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "http://scripts.sil.org/OFL"
+    ]
+  },
+  "Inter-DisplayMedium.woff2": {
+    "bytes": 105380,
+    "glyphs": 2553,
+    "characters": 2479,
+    "axes": {},
+    "features": {
+      "GSUB": [
+        "aalt",
+        "c2sc",
+        "calt",
+        "case",
+        "ccmp",
+        "cv01",
+        "cv02",
+        "cv03",
+        "cv04",
+        "cv05",
+        "cv07",
+        "cv08",
+        "cv09",
+        "cv10",
+        "cv11",
+        "dlig",
+        "dnom",
+        "frac",
+        "locl",
+        "numr",
+        "ordn",
+        "pnum",
+        "salt",
+        "sinf",
+        "smcp",
+        "ss01",
+        "ss02",
+        "ss04",
+        "ss05",
+        "subs",
+        "sups",
+        "tnum",
+        "zero"
+      ],
+      "GPOS": [
+        "cpsp",
+        "kern",
+        "mark",
+        "mkmk"
+      ]
+    },
+    "hinting": {
+      "tables": [],
+      "glyphPrograms": 0
+    },
+    "license": [
+      "Copyright 2020 The Inter Project Authors",
+      "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "http://scripts.sil.org/OFL"
+    ]
+  },
+  "Inter-DisplaySemiBold.woff2": {
+    "bytes": 105560,
+    "glyphs": 2553,
+    "characters": 2479,
+    "axes": {},
+    "features": {
+      "GSUB": [
+        "aalt",
+        "c2sc",
+        "calt",
+        "case",
+        "ccmp",
+        "cv01",
+        "cv02",
+        "cv03",
+        "cv04",
+        "cv05",
+        "cv07",
+        "cv08",
+        "cv09",
+        "cv10",
+        "cv11",
+        "dlig",
+        "dnom",
+        "frac",
+        "locl",
+        "numr",
+        "ordn",
+        "pnum",
+        "salt",
+        "sinf",
+        "smcp",
+        "ss01",
+        "ss02",
+        "ss04",
+        "ss05",
+        "subs",
+        "sups",
+        "tnum",
+        "zero"
+      ],
+      "GPOS": [
+        "cpsp",
+        "kern",
+        "mark",
+        "mkmk"
+      ]
+    },
+    "hinting": {
+      "tables": [],
+      "glyphPrograms": 0
+    },
+    "license": [
+      "Copyright 2020 The Inter Project Authors",
+      "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "http://scripts.sil.org/OFL"
+    ]
+  },
+  "Inter-Italic.woff": {
+    "bytes": 144372,
+    "glyphs": 2548,
+    "characters": 2505,
+    "axes": {},
+    "features": {
+      "GSUB": [
+        "aalt",
+        "calt",
+        "case",
+        "ccmp",
+        "cv01",
+        "cv02",
+        "cv03",
+        "cv04",
+        "cv05",
+        "cv06",
+        "cv07",
+        "cv08",
+        "cv09",
+        "cv10",
+        "cv11",
+        "dlig",
+        "dnom",
+        "frac",
+        "locl",
+        "numr",
+        "ordn",
+        "pnum",
+        "salt",
+        "sinf",
+        "ss01",
+        "ss02",
+        "ss03",
+        "ss04",
+        "subs",
+        "sups",
+        "tnum",
+        "zero"
+      ],
+      "GPOS": [
+        "cpsp",
+        "kern",
+        "mark"
+      ]
+    },
+    "hinting": {
+      "tables": [],
+      "glyphPrograms": 0
+    },
+    "license": [
+      "Copyright \u00a9 2020 The Inter Project Authors",
+      "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "http://scripts.sil.org/OFL"
+    ]
+  },
+  "Inter-Italic.woff2": {
+    "bytes": 106876,
+    "glyphs": 2548,
+    "characters": 2505,
+    "axes": {},
+    "features": {
+      "GSUB": [
+        "aalt",
+        "calt",
+        "case",
+        "ccmp",
+        "cv01",
+        "cv02",
+        "cv03",
+        "cv04",
+        "cv05",
+        "cv06",
+        "cv07",
+        "cv08",
+        "cv09",
+        "cv10",
+        "cv11",
+        "dlig",
+        "dnom",
+        "frac",
+        "locl",
+        "numr",
+        "ordn",
+        "pnum",
+        "salt",
+        "sinf",
+        "ss01",
+        "ss02",
+        "ss03",
+        "ss04",
+        "subs",
+        "sups",
+        "tnum",
+        "zero"
+      ],
+      "GPOS": [
+        "cpsp",
+        "kern",
+        "mark"
+      ]
+    },
+    "hinting": {
+      "tables": [],
+      "glyphPrograms": 0
+    },
+    "license": [
+      "Copyright \u00a9 2020 The Inter Project Authors",
+      "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "http://scripts.sil.org/OFL"
+    ]
+  },
+  "Inter-Medium.woff2": {
+    "bytes": 105224,
+    "glyphs": 2553,
+    "characters": 2479,
+    "axes": {},
+    "features": {
+      "GSUB": [
+        "aalt",
+        "c2sc",
+        "calt",
+        "case",
+        "ccmp",
+        "cv01",
+        "cv02",
+        "cv03",
+        "cv04",
+        "cv05",
+        "cv07",
+        "cv08",
+        "cv09",
+        "cv10",
+        "cv11",
+        "dlig",
+        "dnom",
+        "frac",
+        "locl",
+        "numr",
+        "ordn",
+        "pnum",
+        "salt",
+        "sinf",
+        "smcp",
+        "ss01",
+        "ss02",
+        "ss04",
+        "ss05",
+        "subs",
+        "sups",
+        "tnum",
+        "zero"
+      ],
+      "GPOS": [
+        "cpsp",
+        "kern",
+        "mark",
+        "mkmk"
+      ]
+    },
+    "hinting": {
+      "tables": [],
+      "glyphPrograms": 0
+    },
+    "license": [
+      "Copyright 2020 The Inter Project Authors",
+      "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "http://scripts.sil.org/OFL"
+    ]
+  },
+  "Inter-Regular.woff": {
+    "bytes": 134652,
+    "glyphs": 2538,
+    "characters": 2529,
+    "axes": {},
+    "features": {
+      "GSUB": [
+        "aalt",
+        "calt",
+        "case",
+        "ccmp",
+        "cv01",
+        "cv02",
+        "cv03",
+        "cv04",
+        "cv05",
+        "cv06",
+        "cv07",
+        "cv08",
+        "cv09",
+        "cv10",
+        "cv11",
+        "dlig",
+        "dnom",
+        "frac",
+        "locl",
+        "numr",
+        "ordn",
+        "pnum",
+        "rlig",
+        "salt",
+        "ss01",
+        "ss02",
+        "ss03",
+        "subs",
+        "sups",
+        "tnum",
+        "zero"
+      ],
+      "GPOS": [
+        "cpsp",
+        "kern"
+      ]
+    },
+    "hinting": {
+      "tables": [],
+      "glyphPrograms": 0
+    },
+    "license": [
+      "Copyright 2020 The Inter Project Authors (https://github.com/rsms/inter)",
+      "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "http://scripts.sil.org/OFL"
+    ]
+  },
+  "Inter-Regular.woff2": {
+    "bytes": 100792,
+    "glyphs": 2553,
+    "characters": 2479,
+    "axes": {},
+    "features": {
+      "GSUB": [
+        "aalt",
+        "c2sc",
+        "calt",
+        "case",
+        "ccmp",
+        "cv01",
+        "cv02",
+        "cv03",
+        "cv04",
+        "cv05",
+        "cv07",
+        "cv08",
+        "cv09",
+        "cv10",
+        "cv11",
+        "dlig",
+        "dnom",
+        "frac",
+        "locl",
+        "numr",
+        "ordn",
+        "pnum",
+        "salt",
+        "sinf",
+        "smcp",
+        "ss01",
+        "ss02",
+        "ss04",
+        "ss05",
+        "subs",
+        "sups",
+        "tnum",
+        "zero"
+      ],
+      "GPOS": [
+        "cpsp",
+        "kern",
+        "mark",
+        "mkmk"
+      ]
+    },
+    "hinting": {
+      "tables": [],
+      "glyphPrograms": 0
+    },
+    "license": [
+      "Copyright 2020 The Inter Project Authors",
+      "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "http://scripts.sil.org/OFL"
+    ]
+  },
+  "Inter-SemiBold.woff": {
+    "bytes": 142932,
+    "glyphs": 2548,
+    "characters": 2505,
+    "axes": {},
+    "features": {
+      "GSUB": [
+        "aalt",
+        "calt",
+        "case",
+        "ccmp",
+        "cv01",
+        "cv02",
+        "cv03",
+        "cv04",
+        "cv05",
+        "cv06",
+        "cv07",
+        "cv08",
+        "cv09",
+        "cv10",
+        "cv11",
+        "dlig",
+        "dnom",
+        "frac",
+        "locl",
+        "numr",
+        "ordn",
+        "pnum",
+        "salt",
+        "sinf",
+        "ss01",
+        "ss02",
+        "ss03",
+        "ss04",
+        "subs",
+        "sups",
+        "tnum",
+        "zero"
+      ],
+      "GPOS": [
+        "cpsp",
+        "kern",
+        "mark"
+      ]
+    },
+    "hinting": {
+      "tables": [],
+      "glyphPrograms": 0
+    },
+    "license": [
+      "Copyright \u00a9 2020 The Inter Project Authors",
+      "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "http://scripts.sil.org/OFL"
+    ]
+  },
+  "Inter-SemiBold.woff2": {
+    "bytes": 105804,
+    "glyphs": 2548,
+    "characters": 2505,
+    "axes": {},
+    "features": {
+      "GSUB": [
+        "aalt",
+        "calt",
+        "case",
+        "ccmp",
+        "cv01",
+        "cv02",
+        "cv03",
+        "cv04",
+        "cv05",
+        "cv06",
+        "cv07",
+        "cv08",
+        "cv09",
+        "cv10",
+        "cv11",
+        "dlig",
+        "dnom",
+        "frac",
+        "locl",
+        "numr",
+        "ordn",
+        "pnum",
+        "salt",
+        "sinf",
+        "ss01",
+        "ss02",
+        "ss03",
+        "ss04",
+        "subs",
+        "sups",
+        "tnum",
+        "zero"
+      ],
+      "GPOS": [
+        "cpsp",
+        "kern",
+        "mark"
+      ]
+    },
+    "hinting": {
+      "tables": [],
+      "glyphPrograms": 0
+    },
+    "license": [
+      "Copyright \u00a9 2020 The Inter Project Authors",
+      "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL",
+      "http://scripts.sil.org/OFL"
+    ]
+  },
+  "Inter-Variable.woff2": {
+    "bytes": 48432,
+    "glyphs": 518,
+    "characters": 230,
+    "axes": {
+      "wght": [
+        100.0,
+        400.0,
+        900.0
+      ]
+    },
+    "features": {
+      "GSUB": [
+        "calt",
+        "ccmp",
+        "dnom",
+        "frac",
+        "locl",
+        "numr",
+        "pnum",
+        "tnum"
+      ],
+      "GPOS": [
+        "kern",
+        "mark",
+        "mkmk"
+      ]
+    },
+    "hinting": {
+      "tables": [],
+      "glyphPrograms": 0
+    },
+    "license": [
+      "Copyright 2016 The Inter Project Authors (https://github.com/rsms/inter)",
+      "https://openfontlicense.org"
+    ]
+  },
+  "JetBrains-Mono-Variable.woff2": {
+    "bytes": 40480,
+    "glyphs": 394,
+    "characters": 229,
+    "axes": {
+      "wght": [
+        100.0,
+        400.0,
+        800.0
+      ]
+    },
+    "features": {
+      "GSUB": [
+        "calt",
+        "ccmp",
+        "frac",
+        "locl"
+      ],
+      "GPOS": [
+        "mark"
+      ]
+    },
+    "hinting": {
+      "tables": [],
+      "glyphPrograms": 0
+    },
+    "license": [
+      "Copyright 2020 The JetBrains Mono Project Authors (https://github.com/JetBrains/JetBrainsMono)",
+      "https://scripts.sil.org/OFL"
+    ]
+  },
+  "Mona-Sans-Variable.woff2": {
+    "bytes": 39796,
+    "glyphs": 276,
+    "characters": 221,
+    "axes": {
+      "wght": [
+        200.0,
+        200.0,
+        900.0
+      ]
+    },
+    "features": {
+      "GSUB": [
+        "ccmp",
+        "dnom",
+        "frac",
+        "liga",
+        "locl",
+        "numr",
+        "pnum",
+        "tnum"
+      ],
+      "GPOS": [
+        "kern",
+        "mark"
+      ]
+    },
+    "hinting": {
+      "tables": [],
+      "glyphPrograms": 0
+    },
+    "license": [
+      "Copyright 2022 The Mona Sans Project Authors (https://github.com/github/mona-sans), with Reserved Font Name \"Mona\"",
+      "https://openfontlicense.org"
+    ]
+  },
+  "Mona-Sans.woff2": {
+    "bytes": 133748,
+    "glyphs": 356,
+    "characters": 305,
+    "axes": {
+      "wght": [
+        200.0,
+        200.0,
+        900.0
+      ],
+      "wdth": [
+        75.0,
+        100.0,
+        125.0
+      ],
+      "ital": [
+        0.0,
+        0.0,
+        12.0
+      ]
+    },
+    "features": {
+      "GSUB": [
+        "aalt",
+        "case",
+        "ccmp",
+        "dnom",
+        "frac",
+        "liga",
+        "numr",
+        "ordn",
+        "pnum",
+        "rvrn",
+        "salt",
+        "sinf",
+        "ss01",
+        "ss03",
+        "subs",
+        "sups",
+        "tnum"
+      ],
+      "GPOS": [
+        "kern",
+        "mark"
+      ]
+    },
+    "hinting": {
+      "tables": [],
+      "glyphPrograms": 0
+    },
+    "license": [
+      "Copyright \u00a9 2017 by Deni Anggara. All rights reserved."
+    ]
+  }
+}
