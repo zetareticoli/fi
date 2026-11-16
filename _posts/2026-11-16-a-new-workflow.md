@@ -7,7 +7,7 @@ sitemap:
   priority: 0.95
 ---
 
-A couple of weeks ago I wrote about [splitting the work on a small macOS app into separate conversations](/one-conversation-one-job/). The app is called FocusTrail for now. The final version will be called **ClearTime**.
+A couple of weeks ago I wrote about [splitting the work on a small macOS app into separate conversations]({% post_url 2026-11-04-one-conversation-one-job %}). The app is called FocusTrail for now. The final version will be called **ClearTime**.
 
 Since then the method has settled. It's less of an experiment and more of a routine, so I want to write it down properly.
 
