@@ -63,3 +63,4 @@ exclude:
   - css/tw.css
   - .cursor
   - CLAUDE.md
+  - AGENTS.md
