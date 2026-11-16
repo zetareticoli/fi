@@ -62,3 +62,4 @@ exclude:
   - node_modules
   - css/tw.css
   - .cursor
+  - CLAUDE.md
