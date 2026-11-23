@@ -19,6 +19,15 @@ workshop_nav:
     url: "#details"
   - label: "FAQ"
     url: "#faq"
+promo:
+  label: "Black Friday −40%"
+  label_short: "BF −40%"
+  until: "fino al 30 novembre"
+  deadline: "2026-11-30T23:59:00"
+  cta: "Riserva il tuo posto"
+  cta_short: "Prenota"
+  url: "#booking"
+  plausible_event: "Promo+Banner"
 offer:
   price: "€119"
   price_full: "€199"
