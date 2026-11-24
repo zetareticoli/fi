@@ -19,18 +19,26 @@ workshop_nav:
     url: "#details"
   - label: "FAQ"
     url: "#faq"
+promo:
+  label: "Black Friday −40%"
+  label_short: "BF −40%"
+  until: "fino al 30 novembre"
+  deadline: "2026-11-30T23:59:00"
+  cta: "Riserva il tuo posto"
+  cta_short: "Prenota"
+  url: "#booking"
+  plausible_event: "Promo+Banner"
 offer:
-  price: "€99"
+  price: "€119"
   price_full: "€199"
-  url: "https://book.stripe.com/8x2cN41yX23MfUm1MDcs803?prefilled_promo_code=EARLYNOV"
+  url: "https://book.stripe.com/8x2cN41yX23MfUm1MDcs803?prefilled_promo_code=BLACK40"
   cta: "Riserva il tuo posto"
   plausible_event: "Buy+Workshop"
-  sessions:
-    - "mercoledì, 11 novembre 2026"
-    - "mercoledì, 2 dicembre 2026"
+  dates_note: "Date da definire a febbraio/marzo 2027"
   session_time: "09:30–13:30"
-  note: "Sconto del 20% applicato automaticamente al checkout."
-  checkout_note: "Puoi scegliere la data durante il checkout con Stripe."
+  deadline: "2026-11-30T23:59:00"
+  note: 'Black Friday: sconto del 40% fino a <strong class="font-medium text-foreground">lunedì 30 novembre 2026</strong>, applicato automaticamente al checkout.'
+  checkout_note: "Ti scriverò appena le date saranno confermate, per scegliere quella che preferisci."
 ---
 
 <style>
@@ -458,7 +466,7 @@ offer:
       <h2 class="font-heading text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl">Riserva il tuo posto</h2>
       <p class="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground">Sceglierai la data che preferisci nel checkout Stripe.</p>
     </div>
-    {% include payment-link.html wide=true %}
+    {% include payment-link.html wide=true note=true %}
   </div>
 </section>
 
@@ -907,7 +915,7 @@ offer:
     <h2 class="font-heading text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl mb-3">Passa dal caos all'ordine</h2>
     <p class="mx-auto max-w-2xl text-lg lg:text-xl text-muted-foreground leading-relaxed mb-8">Riserva il tuo posto in una delle date disponibili.</p>
     <div class="mb-8">
-      {% include payment-link.html bg="bg-background" wide=true %}
+      {% include payment-link.html bg="bg-background" wide=true note=true %}
     </div>
     <div class="hairline mb-8"></div>
     <p class="mb-2 text-sm text-muted-foreground">Hai dubbi o altre domande?</p>

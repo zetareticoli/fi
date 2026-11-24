@@ -9,6 +9,7 @@
   {% include head.html %}
 </head>
 <body class="overflow-x-hidden bg-background text-foreground font-body">
+  {% if page.promo %}{% include promo-banner.html %}{% endif %}
   {% include workshop-header.html %}
   <main>
     {{ content }}

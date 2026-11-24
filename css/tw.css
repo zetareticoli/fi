@@ -35,6 +35,9 @@
   --color-muted-foreground: hsl(var(--muted-foreground));
   --color-accent: hsl(var(--accent));
   --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-promo: hsl(var(--promo));
+  --color-promo-foreground: hsl(var(--promo-foreground));
+  --color-promo-accent: hsl(var(--promo-accent));
   --color-destructive: hsl(var(--destructive));
   --color-destructive-foreground: hsl(var(--destructive-foreground));
   --color-border: hsl(var(--border));
