@@ -15,17 +15,28 @@ workshop_nav:
     url: "#details"
   - label: "FAQ"
     url: "#faq"
+promo:
+  label: "Black Friday −40%"
+  label_short: "BF −40%"
+  until: "fino al 30 novembre"
+  deadline: "2026-11-30T23:59:00"
+  cta: "Riserva il tuo posto"
+  cta_short: "Prenota"
+  url: "#booking"
+  plausible_event: "Promo+Banner"
 offer:
-  price: "€149"
-  price_full: "€249"
-  url: "https://book.stripe.com/5kQaEW2D1cIq8rU76Xcs801?prefilled_promo_code=EARLYMAG26"
+  price: "€299"
+  price_full: "€499"
+  url: "https://book.stripe.com/5kQaEW2D1cIq8rU76Xcs801?prefilled_promo_code=BLACK40"
   cta: "Riserva il tuo posto"
   plausible_event: "Buy+Workshop"
   sessions:
     - "Sessione 1 (feb/mar 2027 - da definire)"
     - "Sessione 2 (apr/mag 2027 - da definire)"
   session_time: "09:00–13:00"
-  note: "Il tuo acquisto è valido anche per le prossime date."
+  deadline: "2026-11-30T23:59:00"
+  note: 'Black Friday: sconto del 40% fino a <strong class="font-medium text-foreground">lunedì 30 novembre 2026</strong>, applicato automaticamente al checkout.'
+  checkout_note: "Ti scriverò appena le date saranno confermate, per scegliere quella che preferisci."
 ---
 
 <style>
