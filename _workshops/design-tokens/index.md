@@ -527,7 +527,7 @@ offer:
       </article>
       <article class="benefit-band flex flex-col items-center gap-8 md:flex-row lg:gap-16">
         <div class="benefit-band-visual flex w-full flex-1 justify-center">
-          <img src="/img/workshops/tokens-vocabulary.png" alt="Vocabolario di esempio per una naming convention dei design tokens" width="1200" height="675" loading="lazy" decoding="async">
+          <img src="/img/workshops/design-tokens/tokens-naming.webp" alt="Anatomia del nome di un design token: card-heading-large-bold, con i segmenti component, property, variant e scale" width="1672" height="941" loading="lazy" decoding="async">
         </div>
         <div class="w-full flex-1">
           <h3 class="mb-0 font-heading text-2xl font-semibold leading-tight lg:text-3xl">Nominare i token in modo efficace.</h3>
@@ -536,7 +536,7 @@ offer:
       </article>
       <article class="benefit-band flex flex-col items-center gap-8 md:flex-row-reverse lg:gap-16">
         <div class="benefit-band-visual flex w-full flex-1 justify-center">
-          <img src="/img/workshops/tokens-process.png" alt="Ciclo di vita dei design tokens da Figma a JSON e CSS" width="1200" height="675" loading="lazy" decoding="async">
+          <img src="/img/workshops/design-tokens/tokens-lifecycle.webp" alt="Due flussi a confronto: modificando i design tokens si aggiornano componenti Figma, file dei token, CSS e pagina web; modificando solo il CSS il cambiamento non torna in Figma" width="1672" height="941" loading="lazy" decoding="async">
         </div>
         <div class="w-full flex-1">
           <h3 class="mb-0 font-heading text-2xl font-semibold leading-tight lg:text-3xl">Gestire il ciclo di vita.</h3>
