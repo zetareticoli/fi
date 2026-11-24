@@ -22,12 +22,12 @@ promo:
   deadline: "2026-11-30T23:59:00"
   cta: "Riserva il tuo posto"
   cta_short: "Prenota"
-  url: "#booking"
+  url: "https://book.stripe.com/6oU5kC6Th5fY23w76Xcs804?prefilled_promo_code=BLACK40"
   plausible_event: "Promo+Banner"
 offer:
   price: "€299"
   price_full: "€499"
-  url: "https://book.stripe.com/5kQaEW2D1cIq8rU76Xcs801?prefilled_promo_code=BLACK40"
+  url: "https://book.stripe.com/6oU5kC6Th5fY23w76Xcs804?prefilled_promo_code=BLACK40"
   cta: "Riserva il tuo posto"
   plausible_event: "Buy+Workshop"
   sessions:
