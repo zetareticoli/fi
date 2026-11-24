@@ -286,14 +286,38 @@
   .inset-x-0 {
     inset-inline: 0;
   }
+  .-top-32 {
+    top: calc(var(--spacing) * -32);
+  }
+  .-top-48 {
+    top: calc(var(--spacing) * -48);
+  }
+  .-top-60 {
+    top: calc(var(--spacing) * -60);
+  }
   .top-0 {
     top: 0;
+  }
+  .top-4 {
+    top: calc(var(--spacing) * 4);
+  }
+  .-right-8 {
+    right: calc(var(--spacing) * -8);
+  }
+  .-right-20 {
+    right: calc(var(--spacing) * -20);
+  }
+  .right-0 {
+    right: 0;
   }
   .bottom-0 {
     bottom: 0;
   }
   .left-0 {
     left: 0;
+  }
+  .-z-10 {
+    z-index: calc(10 * -1);
   }
   .z-40 {
     z-index: 40;
@@ -1002,6 +1026,9 @@
   .mr-2 {
     margin-right: calc(var(--spacing) * 2);
   }
+  .-mb-2 {
+    margin-bottom: calc(var(--spacing) * -2);
+  }
   .mb-0 {
     margin-bottom: 0;
   }
@@ -1160,6 +1187,9 @@
   .w-36 {
     width: calc(var(--spacing) * 36);
   }
+  .w-44 {
+    width: calc(var(--spacing) * 44);
+  }
   .w-\[66\.667vw\] {
     width: 66.667vw;
   }
@@ -1204,6 +1234,15 @@
   }
   .grow {
     flex-grow: 1;
+  }
+  .origin-top-right {
+    transform-origin: 100% 0;
+  }
+  .scale-75 {
+    --tw-scale-x: 75%;
+    --tw-scale-y: 75%;
+    --tw-scale-z: 75%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
@@ -1276,6 +1315,9 @@
   }
   .justify-center {
     justify-content: center;
+  }
+  .justify-end {
+    justify-content: flex-end;
   }
   .justify-start {
     justify-content: flex-start;
@@ -1645,6 +1687,9 @@
   }
   .pt-16 {
     padding-top: calc(var(--spacing) * 16);
+  }
+  .pt-28 {
+    padding-top: calc(var(--spacing) * 28);
   }
   .pr-2 {
     padding-right: calc(var(--spacing) * 2);
@@ -2221,9 +2266,29 @@
       transition-property: none;
     }
   }
+  .sm\:top-0 {
+    @media (width >= 40rem) {
+      top: 0;
+    }
+  }
+  .sm\:-right-4 {
+    @media (width >= 40rem) {
+      right: calc(var(--spacing) * -4);
+    }
+  }
   .sm\:ml-6 {
     @media (width >= 40rem) {
       margin-left: calc(var(--spacing) * 6);
+    }
+  }
+  .sm\:block {
+    @media (width >= 40rem) {
+      display: block;
+    }
+  }
+  .sm\:hidden {
+    @media (width >= 40rem) {
+      display: none;
     }
   }
   .sm\:w-\[42\%\] {
@@ -2234,6 +2299,11 @@
   .sm\:w-auto {
     @media (width >= 40rem) {
       width: auto;
+    }
+  }
+  .sm\:scale-\[\.6\] {
+    @media (width >= 40rem) {
+      scale: .6;
     }
   }
   .sm\:grid-cols-2 {
@@ -2303,6 +2373,16 @@
   .sm\:p-8 {
     @media (width >= 40rem) {
       padding: calc(var(--spacing) * 8);
+    }
+  }
+  .sm\:pt-56 {
+    @media (width >= 40rem) {
+      padding-top: calc(var(--spacing) * 56);
+    }
+  }
+  .sm\:pr-10 {
+    @media (width >= 40rem) {
+      padding-right: calc(var(--spacing) * 10);
     }
   }
   .sm\:pl-5 {
@@ -2724,6 +2804,11 @@
       grid-column: span 8 / span 8;
     }
   }
+  .xl\:hidden {
+    @media (width >= 80rem) {
+      display: none;
+    }
+  }
   .xl\:grid-cols-3 {
     @media (width >= 80rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -2747,6 +2832,11 @@
   .xl\:gap-24 {
     @media (width >= 80rem) {
       gap: calc(var(--spacing) * 24);
+    }
+  }
+  .xl\:pt-16 {
+    @media (width >= 80rem) {
+      padding-top: calc(var(--spacing) * 16);
     }
   }
   .\@md\/fields\:grid-cols-3 {
@@ -2898,6 +2988,21 @@
       line-height: var(--leading-relaxed);
     }
   }
+}
+@property --tw-scale-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
+}
+@property --tw-scale-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 1;
 }
 @property --tw-rotate-x {
   syntax: "*";
@@ -3145,21 +3250,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-scale-x {
-  syntax: "*";
-  inherits: false;
-  initial-value: 1;
-}
-@property --tw-scale-y {
-  syntax: "*";
-  inherits: false;
-  initial-value: 1;
-}
-@property --tw-scale-z {
-  syntax: "*";
-  inherits: false;
-  initial-value: 1;
-}
 @property --tw-translate-x {
   syntax: "*";
   inherits: false;
@@ -3193,6 +3283,9 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-scale-z: 1;
       --tw-rotate-x: initial;
       --tw-rotate-y: initial;
       --tw-rotate-z: initial;
@@ -3250,9 +3343,6 @@
       --tw-backdrop-sepia: initial;
       --tw-duration: initial;
       --tw-ease: initial;
-      --tw-scale-x: 1;
-      --tw-scale-y: 1;
-      --tw-scale-z: 1;
       --tw-translate-x: 0;
       --tw-translate-y: 0;
       --tw-translate-z: 0;

@@ -117,7 +117,29 @@ offer:
     .token-art[data-art="success"] { top: 440rem; --rotate: 4deg; }
   }
 
+  /* Inline tokens: placed inside their section below 1280px, so they sit in
+     the free space between blocks instead of over the copy. */
+  .token-inline {
+    opacity: 0;
+    transform: translate3d(0, calc(var(--entry-y, 48px) + var(--parallax-y, 0px)), 0) rotate(var(--rotate, 0deg));
+    transition:
+      opacity 700ms cubic-bezier(0.16, 1, 0.3, 1),
+      transform 1000ms cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform;
+  }
+
+  .tokens-page.is-art-ready .token-inline {
+    --entry-y: 0px;
+    opacity: 1;
+  }
+
+  .tokens-page.is-parallax-ready .token-inline {
+    transition: opacity 200ms linear;
+  }
+
   @media (prefers-reduced-motion: reduce) {
+    .token-inline,
+    .tokens-page.is-art-ready .token-inline,
     .token-art,
     .tokens-page.is-art-ready .token-art {
       --entry-y: 0px;
@@ -181,10 +203,8 @@ offer:
   }
 </style>
 
-<div class="tokens-page" data-tokens-page>
-  <!-- Background design tokens (decorative) -->
-  <div class="tokens-artboard" aria-hidden="true">
-    <div class="token-art" data-zone="hero" data-art="swatch" data-parallax-speed="0.11" data-parallax-max="70" style="--delay: 0ms; --layer: 3">
+<!-- Token cards shared by the background artboard and the inline (mobile/tablet) placements -->
+{%- capture tk_swatch -%}
       <div class="token-art-card flex items-center gap-3.5 rounded-2xl border border-border bg-background py-2.5 pl-2.5 pr-4">
         <span class="size-14 rounded-xl bg-accent"></span>
         <span class="flex flex-col gap-1 font-mono">
@@ -192,8 +212,8 @@ offer:
           <span class="text-sm font-medium">hsl(38 98% 44%)</span>
         </span>
       </div>
-    </div>
-    <div class="token-art" data-zone="hero" data-art="json" data-parallax-speed="0.05" data-parallax-max="50" style="--delay: 90ms">
+{%- endcapture -%}
+{%- capture tk_json -%}
       <div class="token-art-card rounded-2xl bg-primary px-5 py-4 text-primary-foreground">
         <span class="mb-3 block font-mono text-[10px] opacity-60">tokens/space.json</span>
 <pre class="m-0 font-mono text-xs leading-relaxed">{
@@ -205,6 +225,48 @@ offer:
   }
 }</pre>
       </div>
+{%- endcapture -%}
+{%- capture tk_chain -%}
+      <div class="token-art-card flex flex-col gap-1.5 rounded-2xl border border-border bg-background p-3 font-mono text-[11px]">
+        <span class="text-[10px] uppercase tracking-wide text-muted-foreground">global</span>
+        <span class="rounded-full border border-border px-2.5 py-1">amber.500</span>
+        <span class="pl-3 text-accent">↓</span>
+        <span class="text-[10px] uppercase tracking-wide text-muted-foreground">alias</span>
+        <span class="rounded-full border border-border px-2.5 py-1">color.action.primary</span>
+        <span class="pl-3 text-accent">↓</span>
+        <span class="text-[10px] uppercase tracking-wide text-muted-foreground">component</span>
+        <span class="rounded-full border border-accent px-2.5 py-1">button.bg</span>
+      </div>
+{%- endcapture -%}
+{%- capture tk_palette -%}
+      <div class="token-art-card flex flex-col gap-2.5 rounded-2xl border border-border bg-background p-3">
+        <span class="flex gap-1.5">
+          <span class="h-16 flex-1 rounded-lg bg-accent/20"></span>
+          <span class="h-16 flex-1 rounded-lg bg-accent/45"></span>
+          <span class="h-16 flex-1 rounded-lg bg-accent/70"></span>
+          <span class="h-16 flex-1 rounded-lg bg-accent"></span>
+        </span>
+        <span class="font-mono text-[11px] text-muted-foreground">color.amber.100 → 500</span>
+      </div>
+{%- endcapture -%}
+{%- capture tk_radius -%}
+      <div class="token-art-card flex items-center gap-3 rounded-2xl border border-border bg-background p-3">
+        <span class="size-14 shrink-0 rounded-tr-3xl border-2 border-foreground bg-secondary"></span>
+        <span class="flex flex-col gap-1 font-mono">
+          <span class="text-[11px] text-muted-foreground">radius.lg</span>
+          <span class="text-sm font-medium">24px</span>
+        </span>
+      </div>
+{%- endcapture -%}
+
+<div class="tokens-page" data-tokens-page>
+  <!-- Background design tokens (decorative) -->
+  <div class="tokens-artboard" aria-hidden="true">
+    <div class="token-art" data-zone="hero" data-art="swatch" data-parallax-speed="0.11" data-parallax-max="70" style="--delay: 0ms; --layer: 3">
+      {{ tk_swatch }}
+    </div>
+    <div class="token-art" data-zone="hero" data-art="json" data-parallax-speed="0.05" data-parallax-max="50" style="--delay: 90ms">
+      {{ tk_json }}
     </div>
     <div class="token-art" data-zone="hero" data-art="type" data-parallax-speed="0.08" data-parallax-max="60" style="--delay: 180ms; --layer: 2">
       <div class="token-art-card flex flex-col gap-1.5 rounded-2xl border border-border bg-background px-5 py-4">
@@ -223,36 +285,13 @@ offer:
     </div>
 
     <div class="token-art" data-zone="gutter" data-side="right" data-art="chain" data-parallax-speed="0.09" style="--delay: 340ms">
-      <div class="token-art-card flex flex-col gap-1.5 rounded-2xl border border-border bg-background p-3 font-mono text-[11px]">
-        <span class="text-[10px] uppercase tracking-wide text-muted-foreground">global</span>
-        <span class="rounded-full border border-border px-2.5 py-1">amber.500</span>
-        <span class="pl-3 text-accent">↓</span>
-        <span class="text-[10px] uppercase tracking-wide text-muted-foreground">alias</span>
-        <span class="rounded-full border border-border px-2.5 py-1">color.action.primary</span>
-        <span class="pl-3 text-accent">↓</span>
-        <span class="text-[10px] uppercase tracking-wide text-muted-foreground">component</span>
-        <span class="rounded-full border border-accent px-2.5 py-1">button.bg</span>
-      </div>
+      {{ tk_chain }}
     </div>
     <div class="token-art" data-zone="gutter" data-side="left" data-art="palette" data-parallax-speed="0.05" style="--delay: 420ms">
-      <div class="token-art-card flex flex-col gap-2.5 rounded-2xl border border-border bg-background p-3">
-        <span class="flex gap-1.5">
-          <span class="h-16 flex-1 rounded-lg bg-accent/20"></span>
-          <span class="h-16 flex-1 rounded-lg bg-accent/45"></span>
-          <span class="h-16 flex-1 rounded-lg bg-accent/70"></span>
-          <span class="h-16 flex-1 rounded-lg bg-accent"></span>
-        </span>
-        <span class="font-mono text-[11px] text-muted-foreground">color.amber.100 → 500</span>
-      </div>
+      {{ tk_palette }}
     </div>
     <div class="token-art" data-zone="gutter" data-side="right" data-art="radius" data-parallax-speed="0.08" style="--delay: 500ms">
-      <div class="token-art-card flex items-center gap-3 rounded-2xl border border-border bg-background p-3">
-        <span class="size-14 shrink-0 rounded-tr-3xl border-2 border-foreground bg-secondary"></span>
-        <span class="flex flex-col gap-1 font-mono">
-          <span class="text-[11px] text-muted-foreground">radius.lg</span>
-          <span class="text-sm font-medium">24px</span>
-        </span>
-      </div>
+      {{ tk_radius }}
     </div>
     <div class="token-art" data-zone="gutter" data-side="left" data-art="motion" data-parallax-speed="0.07" style="--delay: 580ms">
       <div class="token-art-card flex items-center gap-3 rounded-2xl border border-border bg-background p-3">
@@ -298,15 +337,23 @@ offer:
     <div class="flex max-w-3xl flex-col items-start">
       <span class="mb-6 inline-flex items-center border border-border bg-background px-3 py-1 font-mono text-xs uppercase tracking-wide text-accent">Design Tokens · Workshop online</span>
       <h1 class="font-heading text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">Trasforma le decisioni di design in un sistema che scala</h1>
+      <div class="mt-6 -mb-2 flex w-full justify-end pr-2 sm:pr-10 xl:hidden" aria-hidden="true">
+        <div class="token-inline" data-parallax-local data-parallax-speed="0.06" data-parallax-max="14" style="--rotate: -4deg">
+          {{ tk_swatch }}
+        </div>
+      </div>
       <p class="mt-8 max-w-2xl text-lg leading-relaxed text-muted-foreground lg:text-xl">In quattro mattine impari a definire, nominare e gestire i design tokens: dall’architettura a livelli alla naming convention, da Figma al JSON fino alle variabili CSS.</p>
       <p class="mt-5 flex items-center gap-3 text-sm text-muted-foreground">
         <img class="h-24 w-24 md:h-28 md:w-28 shrink-0 object-cover grayscale rounded-4xl shadow-2xl" src="/img/francesco-improta-profile.webp" alt="Francesco Improta" width="400" height="400" decoding="async">
         <span>Con <strong class="font-medium text-foreground">Francesco Improta</strong>, designer esperto in Design Systems e Product Design.</span>
       </p>
 
-      <div class="mt-8 flex w-full flex-col items-stretch gap-4 sm:w-auto sm:flex-row sm:items-center">
+      <div class="relative mt-8 flex w-full flex-col items-start gap-4 sm:flex-row sm:items-center">
         <a href="#booking" class="inline-flex items-center justify-center bg-accent px-8 py-4 text-lg font-medium text-accent-foreground hover:opacity-90 rounded-full shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">Vedi date e prenota</a>
         <a href="#details" class="inline-flex items-center justify-center px-2 py-3 text-sm font-medium underline underline-offset-4 transition-opacity hover:opacity-70">Scopri il programma →</a>
+        <div class="token-inline pointer-events-none absolute top-4 -right-20 -z-10 origin-top-right scale-75 sm:top-0 sm:-right-4 sm:scale-[.6] xl:hidden" aria-hidden="true" data-parallax-local data-parallax-speed="0.05" data-parallax-max="10" style="--rotate: 3deg">
+          {{ tk_json }}
+        </div>
       </div>
     </div>
   </div>
@@ -355,8 +402,17 @@ offer:
 </section>
 
 <!-- Booking -->
-<section class="scroll-mt-32 px-6 py-12 lg:scroll-mt-24 lg:px-10 lg:py-16" id="booking">
-  <div class="mx-auto max-w-7xl">
+<section class="scroll-mt-32 px-6 pt-28 pb-12 sm:pt-56 lg:scroll-mt-24 lg:px-10 lg:pb-16 xl:pt-16" id="booking">
+  <div class="relative mx-auto max-w-7xl">
+    <div class="token-inline pointer-events-none absolute -top-32 -right-8 -z-10 w-44 sm:hidden" aria-hidden="true" data-parallax-local data-parallax-speed="0.05" data-parallax-max="14" style="--rotate: 4deg">
+      {{ tk_palette }}
+    </div>
+    <div class="token-inline pointer-events-none absolute -top-48 left-0 -z-10 hidden sm:block xl:hidden" aria-hidden="true" data-parallax-local data-parallax-speed="0.06" data-parallax-max="18" style="--rotate: -5deg">
+      {{ tk_radius }}
+    </div>
+    <div class="token-inline pointer-events-none absolute -top-60 right-0 -z-10 hidden sm:block xl:hidden" aria-hidden="true" data-parallax-local data-parallax-speed="0.04" data-parallax-max="18" style="--rotate: -3deg">
+      {{ tk_chain }}
+    </div>
     <div class="mb-8 text-center">
       <span class="mb-3 block font-mono text-xs uppercase tracking-wide text-accent">Partecipa</span>
       <h2 class="font-heading text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl">Riserva il tuo posto</h2>
@@ -896,7 +952,18 @@ offer:
         const speed = Number(item.dataset.parallaxSpeed) || 0;
         // Hero tokens get a short travel so they never drift into the next section.
         const max = Number(item.dataset.parallaxMax) || 420;
-        const distance = Math.min(localScroll * speed, max);
+        let distance;
+        if ('parallaxLocal' in item.dataset) {
+          // Inline tokens drift around their resting place while their block crosses the viewport.
+          if (reducedMotion.matches) {
+            distance = 0;
+          } else {
+            const anchorTop = item.parentElement.getBoundingClientRect().top;
+            distance = Math.max(-max, Math.min(max, (window.innerHeight / 2 - anchorTop) * speed));
+          }
+        } else {
+          distance = Math.min(localScroll * speed, max);
+        }
         item.style.setProperty('--parallax-y', distance.toFixed(2) + 'px');
       });
     }
