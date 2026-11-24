@@ -380,38 +380,6 @@ offer:
     }
   }
 
-  .workshop-offer-wide {
-    display: grid;
-    gap: 2rem;
-  }
-
-  @media (min-width: 1024px) {
-    .workshop-offer-wide {
-      grid-template-columns: minmax(11rem, 0.65fr) minmax(20rem, 1.25fr) minmax(16rem, 0.8fr);
-      align-items: center;
-      gap: 2.5rem;
-    }
-
-    .workshop-offer-wide .workshop-offer-price {
-      border-right: 1px solid hsl(var(--border));
-      border-bottom: 0;
-      padding: 1rem 2.5rem 1rem 0;
-    }
-
-    .workshop-offer-wide .workshop-offer-action {
-      margin-top: 0;
-    }
-  }
-
-  .program-plus-vert {
-    transform-box: fill-box;
-    transform-origin: center;
-    transition: transform 180ms ease;
-  }
-
-  details[open] .program-plus-vert {
-    transform: scaleY(0);
-  }
 </style>
 
 <!-- Artboard -->
