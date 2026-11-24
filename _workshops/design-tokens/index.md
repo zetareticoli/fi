@@ -360,7 +360,7 @@ offer:
       </p>
 
       <div class="relative mt-8 flex w-full flex-col items-start gap-4 sm:flex-row sm:items-center">
-        <a href="#booking" class="inline-flex items-center justify-center bg-accent px-8 py-4 text-lg font-medium text-accent-foreground hover:opacity-90 rounded-full shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">Vedi date e prenota</a>
+        <a href="#booking" class="inline-flex items-center justify-center bg-promo-accent px-8 py-4 text-lg font-medium text-promo hover:opacity-90 rounded-full shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">Vedi date e prenota</a>
         <a href="#details" class="inline-flex items-center justify-center px-2 py-3 text-sm font-medium underline underline-offset-4 transition-opacity hover:opacity-70">Scopri il programma →</a>
         <div class="token-inline pointer-events-none absolute top-4 -right-20 -z-10 origin-top-right scale-75 sm:top-0 sm:-right-4 sm:scale-[.6] xl:hidden" aria-hidden="true" data-parallax-local data-parallax-speed="0.05" data-parallax-max="10" style="--rotate: 3deg">
           {{ tk_json }}
@@ -429,7 +429,7 @@ offer:
       <h2 class="font-heading text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl">Riserva il tuo posto</h2>
       <p class="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground">Il tuo acquisto è valido per tutte le date disponibili.</p>
     </div>
-    {% include payment-link.html wide=true note=true %}
+    {% include payment-link.html wide=true note=true cta_colors="bg-promo-accent text-promo" %}
   </div>
 </section>
 
@@ -934,7 +934,7 @@ offer:
     <h2 class="font-heading text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl mb-3">Crea design tokens efficaci</h2>
     <p class="mx-auto max-w-2xl text-lg lg:text-xl text-muted-foreground leading-relaxed mb-8">Riserva il tuo posto in una delle date disponibili.</p>
     <div class="mb-8">
-      {% include payment-link.html bg="bg-background" wide=true note=true %}
+      {% include payment-link.html bg="bg-background" wide=true note=true cta_colors="bg-promo-accent text-promo" %}
     </div>
     <div class="hairline mb-8"></div>
     <p class="mb-2 text-sm text-muted-foreground">Hai dubbi o altre domande?</p>

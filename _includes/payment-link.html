@@ -16,7 +16,8 @@ Workshop offer block, driven by the `offer` map in the page front matter:
 
 Parameters: bg (surface class), note (render the early bird note),
 url (override the checkout link for this block only),
-wide (use the horizontal layout for full-width booking sections).
+wide (use the horizontal layout for full-width booking sections),
+cta_colors (override the CTA color classes, e.g. "bg-promo-accent text-promo" to match the promo bar).
 {%- endcomment -%}
 {%- assign offer = page.offer -%}
 <div class="{% if include.wide %}workshop-offer workshop-offer-wide{% else %}flex h-full flex-col gap-8{% endif %} border border-border p-6 text-left sm:p-8 lg:p-10 rounded-2xl shadow-lg {{ include.bg | default: 'bg-secondary/80 backdrop-blur-sm' }}">
@@ -48,7 +49,7 @@ wide (use the horizontal layout for full-width booking sections).
   </div>
   {% endif %}
   <div class="workshop-offer-action mt-auto flex flex-col items-stretch gap-4">
-    <a href="{{ include.url | default: offer.url }}" class="inline-flex items-center justify-center bg-accent px-8 py-4 text-lg font-medium text-accent-foreground hover:opacity-90 rounded-full shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300{% if offer.plausible_event %} plausible-event-name={{ offer.plausible_event }}{% endif %}">{{ offer.cta | default: 'Riserva il tuo posto' }}</a>
+    <a href="{{ include.url | default: offer.url }}" class="inline-flex items-center justify-center {{ include.cta_colors | default: 'bg-accent text-accent-foreground' }} px-8 py-4 text-lg font-medium hover:opacity-90 rounded-full shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300{% if offer.plausible_event %} plausible-event-name={{ offer.plausible_event }}{% endif %}">{{ offer.cta | default: 'Riserva il tuo posto' }}</a>
     
     {% if include.note and offer.note %}
       <div class="flex flex-col items-stretch gap-1">
