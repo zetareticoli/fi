@@ -1,7 +1,7 @@
 ---
 layout: workshop
-title: "Design Tokens Workshop - Corso Completo"
-seo_title: "Design Tokens Workshop con Francesco Improta"
+title: "Design Tokens - Il corso completo"
+seo_title: "Corso Design Tokens con Francesco Improta"
 description: "Impara a creare e gestire i design tokens in modo efficace, accelerando lo sviluppo e garantendo la coerenza visiva dell'interfaccia."
 lang: it
 og-image: workshops/og-design-tokens-workshop.png
@@ -346,14 +346,14 @@ offer:
 <section class="hero px-6 lg:px-10 pt-12 lg:pt-20 pb-12 lg:pb-16">
   <div class="mx-auto max-w-7xl">
     <div class="flex max-w-3xl flex-col items-start">
-      <span class="mb-6 inline-flex items-center border border-border bg-background px-3 py-1 font-mono text-xs uppercase tracking-wide text-accent">Design Tokens · Workshop online</span>
+      <span class="mb-6 inline-flex items-center border border-border bg-background px-3 py-1 font-mono text-xs uppercase tracking-wide text-accent">Design Tokens - Il corso completo</span>
       <h1 class="font-heading text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">Trasforma le decisioni di design in un sistema che scala</h1>
       <div class="mt-6 -mb-2 flex w-full justify-end pr-2 sm:pr-10 xl:hidden" aria-hidden="true">
         <div class="token-inline" data-parallax-local data-parallax-speed="0.06" data-parallax-max="14" style="--rotate: -4deg">
           {{ tk_swatch }}
         </div>
       </div>
-      <p class="mt-8 max-w-2xl text-lg leading-relaxed text-muted-foreground lg:text-xl">In quattro mattine impari a definire, nominare e gestire i design tokens: dall’architettura a livelli alla naming convention, da Figma al JSON fino alle variabili CSS.</p>
+      <p class="mt-8 max-w-2xl text-lg leading-relaxed text-muted-foreground lg:text-xl">Impara a definire, nominare e gestire i design tokens: dall’architettura a livelli alla naming convention, da Figma al JSON fino alle variabili CSS.</p>
       <p class="mt-5 flex items-center gap-3 text-sm text-muted-foreground">
         <img class="h-24 w-24 md:h-28 md:w-28 shrink-0 object-cover grayscale rounded-4xl shadow-2xl" src="/img/francesco-improta-profile.webp" alt="Francesco Improta" width="400" height="400" decoding="async">
         <span>Con <strong class="font-medium text-foreground">Francesco Improta</strong>, designer esperto in Design Systems e Product Design.</span>
@@ -375,7 +375,7 @@ offer:
   <div class="mx-auto max-w-7xl">
     <div class="mb-10 max-w-2xl">
       <span class="mb-4 block font-mono text-xs uppercase tracking-wide text-accent">L’esperienza</span>
-      <h2 class="font-heading text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl">Cosa aspettarti da questo workshop</h2>
+      <h2 class="font-heading text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl">Cosa aspettarti da questo corso</h2>
     </div>
     <div class="grid grid-cols-1 gap-x-8 gap-y-8 md:grid-cols-2 lg:grid-cols-3">
       <article class="border-t border-border pt-5">
@@ -556,7 +556,7 @@ offer:
   </div>
 </section>
 
-<!-- How the workshop works -->
+<!-- How the course works -->
 <section class="scroll-mt-32 px-6 py-12 lg:scroll-mt-24 lg:px-10 lg:py-20" id="process" data-tokens-process>
   <div class="mx-auto max-w-7xl">
     <div class="mb-10 max-w-3xl lg:mb-14">
@@ -566,7 +566,7 @@ offer:
     </div>
 
     <div class="grid grid-cols-1 items-start gap-8 lg:grid-cols-2 lg:gap-12">
-      <div class="-mx-6 flex min-w-0 gap-2 snap-x snap-mandatory overflow-x-auto overscroll-x-contain scroll-px-6 px-6 py-1 lg:mx-0 lg:flex-col lg:gap-4 lg:snap-none lg:overflow-visible lg:scroll-p-1 lg:p-1" role="tablist" aria-label="Fasi del workshop">
+      <div class="-mx-6 flex min-w-0 gap-2 snap-x snap-mandatory overflow-x-auto overscroll-x-contain scroll-px-6 px-6 py-1 lg:mx-0 lg:flex-col lg:gap-4 lg:snap-none lg:overflow-visible lg:scroll-p-1 lg:p-1" role="tablist" aria-label="Fasi del corso">
         <button class="w-[66.667vw] shrink-0 snap-center whitespace-normal lg:w-full lg:min-w-0 cursor-pointer rounded-2xl p-5 text-left text-muted-foreground transition-colors duration-200 hover:bg-gray-100 dark:hover:not-active:bg-secondary hover:text-foreground aria-selected:bg-secondary/70 aria-selected:text-foreground active:bg-accent/20 aria-selected:active:bg-accent/20 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent motion-reduce:transition-none" type="button" role="tab" id="process-tab-1" aria-controls="process-panel-1" aria-selected="true" tabindex="0" data-process-tab="1">
           <span class="mb-2 block font-mono text-xs text-accent">01</span>
           <span class="block font-heading text-lg font-medium leading-snug">Strutturi i livelli</span>
@@ -659,7 +659,7 @@ offer:
       <div>
         <span class="mb-3 block font-mono text-xs uppercase tracking-wide text-accent">Time &amp; Schedule</span>
         <h2 class="font-heading text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl">Quattro mattine di lavoro insieme</h2>
-        <p class="mt-5 text-base leading-relaxed text-muted-foreground lg:text-lg">Il workshop si svolge online su Google Meet, in quattro giornate dalle <strong class="font-medium text-foreground">{{ page.offer.session_time }}</strong>. Alterniamo teoria essenziale, demo, esercitazioni e confronto finale.</p>
+        <p class="mt-5 text-base leading-relaxed text-muted-foreground lg:text-lg">Il corso si svolge online su Google Meet, in quattro giornate dalle <strong class="font-medium text-foreground">{{ page.offer.session_time }}</strong>. Alterniamo teoria essenziale, demo, esercitazioni e confronto finale.</p>
       </div>
       <div>
         <dl class="grid grid-cols-1 gap-5 sm:grid-cols-2">
@@ -817,7 +817,7 @@ offer:
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-accent mr-2" aria-hidden="true"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg>&nbsp;Registrazioni delle lezioni
         </li>
         <li class="flex items-center text-base font-medium">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-accent mr-2" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>&nbsp;Supporto post workshop
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-accent mr-2" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>&nbsp;Supporto post corso
         </li>
         <li class="flex items-center text-base font-medium">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-accent mr-2" aria-hidden="true"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"/><circle cx="12" cy="8" r="6"/></svg>&nbsp;Attestato di partecipazione
@@ -832,13 +832,13 @@ offer:
   <div class="mx-auto max-w-5xl">
     <div class="text-center">
       <span class="block mb-3 font-mono text-xs uppercase tracking-wide text-accent">Chi sono</span>
-      <h2 class="font-heading text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl mb-8">Porto nel workshop oltre 20 anni di esperienza sui prodotti digitali</h2>
+      <h2 class="font-heading text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl mb-8">Porto nel corso oltre 20 anni di esperienza sui prodotti digitali</h2>
       <img class="mx-auto mb-8 w-32 h-32 object-cover grayscale rounded-4xl shadow-2xl" src="/img/francesco-improta-profile.webp" alt="Francesco Improta - Design Token Expert and Course Instructor" width="400" height="400" loading="lazy" decoding="async">
     </div>
     <div class="mx-auto flex max-w-2xl flex-col gap-4">
       <p class="text-lg font-medium leading-relaxed">👋 Ciao, sono <strong class="font-semibold">Francesco Improta</strong>, designer con oltre 20 anni di esperienza nel design di prodotti digitali, specializzato in Design System.</p>
-      <p class="text-base text-muted-foreground leading-relaxed">Ho creato questo workshop per <strong class="font-medium text-foreground">aiutarti a comprendere i design tokens e ad applicarli in modo efficace</strong>, riducendo i tempi di sviluppo e migliorando la coerenza del prodotto.</p>
-      <p class="text-base text-muted-foreground leading-relaxed">Durante il workshop <strong class="font-medium text-foreground">condividerò esperienze pratiche e strumenti</strong> che ho utilizzato in anni di lavoro su progetti complessi.</p>
+      <p class="text-base text-muted-foreground leading-relaxed">Ho creato questo corso per <strong class="font-medium text-foreground">aiutarti a comprendere i design tokens e ad applicarli in modo efficace</strong>, riducendo i tempi di sviluppo e migliorando la coerenza del prodotto.</p>
+      <p class="text-base text-muted-foreground leading-relaxed">Durante il corso <strong class="font-medium text-foreground">condividerò esperienze pratiche e strumenti</strong> che ho utilizzato in anni di lavoro su progetti complessi.</p>
       <p>
         <a href="/about" class="text-sm underline text-muted-foreground underline-offset-2 hover:opacity-70 transition-opacity">Qualcosa su di me →</a>
       </p>
@@ -866,21 +866,21 @@ offer:
   <div class="mx-auto max-w-5xl">
     <span class="block mb-3 font-mono text-xs uppercase tracking-wide text-accent">Domande frequenti</span>
     <h2 class="font-heading text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl mb-3">Questo corso è per me?</h2>
-    <p class="text-lg lg:text-xl text-muted-foreground leading-relaxed">Tutto quello che serve sapere prima di prenotare il workshop.</p>
+    <p class="text-lg lg:text-xl text-muted-foreground leading-relaxed">Tutto quello che serve sapere prima di prenotare il corso.</p>
     <div class="flex flex-col mt-8">
       <details class="group py-6 hairline">
         <summary class="flex items-start justify-between gap-4 list-none cursor-pointer">
-          <h4 class="m-0 text-lg font-medium underline underline-offset-2">Come funziona il workshop?</h4>
+          <h4 class="m-0 text-lg font-medium underline underline-offset-2">Come funziona il corso?</h4>
           {{ chevron_icon }}
         </summary>
-        <div class="mt-4 text-base text-muted-foreground leading-relaxed">Il workshop si svolge online via Google Meet, con sessioni pratiche e teoria. Riceverai un link per accedere una settimana prima della data prevista.</div>
+        <div class="mt-4 text-base text-muted-foreground leading-relaxed">Il corso si svolge online via Google Meet, con sessioni pratiche e teoria. Riceverai un link per accedere una settimana prima della data prevista.</div>
       </details>
       <details class="group py-6 hairline">
         <summary class="flex items-start justify-between gap-4 list-none cursor-pointer">
           <h4 class="m-0 text-lg font-medium underline underline-offset-2">Devo avere esperienza con i design tokens?</h4>
           {{ chevron_icon }}
         </summary>
-        <div class="mt-4 text-base text-muted-foreground leading-relaxed">No, il workshop parte dalle basi. Ti fornirò io tutti gli strumenti teorici e pratici per mettere in pratica quanto appreso.</div>
+        <div class="mt-4 text-base text-muted-foreground leading-relaxed">No, il corso parte dalle basi. Ti fornirò io tutti gli strumenti teorici e pratici per mettere in pratica quanto appreso.</div>
       </details>
       <details class="group py-6 hairline">
         <summary class="flex items-start justify-between gap-4 list-none cursor-pointer">
@@ -894,7 +894,7 @@ offer:
           <h4 class="m-0 text-lg font-medium underline underline-offset-2">Posso partecipare anche se non sono un designer?</h4>
           {{ chevron_icon }}
         </summary>
-        <div class="mt-4 text-base text-muted-foreground leading-relaxed">Assolutamente sì! Il workshop è utile per tutti coloro i quali vogliono approfondire la conoscenza dei design tokens, indipendentemente dal proprio ruolo in un team.</div>
+        <div class="mt-4 text-base text-muted-foreground leading-relaxed">Assolutamente sì! Il corso è utile per tutti coloro i quali vogliono approfondire la conoscenza dei design tokens, indipendentemente dal proprio ruolo in un team.</div>
       </details>
       <details class="group py-6 hairline">
         <summary class="flex items-start justify-between gap-4 list-none cursor-pointer">
@@ -919,10 +919,10 @@ offer:
       </details>
       <details class="group py-6 hairline">
         <summary class="flex items-start justify-between gap-4 list-none cursor-pointer">
-          <h4 class="m-0 text-lg font-medium underline underline-offset-2">È possibile organizzare un workshop per più di 6 persone?</h4>
+          <h4 class="m-0 text-lg font-medium underline underline-offset-2">È possibile organizzare un corso per più di 6 persone?</h4>
           {{ chevron_icon }}
         </summary>
-        <div class="mt-4 text-base text-muted-foreground leading-relaxed">Per workshop aziendali personalizzati puoi contattarmi a me[at]francescoimprota.com.</div>
+        <div class="mt-4 text-base text-muted-foreground leading-relaxed">Per corsi aziendali personalizzati puoi contattarmi a me[at]francescoimprota.com.</div>
       </details>
     </div>
   </div>
