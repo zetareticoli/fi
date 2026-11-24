@@ -1,0 +1,56 @@
+{%- comment -%}
+Promo bar shown above the workshop header, driven by the `promo` map in the
+page front matter. Price and old price come from `page.offer`.
+
+  promo:
+    label: "Black Friday −40%"        # badge, desktop
+    label_short: "BF −40%"            # badge, mobile
+    until: "fino al 30 novembre"      # desktop only
+    deadline: "2026-11-30T23:59:00"   # countdown target; the bar hides itself after it
+    cta: "Riserva il tuo posto"
+    cta_short: "Prenota"              # mobile
+    url: "#booking"
+    plausible_event: "Promo+Banner"   # optional
+{%- endcomment -%}
+{%- assign promo = page.promo -%}
+<section class="promo-banner border-b border-border bg-promo text-promo-foreground" aria-label="{{ promo.label }}" data-promo-deadline="{{ promo.deadline }}">
+  <div class="flex items-center justify-between gap-3 px-4 py-2.5 md:justify-center md:gap-6 md:px-10">
+    <div class="flex min-w-0 flex-col gap-1 md:flex-row md:items-center md:gap-6">
+      <span class="flex flex-wrap items-baseline gap-x-2 gap-y-1 text-sm md:items-center md:gap-x-4 md:text-base">
+        <span class="bg-promo-accent px-1.5 py-0.5 font-mono text-xs font-bold uppercase tracking-wider text-promo md:px-2 md:py-1 md:text-[13px] md:tracking-widest">
+          <span class="md:hidden">{{ promo.label_short | default: promo.label }}</span><span class="hidden md:inline">{{ promo.label }}</span>
+        </span>
+        <span>
+          <strong class="font-heading text-[17px] font-bold md:text-xl">{{ page.offer.price }}</strong>
+          {% if page.offer.price_full %}<s class="text-promo-foreground/60">{{ page.offer.price_full }}</s>{% endif %}
+          {% if promo.until %}<span class="hidden text-promo-foreground/70 md:inline">{{ promo.until }}</span>{% endif %}
+        </span>
+      </span>
+      <span class="font-mono text-[13px] font-bold tracking-wide text-promo-accent md:text-[15px]" role="timer" aria-live="off">
+        <span class="sr-only">Termina tra </span><span data-promo-countdown></span>
+      </span>
+    </div>
+    <a href="{{ promo.url | default: '#booking' }}" class="inline-flex min-h-11 shrink-0 items-center gap-2 rounded-full bg-promo-accent px-4 text-[15px] font-medium text-promo transition-opacity hover:opacity-90 md:px-5{% if promo.plausible_event %} plausible-event-name={{ promo.plausible_event }}{% endif %}">
+      <span class="md:hidden">{{ promo.cta_short | default: promo.cta }}</span><span class="hidden md:inline">{{ promo.cta | default: 'Riserva il tuo posto' }}</span>
+      <span aria-hidden="true">→</span>
+    </a>
+  </div>
+</section>
+<script>
+  (function () {
+    var banner = document.currentScript.previousElementSibling;
+    var deadline = new Date(banner.dataset.promoDeadline);
+    var output = banner.querySelector('[data-promo-countdown]');
+    function pad(n) { return String(n).padStart(2, '0'); }
+    function update() {
+      var diff = deadline - new Date();
+      if (!(diff > 0)) { banner.remove(); clearInterval(timer); return; }
+      var day = 86400000;
+      output.textContent = pad(Math.floor(diff / day)) + 'g : ' +
+        pad(Math.floor((diff % day) / 3600000)) + 'h : ' +
+        pad(Math.floor((diff % 3600000) / 60000)) + 'm';
+    }
+    var timer = setInterval(update, 30000);
+    update();
+  })();
+</script>
