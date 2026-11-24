@@ -545,7 +545,7 @@ offer:
       </article>
       <article class="benefit-band flex flex-col items-center gap-8 md:flex-row lg:gap-16">
         <div class="benefit-band-visual flex w-full flex-1 justify-center">
-          <img src="/img/workshops/tokens-purpose.png" alt="Modello condiviso di design tokens tra design, sviluppo e prodotto" width="1200" height="675" loading="lazy" decoding="async">
+          <img src="/img/workshops/design-tokens/tokens-context.webp" alt="Confronto tra nomi generici (border-color, text-color, bg-color) e nomi con contesto (border-primary, text-inverse, button-primary) applicati allo stesso pulsante" width="1672" height="941" loading="lazy" decoding="async">
         </div>
         <div class="w-full flex-1">
           <h3 class="mb-0 font-heading text-2xl font-semibold leading-tight lg:text-3xl">Allineare il team.</h3>
