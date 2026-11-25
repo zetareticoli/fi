@@ -34,7 +34,10 @@ offer:
   url: "https://book.stripe.com/8x2cN41yX23MfUm1MDcs803?prefilled_promo_code=BLACK40"
   cta: "Riserva il tuo posto"
   plausible_event: "Buy+Workshop"
-  dates_note: "Date da definire a febbraio/marzo 2027"
+  sessions:
+    - "febbraio 2027 (giorni da definire)"
+    - "marzo 2027 (giorni da definire)"
+    - "aprile 2027 (giorni da definire)"
   session_time: "09:30–13:30"
   deadline: "2026-11-30T23:59:00"
   note: 'Black Friday: sconto del 40% fino a <strong class="font-medium text-foreground">lunedì 30 novembre 2026</strong>, applicato automaticamente al checkout.'
