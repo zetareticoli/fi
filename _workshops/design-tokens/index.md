@@ -356,7 +356,7 @@ offer:
       </div>
       <p class="mt-8 max-w-2xl text-lg leading-relaxed text-muted-foreground lg:text-xl">Impara a definire, nominare e gestire i design tokens: dall’architettura a livelli alla naming convention, da Figma al JSON fino alle variabili CSS.</p>
       <p class="mt-5 flex items-center gap-3 text-sm text-muted-foreground">
-        <img class="h-24 w-24 md:h-28 md:w-28 shrink-0 object-cover grayscale rounded-4xl shadow-2xl" src="/img/francesco-improta-profile.png" alt="Francesco Improta" width="300" height="300" decoding="async">
+        <img class="h-24 w-24 md:h-28 md:w-28 shrink-0 object-cover grayscale rounded-4xl shadow-2xl" src="/img/francesco-improta-profile-2026.webp" alt="Francesco Improta" width="400" height="400" decoding="async">
         <span>Con <strong class="font-medium text-foreground">Francesco Improta</strong>, designer esperto in Design Systems e Product Design.</span>
       </p>
 
@@ -834,7 +834,7 @@ offer:
     <div class="text-center">
       <span class="block mb-3 font-mono text-xs uppercase tracking-wide text-accent">Chi sono</span>
       <h2 class="font-heading text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl mb-8">Porto nel corso oltre 20 anni di esperienza sui prodotti digitali</h2>
-      <img class="mx-auto mb-8 w-32 h-32 object-cover grayscale rounded-4xl shadow-2xl" src="/img/francesco-improta-profile.png" alt="Francesco Improta - Design Token Expert and Course Instructor" width="400" height="400" loading="lazy" decoding="async">
+      <img class="mx-auto mb-8 w-32 h-32 object-cover grayscale rounded-4xl shadow-2xl" src="/img/francesco-improta-profile-2026.webp" alt="Francesco Improta - Design Token Expert and Course Instructor" width="400" height="400" loading="lazy" decoding="async">
     </div>
     <div class="mx-auto flex max-w-2xl flex-col gap-4">
       <p class="text-lg font-medium leading-relaxed">👋 Ciao, sono <strong class="font-semibold">Francesco Improta</strong>, designer con oltre 20 anni di esperienza nel design di prodotti digitali, specializzato in Design System.</p>
