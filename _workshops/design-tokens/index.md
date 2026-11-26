@@ -4,7 +4,7 @@ title: "Design Tokens - Il corso completo"
 seo_title: "Corso Design Tokens con Francesco Improta"
 description: "Impara a creare e gestire i design tokens in modo efficace, accelerando lo sviluppo e garantendo la coerenza visiva dell'interfaccia."
 lang: it
-og-image: workshops/og-design-tokens-workshop.png
+og-image: social/og-design-tokens-corso.jpg
 permalink: /workshops/design-tokens/
 workshop_nav:
   - label: "Risultati"
